@@ -1,5 +1,5 @@
-<PluginRepository version="2015.1221.1556">
 <?xml version="1.0" encoding="UTF-8"?>
+<PluginRepository version="2015.1221.1556">
 <SageTVPlugin>
     <Name>PushBullet notifications for SageTV</Name>
     <Identifier>sagex.plugin.pushbullet</Identifier>
