@@ -8,14 +8,12 @@ FAILED=""
 
 echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" > $TMPFILE
 echo "<PluginRepository version=\"${DATE}\">" >> $TMPFILE
-# finding regular xml manifests
-#cat `find plugins/ -iname '*.xml' -exec echo {} \;` | grep -v '<?xml ' >> $TMPFILE
 
+# finding regular xml manifests
 for file in `find plugins/ -name '*.xml'` ; do
     # validate the xml we just got
     xmllint --noout $file
-    if [ $? -eq 0 ]
-    then
+    if [ $? -eq 0 ] ; then
       echo "Adding Plugin $file"
       cat $file | grep -v '<?xml ' >> $TMPFILE
     else
@@ -35,8 +33,7 @@ for file in `find ../plugins/ -name '*.url'` ; do
     url=`cat $file | head -n1`
     echo "Resolving Reference URL $url"
     wget -O tmp.xml "$url"
-    if [ $? -ne 0 ]
-    then
+    if [ $? -ne 0 ] ; then
         FAILED="${FAILED} ${file}"
         echo "Failed to resolve $url in ${file}.  Skipping..."
     else
@@ -57,17 +54,18 @@ rm -rf tmp
 
 echo '</PluginRepository>' >> $TMPFILE
 
+# now validate the entire composited xml file to make sure it is valid
 xmllint --noout $TMPFILE
-if [ $? -eq 0 ]
-then
+if [ $? -eq 0 ]; then
   rm $PLUGINFILE
   mv $TMPFILE $PLUGINFILE
+
+  # generate the md5 checksum
   md5sum $PLUGINFILE | tr " " "\n" | grep -v 'xml' > $PLUGINMD5
   echo ""
   echo ""
 
   if [ "$FAILED" != "" ] ; then
-
     echo ""
     echo ""
     echo "Successfully created ${PLUGINFILE} and ${PLUGINMD5} BUT Some plugins are omitted"
