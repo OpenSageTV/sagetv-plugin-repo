@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 PLUGINFILE=SageTVPluginsV9.xml
 PLUGINMD5=SageTVPluginsV9.md5
@@ -54,6 +54,15 @@ rm -rf tmp
 
 echo '</PluginRepository>' >> $TMPFILE
 
+# before we carry on, let's validate if anything actually changed.
+diff <(grep -v "<PluginRepository" $PLUGINFILE) <(grep -v "<PluginRepository" $TMPFILE) > /dev/null 2>&1
+if [ $? -eq 0 ]; then
+    echo "Nothing Changed, so let's exit"
+    rm -f $TMPFILE
+    exit 0;
+fi
+
+# it appears that we have some updates, so, let's validate
 # now validate the entire composited xml file to make sure it is valid
 xmllint --noout $TMPFILE
 if [ $? -eq 0 ]; then
