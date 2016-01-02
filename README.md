@@ -1,5 +1,8 @@
 # SageTV Plugin Repository for V9
 
+
+[![Build Status](https://travis-ci.org/OpenSageTV/sagetv-plugin-repo.svg?branch=master)](https://travis-ci.org/OpenSageTV/sagetv-plugin-repo)
+
 This is a plugin repository (ie, XML manifest repository) for SageTV V9 Open Source Plugins.
 
 Developers should clone this repository, then add a new plugin under the `plugins` directory.
