@@ -115,6 +115,8 @@ if [ "true" = "$GIT_COMMIT" ] ; then
   mkdir tmp
   cd tmp
   git config --global push.default matching
+  git config --global user.email "sean.stuckless@gmail.com"
+  git config --global user.name "Travis CI Builder"
   git clone https://${GIT_TOKEN}@github.com/${GIT_REPO}
   if [ $? -ne 0 ]; then
     cd ..
