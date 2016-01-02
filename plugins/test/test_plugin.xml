@@ -1,0 +1,25 @@
+<SageTVPlugin>
+    <Name>Test Plugin Library Manifest</Name>
+    <Identifier>test_plugin</Identifier>
+    <Description>Dummy Plugin for Testing V9 Plugin Repo</Description>
+    <Author>stuckless</Author>
+    <CreationDate>2015.12.18</CreationDate>
+    <ModificationDate>2015.12.18</ModificationDate>
+    <Version>1.0</Version>
+
+    <Dependency>
+        <Core/>
+        <MinVersion>99.0</MinVersion>
+    </Dependency>
+
+    <PluginType>Library</PluginType>
+
+    <Package>
+        <PackageType>JAR</PackageType>
+        <Location>http://central.maven.org/maven2/junit/junit/4.11/junit-4.11.jar</Location>
+        <MD5>3c42be5ea7cbf3635716abbb429cb90d</MD5>
+    </Package>
+
+    <ReleaseNotes>
+    </ReleaseNotes>
+</SageTVPlugin>
