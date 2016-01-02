@@ -1,0 +1,9 @@
+
+script: ./buildpluginsxml.sh
+
+notifications:
+  email:
+    recipients:
+      - sean.stuckless@gmail.com
+    on_success: always
+    on_failure: always

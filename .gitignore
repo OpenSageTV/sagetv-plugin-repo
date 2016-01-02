@@ -1,2 +1,4 @@
 .idea/
 tmp/
+*.log
+github_token.txt
