@@ -1,0 +1,18 @@
+<SageTVPlugin>
+    <Name>jackson-databind</Name>
+    <Identifier>jackson-databind</Identifier>
+    <Description>Jackson Data Binding JSON Library</Description>
+    <Author>stuckless</Author>
+    <CreationDate>2013.04.19</CreationDate>
+    <ModificationDate>2015.12.12</ModificationDate>
+    <Version>2.6.3.0</Version>
+    <PluginType>Library</PluginType>
+    <Package>
+        <PackageType>JAR</PackageType>
+        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/libraries/jackson-databind-2.6.3.zip</Location>
+        <MD5>6afdc2bcfc3e241e570adbcf0770be34</MD5>
+    </Package>
+    <ReleaseNotes>
+        Library used by Phoenix and TheMovieDB
+    </ReleaseNotes>
+</SageTVPlugin>

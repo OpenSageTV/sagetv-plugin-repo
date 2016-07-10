@@ -1,0 +1,16 @@
+<SageTVPlugin>
+    <Name>hamcrest-core</Name>
+    <Identifier>hamcrest-core</Identifier>
+    <Description>SageTV Dependency JAR Plugin for hamcrest-core - no need to download directly</Description>
+    <Author>stuckless</Author>
+    <CreationDate>2015.12.12</CreationDate>
+    <ModificationDate>2015.12.12</ModificationDate>
+    <Version>1.3</Version>
+    <Desktop>false</Desktop>
+    <PluginType>Library</PluginType>
+    <Package>
+        <PackageType>JAR</PackageType>
+        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/libraries/hamcrest-core-1.3.zip</Location>
+        <MD5>6557d3e0f4495a9ccab235fc688cee84</MD5>
+    </Package>
+</SageTVPlugin>

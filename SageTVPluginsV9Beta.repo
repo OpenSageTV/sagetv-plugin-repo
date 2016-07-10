@@ -1,0 +1,6 @@
+# update existing var and add this to the additional repos
+sagetv_additional_repo_list=v9beta
+# repo data
+sagetv_repos/v9beta/local=SageTVPluginsV9Beta.xml
+sagetv_repos/v9beta/md5=https\://raw.githubusercontent.com/OpenSageTV/sagetv-plugin-repo/master/SageTVPluginsV9Beta.md5
+sagetv_repos/v9beta/url=https\://raw.githubusercontent.com/OpenSageTV/sagetv-plugin-repo/master/SageTVPluginsV9Beta.xml

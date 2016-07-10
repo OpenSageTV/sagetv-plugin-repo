@@ -1,0 +1,18 @@
+<SageTVPlugin>
+    <Name>jackson-annotations</Name>
+    <Identifier>jackson-annotations</Identifier>
+    <Description>Jackson Annotations JSON Library</Description>
+    <Author>stuckless</Author>
+    <CreationDate>2013.04.19</CreationDate>
+    <ModificationDate>2015.12.12</ModificationDate>
+    <Version>2.6.3.0</Version>
+    <PluginType>Library</PluginType>
+    <Package>
+        <PackageType>JAR</PackageType>
+        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/libraries/jackson-annotations-2.6.3.zip</Location>
+        <MD5>a378597eb17e5728bb78960755008033</MD5>
+    </Package>
+    <ReleaseNotes>
+        Library used by Phoenix and TheMovieDB
+    </ReleaseNotes>
+</SageTVPlugin>

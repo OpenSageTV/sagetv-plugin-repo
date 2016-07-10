@@ -1,0 +1,18 @@
+<SageTVPlugin>
+    <Name>jackson-core</Name>
+    <Identifier>jackson-core</Identifier>
+    <Description>Jackson Core JSON Library</Description>
+    <Author>stuckless</Author>
+    <CreationDate>2013.04.19</CreationDate>
+    <ModificationDate>2015.12.12</ModificationDate>
+    <Version>2.6.3.0</Version>
+    <PluginType>Library</PluginType>
+    <Package>
+        <PackageType>JAR</PackageType>
+        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/libraries/jackson-core-2.6.3.zip</Location>
+        <MD5>a8101917622a9aca83a223b53196bef6</MD5>
+    </Package>
+    <ReleaseNotes>
+        Library used by Phoenix and TheMovieDB
+    </ReleaseNotes>
+</SageTVPlugin>

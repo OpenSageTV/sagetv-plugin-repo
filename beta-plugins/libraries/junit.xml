@@ -1,0 +1,19 @@
+<SageTVPlugin>
+    <Name>junit</Name>
+    <Identifier>junit</Identifier>
+    <Description>SageTV Dependency JAR Plugin - no need to download directly</Description>
+    <Author>stuckless</Author>
+    <CreationDate>2011.04.10</CreationDate>
+    <ModificationDate>2015.12.12</ModificationDate>
+    <Version>4.12.0</Version>
+    <Dependency>
+        <JVM />
+        <MinVersion>1.5.0</MinVersion>
+    </Dependency>
+    <PluginType>Library</PluginType>
+    <Package>
+        <PackageType>JAR</PackageType>
+        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/libraries/junit-4.12.zip</Location>
+        <MD5>57e6b4c96a2568a986775a303ed14abc</MD5>
+    </Package>
+</SageTVPlugin>

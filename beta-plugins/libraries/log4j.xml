@@ -1,0 +1,16 @@
+<SageTVPlugin>
+    <Name>log4j</Name>
+    <Identifier>log4j</Identifier>
+    <Description>SageTV Dependency JAR Plugin for log4j-1.2.17.jar - no need to download directly</Description>
+    <Author>stuckless</Author>
+    <CreationDate>2010-04-08</CreationDate>
+    <ModificationDate>2015.12.12</ModificationDate>
+    <Version>1.2.17</Version>
+    <Desktop>false</Desktop>
+    <PluginType>Library</PluginType>
+    <Package>
+        <PackageType>JAR</PackageType>
+        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/libraries/log4j-1.2.17.zip</Location>
+        <MD5>cb61134bd8cce8030647a86c472f2606</MD5>
+    </Package>
+</SageTVPlugin>

@@ -1,0 +1,17 @@
+<SageTVPlugin>
+    <Name>HttpCore</Name>
+    <Identifier>HttpCore</Identifier>
+    <Description>Apache HttpCore library - dependency only</Description>
+    <Author>stuckless</Author>
+    <CreationDate>2010.04.28</CreationDate>
+    <ModificationDate>2015.12.12</ModificationDate>
+    <Version>4.4.3</Version>
+    <ResourcePath>httpcore</ResourcePath>
+    <Webpage>http://hc.apache.org/</Webpage>
+    <PluginType>Library</PluginType>
+    <Package>
+        <PackageType>JAR</PackageType>
+        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/libraries/httpcore-4.4.3.zip</Location>
+        <MD5>e7dce3d54308dc3b6ceb724d55418afb</MD5>
+    </Package>
+</SageTVPlugin>

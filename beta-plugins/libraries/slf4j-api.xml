@@ -1,0 +1,16 @@
+<SageTVPlugin>
+    <Name>Simple Logging Facade for Java API Library (slf4j)</Name>
+    <Identifier>slf4j-api</Identifier>
+    <Description>SageTV Dependency JAR Plugin for Simple Logging Facade for Java (slf4j-api-1.7.12.jar) - no need to download directly</Description>
+    <Author>stuckless</Author>
+    <CreationDate>2010.07.04</CreationDate>
+    <ModificationDate>2015.12.12</ModificationDate>
+    <Version>1.7.12</Version>
+    <Desktop>false</Desktop>
+    <PluginType>Library</PluginType>
+    <Package>
+        <PackageType>JAR</PackageType>
+        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/libraries/slf4j-api-1.7.12.zip</Location>
+        <MD5>0b185291cbb9d2822f24629efc91de57</MD5>
+    </Package>
+</SageTVPlugin>
