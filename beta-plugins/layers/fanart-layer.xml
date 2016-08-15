@@ -1,0 +1,42 @@
+<SageTVPlugin>
+    <Name>AAL2 - Fanart Layer</Name>
+    <Identifier>aal2-layer-fanart</Identifier>
+    <Description>SageTV Layer that installs plugins for fetching fanart and external metadata for media items</Description>
+    <Author>stuckless</Author>
+    <CreationDate>2016.07.10</CreationDate>
+    <ModificationDate>2016.07.10</ModificationDate>
+    <Version>9.0.0</Version>
+    <Dependency>
+        <Plugin>aal1-layer-base</Plugin>
+        <MinVersion>1.0</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>phoenic-core</Plugin>
+        <MinVersion>1.0</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>bmtweb</Plugin>
+        <MinVersion>1.0</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>cmt</Plugin>
+        <MinVersion>1.0</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>phoenixfanart</Plugin>
+        <MinVersion>1.0</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>phoenixfanartv7</Plugin>
+        <MinVersion>1.0</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>bailioseasonepisode</Plugin>
+        <MinVersion>1.0</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>maloreseasonepisode</Plugin>
+        <MinVersion>1.0</MinVersion>
+    </Dependency>
+    <PluginType>Stanadard</PluginType>
+</SageTVPlugin>

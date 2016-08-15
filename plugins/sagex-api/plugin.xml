@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SageTVPlugin>
+  <Name>sagex-api - SageTV API Extensions</Name>
+  <Identifier>sagex-api</Identifier>
+  <Description>SageTV API Wrappers with Remote API capabilities</Description>
+  <Author>stuckless</Author>
+  <CreationDate>2008.10.05</CreationDate>
+  <ModificationDate>2016.08.14</ModificationDate>
+  <Version>9.0.0.0</Version>
+  <Desktop>false</Desktop>
+  <ResourcePath>sagex-api</ResourcePath>
+  <Webpage><![CDATA[http://forums.sagetv.com/forums/showthread.php?t=36044]]></Webpage>
+
+  <PluginType>Library</PluginType>
+
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/sagex-api/sagex-api-9.0.0.0.zip</Location>
+    <MD5>332639a66b79ca0f72730cb54e94b4f3</MD5>
+  </Package>
+
+  <ReleaseNotes>
+9.0.0
+    * Upgraded to SageTV 9
+  </ReleaseNotes>
+
+  <Dependency>
+    <Core/>
+    <MinVersion>9.0.0</MinVersion>
+  </Dependency>
+
+  <Dependency>
+    <JVM/>
+    <MinVersion>1.7</MinVersion>
+  </Dependency>
+
+</SageTVPlugin>
