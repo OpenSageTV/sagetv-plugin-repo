@@ -5,8 +5,8 @@
   <Description>SageTV API Wrappers with Remote API capabilities</Description>
   <Author>stuckless</Author>
   <CreationDate>2008.10.05</CreationDate>
-  <ModificationDate>2016.08.14</ModificationDate>
-  <Version>9.0.0.0</Version>
+  <ModificationDate>2016.08.15</ModificationDate>
+  <Version>9.0.0.1</Version>
   <Desktop>false</Desktop>
   <ResourcePath>sagex-api</ResourcePath>
   <Webpage><![CDATA[http://forums.sagetv.com/forums/showthread.php?t=36044]]></Webpage>
@@ -15,8 +15,8 @@
 
   <Package>
     <PackageType>JAR</PackageType>
-    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/sagex-api/9.0.0.0/sagex-api-9.0.0.0.zip</Location>
-    <MD5>9cf9095ad590280043a6bf761d3eb19f</MD5>
+    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/sagex-api/9.0.0.1/sagex-api-9.0.0.1.zip</Location>
+    <MD5>5c32969d8074dbaddb1ed3c442083ef5</MD5>
   </Package>
 
   <ReleaseNotes>
