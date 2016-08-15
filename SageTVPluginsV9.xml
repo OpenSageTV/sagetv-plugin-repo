@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2016.0815.0047">
+<PluginRepository version="2016.0815.2225">
 <SageTVPlugin>
   <Name>sagex-services - SageTV Remote API Services</Name>
   <Identifier>sagex-api-services</Identifier>
   <Description>HTTP and RMI services for SageTV (HTTP services require Jetty Plugin).  HTTP services includes JSON/JSONP and Xml formats.</Description>
   <Author>stuckless</Author>
   <CreationDate>2008.10.05</CreationDate>
-  <ModificationDate>2016.08.14</ModificationDate>
-  <Version>9.0.0.0</Version>
+  <ModificationDate>2016.08.15</ModificationDate>
+  <Version>9.0.0.1</Version>
   <Desktop>false</Desktop>
   <ResourcePath>sagex-api</ResourcePath>
   <Webpage><![CDATA[http://forums.sagetv.com/forums/showthread.php?t=36044]]></Webpage>
@@ -36,8 +36,8 @@
 
   <Package>
     <PackageType>System</PackageType>
-    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/sagex-api/9.0.0.0/sagex-api-services-9.0.0.0.zip</Location>
-    <MD5>332639a66b79ca0f72730cb54e94b4f3</MD5>
+    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/sagex-api/9.0.0.1/sagex-api-services-9.0.0.1.zip</Location>
+    <MD5>b707f8657629e45e16e2067edf526348</MD5>
   </Package>
 
   <!-- Plugin Class is in the core sagex-api jar -->
@@ -55,8 +55,8 @@
   <Description>SageTV API Wrappers with Remote API capabilities</Description>
   <Author>stuckless</Author>
   <CreationDate>2008.10.05</CreationDate>
-  <ModificationDate>2016.08.14</ModificationDate>
-  <Version>9.0.0.0</Version>
+  <ModificationDate>2016.08.15</ModificationDate>
+  <Version>9.0.0.1</Version>
   <Desktop>false</Desktop>
   <ResourcePath>sagex-api</ResourcePath>
   <Webpage><![CDATA[http://forums.sagetv.com/forums/showthread.php?t=36044]]></Webpage>
@@ -65,8 +65,8 @@
 
   <Package>
     <PackageType>JAR</PackageType>
-    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/sagex-api/9.0.0.0/sagex-api-9.0.0.0.zip</Location>
-    <MD5>9cf9095ad590280043a6bf761d3eb19f</MD5>
+    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/sagex-api/9.0.0.1/sagex-api-9.0.0.1.zip</Location>
+    <MD5>5c32969d8074dbaddb1ed3c442083ef5</MD5>
   </Package>
 
   <ReleaseNotes>
