@@ -1,5 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2016.0710.1134">
+<PluginRepository version="2016.0815.0012">
+<SageTVPlugin>
+    <Name>AAL1 - Base Layer</Name>
+    <Identifier>aal1-layer-base</Identifier>
+    <Description>SageTV Base Layer that installs the some basic plugins, such as the Web UI, Comskip, etc</Description>
+    <Author>stuckless</Author>
+    <CreationDate>2016.07.10</CreationDate>
+    <ModificationDate>2016.07.10</ModificationDate>
+    <Version>9.0.0</Version>
+    <Dependency>
+        <JVM />
+        <MinVersion>1.7.0</MinVersion>
+    </Dependency>
+    <Dependency>
+        <STV>SageTV7</STV>
+        <MinVersion>9.0</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>sagex-api</Plugin>
+        <MinVersion>7.1.9.15</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>sagex-services</Plugin>
+        <MinVersion>7.1.9.15</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>Jetty</Plugin>
+        <MinVersion>1.0</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>commercialdetector</Plugin>
+        <MinVersion>1.0</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>commercialdetectorstvi</Plugin>
+        <MinVersion>1.0</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>web</Plugin>
+        <MinVersion>1.0</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>mobileweb</Plugin>
+        <MinVersion>1.0</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>youtube</Plugin>
+        <MinVersion>1.0</MinVersion>
+    </Dependency>
+    <PluginType>Stanadar</PluginType>
+</SageTVPlugin>
+<SageTVPlugin>
+    <Name>AAL2 - Fanart Layer</Name>
+    <Identifier>aal2-layer-fanart</Identifier>
+    <Description>SageTV Layer that installs plugins for fetching fanart and external metadata for media items</Description>
+    <Author>stuckless</Author>
+    <CreationDate>2016.07.10</CreationDate>
+    <ModificationDate>2016.07.10</ModificationDate>
+    <Version>9.0.0</Version>
+    <Dependency>
+        <Plugin>aal1-layer-base</Plugin>
+        <MinVersion>1.0</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>phoenic-core</Plugin>
+        <MinVersion>1.0</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>bmtweb</Plugin>
+        <MinVersion>1.0</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>cmt</Plugin>
+        <MinVersion>1.0</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>phoenixfanart</Plugin>
+        <MinVersion>1.0</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>phoenixfanartv7</Plugin>
+        <MinVersion>1.0</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>bailioseasonepisode</Plugin>
+        <MinVersion>1.0</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>maloreseasonepisode</Plugin>
+        <MinVersion>1.0</MinVersion>
+    </Dependency>
+    <PluginType>Stanadard</PluginType>
+</SageTVPlugin>
 <SageTVPlugin>
     <Name>commons-codec</Name>
     <Identifier>commons-codec</Identifier>
