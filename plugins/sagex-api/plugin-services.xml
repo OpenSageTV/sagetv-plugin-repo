@@ -35,7 +35,7 @@
 
   <Package>
     <PackageType>System</PackageType>
-    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/sagex-api/sagex-api-services-9.0.0.0.zip</Location>
+    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/sagex-api/9.0.0.0/sagex-api-services-9.0.0.0.zip</Location>
     <MD5>@@system-checksum@@</MD5>
   </Package>
 
