@@ -5,8 +5,8 @@
   <Description>HTTP and RMI services for SageTV (HTTP services require Jetty Plugin).  HTTP services includes JSON/JSONP and Xml formats.</Description>
   <Author>stuckless</Author>
   <CreationDate>2008.10.05</CreationDate>
-  <ModificationDate>2016.08.19</ModificationDate>
-  <Version>9.0.0.7</Version>
+  <ModificationDate>2016.08.21</ModificationDate>
+  <Version>9.0.0.8</Version>
   <Desktop>false</Desktop>
   <ResourcePath>sagex-api</ResourcePath>
   <Webpage><![CDATA[http://forums.sagetv.com/forums/showthread.php?t=36044]]></Webpage>
@@ -28,15 +28,15 @@
 
   <Dependency>
     <Plugin>sagex-api</Plugin>
-    <MinVersion>9.0.0.7</MinVersion>
+    <MinVersion>9.0.0.8</MinVersion>
   </Dependency>
 
   <PluginType>Standard</PluginType>
 
   <Package>
     <PackageType>System</PackageType>
-    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/sagex-api/9.0.0.7/sagex-api-services-9.0.0.7.zip</Location>
-    <MD5>60cafd119a442ab0637a52cfd5fe5450</MD5>
+    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/sagex-api/9.0.0.8/sagex-api-services-9.0.0.8.zip</Location>
+    <MD5>0baa657d697363ed1cf40249c0fbdb19</MD5>
   </Package>
 
   <!-- Plugin Class is in the core sagex-api jar -->
