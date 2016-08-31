@@ -119,28 +119,59 @@
     <ReleaseNotes>
     </ReleaseNotes>
 </SageTVPlugin>
-<SageTVPlugin>
-    <Name>Google GSON</Name>
-    <Identifier>GSON</Identifier>
-    <Description>Google's POJO <-> JSON library - dependency only</Description>
-    <Author>Slugger</Author>
-    <CreationDate>2010.05.01</CreationDate>
-    <ModificationDate>2016.08.31</ModificationDate>
-    <Version>1.7.2</Version>
-    <ResourcePath>gson</ResourcePath>
-    <Webpage>http://code.google.com/p/google-gson/</Webpage>
-    <PluginType>Library</PluginType>
-    <Package>
-      <PackageType>JAR</PackageType>
-      <Location>
-        http://dl.bintray.com/opensagetv/sagetv-plugins/libraries/gson-1.7.2.zip
-      </Location>
-      <MD5>101f70895010c963b7a114f0f0c2951f</MD5>
-      <Overwrite>true</Overwrite>
-      <!--  Defaults to true  -->
-    </Package>
-    <ReleaseNotes>
-      Move repository away from shuttering google code to bintray and minor version increment
-    </ReleaseNotes>
-</SageTVPlugin>
+	<SageTVPlugin>
+		<Name>Google GSON</Name>
+		<Identifier>GSON</Identifier>
+		<Description>Google's POJO - JSON library - dependency only</Description>
+		<Author>Slugger</Author>
+		<CreationDate>2010.05.01</CreationDate>
+		<ModificationDate>2016.08.31</ModificationDate>
+		<Version>1.7.2</Version>
+		<ResourcePath>gson</ResourcePath>
+		<Webpage>http://code.google.com/p/google-gson/</Webpage>
+		<PluginType>Library</PluginType>
+		<Package>
+			<PackageType>JAR</PackageType>
+			<Location>http://dl.bintray.com/opensagetv/sagetv-plugins/libraries/gson-1.7.2.zip</Location>
+			<MD5>101f70895010c963b7a114f0f0c2951f</MD5>
+			<Overwrite>true</Overwrite>
+			<!--  Defaults to true  -->
+		</Package>
+	</SageTVPlugin>
+	<SageTVPlugin>
+		<Name>The Movie DB Library</Name>
+		<Identifier>themoviedb</Identifier>
+		<Description>The Movie DB Library</Description>
+		<Author>stuckless</Author>
+		<CreationDate>2013.04.19</CreationDate>
+		<ModificationDate>2016.08.31</ModificationDate>
+		<Version>3.0.1.1</Version>
+		<PluginType>Library</PluginType>
+		<Dependency>
+			<Plugin>slf4j-api</Plugin>
+			<MinVersion>1.6.0</MinVersion>
+		</Dependency>
+		<Dependency>
+			<Plugin>jackson-core</Plugin>
+			<MinVersion>2.1.4</MinVersion>
+		</Dependency>
+		<Dependency>
+			<Plugin>jackson-annotations</Plugin>
+			<MinVersion>2.1.4</MinVersion>
+		</Dependency>
+		<Dependency>
+			<Plugin>jackson-databind</Plugin>
+			<MinVersion>2.1.4</MinVersion>
+		</Dependency>
+		<Dependency>
+			<Plugin>jackson-databind</Plugin>
+			<MinVersion>2.1.4</MinVersion>
+		</Dependency>
+		<Package>
+			<PackageType>JAR</PackageType>
+			<Location>http://dl.bintray.com/opensagetv/sagetv-plugins/libraries/themoviedb-3.0.1.zip</Location>
+			<MD5>20b0ce17a7fca5c4cea2a150787f97d3</MD5>
+		</Package>
+		<ReleaseNotes>Library used by Phoenix and TheMovieDB</ReleaseNotes>
+	</SageTVPlugin>
 </PluginRepository>
