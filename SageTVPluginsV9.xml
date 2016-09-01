@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2016.0821.1110">
+<PluginRepository version="2016.0901.0001">
 <SageTVPlugin>
   <Name>sagex-services - SageTV Remote API Services</Name>
   <Identifier>sagex-api-services</Identifier>
