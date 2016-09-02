@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2016.0901.1634">
+<PluginRepository version="2016.0902.0927">
+	<SageTVPlugin>
+		<Name>Google GSON</Name>
+		<Identifier>GSON</Identifier>
+		<Description>Google's POJO - JSON library - dependency only</Description>
+		<Author>Slugger</Author>
+		<CreationDate>2010.05.01</CreationDate>
+		<ModificationDate>2016.08.31</ModificationDate>
+		<Version>1.7.2</Version>
+		<ResourcePath>gson</ResourcePath>
+		<Webpage>http://code.google.com/p/google-gson/</Webpage>
+		<PluginType>Library</PluginType>
+		<Package>
+			<PackageType>JAR</PackageType>
+			<Location>http://dl.bintray.com/opensagetv/sagetv-plugins/libraries/gson-1.7.2.zip</Location>
+			<MD5>101f70895010c963b7a114f0f0c2951f</MD5>
+			<Overwrite>true</Overwrite>
+			<!--  Defaults to true  -->
+		</Package>
+		<ReleaseNotes>
+			Move repository away from shuttering google code to bintray and minor version increment
+		</ReleaseNotes>
+	</SageTVPlugin>
 <SageTVPlugin>
   <Name>sagex-services - SageTV Remote API Services</Name>
   <Identifier>sagex-api-services</Identifier>
