@@ -2,7 +2,7 @@
 	<SageTVPlugin>
 		<Name>Google GSON</Name>
 		<Identifier>GSON</Identifier>
-		<Description>Google's POJO <-> JSON library - dependency only</Description>
+		<Description>Google's POJO - JSON library - dependency only</Description>
 		<Author>Slugger</Author>
 		<CreationDate>2010.05.01</CreationDate>
 		<ModificationDate>2016.08.31</ModificationDate>
