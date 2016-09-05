@@ -1,5 +1,7 @@
 .idea/
 tmp/
+build/
+tools-java/
 *.log
 *.zip
 github_token.txt
