@@ -16,6 +16,10 @@
         <MD5>4c257f52462860b62ab3cdab45f53082</MD5>
         <Overwrite>true</Overwrite>
     </Package>
+  <Dependency>
+    <Core/>
+    <MinVersion>9.0.7</MinVersion>
+  </Dependency>
     <ReleaseNotes>
         javax-validation-api library
     </ReleaseNotes>

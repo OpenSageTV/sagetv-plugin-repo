@@ -41,6 +41,11 @@ public class BuildLibraries {
             "        <MD5>{{md5}}</MD5>\n" +
             "        <Overwrite>true</Overwrite>\n" +
             "    </Package>\n" +
+            "  <Dependency>\n" +
+            "    <Core/>\n" +
+            // NOTE: 9.0.7 was the first version to support direct JAR linking
+            "    <MinVersion>9.0.7</MinVersion>\n" +
+            "  </Dependency>\n" +
             "    <ReleaseNotes>\n" +
             "        {{name}} library\n" +
             "    </ReleaseNotes>\n" +
@@ -57,6 +62,9 @@ public class BuildLibraries {
         public String name;
         @XmlAttribute
         public String rev;
+        // this is optional and would contain a version string to use for sagetv
+        @XmlAttribute
+        public String version;
 
         public String toUrl(String baseUrl) {
             if (baseUrl.endsWith("/")) {
@@ -118,7 +126,7 @@ public class BuildLibraries {
         HashMap<String, Object> scopes = new HashMap<String, Object>();
         scopes.put("name", name);
         scopes.put("url", url);
-        scopes.put("version", dep.rev);
+        scopes.put("version", (dep.version!=null)?dep.version:dep.rev);
         scopes.put("date", new SimpleDateFormat("yyyy-MM-dd").format(new Date()));
         scopes.put("md5", getUrlAsString(url + ".md5"));
 
