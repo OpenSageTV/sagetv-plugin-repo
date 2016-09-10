@@ -1,0 +1,2 @@
+<!-- https://mvnrepository.com/artifact/javax.validation/validation-api -->
+<dependency org="javax.validation" name="validation-api" rev="1.1.0.Final"/>

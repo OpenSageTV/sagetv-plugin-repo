@@ -1,0 +1,2 @@
+<!-- http://central.maven.org/maven2/com/google/code/gson/gson/2.7/gson-2.7.jar -->
+<dependency org="com.google.code.gson" name="gson" rev="2.7"/>

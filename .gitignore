@@ -1,6 +1,7 @@
 .idea/
 tmp/
 build/
+.gradle/
 tools-java/
 *.log
 *.zip
