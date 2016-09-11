@@ -16,11 +16,11 @@
     </Dependency>
     <Dependency>
         <Plugin>sagex-api</Plugin>
-        <MinVersion>7.1.9.15</MinVersion>
+        <MinVersion>9.0</MinVersion>
     </Dependency>
     <Dependency>
         <Plugin>sagex-services</Plugin>
-        <MinVersion>7.1.9.15</MinVersion>
+        <MinVersion>9.0</MinVersion>
     </Dependency>
     <Dependency>
         <Plugin>Jetty</Plugin>
@@ -46,5 +46,5 @@
         <Plugin>youtube</Plugin>
         <MinVersion>1.0</MinVersion>
     </Dependency>
-    <PluginType>Stanadar</PluginType>
+    <PluginType>Stanadard</PluginType>
 </SageTVPlugin>

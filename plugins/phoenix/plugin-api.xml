@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SageTVPlugin>
+    <Name>Phoenix API</Name>
+    <Identifier>phoenix-api</Identifier>
+    <Description>Phoenix API Extensions for SageTV. The Phoenix APIs include support Fanart, Dynamic Menus, Custom
+        Views, etc. The API is the foundation for the Phoenix project.
+    </Description>
+    <Author>stuckless,jusjoken,bialio,meinmaui</Author>
+    <CreationDate>2008.10.05</CreationDate>
+    <ModificationDate>2016.09.11</ModificationDate>
+    <Version>3.0.0</Version>
+    <ResourcePath>phoenix-api</ResourcePath>
+    <Webpage><![CDATA[https://github.com/stuckless/sagetv-phoenix-core]]></Webpage>
+
+    <Dependency>
+        <Core/>
+        <MinVersion>9.0.0</MinVersion>
+    </Dependency>
+
+    <Dependency>
+        <JVM/>
+        <MinVersion>1.7</MinVersion>
+    </Dependency>
+
+    <Dependency>
+        <Plugin>sagex-api</Plugin>
+        <MinVersion>9.0.0.7</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>commons-codec</Plugin>
+        <MinVersion>1.9</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>commons-dbutils</Plugin>
+        <MinVersion>1.3</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>commons-io</Plugin>
+        <MinVersion>2.4</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>commons-lang</Plugin>
+        <MinVersion>2.4</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>log4j</Plugin>
+        <MinVersion>1.2.17</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>dom4j</Plugin>
+        <MinVersion>1.6.1</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>gson</Plugin>
+        <MinVersion>1.7.1</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>jsoup</Plugin>
+        <MinVersion>1.7.1</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>themoviedb</Plugin>
+        <MinVersion>4.1.0</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>thetvdbapi</Plugin>
+        <MinVersion>1.8.0</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>commons-net</Plugin>
+        <MinVersion>1.4.1</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>htmlparser</Plugin>
+        <MinVersion>1.6</MinVersion>
+    </Dependency>
+
+    <PluginType>Library</PluginType>
+
+    <Package>
+        <PackageType>JAR</PackageType>
+        <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/phoenix/3.0.0/phoenix-api-3.0.0.zip</Location>
+        <MD5>f643d8f12f273a5272ac45b1281e197d</MD5>
+    </Package>
+
+    <ReleaseNotes>
+        2.99.0
+        * requires SageTV 9
+        * requires Java 1.7+
+        * removed upnp support
+        * removed nest support
+        * upgraded tvdb api
+        * upgraded tmdb api
+        * rewrote filename scraping
+    </ReleaseNotes>
+</SageTVPlugin>

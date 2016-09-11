@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SageTVPlugin>
+    <Name>Phoenix Core Services</Name>
+    <Identifier>phoenix-core</Identifier>
+    <Description>
+        Phoenix Core Services provides the following services
+        * automatic metadata and fanart fetching from external sources such as TheMovieDB, and TVDb.
+        * dynamic menus
+        * custom views
+        * user profiles
+        * weather
+    </Description>
+    <Author>stuckless,jusjoken,bialio,meinmaui</Author>
+    <CreationDate>2010.06.05</CreationDate>
+    <ModificationDate>2016.09.11</ModificationDate>
+    <ResourcePath>phoenix-core</ResourcePath>
+    <Version>3.0.0</Version>
+
+    <Webpage><![CDATA[https://github.com/stuckless/sagetv-phoenix-core]]></Webpage>
+
+    <Dependency>
+        <Plugin>phoenix-api</Plugin>
+        <MinVersion>3.0.0</MinVersion>
+    </Dependency>
+    <PluginType>Standard</PluginType>
+    <Package>
+        <PackageType>System</PackageType>
+        <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/phoenix/3.0.0/phoenix-core-3.0.0.zip</Location>
+        <MD5>5c8dd8b7952901450a2f2ded03309c0b</MD5>
+    </Package>
+    <ImplementationClass>sagex.phoenix.plugin.PhoenixPlugin</ImplementationClass>
+    <ReleaseNotes>
+        2.99.0
+        * requires SageTV 9
+        * requires Java 1.7+
+        * removed upnp support
+        * removed nest support
+        * upgraded tvdb api
+        * upgraded tmdb api
+        * rewrote filename scraping
+    </ReleaseNotes>
+</SageTVPlugin>

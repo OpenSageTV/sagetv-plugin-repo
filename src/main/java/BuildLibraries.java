@@ -130,7 +130,7 @@ public class BuildLibraries {
         scopes.put("date", new SimpleDateFormat("yyyy-MM-dd").format(new Date()));
         scopes.put("md5", getUrlAsString(url + ".md5"));
 
-        Writer writer = new OutputStreamWriter(new FileOutputStream(new File(dirOut, name+"-plugin.xml")));
+        Writer writer = new OutputStreamWriter(new FileOutputStream(new File(dirOut, name+".xml")));
         MustacheFactory mf = new DefaultMustacheFactory();
         Mustache mustache = mf.compile(new StringReader(template), "template");
         mustache.execute(writer, scopes);
