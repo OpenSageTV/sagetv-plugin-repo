@@ -12,25 +12,28 @@
     </Description>
     <Author>stuckless,jusjoken,bialio,meinmaui</Author>
     <CreationDate>2010.06.05</CreationDate>
-    <ModificationDate>2016.09.11</ModificationDate>
+    <ModificationDate>2016.09.19</ModificationDate>
     <ResourcePath>phoenix-core</ResourcePath>
-    <Version>3.0.0</Version>
+    <Version>3.0.1</Version>
 
     <Webpage><![CDATA[https://github.com/stuckless/sagetv-phoenix-core]]></Webpage>
 
     <Dependency>
         <Plugin>phoenix-api</Plugin>
-        <MinVersion>3.0.0</MinVersion>
+        <MinVersion>3.0.1</MinVersion>
     </Dependency>
     <PluginType>Standard</PluginType>
     <Package>
         <PackageType>System</PackageType>
-        <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/phoenix/3.0.0/phoenix-core-3.0.0.zip</Location>
+        <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/phoenix/3.0.1/phoenix-core-3.0.1.zip</Location>
         <MD5>5c8dd8b7952901450a2f2ded03309c0b</MD5>
     </Package>
     <ImplementationClass>sagex.phoenix.plugin.PhoenixPlugin</ImplementationClass>
     <ReleaseNotes>
-        2.99.0
+        3.0.1
+        * Fix for unicode filenames
+
+        3.0.0
         * requires SageTV 9
         * requires Java 1.7+
         * removed upnp support
