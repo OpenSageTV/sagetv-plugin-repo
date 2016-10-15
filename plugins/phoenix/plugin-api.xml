@@ -7,8 +7,8 @@
     </Description>
     <Author>stuckless,jusjoken,bialio,meinmaui</Author>
     <CreationDate>2008.10.05</CreationDate>
-    <ModificationDate>2016.09.19</ModificationDate>
-    <Version>3.0.1</Version>
+    <ModificationDate>2016.10.15</ModificationDate>
+    <Version>3.0.2</Version>
     <ResourcePath>phoenix-api</ResourcePath>
     <Webpage><![CDATA[https://github.com/stuckless/sagetv-phoenix-core]]></Webpage>
 
@@ -79,11 +79,15 @@
 
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/phoenix/3.0.1/phoenix-api-3.0.1.zip</Location>
-        <MD5>4478e3baca37094b188ac36cb1ac3d24</MD5>
+        <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/phoenix/3.0.2/phoenix-api-3.0.2.zip</Location>
+        <MD5>2c3d71aa7a41a2e5003ded2e9c033313</MD5>
     </Package>
 
     <ReleaseNotes>
+        3.0.2
+        * Xml Validation will not completely fail if there are missing views, filters, sources, etc.  It will continue to load the views and flag the views with errors.
+        * Fixed bug where WeatherAPI was generating with compile errors.
+
         3.0.1
         * Fix for unicode filenames
 
