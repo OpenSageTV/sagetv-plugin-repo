@@ -4,8 +4,8 @@
     <Description>SageTV Dependency JAR Plugin for SageCollegeProject-UI do not download independently</Description>
     <Author>colleproject</Author>
     <CreationDate>2016-10-19</CreationDate>
-    <ModificationDate>2016.11.11</ModificationDate>
-    <Version beta="true">1.27</Version>
+    <ModificationDate>2016.11.15</ModificationDate>
+    <Version beta="true">1.30</Version>
     <Desktop>false</Desktop>
     <Dependency>
     <Plugin>phoenix-core</Plugin>
@@ -18,8 +18,8 @@
     <PluginType>Standard</PluginType>
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>https://github.com/sagecollegeproject/SageCollegeProject/raw/master/ZippedProject/SageCollegeProject_Jar_1.27.zip</Location>
-        <MD5>152846de547547740b9ff90088f2a87d</MD5>
+        <Location>https://github.com/sagecollegeproject/SageCollegeProject/raw/master/ZippedProject/SageCollegeProject_Jar_1.30.zip</Location>
+        <MD5>9883620b81f7af41d7e2761f830191ab</MD5>
     </Package>
     <ImplementationClass>SageCollegeProject.SCP_plugin</ImplementationClass>
 </SageTVPlugin>
