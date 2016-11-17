@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2016.1116.1059">
+<PluginRepository version="2016.1117.0210">
 <SageTVPlugin>
     <Name>SageCollegeProject_API</Name>
     <Identifier>sagecollegeproject_api</Identifier>
     <Description>SageTV Dependency JAR Plugin for SageCollegeProject-UI do not download independently</Description>
     <Author>colleproject</Author>
     <CreationDate>2016-10-19</CreationDate>
-    <ModificationDate>2016.11.15</ModificationDate>
-    <Version beta="true">1.30</Version>
+    <ModificationDate>2016.11.16</ModificationDate>
+    <Version beta="true">1.31</Version>
     <Desktop>false</Desktop>
     <Dependency>
     <Plugin>phoenix-core</Plugin>
@@ -20,8 +20,8 @@
     <PluginType>Standard</PluginType>
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>https://github.com/sagecollegeproject/SageCollegeProject/raw/master/ZippedProject/SageCollegeProject_Jar_1.30.zip</Location>
-        <MD5>9883620b81f7af41d7e2761f830191ab</MD5>
+        <Location>https://github.com/sagecollegeproject/SageCollegeProject/raw/master/ZippedProject/SageCollegeProject_Jar_1.31.zip</Location>
+        <MD5>2ac12f043d5d4d6fead6765301fdce18</MD5>
     </Package>
     <ImplementationClass>SageCollegeProject.SCP_plugin</ImplementationClass>
 </SageTVPlugin>
@@ -31,8 +31,8 @@
   <Description>Sage College Project was written by a college student for Sagetv. It is a very simplte UI meant for use on Nvidia shield or like mini client. Options are limited. </Description>
   <Author>CollegeProject</Author>
   <CreationDate>2016-10-19</CreationDate>
-  <ModificationDate>2016.11.15</ModificationDate>
-  <Version beta="true">1.19</Version> 
+  <ModificationDate>2016.11.16</ModificationDate>
+  <Version beta="true">1.20</Version> 
    <ReleaseNotes>*A1.04 Initial Alpha release</ReleaseNotes>
   <Webpage>https://forums.sagetv.com/forums/showthread.php?t=63441</Webpage>
   <Dependency>
@@ -50,22 +50,22 @@
 
   <Dependency>
     <Plugin>sagecollegeproject_api</Plugin>
-    <MinVersion>1.30</MinVersion>
+    <MinVersion>1.31</MinVersion>
   </Dependency>
 
 <PluginType>STVI</PluginType>
 
   <Package>
     <PackageType>STVI</PackageType>
-    <Location>https://github.com/sagecollegeproject/SageCollegeProject/raw/master/ZippedProject/SageCollegeProjectSTVi_Beta1.19.zip</Location>
-    <MD5>b2dfb572a4bc4df7409826eb24a75f15</MD5>
+    <Location>https://github.com/sagecollegeproject/SageCollegeProject/raw/master/ZippedProject/SageCollegeProjectSTVi_Beta1.20.zip</Location>
+    <MD5>6eb198df0787c681fba6b44735b88e86</MD5>
   </Package>
    <Package>
     <PackageType>System</PackageType>
     <Location>https://github.com/sagecollegeproject/SageCollegeProject/raw/master/ZippedProject/SageCollegeProjectVFS1.01.zip</Location>
    <MD5>2688d8533a6046fb44b3880871372591</MD5>
     </Package>
-<STVImport>SageCollegeProject_PublicBeta_1.19.stvi</STVImport>
+<STVImport>SageCollegeProject_PublicBeta_1.20.stvi</STVImport>
 </SageTVPlugin>
 <SageTVPlugin>
 	<Name>Batch Metadata Tools - Web Interface</Name>
