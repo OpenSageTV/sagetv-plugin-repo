@@ -6,6 +6,7 @@
   <CreationDate>2016-10-19</CreationDate>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   <ModificationDate>2016.11.17</ModificationDate>
   <Version beta="true">1.23</Version> 
 =======
@@ -20,6 +21,10 @@
 =======
   <Version beta="true">1.21</Version> 
 >>>>>>> STVi 1.21
+=======
+  <ModificationDate>2016.11.17</ModificationDate>
+  <Version beta="true">1.23</Version> 
+>>>>>>> 1.23 UI
    <ReleaseNotes>*A1.04 Initial Alpha release</ReleaseNotes>
   <Webpage>https://forums.sagetv.com/forums/showthread.php?t=63441</Webpage>
   <Dependency>
@@ -39,6 +44,7 @@
     <Plugin>sagecollegeproject_api</Plugin>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <MinVersion>1.33</MinVersion>
 =======
     <MinVersion>1.30</MinVersion>
@@ -46,12 +52,16 @@
 =======
     <MinVersion>1.31</MinVersion>
 >>>>>>> STVI 1.20
+=======
+    <MinVersion>1.33</MinVersion>
+>>>>>>> 1.23 UI
   </Dependency>
 
 <PluginType>STVI</PluginType>
 
   <Package>
     <PackageType>STVI</PackageType>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -75,12 +85,17 @@
     <Location>https://github.com/sagecollegeproject/SageCollegeProject/raw/master/ZippedProject/SageCollegeProjectSTVi_Beta1.21.zip</Location>
     <MD5>5de7cadfaa022cb287eb6e407d19e87d</MD5>
 >>>>>>> STVi 1.21
+=======
+    <Location>https://github.com/sagecollegeproject/SageCollegeProject/raw/master/ZippedProject/SageCollegeProjectSTVi_Beta1.23.zip</Location>
+    <MD5>bbead5bb9c3482d242e0b5e2d96bf005</MD5>
+>>>>>>> 1.23 UI
   </Package>
    <Package>
     <PackageType>System</PackageType>
-    <Location>https://github.com/sagecollegeproject/SageCollegeProject/raw/master/ZippedProject/SageCollegeProjectVFS1.01.zip</Location>
-   <MD5>2688d8533a6046fb44b3880871372591</MD5>
+    <Location>https://github.com/sagecollegeproject/SageCollegeProject/raw/master/ZippedProject/SageCollegeProjectVFS1.02.zip</Location>
+   <MD5>6964d07ad5a2d53c18608b8d5819bbc2</MD5>
     </Package>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <STVImport>SageCollegeProject_PublicBeta_1.19.stvi</STVImport>
@@ -91,4 +106,7 @@
 =======
 <STVImport>SageCollegeProject_PublicBeta_1.21.stvi</STVImport>
 >>>>>>> STVi 1.21
+=======
+<STVImport>SageCollegeProject_PublicBeta_1.23.stvi</STVImport>
+>>>>>>> 1.23 UI
 </SageTVPlugin>

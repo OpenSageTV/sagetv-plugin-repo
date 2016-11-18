@@ -6,6 +6,7 @@
     <CreationDate>2016-10-19</CreationDate>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <ModificationDate>2016.11.17</ModificationDate>
     <Version beta="true">1.33</Version>
 =======
@@ -16,6 +17,10 @@
     <ModificationDate>2016.11.16</ModificationDate>
     <Version beta="true">1.31</Version>
 >>>>>>> STVI 1.20
+=======
+    <ModificationDate>2016.11.17</ModificationDate>
+    <Version beta="true">1.33</Version>
+>>>>>>> 1.23 UI
     <Desktop>false</Desktop>
     <Dependency>
     <Plugin>phoenix-core</Plugin>
@@ -30,6 +35,7 @@
         <PackageType>JAR</PackageType>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <Location>https://github.com/sagecollegeproject/SageCollegeProject/raw/master/ZippedProject/SageCollegeProject_Jar_1.33.zip</Location>
         <MD5>130dd8364e8428659885287ceadf0f5d</MD5>
 =======
@@ -40,6 +46,10 @@
         <Location>https://github.com/sagecollegeproject/SageCollegeProject/raw/master/ZippedProject/SageCollegeProject_Jar_1.31.zip</Location>
         <MD5>2ac12f043d5d4d6fead6765301fdce18</MD5>
 >>>>>>> STVI 1.20
+=======
+        <Location>https://github.com/sagecollegeproject/SageCollegeProject/raw/master/ZippedProject/SageCollegeProject_Jar_1.33.zip</Location>
+        <MD5>130dd8364e8428659885287ceadf0f5d</MD5>
+>>>>>>> 1.23 UI
     </Package>
     <ImplementationClass>SageCollegeProject.SCP_plugin</ImplementationClass>
 </SageTVPlugin>
