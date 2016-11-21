@@ -4,23 +4,8 @@
     <Description>SageTV Dependency JAR Plugin for SageCollegeProject-UI do not download independently</Description>
     <Author>colleproject</Author>
     <CreationDate>2016-10-19</CreationDate>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     <ModificationDate>2016.11.17</ModificationDate>
     <Version beta="true">1.33</Version>
-=======
-    <ModificationDate>2016.11.15</ModificationDate>
-    <Version beta="true">1.30</Version>
->>>>>>> 1.19
-=======
-    <ModificationDate>2016.11.16</ModificationDate>
-    <Version beta="true">1.31</Version>
->>>>>>> STVI 1.20
-=======
-    <ModificationDate>2016.11.17</ModificationDate>
-    <Version beta="true">1.33</Version>
->>>>>>> 1.23 UI
     <Desktop>false</Desktop>
     <Dependency>
     <Plugin>phoenix-core</Plugin>
@@ -33,23 +18,8 @@
     <PluginType>Standard</PluginType>
     <Package>
         <PackageType>JAR</PackageType>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
         <Location>https://github.com/sagecollegeproject/SageCollegeProject/raw/master/ZippedProject/SageCollegeProject_Jar_1.33.zip</Location>
         <MD5>130dd8364e8428659885287ceadf0f5d</MD5>
-=======
-        <Location>https://github.com/sagecollegeproject/SageCollegeProject/raw/master/ZippedProject/SageCollegeProject_Jar_1.30.zip</Location>
-        <MD5>9883620b81f7af41d7e2761f830191ab</MD5>
->>>>>>> 1.19
-=======
-        <Location>https://github.com/sagecollegeproject/SageCollegeProject/raw/master/ZippedProject/SageCollegeProject_Jar_1.31.zip</Location>
-        <MD5>2ac12f043d5d4d6fead6765301fdce18</MD5>
->>>>>>> STVI 1.20
-=======
-        <Location>https://github.com/sagecollegeproject/SageCollegeProject/raw/master/ZippedProject/SageCollegeProject_Jar_1.33.zip</Location>
-        <MD5>130dd8364e8428659885287ceadf0f5d</MD5>
->>>>>>> 1.23 UI
     </Package>
     <ImplementationClass>SageCollegeProject.SCP_plugin</ImplementationClass>
 </SageTVPlugin>
