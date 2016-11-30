@@ -4,8 +4,8 @@
   <Description>Sage College Project was written by a college student for Sagetv. It is a very simplte UI meant for use on Nvidia shield or like mini client. Options are limited. </Description>
   <Author>CollegeProject</Author>
   <CreationDate>2016-10-19</CreationDate>
-  <ModificationDate>2016.11.11</ModificationDate>
-  <Version beta="true">1.14</Version> 
+  <ModificationDate>2016.11.21</ModificationDate>
+  <Version beta="true">1.25</Version> 
    <ReleaseNotes>*A1.04 Initial Alpha release</ReleaseNotes>
   <Webpage>https://forums.sagetv.com/forums/showthread.php?t=63441</Webpage>
   <Dependency>
@@ -23,20 +23,20 @@
 
   <Dependency>
     <Plugin>sagecollegeproject_api</Plugin>
-    <MinVersion>1.27</MinVersion>
+    <MinVersion>1.33</MinVersion>
   </Dependency>
 
 <PluginType>STVI</PluginType>
 
   <Package>
     <PackageType>STVI</PackageType>
-    <Location>https://github.com/sagecollegeproject/SageCollegeProject/raw/master/ZippedProject/SageCollegeProjectSTVi_Beta1.14.zip</Location>
-    <MD5>0afbef69087b12ff670c30b29b219838</MD5>
+    <Location>https://github.com/sagecollegeproject/SageCollegeProject/raw/master/ZippedProject/SageCollegeProjectSTVi_Beta1.25.zip</Location>
+    <MD5>cb77ba38b5acb0e4d1a26b8840d1907e</MD5>
   </Package>
    <Package>
     <PackageType>System</PackageType>
-    <Location>https://github.com/sagecollegeproject/SageCollegeProject/raw/master/ZippedProject/SageCollegeProjectVFS1.01.zip</Location>
-   <MD5>2688d8533a6046fb44b3880871372591</MD5>
+    <Location>https://github.com/sagecollegeproject/SageCollegeProject/raw/master/ZippedProject/SageCollegeProjectVFS1.02.zip</Location>
+   <MD5>6964d07ad5a2d53c18608b8d5819bbc2</MD5>
     </Package>
-<STVImport>SageCollegeProject_PublicBeta_1.14.stvi</STVImport>
+<STVImport>SageCollegeProject_PublicBeta_1.25.stvi</STVImport>
 </SageTVPlugin>
