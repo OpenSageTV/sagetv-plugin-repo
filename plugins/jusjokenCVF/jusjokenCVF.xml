@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SageTVPlugin>
+  <Name>CVF - Custom Video Folder</Name>
+  <Identifier>jusjokenCVF</Identifier>
+  <Description>
+  A collection of Video Folder enhancements,
+   - adds a watched count at folder level and category level
+   - supports Watched icons for DVD and BD media files
+   - removes the folder and category level thumbnails
+   - adds Set/Clear Watched function at the folder and category level on the Select/Info dialog
+       - can now be accessed at the folder level by using Watched command
+       - can now be accessed on the Video Browser Options dialog
+   - adds setting to include/hide watched videos from folder lists
+       * hides folders where all videos are marked Watched
+       - works for DVD and Title views in addition to the Folders view
+       - the transparent Watched icon is displayed in the top icon status area if the watched videos are filtered out of the lists
+   - adds the focus indicator on video items
+   - displays Episode Name (not title or filename) in folder list
+   - displays Season and Episode numbers with Episode Name in lists and right hand info area if that Metadata exists
+        - works with Multi-Column folder views
+   - displays Disc number in video lists if the metadata is available
+   - Sort option enhanced for Folder and title views from video Browser Options
+    - in Title view - sort by Title, Title + Date, Date, Original Air Date, Duration and Filename
+    - in Folder view - sort by Original Air Date, Filename, Series, Date, and File Modified Date
+      (for series this is by default Title, Season Number, Episode Number and then Episode Name)
+   - Video Details displays the Phoenix based Title (same as used for the sorting)
+   - Video Details thumbnail is larger if video preview is set to never
+   * adds a new menu to the Options menu (menu moved in 1.23) to...
+    - Show/Hide the Preview Thumb (top right)
+    - Use Fanart Thumbnails (Diamond only)
+    - Show Larger Thumbnails (Diamond only)
+    - Switch to a Large Preview Thumb (top right) (non-Diamond)
+    - Include the Title with the Episode Name
+    * Always Exclude Title from Info List (right side panel) 
+    - Show/Hide thumbnails for video menu items
+  </Description>
+  <Author>jusjoken</Author>
+  <CreationDate>2010.07.25</CreationDate>
+  <ModificationDate>2017.01.04</ModificationDate>
+  <Version>1.27</Version>
+  <Dependency>
+    <Plugin>phoenix-api</Plugin>
+    <MinVersion>3.0.0</MinVersion>
+  </Dependency>
+  <Dependency>
+    <STV>SageTV7</STV>
+    <MinVersion>9.0</MinVersion>
+  </Dependency> 
+  <PluginType>STVI</PluginType>
+  <STVImport>CVF.stvi</STVImport>
+  <Package>
+    <PackageType>STVI</PackageType>
+    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/cvf/CVF_1_27.zip</Location>
+    <MD5>b97f315fb5de4178bd4a2ff5fbb4d75f</MD5>
+  </Package>
+  <Screenshot>https://github.com/jusjoken/cvf/raw/master/screenshots/CVF_Watched_LargePreview_RemovedThumbs.PNG</Screenshot>
+  <Screenshot>https://github.com/jusjoken/cvf/raw/master/screenshots/CVF_Focus_SeasonEpisode_Sort.PNG</Screenshot>
+  <Screenshot>https://github.com/jusjoken/cvf/raw/master/screenshots/CVF_PreviewOptions.PNG</Screenshot>
+  <Screenshot>https://github.com/jusjoken/cvf/raw/master/screenshots/CVF_PhoenixTitleonVideoDetails.PNG</Screenshot>
+  <Screenshot>https://github.com/jusjoken/cvf/raw/master/screenshots/CVF_MultiColumn.PNG</Screenshot>
+  <Screenshot>https://github.com/jusjoken/cvf/raw/master/screenshots/CVF_WatchedOptions.PNG</Screenshot>
+  <ReleaseNotes>
+    Version 1.27 - NO CHANGES - version for SageTV v9+
+    Version 1.26 - NO CHANGES - only the download source location has moved from Google Code to BinTray
+    Version 1.25 - Fix for video thumbs showing in Separate Folder mode
+    Version 1.24 - Some compatibility issues fixed to coexist with some other Plugins
+    Version 1.23 - Right side Info List updated to handle Title/Episode changes in SageTV beta 7.1.8
+               - default: if Title matches Folder name then Title is not shown
+               - new option to Always Exclude Title from Info List
+               - CVF Options moved to Options Menu (below Menu Options) and removed from Menu Options
+               - Fixed some BD/DVD naming issues
+    Version 1.22 - Fix to support new Title/Episode field changes in SageTV beta 7.1.8
+               - note: if Episode name is different from Title then both are shown
+               - Fix for SE sorts that changed with SageTV beta 7.1.8
+               - Now shows Disc number for multi disc movies if that info is in the metadata
+    Version 1.21 - Fix for TV Guide Issue caused by 1.20
+    Version 1.20 - Works with 7.1+ now (does not support previous versions of SageTV)
+               - Watched filter will now hide fully watched folders
+               - Sort options now integrated with SageTV 7.1+ built in sort options
+               - better Diamond integration (works with or without Diamond 3.3+)
+               - With Diamond - turn on/off Fanart Thumbnails
+    Version 1.15 - Fix for Details Display under Sage 7.1.2
+    Version 1.14 - Fix for displaying S00E00 on some Movies
+    Version 1.12 - Fix for quick type search option from default STV that was broken by this plugin
+    Version 1.11 - Fix for sort by OriginalAirDate (for Title view)
+    Version 1.10 - Fix for sort by OriginalAirDate
+               - Added Original Air Date to Video Details
+    Version 1.09 - Minor change to remove partially displayed focus indicator on multi-column views
+    Version 1.08 - Add option to hide the video thumbnails in Folder views
+               - Add option to show the Title in addition to an Episode Name for videos with Season info
+               - Fix for sort options when no option had been selected
+    Version 1.07 - Add sort option available for Title and Folder views
+               - Video Details thumb size is now larger if the video preview option is set to Never
+    Version 1.06 - Add support for filtering Watched Videos in the Title and DVD views
+               - Added ability to set Include Watched setting in the Video Browser Options
+    Version 1.05 - Fixed Watched Options dialog issues for Videos and Recordings
+    Version 1.04 - Added support for Multi-Column Folder views
+               - updated for Sage 7 beta 15
+               - Category view updated to match folder view design (watched count etc)
+               - Right hand side info area shows watched counts for folders
+               - Right hand side info area shows SxxE00 for videos with Season info
+    Version 1.03 - Added support for Watched icons for DVD and BD media
+               - updated for Sage 7 beta 14
+               - removed some "DVD" text prefixes from some lists
+    Version 1.02 - Added use of Watched command to access Watched settings
+               - Added ability to only show unWatched videos
+    Version 1.01 - Minor update to fix sorting in non-Combined Folder view
+    Version 1.00 - Initial release for SageTV version 7.
+  </ReleaseNotes>
+</SageTVPlugin>
