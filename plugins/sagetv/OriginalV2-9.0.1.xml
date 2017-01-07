@@ -9,15 +9,15 @@
     <Author>sagetv</Author>
     <CreationDate>2016.01.07</CreationDate>
     <ModificationDate>2017.01.07</ModificationDate>
-    <Version>9.0</Version>
+    <Version>9.0.1</Version>
     <Webpage><![CDATA[https://forums.sagetv.com/]]></Webpage>
 
     <PluginType>STV</PluginType>
 
     <Package>
         <PackageType>STV</PackageType>
-        <Location><![CDATA[http://dl.bintray.com/opensagetv/sagetv/sagetv-themes/9.0/OriginalV2-9.0.zip]]></Location>
-        <MD5>45cf7bab72f4e9da9603b13200059cff</MD5>
+        <Location><![CDATA[http://dl.bintray.com/opensagetv/sagetv/sagetv-themes/9.0/OriginalV2-9.0.1.zip]]></Location>
+        <MD5>166709c37832906e731bd466d6be5e53</MD5>
     </Package>
 
     <ReleaseNotes><![CDATA[
