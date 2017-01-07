@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2017.0106.0204">
+<PluginRepository version="2017.0107.1408">
 <SageTVPlugin>
 
   <Name>Gemstone for Default SageTV9 (previously Diamond)</Name> 
@@ -1085,6 +1085,54 @@ Phoenix is a STV replacement for SageTV9 providing the following features
         * upgraded tmdb api
         * rewrote filename scraping
     </ReleaseNotes>
+</SageTVPlugin>
+<SageTVPlugin>
+    <Name>SageTV 2 UI</Name>
+    <Identifier>SageTV2</Identifier>
+    <Description><![CDATA[
+    SageTV V2 UI
+  ]]></Description>
+    <Screenshot></Screenshot>
+    <Author>sagetv</Author>
+    <CreationDate>2016.01.07</CreationDate>
+    <ModificationDate>2017.01.07</ModificationDate>
+    <Version>9.0</Version>
+    <Webpage><![CDATA[https://forums.sagetv.com/]]></Webpage>
+
+    <PluginType>STV</PluginType>
+
+    <Package>
+        <PackageType>STV</PackageType>
+        <Location><![CDATA[http://dl.bintray.com/opensagetv/sagetv/sagetv-themes/9.0/OriginalV2-9.0.zip]]></Location>
+        <MD5>45cf7bab72f4e9da9603b13200059cff</MD5>
+    </Package>
+
+    <ReleaseNotes><![CDATA[
+  ]]></ReleaseNotes>
+</SageTVPlugin>
+<SageTVPlugin>
+    <Name>SageTV 3 UI</Name>
+    <Identifier>SageTV3</Identifier>
+    <Description><![CDATA[
+    SageTV V3 UI
+  ]]></Description>
+    <Screenshot></Screenshot>
+    <Author>sagetv</Author>
+    <CreationDate>2016.01.07</CreationDate>
+    <ModificationDate>2017.01.07</ModificationDate>
+    <Version>9.0</Version>
+    <Webpage><![CDATA[https://forums.sagetv.com/]]></Webpage>
+
+    <PluginType>STV</PluginType>
+
+    <Package>
+        <PackageType>STV</PackageType>
+        <Location><![CDATA[http://dl.bintray.com/opensagetv/sagetv/sagetv-themes/9.0/SageTV3-9.0.zip]]></Location>
+        <MD5>0f500cde8bb0ee50354598156e3a2c19</MD5>
+    </Package>
+
+    <ReleaseNotes><![CDATA[
+  ]]></ReleaseNotes>
 </SageTVPlugin>
 <SageTVPlugin>
   <Name>sagex-services - SageTV Remote API Services</Name>
