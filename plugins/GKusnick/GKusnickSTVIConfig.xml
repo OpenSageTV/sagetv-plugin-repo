@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SageTVPlugin>
+  <Identifier>GKusnickSTVIConfig</Identifier>
+  <PluginType>STVI</PluginType>
+  <Name>STVI Configurator</Name>
+  <Description>Shared STVI configuration framework for STVI developers.
+
+(For dependency purposes; end users should not need to install this directly.)</Description>
+  <Author>GKusnick</Author>
+  <CreationDate>2010.06.21</CreationDate>
+  <Desktop>false</Desktop>
+  <Dependency>
+    <Core />
+    <MinVersion>7.0.12</MinVersion>
+  </Dependency>
+  <Dependency>
+    <STV>SageTV7</STV>
+    <MinVersion>7.0.12</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Plugin>GKusnickToolsLib</Plugin>
+    <MinVersion>1.5.5.2</MinVersion>
+  </Dependency>
+  <STVImport>GKusnick-STVIConfig.xml</STVImport>
+<Version>1.0.8.2</Version>
+<ModificationDate>2017.01.08</ModificationDate>
+<Package>
+  <PackageType>STVI</PackageType>
+  <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/GKusnick/9.0/GKusnickSTVIConfig-STVI-1.0.8.zip</Location>
+  <MD5>c39c40a575645b4d31e89eafca51cdd4</MD5>
+  <Overwrite>true</Overwrite>
+</Package>
+</SageTVPlugin>

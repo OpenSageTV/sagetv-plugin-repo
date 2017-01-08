@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SageTVPlugin>
+  <Identifier>GKusnickOpaquePanelTheme</Identifier>
+  <PluginType>Theme</PluginType>
+  <Name>Opaque Panel Theme</Name>
+  <Description>A variation of the Standard theme with opaque panel background.</Description>
+  <Author>GKusnick</Author>
+  <CreationDate>2010.05.24</CreationDate>
+  <Dependency>
+    <STV>SageTV7</STV>
+    <MinVersion>7.0</MinVersion>
+  </Dependency>
+<Version>1.1.1</Version>
+<ModificationDate>2017.01.08</ModificationDate>
+<Package>
+  <PackageType>STV</PackageType>
+  <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/GKusnick/9.0/GKusnickOpaquePanelTheme-STV-1.1.0.zip</Location>
+  <MD5>1eed0a05b1e1d761fe3343cd1de60b20</MD5>
+  <Overwrite>true</Overwrite>
+</Package>
+</SageTVPlugin>
