@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2017.0107.1706">
+<PluginRepository version="2017.0108.1547">
 <SageTVPlugin>
 
   <Name>Gemstone for Default SageTV9 (previously Diamond)</Name> 
@@ -87,6 +87,210 @@
 
 </SageTVPlugin>
 
+<SageTVPlugin>
+  <Identifier>GKusnickDARSwitcher</Identifier>
+  <PluginType>STVI</PluginType>
+  <Name>Display Aspect Ratio Switcher</Name>
+  <Description>Provides automatic display aspect ratio switching for people with multiple monitors that have different aspect ratios (for instance, one 4x3 and one 16x10 widescreen).</Description>
+  <ReleaseNotes>Added configuration UI to switch modes.</ReleaseNotes>
+  <Author>GKusnick</Author>
+  <CreationDate>2007.01.20</CreationDate>
+  <Webpage>http://forums.sagetv.com/forums/showthread.php?t=49224</Webpage>
+  <Dependency>
+    <STV>SageTV7</STV>
+    <MinVersion>7.0</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Plugin>GKusnickToolsLib</Plugin>
+    <MinVersion>1.5.5.2</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Plugin>GKusnickSTVIConfig</Plugin>
+    <MinVersion>1.0.8.2</MinVersion>
+  </Dependency>
+  <STVImport>GKusnick-DARSwitcher.xml</STVImport>
+<Version>1.4.4.2</Version>
+<ModificationDate>2017.01.08</ModificationDate>
+<Package>
+  <PackageType>STVI</PackageType>
+  <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/GKusnick/9.0/GKusnickDARSwitcher-STVI-1.4.4.zip</Location>
+  <MD5>edfd2930acb19cb400136046b9399c56</MD5>
+  <Overwrite>true</Overwrite>
+</Package>
+</SageTVPlugin>
+<SageTVPlugin>
+  <Identifier>GKusnickOpaquePanelTheme</Identifier>
+  <PluginType>Theme</PluginType>
+  <Name>Opaque Panel Theme</Name>
+  <Description>A variation of the Standard theme with opaque panel background.</Description>
+  <Author>GKusnick</Author>
+  <CreationDate>2010.05.24</CreationDate>
+  <Dependency>
+    <STV>SageTV7</STV>
+    <MinVersion>7.0</MinVersion>
+  </Dependency>
+<Version>1.1.1</Version>
+<ModificationDate>2017.01.08</ModificationDate>
+<Package>
+  <PackageType>STV</PackageType>
+  <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/GKusnick/9.0/GKusnickOpaquePanelTheme-STV-1.1.0.zip</Location>
+  <MD5>1eed0a05b1e1d761fe3343cd1de60b20</MD5>
+  <Overwrite>true</Overwrite>
+</Package>
+</SageTVPlugin>
+<SageTVPlugin>
+  <Identifier>GKusnickSTVIConfig</Identifier>
+  <PluginType>STVI</PluginType>
+  <Name>STVI Configurator</Name>
+  <Description>Shared STVI configuration framework for STVI developers.
+
+(For dependency purposes; end users should not need to install this directly.)</Description>
+  <Author>GKusnick</Author>
+  <CreationDate>2010.06.21</CreationDate>
+  <Desktop>false</Desktop>
+  <Dependency>
+    <Core />
+    <MinVersion>7.0.12</MinVersion>
+  </Dependency>
+  <Dependency>
+    <STV>SageTV7</STV>
+    <MinVersion>7.0.12</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Plugin>GKusnickToolsLib</Plugin>
+    <MinVersion>1.5.5.2</MinVersion>
+  </Dependency>
+  <STVImport>GKusnick-STVIConfig.xml</STVImport>
+<Version>1.0.8.2</Version>
+<ModificationDate>2017.01.08</ModificationDate>
+<Package>
+  <PackageType>STVI</PackageType>
+  <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/GKusnick/9.0/GKusnickSTVIConfig-STVI-1.0.8.zip</Location>
+  <MD5>c39c40a575645b4d31e89eafca51cdd4</MD5>
+  <Overwrite>true</Overwrite>
+</Package>
+</SageTVPlugin>
+<SageTVPlugin>
+  <Identifier>GKusnickStudioFramework</Identifier>
+  <PluginType>Standard</PluginType>
+  <Name>GKusnick&apos;s Studio Plugin Framework</Name>
+  <Description>A plugin framework for SageTV Studio.  Using this framework, plugin developers coding in Java can create Studio plugins that extend the Studio user interface with custom commands and menus.
+ 
+(For Studio geeks only; there are no end-user features in this plugin.)</Description>
+  <ReleaseNotes>Hotkeys now work correctly without having to open the Plugins menu first.
+
+Note that the framework architecture has been revamped for SageTV V7.  Existing Studio plugins will need to be recoded for compatibility.</ReleaseNotes>
+  <Author>GKusnick</Author>
+  <CreationDate>2006.10.10</CreationDate>
+  <Desktop>true</Desktop>
+  <ResourcePath>GKusnick/StudioFramework</ResourcePath>
+  <Webpage>http://forums.sagetv.com/forums/showthread.php?t=48443</Webpage>
+  <Dependency>
+    <JVM />
+    <MinVersion>1.5</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Core />
+    <MinVersion>7.0.10</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Plugin>GKusnickToolsLib</Plugin>
+    <MinVersion>1.5.5.2</MinVersion>
+  </Dependency>
+  <ImplementationClass>gkusnick.sagetv.studio.Inject</ImplementationClass>
+<Version>1.2.2</Version>
+<ModificationDate>2017.01.08</ModificationDate>
+<Package>
+  <PackageType>JAR</PackageType>
+  <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/GKusnick/9.0/GKusnickStudioFramework-Jar-1.2.1.zip</Location>
+  <MD5>346c0794d8a6aa8c35145f260e606a11</MD5>
+  <Overwrite>true</Overwrite>
+</Package>
+<Package>
+  <PackageType>System</PackageType>
+  <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/GKusnick/9.0/GKusnickStudioFramework-Sys-1.2.1.zip</Location>
+  <MD5>cef9badd946c53c6f3ba4886d4d1e6a0</MD5>
+  <Overwrite>true</Overwrite>
+</Package>
+</SageTVPlugin>
+<SageTVPlugin>
+  <Identifier>GKusnickTools</Identifier>
+  <PluginType>Standard</PluginType>
+  <Name>GKusnick&apos;s Studio Tools</Name>
+  <Description>A Studio plugin with a rich set of searching and editing commands.
+ 
+(For Studio geeks only; there are no end-user features in this plugin.)</Description>
+  <ReleaseNotes>Note that my STVI Tools have been retired as obsolete.  Use Studio&apos;s built-in STVI generator instead.</ReleaseNotes>
+  <Author>GKusnick</Author>
+  <CreationDate>2006.10.10</CreationDate>
+  <Desktop>true</Desktop>
+  <ResourcePath>GKusnick/Tools</ResourcePath>
+  <Dependency>
+    <JVM />
+    <MinVersion>1.5</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Core />
+    <MinVersion>7.0.9</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Plugin>GKusnickToolsLib</Plugin>
+    <MinVersion>1.5.5.2</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Plugin>GKusnickStudioFramework</Plugin>
+    <MinVersion>1.2.2</MinVersion>
+  </Dependency>
+  <ImplementationClass>gkusnick.sagetv.studio.tools.Plugin</ImplementationClass>
+<Version>1.0.2</Version>
+<ModificationDate>2017.01.08</ModificationDate>
+<Package>
+  <PackageType>JAR</PackageType>
+  <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/GKusnick/9.0/GKusnickTools-Jar-1.0.1.zip</Location>
+  <MD5>5464487cd128c3455af4a548c6fedddd</MD5>
+  <Overwrite>true</Overwrite>
+</Package>
+<Package>
+  <PackageType>System</PackageType>
+  <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/GKusnick/9.0/GKusnickTools-Sys-1.0.1.zip</Location>
+  <MD5>a6b3e6de10bc9ec9fd2dee9b99690ec6</MD5>
+  <Overwrite>true</Overwrite>
+</Package>
+</SageTVPlugin>
+<SageTVPlugin>
+  <Identifier>GKusnickToolsLib</Identifier>
+  <PluginType>Library</PluginType>
+  <Name>GKusnick&apos;s Tools Library</Name>
+  <Description>A library of SageTV API wrappers and utility classes for SageTV plugin developers.</Description>
+  <ReleaseNotes>API wrappers are current as of SageTV V7.0.17 and include the UserRecordAPI.</ReleaseNotes>
+  <Author>GKusnick</Author>
+  <CreationDate>2006.10.10</CreationDate>
+  <Desktop>false</Desktop>
+  <ResourcePath>GKusnick/ToolsLib</ResourcePath>
+  <Webpage>http://forums.sagetv.com/forums/showthread.php?t=48443</Webpage>
+  <Dependency>
+    <JVM />
+    <MinVersion>1.5</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Core />
+    <MinVersion>7.0</MinVersion>
+  </Dependency>
+<Version>1.5.5.2</Version>
+<ModificationDate>2017.01.08</ModificationDate>
+<Package>
+  <PackageType>JAR</PackageType>
+  <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/GKusnick/9.0/GKusnickToolsLib-Jar-1.5.5.zip</Location>
+  <MD5>b82afc4ea534fa77ba191cbd5d2cb46c</MD5>
+  <Overwrite>true</Overwrite>
+</Package>
+<Package>
+  <PackageType>System</PackageType>
+  <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/GKusnick/9.0/GKusnickToolsLib-Sys-1.5.5.zip</Location>
+  <MD5>7e9f1de020dea9352a402d17d141072c</MD5>
+  <Overwrite>true</Overwrite>
+</Package>
+</SageTVPlugin>
 <SageTVPlugin>
     <Name>SageCollegeProject_API</Name>
     <Identifier>sagecollegeproject_api</Identifier>
