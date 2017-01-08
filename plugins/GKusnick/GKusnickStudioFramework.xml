@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SageTVPlugin>
+  <Identifier>GKusnickStudioFramework</Identifier>
+  <PluginType>Standard</PluginType>
+  <Name>GKusnick&apos;s Studio Plugin Framework</Name>
+  <Description>A plugin framework for SageTV Studio.  Using this framework, plugin developers coding in Java can create Studio plugins that extend the Studio user interface with custom commands and menus.
+ 
+(For Studio geeks only; there are no end-user features in this plugin.)</Description>
+  <ReleaseNotes>Hotkeys now work correctly without having to open the Plugins menu first.
+
+Note that the framework architecture has been revamped for SageTV V7.  Existing Studio plugins will need to be recoded for compatibility.</ReleaseNotes>
+  <Author>GKusnick</Author>
+  <CreationDate>2006.10.10</CreationDate>
+  <Desktop>true</Desktop>
+  <ResourcePath>GKusnick/StudioFramework</ResourcePath>
+  <Webpage>http://forums.sagetv.com/forums/showthread.php?t=48443</Webpage>
+  <Dependency>
+    <JVM />
+    <MinVersion>1.5</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Core />
+    <MinVersion>7.0.10</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Plugin>GKusnickToolsLib</Plugin>
+    <MinVersion>1.5.5.2</MinVersion>
+  </Dependency>
+  <ImplementationClass>gkusnick.sagetv.studio.Inject</ImplementationClass>
+<Version>1.2.2</Version>
+<ModificationDate>2017.01.08</ModificationDate>
+<Package>
+  <PackageType>JAR</PackageType>
+  <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/GKusnick/9.0/GKusnickStudioFramework-Jar-1.2.1.zip</Location>
+  <MD5>346c0794d8a6aa8c35145f260e606a11</MD5>
+  <Overwrite>true</Overwrite>
+</Package>
+<Package>
+  <PackageType>System</PackageType>
+  <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/GKusnick/9.0/GKusnickStudioFramework-Sys-1.2.1.zip</Location>
+  <MD5>cef9badd946c53c6f3ba4886d4d1e6a0</MD5>
+  <Overwrite>true</Overwrite>
+</Package>
+</SageTVPlugin>
