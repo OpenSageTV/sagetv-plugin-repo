@@ -1,0 +1,69 @@
+<SageTVPlugin>
+
+
+
+    <Name>JSON.org</Name>
+
+
+
+    <Identifier>json</Identifier>
+
+
+
+    <Description>A Java implementation of JSON - dependency only</Description>
+
+
+
+    <Author>Slugger</Author>
+
+
+
+    <CreationDate>2010.04.28</CreationDate>
+
+
+
+    <ModificationDate>2014.02.22</ModificationDate>
+
+
+
+    <Version>20140107.2</Version>
+
+
+
+    <ResourcePath>json</ResourcePath>
+
+
+
+    <Webpage>http://www.json.org</Webpage>
+
+
+
+    <PluginType>Library</PluginType>
+
+
+
+    <Package>
+
+
+
+        <PackageType>JAR</PackageType>
+
+
+
+        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/libraries/json-20140107.zip</Location>
+
+
+
+        <MD5>4d25e3f4d99bb0c7705fc31437bb1014</MD5>
+
+
+
+        <Overwrite>true</Overwrite>
+
+
+
+    </Package>
+
+
+
+</SageTVPlugin>

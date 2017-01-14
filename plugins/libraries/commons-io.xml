@@ -1,0 +1,37 @@
+<SageTVPlugin>
+
+    <Name>commons-io</Name>
+
+    <Identifier>commons-io</Identifier>
+
+    <Description>SageTV Dependency JAR Plugin for commons-io-1.4.jar - no need to download directly</Description>
+
+    <Author>stuckless</Author>
+
+    <CreationDate>2010-04-08</CreationDate>
+
+    <ModificationDate>2014.03.20</ModificationDate>
+
+    <Version>2.5</Version>
+
+    <PluginType>Library</PluginType>
+
+    <Dependency>
+
+        <JVM />
+
+        <MinVersion>1.6</MinVersion>
+
+    </Dependency>
+
+    <Package>
+
+        <PackageType>JAR</PackageType>
+
+        <Location>http://central.maven.org/maven2/commons-io/commons-io/2.5/commons-io-2.5.jar</Location>
+
+        <MD5>e2d74794fba570ec2115fb9d5b05dc9b</MD5>
+
+    </Package>
+
+</SageTVPlugin>

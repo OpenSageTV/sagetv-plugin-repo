@@ -1,0 +1,18 @@
+<SageTVPlugin>
+    <Name>Nielm's Sage Utilities</Name>
+    <Identifier>sageutls</Identifier>
+    <Description>A library for communicating between SageTV and Java.</Description>
+    <Author>nielm</Author>
+    <CreationDate>2004.10.25</CreationDate>
+    <ModificationDate>2011.03.21</ModificationDate>
+    <Version>1.4.4</Version>
+    <Desktop>false</Desktop>
+    <ResourcePath>sageutls</ResourcePath>
+    <PluginType>Library</PluginType>
+    <Package>
+        <PackageType>JAR</PackageType>
+        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/nielm/nielm-sageutls-jars-1.4.2.zip</Location>
+        <MD5>ef36e4e8450a604a0494f0e461dfe6e2</MD5>
+    </Package>
+    <ImplementationClass></ImplementationClass>
+</SageTVPlugin>
