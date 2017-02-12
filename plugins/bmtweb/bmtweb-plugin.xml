@@ -3,24 +3,24 @@
 	<Name>Batch Metadata Tools - Web Interface</Name>
 	<Identifier>bmtweb</Identifier>
 	<Description>
-Web Interface for Batch Metadata Tools, commonly referred
-to as bmt. The web interface enables you to do edit metadata manually
-from a web browser. In addition to simple editing of metadata, bmt is
-build on the Phoenix APIs, and it provides a web interface to the
-Phoenix Views. ie, It allows you to browser your media collection from
-the web web browser. While browsing your collection you can also find
-metadata and fanart for a group of media files, or for a single item.
-		
-BMT also provides a number of other batch tools for cleaning up metadata, or
-performing some common operations.  Some of these include; Exporting a
-.properties for some or all mediafiles; Cleaning up Genres; Setting the
-watched status on files, etc
+		Web Interface for Batch Metadata Tools, commonly referred
+		to as bmt. The web interface enables you to do edit metadata manually
+		from a web browser. In addition to simple editing of metadata, bmt is
+		build on the Phoenix APIs, and it provides a web interface to the
+		Phoenix Views. ie, It allows you to browser your media collection from
+		the web web browser. While browsing your collection you can also find
+		metadata and fanart for a group of media files, or for a single item.
+
+		BMT also provides a number of other batch tools for cleaning up metadata, or
+		performing some common operations.  Some of these include; Exporting a
+		.properties for some or all mediafiles; Cleaning up Genres; Setting the
+		watched status on files, etc
 	</Description>
 	<Screenshot><![CDATA[http://forums.sagetv.com/forums/attachment.php?attachmentid=9772&stc=1&d=1266629522]]></Screenshot>
 	<Author>stuckless</Author>
 	<CreationDate>2008.07.19</CreationDate>
-	<ModificationDate>2016.09.11</ModificationDate>
-	<Version>4.100.0</Version>
+	<ModificationDate>2017.02.12</ModificationDate>
+	<Version>4.101.0</Version>
 	<Desktop>false</Desktop>
 	<ResourcePath>plugins/bmtweb</ResourcePath>
 	<Webpage><![CDATA[http://forums.sagetv.com/forums/forumdisplay.php?f=46]]></Webpage>
@@ -49,147 +49,22 @@ watched status on files, etc
 
 	<Package>
 		<PackageType>System</PackageType>
-		<Location>http://dl.bintray.com/opensagetv/sagetv-plugins/bmtweb/4.100.0/bmtweb-war-4.100.0.zip</Location>
-		<MD5>3a777756eaae470a03840004679dfe99</MD5>
+		<Location>http://dl.bintray.com/opensagetv/sagetv-plugins/bmtweb/4.101.0/bmtweb-war-4.101.0.zip
+		</Location>
+		<MD5>e4e1d5081665f3edfbdce65e03b0ad5c</MD5>
 	</Package>
 
 	<!-- context file must be installed after the war file -->
 	<Package>
 		<PackageType>System</PackageType>
-		<Location>http://dl.bintray.com/opensagetv/sagetv-plugins/bmtweb/4.100.0/bmtweb-context-4.100.0.zip</Location>
-		<MD5>d02d619d3f56697c4c23ed01263a8189</MD5>
+		<Location>http://dl.bintray.com/opensagetv/sagetv-plugins/bmtweb/4.101.0/bmtweb-context-4.101.0.zip
+		</Location>
+		<MD5>38ac727c6ef38cad0f9a90e4bc8cdc95</MD5>
 	</Package>
 	<ReleaseNotes>
-4.10
-* Added code to automatically download the x-vfs.xml (Phoenix vfs file) if it is missing
-* Movie BMT views from the Phoenix vfs file to the bmt.xml vfs file
-* Fixed missing BatchOperation dependency on "allvideos"
-* Fixed Export Thumbnail issue (was creating 16x16 black images)
-* Removed Batch Operations from the Tools Menu (you should use them from a view using Batch Operations)
-
-4.9.21
-* Increased field sizes for description and titles
-* Added link to imdb
-* Added Xml Editor for editing VFS and Menus
-* Added icon to the Views to show/hide views
-* Added icon to the Views to quickly add a view as a menu
-
-4.9.20
-* Added Previous/Next and "Save and Next" to the Metadata Editor panels
-* Added File path to the MediaTitles dialog 
-* Browser view resets to the top when you select a view or navigate a folder
-* New fanart configuration panel
-* New Tabebed Metadata Editor panel
-* Refresh has menu of items that can be refreshed
-* Refreshing configurations now give an indication of the error
-
-4.9.15
-* Search box will now treat 1 and 2 word searches as Title search.
-* Search box will now accept "Enter" to invoke search
-* Added simple help icon/dialog for the new PQL Search
-* Fixed bug in FileChooser that would not let you choose a directory that was empty
-* PQL Search is not cleared when it fails
-* Reset the batch operations list after each operation
-
-4.9.14
-* Added Year to upcoming movies
-* Changed the Search to use PQL so that you can do advanced searches using the search bar
-* Batch Updater now supports +Genre or -Genre to add or remove a specific Genre
-* Verified that Batch Import As Recording does work
-
-4.9.13
-* Fixed display issue with runtime 
-
-4.9.12
-* Added Batch Metadata Editor (can now batch edit multiple files)
-* Added RAW Metadata Editor to edit any Metadata field for a media item
-* Can download series only fanart
-* Fixed fanart download bug for manual fanart
-* Can enter runtime as '### mins' and shows runtime in minutes
-* Original Air Date now shows hh:mm
-* Can enter Original Air Date as a number or 'YYYY-MM-DD HH:MM'
-* Hides the view panel when editing metadata
-* Basic 'back' button navigation when in the Edit Metadata panel
-* Configuration Help now shows more information in the help dialog.
-* Fixed bug with support request generator that prevented it from created support requests
-* Home Videos now correctly uses semi-colon instead of comma
-* Home Videos now uses case insensitive paths
-* Fixed bug where genres was not using the new Sage7 / separator.  Genres will now use /
-* Added "Add File Matcher" from the metadata editor panel to quickly add an entry to the MediaTitles.xml 
-
-4.9.11
-* Minor enhancements to Airing type items
-* Added simple Airing viewer
-* Can update fanart on Airings
-* Can issue Manual Record on Airing
-* Can toggle watched status on media files and Airings
-* Minor ui tweaks
-
-4.9.10
-* Can change view categories
-* Added press and hold on video item, with options to delete or view generated thumbnails of video
-* Auto retry for failed metadata lookups (in phoenix-core, but listing it here as well)
-
-4.9.8
-* added plugin viewer (configuration -> SageTV Plugins)
-* minor changes required for the newer 2.3.14 phoenix.jar
-
-4.9.7
-* fixed bug where the first time dialog would always show
-* added watched icon to the media file
-* added play icon to the media file (with play on client dialog)
-* fixed bug where bmt would overwrite metadata even if preserve metadata was enabled
-* Added Fanart caching to help when fanart hosted on servers
-* Added support for a null transform to allow the image apis to cache files without transforming them
-
-4.9.6
-*	262	 WebUI: Scrolling handled by browser window   BMTWEB BMT	 
-*	263	 WebUI: Notifications are handled by notification manager   BMTWEB BMT	 
-*	265	 WebUI: Can't update Movie Title   BMTWEB BMT	 
-*	266	 Fix SageAiring-NoEpisode scraper   Phoenix	 
-*	267	 Add Movie.Year scraper   Phoenix	 
-*	269	 Ability to set a default poster   BMTWEB BMT	 
-*	270	 Some Movies showing S00E00   BMT	 
-*	274	 Refresh MediaTitles broken from the web ui   BMTWEB BMT	 
-*	276	 First time dialog shows every time   BMTWEB BMT	 
-*	277	 Title Scraping Tweaks   BMT
-
-4.9.5
-* Fixed Sage Imports View
-* Added Fanart Refresh
-* Exclude Filter now works in Missing Metadata View
-* Added Batch Operation to remove Year from Show Metadata
-* Added Manual TV Lookup by Date
-* Can edit genres from the web ui
-
-4.9.4
-* Fixed 'Discover Defaults' so that it works better with wildly named files.
-* TV Show Title can now be updated
-* Added ExternalID checks so that field should never be null.  (ie, it should be populated)
-
-4.9.3
-* Added Batch tools to clean up titles (ie, either adding relative path or removing relative path)
-* Fixed Search Dialog on Find Metadata (numerous issues; it should not discover, search, and update correctly)
-* Added TV Series Info Id and VFS Id fields to the metadata view
-
-4.9.2
-* Minor update to add compatibility to a sagex-api change
- 
-4.9.1
-* Minor update that includes the ability to
-enable/disable channels
-(Configuration -> Channels)
-
-4.9
-* Fixed bug in TV
-Scanner that caused some items to fail to be scanned
-correctly from the
-web ui
-* Fixed Group by Genres View
-* Fxied 'Movies' view to be
-'Recorded Movies'
-* Added Batch Operations for generating .properties,
-generating
-thumbnails, and for fixing genres.
+		4.100.0
+		* Updated for SageTV V9
+		* Fixed Search so that it does a title contains search by default
+		* Fixed Add Matcher so that it works with () and so that it cleans up older entries with same ID.
 	</ReleaseNotes>
 </SageTVPlugin>
