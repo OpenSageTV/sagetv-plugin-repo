@@ -15,7 +15,7 @@ Phoenix is a STV replacement for SageTV9 providing the following features
   <CreationDate>2016.10.29</CreationDate>
   <ModificationDate>2017.02.13</ModificationDate>
   <ResourcePath>plugins/phoenix3</ResourcePath>
-  <Version beta="true">3.0.109</Version>
+  <Version beta="true">3.0.110</Version>
   <Webpage><![CDATA[https://forums.sagetv.com/forums/forumdisplay.php?f=60]]></Webpage>
 
   <Dependency>
@@ -27,8 +27,8 @@ Phoenix is a STV replacement for SageTV9 providing the following features
 
   <Package>
     <PackageType>STV</PackageType>
-    <Location><![CDATA[http://dl.bintray.com/opensagetv/sagetv-plugins/phoenix3/3.0.109/phoenix-stv-3.0.109.zip]]></Location>
-    <MD5>cc0ceaf1c346673153cff917dc6df095</MD5>
+    <Location><![CDATA[http://dl.bintray.com/opensagetv/sagetv-plugins/phoenix3/3.0.110/phoenix-stv-3.0.110.zip]]></Location>
+    <MD5>95599514a08c576e9378e4f07208c257</MD5>
   </Package>
 
   <!--<Package>-->
