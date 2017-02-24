@@ -12,41 +12,24 @@
     </Description>
     <Author>stuckless,jusjoken,bialio,meinmaui</Author>
     <CreationDate>2010.06.05</CreationDate>
-    <ModificationDate>2017.02.12</ModificationDate>
+    <ModificationDate>2017.02.23</ModificationDate>
     <ResourcePath>phoenix-core</ResourcePath>
-    <Version>3.0.6</Version>
+    <Version>3.0.7</Version>
 
     <Webpage><![CDATA[https://github.com/stuckless/sagetv-phoenix-core]]></Webpage>
 
     <Dependency>
         <Plugin>phoenix-api</Plugin>
-        <MinVersion>3.0.6</MinVersion>
+        <MinVersion>3.0.7</MinVersion>
     </Dependency>
     <PluginType>Standard</PluginType>
     <Package>
         <PackageType>System</PackageType>
-        <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/phoenix/3.0.6/phoenix-core-3.0.6.zip</Location>
-        <MD5>b4d7f216e1c33e89655b837bb70d699b</MD5>
+        <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/phoenix/3.0.7/phoenix-core-3.0.7.zip</Location>
+        <MD5>9b05334d63a44b8377b0a6c4fd5ab0e9</MD5>
     </Package>
     <ImplementationClass>sagex.phoenix.plugin.PhoenixPlugin</ImplementationClass>
     <ReleaseNotes>
-        3.0.3
-        * Added Font Icon mappings
-
-        3.0.2
-        * Xml Validation will not completely fail if there are missing views, filters, sources, etc.  It will continue to load the views and flag the views with errors.
-        * Fixed bug where WeatherAPI was generating with compile errors.
-
-        3.0.1
-        * Fix for unicode filenames
-
-        3.0.0
-        * requires SageTV 9
-        * requires Java 1.7+
-        * removed upnp support
-        * removed nest support
-        * upgraded tvdb api
-        * upgraded tmdb api
-        * rewrote filename scraping
+        https://github.com/stuckless/sagetv-phoenix-core/blob/master/CHANGELOG.md
     </ReleaseNotes>
 </SageTVPlugin>
