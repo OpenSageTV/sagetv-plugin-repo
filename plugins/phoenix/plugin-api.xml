@@ -8,7 +8,7 @@
     <Author>stuckless,jusjoken,bialio,meinmaui</Author>
     <CreationDate>2008.10.05</CreationDate>
     <ModificationDate>2017.03.04</ModificationDate>
-    <Version>3.1.0</Version>
+    <Version>3.2.0</Version>
     <ResourcePath>phoenix-api</ResourcePath>
     <Webpage><![CDATA[https://github.com/stuckless/sagetv-phoenix-core]]></Webpage>
 
@@ -79,11 +79,14 @@
 
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/phoenix/3.1.0/phoenix-api-3.1.0.zip</Location>
-        <MD5>99c7f8081189aab868ed812253e80e57</MD5>
+        <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/phoenix/3.2.0/phoenix-api-3.2.0.zip</Location>
+        <MD5>c2a43f026f75134c348b59a286556d6b</MD5>
     </Package>
 
     <ReleaseNotes>
+# 3.2.0
+* Rewrote TVDB lookups using TVDB API
+
 # 3.1.0
 * Fixed various scraper issues for metadata/fanart (primarily around bluray and dvd)
 * Removed HTBackdrops (api/site no longer available)
