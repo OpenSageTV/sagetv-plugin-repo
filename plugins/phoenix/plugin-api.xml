@@ -7,8 +7,8 @@
     </Description>
     <Author>stuckless,jusjoken,bialio,meinmaui</Author>
     <CreationDate>2008.10.05</CreationDate>
-    <ModificationDate>2017.02.23</ModificationDate>
-    <Version>3.0.7</Version>
+    <ModificationDate>2017.03.04</ModificationDate>
+    <Version>3.1.0</Version>
     <ResourcePath>phoenix-api</ResourcePath>
     <Webpage><![CDATA[https://github.com/stuckless/sagetv-phoenix-core]]></Webpage>
 
@@ -79,11 +79,36 @@
 
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/phoenix/3.0.7/phoenix-api-3.0.7.zip</Location>
-        <MD5>6d94b896322cb6e8a77f777314e72ed1</MD5>
+        <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/phoenix/3.1.0/phoenix-api-3.1.0.zip</Location>
+        <MD5>99c7f8081189aab868ed812253e80e57</MD5>
     </Package>
 
     <ReleaseNotes>
-       https://github.com/stuckless/sagetv-phoenix-core/blob/master/CHANGELOG.md
+# 3.1.0
+* Fixed various scraper issues for metadata/fanart (primarily around bluray and dvd)
+* Removed HTBackdrops (api/site no longer available)
+* Fixed failing JUnit tests
+
+# 3.0.7
+* Added Channel Grouper
+
+# 3.0.6
+* Fixed Fanart color issues
+* Fanart Scaled automatically to max screen size on download
+* On Save, will try to fetch fanart, if fanart is missing
+* Added Config option to rescale source fanart
+* Refactored "timer" code to use common Executors
+* Added support for common menu actions to be shared across menus
+
+
+# 3.0.4
+* Fixed possible plugin deadlock when using SageTVEventBus
+
+# 3.0.3
+* Added support for font icon mappings
+
+# 3.0.2
+* Xml Validation will not completely fail if there are missing views, filters, sources, etc.  It will continue to load the views and flag the views with errors.
+* Fixed bug where WeatherAPI was generating with compile errors.
     </ReleaseNotes>
 </SageTVPlugin>
