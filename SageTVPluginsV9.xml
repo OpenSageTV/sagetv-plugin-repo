@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2017.0221.1442">
+<PluginRepository version="2017.0224.2011">
 <SageTVPlugin>
 
   <Name>Gemstone for Default SageTV9 (previously Diamond)</Name> 
@@ -1304,22 +1304,22 @@ Phoenix is a STV replacement for SageTV9 providing the following features
   <Screenshot><![CDATA[https://forums.sagetv.com/forums/attachment.php?attachmentid=15760&stc=1&d=1477691219]]></Screenshot>
   <Author>bialio</Author>
   <CreationDate>2016.10.29</CreationDate>
-  <ModificationDate>2017.02.21</ModificationDate>
+  <ModificationDate>2017.02.24</ModificationDate>
   <ResourcePath>plugins/phoenix3</ResourcePath>
-  <Version beta="true">3.0.113</Version>
+  <Version beta="true">3.0.114</Version>
   <Webpage><![CDATA[https://forums.sagetv.com/forums/forumdisplay.php?f=60]]></Webpage>
 
   <Dependency>
     <Plugin>phoenix-core</Plugin>
-    <MinVersion>3.0.0</MinVersion>
+    <MinVersion>3.0.7</MinVersion>
   </Dependency>
 
   <PluginType>STV</PluginType>
 
   <Package>
     <PackageType>STV</PackageType>
-    <Location><![CDATA[http://dl.bintray.com/opensagetv/sagetv-plugins/phoenix3/3.0.113/phoenix-stv-3.0.113.zip]]></Location>
-    <MD5>7c68f5f4f911603b34fccdee700529fa</MD5>
+    <Location><![CDATA[http://dl.bintray.com/opensagetv/sagetv-plugins/phoenix3/3.0.114/phoenix-stv-3.0.114.zip]]></Location>
+    <MD5>df1996b011aeda26eb1a4f604c8b05ba</MD5>
   </Package>
 
   <!--<Package>-->
@@ -1340,8 +1340,8 @@ Phoenix is a STV replacement for SageTV9 providing the following features
     </Description>
     <Author>stuckless,jusjoken,bialio,meinmaui</Author>
     <CreationDate>2008.10.05</CreationDate>
-    <ModificationDate>2017.02.12</ModificationDate>
-    <Version>3.0.6</Version>
+    <ModificationDate>2017.02.23</ModificationDate>
+    <Version>3.0.7</Version>
     <ResourcePath>phoenix-api</ResourcePath>
     <Webpage><![CDATA[https://github.com/stuckless/sagetv-phoenix-core]]></Webpage>
 
@@ -1412,29 +1412,12 @@ Phoenix is a STV replacement for SageTV9 providing the following features
 
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/phoenix/3.0.6/phoenix-api-3.0.6.zip</Location>
-        <MD5>224a03c237eb6dad7313d9ec8c0e90a9</MD5>
+        <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/phoenix/3.0.7/phoenix-api-3.0.7.zip</Location>
+        <MD5>6d94b896322cb6e8a77f777314e72ed1</MD5>
     </Package>
 
     <ReleaseNotes>
-        3.0.3
-        * Added Font Icon mappings
-
-        3.0.2
-        * Xml Validation will not completely fail if there are missing views, filters, sources, etc.  It will continue to load the views and flag the views with errors.
-        * Fixed bug where WeatherAPI was generating with compile errors.
-
-        3.0.1
-        * Fix for unicode filenames
-
-        3.0.0
-        * requires SageTV 9
-        * requires Java 1.7+
-        * removed upnp support
-        * removed nest support
-        * upgraded tvdb api
-        * upgraded tmdb api
-        * rewrote filename scraping
+       https://github.com/stuckless/sagetv-phoenix-core/blob/master/CHANGELOG.md
     </ReleaseNotes>
 </SageTVPlugin>
 <SageTVPlugin>
@@ -1450,42 +1433,25 @@ Phoenix is a STV replacement for SageTV9 providing the following features
     </Description>
     <Author>stuckless,jusjoken,bialio,meinmaui</Author>
     <CreationDate>2010.06.05</CreationDate>
-    <ModificationDate>2017.02.12</ModificationDate>
+    <ModificationDate>2017.02.23</ModificationDate>
     <ResourcePath>phoenix-core</ResourcePath>
-    <Version>3.0.6</Version>
+    <Version>3.0.7</Version>
 
     <Webpage><![CDATA[https://github.com/stuckless/sagetv-phoenix-core]]></Webpage>
 
     <Dependency>
         <Plugin>phoenix-api</Plugin>
-        <MinVersion>3.0.6</MinVersion>
+        <MinVersion>3.0.7</MinVersion>
     </Dependency>
     <PluginType>Standard</PluginType>
     <Package>
         <PackageType>System</PackageType>
-        <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/phoenix/3.0.6/phoenix-core-3.0.6.zip</Location>
-        <MD5>b4d7f216e1c33e89655b837bb70d699b</MD5>
+        <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/phoenix/3.0.7/phoenix-core-3.0.7.zip</Location>
+        <MD5>9b05334d63a44b8377b0a6c4fd5ab0e9</MD5>
     </Package>
     <ImplementationClass>sagex.phoenix.plugin.PhoenixPlugin</ImplementationClass>
     <ReleaseNotes>
-        3.0.3
-        * Added Font Icon mappings
-
-        3.0.2
-        * Xml Validation will not completely fail if there are missing views, filters, sources, etc.  It will continue to load the views and flag the views with errors.
-        * Fixed bug where WeatherAPI was generating with compile errors.
-
-        3.0.1
-        * Fix for unicode filenames
-
-        3.0.0
-        * requires SageTV 9
-        * requires Java 1.7+
-        * removed upnp support
-        * removed nest support
-        * upgraded tvdb api
-        * upgraded tmdb api
-        * rewrote filename scraping
+        https://github.com/stuckless/sagetv-phoenix-core/blob/master/CHANGELOG.md
     </ReleaseNotes>
 </SageTVPlugin>
 <SageTVPlugin>
