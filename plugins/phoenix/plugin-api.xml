@@ -7,8 +7,8 @@
     </Description>
     <Author>stuckless,jusjoken,bialio,meinmaui</Author>
     <CreationDate>2008.10.05</CreationDate>
-    <ModificationDate>2017.03.04</ModificationDate>
-    <Version>3.2.0</Version>
+    <ModificationDate>2017.03.11</ModificationDate>
+    <Version>3.2.1</Version>
     <ResourcePath>phoenix-api</ResourcePath>
     <Webpage><![CDATA[https://github.com/stuckless/sagetv-phoenix-core]]></Webpage>
 
@@ -79,11 +79,14 @@
 
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/phoenix/3.2.0/phoenix-api-3.2.0.zip</Location>
-        <MD5>c2a43f026f75134c348b59a286556d6b</MD5>
+        <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/phoenix/3.2.1/phoenix-api-3.2.1.zip</Location>
+        <MD5>6cf8ed4db6f2017810c57afe5b7da40d</MD5>
     </Package>
 
     <ReleaseNotes>
+# 3.2.1
+* Fixes to allow failed TV lookups to retry (most failures are "Too many connections")
+
 # 3.2.0
 * Rewrote TVDB lookups using TVDB API
 
