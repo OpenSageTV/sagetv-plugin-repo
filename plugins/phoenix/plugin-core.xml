@@ -13,24 +13,31 @@
     </Description>
     <Author>stuckless,jusjoken,bialio,meinmaui</Author>
     <CreationDate>2010.06.05</CreationDate>
-    <ModificationDate>2017.03.11</ModificationDate>
+    <ModificationDate>2017.03.12</ModificationDate>
     <ResourcePath>phoenix-core</ResourcePath>
-    <Version>3.2.1</Version>
+    <Version>3.2.2</Version>
 
     <Webpage><![CDATA[https://github.com/stuckless/sagetv-phoenix-core]]></Webpage>
 
     <Dependency>
         <Plugin>phoenix-api</Plugin>
-        <MinVersion>3.2.1</MinVersion>
+        <MinVersion>3.2.2</MinVersion>
     </Dependency>
     <PluginType>Standard</PluginType>
     <Package>
         <PackageType>System</PackageType>
-        <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/phoenix/3.2.1/phoenix-core-3.2.1.zip</Location>
-        <MD5>2dcfa249500b43d1493db539eb0b4ef0</MD5>
+        <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/phoenix/3.2.2/phoenix-core-3.2.2.zip</Location>
+        <MD5>b45e6f8f283f1fc256c328391d4b22f3</MD5>
     </Package>
     <ImplementationClass>sagex.phoenix.plugin.PhoenixPlugin</ImplementationClass>
     <ReleaseNotes>
+# 3.2.2
+* Weather Fixes
+* While each provider can have it's own update check interval, the main API will one as well (configurable) and any attempt to Update() the weather during this interval will be ignored.
+* The API will ignore changes that are the same. ie, setting same provider over and over, or setting the same units or locations, etc, will just be ignored, and not passed to the implementation.
+* The weather configuration can be "locked" (in BMT Weather Configuration). ie, if you have weather set to Yahoo with a location and units, you can "lock" it so that any API request to change this this will be ignored. I did this mainly because of a bug in Gemstore where it keeps changing my weather provider and units
+* SageTV Debugging - Exposed SageTV debugging flags to BMT Web UI (configuration)
+ 
 # 3.2.1
 * Fixes to allow failed TV lookups to retry (most failures are "Too many connections")
 
