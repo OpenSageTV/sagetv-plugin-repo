@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2017.0312.1227">
+<PluginRepository version="2017.0320.1050">
 <SageTVPlugin>
 
   <Name>Gemstone for Default SageTV9 (previously Diamond)</Name> 
@@ -290,6 +290,78 @@ Note that the framework architecture has been revamped for SageTV V7.  Existing 
   <MD5>7e9f1de020dea9352a402d17d141072c</MD5>
   <Overwrite>true</Overwrite>
 </Package>
+</SageTVPlugin>
+<SageTVPlugin>
+  <Name>SageMC</Name>
+  <Identifier>sagemc</Identifier>
+  <Description>SageMC STV Replacement for SageTV</Description>
+  <Author>MeInMaui, flachbar</Author>
+  <CreationDate>2006.11.17</CreationDate>
+  <ModificationDate>2017.03.20</ModificationDate>
+  <Version>7.0.11</Version>
+  <Desktop>false</Desktop>
+  <Webpage><![CDATA[http://forums.sagetv.com/forums/downloads.php?do=file&id=141]]></Webpage>
+
+  <Dependency>
+    <Plugin>phoenix-api</Plugin>
+    <MinVersion>1.72</MinVersion>
+  </Dependency>
+
+  <Dependency>
+    <Plugin>sageutls</Plugin>
+    <MinVersion>1.4</MinVersion>
+  </Dependency>
+
+  <Dependency>
+    <Plugin>nielm_getrssnews</Plugin>
+    <MinVersion>1.0</MinVersion>
+  </Dependency>
+
+  <Dependency>
+    <Plugin>nielm_sageimdb</Plugin>
+    <MinVersion>1.0</MinVersion>
+  </Dependency>
+
+  <Dependency>
+    <Plugin>nielm_sagemenureader</Plugin>
+    <MinVersion>1.0</MinVersion>
+  </Dependency>
+
+  <Dependency>
+    <Plugin>activation</Plugin>
+    <MinVersion>1.0</MinVersion>
+  </Dependency>
+
+  <Dependency>
+    <Plugin>df_sageutils</Plugin>
+    <MinVersion>1.0</MinVersion>
+  </Dependency>
+
+  <Dependency>
+    <Plugin>javamail</Plugin>
+    <MinVersion>1.4</MinVersion>
+  </Dependency>
+
+  <Dependency>
+    <Plugin>mailcheck</Plugin>
+    <MinVersion>1.0</MinVersion>
+  </Dependency>
+
+  <Dependency>
+    <Plugin>sagemc-system</Plugin>
+    <MinVersion>7.0.10</MinVersion>
+  </Dependency>
+
+  <PluginType>STV</PluginType>
+
+  <Package>
+    <PackageType>STV</PackageType>
+    <Location>http://bintray.com/jrekiwi/SageTV/download_file?file_path=SageMC%2Fsagemc-stv-7.0.11.zip</Location>
+    <MD5>DCEC3911DBC4503F58E7A3AAB2F93A98</MD5>
+  </Package>
+<ReleaseNotes>
+Version 7.0.11 - Fix import of legacy STVi - JREkiwi
+</ReleaseNotes>
 </SageTVPlugin>
 <SageTVPlugin>
     <Name>SageCollegeProject_API</Name>
