@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2017.0905.1114">
+<PluginRepository version="2017.0917.1120">
 <SageTVPlugin>
     <Name>PushBullet notifications for SageTV</Name>
     <Identifier>sagex.plugin.pushbullet</Identifier>
@@ -1835,8 +1835,8 @@ Provides Sports Event monitoring for use by the SRE plugin
     ]]></Description>
        <Author>skiingwiz</Author>
        <CreationDate>2016.04.23</CreationDate>
-       <ModificationDate>2017.06.20</ModificationDate>
-       <Version beta="true">1.4</Version>
+       <ModificationDate>2017.09.17</ModificationDate>
+       <Version beta="true">1.4.1</Version>
        <ResourcePath>plugins/livepvrdata-server</ResourcePath>
        <Webpage>https://github.com/livepvrdata-oss/livepvrdata-svc</Webpage>
        <Dependency>
@@ -1858,17 +1858,19 @@ Provides Sports Event monitoring for use by the SRE plugin
        <PluginType>Standard</PluginType>
        <Package>
                <PackageType>System</PackageType>
-               <Location>http://bintray.com/artifact/download/opensagetv/sagetv-plugins/livepvrdata-svc-1.4/livepvrdata-svc-war-master-538db78.zip</Location>
-               <MD5>b8a731e2aa8cea2a9e3096c171d83941</MD5>
+               <Location>http://bintray.com/artifact/download/opensagetv/sagetv-plugins/livepvrdata-svc-1.4.1/livepvrdata-svc-war-master-0a4312f.zip</Location>
+               <MD5>80ac291439fee3c6693f6104c33a10e0</MD5>
                <Overwrite>true</Overwrite>
        </Package>
        <Package>
                <PackageType>System</PackageType>
-               <Location>http://bintray.com/artifact/download/opensagetv/sagetv-plugins/livepvrdata-svc-1.4/livepvrdata-svc-context-master-538db78.zip</Location>
-               <MD5>4bc9cd8592979deca00398cb1bcc99e7</MD5>
+               <Location>http://bintray.com/artifact/download/opensagetv/sagetv-plugins/livepvrdata-svc-1.4.1/livepvrdata-svc-context-master-0a4312f.zip</Location>
+               <MD5>d4b95b52e985fb73932fd8ff3baacef7</MD5>
                <Overwrite>true</Overwrite>
        </Package>
            <ReleaseNotes><![CDATA[
+1.4.1
+* Updated NFL teams
 1.4
 * Add experimental support for college softball
 1.3.1
