@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SageTVPlugin>
+
+  <Name>Gemstone z API</Name>
+
+  <Identifier>gemstone-api</Identifier>
+
+  <Description>Gemstone API - Do not install directly as this is just a dependency!!</Description>
+
+  <Author>jusjoken,Fuzzy,PluckyHD</Author>
+
+  <CreationDate>2010-12-06</CreationDate>
+  <ModificationDate>2017.09.30</ModificationDate>
+  <Version>1.0401</Version>
+  <Desktop>false</Desktop>
+
+  <Dependency>
+   <Plugin>sagex-api</Plugin>
+    <MinVersion>9.0.0.8</MinVersion>
+  </Dependency>
+
+  <ReleaseNotes>
+    Version 1.0401 Misc fixes - see forums 
+    Version 1.0203 NO CHANGES - just moved the packages to BinTray from Google Code 
+  </ReleaseNotes> 
+  <PluginType>Standard</PluginType>
+  <ImplementationClass>Gemstone.GemstonePlugin</ImplementationClass> 
+
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/gemstone/GemstoneAPI1_0401.zip</Location>
+    <MD5>ae6d13ccfe0ebb9c916af6ff89572b2a</MD5>
+  </Package>
+
+</SageTVPlugin>
+
