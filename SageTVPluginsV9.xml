@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2017.0930.1404">
+<PluginRepository version="2017.0930.1523">
 <SageTVPlugin>
     <Name>PushBullet notifications for SageTV</Name>
     <Identifier>sagex.plugin.pushbullet</Identifier>
@@ -1412,24 +1412,27 @@ Phoenix is a STV replacement for SageTV9 providing the following features
     </Description>
     <Author>stuckless,jusjoken,bialio,meinmaui</Author>
     <CreationDate>2010.06.05</CreationDate>
-    <ModificationDate>2017.03.12</ModificationDate>
+    <ModificationDate>2017.09.30</ModificationDate>
     <ResourcePath>phoenix-core</ResourcePath>
-    <Version>3.2.2</Version>
+    <Version>3.2.3</Version>
 
     <Webpage><![CDATA[https://github.com/stuckless/sagetv-phoenix-core]]></Webpage>
 
     <Dependency>
         <Plugin>phoenix-api</Plugin>
-        <MinVersion>3.2.2</MinVersion>
+        <MinVersion>3.2.3</MinVersion>
     </Dependency>
     <PluginType>Standard</PluginType>
     <Package>
         <PackageType>System</PackageType>
-        <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/phoenix/3.2.2/phoenix-core-3.2.2.zip</Location>
-        <MD5>b45e6f8f283f1fc256c328391d4b22f3</MD5>
+        <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/phoenix/3.2.3/phoenix-core-3.2.3.zip</Location>
+        <MD5>035903f07dd022819c336ee2d137142b</MD5>
     </Package>
     <ImplementationClass>sagex.phoenix.plugin.PhoenixPlugin</ImplementationClass>
     <ReleaseNotes>
+# 3.2.3
+* Fanart Image fix (redirection not handled correctly)
+
 # 3.2.2
 * Weather Fixes
 * While each provider can have it's own update check interval, the main API will one as well (configurable) and any attempt to Update() the weather during this interval will be ignored.
@@ -1479,8 +1482,8 @@ Phoenix is a STV replacement for SageTV9 providing the following features
     </Description>
     <Author>stuckless,jusjoken,bialio,meinmaui</Author>
     <CreationDate>2008.10.05</CreationDate>
-    <ModificationDate>2017.03.12</ModificationDate>
-    <Version>3.2.2</Version>
+    <ModificationDate>2017.09.30</ModificationDate>
+    <Version>3.2.3</Version>
     <ResourcePath>phoenix-api</ResourcePath>
     <Webpage><![CDATA[https://github.com/stuckless/sagetv-phoenix-core]]></Webpage>
 
@@ -1551,11 +1554,14 @@ Phoenix is a STV replacement for SageTV9 providing the following features
 
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/phoenix/3.2.2/phoenix-api-3.2.2.zip</Location>
-        <MD5>2c6a96722a0439d9e5b72f0afd51beb6</MD5>
+        <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/phoenix/3.2.3/phoenix-api-3.2.3.zip</Location>
+        <MD5>51dc61595a2d4adb10537cf9bd09885f</MD5>
     </Package>
 
     <ReleaseNotes>
+# 3.2.3
+* Fanart Image fix (redirection not handled correctly)
+
 # 3.2.2
 * Weather Fixes
 * While each provider can have it's own update check interval, the main API will one as well (configurable) and any attempt to Update() the weather during this interval will be ignored.
