@@ -7,8 +7,8 @@
     </Description>
     <Author>stuckless,jusjoken,bialio,meinmaui</Author>
     <CreationDate>2008.10.05</CreationDate>
-    <ModificationDate>2017.03.12</ModificationDate>
-    <Version>3.2.2</Version>
+    <ModificationDate>2017.09.30</ModificationDate>
+    <Version>3.2.3</Version>
     <ResourcePath>phoenix-api</ResourcePath>
     <Webpage><![CDATA[https://github.com/stuckless/sagetv-phoenix-core]]></Webpage>
 
@@ -79,11 +79,14 @@
 
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/phoenix/3.2.2/phoenix-api-3.2.2.zip</Location>
-        <MD5>2c6a96722a0439d9e5b72f0afd51beb6</MD5>
+        <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/phoenix/3.2.3/phoenix-api-3.2.3.zip</Location>
+        <MD5>51dc61595a2d4adb10537cf9bd09885f</MD5>
     </Package>
 
     <ReleaseNotes>
+# 3.2.3
+* Fanart Image fix (redirection not handled correctly)
+
 # 3.2.2
 * Weather Fixes
 * While each provider can have it's own update check interval, the main API will one as well (configurable) and any attempt to Update() the weather during this interval will be ignored.
