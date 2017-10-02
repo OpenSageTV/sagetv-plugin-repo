@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2017.0930.1523">
+<PluginRepository version="2017.1002.2028">
 <SageTVPlugin>
     <Name>PushBullet notifications for SageTV</Name>
     <Identifier>sagex.plugin.pushbullet</Identifier>
@@ -834,8 +834,8 @@ NOTE: Be sure to clear your browser cache thoroughly after installing this updat
   <Description>Major update of the Diamond STVi.</Description> 
   <Author>JOrton,jusjoken,Fuzzy,EvilPenguin,bialio,PluckyHD</Author> 
   <CreationDate>2010.11.01</CreationDate> 
-  <ModificationDate>2017.09.30</ModificationDate>
-  <Version>4.0401</Version> 
+  <ModificationDate>2017.10.02</ModificationDate>
+  <Version>4.0402</Version> 
 
   <Dependency>
    <Core/>
@@ -854,7 +854,7 @@ NOTE: Be sure to clear your browser cache thoroughly after installing this updat
 
   <Dependency>
    <Plugin>gemstone-api</Plugin> 
-   <MinVersion>1.0401</MinVersion> 
+   <MinVersion>1.0402</MinVersion> 
   </Dependency>
 
   <Dependency>
@@ -884,6 +884,7 @@ NOTE: Be sure to clear your browser cache thoroughly after installing this updat
   <STVImport>GemstonePlugin.stvi</STVImport> 
 
   <ReleaseNotes>
+    Version 1.0402 Minor change to handle default weather location
     Version 1.0401 Based on SageTV v9.1.7 STV plus various fixes - see forums
     Version 1.0301 Based on SageTV v9 STV 
     Version 1.0203 NO CHANGES - just moved the packages to BinTray from Google Code 
@@ -926,8 +927,8 @@ NOTE: Be sure to clear your browser cache thoroughly after installing this updat
   <Author>jusjoken,Fuzzy,PluckyHD</Author>
 
   <CreationDate>2010-12-06</CreationDate>
-  <ModificationDate>2017.09.30</ModificationDate>
-  <Version>1.0401</Version>
+  <ModificationDate>2017.10.02</ModificationDate>
+  <Version>1.0402</Version>
   <Desktop>false</Desktop>
 
   <Dependency>
@@ -936,6 +937,7 @@ NOTE: Be sure to clear your browser cache thoroughly after installing this updat
   </Dependency>
 
   <ReleaseNotes>
+    Version 1.0402 Minor change to handle default weather location
     Version 1.0401 Misc fixes - see forums 
     Version 1.0203 NO CHANGES - just moved the packages to BinTray from Google Code 
   </ReleaseNotes> 
@@ -944,8 +946,8 @@ NOTE: Be sure to clear your browser cache thoroughly after installing this updat
 
   <Package>
     <PackageType>JAR</PackageType>
-    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/gemstone/GemstoneAPI1_0401.zip</Location>
-    <MD5>ae6d13ccfe0ebb9c916af6ff89572b2a</MD5>
+    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/gemstone/GemstoneAPI1_0402.zip</Location>
+    <MD5>ad96a41f42234b7d276d4d759b7bbe87</MD5>
   </Package>
 
 </SageTVPlugin>
