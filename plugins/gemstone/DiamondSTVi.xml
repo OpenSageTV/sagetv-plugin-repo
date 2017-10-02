@@ -6,8 +6,8 @@
   <Description>Major update of the Diamond STVi.</Description> 
   <Author>JOrton,jusjoken,Fuzzy,EvilPenguin,bialio,PluckyHD</Author> 
   <CreationDate>2010.11.01</CreationDate> 
-  <ModificationDate>2017.09.30</ModificationDate>
-  <Version>4.0401</Version> 
+  <ModificationDate>2017.10.02</ModificationDate>
+  <Version>4.0402</Version> 
 
   <Dependency>
    <Core/>
@@ -26,7 +26,7 @@
 
   <Dependency>
    <Plugin>gemstone-api</Plugin> 
-   <MinVersion>1.0401</MinVersion> 
+   <MinVersion>1.0402</MinVersion> 
   </Dependency>
 
   <Dependency>
@@ -56,6 +56,7 @@
   <STVImport>GemstonePlugin.stvi</STVImport> 
 
   <ReleaseNotes>
+    Version 1.0402 Minor change to handle default weather location
     Version 1.0401 Based on SageTV v9.1.7 STV plus various fixes - see forums
     Version 1.0301 Based on SageTV v9 STV 
     Version 1.0203 NO CHANGES - just moved the packages to BinTray from Google Code 
