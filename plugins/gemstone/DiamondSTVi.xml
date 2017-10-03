@@ -7,7 +7,7 @@
   <Author>JOrton,jusjoken,Fuzzy,EvilPenguin,bialio,PluckyHD</Author> 
   <CreationDate>2010.11.01</CreationDate> 
   <ModificationDate>2017.10.03</ModificationDate>
-  <Version>4.0403</Version> 
+  <Version>4.0404</Version> 
 
   <Dependency>
    <Core/>
@@ -43,8 +43,8 @@
 
   <Package>
    <PackageType>STV</PackageType> 
-   <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/gemstone/Gemstone1_0403.zip</Location> 
-   <MD5>863d69de7b2eb39f2bab2577ae008744</MD5> 
+   <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/gemstone/Gemstone1_0404.zip</Location> 
+   <MD5>cc0f6b1d03439bf31cca4afeaa1cae4d</MD5> 
   </Package>
 
   <Package>
@@ -56,6 +56,7 @@
   <STVImport>GemstonePlugin.stvi</STVImport> 
 
   <ReleaseNotes>
+    Version 1.0404 Fix for Windows Client to get weather location from server
     Version 1.0403 Fix for EpisodeSimpleList losing focus after play
     Version 1.0402 Minor change to handle default weather location
     Version 1.0401 Based on SageTV v9.1.7 STV plus various fixes - see forums
