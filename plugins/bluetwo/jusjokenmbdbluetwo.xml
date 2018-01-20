@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SageTVPlugin>
+
+  <Name>BlueTwo (addon for MBDiamond)</Name>
+  <Identifier>jusjokenmbdbluetwo</Identifier>
+  <Description>BlueTwo Grey Theme based on MBDiamond Theme
+  - adds minor changes to MBDiamond to add BlueTwo backgrounds and some grey elements
+  - needs MBDiamond Theme (will install as a dependency)
+  - offers 2 themes - one with the default focus element and one with a green focus
+  
+  ** thanks to jorton for his great theme MBDiamond
+  
+  </Description>
+  <Author>jusjoken</Author>
+  <CreationDate>2010.08.07</CreationDate>
+  <ModificationDate>2018.01.20</ModificationDate>
+  <Version>1.03</Version>
+
+  <Dependency>
+    <STV>SageTV7</STV>
+    <MinVersion>7.0.12</MinVersion>
+  </Dependency> 
+
+  <Dependency>
+    <Plugin>mbdiamond</Plugin>
+    <MinVersion>1.6.3</MinVersion>
+  </Dependency>
+
+<PluginType>Theme</PluginType>
+
+<Package>
+  <PackageType>STVI</PackageType>
+  <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/bluetwo/MBDiamond%20-%20BlueTwo.zip</Location>
+  <MD5>889835308ebb51494421f76e8e6e8856</MD5>
+</Package>
+
+<Screenshot>https://dl.bintray.com/opensagetv/sagetv-plugins/bluetwo/MBDiamondBlueTwoMenu.PNG</Screenshot>
+<Screenshot>https://dl.bintray.com/opensagetv/sagetv-plugins/bluetwo/MBDiamondBlueTwoVideoFolderGreen.PNG</Screenshot>
+<Screenshot>https://dl.bintray.com/opensagetv/sagetv-plugins/bluetwo/MBDiamondBlueTwoVideoFolderGrey.PNG</Screenshot>
+  
+<ReleaseNotes>
+1.03 No changes - just moved the files
+1.02 Minor updates to the green focus element for recordings
+1.01 Minor updates to some grey elements
+1.00 Initial release
+</ReleaseNotes>
+
+</SageTVPlugin>
