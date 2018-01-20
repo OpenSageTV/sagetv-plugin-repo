@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SageTVPlugin>
+
+  <Name>BlueTwo Grey</Name>
+  <Identifier>jusjokenbluetwogrey</Identifier>
+  <Description>BlueTwo Grey Theme for SageTV V7.
+  </Description>
+  <Author>jusjoken</Author>
+  <CreationDate>2010.06.26</CreationDate>
+  <ModificationDate>2018.01.20</ModificationDate>
+  <Version>1.13</Version>
+
+<Dependency>
+  <STV>SageTV7</STV>
+  <MinVersion>7.0</MinVersion>
+</Dependency> 
+
+<PluginType>Theme</PluginType>
+
+<Package>
+  <PackageType>STVI</PackageType>
+  <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/bluetwo/BlueTwoGrey.zip</Location>
+  <MD5>c85a7523ee46942006b310b17950c57d</MD5>
+</Package>
+
+<Screenshot>https://dl.bintray.com/opensagetv/sagetv-plugins/bluetwo/BlueTwoGreyMenu.png</Screenshot>
+<Screenshot>https://dl.bintray.com/opensagetv/sagetv-plugins/bluetwo/BlueTwoGreyVideoFolder.png</Screenshot>
+  
+<ReleaseNotes>
+1.13 No change - just moved the files
+1.12 Initial public release
+</ReleaseNotes>
+
+</SageTVPlugin>
