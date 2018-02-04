@@ -4,17 +4,21 @@
   <Description>Manage SageTV activity, media files, and playlists from desktop web browsers.</Description>
   <Author>nielm, jreichen, Slugger, skiingwiz</Author>
   <CreationDate>2004.11.18</CreationDate>
-  <ModificationDate>2017.09.17</ModificationDate>
-  <Version>3.3</Version>
+  <ModificationDate>2018.02.04</ModificationDate>
+  <Version>3.3.1</Version>
   <Desktop>false</Desktop>
   <ResourcePath>webserver</ResourcePath>
   <Webpage title="Web Interface Wiki">http://tools.assembla.com/sageplugins/wiki/WebServer</Webpage>
   <Webpage title="GeekTonic Review">http://www.geektonic.com/2008/03/sagetv-web-interface-control-sagetv.html</Webpage>
   <ReleaseNotes>
     <![CDATA[
+Version 3.3.1
+1. Fix showing null Season in some cases.
+2. Fix roles interfering with actor links.
+
 Version 3.3
 1. EPG using scheduling lookahead setting to determine number of days in drop-down
-2. Don't overwrite Jetty context when updating plugin 
+2. Don't overwrite Jetty context when updating plugin
 
 Version 3.2.2
 1. Fix missing Remove Favorite option from Favorite Details
@@ -141,30 +145,30 @@ NOTE: Be sure to clear your browser cache thoroughly after installing this updat
   <PluginType>Standard</PluginType>
   <Package>
     <PackageType>JAR</PackageType>
-    <Location>http://bintray.com/artifact/download/opensagetv/sagetv-plugins/webui-3.3/sage-webui-jar-3.3.zip</Location>
-    <MD5>3d3e6481618fbd0026b0262abd2dcf59</MD5>
+    <Location>http://bintray.com/artifact/download/opensagetv/sagetv-plugins/webui-3.3.1/sage-webui-jar-3.3.1.zip</Location>
+    <MD5>cea05c43463d092cd5443e1adcac486b</MD5>
   </Package>
   <Package>
     <PackageType>System</PackageType>
-    <Location>http://bintray.com/artifact/download/opensagetv/sagetv-plugins/webui-3.3/sage-webui-properties-3.3.zip</Location>
-    <MD5>6dffce3e1d65a0da4f3b90d6ecf7736e</MD5>
+    <Location>http://bintray.com/artifact/download/opensagetv/sagetv-plugins/webui-3.3.1/sage-webui-properties-3.3.1.zip</Location>
+    <MD5>7541a42651578ce2233ad260cdcbd71f</MD5>
   </Package>
   <Package>
     <PackageType>System</PackageType>
-    <Location>http://bintray.com/artifact/download/opensagetv/sagetv-plugins/webui-3.3/sage-webui-user-3.3.zip</Location>
-    <MD5>add9372d035907688e0ef9b3696f6e5c</MD5>
+    <Location>http://bintray.com/artifact/download/opensagetv/sagetv-plugins/webui-3.3.1/sage-webui-user-3.3.1.zip</Location>
+    <MD5>2ab8a84b3cf46caf2fccbb2d3850c145</MD5>
     <Overwrite>false</Overwrite>
   </Package>
   <Package>
     <PackageType>System</PackageType>
-    <Location>http://bintray.com/artifact/download/opensagetv/sagetv-plugins/webui-3.3/sage-webui-jetty-3.3.zip</Location>
-    <MD5>ba2962fb45937c1bd7cdf4445b3bcc26</MD5>
+    <Location>http://bintray.com/artifact/download/opensagetv/sagetv-plugins/webui-3.3.1/sage-webui-jetty-3.3.1.zip</Location>
+    <MD5>7a595daae401d3ca42e7048934786598</MD5>
   </Package>
   <!-- context file must be installed after the war file -->
   <Package>
     <PackageType>System</PackageType>
-    <Location>http://bintray.com/artifact/download/opensagetv/sagetv-plugins/webui-3.3/sage-webui-context-3.3.zip</Location>
-    <MD5>94192e4f9e312d137d3305b7775d7a94</MD5>
+    <Location>http://bintray.com/artifact/download/opensagetv/sagetv-plugins/webui-3.3.1/sage-webui-context-3.3.1.zip</Location>
+    <MD5>a73f38f4f69c39e92e457881734fad57</MD5>
     <Overwrite>false</Overwrite>
   </Package>
   <ImplementationClass></ImplementationClass>
