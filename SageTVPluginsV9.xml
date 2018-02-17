@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2018.0211.1045">
+<PluginRepository version="2018.0217.0359">
 <SageTVPlugin>
   <Name>SageMC</Name>
   <Identifier>sagemc</Identifier>
@@ -617,8 +617,8 @@ Provides Sports Event monitoring for use by the SRE plugin
     ]]></Description>
        <Author>skiingwiz</Author>
        <CreationDate>2016.04.23</CreationDate>
-       <ModificationDate>2018.02.11</ModificationDate>
-       <Version beta="true">1.5.1</Version>
+       <ModificationDate>2018.02.16</ModificationDate>
+       <Version beta="true">1.6</Version>
        <ResourcePath>plugins/livepvrdata-server</ResourcePath>
        <Webpage>https://github.com/livepvrdata-oss/livepvrdata-svc</Webpage>
        <Dependency>
@@ -640,17 +640,19 @@ Provides Sports Event monitoring for use by the SRE plugin
        <PluginType>Standard</PluginType>
        <Package>
                <PackageType>System</PackageType>
-               <Location>http://bintray.com/artifact/download/opensagetv/sagetv-plugins/livepvrdata-svc-1.5.1/livepvrdata-svc-war-master-0fbc91e.zip</Location>
-               <MD5>3825dd0eb6f27926f5a5eaab6d324364</MD5>
+               <Location>http://bintray.com/artifact/download/opensagetv/sagetv-plugins/livepvrdata-svc-1.6/livepvrdata-svc-war-master-419c4c1.zip</Location>
+               <MD5>d35648b814e8dc58ab06a90f40473a27</MD5>
                <Overwrite>true</Overwrite>
        </Package>
        <Package>
                <PackageType>System</PackageType>
-               <Location>http://bintray.com/artifact/download/opensagetv/sagetv-plugins/livepvrdata-svc-1.5.1/livepvrdata-svc-context-master-0fbc91e.zip</Location>
-               <MD5>a4e702d084efd0e9fefc89321ffa33a9</MD5>
+               <Location>http://bintray.com/artifact/download/opensagetv/sagetv-plugins/livepvrdata-svc-1.6/livepvrdata-svc-context-master-419c4c1.zip</Location>
+               <MD5>cfeeb781a561f76d5d538189d9814d55</MD5>
                <Overwrite>true</Overwrite>
        </Package>
            <ReleaseNotes><![CDATA[
+1.6
+* Add experimental support for college baseball
 1.5.1
 * Fix College Basketball Monitoring support
 * Update to support all Division-I Men's College Baseketball (Was only Top 25)
