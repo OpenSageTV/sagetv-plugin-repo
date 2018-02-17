@@ -1,0 +1,22 @@
+<SageTVPlugin>
+       <Name>chartjs for SageTV Web Interface</Name>
+       <Identifier>chartjs4web</Identifier>
+       <Description>JavaScript chart library for SageTV Web Interface</Description>
+       <Author>skiingwiz</Author>
+       <CreationDate>2014.11.22</CreationDate>
+       <ModificationDate>2015.03.30</ModificationDate>
+       <Version>1.0.2.1</Version>
+       <ResourcePath>jetty/static/chartjs</ResourcePath>
+       <Webpage>http://www.chartjs.org/</Webpage>
+       <Dependency>
+               <Plugin>web</Plugin>
+               <MinVersion>2.43</MinVersion>
+       </Dependency>
+       <PluginType>Library</PluginType>
+       <Package>
+               <PackageType>System</PackageType>
+               <Location>https://bintray.com/opensagetv/sagetv-plugins/download_file?file_path=chartjs%2Fchartjs-1.0.2.zip</Location>
+               <MD5>E248D6FB7AFF8FDFBC5FFC5D2DA1C619</MD5>
+               <Overwrite>true</Overwrite>
+       </Package>
+</SageTVPlugin>
