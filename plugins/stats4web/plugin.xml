@@ -1,0 +1,31 @@
+<SageTVPlugin>
+       <Name>Stats for SageTV Web Interface</Name>
+       <Identifier>stats4web</Identifier>
+       <Description>Add a Stats page to the SageTV Web Interface, showing interesting stats about your recordings</Description>
+       <Author>skiingwiz</Author>
+       <CreationDate>2012.11.22</CreationDate>
+       <ModificationDate>2015.04.18</ModificationDate>
+       <Version>1.2.1</Version>
+       <ResourcePath>webserver/stats</ResourcePath>
+       <Dependency>
+               <Plugin>web</Plugin>
+               <MinVersion>2.43</MinVersion>
+       </Dependency>
+       <Dependency>
+               <Plugin>chartjs4web</Plugin>
+               <MinVersion>1.0.2.1</MinVersion>
+       </Dependency>
+       <PluginType>Standard</PluginType>
+       <Package>
+               <PackageType>System</PackageType>
+               <Location>https://bintray.com/opensagetv/sagetv-plugins/download_file?file_path=stats4web%2Fstats-1.2.0.zip</Location>
+               <MD5>5924F415D34A956739BEE948BE348387</MD5>
+               <Overwrite>true</Overwrite>
+       </Package>
+       <ReleaseNotes>
+1.2.1 - Move download location
+1.2.0 - Hide 'Other' category by default (and allow it to be shown as an option)
+1.1.0 - Add Shows by Channel chart
+1.0   - Initial Release
+       </ReleaseNotes>
+</SageTVPlugin>
