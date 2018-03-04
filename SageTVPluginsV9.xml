@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2018.0218.0304">
+<PluginRepository version="2018.0304.2018">
 <SageTVPlugin>
   <Name>SageMC</Name>
   <Identifier>sagemc</Identifier>
@@ -1993,8 +1993,8 @@ Version 1.7.5 beta
   <Description>SageTV API Wrappers with Remote API capabilities</Description>
   <Author>stuckless</Author>
   <CreationDate>2008.10.05</CreationDate>
-  <ModificationDate>2016.08.21</ModificationDate>
-  <Version>9.0.0.8</Version>
+  <ModificationDate>2018.03.04</ModificationDate>
+  <Version>9.1.7.0</Version>
   <Desktop>false</Desktop>
   <ResourcePath>sagex-api</ResourcePath>
   <Webpage><![CDATA[http://forums.sagetv.com/forums/showthread.php?t=36044]]></Webpage>
@@ -2003,18 +2003,22 @@ Version 1.7.5 beta
 
   <Package>
     <PackageType>JAR</PackageType>
-    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/sagex-api/9.0.0.8/sagex-api-9.0.0.8.zip</Location>
-    <MD5>6500670db09b247f9c169ebdbcab724d</MD5>
+    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/sagex-api/9.1.7.0/sagex-api-9.1.7.0.zip</Location>
+    <MD5>0012e9ca02251b378f12dbcd4a9cd953</MD5>
   </Package>
 
   <ReleaseNotes>
-9.0.0
+    9.1.7
+    * RMI is now stateless to avoid memory leaks
+    * removed deprecated and legacy RPC connectors
+
+    9.0.0
     * Upgraded to SageTV 9
   </ReleaseNotes>
 
   <Dependency>
     <Core/>
-    <MinVersion>9.0.0</MinVersion>
+    <MinVersion>9.1.7</MinVersion>
   </Dependency>
 
   <Dependency>
@@ -2029,15 +2033,15 @@ Version 1.7.5 beta
   <Description>HTTP and RMI services for SageTV (HTTP services require Jetty Plugin).  HTTP services includes JSON/JSONP and Xml formats.</Description>
   <Author>stuckless</Author>
   <CreationDate>2008.10.05</CreationDate>
-  <ModificationDate>2016.08.21</ModificationDate>
-  <Version>9.0.0.8</Version>
+  <ModificationDate>2018.03.04</ModificationDate>
+  <Version>9.1.7.0</Version>
   <Desktop>false</Desktop>
   <ResourcePath>sagex-api</ResourcePath>
   <Webpage><![CDATA[http://forums.sagetv.com/forums/showthread.php?t=36044]]></Webpage>
 
   <Dependency>
     <Core/>
-    <MinVersion>9.0.0</MinVersion>
+    <MinVersion>9.1.7</MinVersion>
   </Dependency>
 
   <Dependency>
@@ -2052,25 +2056,28 @@ Version 1.7.5 beta
 
   <Dependency>
     <Plugin>sagex-api</Plugin>
-    <MinVersion>9.0.0.8</MinVersion>
+    <MinVersion>9.1.7.0</MinVersion>
   </Dependency>
 
   <PluginType>Standard</PluginType>
 
   <Package>
     <PackageType>System</PackageType>
-    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/sagex-api/9.0.0.8/sagex-api-services-9.0.0.8.zip</Location>
-    <MD5>0baa657d697363ed1cf40249c0fbdb19</MD5>
+    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/sagex-api/9.1.7.0/sagex-api-services-9.1.7.0.zip</Location>
+    <MD5>532b0de9474793d4f0e4c77a1335ce25</MD5>
   </Package>
 
   <!-- Plugin Class is in the core sagex-api jar -->
   <ImplementationClass>sagex.plugin.impl.SagexRemoteAPIPlugin</ImplementationClass>
 
   <ReleaseNotes>
-9.0.0
+    9.1.7
+    * Added OpenAPI (swagger) reference guide
+
+    9.0.0
     * Updated to SageTV 9
   </ReleaseNotes>
-  
+
 </SageTVPlugin>
 <SageTVPlugin>
     <Name>SageTV 2 UI</Name>
