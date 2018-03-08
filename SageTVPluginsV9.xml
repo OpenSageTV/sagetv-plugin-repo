@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2018.0304.2018">
+<PluginRepository version="2018.0308.2318">
 <SageTVPlugin>
   <Name>SageMC</Name>
   <Identifier>sagemc</Identifier>
@@ -2266,6 +2266,46 @@ Version 1.7.5 beta
 1.1.0 - Add Shows by Channel chart
 1.0   - Initial Release
        </ReleaseNotes>
+</SageTVPlugin>
+<SageTVPlugin>
+  <Name>OSD Enhancements</Name>
+  <Identifier>jusjokenOSDEnhancements</Identifier>
+  <Description>Various enhancements for the OSD (time remaining and play toggle).
+   - Adds the amount of time remaining to the OSD.  The display will then indicate the time that has already played as well as the amount of time remaining to play. 
+   - Enables a toggle effect with the play button, so pressing play when the OSD is displayed will remove the OSD from the display.
+  </Description>
+  <Author>jusjoken</Author>
+  <CreationDate>2010.06.06</CreationDate>
+  <ModificationDate>2018.03.08</ModificationDate>
+  <Version>1.4.1</Version>
+
+<Dependency>
+  <STV>SageTV7</STV>
+  <MinVersion>9.0</MinVersion>
+</Dependency> 
+
+<PluginType>STVI</PluginType>
+<STVImport>OSD_AddTimeRemaining.stvi</STVImport>
+<STVImport>OSD_PlayToggle.stvi</STVImport>
+
+<Package>
+  <PackageType>STVI</PackageType>
+  <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/osdenhancements/OSD_Enhancements.zip</Location>
+  <MD5>2838073c5a0c6bde3a227f4b16922ac8</MD5>
+</Package>
+
+<Screenshot>https://dl.bintray.com/opensagetv/sagetv-plugins/osdenhancements/OSD_Enhancements_time_remaining.PNG</Screenshot>
+  
+<ReleaseNotes>
+Version 1.4.1 - Moved from dropbox to BinTray - no other changes
+Version 1.4 - Fixed Play toggle issue when in Fast Forward.
+Version 1.3
+  - Fixed time remaining display issue on some displays .
+  - Fixed internal error and some small fixes to match recent STV releases
+Version 1.2 - Public release.
+Version 1.1 - Added play toggle.
+</ReleaseNotes>
+
 </SageTVPlugin>
 <SageTVPlugin>
     <Name>Pushover notifications for SageTV</Name>
