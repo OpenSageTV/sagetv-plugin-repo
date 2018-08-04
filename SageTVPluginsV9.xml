@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2018.0804.1603">
+<PluginRepository version="2018.0804.1607">
 <SageTVPlugin>
   <Name>SageMC</Name>
   <Identifier>sagemc</Identifier>
@@ -1890,7 +1890,7 @@ Version 1.7.5 beta
 
   <Package>
     <PackageType>STV</PackageType>
-    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/gemstone/GemstoneTheme1_0201.zip</Location>
+    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/gemstone/GemstoneTheme1_0405.zip</Location>
     <MD5>50709c4adf4223d2dc40a2280f97cf28</MD5>
   </Package>
 </SageTVPlugin>
