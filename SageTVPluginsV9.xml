@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2018.0804.1613">
+<PluginRepository version="2018.0804.1625">
 <SageTVPlugin>
   <Name>SageMC</Name>
   <Identifier>sagemc</Identifier>
@@ -1788,7 +1788,7 @@ Version 1.7.5 beta
   <Author>JOrton,jusjoken,Fuzzy,EvilPenguin,bialio,PluckyHD</Author> 
   <CreationDate>2010.11.01</CreationDate> 
   <ModificationDate>2018.08.04</ModificationDate>
-  <Version>4.0405</Version> 
+  <Version>4.0406</Version> 
 
   <Dependency>
    <Core/>
@@ -1812,7 +1812,7 @@ Version 1.7.5 beta
 
   <Dependency>
    <Plugin>gemstone-theme</Plugin> 
-   <MinVersion>1.0405</MinVersion> 
+   <MinVersion>1.0406</MinVersion> 
   </Dependency>
 
   <Dependency>
@@ -1837,6 +1837,7 @@ Version 1.7.5 beta
   <STVImport>GemstonePlugin.stvi</STVImport> 
 
   <ReleaseNotes>
+    Version 1.0406 Fix for Android Mini Client image issue
     Version 1.0404 Fix for Windows Client to get weather location from server
     Version 1.0403 Fix for EpisodeSimpleList losing focus after play
     Version 1.0402 Minor change to handle default weather location
@@ -1878,13 +1879,13 @@ Version 1.7.5 beta
   <Author>JOrton, jusjoken</Author>
   <CreationDate>2012-06-30</CreationDate>
   <ModificationDate>2018.08.04</ModificationDate>
-  <Version>1.0405</Version>
+  <Version>1.0406</Version>
 
   <Desktop>false</Desktop>
   <PluginType>Library</PluginType>
 
   <ReleaseNotes>
-    Version 1.0405 JOrton updated the pngs to work with Android Mini Client better 
+    Version 1.0406 JOrton updated the pngs to work with Android Mini Client better 
     Version 1.0203 NO CHANGES - just moved the packages to BinTray from Google Code 
   </ReleaseNotes> 
 
