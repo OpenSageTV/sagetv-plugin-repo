@@ -6,13 +6,13 @@
   <Author>JOrton, jusjoken</Author>
   <CreationDate>2012-06-30</CreationDate>
   <ModificationDate>2018.08.04</ModificationDate>
-  <Version>1.0405</Version>
+  <Version>1.0406</Version>
 
   <Desktop>false</Desktop>
   <PluginType>Library</PluginType>
 
   <ReleaseNotes>
-    Version 1.0405 JOrton updated the pngs to work with Android Mini Client better 
+    Version 1.0406 JOrton updated the pngs to work with Android Mini Client better 
     Version 1.0203 NO CHANGES - just moved the packages to BinTray from Google Code 
   </ReleaseNotes> 
 
