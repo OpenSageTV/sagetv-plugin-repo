@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2018.0308.2318">
+<PluginRepository version="2018.0804.1603">
 <SageTVPlugin>
   <Name>SageMC</Name>
   <Identifier>sagemc</Identifier>
@@ -1787,8 +1787,8 @@ Version 1.7.5 beta
   <Description>Major update of the Diamond STVi.</Description> 
   <Author>JOrton,jusjoken,Fuzzy,EvilPenguin,bialio,PluckyHD</Author> 
   <CreationDate>2010.11.01</CreationDate> 
-  <ModificationDate>2017.10.03</ModificationDate>
-  <Version>4.0404</Version> 
+  <ModificationDate>2018.08.04</ModificationDate>
+  <Version>4.0405</Version> 
 
   <Dependency>
    <Core/>
@@ -1812,7 +1812,7 @@ Version 1.7.5 beta
 
   <Dependency>
    <Plugin>gemstone-theme</Plugin> 
-   <MinVersion>1.0203</MinVersion> 
+   <MinVersion>1.0405</MinVersion> 
   </Dependency>
 
   <Dependency>
@@ -1871,6 +1871,29 @@ Version 1.7.5 beta
 
 </SageTVPlugin>
 
+<SageTVPlugin>
+  <Name>Gemstone z Theme Files</Name>
+  <Identifier>gemstone-theme</Identifier>
+  <Description>Gemstone Theme Files - Do not install directly as this is just a dependency!!</Description>
+  <Author>JOrton, jusjoken</Author>
+  <CreationDate>2012-06-30</CreationDate>
+  <ModificationDate>2018.08.04</ModificationDate>
+  <Version>1.0405</Version>
+
+  <Desktop>false</Desktop>
+  <PluginType>Library</PluginType>
+
+  <ReleaseNotes>
+    Version 1.0405 JOrton updated the pngs to work with Android Mini Client better 
+    Version 1.0203 NO CHANGES - just moved the packages to BinTray from Google Code 
+  </ReleaseNotes> 
+
+  <Package>
+    <PackageType>STV</PackageType>
+    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/gemstone/GemstoneTheme1_0201.zip</Location>
+    <MD5>50709c4adf4223d2dc40a2280f97cf28</MD5>
+  </Package>
+</SageTVPlugin>
 <SageTVPlugin>
 
   <Name>Gemstone z API</Name>
