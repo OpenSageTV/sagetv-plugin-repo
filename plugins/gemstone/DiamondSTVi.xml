@@ -6,8 +6,8 @@
   <Description>Major update of the Diamond STVi.</Description> 
   <Author>JOrton,jusjoken,Fuzzy,EvilPenguin,bialio,PluckyHD</Author> 
   <CreationDate>2010.11.01</CreationDate> 
-  <ModificationDate>2017.10.03</ModificationDate>
-  <Version>4.0404</Version> 
+  <ModificationDate>2018.08.04</ModificationDate>
+  <Version>4.0405</Version> 
 
   <Dependency>
    <Core/>
@@ -31,7 +31,7 @@
 
   <Dependency>
    <Plugin>gemstone-theme</Plugin> 
-   <MinVersion>1.0203</MinVersion> 
+   <MinVersion>1.0405</MinVersion> 
   </Dependency>
 
   <Dependency>

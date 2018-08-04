@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SageTVPlugin>
+  <Name>Gemstone z Theme Files</Name>
+  <Identifier>gemstone-theme</Identifier>
+  <Description>Gemstone Theme Files - Do not install directly as this is just a dependency!!</Description>
+  <Author>JOrton, jusjoken</Author>
+  <CreationDate>2012-06-30</CreationDate>
+  <ModificationDate>2018.08.04</ModificationDate>
+  <Version>1.0405</Version>
+
+  <Desktop>false</Desktop>
+  <PluginType>Library</PluginType>
+
+  <ReleaseNotes>
+    Version 1.0405 JOrton updated the pngs to work with Android Mini Client better 
+    Version 1.0203 NO CHANGES - just moved the packages to BinTray from Google Code 
+  </ReleaseNotes> 
+
+  <Package>
+    <PackageType>STV</PackageType>
+    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/gemstone/GemstoneTheme1_0201.zip</Location>
+    <MD5>50709c4adf4223d2dc40a2280f97cf28</MD5>
+  </Package>
+</SageTVPlugin>
