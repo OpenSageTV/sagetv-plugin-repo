@@ -6,8 +6,8 @@
   <Description>Major update of the Diamond STVi.</Description> 
   <Author>JOrton,jusjoken,Fuzzy,EvilPenguin,bialio,PluckyHD</Author> 
   <CreationDate>2010.11.01</CreationDate> 
-  <ModificationDate>2018.08.04</ModificationDate>
-  <Version>4.0406</Version> 
+  <ModificationDate>2018.08.05</ModificationDate>
+  <Version>4.0407</Version> 
 
   <Dependency>
    <Core/>
@@ -31,7 +31,7 @@
 
   <Dependency>
    <Plugin>gemstone-theme</Plugin> 
-   <MinVersion>1.0406</MinVersion> 
+   <MinVersion>1.0407</MinVersion> 
   </Dependency>
 
   <Dependency>
@@ -56,6 +56,7 @@
   <STVImport>GemstonePlugin.stvi</STVImport> 
 
   <ReleaseNotes>
+    Version 1.0407 Fix for checked and unchecked images 
     Version 1.0406 Fix for Android Mini Client image issue
     Version 1.0404 Fix for Windows Client to get weather location from server
     Version 1.0403 Fix for EpisodeSimpleList losing focus after play
