@@ -5,20 +5,21 @@
   <Description>Gemstone Theme Files - Do not install directly as this is just a dependency!!</Description>
   <Author>JOrton, jusjoken</Author>
   <CreationDate>2012-06-30</CreationDate>
-  <ModificationDate>2018.08.04</ModificationDate>
-  <Version>1.0406</Version>
+  <ModificationDate>2018.08.05</ModificationDate>
+  <Version>1.0407</Version>
 
   <Desktop>false</Desktop>
   <PluginType>Library</PluginType>
 
   <ReleaseNotes>
+    Version 1.0407 Fix for checked and unchecked images 
     Version 1.0406 JOrton updated the pngs to work with Android Mini Client better 
     Version 1.0203 NO CHANGES - just moved the packages to BinTray from Google Code 
   </ReleaseNotes> 
 
   <Package>
     <PackageType>STV</PackageType>
-    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/gemstone/GemstoneTheme1_0405.zip</Location>
-    <MD5>6d16c5682a2a076f4310f20867d99cf3</MD5>
+    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/gemstone/GemstoneTheme1_0407.zip</Location>
+    <MD5>269dc2655442d0c6e34299f8a9f1f9fa</MD5>
   </Package>
 </SageTVPlugin>
