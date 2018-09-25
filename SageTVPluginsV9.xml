@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2018.0805.1415">
+<PluginRepository version="2018.0925.2210">
 <SageTVPlugin>
   <Name>SageMC</Name>
   <Identifier>sagemc</Identifier>
@@ -2292,6 +2292,30 @@ Version 1.7.5 beta
 1.1.0 - Add Shows by Channel chart
 1.0   - Initial Release
        </ReleaseNotes>
+</SageTVPlugin>
+<SageTVPlugin>
+  <Name>BluRay/DVD External Playback</Name>
+  <Identifier>FuzzyWatchExternally</Identifier>
+  <Description>Allows launching an external media player (such as ArcSoft TotalMedia Theater 3) to play DVD and/or BluRay content.</Description>
+  <Author>Fuzzy</Author>
+  <CreationDate>2010-12-22</CreationDate>
+  <ModificationDate>2018.09.25</ModificationDate>
+  <Version>1.0.6</Version>
+  <PluginType>STVI</PluginType>
+  <ReleaseNotes>
+  - 1.0.5 - Initial Release
+  - 1.0.6 - Move of the files only to Bintray  </ReleaseNotes>
+  <Desktop>true</Desktop>
+  <Dependency>
+    <STV>SageTV7</STV>
+    <MinVersion>9.0</MinVersion>
+  </Dependency>
+  <Package>
+    <PackageType>STVI</PackageType>
+    <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/Fuzzy/Fuzzy_WatchExternally.zip</Location>
+    <MD5>e7d1aec2688ffb753ffa81f2e3cadcb8</MD5>
+  </Package>
+  <STVImport>WatchExternally.stvi</STVImport>
 </SageTVPlugin>
 <SageTVPlugin>
   <Name>OSD Enhancements</Name>
