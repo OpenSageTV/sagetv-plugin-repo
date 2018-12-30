@@ -1,3 +1,10 @@
+/**
+ * The buildLibraries task will convert the src/libraries.in/ files into SageTV plugins, and put them in the build/libraries directories.  From there you'd want to manually move the new/updates files to the plugins/libraries/ directory and then commit those.
+ * 
+ * In SageTV 9 we can use .jar files directly as plugins, so, this is quick way to convert a maven central hosted jar file into a sagetv plugin by simply creating the plugin xml for the given jar file.
+ */
+
+
 plugins {
     id "com.jfrog.bintray" version "1.4"
 }

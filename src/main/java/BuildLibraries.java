@@ -130,12 +130,14 @@ public class BuildLibraries {
         scopes.put("date", new SimpleDateFormat("yyyy-MM-dd").format(new Date()));
         scopes.put("md5", getUrlAsString(url + ".md5"));
 
-        Writer writer = new OutputStreamWriter(new FileOutputStream(new File(dirOut, name+".xml")));
+        File outFile = new File(dirOut, name+".xml");
+        Writer writer = new OutputStreamWriter(new FileOutputStream(outFile));
         MustacheFactory mf = new DefaultMustacheFactory();
         Mustache mustache = mf.compile(new StringReader(template), "template");
         mustache.execute(writer, scopes);
         writer.flush();
         writer.close();
+        System.out.println("Wrote: " + outFile);
     }
 
     private static Dep parseDep(File input) {
