@@ -6,8 +6,8 @@
   <Description>Major update of the Diamond STVi.</Description> 
   <Author>JOrton,jusjoken,Fuzzy,EvilPenguin,bialio,PluckyHD</Author> 
   <CreationDate>2010.11.01</CreationDate> 
-  <ModificationDate>2018.08.05</ModificationDate>
-  <Version>4.0407</Version> 
+  <ModificationDate>2019.01.20</ModificationDate>
+  <Version>4.0501</Version> 
 
   <Dependency>
    <Core/>
@@ -16,7 +16,7 @@
 
   <Dependency>
     <Plugin>phoenix-core</Plugin>
-    <MinVersion>3.2.3</MinVersion>
+    <MinVersion>3.3.0</MinVersion>
   </Dependency>
 
   <Dependency>
@@ -26,7 +26,7 @@
 
   <Dependency>
    <Plugin>gemstone-api</Plugin> 
-   <MinVersion>1.0402</MinVersion> 
+   <MinVersion>1.0501</MinVersion> 
   </Dependency>
 
   <Dependency>
@@ -43,8 +43,8 @@
 
   <Package>
    <PackageType>STV</PackageType> 
-   <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/gemstone/Gemstone1_0404.zip</Location> 
-   <MD5>cc0f6b1d03439bf31cca4afeaa1cae4d</MD5> 
+   <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/gemstone/Gemstone1_0501.zip</Location> 
+   <MD5>557f8bc9c8b5bab7e000bd9d90007204</MD5> 
   </Package>
 
   <Package>
@@ -56,6 +56,12 @@
   <STVImport>GemstonePlugin.stvi</STVImport> 
 
   <ReleaseNotes>
+    Version 1.0501 Removed Weather Underground and fixed Yahoo Weather
+                   Added Dark Sky Weather - this requires a developer key. 
+                    - Sign up at https://darksky.net/dev 
+                    - Create a file in the root SageTV folder called darksky.properties with only 1 line in it "key=userkey"
+                    - no quotes in the line and replace userkey with the one you get when signing up
+                    - without a user key Dark Sky provider will not update other than on restart of the server
     Version 1.0407 Fix for checked and unchecked images 
     Version 1.0406 Fix for Android Mini Client image issue
     Version 1.0404 Fix for Windows Client to get weather location from server
