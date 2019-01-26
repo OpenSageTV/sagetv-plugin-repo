@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2019.0126.1922">
+<PluginRepository version="2019.0126.1932">
 <SageTVPlugin>
   <Name>SageMC</Name>
   <Identifier>sagemc</Identifier>
@@ -2184,7 +2184,7 @@ Version 1.7.5 beta
   </Dependency>
   
   <Dependency>
-    <Plugin>jackson-datatype-jsr</Plugin>
+    <Plugin>jackson-datatype-jsr310</Plugin>
 	<MinVersion>2.9.8</MinVersion>
   </Dependency>
   
