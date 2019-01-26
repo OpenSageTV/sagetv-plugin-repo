@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2019.0126.1854">
+<PluginRepository version="2019.0126.1922">
 <SageTVPlugin>
   <Name>SageMC</Name>
   <Identifier>sagemc</Identifier>
@@ -2209,6 +2209,24 @@ Version 1.7.5 beta
     <MD5>097f937c926e33f7d2569d91e09196de</MD5>
   </Package>
 
+</SageTVPlugin>
+<SageTVPlugin>
+  <Name>Jackson datatype jsr</Name>
+  <Identifier>jackson-datatype-jsr</Identifier>
+  <Description>Jackson Datatype JSR.</Description>
+  <Author>tmiranda</Author>
+  <CreationDate>2019.01.05</CreationDate>
+  <ModificationDate>2019.01.05</ModificationDate>
+  <Version beta="false">2.9.8</Version>
+  <Desktop>false</Desktop>
+  <PluginType>Library</PluginType>
+  
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>http://central.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.9.8/jackson-datatype-jsr310-2.9.8.jar</Location>
+    <MD5>01d34ef6e91de1aea29aadebced1aaa5</MD5>
+  </Package>
+  
 </SageTVPlugin>
 <SageTVPlugin>
     <Name>SageTV 2 UI</Name>
