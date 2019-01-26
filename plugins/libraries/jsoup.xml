@@ -1,0 +1,28 @@
+<SageTVPlugin>
+    <Name>jsoup</Name>
+    <Identifier>jsoup</Identifier>
+    <Version>1.11.3</Version>
+    <Description>Java HTML parser by Jonathan Hedley (DO NOT INSTALL SEPARATELY).</Description>
+    <Author>routerunner</Author>
+    <PluginType>Library</PluginType>
+    <CreationDate>2012-11-10</CreationDate>
+    <ModificationDate>2019-01-26</ModificationDate>
+    <ReleaseNotes>
+        1.11.3 - Fixes HTTPS support.
+        1.7.1 - First Public Release.
+    </ReleaseNotes>
+    <Package>
+        <PackageType>JAR</PackageType>
+        <Location>http://central.maven.org/maven2/org/jsoup/jsoup/1.11.3/jsoup-1.11.3.jar</Location>
+        <MD5>4735085c4a37313b00887dd0a0f99813</MD5>
+        <Overwrite>true</Overwrite>
+    </Package>
+    <Dependency>
+        <JVM />
+        <MinVersion>1.7</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Core />
+        <MinVersion>7.1</MinVersion>
+    </Dependency>
+</SageTVPlugin>

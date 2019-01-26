@@ -51,7 +51,7 @@ If all you are doing is adding/updating a new jar file library.  You might be ab
 <dependency org="com.google.code.gson" name="gson" rev="2.7"/>
 ```
 
-This is basically a copy/paste of the `IVY` dependency from `maven central`.  Normally I find the library, and then copy the IVY xml into a library xml file here.
+This is basically a copy/paste of the `ivy` dependency from `maven central`.  Normally I find the library, and then copy the IVY xml into a library xml file here.
 
 Once you add/edit the library xml, you can run, 
 ```bash
