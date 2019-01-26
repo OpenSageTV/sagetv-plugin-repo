@@ -1,2 +1,2 @@
-<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
-<dependency org="com.fasterxml.jackson.core" name="jackson-databind" rev="2.9.8"/>
+<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
+<dependency org="com.fasterxml.jackson.core" name="jackson-core" rev="2.9.8"/>

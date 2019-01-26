@@ -4,8 +4,8 @@
     <Identifier>javax-validation-api</Identifier>
     <Description>javax-validation-api library - dependency only</Description>
     <Author>SageTV</Author>
-    <CreationDate>2016-09-10</CreationDate>
-    <ModificationDate>2016-09-10</ModificationDate>
+    <CreationDate>2019-01-26</CreationDate>
+    <ModificationDate>2019-01-26</ModificationDate>
     <Version>1.1.0</Version>
     <ResourcePath>javax-validation-api</ResourcePath>
     <Webpage>http://central.maven.org/maven2/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar</Webpage>

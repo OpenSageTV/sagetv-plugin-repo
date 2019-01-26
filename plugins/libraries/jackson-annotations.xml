@@ -4,8 +4,8 @@
     <Identifier>jackson-annotations</Identifier>
     <Description>jackson-annotations library - dependency only</Description>
     <Author>SageTV</Author>
-    <CreationDate>2018-12-30</CreationDate>
-    <ModificationDate>2018-12-30</ModificationDate>
+    <CreationDate>2019-01-26</CreationDate>
+    <ModificationDate>2019-01-26</ModificationDate>
     <Version>2.9.8</Version>
     <ResourcePath>jackson-annotations</ResourcePath>
     <Webpage>http://central.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.9.8/jackson-annotations-2.9.8.jar</Webpage>
