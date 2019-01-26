@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SageTVPlugin>
+  <Name>Jackson datatype jsr</Name>
+  <Identifier>jackson-datatype-jsr</Identifier>
+  <Description>Jackson Datatype JSR.</Description>
+  <Author>tmiranda</Author>
+  <CreationDate>2019.01.05</CreationDate>
+  <ModificationDate>2019.01.05</ModificationDate>
+  <Version beta="false">2.9.8</Version>
+  <Desktop>false</Desktop>
+  <PluginType>Library</PluginType>
+  
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>http://central.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.9.8/jackson-datatype-jsr310-2.9.8.jar</Location>
+    <MD5>01d34ef6e91de1aea29aadebced1aaa5</MD5>
+  </Package>
+  
+</SageTVPlugin>
