@@ -13,6 +13,26 @@
   <PluginType>Library</PluginType>
   
   <Dependency>
+    <Plugin>jackson-annotations</Plugin>
+	<MinVersion>2.9.8</MinVersion>
+  </Dependency> 
+  
+  <Dependency>
+    <Plugin>jackson-core</Plugin>
+	<MinVersion>2.9.8</MinVersion>
+  </Dependency>
+  
+  <Dependency>
+    <Plugin>jackson-datatype-jsr</Plugin>
+	<MinVersion>2.9.8</MinVersion>
+  </Dependency>
+  
+  <Dependency>
+    <Plugin>jackson-databind</Plugin>
+	<MinVersion>2.9.8</MinVersion>
+  </Dependency>  
+  
+  <Dependency>
     <Plugin>json</Plugin>
   </Dependency>
 
