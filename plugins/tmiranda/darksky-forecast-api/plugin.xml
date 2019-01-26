@@ -23,7 +23,7 @@
   </Dependency>
   
   <Dependency>
-    <Plugin>jackson-datatype-jsr</Plugin>
+    <Plugin>jackson-datatype-jsr310</Plugin>
 	<MinVersion>2.9.8</MinVersion>
   </Dependency>
   
