@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SageTVPlugin>
   <Name>Jackson datatype jsr</Name>
-  <Identifier>jackson-datatype-jsr</Identifier>
+  <Identifier>jackson-datatype-jsr310</Identifier>
   <Description>Jackson Datatype JSR.</Description>
   <Author>tmiranda</Author>
   <CreationDate>2019.01.05</CreationDate>
