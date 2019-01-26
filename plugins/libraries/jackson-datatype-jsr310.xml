@@ -8,7 +8,7 @@
     <ModificationDate>2019-01-25</ModificationDate>
     <Version>2.9.8</Version>
     <ResourcePath>jackson-datatype-jsr310</ResourcePath>
-    <Webpage>http://central.maven.org/maven2/com/fasterxml/jackson/core/jackson-datatype-jsr310/2.9.8/jackson-datatype-jsr310-2.9.8.jar</Webpage>
+	<Webpage>http://central.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.9.8/jackson-datatype-jsr310-2.9.8.jar</Webpage>
     <PluginType>Library</PluginType>
     <Package>
         <PackageType>JAR</PackageType>
