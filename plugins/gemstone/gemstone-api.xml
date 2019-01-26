@@ -10,16 +10,17 @@
   <Author>jusjoken,Fuzzy,PluckyHD</Author>
 
   <CreationDate>2010-12-06</CreationDate>
-  <ModificationDate>2017.10.02</ModificationDate>
-  <Version>1.0402</Version>
+  <ModificationDate>2019.01.20</ModificationDate>
+  <Version>1.0501</Version>
   <Desktop>false</Desktop>
 
   <Dependency>
    <Plugin>sagex-api</Plugin>
-    <MinVersion>9.0.0.8</MinVersion>
+    <MinVersion>9.1.7.0</MinVersion>
   </Dependency>
 
   <ReleaseNotes>
+    Version 1.0501 Minor changes to remove weather underground and add dark sky
     Version 1.0402 Minor change to handle default weather location
     Version 1.0401 Misc fixes - see forums 
     Version 1.0203 NO CHANGES - just moved the packages to BinTray from Google Code 
@@ -29,8 +30,8 @@
 
   <Package>
     <PackageType>JAR</PackageType>
-    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/gemstone/GemstoneAPI1_0402.zip</Location>
-    <MD5>ad96a41f42234b7d276d4d759b7bbe87</MD5>
+    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/gemstone/GemstoneAPI1_0501.zip</Location>
+    <MD5>ca7d9bf5aa6a283676b55a5ba252da64</MD5>
   </Package>
 
 </SageTVPlugin>
