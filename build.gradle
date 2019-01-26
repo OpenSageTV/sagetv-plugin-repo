@@ -34,3 +34,12 @@ task(buildLibraries, dependsOn: 'classes', type: JavaExec) {
     main = 'BuildLibraries'
     classpath = sourceSets.main.runtimeClasspath
 }
+
+task copyLibraries(type: Copy, dependsOn: buildLibraries) {
+    from "$buildDir/libraries"
+    include "*.xml"
+    into "plugins/libraries"
+}
+
+
+defaultTasks 'copyLibraries'
