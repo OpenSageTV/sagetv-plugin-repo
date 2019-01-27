@@ -1,0 +1,150 @@
+<SageTVPlugin>
+
+    <Name>TCP Server for SageTV</Name>
+    <Identifier>SageTCPServer</Identifier>
+    <Description>SageTCPServer is an open source TCP interface to the SageTV API. It is mainly used by MLSageTV, TaSageTV, TiSageTV and the CQC Sage Media Server/Player.</Description>
+    <Author>Fonceur</Author>
+    <CreationDate>2008.06.22</CreationDate>
+    <ModificationDate>2019.01.27</ModificationDate>
+    <Version>2.3.6.1</Version>
+    <ResourcePath>SageTCPServer</ResourcePath>
+
+    <Webpage>http://talluscorp.com/mediawiki/index.php?title=SageTCPServer</Webpage>
+
+    <Webpage>http://talluscorp.com/mediawiki/index.php?title=SageTCPServer_for_developers</Webpage>
+
+    <Webpage>http://sourceforge.net/projects/sagetcpserver/</Webpage>
+
+    <PluginType>Standard</PluginType>
+
+    <ImplementationClass>sagetcpserver.StartServers</ImplementationClass>
+
+    <Dependency>
+
+        <JVM/>
+
+        <MinVersion>1.5.0</MinVersion>
+
+    </Dependency>
+
+    <Dependency>
+
+        <Core/>
+
+        <MinVersion>7.0.23</MinVersion>
+
+    </Dependency>
+
+    <Dependency>
+
+        <Plugin>GKusnickToolsLib</Plugin>
+
+        <MinVersion>1.5.5</MinVersion>
+
+    </Dependency>
+
+    <!--<Dependency>-->
+
+        <!--<Plugin>MediaStreaming</Plugin>-->
+
+        <!--<MinVersion>1.1.2.43</MinVersion>-->
+
+    <!--</Dependency>-->
+
+    <!--<Dependency>-->
+
+        <!--<Plugin>phoenix-api</Plugin>-->
+
+        <!--<MinVersion>2.3.23</MinVersion>-->
+
+    <!--</Dependency>-->
+
+    <!--<Dependency>-->
+
+        <!--<Plugin>sagex-api-services</Plugin>-->
+
+        <!--<MinVersion>7.0.23</MinVersion>-->
+
+    <!--</Dependency>-->
+
+    <Package>
+        <PackageType>JAR</PackageType>
+        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/SageTCPServer/SageTCPServer-2.3.6.1.zip</Location>
+        <MD5>405e201f4a952ea739eed97377c5421b</MD5>
+    </Package>
+
+    <ReleaseNotes> Version 2.3.6 Moved to a different file server.
+
+        Version 2.3.5 Photos had a duration, which caused issues with TaSageTV.
+
+        Version 2.3.4 Program duration was not getting sent.  Can turn off the Ping.
+
+        Version 2.3.3 Increased the send buffer size from 8k to 64k.
+
+        Version 2.3.2 No longer send the "keep alive" without the INI.
+
+        Version 2.3.1 Fix: was not cleaning up properly on Media server/Client disconnect.
+
+        Version 2.3.0 Properly handles empty Title in imported videos.
+
+        Version 2.2.9 Added support for EXC:Program.exe|paramater1|parameter2|...|parameterN
+
+        Version 2.2.7 Update conflicts based on events.  Modified the keep alive.
+
+        Version 2.2.6 Removed some extra API instantiations.  Fixed starting a Playlist.
+
+        Version 2.2.5 Fix: was not reading the proper port for Jetty.
+
+        Version 2.2.4 Modified the Client/Extender configuration of Names and Ports.
+
+        Version 2.2.3 Don't send info about albums without tracks.
+
+        Version 2.2.2 Added support for custom buttons.
+
+        Version 2.2.1 React faster to the Extender going into standby.
+
+        Version 2.2.0 Improved the extender's handling, part 3.
+
+        Version 2.1.9 Added JSON2 as Answer option.
+
+        Version 2.1.8 Improved the extender's handling, part 2.
+
+        Version 2.1.7 Slightly more efficient version...
+
+        Version 2.1.6 The JSON string for multiple clients was malformed.
+
+        Version 2.1.5 The play mode value was no always correct.
+
+        Version 2.1.4 Improved the extender's handling.
+
+        Version 2.1.3 Enforce the password usage and provide the HTTP port.
+
+        Version 2.1.2 Stop sending Del/Add for a Favorite modification.  Can send the list of clients.
+
+        Version 2.1.1 Stop capitalizing channel details.  Retrieve the title from Metadata if present.
+
+        Version 2.1.0 Capitalize JSON strings.  Add password protection. Limit the system messages sent.
+
+        Version 2.0.9 Fixed issues with the Server's port.  Can launch LiveTV on a specific channel.
+
+        Version 2.0.8 Can now provide the list of scheduling conflicts.
+
+        Version 2.0.7 Fixed the system messages and favorites events handling.
+
+        Version 2.0.6 Set the default VLC port to 554.
+
+        Version 2.0.5 Force the first letter from the JSON strings to upper case.
+
+        Version 2.0.4 Send the Favorites 25 or less at a time.  Update to the Client and Remote control.
+
+        Version 2.0.3 Did not properly cleaned up old threads.  Fixed some playlist issues.
+
+        Version 2.0.2 Cleaned up the polling.
+
+        Version 2.0.1 Keep alive was broken.
+
+        Version 2.0.0 MAJOR UPDATE: single access port per server/client/extender.
+
+    </ReleaseNotes>
+
+</SageTVPlugin>
