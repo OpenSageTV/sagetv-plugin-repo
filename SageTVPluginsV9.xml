@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2019.0127.1244">
+<PluginRepository version="2019.0210.2358">
 <SageTVPlugin>
   <Name>SageMC</Name>
   <Identifier>sagemc</Identifier>
@@ -248,6 +248,31 @@ Version 7.0.11 - Fix import of legacy STVi - JREkiwi
   </Dependency>
     <ReleaseNotes>
         jackson-annotations library
+    </ReleaseNotes>
+</SageTVPlugin>
+<SageTVPlugin>
+    <Name>jaxws Library</Name>
+    <Identifier>jaxws</Identifier>
+    <Description>jaxws library - dependency only</Description>
+    <Author>SageTV</Author>
+    <CreationDate>2019-02-10</CreationDate>
+    <ModificationDate>2019-02-10</ModificationDate>
+    <Version>2.3.1</Version>
+    <ResourcePath>jaxws</ResourcePath>
+    <Webpage>http://central.maven.org/maven2/javax/xml/ws/jaxws-api/2.3.1/jaxws-api-2.3.1.jar</Webpage>
+    <PluginType>Library</PluginType>
+    <Package>
+        <PackageType>JAR</PackageType>
+        <Location>http://central.maven.org/maven2/javax/xml/ws/jaxws-api/2.3.1/jaxws-api-2.3.1.jar</Location>
+        <MD5>5a6f94e95cc2054bc840cc2f2fedc5d8</MD5>
+        <Overwrite>true</Overwrite>
+    </Package>
+  <Dependency>
+    <Core/>
+    <MinVersion>9.0.7</MinVersion>
+  </Dependency>
+    <ReleaseNotes>
+        jaxws library
     </ReleaseNotes>
 </SageTVPlugin>
 <SageTVPlugin>
