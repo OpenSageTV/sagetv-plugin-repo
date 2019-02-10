@@ -1,0 +1,2 @@
+<!-- https://mvnrepository.com/artifact/javax.xml.ws/jaxws-api -->
+<dependency org="javax.xml.ws" name="jaxws-api" rev="2.3.1"/>
