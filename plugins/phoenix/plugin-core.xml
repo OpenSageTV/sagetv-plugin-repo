@@ -26,7 +26,7 @@
     <PluginType>Standard</PluginType>
     <Package>
         <PackageType>System</PackageType>
-        <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/phoenix/3.3.0/phoenix-core-3.3.0.zip</Location>
+        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/phoenix/3.3.0/phoenix-core-3.3.0.zip</Location>
         <MD5>5d7d151af3014be5653ab9138fde70ab</MD5>
     </Package>
     <ImplementationClass>sagex.phoenix.plugin.PhoenixPlugin</ImplementationClass>
@@ -40,7 +40,7 @@
 * The API will ignore changes that are the same. ie, setting same provider over and over, or setting the same units or locations, etc, will just be ignored, and not passed to the implementation.
 * The weather configuration can be "locked" (in BMT Weather Configuration). ie, if you have weather set to Yahoo with a location and units, you can "lock" it so that any API request to change this this will be ignored. I did this mainly because of a bug in Gemstore where it keeps changing my weather provider and units
 * SageTV Debugging - Exposed SageTV debugging flags to BMT Web UI (configuration)
- 
+
 # 3.2.1
 * Fixes to allow failed TV lookups to retry (most failures are "Too many connections")
 

@@ -22,17 +22,16 @@
   <ReleaseNotes>
     Version 1.0501 Minor changes to remove weather underground and add dark sky
     Version 1.0402 Minor change to handle default weather location
-    Version 1.0401 Misc fixes - see forums 
-    Version 1.0203 NO CHANGES - just moved the packages to BinTray from Google Code 
-  </ReleaseNotes> 
+    Version 1.0401 Misc fixes - see forums
+    Version 1.0203 NO CHANGES - just moved the packages to BinTray from Google Code
+  </ReleaseNotes>
   <PluginType>Standard</PluginType>
-  <ImplementationClass>Gemstone.GemstonePlugin</ImplementationClass> 
+  <ImplementationClass>Gemstone.GemstonePlugin</ImplementationClass>
 
   <Package>
     <PackageType>JAR</PackageType>
-    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/gemstone/GemstoneAPI1_0501.zip</Location>
+    <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/gemstone/GemstoneAPI1_0501.zip</Location>
     <MD5>ca7d9bf5aa6a283676b55a5ba252da64</MD5>
   </Package>
 
 </SageTVPlugin>
-

@@ -31,7 +31,7 @@
     - Show Larger Thumbnails (Diamond only)
     - Switch to a Large Preview Thumb (top right) (non-Diamond)
     - Include the Title with the Episode Name
-    * Always Exclude Title from Info List (right side panel) 
+    * Always Exclude Title from Info List (right side panel)
     - Show/Hide thumbnails for video menu items
   </Description>
   <Author>jusjoken</Author>
@@ -45,12 +45,12 @@
   <Dependency>
     <STV>SageTV7</STV>
     <MinVersion>9.0</MinVersion>
-  </Dependency> 
+  </Dependency>
   <PluginType>STVI</PluginType>
   <STVImport>CVF.stvi</STVImport>
   <Package>
     <PackageType>STVI</PackageType>
-    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/cvf/CVF_1_27.zip</Location>
+    <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/cvf/CVF_1_27.zip</Location>
     <MD5>b97f315fb5de4178bd4a2ff5fbb4d75f</MD5>
   </Package>
   <Screenshot>https://github.com/jusjoken/cvf/raw/master/screenshots/CVF_Watched_LargePreview_RemovedThumbs.PNG</Screenshot>

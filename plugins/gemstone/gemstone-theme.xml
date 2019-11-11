@@ -12,14 +12,14 @@
   <PluginType>Library</PluginType>
 
   <ReleaseNotes>
-    Version 1.0407 Fix for checked and unchecked images 
-    Version 1.0406 JOrton updated the pngs to work with Android Mini Client better 
-    Version 1.0203 NO CHANGES - just moved the packages to BinTray from Google Code 
-  </ReleaseNotes> 
+    Version 1.0407 Fix for checked and unchecked images
+    Version 1.0406 JOrton updated the pngs to work with Android Mini Client better
+    Version 1.0203 NO CHANGES - just moved the packages to BinTray from Google Code
+  </ReleaseNotes>
 
   <Package>
     <PackageType>STV</PackageType>
-    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/gemstone/GemstoneTheme1_0407.zip</Location>
+    <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/gemstone/GemstoneTheme1_0407.zip</Location>
     <MD5>269dc2655442d0c6e34299f8a9f1f9fa</MD5>
   </Package>
 </SageTVPlugin>
