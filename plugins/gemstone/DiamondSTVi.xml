@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SageTVPlugin>
 
-  <Name>Gemstone for Default SageTV9 (previously Diamond)</Name> 
-  <Identifier>DiamondSTVi</Identifier> 
-  <Description>Major update of the Diamond STVi.</Description> 
-  <Author>JOrton,jusjoken,Fuzzy,EvilPenguin,bialio,PluckyHD</Author> 
-  <CreationDate>2010.11.01</CreationDate> 
+  <Name>Gemstone for Default SageTV9 (previously Diamond)</Name>
+  <Identifier>DiamondSTVi</Identifier>
+  <Description>Major update of the Diamond STVi.</Description>
+  <Author>JOrton,jusjoken,Fuzzy,EvilPenguin,bialio,PluckyHD</Author>
+  <CreationDate>2010.11.01</CreationDate>
   <ModificationDate>2019.01.20</ModificationDate>
-  <Version>4.0501</Version> 
+  <Version>4.0501</Version>
 
   <Dependency>
    <Core/>
@@ -25,76 +25,75 @@
   </Dependency>
 
   <Dependency>
-   <Plugin>gemstone-api</Plugin> 
-   <MinVersion>1.0501</MinVersion> 
+   <Plugin>gemstone-api</Plugin>
+   <MinVersion>1.0501</MinVersion>
   </Dependency>
 
   <Dependency>
-   <Plugin>gemstone-theme</Plugin> 
-   <MinVersion>1.0407</MinVersion> 
+   <Plugin>gemstone-theme</Plugin>
+   <MinVersion>1.0407</MinVersion>
   </Dependency>
 
   <Dependency>
-   <Plugin>gemstone-icons</Plugin> 
-   <MinVersion>1.013</MinVersion> 
+   <Plugin>gemstone-icons</Plugin>
+   <MinVersion>1.013</MinVersion>
   </Dependency>
 
-  <PluginType>STVI</PluginType> 
+  <PluginType>STVI</PluginType>
 
   <Package>
-   <PackageType>STV</PackageType> 
-   <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/gemstone/Gemstone1_0501.zip</Location> 
-   <MD5>557f8bc9c8b5bab7e000bd9d90007204</MD5> 
+   <PackageType>STV</PackageType>
+   <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/gemstone/Gemstone1_0501.zip</Location>
+   <MD5>557f8bc9c8b5bab7e000bd9d90007204</MD5>
   </Package>
 
   <Package>
-    <PackageType>STV</PackageType> 
-    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/gemstone/GemstoneDefaults1_0401.zip</Location> 
-    <MD5>00775be716070c5ecd0e2ed4a2378485</MD5> 
+    <PackageType>STV</PackageType>
+    <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/gemstone/GemstoneDefaults1_0401.zip</Location> 
+    <MD5>00775be716070c5ecd0e2ed4a2378485</MD5>
   </Package>
 
-  <STVImport>GemstonePlugin.stvi</STVImport> 
+  <STVImport>GemstonePlugin.stvi</STVImport>
 
   <ReleaseNotes>
     Version 1.0501 Removed Weather Underground and fixed Yahoo Weather
-                   Added Dark Sky Weather - this requires a developer key. 
-                    - Sign up at https://darksky.net/dev 
+                   Added Dark Sky Weather - this requires a developer key.
+                    - Sign up at https://darksky.net/dev
                     - Create a file in the root SageTV folder called darksky.properties with only 1 line in it "key=userkey"
                     - no quotes in the line and replace userkey with the one you get when signing up
                     - without a user key Dark Sky provider will not update other than on restart of the server
-    Version 1.0407 Fix for checked and unchecked images 
+    Version 1.0407 Fix for checked and unchecked images
     Version 1.0406 Fix for Android Mini Client image issue
     Version 1.0404 Fix for Windows Client to get weather location from server
     Version 1.0403 Fix for EpisodeSimpleList losing focus after play
     Version 1.0402 Minor change to handle default weather location
     Version 1.0401 Based on SageTV v9.1.7 STV plus various fixes - see forums
-    Version 1.0301 Based on SageTV v9 STV 
-    Version 1.0203 NO CHANGES - just moved the packages to BinTray from Google Code 
-    Version 1.0201 YouTube Fixes, New/updated Task Switcher and started working on icons for menus 
-    Version 1.0194 Minor fixes for reported issues 
-    Version 1.0193 New Dual Flow plus numerous changes/fixes - see forums 
-    Version 1.0182 Numerous changes/fixes - see forums 
-    Version 1.0174 Update to include Sage 7.1.9.10 base (YouTube changes) 
-    Version 1.0173 First Public beta release 
-    Version 1.017 Numerous changes/fixes - see forums 
-    Version 1.0162 Fix for menu items loading before init completed 
-    Version 1.0161 Fix for compatibility issue for other plugins. 
-    Version 1.016 First Full STV version.  Changes to improve memory footprint. 
-    Version 1.015 Numerous changes/fixes - see forums 
-    Version 1.014 Minor changes to support rotated images on the extenders 
-    Version 1.013 Numerous changes/fixes plus new Weather system based on phoenix core 
-    Version 1.012 Inline Flow added 
-    Version 1.011 Metro Menu, TodaysRecordings, Menu Tweak, Stage Reflections, Unselected Flow item transparency option, Weather Icons selection, Banner in Sage Flow 
-    Version 1.010 Google and Weather.com supported now, new Gemstone Theme, Menu transparency options, Weather forecast Widget details 
-    Version 1.009 Fixes for Menu Manager shared Menu File 
-    Version 1.008 Fixes, many menu manager changes, common import/export, 360 fix, Disable for non-compatible plugins, others 
-    Version 1.007 Fixes, xml location change, adm fix, more configurable items for flows 
-    Version 1.006 Fixes, memory improvements plus Updates to many Flows and added Fanart and Center Flows 
-    Version 1.005 Fixes plus Sideways Flow, ADM integrated. 
-    Version 1.004 Fixes plus optional View Cache. 
-    Version 1.003 Play options fix and List/Sage Flow updates. 
-    Version 1.002 Initial test release. 
-  </ReleaseNotes> 
+    Version 1.0301 Based on SageTV v9 STV
+    Version 1.0203 NO CHANGES - just moved the packages to BinTray from Google Code
+    Version 1.0201 YouTube Fixes, New/updated Task Switcher and started working on icons for menus
+    Version 1.0194 Minor fixes for reported issues
+    Version 1.0193 New Dual Flow plus numerous changes/fixes - see forums
+    Version 1.0182 Numerous changes/fixes - see forums
+    Version 1.0174 Update to include Sage 7.1.9.10 base (YouTube changes)
+    Version 1.0173 First Public beta release
+    Version 1.017 Numerous changes/fixes - see forums
+    Version 1.0162 Fix for menu items loading before init completed
+    Version 1.0161 Fix for compatibility issue for other plugins.
+    Version 1.016 First Full STV version.  Changes to improve memory footprint.
+    Version 1.015 Numerous changes/fixes - see forums
+    Version 1.014 Minor changes to support rotated images on the extenders
+    Version 1.013 Numerous changes/fixes plus new Weather system based on phoenix core
+    Version 1.012 Inline Flow added
+    Version 1.011 Metro Menu, TodaysRecordings, Menu Tweak, Stage Reflections, Unselected Flow item transparency option, Weather Icons selection, Banner in Sage Flow
+    Version 1.010 Google and Weather.com supported now, new Gemstone Theme, Menu transparency options, Weather forecast Widget details
+    Version 1.009 Fixes for Menu Manager shared Menu File
+    Version 1.008 Fixes, many menu manager changes, common import/export, 360 fix, Disable for non-compatible plugins, others
+    Version 1.007 Fixes, xml location change, adm fix, more configurable items for flows
+    Version 1.006 Fixes, memory improvements plus Updates to many Flows and added Fanart and Center Flows
+    Version 1.005 Fixes plus Sideways Flow, ADM integrated.
+    Version 1.004 Fixes plus optional View Cache.
+    Version 1.003 Play options fix and List/Sage Flow updates.
+    Version 1.002 Initial test release.
+  </ReleaseNotes>
 
 </SageTVPlugin>
-

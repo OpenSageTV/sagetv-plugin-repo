@@ -16,7 +16,7 @@
 
     <Package>
         <PackageType>STV</PackageType>
-        <Location><![CDATA[http://dl.bintray.com/opensagetv/sagetv/sagetv-themes/9.0/SageTV3-9.0.zip]]></Location>
+        <Location><![CDATA[https://dl.bintray.com/opensagetv/sagetv/sagetv-themes/9.0/SageTV3-9.0.zip]]></Location>
         <MD5>0f500cde8bb0ee50354598156e3a2c19</MD5>
     </Package>
 
