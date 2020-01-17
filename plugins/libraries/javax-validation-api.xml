@@ -8,11 +8,11 @@
     <ModificationDate>2019-01-26</ModificationDate>
     <Version>1.1.0</Version>
     <ResourcePath>javax-validation-api</ResourcePath>
-    <Webpage>http://central.maven.org/maven2/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar</Webpage>
+    <Webpage>https://repo1.maven.org/maven2/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar</Webpage>
     <PluginType>Library</PluginType>
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>http://central.maven.org/maven2/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar</Location>
+        <Location>https://repo1.maven.org/maven2/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar</Location>
         <MD5>4c257f52462860b62ab3cdab45f53082</MD5>
         <Overwrite>true</Overwrite>
     </Package>

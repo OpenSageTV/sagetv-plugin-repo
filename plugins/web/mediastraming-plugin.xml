@@ -28,14 +28,14 @@ Version 1.3.3
     Increased audio bit rate to 64kbps.
     Removed the 640 kBps quality.
 
-Version 1.3.2 
+Version 1.3.2
     Removed the 1840 kBps quality.
     Reordered the qualities.
 
-Version 1.3.1 
+Version 1.3.1
    Disabled the authentication to enable Android streaming.
-	
-Version 1.3.0 
+
+Version 1.3.0
     1. Increased the resolutions.
     2. Reduced the frame rate at lower bit rate.
     3. Added one higher bit rate.
@@ -43,7 +43,7 @@ Version 1.3.0
     5. Removed the unknown user agents restrictions.
     6. Implemented some Eclipse recommendations.
     7. Increased the audio bit rate by 20%.
-    
+
 Version 1.2.0
 1. Rethrow IllegalArgumentException so and HTTP error code will be returned if the URL contains invalid parameters
 2. Log error messages
@@ -56,13 +56,13 @@ Version 1.2.0
 9. Return more meaningful errors if Quality or User-Agent parameters are invalid.
 10. Refactor HTTP Live Streaming Playlist Code
 11. Put absolute URLs in HTTP Live Streaming Playlists
- 
+
 Version 1.1.2
 1. Fix bug in HTTP Live Streaming servlets that returns HTTP 500 and results in a crossed out play button on the video thumbnail.  Attempting to start playback by clicking the thumbnail or Watch Now -> On this Page was unresponsive.
- 
+
 Version 1.1.1
 1. Fix bug in HTTP Live Streaming playlist generation
- 
+
 Version 1.1.0
 1. Increase volume on HTTP Live Streaming videos.
 2. Create a default web page to explain that this plugin is not used directly by the user.
@@ -72,7 +72,7 @@ Version 1.1.0
   - Playback would fail if started immediately after recording started
 5. Added a URL to allow clients to kill transcoding processes on the server.  The Mobile Web Interface does not use this API.
 6. Added more logging detail
- 
+
 Version 1.0.0
 1. Real-time variable bitrate transcoding of SageTV recordings to iPhone, iPod touch, and iPad devices.
     ]]>
@@ -92,13 +92,13 @@ Version 1.0.0
   <PluginType>Standard</PluginType>
   <Package>
     <PackageType>System</PackageType>
-    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/mediastreaming/1.3.7.90/mediastreaming-war-file-1.3.7.90.zip</Location>
+    <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/mediastreaming/1.3.7.90/mediastreaming-war-file-1.3.7.90.zip</Location>
     <MD5>6ca0a5ae8d6d4e965efeebf619246e4c</MD5>
   </Package>
   <!-- context file must be installed after the war file -->
   <Package>
     <PackageType>System</PackageType>
-    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/mediastreaming/1.3.7.90/mediastreaming-context-file-1.3.7.90.zip</Location>
+    <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/mediastreaming/1.3.7.90/mediastreaming-context-file-1.3.7.90.zip</Location>
     <MD5>e73b3d99b0d5b05e7f41eba3692e7c1d</MD5>
   </Package>
   <ImplementationClass></ImplementationClass>
