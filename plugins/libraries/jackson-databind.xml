@@ -8,11 +8,11 @@
     <ModificationDate>2019-01-26</ModificationDate>
     <Version>2.9.8</Version>
     <ResourcePath>jackson-databind</ResourcePath>
-    <Webpage>http://central.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.9.8/jackson-databind-2.9.8.jar</Webpage>
+    <Webpage>https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.9.8/jackson-databind-2.9.8.jar</Webpage>
     <PluginType>Library</PluginType>
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>http://central.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.9.8/jackson-databind-2.9.8.jar</Location>
+        <Location>https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.9.8/jackson-databind-2.9.8.jar</Location>
         <MD5>39271d9bb1cb7ec563925953b1fa9ff7</MD5>
         <Overwrite>true</Overwrite>
     </Package>

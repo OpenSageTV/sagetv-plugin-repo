@@ -28,7 +28,7 @@
 
         <PackageType>JAR</PackageType>
 
-        <Location>http://central.maven.org/maven2/commons-io/commons-io/2.5/commons-io-2.5.jar</Location>
+        <Location>https://repo1.maven.org/maven2/commons-io/commons-io/2.5/commons-io-2.5.jar</Location>
 
         <MD5>e2d74794fba570ec2115fb9d5b05dc9b</MD5>
 

@@ -29,13 +29,13 @@ Provides Sports Event monitoring for use by the SRE plugin
        <PluginType>Standard</PluginType>
        <Package>
                <PackageType>System</PackageType>
-               <Location>http://bintray.com/artifact/download/opensagetv/sagetv-plugins/livepvrdata-svc-1.7.1/livepvrdata-svc-war-master-59a1993.zip</Location>
+               <Location>https://bintray.com/artifact/download/opensagetv/sagetv-plugins/livepvrdata-svc-1.7.1/livepvrdata-svc-war-master-59a1993.zip</Location>
                <MD5>1a06f079526d3febff17f6317729ecf6</MD5>
                <Overwrite>true</Overwrite>
        </Package>
        <Package>
                <PackageType>System</PackageType>
-               <Location>http://bintray.com/artifact/download/opensagetv/sagetv-plugins/livepvrdata-svc-1.7.1/livepvrdata-svc-context-master-59a1993.zip</Location>
+               <Location>https://bintray.com/artifact/download/opensagetv/sagetv-plugins/livepvrdata-svc-1.7.1/livepvrdata-svc-context-master-59a1993.zip</Location>
                <MD5>b5d5ca42513c29ae8035afc72eeac570</MD5>
                <Overwrite>true</Overwrite>
        </Package>

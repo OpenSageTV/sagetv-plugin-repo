@@ -8,11 +8,11 @@
     <ModificationDate>2019-02-10</ModificationDate>
     <Version>2.3.1</Version>
     <ResourcePath>jaxws</ResourcePath>
-    <Webpage>http://central.maven.org/maven2/javax/xml/ws/jaxws-api/2.3.1/jaxws-api-2.3.1.jar</Webpage>
+    <Webpage>https://repo1.maven.org/maven2/javax/xml/ws/jaxws-api/2.3.1/jaxws-api-2.3.1.jar</Webpage>
     <PluginType>Library</PluginType>
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>http://central.maven.org/maven2/javax/xml/ws/jaxws-api/2.3.1/jaxws-api-2.3.1.jar</Location>
+        <Location>https://repo1.maven.org/maven2/javax/xml/ws/jaxws-api/2.3.1/jaxws-api-2.3.1.jar</Location>
         <MD5>5a6f94e95cc2054bc840cc2f2fedc5d8</MD5>
         <Overwrite>true</Overwrite>
     </Package>
