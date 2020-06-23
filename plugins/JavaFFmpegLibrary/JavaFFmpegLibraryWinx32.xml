@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SageTVPlugin>
+	<Name>JavaFFmpegLibrary Windows x32</Name>
+	<Identifier>JavaFFmpegLibraryWinx32</Identifier>
+	<Description>JNI Wrapper library around FFmpeg library for 32 bit SageTV</Description>
+	<Author>jvl711</Author>
+	<OS>Windows</OS>
+	<CreationDate>2020.05.01</CreationDate>
+	<ModificationDate>2020.06.18</ModificationDate>
+	<Version>0.4</Version>
+	<PluginType>Library</PluginType>
+	<Desktop>false</Desktop>
+	<Webpage>https://github.com/jvl711/JavaFFmpegLibrary</Webpage>
+	<Package>
+        <PackageType>System</PackageType>
+        <Location>https://github.com/jvl711/JavaFFmpegLibrary/releases/download/0.4-alpha/JavaFFmpegLibraryWin32_v0.4-alpha.zip</Location>
+        <MD5>f87097c9c4a8661060375979e8c42463</MD5>
+    </Package>
+</SageTVPlugin>
