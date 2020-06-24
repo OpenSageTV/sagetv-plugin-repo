@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2020.0623.2110">
+<PluginRepository version="2020.0623.2111">
 <SageTVPlugin>
   <Name>OSD Enhancements</Name>
   <Identifier>jusjokenOSDEnhancements</Identifier>
@@ -2681,7 +2681,7 @@ Note that the framework architecture has been revamped for SageTV V7.  Existing 
   <Package>
     <PackageType>JAR</PackageType>
     <Location>https://github.com/jvl711/MediaFormatParserPlugin/releases/download/0.3-alpha/MediaFormatParserPlugin_v0.3-alpha.zip</Location>
-    <MD5>8cc4379482d87cde2825c7137202852a</MD5>
+    <MD5>9d8becde9b88e18ae604a7992b13a31b</MD5>
   </Package>
   <Webpage>https://github.com/jvl711/MediaFormatParserPlugin</Webpage>
   <Dependency>
@@ -2708,7 +2708,7 @@ Note that the framework architecture has been revamped for SageTV V7.  Existing 
   <Package>
     <PackageType>JAR</PackageType>
     <Location>https://github.com/jvl711/MediaFormatParserPlugin/releases/download/0.3-alpha/MediaFormatParserPlugin_v0.3-alpha.zip</Location>
-    <MD5>8cc4379482d87cde2825c7137202852a</MD5>
+    <MD5>9d8becde9b88e18ae604a7992b13a31b</MD5>
   </Package>
   <Webpage>https://github.com/jvl711/MediaFormatParserPlugin</Webpage>
   <Dependency>
