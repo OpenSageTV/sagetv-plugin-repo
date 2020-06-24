@@ -14,7 +14,7 @@
   <Package>
     <PackageType>JAR</PackageType>
     <Location>https://github.com/jvl711/MediaFormatParserPlugin/releases/download/0.3-alpha/MediaFormatParserPlugin_v0.3-alpha.zip</Location>
-    <MD5>8cc4379482d87cde2825c7137202852a</MD5>
+    <MD5>9d8becde9b88e18ae604a7992b13a31b</MD5>
   </Package>
   <Webpage>https://github.com/jvl711/MediaFormatParserPlugin</Webpage>
   <Dependency>
