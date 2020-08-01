@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2020.0624.0010">
+<PluginRepository version="2020.0801.1011">
 <SageTVPlugin>
   <Name>OSD Enhancements</Name>
   <Identifier>jusjokenOSDEnhancements</Identifier>
@@ -2750,8 +2750,8 @@ Provides Sports Event monitoring for use by the SRE plugin
     ]]></Description>
        <Author>skiingwiz</Author>
        <CreationDate>2016.04.23</CreationDate>
-       <ModificationDate>2018.12.22</ModificationDate>
-       <Version beta="true">1.7.1</Version>
+       <ModificationDate>2020.08.01</ModificationDate>
+       <Version beta="true">1.8.0</Version>
        <ResourcePath>plugins/livepvrdata-server</ResourcePath>
        <Webpage>https://github.com/livepvrdata-oss/livepvrdata-svc</Webpage>
        <Dependency>
@@ -2773,17 +2773,19 @@ Provides Sports Event monitoring for use by the SRE plugin
        <PluginType>Standard</PluginType>
        <Package>
                <PackageType>System</PackageType>
-               <Location>https://bintray.com/artifact/download/opensagetv/sagetv-plugins/livepvrdata-svc-1.7.1/livepvrdata-svc-war-master-59a1993.zip</Location>
-               <MD5>1a06f079526d3febff17f6317729ecf6</MD5>
+               <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/livepvrdata-svc-1.8.0/livepvrdata-svc-war-master-68f8aa4.zip</Location>
+               <MD5>0eaef5f269e1a36af6b89d9aa96126af</MD5>
                <Overwrite>true</Overwrite>
        </Package>
        <Package>
                <PackageType>System</PackageType>
-               <Location>https://bintray.com/artifact/download/opensagetv/sagetv-plugins/livepvrdata-svc-1.7.1/livepvrdata-svc-context-master-59a1993.zip</Location>
-               <MD5>b5d5ca42513c29ae8035afc72eeac570</MD5>
+               <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/livepvrdata-svc-1.8.0/livepvrdata-svc-context-master-68f8aa4.zip</Location>
+               <MD5>269fe410f13e0731677cd06b8620112a</MD5>
                <Overwrite>true</Overwrite>
        </Package>
            <ReleaseNotes><![CDATA[
+1.8
+* Add supprot for WNBA
 1.7
 * Add support for Women's College Basketball
 1.6
@@ -2811,6 +2813,7 @@ Provides Sports Event monitoring for use by the SRE plugin
 * First release for sage server
            ]]></ReleaseNotes>
 </SageTVPlugin>
+
 <SageTVPlugin>
   <Name>Darksky Forecast API</Name>
   <Identifier>darksky-forecast-api</Identifier>
