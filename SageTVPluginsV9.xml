@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2020.0801.1011">
+<PluginRepository version="2020.0903.2045">
 <SageTVPlugin>
   <Name>OSD Enhancements</Name>
   <Identifier>jusjokenOSDEnhancements</Identifier>
@@ -1887,15 +1887,15 @@ Initial release.
 	<Author>jvl711</Author>
 	<OS>Windows</OS>
 	<CreationDate>2020.05.01</CreationDate>
-	<ModificationDate>2020.06.18</ModificationDate>
-	<Version>0.4</Version>
+	<ModificationDate>2020.09.03</ModificationDate>
+	<Version>0.5</Version>
 	<PluginType>Library</PluginType>
 	<Desktop>false</Desktop>
 	<Webpage>https://github.com/jvl711/JavaFFmpegLibrary</Webpage>
 	<Package>
         <PackageType>System</PackageType>
-        <Location>https://github.com/jvl711/JavaFFmpegLibrary/releases/download/0.4-alpha/JavaFFmpegLibraryWin32_v0.4-alpha.zip</Location>
-        <MD5>f87097c9c4a8661060375979e8c42463</MD5>
+        <Location>https://github.com/jvl711/JavaFFmpegLibrary/releases/download/0.5/JavaFFmpegLibraryWin32_v0.5.zip</Location>
+        <MD5>60cece56b406ef280a6c4ad700201a42</MD5>
     </Package>
 </SageTVPlugin>
 <SageTVPlugin>
@@ -1905,15 +1905,15 @@ Initial release.
 	<Author>jvl711</Author>
 	<OS>Windows</OS>
 	<CreationDate>2020.05.01</CreationDate>
-	<ModificationDate>2020.06.18</ModificationDate>
-	<Version>0.4</Version>
+	<ModificationDate>2020.09.03</ModificationDate>
+	<Version>0.5</Version>
 	<PluginType>Library</PluginType>
 	<Desktop>false</Desktop>
 	<Webpage>https://github.com/jvl711/JavaFFmpegLibrary</Webpage>
 	<Package>
         <PackageType>System</PackageType>
-        <Location>https://github.com/jvl711/JavaFFmpegLibrary/releases/download/0.4-alpha/JavaFFmpegLibraryWin64_v0.4-alpha.zip</Location>
-        <MD5>5fd89e5fcfe740572cbe70e1e75cb274</MD5>
+        <Location>https://github.com/jvl711/JavaFFmpegLibrary/releases/download/0.5/JavaFFmpegLibraryWin64_v0.5.zip</Location>
+        <MD5>c0310554153e6634b0e0094c417c0273</MD5>
     </Package>
 </SageTVPlugin>
 
@@ -2667,39 +2667,12 @@ Note that the framework architecture has been revamped for SageTV V7.  Existing 
 </Package>
 </SageTVPlugin>
 <SageTVPlugin>
-  <Name>Media Format Parser Plugin Windows x64</Name>
-  <Identifier>MediaFormatParserPluginWinx64</Identifier>
-  <Author>jvl711</Author>
-  <CreationDate>2020.05.07</CreationDate>
-  <ModificationDate>2020.06.18</ModificationDate>
-  <Version beta="true">0.3</Version>
-  <OS>Windows</OS>
-  <Desktop>false</Desktop>
-  <Description>Media parser plugin based on FFmpeg for 64 bit SageTV</Description>
-  <PluginType>Standard</PluginType>
-  <ImplementationClass>jvl.mediaformat.MediaFormatParserPlugin</ImplementationClass>
-  <Package>
-    <PackageType>JAR</PackageType>
-    <Location>https://github.com/jvl711/MediaFormatParserPlugin/releases/download/0.3-alpha/MediaFormatParserPlugin_v0.3-alpha.zip</Location>
-    <MD5>9d8becde9b88e18ae604a7992b13a31b</MD5>
-  </Package>
-  <Webpage>https://github.com/jvl711/MediaFormatParserPlugin</Webpage>
-  <Dependency>
-    <core/>
-    <MinVersion>9.2.2</MinVersion>
-  </Dependency>  
-  <Dependency>
-    <Plugin>JavaFFmpegLibraryWinx64</Plugin>
-    <MinVersion>0.4</MinVersion>
-  </Dependency>  
-</SageTVPlugin>
-<SageTVPlugin>
   <Name>Media Format Parser Plugin Windows x32</Name>
   <Identifier>MediaFormatParserPluginWinx32</Identifier>
   <Author>jvl711</Author>
   <CreationDate>2020.05.07</CreationDate>
-  <ModificationDate>2020.06.18</ModificationDate>
-  <Version beta="true">0.3</Version>
+  <ModificationDate>2020.09.03</ModificationDate>
+  <Version beta="false">0.5</Version>
   <OS>Windows</OS>
   <Desktop>false</Desktop>
   <Description>Media parser plugin based on FFmpeg for 32 bit SageTV</Description>
@@ -2707,8 +2680,8 @@ Note that the framework architecture has been revamped for SageTV V7.  Existing 
   <ImplementationClass>jvl.mediaformat.MediaFormatParserPlugin</ImplementationClass>
   <Package>
     <PackageType>JAR</PackageType>
-    <Location>https://github.com/jvl711/MediaFormatParserPlugin/releases/download/0.3-alpha/MediaFormatParserPlugin_v0.3-alpha.zip</Location>
-    <MD5>9d8becde9b88e18ae604a7992b13a31b</MD5>
+    <Location>https://github.com/jvl711/MediaFormatParserPlugin/releases/download/0.5/MediaFormatParserPlugin_v0.5.zip</Location>
+    <MD5>1f9b812767a53e0c85b55adfa5b61f91</MD5>
   </Package>
   <Webpage>https://github.com/jvl711/MediaFormatParserPlugin</Webpage>
   <Dependency>
@@ -2717,8 +2690,47 @@ Note that the framework architecture has been revamped for SageTV V7.  Existing 
   </Dependency>  
   <Dependency>
     <Plugin>JavaFFmpegLibraryWinx32</Plugin>
-    <MinVersion>0.4</MinVersion>
+    <MinVersion>0.5</MinVersion>
+  </Dependency>
+  <ReleaseNotes><![CDATA[
+  0.5 - Added format substition for MATROSKA,WEBM because the substituion will be removed from SageTV core
+      - Fixed the stream id field to pull from FFmpeg and be formated in hex
+  0.3-alpha - Added meta data and thumbnail parsing
+  0.2-alpha - initial version
+  ]]></ReleaseNotes>
+</SageTVPlugin>
+<SageTVPlugin>
+  <Name>Media Format Parser Plugin Windows x32</Name>
+  <Identifier>MediaFormatParserPluginWinx32</Identifier>
+  <Author>jvl711</Author>
+  <CreationDate>2020.05.07</CreationDate>
+  <ModificationDate>2020.09.03</ModificationDate>
+  <Version beta="false">0.5</Version>
+  <OS>Windows</OS>
+  <Desktop>false</Desktop>
+  <Description>Media parser plugin based on FFmpeg for 32 bit SageTV</Description>
+  <PluginType>Standard</PluginType>
+  <ImplementationClass>jvl.mediaformat.MediaFormatParserPlugin</ImplementationClass>
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>https://github.com/jvl711/MediaFormatParserPlugin/releases/download/0.5/MediaFormatParserPlugin_v0.5.zip</Location>
+    <MD5>1f9b812767a53e0c85b55adfa5b61f91</MD5>
+  </Package>
+  <Webpage>https://github.com/jvl711/MediaFormatParserPlugin</Webpage>
+  <Dependency>
+    <core/>
+    <MinVersion>9.2.2</MinVersion>
   </Dependency>  
+  <Dependency>
+    <Plugin>JavaFFmpegLibraryWinx32</Plugin>
+    <MinVersion>0.5</MinVersion>
+  </Dependency>
+  <ReleaseNotes><![CDATA[
+  0.5 - Added format substition for MATROSKA,WEBM because the substituion will be removed from SageTV core
+      - Fixed the stream id field to pull from FFmpeg and be formated in hex
+  0.3-alpha - Added meta data and thumbnail parsing
+  0.2-alpha - initial version
+  ]]></ReleaseNotes>
 </SageTVPlugin>
 <SageTVPlugin>
        <Name>chartjs for SageTV Web Interface</Name>
