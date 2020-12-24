@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2020.1224.1723">
+<PluginRepository version="2020.1224.1747">
 <SageTVPlugin>
   <Name>OSD Enhancements</Name>
   <Identifier>jusjokenOSDEnhancements</Identifier>
@@ -1881,7 +1881,7 @@ Initial release.
        	</ReleaseNotes>
 </SageTVPlugin>
 <SageTVPlugin>
-	<Name>SageTVTramscoder (FFmpeg) Windows x64</Name>
+	<Name>SageTVTranscoder (FFmpeg) Windows x64</Name>
 	<Identifier>SageTVTramscoderWinx64</Identifier>
 	<Description>This is an updated version of the SageTVTramscoder that is responsible for realtime transcoding, background transcoding of library content, media format detection and media thumbnail generation.  It is based off of version 4.3.1 of ffmpeg, and implements a number of customizations from the original SageTV version.  It also has some workarounds and logging developed by me.</Description>
 	<Author>jvl711</Author>
@@ -1905,7 +1905,7 @@ Initial release.
 
 <SageTVPlugin>
 	<Name>SageTVTramscoder (FFmpeg) Windows x32</Name>
-	<Identifier>SageTVTramscoderWinx32</Identifier>
+	<Identifier>SageTVTranscoderWinx32</Identifier>
 	<Description>This is an updated version of the SageTVTramscoder that is responsible for realtime transcoding, background transcoding of library content, media format detection and media thumbnail generation.  It is based off of version 4.3.1 of ffmpeg, and implements a number of customizations from the original SageTV version.  It also has some workarounds and logging developed by me.</Description>
 	<Author>jvl711</Author>
 	<OS>Windows</OS>
