@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2020.1224.1754">
+<PluginRepository version="2020.1229.2035">
 <SageTVPlugin>
   <Name>OSD Enhancements</Name>
   <Identifier>jusjokenOSDEnhancements</Identifier>
@@ -2717,8 +2717,8 @@ Note that the framework architecture has been revamped for SageTV V7.  Existing 
   <Identifier>MediaFormatParserPluginWinx64</Identifier>
   <Author>jvl711</Author>
   <CreationDate>2020.05.07</CreationDate>
-  <ModificationDate>2020.09.03</ModificationDate>
-  <Version beta="false">0.5</Version>
+  <ModificationDate>2020.12.29</ModificationDate>
+  <Version beta="false">0.6</Version>
   <OS>Windows</OS>
   <Desktop>false</Desktop>
   <Description>Media parser plugin based on FFmpeg for 64 bit SageTV</Description>
@@ -2726,8 +2726,8 @@ Note that the framework architecture has been revamped for SageTV V7.  Existing 
   <ImplementationClass>jvl.mediaformat.MediaFormatParserPlugin</ImplementationClass>
   <Package>
     <PackageType>JAR</PackageType>
-    <Location>https://github.com/jvl711/MediaFormatParserPlugin/releases/download/0.5/MediaFormatParserPlugin_v0.5.zip</Location>
-    <MD5>2704975d03bdf6035dea55ad85f442fb</MD5>
+    <Location>https://github.com/jvl711/MediaFormatParserPlugin/releases/download/0.6/MediaFormatParserPlugin_v0.6.zip</Location>
+    <MD5>4aee77a6682e505b9a579357eb538d53</MD5>
   </Package>
   <Webpage>https://github.com/jvl711/MediaFormatParserPlugin</Webpage>
   <Dependency>
@@ -2739,6 +2739,7 @@ Note that the framework architecture has been revamped for SageTV V7.  Existing 
     <MinVersion>0.5</MinVersion>
   </Dependency>
   <ReleaseNotes><![CDATA[
+  0.6 - Fixed a call on format substitution to use the new one in the plugin class
   0.5 - Added format substition for MATROSKA,WEBM because the substituion will be removed from SageTV core
       - Fixed the stream id field to pull from FFmpeg and be formated in hex
   0.3-alpha - Added meta data and thumbnail parsing
@@ -2750,8 +2751,8 @@ Note that the framework architecture has been revamped for SageTV V7.  Existing 
   <Identifier>MediaFormatParserPluginWinx32</Identifier>
   <Author>jvl711</Author>
   <CreationDate>2020.05.07</CreationDate>
-  <ModificationDate>2020.09.03</ModificationDate>
-  <Version beta="false">0.5</Version>
+  <ModificationDate>2020.12.29</ModificationDate>
+  <Version beta="false">0.6</Version>
   <OS>Windows</OS>
   <Desktop>false</Desktop>
   <Description>Media parser plugin based on FFmpeg for 32 bit SageTV</Description>
@@ -2759,8 +2760,8 @@ Note that the framework architecture has been revamped for SageTV V7.  Existing 
   <ImplementationClass>jvl.mediaformat.MediaFormatParserPlugin</ImplementationClass>
   <Package>
     <PackageType>JAR</PackageType>
-    <Location>https://github.com/jvl711/MediaFormatParserPlugin/releases/download/0.5/MediaFormatParserPlugin_v0.5.zip</Location>
-    <MD5>2704975d03bdf6035dea55ad85f442fb</MD5>
+    <Location>https://github.com/jvl711/MediaFormatParserPlugin/releases/download/0.6/MediaFormatParserPlugin_v0.6.zip</Location>
+    <MD5>4aee77a6682e505b9a579357eb538d53</MD5>
   </Package>
   <Webpage>https://github.com/jvl711/MediaFormatParserPlugin</Webpage>
   <Dependency>
@@ -2772,6 +2773,7 @@ Note that the framework architecture has been revamped for SageTV V7.  Existing 
     <MinVersion>0.5</MinVersion>
   </Dependency>
   <ReleaseNotes><![CDATA[
+  0.6 - Fixed a call on format substitution to use the new one in the plugin class
   0.5 - Added format substition for MATROSKA,WEBM because the substituion will be removed from SageTV core
       - Fixed the stream id field to pull from FFmpeg and be formated in hex
   0.3-alpha - Added meta data and thumbnail parsing
