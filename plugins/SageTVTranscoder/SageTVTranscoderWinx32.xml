@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SageTVPlugin>
 	<Name>SageTVTramscoder (FFmpeg) Windows x32</Name>
-	<Identifier>SageTVTramscoderWinx32</Identifier>
+	<Identifier>SageTVTranscoderWinx32</Identifier>
 	<Description>This is an updated version of the SageTVTramscoder that is responsible for realtime transcoding, background transcoding of library content, media format detection and media thumbnail generation.  It is based off of version 4.3.1 of ffmpeg, and implements a number of customizations from the original SageTV version.  It also has some workarounds and logging developed by me.</Description>
 	<Author>jvl711</Author>
 	<OS>Windows</OS>
