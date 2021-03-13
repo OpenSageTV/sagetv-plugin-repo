@@ -1,0 +1,73 @@
+<SageTVPlugin>
+ <Name>Multi Function Stop</Name>
+ <Identifier>MultiFunctionStop</Identifier>
+ <Description>Presents a panel with multiple options available when Stop is used on recordings, videos and DVDs. Options include Resume, Restart, Delete (with options) and goto Main Menu.
+  Adds an option to close a mediafile when playback is complete.
+  Adds a restart option to the Delete/Don't Delete panel presented at the end of playback of a recording.
+  This is a port of nielm's Multi Function Stop for the Default STV.</Description>
+ <Author>JREkiwi</Author>
+ <CreationDate>2005.05.31</CreationDate>
+ <ModificationDate>2021.03.13</ModificationDate>
+ <Version>1.9.6.2</Version>
+ <Desktop>false</Desktop>
+ <Webpage>http://forums.sagetv.com/forums/showthread.php?t=48999</Webpage>
+ <Dependency>
+  <STV>SageTV7</STV>
+  <MinVersion>7.0</MinVersion>
+ </Dependency>
+ <Dependency>
+  <JVM></JVM>
+  <MinVersion>1.8</MinVersion>
+  </Dependency>
+<PluginType>STVI</PluginType>
+ <Package>
+   <PackageType>STVI</PackageType>
+   <Location>https://github.com/JREkiwi/MultiFunctionStop/releases/download/1.9.6/Multi_Function_Stop_1.9.6.zip</Location>
+   <MD5>F1B638F350E4C7C2F48782A8D67210EC</MD5>
+ </Package>
+<STVImport>Multi_Function_Stop.stvi</STVImport>
+<ReleaseNotes>1.9.6.1
+Change download to GitHub
+1.9.6.1
+Change download to https
+
+1.9.6
+Added Option to disable Mutifunction Stop and have Close Media File Enabled
+
+1.9.5
+Remove duplicate code from listeners
+Rework Restart Playback as it wouldn't work at the end of a mediafile if Close Media was enabled
+Rework Close Media to only run if a Media File was still loaded
+
+1.9.4
+Reworked setting of Watched etc state when deleting on stop and when doing standard delete as the status more often than not was not getting set
+Added Delete and Set Watched to standard delete options from recordings like ShadeBlue's Delete and Set Watched import
+
+1.9.3
+Reworked "Cancel Recording, Set Watched and Delete" to retry the delete in the background. Previously, when the file was in use by something like comskip the delete would fail.
+
+1.9.2
+Fixed compatability issues with Auto Aspect Switcher plugin
+
+1.9.1
+Added 1.9 changes to the correct base file
+
+1.9
+Fixed audio playing on Main Menu when it shouldn't
+Added restart on EOF deletion panel
+Change to have delete available on archived recordings
+Change to have delete not visible on videos when allow deletion of videos is disabled
+
+1.8
+Added Cancel recording - Set Watched and Delete
+Added Delete option for imported videos
+Added Option to Close Media File when playback is finished (SageMC behaviour)
+
+1.7
+Added more options on delete (Delete and Set Watched etc)
+
+1.6
+Port of nielm's Multi Function Stop import
+Enabled theming of panel icons
+</ReleaseNotes>
+</SageTVPlugin>

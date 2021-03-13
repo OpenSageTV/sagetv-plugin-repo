@@ -1,0 +1,34 @@
+<SageTVPlugin>
+ <Name>Intelligent Suggestions</Name>
+ <Identifier>IntelligentSuggestions</Identifier>
+ <Description>Intelligent Suggestions for STV7.  This is a port of nielm's Intelligent Suggestions for the Default STV.</Description>
+ <Author>nielm, JREkiwi</Author>
+ <CreationDate>2006.02.07</CreationDate>
+ <ModificationDate>2021.03.13</ModificationDate>
+ <Version>1.2.2</Version>
+ <Desktop>false</Desktop>
+ <Dependency>
+  <STV>SageTV7</STV>
+  <MinVersion>7.0</MinVersion>
+ </Dependency>
+ <Dependency>
+  <JVM></JVM>
+  <MinVersion>1.8</MinVersion>
+  </Dependency>
+ <Webpage>http://forums.sagetv.com/forums/showthread.php?t=49050</Webpage>
+<PluginType>STVI</PluginType>
+ <Package>
+   <PackageType>STVI</PackageType>
+   <Location>https://github.com/JREkiwi/IntelligentSuggestions/releases/download/1.2/Intelligent_Suggestions_1.2.zip</Location>
+   <MD5>A42561AC89D6AA4B6E8C9BEE01269B06</MD5>
+ </Package>
+<STVImport>Intelligent_Suggestions.stvi</STVImport>
+<ReleaseNotes>1.2.2
+Change download to GitHub
+1.2.1
+Change download to https
+
+1.2
+Port of nielm's Intelligent Suggestions import
+</ReleaseNotes>
+</SageTVPlugin>

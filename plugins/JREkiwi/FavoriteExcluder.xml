@@ -1,0 +1,58 @@
+<SageTVPlugin>
+ <Name>Favorite Excluder (Anti-Favorites)</Name>
+ <Identifier>FavoriteExcluder</Identifier>
+ <Description>Allows the user to automatically mark Favorite and IR recordings as "Watched" and "DontLike" by defining special 'Anti-Favorites'.  This is a port of flachbar's Favorite Excluder (Anti-Favorites) for the Default STV.</Description>
+ <Author>JREkiwi</Author>
+ <CreationDate>2007.01.17</CreationDate>
+ <ModificationDate>2021.03.13</ModificationDate>
+ <Version>2.8.4.2</Version>
+ <Desktop>false</Desktop>
+ <Webpage>http://forums.sagetv.com/forums/showthread.php?t=48899</Webpage>
+ <Dependency>
+  <STV>SageTV7</STV>
+  <MinVersion>7.0</MinVersion>
+ </Dependency>
+ <Dependency>
+  <JVM></JVM>
+  <MinVersion>1.8</MinVersion>
+  </Dependency>
+  <Dependency>
+  <Plugin>sagex-api</Plugin>
+  <MinVersion>7.1.9.3</MinVersion>
+ </Dependency>
+ <Dependency>
+  <Plugin>commons-io</Plugin>
+  <MinVersion>1.4</MinVersion>
+ </Dependency>
+ <Dependency>
+  <Plugin>ortus-favexcluder</Plugin>
+  <MinVersion>1.0</MinVersion>
+ </Dependency>
+<PluginType>STVI</PluginType>
+ <Package>
+   <PackageType>STVI</PackageType>
+   <Location>https://github.com/JREkiwi/FavoriteExcluder/releases/download/2.8.4/Favorite_Excluder_2.8.4.zip</Location>
+   <MD5>0D081397E42B528A917C65456FBEE59D</MD5>
+ </Package>
+<STVImport>Favorite_Excluder.stvi</STVImport>
+<ReleaseNotes>2.8.4.2
+Change download to GitHub
+2.8.4.1
+Change download to https
+
+2.8.4
+Change to prevent definition file being overwritten when more exclusions are added from more than one client
+
+2.8.3
+Changed time exclusion setting to not be a text field
+Added ability to add an exclusion to a specific favorite in the favorite's advanced options
+2.8.2
+Fix excluder definitions being cleared when the plugin was enabled but legacy settings had favorite excluder disabled and a new exclusion was added.
+2.8.1
+Fix background process not stopping when plugin disabled
+2.8
+Support new JAR to enable working on extenders etc.
+2.7
+Complete port of old Favorite Excluder import
+</ReleaseNotes>
+</SageTVPlugin>

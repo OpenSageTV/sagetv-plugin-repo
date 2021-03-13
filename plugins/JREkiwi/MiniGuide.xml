@@ -1,0 +1,65 @@
+<SageTVPlugin>
+ <Name>MiniGuide</Name>
+ <Identifier>MiniGuide</Identifier>
+ <Description>A UI Mod the profides a Default style Mini Guide.  During playback the Up or Down keys will display the Program Mini Guide.</Description>
+ <Author>JREkiwi, MLBDude, Cayars, jbuszkie</Author>
+ <CreationDate>2004.05.13</CreationDate>
+ <ModificationDate>2021.03.13</ModificationDate>
+ <Version>1.0.2.3</Version>
+ <Desktop>false</Desktop>
+   <Webpage>http://forums.sagetv.com/forums/showthread.php?t=49105</Webpage>
+ <Dependency>
+  <STV>SageTV7</STV>
+  <MinVersion>7.0</MinVersion>
+ </Dependency>
+ <Dependency>
+  <JVM></JVM>
+  <MinVersion>1.8</MinVersion>
+  </Dependency>
+<PluginType>STVI</PluginType>
+ <Package>
+   <PackageType>STVI</PackageType>
+   <Location>https://github.com/JREkiwi/MiniGuide/releases/download/1.0.2/MiniGuide_1.0.2.zip</Location>
+   <MD5>37A967652312267E69A2235F0F4B816C</MD5>
+ </Package>
+  <Package>
+   <PackageType>STVI</PackageType>
+   <Location>https://github.com/JREkiwi/MiniGuide/releases/download/1.0.2/MiniGuide_Diamond.zip</Location>
+   <MD5>787A4D0EB42D39891F111A755AA89EE1</MD5>
+   <Overwrite>false</Overwrite>
+ </Package>
+
+<STVImport>MiniGuide.stvi</STVImport>
+<ReleaseNotes>1.0.2.3
+Change download to GitHub
+1.0.2.2
+Change download to https
+
+1.0.2.1
+Change download location
+
+1.0.2
+Fix display starting channel for recordings
+
+1.0.1
+Fix issue with Recordings that are not associated to a channel
+Fix type mismatch in comparisons
+
+1.0.0
+Workaround for Channel 0 included with IsChannelViewable in early builds of V9
+Change initial channel displayed when running on imported videos to be next scheduled recording channel
+
+0.99
+Rework fonts, themes and positioning to match Info display
+Modify position for Diamond Theme
+Add remove display using Left, Info and MouseClick
+
+0.98
+Created separate theme elements for Miniguide background
+Changed default alpha (transparency)
+Added Option to set the default background alpha (transparency) when it it is not defined in a theme
+
+0.97
+Port of Mini Guide import
+</ReleaseNotes>
+</SageTVPlugin>

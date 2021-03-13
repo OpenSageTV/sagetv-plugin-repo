@@ -1,0 +1,36 @@
+<SageTVPlugin>
+ <Name>Encoder Names</Name>
+ <Identifier>EncoderNames</Identifier>
+ <Description>Display friendly names for capture devices in the Parallel Scheduled Recordings view and Capture Device Setup</Description>
+ <Author>BobPhoenix, JREkiwi</Author>
+ <CreationDate>2006.04.15</CreationDate>
+ <ModificationDate>2021.03.13</ModificationDate>
+ <Version>0.8.2</Version>
+ <Desktop>false</Desktop>
+ <Webpage>http://forums.sagetv.com/forums/showthread.php?t=49235</Webpage>
+ <Dependency>
+  <STV>SageTV7</STV>
+  <MinVersion>7.0</MinVersion>
+ </Dependency>
+ <Dependency>
+  <JVM></JVM>
+  <MinVersion>1.8</MinVersion>
+  </Dependency>
+<PluginType>STVI</PluginType>
+ <Package>
+   <PackageType>STVI</PackageType>
+   <Location>https://github.com/JREkiwi/EncoderNames/releases/download/0.8/Encoder_Names_0.8.zip</Location>
+   <MD5>FB1B27F4EF8B92166618CF3ECDFB6373</MD5>
+ </Package>
+<STVImport>Encoder_Names.stvi</STVImport>
+<ReleaseNotes>0.8.2
+Change download to GitHub
+0.8.1
+Change download to https
+0.8
+Added display of friendly names to more panels
+Added configuration to Parallel Scheduled Recordings Menu Options
+0.7
+Port of Encoder Names import
+</ReleaseNotes>
+</SageTVPlugin>
