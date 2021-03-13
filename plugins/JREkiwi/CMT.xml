@@ -44,7 +44,7 @@
 <PluginType>STVI</PluginType>
  <Package>
    <PackageType>STVI</PackageType>
-   <Location>https://github.com/JREkiwi/SageTVPlugins/releases/download/CMT_3.1.9/CMT_3.1.9.zip</Location>
+   <Location>https://github.com/JREkiwi/CMT/releases/download/3.1.9/CMT_3.1.9.zip</Location>
    <MD5>45D4C71FAE6482E4F1E2C857E91BC56A</MD5>
  </Package>
 <STVImport>CMT.stvi</STVImport>
