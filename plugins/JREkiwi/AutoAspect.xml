@@ -1,0 +1,68 @@
+<SageTVPlugin>
+ <Name>Automatic Aspect Ratio Mode Switcher</Name>
+ <Identifier>AutoAspect</Identifier>
+ <Description>This UI Mod plugin the provides the ability to automatically switch the playback aspect ratio mode depending on which channel, source or capture device the show was recorded from, with each aspect ratio set up to resize the video to the correct proportions.
+
+This is a V7 port of Auto Aspect by nielm</Description>
+ <Author>nielm, JREkiwi</Author>
+ <CreationDate>2005.11.15</CreationDate>
+ <ModificationDate>2021.03.13</ModificationDate>
+ <Version>1.3.4.2</Version>
+ <Desktop>false</Desktop>
+ <Webpage>http://forums.sagetv.com/forums/showthread.php?t=49358</Webpage>
+ <Dependency>
+  <STV>SageTV7</STV>
+  <MinVersion>7.0</MinVersion>
+ </Dependency>
+ <Dependency>
+  <JVM></JVM>
+  <MinVersion>1.8</MinVersion>
+  </Dependency>
+ <Dependency>
+  <Plugin>nielm_autoaspect</Plugin>
+  <MinVersion>1.3.1</MinVersion>
+ </Dependency>
+ <Dependency>
+  <Plugin>sageutls</Plugin>
+  <MinVersion>1.4.1</MinVersion>
+ </Dependency>
+  <Dependency>
+   	<Plugin>sagex-api</Plugin>
+  	<MinVersion>7.0.19.0</MinVersion>
+  </Dependency>
+<PluginType>STVI</PluginType>
+ <Package>
+   <PackageType>STVI</PackageType>
+   <Location>https://github.com/JREkiwi/Auto_Aspect/releases/download/1.3.4/Auto_Aspect_1.3.4.zip</Location>
+   <MD5>488BDCD78B27A4F9FDEE99C7E7AE8CAF</MD5>
+ </Package>
+<STVImport>Auto_Aspect.stvi</STVImport>
+<ReleaseNotes>1.3.4.2
+Change download to GitHub
+1.3.4.1
+Change download to https
+
+1.3.4
+Fixed compatability issues with Multi Function Stop plugin
+
+1.3.3.2
+Revert to 1.3.2 stvi
+
+1.3.3.1
+Change JAR version number
+
+1.3.3
+Reworked debug message panel
+Changed dependency to latest JAR for properties fixes
+
+1.3.2
+Fixed multiple debug message panels when switching channels on LiveTV
+
+1.3.1
+Changes to how the debug message panel is displayed and cleared
+
+1.3
+Port of Auto Aspect by nielm
+Note: Ensure any other versions are removed
+</ReleaseNotes>
+</SageTVPlugin>

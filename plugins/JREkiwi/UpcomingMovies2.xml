@@ -1,0 +1,98 @@
+<SageTVPlugin>
+ <Name>Upcoming Movies 2</Name>
+ <Identifier>UpcomingMovies2</Identifier>
+ <Description>Various style Upcoming Movies panel.  Selectable from the sub menu under TV and Schedule Recordings</Description>
+ <Author>JREkiwi</Author>
+ <CreationDate>2005.05.31</CreationDate>
+ <ModificationDate>2021.03.13</ModificationDate>
+ <Version>2.0.4.4</Version>
+ <Desktop>false</Desktop>
+  <Webpage>http://forums.sagetv.com/forums/showthread.php?t=49001</Webpage>
+  <Screenshot><![CDATA[http://forums.sagetv.com/forums/attachment.php?attachmentid=11718&stc=1&d=1293648484]]></Screenshot>
+  <Screenshot><![CDATA[http://forums.sagetv.com/forums/attachment.php?attachmentid=11719&stc=1&d=1293648484]]></Screenshot>
+ <Dependency>
+  <Core></Core>
+  <MinVersion>7.1.5</MinVersion>
+  </Dependency>
+ <Dependency>
+  <JVM></JVM>
+  <MinVersion>1.8</MinVersion>
+  </Dependency>
+ <Dependency>
+   <Plugin>CMT</Plugin>
+   <MinVersion>3.1.9</MinVersion>
+ </Dependency>
+ <Dependency>
+  <Plugin>phoenix-api</Plugin>
+  <MinVersion>2.3.34</MinVersion>
+ </Dependency>
+<PluginType>STVI</PluginType>
+ <Package>
+   <PackageType>STVI</PackageType>
+   <Location>https://github.com/JREkiwi/UpcomingMovies2/releases/download/2.0.4/Upcoming_Movies_2.0.4.zip</Location>
+   <MD5>F73891474036F19AF22CB9F831C6AC44</MD5>
+ </Package>
+<STVImport>Upcoming_Movies.stvi</STVImport>
+<ReleaseNotes>2.0.4.4
+Change download to GitHub
+2.0.4.3
+Fix Java Dependency
+
+2.0.4.1
+Change download to https
+
+2.0.4
+Added option for unscaled backgrounds
+Moved more common code into CMT
+Change dependencies
+
+2.0.3
+Fix background being refreshed by multiple processes
+Fix background enabled settings with Diamond
+
+2.0.2
+Add channel filtering
+Change background display process for smoother scrolling
+Change background display to use Diamond BG processing when using Diamond UI
+
+2.0.0
+Rework Fanart Background code
+
+1.8.6
+Added Now and Next view
+
+1.8.5
+Fixed sorting direction
+Fixed sort by **** (maybe)
+
+1.8.4
+Reinstated sort by ****, but have no way of testing it
+
+1.8.3
+Added scaling, caching and randomizing of phoenix backgrounds
+Changed sorting and view options of Default view to match all options of SageMC view
+
+1.8.2
+Added options for changing time display format
+Changed defaults for view on new installs
+
+1.8.1
+Changed time display to in xx hours/minutes and xx hours/minutes ago
+Changed "Back" behaviour
+
+1.8.0
+Added view similar to SageMC Upcoming Movies
+Added optional Fanart Backgrounds
+
+1.7.1
+Added Upcoming Movies Menu object below TV main Menu
+Added option to filter movies that have already started
+
+1.7
+Added option to configure number of rows and text size
+Added option to filter watched movies
+
+1.6
+Port of Upcoming Movies import
+</ReleaseNotes>
+</SageTVPlugin>
