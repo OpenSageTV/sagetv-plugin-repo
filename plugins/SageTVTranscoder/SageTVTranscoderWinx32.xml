@@ -6,15 +6,15 @@
 	<Author>jvl711</Author>
 	<OS>Windows</OS>
 	<CreationDate>2020.12.10</CreationDate>
-	<ModificationDate>2021.01.10</ModificationDate>
-	<Version>1.0.2</Version>
+	<ModificationDate>2021.04.23</ModificationDate>
+	<Version>1.0.3</Version>
 	<PluginType>Standard</PluginType>
 	<Desktop>false</Desktop>
 	<Webpage>https://github.com/jvl711/FFmpeg</Webpage>
 	<Package>
         <PackageType>System</PackageType>
-        <Location>https://github.com/jvl711/FFmpeg/releases/download/SageTVTranscoder_v1.0.2/SageTVTranscoderWinx32_v1.0.2.zip</Location>
-        <MD5>04ede0e8d8e223d9117f1ca467747e2d</MD5>
+        <Location>https://github.com/jvl711/FFmpeg/releases/download/SageTVTranscoder_v1.0.3/SageTVTranscoderWinx32_v1.0.3.zip</Location>
+        <MD5>a348d233dead4eee63048b4427d574c7</MD5>
     </Package>
 	<ReleaseNotes><![CDATA[
 	1.0.0 - Intial feature complete release
