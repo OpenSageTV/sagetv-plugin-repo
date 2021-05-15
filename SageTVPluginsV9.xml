@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2021.0430.2340">
+<PluginRepository version="2021.0515.1427">
 <SageTVPlugin>
   <Name>OSD Enhancements</Name>
   <Identifier>jusjokenOSDEnhancements</Identifier>
@@ -369,17 +369,17 @@ NOTE: Be sure to clear your browser cache thoroughly after installing this updat
 
 	<Package>
 		<PackageType>System</PackageType>
-		<Location>https://dl.bintray.com/opensagetv/sagetv-plugins/bmtweb/4.101.0/bmtweb-war-4.101.0.zip
+		<Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/bmtweb-war-4.101.0.1.zip
 		</Location>
-		<MD5>e4e1d5081665f3edfbdce65e03b0ad5c</MD5>
+		<MD5>FC76E91A839287760246DF6DA9225C94</MD5>
 	</Package>
 
 	<!-- context file must be installed after the war file -->
 	<Package>
 		<PackageType>System</PackageType>
-		<Location>https://dl.bintray.com/opensagetv/sagetv-plugins/bmtweb/4.101.0/bmtweb-context-4.101.0.zip
+		<Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/bmtweb-context-4.101.0.1.zip
 		</Location>
-		<MD5>38ac727c6ef38cad0f9a90e4bc8cdc95</MD5>
+		<MD5>268BEAF984FD4C8E682E36E947152D70</MD5>
 	</Package>
 	<ReleaseNotes>
 		4.100.0
@@ -615,8 +615,8 @@ NOTE: Be sure to clear your browser cache thoroughly after installing this updat
 
   <Package>
     <PackageType>System</PackageType>
-    <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/sagex-api/9.1.7.0/sagex-api-services-9.1.7.0.zip</Location>
-    <MD5>532b0de9474793d4f0e4c77a1335ce25</MD5>
+    <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/sagex-api-services-9.1.7.0.zip</Location>
+    <MD5>C1CE149B44BDAB90ED2F9FD251E06855</MD5>
   </Package>
 
   <!-- Plugin Class is in the core sagex-api jar -->
@@ -647,8 +647,8 @@ NOTE: Be sure to clear your browser cache thoroughly after installing this updat
 
   <Package>
     <PackageType>JAR</PackageType>
-    <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/sagex-api/9.1.7.0/sagex-api-9.1.7.0.zip</Location>
-    <MD5>0012e9ca02251b378f12dbcd4a9cd953</MD5>
+    <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/sagex-api-9.1.7.0.zip</Location>
+    <MD5>E3993FEC82D99990494E6FEBD0972DC8</MD5>
   </Package>
 
   <ReleaseNotes>
@@ -2078,8 +2078,8 @@ Not Working: Anything else, ie the EPG and info views were not relinked.</Releas
     </Dependency>
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/libraries/thetvdbapi-1.8.zip</Location>
-        <MD5>1ac3efa6d5f2e8747e9bd19ccb371f9e</MD5>
+        <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/thetvdbapi-1.8.zip</Location>
+        <MD5>DD0D2A841A8EE0151C0562FF14F42B27</MD5>
     </Package>
     <ReleaseNotes>
         Library used by Phoenix and TheTVDB
@@ -2097,8 +2097,8 @@ Not Working: Anything else, ie the EPG and info views were not relinked.</Releas
     <PluginType>Library</PluginType>
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/libraries/slf4j-log4j12-1.7.12.zip</Location>
-        <MD5>0f6ddc30cafa9d020fc120e23f428b93</MD5>
+        <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/slf4j-log4j12-1.7.12.zip</Location>
+        <MD5>4602EB34DAEEDFE57487E250C8C66AC8</MD5>
     </Package>
 </SageTVPlugin>
 <SageTVPlugin>
@@ -2172,8 +2172,8 @@ Not Working: Anything else, ie the EPG and info views were not relinked.</Releas
     </Dependency>
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/libraries/themoviedbapi-4.1.zip</Location>
-        <MD5>a8d39ee1eb383b0f3be7dceee4e9a0c9</MD5>
+        <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/themoviedbapi-4.1.zip</Location>
+        <MD5>CDB25A5D4C85A978FBB4F44D7EB1258C</MD5>
     </Package>
     <ReleaseNotes>
         Library used by Phoenix and TheMovieDB
@@ -2191,8 +2191,8 @@ Not Working: Anything else, ie the EPG and info views were not relinked.</Releas
     <PluginType>Library</PluginType>
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/libraries/commons-codec-1.9.zip</Location>
-        <MD5>54c3cf6bb0918773bd8c2fff72a3aa9d</MD5>
+        <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/commons-codec-1.9.zip</Location>
+        <MD5>5282428A3C980F90AF328B4810BB91AD</MD5>
     </Package>
 </SageTVPlugin>
 <SageTVPlugin>
@@ -2247,11 +2247,11 @@ Not Working: Anything else, ie the EPG and info views were not relinked.</Releas
 
 
 
-        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/libraries/json-20140107.zip</Location>
+        <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/json-20140107.zip</Location>
 
 
 
-        <MD5>4d25e3f4d99bb0c7705fc31437bb1014</MD5>
+        <MD5>4D25E3F4D99BB0C7705FC31437BB1014</MD5>
 
 
 
@@ -2276,8 +2276,8 @@ Not Working: Anything else, ie the EPG and info views were not relinked.</Releas
     <PluginType>Library</PluginType>
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/libraries/api-common-2.0.zip</Location>
-        <MD5>0fe121fd329a4e1504d43a30674b0595</MD5>
+        <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/api-common-2.0.zip</Location>
+        <MD5>75CD593B4C5A9571EBB1441F24F98783</MD5>
     </Package>
 </SageTVPlugin>
 <SageTVPlugin>
@@ -2322,8 +2322,8 @@ Not Working: Anything else, ie the EPG and info views were not relinked.</Releas
     </Dependency>
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/libraries/httpclient-4.5.1.zip</Location>
-        <MD5>d91f97edc7886ca71705e69523230724</MD5>
+        <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/httpclient-4.5.1.zip</Location>
+        <MD5>ECE4237148E5F09D8AE3E18D6BB6F2AE</MD5>
     </Package>
 </SageTVPlugin>
 <SageTVPlugin>
@@ -2338,8 +2338,8 @@ Not Working: Anything else, ie the EPG and info views were not relinked.</Releas
     <PluginType>Library</PluginType>
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/libraries/hamcrest-core-1.3.zip</Location>
-        <MD5>6557d3e0f4495a9ccab235fc688cee84</MD5>
+        <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/hamcrest-core-1.3.zip</Location>
+        <MD5>6FDEABB974AFAEE32FC24F9ADDED4646</MD5>
     </Package>
 </SageTVPlugin>
 <SageTVPlugin>
@@ -2432,8 +2432,8 @@ Not Working: Anything else, ie the EPG and info views were not relinked.</Releas
     <PluginType>Library</PluginType>
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/libraries/log4j-1.2.17.zip</Location>
-        <MD5>cb61134bd8cce8030647a86c472f2606</MD5>
+        <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/log4j-1.2.17.zip</Location>
+        <MD5>5D4C7035FE728C444B4E14FB68A84559</MD5>
     </Package>
 </SageTVPlugin>
 <SageTVPlugin>
@@ -2449,8 +2449,8 @@ Not Working: Anything else, ie the EPG and info views were not relinked.</Releas
     <PluginType>Library</PluginType>
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/libraries/httpcore-4.4.3.zip</Location>
-        <MD5>e7dce3d54308dc3b6ceb724d55418afb</MD5>
+        <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/httpcore-4.4.3.zip</Location>
+        <MD5>0565968053C9FB64E9C20351909650F9</MD5>
     </Package>
 </SageTVPlugin>
 <SageTVPlugin>
@@ -2465,8 +2465,8 @@ Not Working: Anything else, ie the EPG and info views were not relinked.</Releas
     <PluginType>Library</PluginType>
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/libraries/commons-lang3-3.4.zip</Location>
-        <MD5>ad0c7520efefe8933ceae339bb85f196</MD5>
+        <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/commons-lang3-3.4.zip</Location>
+        <MD5>88688347C10B370634AE85CB68E097FE</MD5>
     </Package>
 </SageTVPlugin>
 <SageTVPlugin>
@@ -2506,8 +2506,8 @@ Not Working: Anything else, ie the EPG and info views were not relinked.</Releas
     <PluginType>Library</PluginType>
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/libraries/slf4j-api-1.7.12.zip</Location>
-        <MD5>0b185291cbb9d2822f24629efc91de57</MD5>
+        <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/slf4j-api-1.7.12.zip</Location>
+        <MD5>E8C78374C0B6E1353A9A495F46458307</MD5>
     </Package>
 </SageTVPlugin>
 <SageTVPlugin>
@@ -2527,8 +2527,8 @@ Not Working: Anything else, ie the EPG and info views were not relinked.</Releas
     <PluginType>Library</PluginType>
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/libraries/commons-logging-1.2.zip</Location>
-        <MD5>b52136530324a9902c1898d8af1c762d</MD5>
+        <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/commons-logging-1.2.zip</Location>
+        <MD5>E38F4DF7BA18009C19B7420CFCF807E8</MD5>
     </Package>
 </SageTVPlugin>
 <SageTVPlugin>
@@ -2546,8 +2546,8 @@ Not Working: Anything else, ie the EPG and info views were not relinked.</Releas
     <PluginType>Library</PluginType>
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/libraries/junit-4.12.zip</Location>
-        <MD5>57e6b4c96a2568a986775a303ed14abc</MD5>
+        <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/junit-4.12.zip</Location>
+        <MD5>631E4C16741B18D3203E2C15CD8A6E4D</MD5>
     </Package>
 </SageTVPlugin>
 <SageTVPlugin>
@@ -2656,29 +2656,29 @@ Version 1.7.5 beta
     <PluginType>Standard</PluginType>
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/jetty/2.3.0/jetty-starter-jars-2.3.0.14.zip</Location>
-        <MD5>ebc8f8bad569abc032be14a56d82c8ac</MD5>
+        <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/jetty-starter-jars-2.3.0.14.zip</Location>
+        <MD5>EBC8F8BAD569ABC032BE14A56D82C8AC</MD5>
     </Package>
     <Package>
         <PackageType>System</PackageType>
-        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/jetty/2.3.0/jetty-starter-config-files-2.3.0.14.zip</Location>
-        <MD5>5655915b46b3a4a7e4cda4b921ff8560</MD5>
+        <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/jetty-starter-config-files-2.3.0.14.zip</Location>
+        <MD5>5655915B46B3A4A7E4CDA4B921FF8560</MD5>
     </Package>
     <Package>
         <PackageType>System</PackageType>
-        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/jetty/2.3.0/jetty-starter-user-config-files-2.3.0.14.zip</Location>
-        <MD5>fd7c812bcb0a02018bcf8c694635dfad</MD5>
+        <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/jetty-starter-user-config-files-2.3.0.14.zip</Location>
+        <MD5>FD7C812BCB0A02018BCF8C694635DFAD</MD5>
         <Overwrite>false</Overwrite>
     </Package>
     <Package>
         <PackageType>System</PackageType>
-        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/jetty/2.3.0/jetty-starter-webapp-war-file-2.3.0.14.zip</Location>
-        <MD5>50e991ddaa942ce46d04d7673418281e</MD5>
+        <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/jetty-starter-webapp-war-file-2.3.0.14.zip</Location>
+        <MD5>50E991DDAA942CE46D04D7673418281E</MD5>
     </Package>
     <Package>
         <PackageType>System</PackageType>
-        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/jetty/2.3.0/jetty-starter-webapp-context-file-2.3.0.14.zip</Location>
-        <MD5>8144be030148a469dbcdf95cc29531f1</MD5>
+        <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/jetty-starter-webapp-context-file-2.3.0.14.zip</Location>
+        <MD5>8144BE030148A469DBCDF95CC29531F1</MD5>
     </Package>
     <ImplementationClass>sagex.jetty.starter.JettyPlugin</ImplementationClass>
 </SageTVPlugin>
@@ -2763,14 +2763,14 @@ Version 1.3
     <PluginType>Standard</PluginType>
     <Package>
         <PackageType>System</PackageType>
-        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/MobileWeb/2.1.0/sagewebapp-war-file-2.1.0.42.zip</Location>
-        <MD5>c0cf47c29f717f612baab978eb2bc7d8</MD5>
+        <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/sagewebapp-war-file-2.1.0.42.zip</Location>
+        <MD5>C0CF47C29F717F612BAAB978EB2BC7D8</MD5>
     </Package>
     <!-- context file must be installed after the war file -->
     <Package>
         <PackageType>System</PackageType>
-        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/MobileWeb/2.1.0/sagewebapp-context-file-2.1.0.42.zip</Location>
-        <MD5>3b05057f0b7dc2d9d8e3699f31d18f04</MD5>
+        <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/sagewebapp-context-file-2.1.0.42.zip</Location>
+        <MD5>3B05057F0B7DC2D9D8E3699F31D18F04</MD5>
     </Package>
     <ImplementationClass></ImplementationClass>
 </SageTVPlugin>
@@ -3127,8 +3127,8 @@ Initial release.
     <PluginType>Library</PluginType>
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/nielm/nielm-sageutls-jars-1.4.2.zip</Location>
-        <MD5>ef36e4e8450a604a0494f0e461dfe6e2</MD5>
+        <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/nielm-sageutls-jars-1.4.2.zip</Location>
+        <MD5>EF36E4E8450A604A0494F0E461DFE6E2</MD5>
     </Package>
     <ImplementationClass></ImplementationClass>
 </SageTVPlugin>
@@ -3330,8 +3330,8 @@ Phoenix is a STV replacement for SageTV9 providing the following features
 
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/phoenix/3.3.0/phoenix-api-3.3.0.zip</Location>
-        <MD5>9dcd2fdd1456a3cbbd09fa954ed91cc0</MD5>
+        <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/phoenix-api-3.3.0.zip</Location>
+        <MD5>6195539B3CD8966DAEE8AEDA10A3411F</MD5>
     </Package>
 
     <ReleaseNotes>
@@ -3492,8 +3492,8 @@ Phoenix is a STV replacement for SageTV9 providing the following features
 <ModificationDate>2017.01.08</ModificationDate>
 <Package>
   <PackageType>STV</PackageType>
-  <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/GKusnick/9.0/GKusnickOpaquePanelTheme-STV-1.1.0.zip</Location>
-  <MD5>1eed0a05b1e1d761fe3343cd1de60b20</MD5>
+  <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/GKusnickOpaquePanelTheme-STV-1.1.0.zip</Location>
+  <MD5>1EED0A05B1E1D761FE3343CD1DE60B20</MD5>
   <Overwrite>true</Overwrite>
 </Package>
 </SageTVPlugin>
@@ -3502,7 +3502,7 @@ Phoenix is a STV replacement for SageTV9 providing the following features
   <PluginType>Standard</PluginType>
   <Name>GKusnick&apos;s Studio Tools</Name>
   <Description>A Studio plugin with a rich set of searching and editing commands.
- 
+
 (For Studio geeks only; there are no end-user features in this plugin.)</Description>
   <ReleaseNotes>Note that my STVI Tools have been retired as obsolete.  Use Studio&apos;s built-in STVI generator instead.</ReleaseNotes>
   <Author>GKusnick</Author>
@@ -3530,14 +3530,14 @@ Phoenix is a STV replacement for SageTV9 providing the following features
 <ModificationDate>2017.01.08</ModificationDate>
 <Package>
   <PackageType>JAR</PackageType>
-  <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/GKusnick/9.0/GKusnickTools-Jar-1.0.1.zip</Location>
-  <MD5>5464487cd128c3455af4a548c6fedddd</MD5>
+  <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/GKusnickTools-Jar-1.0.1.zip</Location>
+  <MD5>5464487CD128C3455AF4A548C6FEDDDD</MD5>
   <Overwrite>true</Overwrite>
 </Package>
 <Package>
   <PackageType>System</PackageType>
-  <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/GKusnick/9.0/GKusnickTools-Sys-1.0.1.zip</Location>
-  <MD5>a6b3e6de10bc9ec9fd2dee9b99690ec6</MD5>
+  <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/GKusnickTools-Sys-1.0.1.zip</Location>
+  <MD5>A6B3E6DE10BC9EC9FD2DEE9B99690EC6</MD5>
   <Overwrite>true</Overwrite>
 </Package>
 </SageTVPlugin>
@@ -3577,7 +3577,7 @@ Phoenix is a STV replacement for SageTV9 providing the following features
   <PluginType>Standard</PluginType>
   <Name>GKusnick&apos;s Studio Plugin Framework</Name>
   <Description>A plugin framework for SageTV Studio.  Using this framework, plugin developers coding in Java can create Studio plugins that extend the Studio user interface with custom commands and menus.
- 
+
 (For Studio geeks only; there are no end-user features in this plugin.)</Description>
   <ReleaseNotes>Hotkeys now work correctly without having to open the Plugins menu first.
 
@@ -3604,14 +3604,14 @@ Note that the framework architecture has been revamped for SageTV V7.  Existing 
 <ModificationDate>2017.01.08</ModificationDate>
 <Package>
   <PackageType>JAR</PackageType>
-  <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/GKusnick/9.0/GKusnickStudioFramework-Jar-1.2.1.zip</Location>
-  <MD5>346c0794d8a6aa8c35145f260e606a11</MD5>
+  <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/GKusnickStudioFramework-Jar-1.2.1.zip</Location>
+  <MD5>346C0794D8A6AA8C35145F260E606A11</MD5>
   <Overwrite>true</Overwrite>
 </Package>
 <Package>
   <PackageType>System</PackageType>
-  <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/GKusnick/9.0/GKusnickStudioFramework-Sys-1.2.1.zip</Location>
-  <MD5>cef9badd946c53c6f3ba4886d4d1e6a0</MD5>
+  <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/GKusnickStudioFramework-Sys-1.2.1.zip</Location>
+  <MD5>CEF9BADD946C53C6F3BA4886D4D1E6A0</MD5>
   <Overwrite>true</Overwrite>
 </Package>
 </SageTVPlugin>
