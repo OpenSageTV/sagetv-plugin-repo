@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SageTVPlugin>
+
+  <Name>comskip</Name>
+
+  <Identifier>comskip</Identifier>
+
+  <Author>tmiranda</Author>
+
+  <CreationDate>2011.05.30</CreationDate>
+
+  <ModificationDate>2016.01.18</ModificationDate>
+
+  <Version beta="false">80.042.003</Version>
+
+  <Desktop>false</Desktop>
+
+  <Webpage>http://www.kaashoek.com/comskip/</Webpage>
+
+
+
+  <Description>Comskip repackaged as a SageTV7 Plugin.  This is used for CommercialDetector, no need to install directly.</Description>
+
+
+
+  <Dependency>
+
+    <STV>SageTV7</STV>
+
+    <MinVersion>7.0</MinVersion>
+
+  </Dependency>
+
+
+
+  <PluginType>Library</PluginType>
+
+
+
+  <Package>
+
+    <PackageType>System</PackageType>
+
+    <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/comskip-80.042.001.zip</Location>
+
+    <MD5>32209DBBDDDFE0436A9089799D9A38D9</MD5>
+
+  </Package>
+
+
+
+  <ResourcePath>comskip</ResourcePath>
+
+
+
+  <ReleaseNotes>80.042.003 - Moved hosting to BinTray. No change in functionality.
+
+80.042.002 - Moved hosting from Google Code to GitHub. No change in functionality.
+
+80.042.001 - Version 80.042 of comskip.
+
+  </ReleaseNotes>
+
+</SageTVPlugin>
