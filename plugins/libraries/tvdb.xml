@@ -53,8 +53,8 @@
     </Dependency>
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/libraries/thetvdbapi-1.8.zip</Location>
-        <MD5>1ac3efa6d5f2e8747e9bd19ccb371f9e</MD5>
+        <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/thetvdbapi-1.8.zip</Location>
+        <MD5>DD0D2A841A8EE0151C0562FF14F42B27</MD5>
     </Package>
     <ReleaseNotes>
         Library used by Phoenix and TheTVDB
