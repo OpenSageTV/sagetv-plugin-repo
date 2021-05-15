@@ -14,8 +14,8 @@
 <ModificationDate>2017.01.08</ModificationDate>
 <Package>
   <PackageType>STV</PackageType>
-  <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/GKusnick/9.0/GKusnickOpaquePanelTheme-STV-1.1.0.zip</Location>
-  <MD5>1eed0a05b1e1d761fe3343cd1de60b20</MD5>
+  <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/GKusnickOpaquePanelTheme-STV-1.1.0.zip</Location>
+  <MD5>1EED0A05B1E1D761FE3343CD1DE60B20</MD5>
   <Overwrite>true</Overwrite>
 </Package>
 </SageTVPlugin>

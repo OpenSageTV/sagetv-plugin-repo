@@ -15,7 +15,7 @@
     <PluginType>Library</PluginType>
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/libraries/commons-logging-1.2.zip</Location>
-        <MD5>b52136530324a9902c1898d8af1c762d</MD5>
+        <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/commons-logging-1.2.zip</Location>
+        <MD5>E38F4DF7BA18009C19B7420CFCF807E8</MD5>
     </Package>
 </SageTVPlugin>

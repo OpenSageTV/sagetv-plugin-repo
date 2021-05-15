@@ -15,7 +15,7 @@
     </Dependency>
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/libraries/httpclient-4.5.1.zip</Location>
-        <MD5>d91f97edc7886ca71705e69523230724</MD5>
+        <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/httpclient-4.5.1.zip</Location>
+        <MD5>ECE4237148E5F09D8AE3E18D6BB6F2AE</MD5>
     </Package>
 </SageTVPlugin>
