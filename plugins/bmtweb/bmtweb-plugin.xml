@@ -49,17 +49,17 @@
 
 	<Package>
 		<PackageType>System</PackageType>
-		<Location>https://dl.bintray.com/opensagetv/sagetv-plugins/bmtweb/4.101.0/bmtweb-war-4.101.0.zip
+		<Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/bmtweb-war-4.101.0.1.zip
 		</Location>
-		<MD5>e4e1d5081665f3edfbdce65e03b0ad5c</MD5>
+		<MD5>FC76E91A839287760246DF6DA9225C94</MD5>
 	</Package>
 
 	<!-- context file must be installed after the war file -->
 	<Package>
 		<PackageType>System</PackageType>
-		<Location>https://dl.bintray.com/opensagetv/sagetv-plugins/bmtweb/4.101.0/bmtweb-context-4.101.0.zip
+		<Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/bmtweb-context-4.101.0.1.zip
 		</Location>
-		<MD5>38ac727c6ef38cad0f9a90e4bc8cdc95</MD5>
+		<MD5>268BEAF984FD4C8E682E36E947152D70</MD5>
 	</Package>
 	<ReleaseNotes>
 		4.100.0

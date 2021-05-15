@@ -79,14 +79,14 @@ Version 1.3
     <PluginType>Standard</PluginType>
     <Package>
         <PackageType>System</PackageType>
-        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/MobileWeb/2.1.0/sagewebapp-war-file-2.1.0.42.zip</Location>
-        <MD5>c0cf47c29f717f612baab978eb2bc7d8</MD5>
+        <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/sagewebapp-war-file-2.1.0.42.zip</Location>
+        <MD5>C0CF47C29F717F612BAAB978EB2BC7D8</MD5>
     </Package>
     <!-- context file must be installed after the war file -->
     <Package>
         <PackageType>System</PackageType>
-        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/MobileWeb/2.1.0/sagewebapp-context-file-2.1.0.42.zip</Location>
-        <MD5>3b05057f0b7dc2d9d8e3699f31d18f04</MD5>
+        <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/sagewebapp-context-file-2.1.0.42.zip</Location>
+        <MD5>3B05057F0B7DC2D9D8E3699F31D18F04</MD5>
     </Package>
     <ImplementationClass></ImplementationClass>
 </SageTVPlugin>
