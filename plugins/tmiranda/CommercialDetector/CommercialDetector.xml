@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SageTVPlugin>
+  <Name>Commercial Detector</Name>
+  <Identifier>CommercialDetector</Identifier>
+  <Author>tmiranda</Author>
+  <CreationDate>2010.08.01</CreationDate>
+  <ModificationDate>2017.12.02</ModificationDate>
+  <Version beta="false">1.16</Version>
+  <Desktop>false</Desktop>
+  <Webpage>http://code.google.com/p/tmiranda/wiki/CommercialDetector</Webpage>
+  <Webpage>http://forums.sagetv.com/forums/showthread.php?t=49958</Webpage>
+
+  <Description>A simple way to detect commercials in your recordings.  Creates .edl files that can be read by the Comskip Playback plugin.  The plugin comes complete with comskip and little or no configuration is needed.</Description>
+
+  <Dependency>
+    <Plugin>sagex-api</Plugin>
+    <MinVersion>7.0.0.0</MinVersion>
+  </Dependency>
+
+  <Dependency>
+    <Plugin>comskip</Plugin>
+    <MinVersion>80.042.001</MinVersion>
+  </Dependency>
+
+  <OS>Windows</OS>
+  <OS>Linux</OS>
+
+  <PluginType>Standard</PluginType>
+  <ImplementationClass>tmiranda.cd.plugin</ImplementationClass>
+
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/CommercialDetector-1.16.1.zip</Location>
+    <MD5>9783C27B956C42CC2FD781B57A990EBC</MD5>
+  </Package>
+
+  <ReleaseNotes>Version 1.16:
+- Cleaned up code.
+- Migrated development to Eclipse.
+
+Version 1.10:
+- Added support for native comskip execution under Linux.
+- Fixed a bug that would prevent plugin from being enabled after being disabled.
+- Added more cleanup if plugin is disabled.
+
+Version 1.01:
+- Moved repository to BinTray. No change in functionality.
+
+Version 1.00:
+- Added ability to skip recordings based on a channel range.
+- Added ability to skip recordings based on category.
+- Fixed a bug that prevented artifacts from being deleted if MediaFileDeleted event was received but the Sage core had not yet physically removed the file.
+- Fixed a deceptive message that indicated there was an error after a job was cancelled when there was really no error.
+- Possibly fixed a bug that would create a String Out of Bounds exception when scanning for recordings without comskip information.
+- Improved Intelligent Scheduling to search the queue for pending jobs that can be processed before the next recording instead of just looking at the first job in the queue.
+- Separated comskip into its own Plugin so it will be possible to update comskip versions independently of CommercialDetector.
+- Updated comskip to version 80.042.
+- Cleaned up code.
+- Improved logging.
+- Removed plugin from beta status.
+
+Version 0.90 Beta:
+- Several forum and private builds leading to the changes in version 1.00.
+
+Version 0.80 Beta:
+- Added ability to scan for and delete files that should have been cleaned up but were not.
+- Added experimental option, Intelligent Scheduling, which only starts jobs if Sage is not recording and the job will finish before the next scheduled recording.
+- Added advanced options to show what's currently being processed and what is queued.
+- Added more robust error detection and recovery.
+- Moved some configuration options to Advanced since most users will never need them.
+- Fixed bug that would sometimes cause only 1 job to start even though more than 1 could have been started.
+- Fixed bug that prevented jobs queued after scan from starting until after a SageEvent.
+- Fixed bug that prevented files from being cleaned up if CD was set to start immediately, user was watching live TV, and Sage attempted to delete the MediaFile.
+- Fixed bug that caused no jobs to get processed if a queued job contained a MediaFile that was deleted.
+- Fixed bug that prevented proper cleanup if a recording was split into multiple parts.
+
+Version 0.70 Beta:
+- Added ability to set certain times that comskip should not be run.
+- Fixed bug that caused ComSkip icon to disappear from header and next to recordings being processed.
+- Changed the way comskip is launched under linux.
+
+Version 0.60 - Beta:
+- Fixed bug where .edl would be deleted if a recording was converted into another format.
+- Added configuration option to specify which types of files are to be considered "video".  The .edl will only be deleted if no video files remain.
+- Fixed bug that caused ShowAnalyzer to fail if the path to ShowAnalyzer or the path to the recording contained spaces.
+
+Version 0.50 - Beta:
+- Added ability to use ShowAnalyzer instead of comskip.
+- Added ability to use ShowAnalyzer on some channels and comskip on others.
+- Added ability to use comskip .ini files and ShowAnalyzer Profiles on a per-show or per-channel basis.
+
+Version 0.40 - Beta:
+- Fixed bug that would cause failure on some linux systems when not running Sage as root.
+- Added option to manually scan library for recordings without comskip information.
+- Added support for UI to display CS icon in header.
+- Added support for UI to display different color CS icon if MediaFile is currently being processed.
+- Slightly more friendly if accidentally running as a SageClient.
+- Eliminated duplicate stdout and stderr lines from comskip.
+
+Version 0.30 - Beta:
+- Fixed bug that incorrectly caused some files to be processed as soon as recording started.
+- Improved processing for MediaFiles that have multiple parts due to capture problems or a Sage failure.
+- Improved error handling if comskip queue became corrupted or obsoleted.
+- Added support for UI Mod allowing manual comskip.
+
+Version 0.20 - Beta:
+- Fixed installer. Old method caused problems when updating.
+- Added ability to ignore recordings from specified channel numbers or names.
+- Ignore live TV files that have been deleted.
+- Change comskip.ini to not produce .txt files.
+- Improved comskip execution under Linux. It's no longer necessary to chown the .wine directory.
+- Fixed bug that caused some recordings to be processed twice.
+- If more than 3 CPUs are available set default number of jobs to 2.
+
+Version 0.10 - First Beta.</ReleaseNotes>
+</SageTVPlugin>
