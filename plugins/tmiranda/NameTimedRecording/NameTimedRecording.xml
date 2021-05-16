@@ -11,9 +11,9 @@
 
   	<CreationDate>2011.04.15</CreationDate>
 
-  	<ModificationDate>2016.01.18</ModificationDate>
+  	<ModificationDate>2021.05.16</ModificationDate>
 
-  	<Version beta="false">1.36</Version>
+  	<Version beta="false">1.36.1</Version>
 
   	<Desktop>false</Desktop>
 
@@ -63,7 +63,10 @@
 
 
 
-  	<ReleaseNotes>Version 1.36:
+  	<ReleaseNotes>
+- Move to V9 repository
+
+Version 1.36:
 
 - Moved hosting to BinTray. No change in functionality.
 

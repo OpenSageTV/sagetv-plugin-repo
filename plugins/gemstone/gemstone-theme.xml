@@ -19,7 +19,7 @@
 
   <Package>
     <PackageType>STV</PackageType>
-    <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/gemstone/GemstoneTheme1_0407.zip</Location>
-    <MD5>269dc2655442d0c6e34299f8a9f1f9fa</MD5>
+    <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/GemstoneTheme1_0407.zip</Location>
+    <MD5>269DC2655442D0C6E34299F8A9F1F9FA</MD5>
   </Package>
 </SageTVPlugin>

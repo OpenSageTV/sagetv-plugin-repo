@@ -4,8 +4,8 @@
   <Identifier>CommercialDetector</Identifier>
   <Author>tmiranda</Author>
   <CreationDate>2010.08.01</CreationDate>
-  <ModificationDate>2017.12.02</ModificationDate>
-  <Version beta="false">1.16</Version>
+  <ModificationDate>2021.05.16</ModificationDate>
+  <Version beta="false">1.16.1</Version>
   <Desktop>false</Desktop>
   <Webpage>http://code.google.com/p/tmiranda/wiki/CommercialDetector</Webpage>
   <Webpage>http://forums.sagetv.com/forums/showthread.php?t=49958</Webpage>
@@ -34,7 +34,9 @@
     <MD5>9783C27B956C42CC2FD781B57A990EBC</MD5>
   </Package>
 
-  <ReleaseNotes>Version 1.16:
+  <ReleaseNotes>Version 1.16.1:
+-Move to V9 repository
+Version 1.16:
 - Cleaned up code.
 - Migrated development to Eclipse.
 

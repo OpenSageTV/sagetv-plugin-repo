@@ -4,14 +4,16 @@
   <Description>Manage SageTV activity, media files, and playlists from desktop web browsers.</Description>
   <Author>nielm, jreichen, Slugger, skiingwiz</Author>
   <CreationDate>2004.11.18</CreationDate>
-  <ModificationDate>2018.02.04</ModificationDate>
-  <Version>3.3.1</Version>
+  <ModificationDate>2021.05.16</ModificationDate>
+  <Version>3.3.1.1</Version>
   <Desktop>false</Desktop>
   <ResourcePath>webserver</ResourcePath>
   <Webpage title="Web Interface Wiki">http://tools.assembla.com/sageplugins/wiki/WebServer</Webpage>
   <Webpage title="GeekTonic Review">http://www.geektonic.com/2008/03/sagetv-web-interface-control-sagetv.html</Webpage>
   <ReleaseNotes>
     <![CDATA[
+Move to V9 repository
+
 Version 3.3.1
 1. Fix showing null Season in some cases.
 2. Fix roles interfering with actor links.

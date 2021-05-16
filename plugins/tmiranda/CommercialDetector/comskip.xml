@@ -9,9 +9,9 @@
 
   <CreationDate>2011.05.30</CreationDate>
 
-  <ModificationDate>2016.01.18</ModificationDate>
+  <ModificationDate>2021.05.16</ModificationDate>
 
-  <Version beta="false">80.042.003</Version>
+  <Version beta="false">80.042.003.1</Version>
 
   <Desktop>false</Desktop>
 
@@ -53,7 +53,10 @@
 
 
 
-  <ReleaseNotes>80.042.003 - Moved hosting to BinTray. No change in functionality.
+  <ReleaseNotes>80.042.003.1:
+-Move to V9 repository
+
+80.042.003 - Moved hosting to BinTray. No change in functionality.
 
 80.042.002 - Moved hosting from Google Code to GitHub. No change in functionality.
 
