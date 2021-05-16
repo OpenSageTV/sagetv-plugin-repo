@@ -13,9 +13,9 @@
 
   	<CreationDate>2010.12.05</CreationDate>
 
-  	<ModificationDate>2016.01.18</ModificationDate>
+  	<ModificationDate>2021.05.16</ModificationDate>
 
-  	<Version beta="false">0.06</Version>
+  	<Version beta="false">0.06.1</Version>
 
   	<Desktop>false</Desktop>
 
@@ -85,7 +85,10 @@
 
 
 
-  	<ReleaseNotes>Version 0.6:
+  	<ReleaseNotes>Version 0.6.1:
+- Move to V9 Repository
+
+Version 0.6:
 
 - Migrated hosting to BinTray. No change in functionality.
 

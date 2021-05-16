@@ -15,9 +15,9 @@
 
   <CreationDate>2010.08.06</CreationDate>
 
-  <ModificationDate>2016.06.13</ModificationDate>
+  <ModificationDate>2021.05.16</ModificationDate>
 
-  <Version beta="false">1.33</Version>
+  <Version beta="false">1.33.1</Version>
 
   <Desktop>false</Desktop>
 
@@ -75,7 +75,10 @@
 
 
 
-  <ReleaseNotes>Version 1.33:
+  <ReleaseNotes>Version 1.33.1:
+-Move to V9 repository
+
+Version 1.33:
 
 - Updates by JREkiwi to accomodate comskip_playback 2.1.2. Thanks John.
 
