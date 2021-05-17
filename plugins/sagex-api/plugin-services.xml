@@ -35,7 +35,7 @@
 
   <Package>
     <PackageType>System</PackageType>
-    <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/sagex-api-services-9.1.7.0.zip</Location>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sagex-api-services-9.1.7.0.zip</Location>
     <MD5>C1CE149B44BDAB90ED2F9FD251E06855</MD5>
   </Package>
 

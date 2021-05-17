@@ -51,7 +51,7 @@
 
     <PackageType>JAR</PackageType>
 
-    <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/OneTimeFavorite-1.01.zip</Location>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/OneTimeFavorite-1.01.zip</Location>
 
     <MD5>4A592D1020F1B4F57C1B7D0F645ADBBD</MD5>
 

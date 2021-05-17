@@ -94,13 +94,13 @@ Version 1.0.0
   <PluginType>Standard</PluginType>
   <Package>
     <PackageType>System</PackageType>
-    <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/mediastreaming-war-file-1.3.7.90.1.zip</Location>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/mediastreaming-war-file-1.3.7.90.1.zip</Location>
     <MD5>16BFE2CC0AB093A31508144268B59085</MD5>
   </Package>
   <!-- context file must be installed after the war file -->
   <Package>
     <PackageType>System</PackageType>
-    <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/mediastreaming-context-file-1.3.7.90.1.zip</Location>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/mediastreaming-context-file-1.3.7.90.1.zip</Location>
     <MD5>01AEEEDA918B67B187ADE1830ED839F8</MD5>
   </Package>
   <ImplementationClass></ImplementationClass>

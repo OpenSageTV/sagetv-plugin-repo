@@ -13,7 +13,7 @@
     <PluginType>Library</PluginType>
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/junit-4.12.zip</Location>
+        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/junit-4.12.zip</Location>
         <MD5>631E4C16741B18D3203E2C15CD8A6E4D</MD5>
     </Package>
 </SageTVPlugin>

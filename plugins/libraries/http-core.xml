@@ -11,7 +11,7 @@
     <PluginType>Library</PluginType>
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/httpcore-4.4.3.zip</Location>
+        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/httpcore-4.4.3.zip</Location>
         <MD5>0565968053C9FB64E9C20351909650F9</MD5>
     </Package>
 </SageTVPlugin>

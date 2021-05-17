@@ -31,13 +31,13 @@ Note that the framework architecture has been revamped for SageTV V7.  Existing 
 <ModificationDate>2017.01.08</ModificationDate>
 <Package>
   <PackageType>JAR</PackageType>
-  <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/GKusnickStudioFramework-Jar-1.2.1.zip</Location>
+  <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/GKusnickStudioFramework-Jar-1.2.1.zip</Location>
   <MD5>346C0794D8A6AA8C35145F260E606A11</MD5>
   <Overwrite>true</Overwrite>
 </Package>
 <Package>
   <PackageType>System</PackageType>
-  <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/GKusnickStudioFramework-Sys-1.2.1.zip</Location>
+  <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/GKusnickStudioFramework-Sys-1.2.1.zip</Location>
   <MD5>CEF9BADD946C53C6F3BA4886D4D1E6A0</MD5>
   <Overwrite>true</Overwrite>
 </Package>

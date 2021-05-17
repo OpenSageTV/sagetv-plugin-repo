@@ -63,7 +63,7 @@
 
     <PackageType>STVI</PackageType>
 
-    <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/CommercialDetectorSTVi-1.33.1.zip</Location>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/CommercialDetectorSTVi-1.33.1.zip</Location>
 
     <MD5>29D6839B247DC7076786095AF8E73E02</MD5>
 

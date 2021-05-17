@@ -10,7 +10,7 @@
     <PluginType>Library</PluginType>
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/hamcrest-core-1.3.zip</Location>
+        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/hamcrest-core-1.3.zip</Location>
         <MD5>6FDEABB974AFAEE32FC24F9ADDED4646</MD5>
     </Package>
 </SageTVPlugin>

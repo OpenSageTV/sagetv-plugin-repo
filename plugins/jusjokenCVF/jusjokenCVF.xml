@@ -51,7 +51,7 @@
   <STVImport>CVF_AddSetClearWatchedOption.stvi</STVImport>
   <Package>
     <PackageType>STVI</PackageType>
-    <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/CVF_1_27.1.zip</Location>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/CVF_1_27.1.zip</Location>
     <MD5>3F90108B15D5D809DC7C35A0CC5060D8</MD5>
   </Package>
   <Screenshot>https://github.com/jusjoken/cvf/raw/master/screenshots/CVF_Watched_LargePreview_RemovedThumbs.PNG</Screenshot>

@@ -31,7 +31,7 @@
        <PluginType>Standard</PluginType>
        <Package>
                <PackageType>JAR</PackageType>
-               <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/gtools-jar-1.0.4.1.zip</Location>
+               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/gtools-jar-1.0.4.1.zip</Location>
                <MD5>7FADDDD8B6BAEF6A13AEBC6CB374DC4E</MD5>
                <Overwrite>true</Overwrite> <!-- Defaults to true -->
        </Package>

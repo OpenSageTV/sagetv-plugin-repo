@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SageTVPlugin>
+
+
+
+  <Name>Gemstone z Icon Files</Name>
+
+
+
+  <Identifier>gemstone-icons</Identifier>
+
+
+
+  <Description>Gemstone Icon Files - Do not install directly as this is just a dependency!!</Description>
+
+
+
+  <Author>JOrton, jusjoken</Author>
+
+
+
+  <CreationDate>2012-07-12</CreationDate>
+
+  <ModificationDate>2021.05.16</ModificationDate>
+
+  <Version>1.013.1</Version>
+
+  <Desktop>false</Desktop>
+
+
+
+  <PluginType>Library</PluginType>
+
+
+
+  <ReleaseNotes>
+    Move to V9 repository
+    Version 1.013 NO CHANGES - just moved the packages to BinTray from Google Code
+
+  </ReleaseNotes>
+
+
+
+  <Package>
+
+    <PackageType>STV</PackageType>
+
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/GemstoneWeatherIcons1_011.zip</Location>
+
+    <MD5>891780F5FD0B18011352BB6ACBE3D591</MD5>
+
+  </Package>
+
+
+
+</SageTVPlugin>

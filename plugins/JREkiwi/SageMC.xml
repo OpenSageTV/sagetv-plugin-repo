@@ -63,7 +63,7 @@
 
   <Package>
     <PackageType>STV</PackageType>
-    <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/sagemc-stv-7.0.11.zip</Location>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sagemc-stv-7.0.11.zip</Location>
     <MD5>DCEC3911DBC4503F58E7A3AAB2F93A98</MD5>
   </Package>
 <ReleaseNotes>

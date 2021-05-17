@@ -22,13 +22,13 @@
 <ModificationDate>2017.01.08</ModificationDate>
 <Package>
   <PackageType>JAR</PackageType>
-  <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/GKusnickToolsLib-Jar-1.5.5.zip</Location>
+  <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/GKusnickToolsLib-Jar-1.5.5.zip</Location>
   <MD5>9B1C9F8AAA9E32088ACA2DDE22507BA6</MD5>
   <Overwrite>true</Overwrite>
 </Package>
 <Package>
   <PackageType>System</PackageType>
-  <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/GKusnickToolsLib-Sys-1.5.5.zip</Location>
+  <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/GKusnickToolsLib-Sys-1.5.5.zip</Location>
   <MD5>0E63BE6F5AB6ABF738197CA86097564D</MD5>
   <Overwrite>true</Overwrite>
 </Package>

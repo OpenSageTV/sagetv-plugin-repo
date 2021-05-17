@@ -79,7 +79,7 @@
 
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/phoenix-api-3.3.0.zip</Location>
+        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/phoenix-api-3.3.0.zip</Location>
         <MD5>6195539B3CD8966DAEE8AEDA10A3411F</MD5>
     </Package>
 

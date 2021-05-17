@@ -53,7 +53,7 @@
     </Dependency>
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/thetvdbapi-1.8.zip</Location>
+        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/thetvdbapi-1.8.zip</Location>
         <MD5>DD0D2A841A8EE0151C0562FF14F42B27</MD5>
     </Package>
     <ReleaseNotes>

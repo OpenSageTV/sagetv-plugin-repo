@@ -30,7 +30,7 @@
 
   <Package>
     <PackageType>JAR</PackageType>
-    <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/GemstoneAPI1_0501.zip</Location>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/GemstoneAPI1_0501.zip</Location>
     <MD5>CA7D9BF5AA6A283676B55A5BA252DA64</MD5>
   </Package>
 

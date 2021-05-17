@@ -45,7 +45,7 @@
 
     <PackageType>STV</PackageType>
 
-    <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/GemstoneWeatherBG_1_1_000.zip</Location>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/GemstoneWeatherBG_1_1_000.zip</Location>
 
     <MD5>CCC6AD896D1EB3A2540FA89F2D3B33A9</MD5>
 
@@ -57,7 +57,7 @@
 
     <PackageType>STV</PackageType>
 
-    <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/GemstoneWeatherBG_2_1_000.zip</Location>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/GemstoneWeatherBG_2_1_000.zip</Location>
 
     <MD5>7EDE2BA4354B15F9178C0BED2D5768BC</MD5>
 
