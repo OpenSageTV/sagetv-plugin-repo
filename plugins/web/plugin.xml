@@ -147,29 +147,29 @@ NOTE: Be sure to clear your browser cache thoroughly after installing this updat
   <PluginType>Standard</PluginType>
   <Package>
     <PackageType>JAR</PackageType>
-    <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/sage-webui-jar-3.3.1.1.zip</Location>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sage-webui-jar-3.3.1.1.zip</Location>
     <MD5>A3F83EDCFAA0D860A06AA5ABA913A255</MD5>
   </Package>
   <Package>
     <PackageType>System</PackageType>
-    <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/sage-webui-properties-3.3.1.1.zip</Location>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sage-webui-properties-3.3.1.1.zip</Location>
     <MD5>14202E9603B5D7F6DDB0F2BFB7714D95</MD5>
   </Package>
   <Package>
     <PackageType>System</PackageType>
-    <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/sage-webui-user-3.3.1.1.zip</Location>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sage-webui-user-3.3.1.1.zip</Location>
     <MD5>F693E5D6A4199EBCC0156FF85FAE0C84</MD5>
     <Overwrite>false</Overwrite>
   </Package>
   <Package>
     <PackageType>System</PackageType>
-    <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/sage-webui-jetty-3.3.1.1.zip</Location>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sage-webui-jetty-3.3.1.1.zip</Location>
     <MD5>9E86DFAFA3019C77759967B2A09125EE</MD5>
   </Package>
   <!-- context file must be installed after the war file -->
   <Package>
     <PackageType>System</PackageType>
-    <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/sage-webui-context-3.3.1.1.zip</Location>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sage-webui-context-3.3.1.1.zip</Location>
     <MD5>1D7740F35730E9C1519F067986FCE26B</MD5>
     <Overwrite>false</Overwrite>
   </Package>

@@ -10,7 +10,7 @@
     <PluginType>Library</PluginType>
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/commons-codec-1.9.zip</Location>
+        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/commons-codec-1.9.zip</Location>
         <MD5>5282428A3C980F90AF328B4810BB91AD</MD5>
     </Package>
 </SageTVPlugin>

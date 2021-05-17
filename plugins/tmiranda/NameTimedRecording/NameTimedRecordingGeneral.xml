@@ -49,7 +49,7 @@
 
     <PackageType>JAR</PackageType>
 
-    <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/NameTimedRecordingGeneral-1.30.zip</Location>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/NameTimedRecordingGeneral-1.30.zip</Location>
 
     <MD5>A1E5C5ED5872A4B6FFB8B9D59719541B</MD5>
 

@@ -61,7 +61,7 @@
 
     		<PackageType>STVI</PackageType>
 
-    		<Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/RemovePluginAndDependencies.zip</Location>
+    		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/RemovePluginAndDependencies.zip</Location>
 
     		<MD5>5453ED6E5B3F005AD51BD3A42E25E3EB</MD5>
 
@@ -73,7 +73,7 @@
 
     		<PackageType>JAR</PackageType>
 
-    		<Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/RPAD.zip</Location>
+    		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/RPAD.zip</Location>
 
     		<MD5>3379FEE2B2EEC5D7B8F03F7009FE6043</MD5>
 

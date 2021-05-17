@@ -15,7 +15,7 @@
        <PluginType>Library</PluginType>
        <Package>
                <PackageType>System</PackageType>
-               <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/chartjs-1.0.2.1.zip</Location>
+               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/chartjs-1.0.2.1.zip</Location>
                <MD5>ED0E8D191F7C1B0F8633C87FB5832068</MD5>
                <Overwrite>true</Overwrite>
        </Package>

@@ -15,7 +15,7 @@
 <PluginType>STVI</PluginType>
  <Package>
    <PackageType>STVI</PackageType>
-   <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/STV7-setup-restart-1.0.stvi.zip</Location>
+   <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/STV7-setup-restart-1.0.stvi.zip</Location>
    <MD5>995D8F461117B9435E799B10188BB680</MD5>
  </Package>
  <Webpage><![CDATA[http://forums.sagetv.com/forums/showthread.php?t=49258]]></Webpage>

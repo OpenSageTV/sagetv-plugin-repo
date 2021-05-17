@@ -80,28 +80,28 @@ Version 1.7.5 beta
     <PluginType>Standard</PluginType>
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/jetty-starter-jars-2.3.0.14.zip</Location>
+        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/jetty-starter-jars-2.3.0.14.zip</Location>
         <MD5>EBC8F8BAD569ABC032BE14A56D82C8AC</MD5>
     </Package>
     <Package>
         <PackageType>System</PackageType>
-        <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/jetty-starter-config-files-2.3.0.14.zip</Location>
+        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/jetty-starter-config-files-2.3.0.14.zip</Location>
         <MD5>5655915B46B3A4A7E4CDA4B921FF8560</MD5>
     </Package>
     <Package>
         <PackageType>System</PackageType>
-        <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/jetty-starter-user-config-files-2.3.0.14.zip</Location>
+        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/jetty-starter-user-config-files-2.3.0.14.zip</Location>
         <MD5>FD7C812BCB0A02018BCF8C694635DFAD</MD5>
         <Overwrite>false</Overwrite>
     </Package>
     <Package>
         <PackageType>System</PackageType>
-        <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/jetty-starter-webapp-war-file-2.3.0.14.zip</Location>
+        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/jetty-starter-webapp-war-file-2.3.0.14.zip</Location>
         <MD5>50E991DDAA942CE46D04D7673418281E</MD5>
     </Package>
     <Package>
         <PackageType>System</PackageType>
-        <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/jetty-starter-webapp-context-file-2.3.0.14.zip</Location>
+        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/jetty-starter-webapp-context-file-2.3.0.14.zip</Location>
         <MD5>8144BE030148A469DBCDF95CC29531F1</MD5>
     </Package>
     <ImplementationClass>sagex.jetty.starter.JettyPlugin</ImplementationClass>

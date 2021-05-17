@@ -69,7 +69,7 @@
     </Dependency>
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/themoviedbapi-4.1.zip</Location>
+        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/themoviedbapi-4.1.zip</Location>
         <MD5>CDB25A5D4C85A978FBB4F44D7EB1258C</MD5>
     </Package>
     <ReleaseNotes>

@@ -26,7 +26,7 @@
     <PluginType>Standard</PluginType>
     <Package>
         <PackageType>System</PackageType>
-        <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/phoenix-core-3.3.0.1.zip</Location>
+        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/phoenix-core-3.3.0.1.zip</Location>
         <MD5>D98A88DF4CA74D39B16C045F150C6C8C</MD5>
     </Package>
     <ImplementationClass>sagex.phoenix.plugin.PhoenixPlugin</ImplementationClass>

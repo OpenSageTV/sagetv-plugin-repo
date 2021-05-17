@@ -79,13 +79,13 @@ Version 1.3
     <PluginType>Standard</PluginType>
     <Package>
         <PackageType>System</PackageType>
-        <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/sagewebapp-war-file-2.1.0.42.zip</Location>
+        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sagewebapp-war-file-2.1.0.42.zip</Location>
         <MD5>C0CF47C29F717F612BAAB978EB2BC7D8</MD5>
     </Package>
     <!-- context file must be installed after the war file -->
     <Package>
         <PackageType>System</PackageType>
-        <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/sagewebapp-context-file-2.1.0.42.zip</Location>
+        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sagewebapp-context-file-2.1.0.42.zip</Location>
         <MD5>3B05057F0B7DC2D9D8E3699F31D18F04</MD5>
     </Package>
     <ImplementationClass></ImplementationClass>

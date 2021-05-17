@@ -11,7 +11,7 @@
     <PluginType>Library</PluginType>
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/nielm-sageutls-jars-1.4.2.zip</Location>
+        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/nielm-sageutls-jars-1.4.2.zip</Location>
         <MD5>EF36E4E8450A604A0494F0E461DFE6E2</MD5>
     </Package>
     <ImplementationClass></ImplementationClass>
