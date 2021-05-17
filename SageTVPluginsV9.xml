@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2021.0516.0106">
+<PluginRepository version="2021.0516.1019">
 <SageTVPlugin>
   <Name>OSD Enhancements</Name>
   <Identifier>jusjokenOSDEnhancements</Identifier>
@@ -46,8 +46,8 @@ Version 1.1 - Added play toggle.
   <Description>Provides HTTP Live Streaming services to the Mobile Web Interface.  Used for viewing SageTV recordings on iPhone, iPod, and iPad.  It can be extended by plugin developers to support other clients and audio/video formats.</Description>
   <Author>jreichen, Fonceur</Author>
   <CreationDate>2010.10.13</CreationDate>
-  <ModificationDate>2019.01.27</ModificationDate>
-  <Version>1.3.7.90</Version>
+  <ModificationDate>2021.05.16</ModificationDate>
+  <Version>1.3.7.90.1</Version>
   <Desktop>false</Desktop>
   <ResourcePath>mediastreaming</ResourcePath>
   <!--Screenshot title="Main Menu">http://forums.sagetv.com/forums/downloads/mobile_menu_f3J.png</Screenshot>
@@ -55,6 +55,8 @@ Version 1.1 - Added play toggle.
   <Webpage title="Mobile Web Interface Wiki">http://tools.assembla.com/sageplugins/wiki/MobileWebInterface</Webpage-->
   <ReleaseNotes>
     <![CDATA[
+Move to V9 repository
+
 Version 1.3.5
     Modifying the resolutions.
 
@@ -150,14 +152,16 @@ Version 1.0.0
   <Description>Manage SageTV activity, media files, and playlists from desktop web browsers.</Description>
   <Author>nielm, jreichen, Slugger, skiingwiz</Author>
   <CreationDate>2004.11.18</CreationDate>
-  <ModificationDate>2018.02.04</ModificationDate>
-  <Version>3.3.1</Version>
+  <ModificationDate>2021.05.16</ModificationDate>
+  <Version>3.3.1.1</Version>
   <Desktop>false</Desktop>
   <ResourcePath>webserver</ResourcePath>
   <Webpage title="Web Interface Wiki">http://tools.assembla.com/sageplugins/wiki/WebServer</Webpage>
   <Webpage title="GeekTonic Review">http://www.geektonic.com/2008/03/sagetv-web-interface-control-sagetv.html</Webpage>
   <ReleaseNotes>
     <![CDATA[
+Move to V9 repository
+
 Version 3.3.1
 1. Fix showing null Season in some cases.
 2. Fix roles interfering with actor links.
@@ -2988,9 +2992,76 @@ Initial release.
 
   <Package>
     <PackageType>JAR</PackageType>
-    <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/gemstone/GemstoneAPI1_0501.zip</Location>
-    <MD5>ca7d9bf5aa6a283676b55a5ba252da64</MD5>
+    <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/GemstoneAPI1_0501.zip</Location>
+    <MD5>CA7D9BF5AA6A283676B55A5BA252DA64</MD5>
   </Package>
+
+</SageTVPlugin>
+<SageTVPlugin>
+
+
+
+  <Name>Gemstone y Optional Weather Backgrounds</Name>
+
+
+
+  <Identifier>gemstone-wback</Identifier>
+
+
+
+  <Description>Gemstone Weather Backgrounds - Optional addon for Gemstone if you want to enable weather backgrounds</Description>
+
+
+
+  <Author>JOrton, jusjoken</Author>
+
+
+
+  <CreationDate>2012-09-01</CreationDate>
+
+  <ModificationDate>2021.05.16</ModificationDate>
+
+  <Version>1.002.1</Version>
+
+  <Desktop>false</Desktop>
+
+
+
+  <PluginType>Standard</PluginType>
+
+
+
+  <ReleaseNotes>
+    Version 1.002.1 Move to V9 repsoitory
+    Version 1.002 NO CHANGES - just moved the packages to BinTray from Google Code
+
+  </ReleaseNotes>
+
+
+
+  <Package>
+
+    <PackageType>STV</PackageType>
+
+    <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/GemstoneWeatherBG_1_1_000.zip</Location>
+
+    <MD5>CCC6AD896D1EB3A2540FA89F2D3B33A9</MD5>
+
+  </Package>
+
+
+
+  <Package>
+
+    <PackageType>STV</PackageType>
+
+    <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/GemstoneWeatherBG_2_1_000.zip</Location>
+
+    <MD5>7EDE2BA4354B15F9178C0BED2D5768BC</MD5>
+
+  </Package>
+
+
 
 </SageTVPlugin>
 <SageTVPlugin>
@@ -3037,14 +3108,14 @@ Initial release.
 
   <Package>
    <PackageType>STV</PackageType>
-   <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/gemstone/Gemstone1_0501.zip</Location>
-   <MD5>557f8bc9c8b5bab7e000bd9d90007204</MD5>
+   <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/Gemstone1_0501.zip</Location>
+   <MD5>557F8BC9C8B5BAB7E000BD9D90007204</MD5>
   </Package>
 
   <Package>
     <PackageType>STV</PackageType>
-    <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/gemstone/GemstoneDefaults1_0401.zip</Location> 
-    <MD5>00775be716070c5ecd0e2ed4a2378485</MD5>
+    <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/GemstoneDefaults1_0401.zip</Location>
+    <MD5>00775BE716070C5ECD0E2ED4A2378485</MD5>
   </Package>
 
   <STVImport>GemstonePlugin.stvi</STVImport>
@@ -3111,8 +3182,8 @@ Initial release.
 
   <Package>
     <PackageType>STV</PackageType>
-    <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/gemstone/GemstoneTheme1_0407.zip</Location>
-    <MD5>269dc2655442d0c6e34299f8a9f1f9fa</MD5>
+    <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/GemstoneTheme1_0407.zip</Location>
+    <MD5>269DC2655442D0C6E34299F8A9F1F9FA</MD5>
   </Package>
 </SageTVPlugin>
 <SageTVPlugin>
@@ -3671,14 +3742,14 @@ Note that the framework architecture has been revamped for SageTV V7.  Existing 
 <ModificationDate>2017.01.08</ModificationDate>
 <Package>
   <PackageType>JAR</PackageType>
-  <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/GKusnick/9.0/GKusnickToolsLib-Jar-1.5.5.zip</Location>
-  <MD5>b82afc4ea534fa77ba191cbd5d2cb46c</MD5>
+  <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/GKusnickToolsLib-Jar-1.5.5.zip</Location>
+  <MD5>9B1C9F8AAA9E32088ACA2DDE22507BA6</MD5>
   <Overwrite>true</Overwrite>
 </Package>
 <Package>
   <PackageType>System</PackageType>
-  <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/GKusnick/9.0/GKusnickToolsLib-Sys-1.5.5.zip</Location>
-  <MD5>7e9f1de020dea9352a402d17d141072c</MD5>
+  <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/GKusnickToolsLib-Sys-1.5.5.zip</Location>
+  <MD5>0E63BE6F5AB6ABF738197CA86097564D</MD5>
   <Overwrite>true</Overwrite>
 </Package>
 </SageTVPlugin>
@@ -3769,8 +3840,8 @@ Note that the framework architecture has been revamped for SageTV V7.  Existing 
        <PluginType>Library</PluginType>
        <Package>
                <PackageType>System</PackageType>
-               <Location>https://bintray.com/opensagetv/sagetv-plugins/download_file?file_path=chartjs%2Fchartjs-1.0.2.zip</Location>
-               <MD5>E248D6FB7AFF8FDFBC5FFC5D2DA1C619</MD5>
+               <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/chartjs-1.0.2.1.zip</Location>
+               <MD5>ED0E8D191F7C1B0F8633C87FB5832068</MD5>
                <Overwrite>true</Overwrite>
        </Package>
 </SageTVPlugin>
@@ -3861,9 +3932,9 @@ Provides Sports Event monitoring for use by the SRE plugin
 
   <CreationDate>2011.05.22</CreationDate>
 
-  <ModificationDate>2016.01.18</ModificationDate>
+  <ModificationDate>2021.05.16</ModificationDate>
 
-  <Version beta="false">1.02</Version>
+  <Version beta="false">1.02.1</Version>
 
   <Desktop>false</Desktop>
 
@@ -3909,7 +3980,10 @@ Provides Sports Event monitoring for use by the SRE plugin
 
 
 
-  <ReleaseNotes>Version 1.02:
+  <ReleaseNotes>
+- Move to V9 repository
+
+Version 1.02:
 
 - Migrated hosting to BinTray. No change in functionality.
 
@@ -3944,9 +4018,9 @@ Version 0.02:
 
   <CreationDate>2011.05.21</CreationDate>
 
-  <ModificationDate>2016.01.18</ModificationDate>
+  <ModificationDate>2021.05.16</ModificationDate>
 
-  <Version beta="false">1.02</Version>
+  <Version beta="false">1.02.1</Version>
 
   <Desktop>false</Desktop>
 
@@ -3992,7 +4066,10 @@ Version 0.02:
 
 
 
-  <ReleaseNotes>Version 1.02:
+  <ReleaseNotes>
+- Move to V9 repository
+
+Version 1.02:
 
 - Migrated hosting to BinTray. No change in functionality.
 
@@ -4029,9 +4106,9 @@ Version 0.02:
 
   	<CreationDate>2010.12.05</CreationDate>
 
-  	<ModificationDate>2016.01.18</ModificationDate>
+  	<ModificationDate>2021.05.16</ModificationDate>
 
-  	<Version beta="false">0.06</Version>
+  	<Version beta="false">0.06.1</Version>
 
   	<Desktop>false</Desktop>
 
@@ -4101,7 +4178,10 @@ Version 0.02:
 
 
 
-  	<ReleaseNotes>Version 0.6:
+  	<ReleaseNotes>Version 0.6.1:
+- Move to V9 Repository
+
+Version 0.6:
 
 - Migrated hosting to BinTray. No change in functionality.
 
@@ -4180,9 +4260,9 @@ Beta 0.4 - First public beta.</ReleaseNotes>
 
   	<CreationDate>2011.04.15</CreationDate>
 
-  	<ModificationDate>2016.01.18</ModificationDate>
+  	<ModificationDate>2021.05.16</ModificationDate>
 
-  	<Version beta="false">1.36</Version>
+  	<Version beta="false">1.36.1</Version>
 
   	<Desktop>false</Desktop>
 
@@ -4232,7 +4312,10 @@ Beta 0.4 - First public beta.</ReleaseNotes>
 
 
 
-  	<ReleaseNotes>Version 1.36:
+  	<ReleaseNotes>
+- Move to V9 repository
+
+Version 1.36:
 
 - Moved hosting to BinTray. No change in functionality.
 
@@ -4303,9 +4386,9 @@ Version 1.00:
 
   <CreationDate>2011.04.17</CreationDate>
 
-  <ModificationDate>2016.01.18</ModificationDate>
+  <ModificationDate>2021.05.16</ModificationDate>
 
-  <Version beta="false">1.36</Version>
+  <Version beta="false">1.36.1</Version>
 
   <Desktop>false</Desktop>
 
@@ -4351,7 +4434,10 @@ Version 1.00:
 
 
 
-  <ReleaseNotes>Version 1.36:
+  <ReleaseNotes>
+-Move to V9 repository
+
+Version 1.36:
 
 - Moved hosting to BinTray. No change in functionality.
 
@@ -4395,8 +4481,8 @@ Version 1.10:
   <Identifier>CommercialDetector</Identifier>
   <Author>tmiranda</Author>
   <CreationDate>2010.08.01</CreationDate>
-  <ModificationDate>2017.12.02</ModificationDate>
-  <Version beta="false">1.16</Version>
+  <ModificationDate>2021.05.16</ModificationDate>
+  <Version beta="false">1.16.1</Version>
   <Desktop>false</Desktop>
   <Webpage>http://code.google.com/p/tmiranda/wiki/CommercialDetector</Webpage>
   <Webpage>http://forums.sagetv.com/forums/showthread.php?t=49958</Webpage>
@@ -4425,7 +4511,9 @@ Version 1.10:
     <MD5>9783C27B956C42CC2FD781B57A990EBC</MD5>
   </Package>
 
-  <ReleaseNotes>Version 1.16:
+  <ReleaseNotes>Version 1.16.1:
+-Move to V9 repository
+Version 1.16:
 - Cleaned up code.
 - Migrated development to Eclipse.
 
@@ -4521,9 +4609,9 @@ Version 0.10 - First Beta.</ReleaseNotes>
 
   <CreationDate>2010.08.06</CreationDate>
 
-  <ModificationDate>2016.06.13</ModificationDate>
+  <ModificationDate>2021.05.16</ModificationDate>
 
-  <Version beta="false">1.33</Version>
+  <Version beta="false">1.33.1</Version>
 
   <Desktop>false</Desktop>
 
@@ -4581,7 +4669,10 @@ Version 0.10 - First Beta.</ReleaseNotes>
 
 
 
-  <ReleaseNotes>Version 1.33:
+  <ReleaseNotes>Version 1.33.1:
+-Move to V9 repository
+
+Version 1.33:
 
 - Updates by JREkiwi to accomodate comskip_playback 2.1.2. Thanks John.
 
@@ -4642,9 +4733,9 @@ Version 1.00 - Initial release.</ReleaseNotes>
 
   <CreationDate>2011.05.30</CreationDate>
 
-  <ModificationDate>2016.01.18</ModificationDate>
+  <ModificationDate>2021.05.16</ModificationDate>
 
-  <Version beta="false">80.042.003</Version>
+  <Version beta="false">80.042.003.1</Version>
 
   <Desktop>false</Desktop>
 
@@ -4686,7 +4777,10 @@ Version 1.00 - Initial release.</ReleaseNotes>
 
 
 
-  <ReleaseNotes>80.042.003 - Moved hosting to BinTray. No change in functionality.
+  <ReleaseNotes>80.042.003.1:
+-Move to V9 repository
+
+80.042.003 - Moved hosting to BinTray. No change in functionality.
 
 80.042.002 - Moved hosting from Google Code to GitHub. No change in functionality.
 
@@ -4694,6 +4788,101 @@ Version 1.00 - Initial release.</ReleaseNotes>
 
   </ReleaseNotes>
 
+</SageTVPlugin>
+<SageTVPlugin>
+
+ <Name>Enable/Disable Favorites</Name>
+
+ <Identifier>EnableDisableFavoritesSTV7</Identifier>
+
+ <Description><![CDATA[Allows series favorites to be enabled and disabled without removing them.]]> </Description>
+
+ <Author>skiingwiz</Author>
+
+ <CreationDate>2010.06.06</CreationDate>
+
+ <ModificationDate>2021.05.16</ModificationDate>
+
+ <Version>1.3.2.2</Version>
+
+ <Desktop>false</Desktop>
+
+ <Dependency>
+
+  <STV>SageTV7</STV>
+
+  <MinVersion>7.1.0.1</MinVersion>
+
+ </Dependency>
+
+<PluginType>STVI</PluginType>
+
+ <Package>
+
+   <PackageType>STVI</PackageType>
+
+   <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/STV7-enable-disable-favorites-1.3.zip</Location>
+
+   <MD5>255AF742A1A2D1385DC339DF9AD036FE</MD5>
+
+ </Package>
+
+ <Screenshot><![CDATA[http://forums.sagetv.com/forums/attachment.php?attachmentid=10415&d=1275864335]]></Screenshot>
+
+ <Screenshot><![CDATA[http://forums.sagetv.com/forums/attachment.php?attachmentid=10416&d=1275864346]]></Screenshot>
+
+ <Webpage><![CDATA[http://forums.sagetv.com/forums/showthread.php?t=49021]]></Webpage>
+
+<STVImport>STV7-enable-disable-favorites.stvi</STVImport>
+
+<ReleaseNotes>
+Moved to V9 Repository
+
+1.3.2 - Moved downloads to BinTray. Removed dependency on configuration plugin.
+
+1.3.1 - Moved downloads from Google Code to Source Forge
+
+1.3   - Updates for SageTV 7.1
+
+1.2   - Fix typo in default for Disabled Favorite Color
+
+      - Remove version number from stvi file
+
+1.1   - Update to allow GUI configuration of STVi properties
+
+1.0   - Initial Release for STV7
+
+</ReleaseNotes>
+
+</SageTVPlugin>
+<SageTVPlugin>
+ <Name>Restart Sage from Setup Menu</Name>
+ <Identifier>SetupRestartSTV7</Identifier>
+ <Description><![CDATA[Adds an option to the Setup menu to restart the SageTV server.]]> </Description>
+ <Author>skiingwiz</Author>
+ <CreationDate>2010.06.20</CreationDate>
+ <ModificationDate>2021.05.16</ModificationDate>
+ <Version>1.0.3.1</Version>
+ <Desktop>false</Desktop>
+ <Dependency>
+  <STV>SageTV7</STV>
+  <MinVersion>7.0</MinVersion>
+ </Dependency>
+<PluginType>STVI</PluginType>
+ <Package>
+   <PackageType>STVI</PackageType>
+   <Location>https://github.com/JREkiwi/SagePlugins/releases/download/1/STV7-setup-restart-1.0.stvi.zip</Location>
+   <MD5>995D8F461117B9435E799B10188BB680</MD5>
+ </Package>
+ <Webpage><![CDATA[http://forums.sagetv.com/forums/showthread.php?t=49258]]></Webpage>
+<STVImport>STV7-setup-restart-1.0.stvi</STVImport>
+<ReleaseNotes>
+If this is run on an installation that does not run SageTV as a service, it will restart the local instance.
+Moved to V9 repository
+1.0.2 - Moved Downloads from Source Forge to BinTray
+1.0.1 - Moved Downloads from Google Code to Source Forge
+1.0   - Initial Release for STV7
+</ReleaseNotes>
 </SageTVPlugin>
 <SageTVPlugin>
     <Name>Pushover notifications for SageTV</Name>
