@@ -1,0 +1,26 @@
+<SageTVPlugin>
+  <Name>Phoenix Compatibility Features for Default STV</Name>
+  <Identifier>phoenix-compatability</Identifier>
+  <Description>
+This plugin is used by Phoenix when Phoenix loads the default STV for some features.  This plugin is loaded by Phoenix and should
+not be installed unless Phoenix is also installed.
+  </Description>
+  <Author>bialio</Author>
+  <CreationDate>2011.01.15</CreationDate>
+  <ModificationDate>2011.10.17</ModificationDate>
+  <Version beta="true">1.0.1</Version>
+
+  <PluginType>STVI</PluginType>
+
+  <Package>
+    <PackageType>STVI</PackageType>
+    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagephoenix/phoenix-compatability-1.0.1.zip</Location>
+    <MD5>10e38d6e809cda2394a1e65c28f62716</MD5>
+  </Package>
+
+  <STVImport>STV7.phoenix.compatability.1.0.1.stvi</STVImport>
+
+  <ReleaseNotes><![CDATA[
+Closes a security hole on the Parental Lock Code
+  ]]></ReleaseNotes>
+</SageTVPlugin>

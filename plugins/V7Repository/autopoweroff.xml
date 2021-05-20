@@ -1,0 +1,48 @@
+<SageTVPlugin>
+    <Name>Automatic Power Off</Name>
+    <Identifier>autopoweroff</Identifier>
+    <Version>1.0.7</Version>
+    <Description>Allows to automatically power off a SageTV Media Extender (MVP/HDx00) after a configurable playback/inactivity timeout and to optionally executing a user batch/script every time all clients are connecting and/or disconnecting from the SageTV server.</Description>
+    <Author>routerunner</Author>
+    <PluginType>Standard</PluginType>
+    <CreationDate>2012-01-05</CreationDate>
+    <ModificationDate>2018-11-05</ModificationDate>
+    <ReleaseNotes>
+1.0.0 - First Public Release
+1.0.1 - Fix plugin didn't start properly sometimes
+1.0.2 - Added connect/disconnect batch/script (all clients supported).
+1.0.3 - Added the ability to enable the automatic power off flag for each extender separately.
+1.0.4 - Fix compatibility issue with earlier Java versions.
+1.0.5 - Fix play list issue.
+1.0.6 - Fix failure of powering off after inactivity timeout. Implemented powering off after playback timeout.
+1.0.7 - No changes. Plugin moved to a different repository.
+    </ReleaseNotes>
+    <Desktop>false</Desktop>
+    <ImplementationClass>AutoPowerOff</ImplementationClass>
+    <Package>
+        <PackageType>JAR</PackageType>
+        <Location>ftp://stv:stv@www.rossisoft.co.uk/plugins/autopoweroff/autopoweroff_1_0_7.zip</Location>
+        <MD5>23d81c81d5e4e87e336f89190842b433</MD5>
+        <Overwrite>true</Overwrite>
+    </Package>
+    <Dependency>
+        <JVM />
+        <MinVersion>1.5</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Core />
+        <MinVersion>7.1</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>sagex-api</Plugin>
+        <MinVersion>7.1.9.3</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>power</Plugin>
+        <MinVersion>1.0.2</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>telnet</Plugin>
+        <MinVersion>1.0.2</MinVersion>
+    </Dependency>
+</SageTVPlugin>

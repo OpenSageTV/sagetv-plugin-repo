@@ -1,0 +1,37 @@
+<SageTVPlugin>
+  <Name>TVBrowser-API</Name>
+  <Identifier>TVBrowserAPI</Identifier>
+  <Description>API for TVBrowser - Do not download directly.</Description>
+  <Author>broconne</Author>
+  <CreationDate>2010-11-11</CreationDate>
+  <ModificationDate>2010.11.11</ModificationDate>
+  <Version beta="true">0.7</Version>
+  <PluginType>Standard</PluginType>
+  <ImplementationClass>tvbrowser.TVBrowser</ImplementationClass>
+  <ReleaseNotes>Initial Release</ReleaseNotes>
+    <Dependency>
+    <STV>SageTV7</STV>
+    <MinVersion>7.0.23</MinVersion>
+    </Dependency>
+	<Dependency>
+    <Plugin>sagex-api</Plugin>
+    <MinVersion>7.0.7.0</MinVersion>
+  </Dependency>
+  	<Dependency>
+		<Plugin>GKusnickToolsLib</Plugin>
+		<MinVersion>1.2</MinVersion>
+	</Dependency>
+	 <Dependency>
+    <Plugin>phoenix-api</Plugin>
+    <MinVersion>2.3</MinVersion>
+  </Dependency>
+    <Dependency>
+    <Plugin>log4j</Plugin>
+    <MinVersion>1.2.15</MinVersion>
+  </Dependency>
+ <Package>
+    <PackageType>JAR</PackageType>
+   <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/TVB-API-0.7.zip</Location>
+    <MD5>D65EE94FF018AAD9B67E7016D9F1D1AF</MD5>
+  </Package>
+  </SageTVPlugin>

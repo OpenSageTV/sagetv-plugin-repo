@@ -1,0 +1,105 @@
+<SageTVPlugin>
+
+
+
+	<Name>Java Heap Monitor</Name>
+
+
+
+  	<Identifier>JHM</Identifier>
+
+
+
+  	<Description>Java Heap Monitor for SageTV 7.
+
+
+
+Running low on heap space is one of the main causes of "sluggishness" in SageTV.  This STVi puts a small bar graph in the menu header which shows how much Java heap space is available.
+
+
+
+To configure the STVi navigate to Setup->Detailed Setup->Customize and look for Java Heap Monitor near the end of the list.</Description>
+
+
+
+	<Author>tmiranda</Author>
+
+
+
+  	<CreationDate>2010.05.23</CreationDate>
+
+
+
+  	<ModificationDate>2015.11.21</ModificationDate>
+
+
+
+  	<Version beta="false">1.21</Version>
+
+
+
+  	<Desktop>false</Desktop>
+
+
+
+	<Webpage>http://forums.sagetv.com/forums/showthread.php?t=45593</Webpage>
+
+
+
+	<Dependency>
+
+		<STV>SageTV7</STV>
+
+		<MinVersion>7.0.23.1</MinVersion>
+
+	</Dependency>
+
+
+
+	<PluginType>STVI</PluginType>
+
+
+
+  	<Package>
+
+    		<PackageType>STVI</PackageType>
+
+    		<Location>http://github.com/tmiranda1962/Java-Heap-Monitor/releases/download/v1.21/JavaHeapMonitor-v1.20.zip</Location>
+
+    		<MD5>E32A4295FEA08717D0C6CFD0A3170D57</MD5>
+
+  	</Package>
+
+
+
+	<STVImport>JavaHeapMonitor.stvi</STVImport>
+
+
+
+	<ReleaseNotes>Version 1.21:
+
+- Migrated to GitHub. No change in functionality.
+
+
+
+Version 1.20:
+
+- Use new STV hook provided to avoid collisions with other STVi's that need to put icons in the header.
+
+- Changed default setting so the meter is enabled by default.
+
+
+
+Version 1.11:
+
+- Fix bug that caused incompatibility with the CPU Meter STVi.
+
+
+
+Version 1.10:
+
+- Initial release for SageTV V7.</ReleaseNotes>
+
+
+
+</SageTVPlugin>

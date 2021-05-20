@@ -1,0 +1,18 @@
+<SageTVPlugin>
+  <Name>nielm_sagemenureader</Name>
+  <Identifier>nielm_sagemenureader</Identifier>
+  <Description>SageTV Dependency JAR Plugin for nielm_sagemenureader.jar - no need to download directly</Description>
+  <Author>nielm</Author>
+  <CreationDate>2010-04-08</CreationDate>
+  <ModificationDate>2010.04.27</ModificationDate>
+  <Version>1.0</Version>
+  <Desktop>false</Desktop>
+
+  <PluginType>Library</PluginType>
+
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/nielm_sagemenureader.jar.zip</Location>
+    <MD5>D4915026013A107CAB8CAD746AC9BC65</MD5>
+  </Package>
+</SageTVPlugin>

@@ -1,0 +1,18 @@
+<SageTVPlugin>
+  <Name>activemq-all</Name>
+  <Identifier>activemq-all</Identifier>
+  <Description>SageTV JAR Plugin for activemq-all-5.3.1.jar - no need to download directly</Description>
+  <Author>jphipps</Author>
+  <CreationDate>2010-04-25</CreationDate>
+  <ModificationDate>2010.04.25</ModificationDate>
+  <Version>5.3.1</Version>
+  <Desktop>false</Desktop>
+
+  <PluginType>Library</PluginType>
+
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/activemq-all-5.3.1.jar.zip</Location>
+    <MD5>FE6EFC820258660977D823459D48E284</MD5>
+  </Package>
+</SageTVPlugin>

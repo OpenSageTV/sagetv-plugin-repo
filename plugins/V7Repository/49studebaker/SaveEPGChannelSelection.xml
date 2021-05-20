@@ -1,0 +1,55 @@
+<SageTVPlugin>
+
+  <Name>Save EPG channel selection on Exit</Name>
+
+  <Identifier>SaveEPGChannelSelection</Identifier>
+
+  <Description>Saves the user selected EPG channel on Exit and then restores it when the EPG is displayed.</Description>
+
+  <Author>49studebaker</Author>
+
+  <CreationDate>2010.06.21</CreationDate>
+
+  <ModificationDate>2010.06.22</ModificationDate>
+
+  <Version>1.0.1</Version>
+
+
+
+<Dependency>
+
+  <STV>SageTV7</STV>
+
+  <MinVersion>7.0</MinVersion>
+
+</Dependency>
+
+
+
+<PluginType>STVI</PluginType>
+
+<STVImport>SaveEPGChannelSelection.stvi</STVImport>
+
+
+
+<Package>
+
+  <PackageType>STVI</PackageType>
+
+  <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/SaveEPGChannelSelection.zip</Location>
+
+  <MD5>00AF3419DD8A7929E2ACB9B8182D83EB</MD5>
+
+</Package>
+
+
+
+<ReleaseNotes>
+
+Version 1.0 - Initial release.
+
+</ReleaseNotes>
+
+
+
+</SageTVPlugin>

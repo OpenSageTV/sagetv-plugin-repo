@@ -1,0 +1,35 @@
+<SageTVPlugin>
+
+       <Name>livepvrdata-shared</Name>
+
+       <Identifier>livepvrdata-shared</Identifier>
+
+       <Description>Common data structures for Live PVR Data API - dependency only</Description>
+
+       <Author>Slugger</Author>
+
+       <CreationDate>2010.07.03</CreationDate>
+
+       <ModificationDate>2011.09.02</ModificationDate>
+
+       <Version>5.0.0.0</Version>
+
+       <ResourcePath>plugins/livepvrdata-shared</ResourcePath>
+
+       <Webpage>http://www.livepvrdata.com</Webpage>
+
+       <PluginType>Library</PluginType>
+
+       <Package>
+
+               <PackageType>JAR</PackageType>
+
+               <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/livepvrdata4j/livepvrdata-shared-5.0.0.0.zip</Location>
+
+               <MD5>63b51788e4ae4dda20eb30347eff279b</MD5>
+
+               <Overwrite>true</Overwrite> <!-- Defaults to true -->
+
+       </Package>
+
+</SageTVPlugin>

@@ -1,0 +1,35 @@
+<SageTVPlugin>
+
+       <Name>jcommander</Name>
+
+       <Identifier>jcommander</Identifier>
+
+       <Description>jcommander - dependency only</Description>
+
+       <Author>Slugger</Author>
+
+       <CreationDate>2013.10.14</CreationDate>
+
+       <ModificationDate>2013.10.14</ModificationDate>
+
+       <Version>1.32</Version>
+
+       <ResourcePath>jcommander</ResourcePath>
+
+       <Webpage>http://www.jcommander.org</Webpage>
+
+       <PluginType>Library</PluginType>
+
+       <Package>
+
+               <PackageType>JAR</PackageType>
+
+               <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetv-addons/jcommander-1.32.zip</Location>
+
+               <MD5>f6b15f60d68cddd0fd4cf605c2332db2</MD5>
+
+               <Overwrite>true</Overwrite> <!-- Defaults to true -->
+
+       </Package>
+
+</SageTVPlugin>

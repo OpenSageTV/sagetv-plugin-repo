@@ -1,0 +1,59 @@
+<SageTVPlugin>
+
+  <Name>Guide on top, info and preview on bottom</Name>
+
+  <Identifier>GuideOnTopInfoOnBottom</Identifier>
+
+  <Description>Puts the Program Guide at the top of the screen. Puts the info and preview window at the bottom of the screen.</Description>
+
+  <Author>49studebaker</Author>
+
+  <CreationDate>2010.05.30</CreationDate>
+
+  <ModificationDate>2010.06.03</ModificationDate>
+
+  <Version>1.1.1</Version>
+
+
+
+<Dependency>
+
+  <STV>SageTV7</STV>
+
+  <MinVersion>7.0</MinVersion>
+
+</Dependency>
+
+
+
+<PluginType>STVI</PluginType>
+
+<STVImport>GuideOnTopInfoOnBottom.stvi</STVImport>
+
+
+
+<Package>
+
+  <PackageType>STVI</PackageType>
+
+  <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/GuideOnTopInfoOnBottom.zip</Location>
+
+  <MD5>D4A8C01D46E8FC0E6FA9F353DACEE211</MD5>
+
+</Package>
+
+
+
+<ReleaseNotes>
+
+Version 1.0 - Initial release.
+
+Version 1.0.5 - Fixed layout bug that occured when used with "Hide Footer" plugin.
+
+Version 1.1.1 - Fixed bug that caused formatting of other menus.
+
+</ReleaseNotes>
+
+
+
+</SageTVPlugin>

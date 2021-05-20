@@ -1,0 +1,18 @@
+<SageTVPlugin>
+  <Name>cron4j</Name>
+  <Identifier>cron4j</Identifier>
+  <Description>SageTV JAR Plugin for cron4j-2.2.1.jar - no need to download directly</Description>
+  <Author>stuckless</Author>
+  <CreationDate>2010-04-08</CreationDate>
+  <ModificationDate>2010.04.09</ModificationDate>
+  <Version>2.2.1</Version>
+  <Desktop>false</Desktop>
+
+  <PluginType>Library</PluginType>
+
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/cron4j-2.2.1.jar.zip</Location>
+    <MD5>EC43775445BFA910B18F27CD55EA77C7</MD5>
+  </Package>
+</SageTVPlugin>

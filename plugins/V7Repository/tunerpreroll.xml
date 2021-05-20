@@ -1,0 +1,36 @@
+<SageTVPlugin>
+    <Name>Tuner Preroll</Name>
+    <Identifier>tunerpreroll</Identifier>
+    <Version>1.0.3</Version>
+    <Description>This plugin prerolls any Digital TV Tuner preventing recording errors when recording multiple tuners after SageTV has restarted.</Description>
+    <Author>routerunner</Author>
+    <PluginType>Standard</PluginType>
+    <CreationDate>2013-10-31</CreationDate>
+    <ModificationDate>2019-12-12</ModificationDate>
+    <ReleaseNotes>
+1.0.0 - First Public Release.
+1.0.1 - Fixes some tuner doesn't return signal strength.
+1.0.2 - New method, simpler, faster and more reliable.
+1.0.3 - Improved compatibility with hybrid tuners.
+    </ReleaseNotes>
+    <Desktop>false</Desktop>
+    <ImplementationClass>TunerPreroll</ImplementationClass>
+    <Package>
+        <PackageType>JAR</PackageType>
+        <Location>ftp://stv:stv@www.rossisoft.co.uk/plugins/tunerpreroll/tunerpreroll_1_0_3.zip</Location>
+        <MD5>ef913fcbe6de837e0a3bdf193a147ee2</MD5>
+        <Overwrite>true</Overwrite>
+    </Package>
+    <Dependency>
+        <JVM />
+        <MinVersion>1.6</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Core />
+        <MinVersion>7.1</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>sagex-api</Plugin>
+        <MinVersion>7.1.9.3</MinVersion>
+    </Dependency>
+</SageTVPlugin>

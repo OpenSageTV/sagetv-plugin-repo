@@ -1,0 +1,20 @@
+<SageTVPlugin>
+  <Name>Monitor Power Control</Name>
+  <Identifier>FuzzyMonOff</Identifier>
+  <Description>Launches an external command that can be used to turn a monitor/tv on and off upone entering/exiting the sagetv screen-saver (client sleep). Configuration is done under Detailed Setup -> Screen Saver Options -> Screen Saver Style == Monitor Off.</Description>
+  <Author>Fuzzy</Author>
+  <CreationDate>2011-01-18</CreationDate>
+  <ModificationDate>2011.01.18</ModificationDate>
+  <Version>1.0.0</Version>
+  <PluginType>STVI</PluginType>
+  <ReleaseNotes>1.0.0 - Initial Release</ReleaseNotes>
+  <Dependency>
+    <STV>SageTV7</STV>
+    <MinVersion>7.0</MinVersion>
+ </Dependency><Package>
+    <PackageType>STVI</PackageType>
+   <Location>http://dl.dropbox.com/u/8593871/Fuzzy_MonOff.zip</Location>
+    <MD5>d5a7cd8285a08a908a0514eab37bb232</MD5>
+  </Package>
+  <STVImport>Fuzzy_MonOff.stvi</STVImport>
+</SageTVPlugin>

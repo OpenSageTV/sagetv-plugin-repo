@@ -1,0 +1,41 @@
+<SageTVPlugin>
+  <Name>Ortus Trailers</Name>
+  <Identifier>ortus-trailer-stvi</Identifier>
+  <Description>Download new theatrical trailers provided by Apple.</Description>
+  <Author>Team Ortus</Author>
+  <Screenshot>http://img267.imageshack.us/img267/2702/ortustrailershome.jpg</Screenshot>
+  <Screenshot>http://img293.imageshack.us/img293/9232/ortustrailerslist.jpg</Screenshot>
+  <Screenshot>http://img535.imageshack.us/img535/5066/ortustrailerswall.jpg</Screenshot>
+  <Screenshot>http://img443.imageshack.us/img443/3269/ortustrailersoptions.jpg</Screenshot>
+  <Webpage><![CDATA[http://code.google.com/p/ortus/wiki/OrtusTrailers]]></Webpage>
+  <CreationDate>2010-07-16</CreationDate>
+  <ModificationDate>2010.07.23</ModificationDate>
+  <Version beta="true">1.07</Version>
+  <Desktop>false</Desktop>
+
+  <Dependency>
+  <STV>SageTV7</STV>
+  <MinVersion>7.0.12</MinVersion>
+</Dependency>
+
+  <Dependency>
+    <Plugin>ortus-trailer-files</Plugin>
+  </Dependency>
+
+    <Dependency>
+    <Plugin>sageortus-api</Plugin>
+  </Dependency>
+
+  <PluginType>STVI</PluginType>
+
+  <Package>
+    <PackageType>STVI</PackageType>
+    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/ortus/ortus-trailer-stvi.zip</Location>
+    <MD5>e3e1ccca8bae99dfcddd0d184932db0e</MD5>
+  </Package>
+
+<ReleaseNotes>Version 1.07 - Initial public beta release.</ReleaseNotes>
+
+<STVImport>ortus-trailer.stvi</STVImport>
+
+</SageTVPlugin>

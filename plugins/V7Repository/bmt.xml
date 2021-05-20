@@ -1,0 +1,49 @@
+<SageTVPlugin>
+  <Name>Metadata Tools for SageTV - Commandline</Name>
+  <Identifier>bmt</Identifier>
+  <Description>
+This is the command line portion of Batch Metadata Tools.  You only need this plugin if you
+want to run BMT from a console to generate .properties.
+  </Description>
+  <Screenshot><![CDATA[http://forums.sagetv.com/forums/attachment.php?attachmentid=9772&stc=1&d=1266629522]]></Screenshot>
+  <Author>stuckless</Author>
+  <CreationDate>2008.07.19</CreationDate>
+  <ModificationDate>2011.01.27</ModificationDate>
+  <Version>4.9.8</Version>
+  <ResourcePath>bmt</ResourcePath>
+  <Webpage><![CDATA[http://forums.sagetv.com/forums/downloads.php?do=file&id=239]]></Webpage>
+
+  <Dependency>
+    <Plugin>phoenix-core</Plugin>
+    <MinVersion>2.3.14</MinVersion>
+  </Dependency>
+
+  <PluginType>Library</PluginType>
+
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/customsagetv/bmt-jar-4.9.8.zip</Location>
+    <MD5>e6a653bdaa8e0443b8d8acc0b5a47b5f</MD5>
+  </Package>
+
+  <Package>
+    <PackageType>System</PackageType>
+    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/customsagetv/bmt-system-4.9.8.zip</Location>
+    <MD5>407239e2b2f6c927a656327431e3ba2b</MD5>
+  </Package>
+  <ReleaseNotes>
+
+4.9.6
+* Fixed build issue to make it compatible with phoenix changes in 2.3.10
+
+4.9.4
+* This plugin is deprecated.  It will be removed at some point.
+
+4.2
+* updated version to match bmt web
+
+4.1
+* Moved all metadata related functions to Phoenix
+* This is a package stub for the commandline metadata operations
+  </ReleaseNotes>
+</SageTVPlugin>

@@ -1,0 +1,19 @@
+<SageTVPlugin>
+  <Name>Microsoft SQL JDBC</Name>
+  <Identifier>MSSQLJDBC</Identifier>
+  <Description>Microsoft SQL Server JDBC Driver- no need to download directly</Description>
+  <Author>PluckyHD</Author>
+  <CreationDate>2010-04-15</CreationDate>
+  <ModificationDate>2010.04.15</ModificationDate>
+  <Version>2.0</Version>
+  <Desktop>false</Desktop>
+  <OS>Windows</OS>
+
+  <PluginType>Library</PluginType>
+
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>http://babgvant.com/downloads/pluckyhd/sqljdbc4.zip</Location>
+    <MD5>dbd6a7b9486de71183affa22a30c1340</MD5>
+  </Package>
+</SageTVPlugin>

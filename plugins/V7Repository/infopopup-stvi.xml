@@ -1,0 +1,23 @@
+<SageTVPlugin>
+  <Name>InfoPopup STVi</Name>
+  <Identifier>infopopup-stvi</Identifier>
+  <Description><![CDATA[UI Module for Caller ID and Messsaging dialog prompts for SageTV.  Install the InfoPopup plugin from the General plugins.]]></Description>
+  <Author>shadeblue.com</Author>
+  <CreationDate>2010.07.04</CreationDate>
+  <ModificationDate>2017.05.22</ModificationDate>
+  <Version>7.0.4</Version>
+  <Desktop>false</Desktop>
+  <Screenshot><![CDATA[http://forums.sagetv.com/forums/attachment.php?attachmentid=10629&d=1278362255]]></Screenshot>
+  <Screenshot><![CDATA[http://forums.sagetv.com/forums/attachment.php?attachmentid=10630&d=1278362275]]></Screenshot>
+  <Screenshot><![CDATA[http://forums.sagetv.com/forums/attachment.php?attachmentid=10631&d=1278362284]]></Screenshot>
+  <Webpage><![CDATA[http://forums.sagetv.com/forums/downloads.php?do=file&id=386]]></Webpage>
+  <Webpage><![CDATA[http://forums.sagetv.com/forums/showthread.php?t=49514]]></Webpage>
+  <PluginType>STVI</PluginType>
+  <Package>
+    <PackageType>STVI</PackageType>
+    <Location><![CDATA[http://download.shadeblue.com/sagetv/plugins/shadeblue-infopopup/7.0.4/shadeblue-infopopup-stvi-7.0.4.zip]]></Location>
+    <MD5>9d4f1445f5dfb160c3a4a1d10c264ef1</MD5>
+  </Package>
+  <STVImport>shadeblue-infopopup-7.0.4.stvi</STVImport>
+  <ReleaseNotes><![CDATA[Release 7.0.4 - release for SageTV V 7.0.12, caller id image bug fixes]]></ReleaseNotes>
+</SageTVPlugin>

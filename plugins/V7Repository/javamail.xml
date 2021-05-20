@@ -1,0 +1,18 @@
+<SageTVPlugin>
+       <Name>javax.mail</Name>
+       <Identifier>javamail</Identifier>
+       <Description>Sun's javax.mail implementation - dependency only</Description>
+       <Author>Slugger</Author>
+       <CreationDate>2010.05.15</CreationDate>
+       <!-- <ModificationDate>2010.03.01</ModificationDate> -->
+       <Version>1.4.3</Version>
+       <ResourcePath>plugins/javamail</ResourcePath>
+       <Webpage>http://java.sun.com/products/javamail/index.jsp</Webpage>
+       <PluginType>Library</PluginType>
+       <Package>
+               <PackageType>JAR</PackageType>
+               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/mail-1.4.3.zip</Location>
+               <MD5>119BEC643DCC9499E515AEBD2740C37C</MD5>
+               <Overwrite>true</Overwrite> <!-- Defaults to true -->
+       </Package>
+</SageTVPlugin>

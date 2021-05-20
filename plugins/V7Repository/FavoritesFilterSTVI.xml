@@ -1,0 +1,24 @@
+<SageTVPlugin>
+<Name>Favorites Filter</Name>
+<Identifier>FavoritesFilterSTVI</Identifier>
+<Description>Favorites Filter provides the ability to set favorites to a a specific level (1-default, 2 or 3) such that only level 1 airings (which is default) initially shows in the Recordings views.  Airings associated with Favorites with level 2 or 3 will not display until the viewing level is increased by pressing 1, 2 or 3 on the remote control or keyboard to change the current viewing level.  The current viewing level is indicated in the menu title in parentheses.  The level for the favorite can be selected within the Advanced Options of the favorite.</Description>
+<Author>LaManSoft</Author>
+<CreationDate>2010.06.22</CreationDate>
+<ModificationDate>2010.06.22</ModificationDate>
+<Version>1.0.0</Version>
+<PluginType>STVI</PluginType>
+<Package>
+	<PackageType>STVI</PackageType>
+	<Location>http://www.lamansoft.com/ff/FF_1.0.0.stvi.zip</Location>
+	<MD5>9356a6922b11da09f5f366873342c946</MD5>
+</Package>
+<STVImport>FF_1.0.0.stvi</STVImport>
+<Dependency>
+	<Core/>
+	<MinVersion>7.0.8</MinVersion>
+</Dependency>
+<Dependency>
+	<Plugin>FavoriatesFilterJar</Plugin>
+	<MinVersion>1.0.0</MinVersion>
+</Dependency>
+</SageTVPlugin>

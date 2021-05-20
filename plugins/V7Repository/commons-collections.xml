@@ -1,0 +1,18 @@
+<SageTVPlugin>
+  <Name>commons-collections</Name>
+  <Identifier>commons-collections</Identifier>
+  <Description>SageTV Dependency JAR Plugin for commons-collections-3.2.jar - no need to download directly</Description>
+  <Author>koelec</Author>
+  <CreationDate>2010-06-07</CreationDate>
+  <ModificationDate>2010-06-07</ModificationDate>
+  <Version>3.2</Version>
+  <Desktop>false</Desktop>
+
+  <PluginType>Library</PluginType>
+
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetvkoelec/commons-collections-3.2.jar.zip</Location>
+    <MD5>4971F831DF0091289BB4321B9D1CE63F</MD5>
+  </Package>
+</SageTVPlugin>

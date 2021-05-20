@@ -1,0 +1,61 @@
+<SageTVPlugin>
+  <Name>Movie Showtimes</Name>
+  <Identifier>MovieTimesSTVI</Identifier>
+  <Description><![CDATA[Allows you to browse for movie showtimes in the Online Services Menu]]></Description>
+  <Author>evilpenguin</Author>
+  <CreationDate>2010.08.24</CreationDate>
+
+  <ModificationDate>2010.08.30</ModificationDate>
+  <Version>1.2</Version>
+  <Desktop>false</Desktop>
+  <OS>Windows</OS>
+
+  <Screenshot><![CDATA[http://forums.sagetv.com/forums/attachment.php?attachmentid=10980&d=1282871528]]></Screenshot>
+  <Screenshot><![CDATA[http://forums.sagetv.com/forums/attachment.php?attachmentid=10981&d=1282871535]]></Screenshot>
+  <Screenshot><![CDATA[http://forums.sagetv.com/forums/attachment.php?attachmentid=10983&d=1282871549]]></Screenshot>
+  <Screenshot><![CDATA[http://forums.sagetv.com/forums/attachment.php?attachmentid=10983&d=1282871549]]></Screenshot>
+  <Webpage><![CDATA[http://forums.sagetv.com/forums/showthread.php?t=50451]]></Webpage>
+
+  <ReleaseNotes>
+    * v1.2
+    * Added support for more trailers thanks to http://www.hd-trailers.net/
+    * Added settings menu for setting location and selecting streaming resolution
+    * Added trailers for movies coming soon and opening this weekend
+    * Lots of code clean up
+
+
+    * v1.1
+    * Switched to Google for movie times source
+    * Can now input any location (Zip, Address, City, whatever)
+    * By popular demand: 100% more Canada
+    * Added trailers if available on Youtube
+    * Added movie info to date field
+    * Added theater phone # to date field
+    * Improved sorting, theaters are sorted by number of screens and movies are sorted by number of theaters
+    * Improved meathod of entering Online Services Menu (Thanks Andy!)
+    * Updated STVi text to indicate that you can enter any zipcode
+
+    * v1.0
+    * Initial Release - Allows browsing for movie times in the Online Services Menu
+  </ReleaseNotes>
+
+  <PluginType>STVI</PluginType>
+
+  <Dependency>
+    <Plugin>MovieTimesScraper</Plugin>
+    <MinVersion>1.2</MinVersion>
+  </Dependency>
+  <Dependency>
+    <STV>SageTV7</STV>
+    <MinVersion>7.0.9</MinVersion>
+  </Dependency>
+
+  <Package>
+    <PackageType>STVI</PackageType>
+    <Location><![CDATA[http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/upnp2podcast/MovieTimesSTVi_v1_1_1.zip]]></Location>
+    <MD5>3b703470f63f2bc0469b1e966a942066</MD5>
+  </Package>
+
+  <STVImport>MovieTimes.stvi</STVImport>
+
+</SageTVPlugin>

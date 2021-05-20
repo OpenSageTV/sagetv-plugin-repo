@@ -1,0 +1,28 @@
+<SageTVPlugin>
+	<Name>dflachbart Tweaks</Name>
+	<Identifier>dflachbartTweaks</Identifier>
+	<Description>A couple of UI Tweaks for the SageTV 7 default STV</Description>
+	<Author>dflachbart</Author>
+	<CreationDate>2011-01-07</CreationDate>
+	<ModificationDate>2011-01-07</ModificationDate>
+	<Version>1.0</Version>
+	<Dependency>
+		<STV>SageTV7</STV>
+		<MinVersion>7.0</MinVersion>
+	</Dependency>
+	<PluginType>STVI</PluginType>
+	<STVImport>DflachbartTweaks.stvi</STVImport>
+	<ReleaseNotes>
+Version 1.0:
+Single Pane Main Menu
+Show encoder markers
+Toggle disk bar on Home screen with 'Info' button
+	</ReleaseNotes>
+	<Package>
+	  <PackageType>STVI</PackageType>
+	  <Location>http://www.flachbart.com/sagetv/dflachbartTweaks.zip</Location>
+	  <MD5>95F072E9B7B86DEF83B7C599FF6FF599</MD5>
+	</Package>
+	<Screenshot>http://www.flachbart.com/sagetv/MainMenu1.jpg</Screenshot>
+	<Screenshot>http://www.flachbart.com/sagetv/MainMenu2.jpg</Screenshot>
+</SageTVPlugin>

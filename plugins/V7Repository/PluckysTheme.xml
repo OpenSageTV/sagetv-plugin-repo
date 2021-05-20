@@ -1,0 +1,25 @@
+<SageTVPlugin>
+
+  <Name>Plucky's Theme</Name>
+  <Identifier>PluckysTheme</Identifier>
+  <Description>Theme of background changes for main menu. Mainly for Plucky's Menu Mod stvi. There will be more theme changes in the future.
+  </Description>
+  <Author>PluckyHD</Author>
+  <CreationDate>2010.06.07</CreationDate>
+  <ModificationDate>2010.06.07</ModificationDate>
+  <Version beta="true">1.00</Version>
+
+<Dependency>
+  <STV>SageTV7</STV>
+  <MinVersion>7.0</MinVersion>
+</Dependency>
+
+<PluginType>Theme</PluginType>
+
+  <Package>
+    <PackageType>STVI</PackageType>
+    <Location>http://babgvant.com/downloads/pluckyhd/PluckysThemeV1.00.zip</Location>
+    <MD5>9e6d821708a1b04b35004c798439451b</MD5>
+  </Package>
+
+</SageTVPlugin>

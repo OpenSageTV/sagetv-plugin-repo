@@ -1,0 +1,56 @@
+<SageTVPlugin>
+  <Name>Weather Using NWS API</Name>
+  <Identifier>nwsweather</Identifier>
+  <Description>Weather for SageTV. Uses the National Weather Service API.</Description>
+  <Author>tmiranda</Author>
+  <CreationDate>2018.11.28</CreationDate>
+  <ModificationDate>2018.12.11</ModificationDate>
+  <Version beta="true">0.13</Version>
+  <Desktop>false</Desktop>
+
+  <Dependency>
+    <Plugin>json</Plugin>
+  </Dependency>
+
+  <PluginType>STVI</PluginType>
+
+  <Package>
+    <PackageType>STVI</PackageType>
+    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/nws/nws-stvi-0.13.zip</Location>
+    <MD5>2E594BC23A36C46D1EEB99F01F931030</MD5>
+  </Package>
+
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/nws/nws-0.13.zip</Location>
+    <MD5>B1A23FE10ED36657FA2A040D04815063</MD5>
+  </Package>
+
+  <Package>
+    <PackageType>System</PackageType>
+    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/nws/ZipCodes.zip</Location>
+    <MD5>4E4AD911765357CAEC3C07841842C852</MD5>
+  </Package>
+
+  <STVImport>nws.stvi</STVImport>
+
+  <ReleaseNotes>Version 0.13:
+- Fixed typo in Max/Min area.
+- Fixed a bug that would cause the readings to become null.
+
+Version 0.12:
+- Added ability to refresh the forecast data.
+- Added sunrise and sunset info.
+- Added Left as back on Forecast menus.
+- Added additional error checking when parsing JSON.
+- Cleaned up the configuration menu to look better if no ZipCode has been configured.
+- Fixed typo with "Max/Min" temperature.
+- Fixed Option menu selection.
+- Fixed bug that caused "null" to be displayed on config menu if not configured.
+- Fixed a bug that caused temperatures reported in C to be incorrectly converted to F.
+- Fixed NPE entering seyup menu for the first time.
+
+Version 0.10:
+  - Initial release.</ReleaseNotes>
+
+</SageTVPlugin>

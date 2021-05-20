@@ -1,0 +1,43 @@
+<SageTVPlugin>
+ <Name>External Apps</Name>
+ <Identifier>ExternalApps</Identifier>
+ <Description>Provides a button on the Video Options menu that can be used to run any external application, using the current video filename (among other things) as an argument.</Description>
+ <Author>JREkiwi</Author>
+ <CreationDate>2004.05.13</CreationDate>
+ <ModificationDate>2021.05.18</ModificationDate>
+ <Version>4.0.5.3</Version>
+ <Desktop>false</Desktop>
+ <Dependency>
+  <STV>SageTV7</STV>
+  <MinVersion>7.0</MinVersion>
+ </Dependency>
+ <Dependency>
+  <JVM></JVM>
+  <MinVersion>1.8</MinVersion>
+  </Dependency>
+ <Webpage>http://forums.sagetv.com/forums/showthread.php?t=49522</Webpage>
+<PluginType>STVI</PluginType>
+ <Package>
+   <PackageType>STVI</PackageType>
+   <Location>https://github.com/JREkiwi/ExternalApps/releases/download/4.0.5/External_Apps_4.0.5.zip</Location>
+   <MD5>CD84F53F087E1F98DF2C680A13D82AA3</MD5>
+ </Package>
+<STVImport>External_Apps.stvi</STVImport>
+<ReleaseNotes>
+Move To GitHub
+4.0.5.2
+ Fix Java Dependency
+
+4.0.5.1
+ Change download to HTTPS
+
+4.0.5
+Fix for extraneous path being displayed in Video Folder view when in Separate Folder Style
+
+4.0.4
+Add workaround for changes in TMT5 handling of BDMV paths. The workaround can be enabled on a per application basis.
+
+4.0.3
+V7 Port of External Apps import
+</ReleaseNotes>
+</SageTVPlugin>

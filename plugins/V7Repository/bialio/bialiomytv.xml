@@ -1,0 +1,28 @@
+<SageTVPlugin>
+  <Name>My TV for V7</Name>
+  <Identifier>bialiomytv</Identifier>
+  <Description>My TV menu for the SageTV V7 UI
+  </Description>
+  <CreationDate>2010.06.15</CreationDate>
+  <ModificationDate>2010.06.15</ModificationDate>
+  <Author>bialio</Author>
+  <Version>0.2</Version>
+  <Screenshot>http://i253.photobucket.com/albums/hh68/bialio/Sage/myTv.jpg</Screenshot>
+<ReleaseNotes>0.2 Added listeners to table items Play, Info, Delete, Watched, Don't Like
+0.1 Original release</ReleaseNotes>
+ <Dependency>
+    <STV>SageTV7</STV>
+    <MinVersion>7.0</MinVersion>
+ </Dependency>
+
+  <PluginType>STVI</PluginType>
+
+  <Package>
+    <PackageType>STVI</PackageType>
+    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/serenitybybialio/STV7.mytv.0.2.stvi.zip</Location>
+    <MD5>cb818c8c77eb8d7ed9e864a68c6f2bc9</MD5>
+  </Package>
+
+<STVImport>STV7.mytv.0.2.stvi</STVImport>
+
+</SageTVPlugin>

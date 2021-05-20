@@ -1,0 +1,38 @@
+<SageTVPlugin>
+  <Name>Ortus MQ</Name>
+  <Identifier>ortus-mq</Identifier>
+  <Description>
+      Ortus Event/JMS Queue Plugin - A plugin to allow developers to utilize the ApacheMQ module and implement message queueing to communicate between the clients and servers
+  </Description>
+  <Author>jphipps</Author>
+  <CreationDate>2010-05-07</CreationDate>
+  <ModificationDate>2011.01.28</ModificationDate>
+  <Version>1.0.10</Version>
+  <Desktop>false</Desktop>
+  <ReleaseNotes>
+        1.0.10 : Fix various exceptions caused by invalid parms in latest sage version.  Fix client connection logic
+        1.0.9 : Fix various exceptions caused by invalid parm types
+  </ReleaseNotes>
+  <Dependency>
+    <Plugin>sagex-api</Plugin>
+    <MinVersion>7</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Plugin>activemq-all</Plugin>
+  </Dependency>
+  <Dependency>
+    <Plugin>log4j</Plugin>
+  </Dependency>
+  <PluginType>Standard</PluginType>
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/ortus/ortus-mq.jar-1.0.10.zip</Location>
+    <MD5>83a29c1df905b14844f24d3079bed05c</MD5>
+  </Package>
+  <Package>
+    <PackageType>System</PackageType>
+    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/ortus/ortus-mq-1.0.8.zip</Location>
+    <MD5>52d5e66d2455ee5672be0b4e7f1956dd</MD5>
+  </Package>
+  <ImplementationClass>ortus.mq.OrtusMQPlugin</ImplementationClass>
+</SageTVPlugin>

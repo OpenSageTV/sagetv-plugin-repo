@@ -1,0 +1,41 @@
+<SageTVPlugin>
+
+
+
+  <Name>cling-core</Name>
+
+  <Identifier>cling-core</Identifier>
+
+  <Author>tmiranda</Author>
+
+  <CreationDate>2012.02.20</CreationDate>
+
+  <ModificationDate>2015.11.15</ModificationDate>
+
+  <Version beta="false">2.0.1</Version>
+
+  <Desktop>false</Desktop>
+
+
+
+  <Description>cling-core library for SageTV. No need to download directly.</Description>
+
+
+
+  <PluginType>Library</PluginType>
+
+
+
+  <Package>
+
+    <PackageType>JAR</PackageType>
+
+    <Location>http://github.com/tmiranda1962/cling/releases/download/2.0.1/cling-core-2.0.1.zip</Location>
+
+    <MD5>AA716AB5A488B042DA247307F9C54CEF</MD5>
+
+  </Package>
+
+
+
+</SageTVPlugin>

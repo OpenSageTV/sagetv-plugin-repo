@@ -1,0 +1,151 @@
+<SageTVPlugin>
+
+
+
+	<Name>Context Sensitive Main Menu</Name>
+
+
+
+  	<Identifier>csmm</Identifier>
+
+
+
+  	<Description>Puts interesting things on the main menu.</Description>
+
+
+
+  	<Author>tmiranda</Author>
+
+
+
+  	<CreationDate>2011.01.16</CreationDate>
+
+  	<ModificationDate>2015.10.10</ModificationDate>
+
+
+
+	<Screenshot>http://tmiranda.googlecode.com/svn/trunk/CSM/ScreenShots/TV-View-Thumbnails.jpg</Screenshot>
+
+	<Screenshot>http://tmiranda.googlecode.com/svn/trunk/CSM/ScreenShots/TV-View-DoubleRows.jpg</Screenshot>
+
+	<Screenshot>http://tmiranda.googlecode.com/svn/trunk/CSM/ScreenShots/TV-View-SingleRows.jpg</Screenshot>
+
+	<Screenshot>http://tmiranda.googlecode.com/svn/trunk/CSM/ScreenShots/TV-Guide.jpg</Screenshot>
+
+	<Screenshot>http://tmiranda.googlecode.com/svn/trunk/CSM/ScreenShots/TV-Editorials.jpg</Screenshot>
+
+	<Screenshot>http://tmiranda.googlecode.com/svn/trunk/CSM/ScreenShots/TV-Recordings.jpg</Screenshot>
+
+	<Screenshot>http://tmiranda.googlecode.com/svn/trunk/CSM/ScreenShots/Music.jpg</Screenshot>
+
+	<Screenshot>http://tmiranda.googlecode.com/svn/trunk/CSM/ScreenShots/Photos.jpg</Screenshot>
+
+	<Screenshot>http://tmiranda.googlecode.com/svn/trunk/CSM/ScreenShots/Online.jpg</Screenshot>
+
+	<Screenshot>http://tmiranda.googlecode.com/svn/trunk/CSM/ScreenShots/Setup.jpg</Screenshot>
+
+	<Screenshot>http://tmiranda.googlecode.com/svn/trunk/CSM/ScreenShots/Options.jpg</Screenshot>
+
+
+
+  	<Version beta="false">0.07</Version>
+
+
+
+  	<Desktop>false</Desktop>
+
+
+
+  	<Dependency>
+
+    	<STV>SageTV7</STV>
+
+      	<MinVersion>7.1.9.6</MinVersion>
+
+  	</Dependency>
+
+
+
+  	<Dependency>
+
+    	<STV>googleweather</STV>
+
+      	<MinVersion>2.0.3</MinVersion>
+
+  	</Dependency>
+
+
+
+  	<PluginType>STVI</PluginType>
+
+
+
+  	<Package>
+
+    		<PackageType>STVI</PackageType>
+
+    		<Location>http://github.com/tmiranda1962/plugins/releases/download/v0.01/CSM-v0.07.zip</Location>
+
+    		<MD5>A5A2EF7E559629973537DA8EE43B7ED3</MD5>
+
+  	</Package>
+
+
+
+  	<STVImport>CSM.stvi</STVImport>
+
+
+
+  	<ReleaseNotes>0.07:
+
+- Fixed weather to use WeatherUnderground.
+
+
+
+0.06
+
+- Use new Google weather API.
+
+
+
+0.05:
+
+- Unreleased version.
+
+
+
+0.04:
+
+- Added photo secondary menu items.
+
+- Added video secondary menu items.
+
+- Added music seconary menu items.
+
+- Fixed a bug that prevented user from disabling TV secondary menus.
+
+
+
+0.03:
+
+- Added views for secondary menu items.
+
+- Visual improvements.
+
+
+
+0.02:
+
+- Added Double Row and Single Row views.
+
+- Enhancements to Options menu.
+
+
+
+0.01:
+
+- First shot.</ReleaseNotes>
+
+
+
+</SageTVPlugin>

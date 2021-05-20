@@ -1,0 +1,20 @@
+<SageTVPlugin>
+  <Name>Always Show SubMenus</Name>
+  <Identifier>FuzzyShowSubMenu</Identifier>
+  <Description>Changes Main Menu behavior to always show the Submenu of the Focused item.  Greatly improved menu navigation intuitiveness.</Description>
+  <Author>Fuzzy</Author>
+  <CreationDate>2010-07-06</CreationDate>
+  <ModificationDate>2010.07.06</ModificationDate>
+  <Version>1.0.0</Version>
+  <PluginType>STVI</PluginType>
+  <ReleaseNotes>1.0.0 - Initial Release</ReleaseNotes>
+  <Dependency>
+    <STV>SageTV7</STV>
+    <MinVersion>7.0</MinVersion>
+ </Dependency><Package>
+    <PackageType>STVI</PackageType>
+   <Location>http://dl.dropbox.com/u/8593871/Fuzzy_ShowSubmenu.zip</Location>
+    <MD5>3F7BB14F8337469CB46FFDE124F27DCD</MD5>
+  </Package>
+  <STVImport>Fuzzy_ShowSubmenu.stvi</STVImport>
+</SageTVPlugin>

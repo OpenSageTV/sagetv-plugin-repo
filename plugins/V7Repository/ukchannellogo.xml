@@ -1,0 +1,21 @@
+<SageTVPlugin>
+  <Name>UK Channel Logo Pack</Name>
+  <Identifier>ukchannellogo</Identifier>
+  <Description>A collection of channel logos for the UK. Please visit the thread below to ask for updates.</Description>
+  <Author>James Read</Author>
+  <CreationDate>2010-05-25</CreationDate>
+  <ModificationDate>2010.05.26</ModificationDate>
+  <ReleaseNotes>****Added forum thread details and Screenshots****</ReleaseNotes>
+  <Screenshot>http://dl.dropbox.com/u/7422411/BBC%20ONE.png</Screenshot>
+  <Screenshot>http://dl.dropbox.com/u/7422411/BBC%20Radio%201.png</Screenshot>
+  <Webpage>http://forums.sagetv.com/forums/showthread.php?p=426967#post426967</Webpage>
+  <Webpage>http://forum.team-mediaportal.com/skins-50/tv-radio-website-weather-automation-logos-mainly-uk-26137/</Webpage>
+  <Version>0.0.2</Version>
+  <Desktop>false</Desktop>
+  <PluginType>Images</PluginType>
+  <Package>
+    <PackageType>ChannelLogo</PackageType>
+   <Location>http://dl.dropbox.com/u/7422411/logo.zip</Location>
+    <MD5>31073580214b5391f5295c28bad4d30e</MD5>
+  </Package>
+</SageTVPlugin>

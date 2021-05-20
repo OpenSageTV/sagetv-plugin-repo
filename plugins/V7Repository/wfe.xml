@@ -1,0 +1,82 @@
+<SageTVPlugin>
+<Name>Web Feed Encoder (WFE)</Name>
+<Identifier>wfe</Identifier>
+<Description>
+<![CDATA[The webfeedencoder is a means to get web based streaming TV and radio and device output available in SageTV and its extenders as if they were regular channels.
+
+As far as SageTV is concerned the webfeedencoder behaves like another TV tuner.
+
+The excellent VLC media player software is used to tune to the internet TV or radio station, add video to the radio, and dump to an MPEG2 file for SageTV.
+
+The means of tuning and detuning is completely configurable so any source of video or audio could be fed to SageTV via the webfeedencoder.
+
+The webfeedencoder also includes an EPG grabber to harvest schedules from the web pages and other sources and update SageTVs program guide without need for an XMLTV importer.
+
+Feeds can also be added to online services menu in SageTV.
+
+A configuration tool is provided which allows you to:
+
+    * Find and configure new channels and online services.
+    * Test the channels and EPG harvest.
+    * Perform ad-hoc EPG updates.
+    * Manage your SageTV channel lineup and online services.
+
+NOTE: You must install VLC seperately in order for the plugin to work. Version 1.0.5 is recommended.]]>
+</Description>
+<Author>michaeldjcox</Author>
+<CreationDate>2010.07.12</CreationDate>
+<ModificationDate>2010.12.10</ModificationDate>
+<Version beta="false">0.9.7.400</Version>
+<Desktop>false</Desktop>
+<ServerOnly>true</ServerOnly>
+<ResourcePath>webfeedencoder</ResourcePath>
+<Webpage title="WebFeedEncoder"><![CDATA[http://forums.sagetv.com/forums/downloads.php?do=file&id=339]]></Webpage>
+<Screenshot title="Lineup management">http://www.keepandshare.com/userpics/m/i/c/h/aeldjcox/2010-01/sm/wfe_lineup-10497209.jpg?ts=1263992914</Screenshot>
+<Screenshot title="Online service management">http://www.keepandshare.com/userpics/m/i/c/h/aeldjcox/2010-01/sm/wfe_onlineservices-61351583.jpg?ts=1263992916</Screenshot>
+<Screenshot title="Channel management">http://www.keepandshare.com/userpics/m/i/c/h/aeldjcox/2010-01/sm/wfe_channels-57337152.jpg?ts=1263992907</Screenshot>
+<Screenshot title="Adding a channel">http://www.keepandshare.com/userpics/m/i/c/h/aeldjcox/2010-01/sm/wfe_channeldialog-28242200.jpg?ts=1263992906</Screenshot>
+<Screenshot title="Find podcast to add">http://www.keepandshare.com/userpics/m/i/c/h/aeldjcox/2010-01/sm/wfe_findpodcast-43154103.jpg?ts=1263992911</Screenshot>
+<Screenshot title="Find radio channels to add">http://www.keepandshare.com/userpics/m/i/c/h/aeldjcox/2010-01/sm/wfe_findradio-8568694.jpg?ts=1263992911</Screenshot>
+<Screenshot title="Find TV channels to add">http://www.keepandshare.com/userpics/m/i/c/h/aeldjcox/2010-01/sm/wfe_findtv-98592665.jpg?ts=1263992911</Screenshot>
+<Screenshot title="Now Playing Harvest">http://www.keepandshare.com/userpics/m/i/c/h/aeldjcox/2010-01/sm/wfe_epgharvest-26272405.jpg?ts=1263992902</Screenshot>
+<Screenshot title="Now Playing Harvest">http://www.keepandshare.com/userpics/m/i/c/h/aeldjcox/2010-01/sm/wfe_nowplayingharvest-68893067.jpg?ts=1263992904</Screenshot>
+<Screenshot title="Testing a channel">http://www.keepandshare.com/userpics/m/i/c/h/aeldjcox/2010-01/sm/wfe_channeltest-10942287.jpg?ts=1263992910</Screenshot>
+<Screenshot title="Testing an EPG grab">http://www.keepandshare.com/userpics/m/i/c/h/aeldjcox/2010-01/sm/wfe_grabbertest-30420520.jpg?ts=1263992912</Screenshot>
+<Screenshot title="Testing a now playing harvest">http://www.keepandshare.com/userpics/m/i/c/h/aeldjcox/2010-01/sm/wfe_nowplayingtest-8953325.jpg?ts=1263992915</Screenshot>
+<DemoVideo title="Web Feed Encoder">http://www.youtube.com/watch?v=SX3vvly-OL8</DemoVideo>
+<PluginType>Standard</PluginType>
+<Package>
+<PackageType>System</PackageType>
+<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/webfeedencoder4V7_v0_9_7.zip</Location>
+<MD5>E48149642BEFAD4EA62484FE2B443FA3</MD5>
+<Overwrite>true</Overwrite> <!-- Defaults to true -->
+</Package>
+<ImplementationClass>uk.co.mdjcox.encoderplugin.EncoderPlugin</ImplementationClass>
+<ReleaseNotes>
+<![CDATA[
+0.9.7.400
+
+* Created a web server within the webfeedencoder process providing a home page.
+* Allow config tool to be launched from the home page accessed from any networked PC via java web start.
+* Allow user guide to be accessed from the home page.
+* The configtool now additionally allows video playback during channel testing in remote mode by opening a URL on the server box rather than trying to open a local file.
+* New channel type: Podcast (Local) This allows creation of a locally served podcast of a web based file. In short a means to get more web content available in online services.
+* SageTV V7 support.
+* Allow installation and update via the SageTV V7 plugin manager.
+* Added a build number to the version number scheme to facilitate more frequent updates.
+* Support for multiple tuners so to allow simultaneous recording of several channels.
+* New configtool file menu option to add one of the delivered sample channels to the channel list.
+* Make sure we remove any additional encoder props added by SageTV on uninstall.
+* On disable tidy away any partially built network encoder entries
+* Add addSeriesInfoPublic method to the EPG plugin.
+* Improve code for finding free encoder numbers on install.
+* Make lineup send more resilient to internet connection issues.
+* Fix slowness in stopping plugin when SageTV service is stopped.
+* Many fixes to allow webfeedencoder operation in linux.
+* Fix stop encoder button which is occasionally enabled when it should not be.
+* Send logs to developer menu item added to help menu of the config tool.
+* Remove BBC Backstage EPG grabber which the BBC no longer supports.
+* Update the BBC sample channels so that the EPG comes from radiotime.
+]]>
+</ReleaseNotes>
+</SageTVPlugin>

@@ -1,0 +1,18 @@
+<SageTVPlugin>
+       <Name>libgrowl</Name>
+       <Identifier>libgrowl</Identifier>
+       <Description>Java implementation of GNTP - dependency only</Description>
+       <Author>Slugger</Author>
+       <CreationDate>2010.05.30</CreationDate>
+       <ModificationDate>2010.05.30</ModificationDate>
+       <Version>0.1.1.1</Version>
+       <ResourcePath>plugins/libgrowl</ResourcePath>
+       <Webpage>http://libgrowl.sf.net</Webpage>
+       <PluginType>Library</PluginType>
+       <Package>
+               <PackageType>JAR</PackageType>
+               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/libgrowl-0.1.1.1.zip</Location>
+               <MD5>F5CBC44182BDB6EA7E8C05FFED96D817</MD5>
+               <Overwrite>true</Overwrite>
+       </Package>
+</SageTVPlugin>

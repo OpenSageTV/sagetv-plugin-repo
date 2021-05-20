@@ -1,0 +1,45 @@
+<SageTVPlugin>
+  <Name>Trakt TV</Name>
+  <Identifier>trakt-stvi</Identifier>
+  <Description>TraktTV support for SageTV.</Description>
+  <Author>tmiranda</Author>
+  <CreationDate>2018.12.09</CreationDate>
+  <ModificationDate>2019.04.09</ModificationDate>
+  <Version beta="true">0.17</Version>
+  <Desktop>false</Desktop>
+
+  <Dependency>
+    <Plugin>trakt</Plugin>
+	<MinVersion>0.17</MinVersion>
+  </Dependency>
+
+  <PluginType>STVI</PluginType>
+
+  <Package>
+    <PackageType>STVI</PackageType>
+    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/trakt/trakt-STVi-0.17.zip</Location>
+    <MD5>BDF1205550149186E651447CE5DC4D2C</MD5>
+  </Package>
+
+  <STVImport>trakt.stvi</STVImport>
+
+  <ReleaseNotes>Version 0.17:
+- See the changelog from the v0.17 General plugin.
+
+Version 0.16:
+- The UI now displays if a show has been synced with Trakt.
+- The user can now use the UI to specify shows that will be excluded from tracking and scrobbling.
+- Added ability to sync from Trakt to Sage on demand.
+- Reduced the number of System Messages that are created.
+- When scrobbling starts the trakt_id is saved in the metadata for future use. This improves performance.
+- If a shows fails to start scrobbling, do not try to stop scrobbling.
+- Added specific error checks for Trakt being unavailable as this is all too common.  Future versions will include better recovery from this.
+- Cleaned up destroy() to make sure resources are freed if the user disables the plugin.
+- Fixed a bug that would cause the config menu to hang if the user access code expires and automatic reauthentication fails.
+- Fixed a bug that would cause GetHistory to not properly calculate the start and end times if a range was given.
+- Fixed a bug that would cause GetHistory to fail if another episode of a show that was watched on Trakt was in the Sage database.
+
+Version 0.12:
+  - Initial STVi release.</ReleaseNotes>
+
+</SageTVPlugin>

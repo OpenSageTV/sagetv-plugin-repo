@@ -1,0 +1,16 @@
+<SageTVPlugin>
+  <Name>RSS Utilities Library</Name>
+  <Identifier>rssutils</Identifier>
+  <Description>SageTV Dependency JAR Plugin for Stock Quotes.  Used for parsing rss news feeds.  The library came from Sun.</Description>
+  <Author>jvl711</Author>
+  <CreationDate>2010.05.27</CreationDate>
+  <ModificationDate>2010.05.27</ModificationDate>
+  <Version>1.1.0</Version>
+  <Desktop>false</Desktop>
+  <PluginType>Library</PluginType>
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/imovies/rssutils_1.1.0.zip</Location>
+    <MD5>13B5DE88AFD6231CD6A756F8D7BA0763</MD5>
+  </Package>
+</SageTVPlugin>

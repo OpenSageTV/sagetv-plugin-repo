@@ -1,0 +1,151 @@
+<SageTVPlugin>
+
+
+
+  <Name>Thumbnail Navigator</Name>
+
+
+
+  <Identifier>thumbnav</Identifier>
+
+
+
+  <Description>Adds a row or thumbnails to the OSD that can be used to jump withing a recording. Press the Up key while a video is playing to activate.</Description>
+
+
+
+  <Author>tmiranda</Author>
+
+
+
+  <CreationDate>2012.10.28</CreationDate>
+
+  <ModificationDate>2015.11.28</ModificationDate>
+
+
+
+  <Version beta="true">0.07</Version>
+
+
+
+  <Desktop>false</Desktop>
+
+
+
+  <Dependency>
+
+    <STV>SageTV7</STV>
+
+      <MinVersion>7.1</MinVersion>
+
+  </Dependency>
+
+
+
+  <PluginType>STVI</PluginType>
+
+
+
+  <Package>
+
+    <PackageType>STVI</PackageType>
+
+    <Location>http://github.com/tmiranda1962/Thumbnail-Navigator/releases/download/0.07/ThumbNav-v0.06.zip</Location>
+
+    <MD5>64112C11D7D56CBFC9F73670F6FABBBA</MD5>
+
+  </Package>
+
+
+
+  <STVImport>ThumbNav.stvi</STVImport>
+
+
+
+  <ReleaseNotes>Known Issues:
+
+- May not work for Live TV. (Needs more testing.)
+
+- Will not work for DVD or BluRay.
+
+
+
+Version 0.07:
+
+- Moved from Google Code to GitHub. No change in functionality.
+
+
+
+Version 0.06:
+
+- If the thumbnails are displayed do not automatically remove the OSD when a timeout occurs.
+
+- Thumbnail focus stays fixed in the middle.
+
+
+
+Version 0.05:
+
+- Added Options link in the OSD options menu.
+
+- Pressing Options while the thumbnails are displayed will bring up the Thumbnail Navigator options menu.
+
+- Added option to not show blank thumbs in missing segments.
+
+- Added option to pause/unpause when Up and Down are pressed.
+
+- Added option to turn debug logging on and off.
+
+- Added option to display thumbnails at commercial breaks.
+
+- Begin work on Live TV support.
+
+
+
+Version 0.04:
+
+- Added support for multi-segment files.
+
+- Added user interface.
+
+
+
+Version 0.03:
+
+- Fixed a bug in the .xml manifest.
+
+- When Up is pressed the default thumbnail will be the one closest to your actual viewing position in the video. (If it's generated.)
+
+- Pressing Play on a thumb will start playing from that point, even if paused.
+
+- Added support for Skip BK, Skip FW, Skip BK 2 and Skip FW 2. The amount each press skips will is configurable.
+
+- Pressing Up while a video is playing brings up the OSD and the thumbnail panel.
+
+- If the thumbnails are displayed and you have navigated forward or backwards in the list, pressing Up again will bring you back to the current position.
+
+- Initial LiveTV support.  Is not fully completed.
+
+- Added support for recordings in progress.
+
+- The thumbnails are generated sequentially from beginning to end so there is a chance that when the thumbnail panel is displayed all of the thumbnails will not yet be generated. If this happens an asterisk appears on the last thumbnail. The list is dynamically updated so once the thumbnails become available you can scroll to them. (i.e. No need to close and reopen the thumb panel to load newly generated thumbnails.)
+
+- Fixed bug caused by watching shows with special characters in the name.
+
+
+
+Version 0.02:
+
+- Unreleased.
+
+
+
+Version 0.01:
+
+- Initial alpha release.
+
+
+
+</ReleaseNotes>
+
+</SageTVPlugin>

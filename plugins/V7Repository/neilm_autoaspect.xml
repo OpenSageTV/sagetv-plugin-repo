@@ -1,0 +1,26 @@
+<SageTVPlugin>
+		<Name>Auto Aspect Ratio</Name>
+		<Identifier>neilm_autoaspect</Identifier>
+		<Description>Allows automatic switching of the playback Aspect Ratio, based on Airing title, airing channel, recording device, or any combination of these parameters. This is a direct repository import of the original plugin by neilm.</Description>
+		<Author>Neilm,cybrmage</Author>
+		<CreationDate>2006.04.14</CreationDate>
+		<ModificationDate>2010.06.12</ModificationDate>
+		<Version>1.3</Version>
+		<Desktop>false</Desktop>
+		<Dependency>
+			<STV>SageTV7</STV>
+			<MinVersion>7.0</MinVersion>
+		</Dependency>
+		<Dependency>
+			<STV>sageutls</STV>
+			<MinVersion>1.4.1</MinVersion>
+		</Dependency>
+		<PluginType>STVI</PluginType>
+		<Package>
+			<PackageType>System</PackageType>
+			<Location><![CDATA[ http://sageplugins.sourceforge.net/nielm_modules/autoaspect/autoaspect_1_3.zip ]]></Location>
+			<MD5>629630915755a89bdec31657d4c43b09</MD5>
+			<Overwrite>false</Overwrite>
+		</Package>
+		<STVImport>..\\SageTV3\\autoaspect_import.stvi</STVImport>
+	</SageTVPlugin>

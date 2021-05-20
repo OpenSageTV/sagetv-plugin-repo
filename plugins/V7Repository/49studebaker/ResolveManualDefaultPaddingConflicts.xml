@@ -1,0 +1,57 @@
+<SageTVPlugin>
+
+  <Name>Remove Padding on Back to Back Manual Recordings Conflicts</Name>
+
+  <Identifier>ResolveManualDefaultPaddingConflicts</Identifier>
+
+  <Description>If the "Unofficial Secret Extra's" are turned on and default padding for manual recordings is used, this plugin automatically resolves back to back manual recording conflicts that occur on the same or different channels.</Description>
+
+  <Author>49studebaker</Author>
+
+  <CreationDate>2010.08.25</CreationDate>
+
+  <Version>1.1.1</Version>
+
+
+
+<Dependency>
+
+  <STV>SageTV7</STV>
+
+  <MinVersion>7.0</MinVersion>
+
+</Dependency>
+
+
+
+<PluginType>STVI</PluginType>
+
+<STVImport>ResolveManualDefaultPaddingConflicts.stvi</STVImport>
+
+
+
+<Package>
+
+  <PackageType>STVI</PackageType>
+
+  <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/ResolveManualDefaultPaddingConflicts.zip</Location>
+
+  <MD5>55736A68297F0A57EA4B8D0CC4EE07A0</MD5>
+
+</Package>
+
+
+
+<ReleaseNotes>
+
+*Version 1.1.1 - Added Beta option for resolving manual recording conflicts that occur on different channels. Main Menu...Setup...Detailed Setup...Customize..."Resolve Manual Recording Conflicts on All Channels **Beta**".
+
+*Version 1.0.0 - Initial release.
+
+</ReleaseNotes>
+
+
+
+
+<ModificationDate>2015-5-24</ModificationDate>
+</SageTVPlugin>

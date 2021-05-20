@@ -1,0 +1,18 @@
+<SageTVPlugin>
+  <Name>nielm_getrssnews</Name>
+  <Identifier>nielm_getrssnews</Identifier>
+  <Description>SageTV Dependency JAR Plugin for nielm_getrssnews.jar - no need to download directly</Description>
+  <Author>nielm</Author>
+  <CreationDate>2010-04-08</CreationDate>
+  <ModificationDate>2010.04.27</ModificationDate>
+  <Version>1.0</Version>
+  <Desktop>false</Desktop>
+
+  <PluginType>Library</PluginType>
+
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/nielm_getrssnews.jar.zip</Location>
+    <MD5>E56488E2A78EAEA064063213FA15F0F4</MD5>
+  </Package>
+</SageTVPlugin>

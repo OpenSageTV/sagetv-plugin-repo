@@ -1,0 +1,49 @@
+<SageTVPlugin>
+
+ <Name>Caption and Subtitle Mods</Name>
+
+ <Identifier>Caption_Subtitle_Mods</Identifier>
+
+ <Description>Toggle Captions/Subtitles on Mute. Toggle Captions/Subtitles via button/key defined as Custom 3. Set default state of captions/subtitles and preferred of the two to display</Description>
+
+ <Author>JREkiwi</Author>
+
+ <CreationDate>2007.02.24</CreationDate>
+
+ <ModificationDate>2011.05.31</ModificationDate>
+
+ <Version>1.0.0</Version>
+
+ <Desktop>false</Desktop>
+
+  <Webpage>http://forums.sagetv.com/forums/showthread.php?t=55840</Webpage>
+
+ <Dependency>
+
+<STV>SageTV7</STV>
+
+<MinVersion>7.0</MinVersion>
+
+</Dependency>
+
+<PluginType>STVI</PluginType>
+
+ <Package>
+
+   <PackageType>STVI</PackageType>
+
+   <Location>https://github.com/JREkiwi/Caption_Subtitle_Mods/releases/download/1.0.0/Caption_Subtitle_Mods_1.0.0.zip</Location>
+
+   <MD5>030A6B8BCE6E7E06C6A4EF500BA20977</MD5>
+
+ </Package>
+
+<STVImport>Caption_Subtitle_Mods.stvi</STVImport>
+
+<ReleaseNotes>1.0.0
+
+Port of functions not in the Default STV from Caption Playback import
+
+</ReleaseNotes>
+
+</SageTVPlugin>

@@ -1,0 +1,63 @@
+<SageTVPlugin>
+
+  <Name>Season Premiere Borders for Guide</Name>
+
+  <Identifier>SeasonPremiereBorders</Identifier>
+
+  <Description>Adds a red border to all shows in Guide that are considered Season Premieres and adds a yellow border to all shows in Guide that are
+
+
+
+considered Series Premieres.
+
+  </Description>
+
+  <Author>jorton</Author>
+
+  <CreationDate>2011.09.12</CreationDate>
+
+  <ModificationDate>2011.09.13</ModificationDate>
+
+  <Version beta="true">1.1</Version>
+
+
+
+  <Dependency>
+
+    <STV>SageTV7</STV>
+
+      <MinVersion>7.1.9.0</MinVersion>
+
+  </Dependency>
+
+  <PluginType>STVI</PluginType>
+
+  <Package>
+
+    <PackageType>STVI</PackageType>
+
+    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/jorton/SeasonPremieres_V1.1.zip</Location>
+
+    <MD5>dd1b2c6d1c4acf38b6c40e76d0ef2d13</MD5>
+
+  </Package>
+
+
+
+  <Screenshot>http://dl.dropbox.com/u/8067076/StandardSeasonPremieres.jpg</Screenshot>
+
+
+
+  <STVImport>SeasonPremieres_V1.1.stvi</STVImport>
+
+  <ReleaseNotes>Version 1.1 - Fixed Series Premieres not showing and made yellow vs red for season premieres. Version 1.0 - Adds red border to all
+
+
+
+shows in Guide that are Season Premieres.  Works with Default STV and Diamond UI Mod 3.3.
+
+
+
+  </ReleaseNotes>
+
+</SageTVPlugin>

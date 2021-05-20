@@ -1,0 +1,19 @@
+<SageTVPlugin>
+  <Name>jpathwatch</Name>
+  <Identifier>jpathwatch</Identifier>
+  <Description>SageTV Dependency JAR Plugin - no need to download directly</Description>
+  <Author>Slugger</Author>
+  <CreationDate>2010.11.03</CreationDate>
+  <ModificationDate>2010.11.03</ModificationDate>
+  <Version>0.93.1</Version>
+  <Dependency>
+     <JVM />
+     <MinVersion>1.5.0</MinVersion>
+  </Dependency>
+  <PluginType>Library</PluginType>
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/jpathwatch-0.93.1.zip</Location>
+    <MD5>D18356A8658D6DD0B31CC48E2CE7FC5A</MD5>
+  </Package>
+</SageTVPlugin>

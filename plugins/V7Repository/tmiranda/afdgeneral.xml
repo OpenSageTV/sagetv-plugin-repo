@@ -1,0 +1,77 @@
+<SageTVPlugin>
+
+  <Name>Anti-Favorites for Dummies Support</Name>
+
+  <Identifier>afdgeneral</Identifier>
+
+  <Author>tmiranda</Author>
+
+  <CreationDate>2012.11.25</CreationDate>
+
+  <ModificationDate>2015.11.29</ModificationDate>
+
+  <Version beta="false">0.03</Version>
+
+  <Desktop>false</Desktop>
+
+
+
+  <Description>This is a support plugin for the Anti-Favorites for Dummies STV Mod.</Description>
+
+
+
+  <Dependency>
+
+    <STV>SageTV7</STV>
+
+    <MinVersion>7.0</MinVersion>
+
+  </Dependency>
+
+
+
+  <Dependency>
+
+    <Plugin>sagex-api</Plugin>
+
+    <MinVersion>7.1.9.12</MinVersion>
+
+  </Dependency>
+
+
+
+  <PluginType>Standard</PluginType>
+
+
+
+  <ImplementationClass>tmiranda.afd.Plugin</ImplementationClass>
+
+
+
+  <Package>
+
+    <PackageType>JAR</PackageType>
+
+    <Location>http://github.com/tmiranda1962/Anti-Favorites/releases/download/v0.03/AntiFavorites-0.02.zip</Location>
+
+    <MD5>9D0E09293A600FA8766168183532DD55</MD5>
+
+  </Package>
+
+
+
+  <ReleaseNotes>Version 0.03:
+
+- Moved hosting from Google Code to GitHub. No change in functionality.
+
+Version 0.02:
+
+- Add ability to not mark future airings as Don't Like.
+
+Version 0.01:
+
+- First alpha.</ReleaseNotes>
+
+
+
+</SageTVPlugin>

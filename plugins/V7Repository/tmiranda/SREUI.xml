@@ -1,0 +1,79 @@
+<SageTVPlugin>
+
+  <Name>Sage Recording Extender UI</Name>
+
+  <Identifier>SREUI</Identifier>
+
+  <Description>View, Add and Change SRE Monitoring Status from the Sage user interface. After selecting an item to be recorded, "SRE Options", will appear in the recording options menu.  From there you can change the monitoring status or add override information.</Description>
+
+
+
+  <Author>tmiranda</Author>
+
+  <CreationDate>2010.09.09</CreationDate>
+
+  <ModificationDate>2016.01.18</ModificationDate>
+
+  <Version beta="false">4.00.2016011801</Version>
+
+  <Desktop>false</Desktop>
+
+
+
+  <Dependency>
+
+    <STV>SageTV7</STV>
+
+    <MinVersion>7.0</MinVersion>
+
+  </Dependency>
+
+
+
+  <Dependency>
+
+    <Plugin>sre</Plugin>
+
+    <MinVersion>4.0.0.1706</MinVersion>
+
+  </Dependency>
+
+
+
+  <PluginType>STVI</PluginType>
+
+
+
+  <Package>
+
+    <PackageType>STVI</PackageType>
+
+    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/SRE/SREv4-4.00.zip</Location>
+
+    <MD5>AD91C209312F10D9694458E82C3E806D</MD5>
+
+  </Package>
+
+
+
+  <STVImport>SREv4.stvi</STVImport>
+
+
+
+  <ReleaseNotes>Version 4.00:
+
+- Updated to use v4 sre-common.
+
+- Added ability to suppress OSD timeline for recordings that were monitored.
+
+- Changed version to 4.00 for consistency with Slugger's numbering convention.
+
+
+
+Version 1.02 - Changed min version of sre-common to 3.0.0.1361.
+
+Version 1.01 - Fixed error that caused keystrokes in the recording detail screen to be dropped.
+
+Version 1.00 - First release. Many thanks to Slugger for his support.</ReleaseNotes>
+
+</SageTVPlugin>

@@ -1,0 +1,17 @@
+<SageTVPlugin>
+		<Name>R5000 Tuning Mod</Name>
+		<Identifier>R5000 Tuning Mod</Identifier>
+		<Description>Replaces "No Signal" text with "Tuning in, please stand by..." for R5000 users.</Description>
+		<Author>mkanet</Author>
+		<CreationDate>2011.01.16</CreationDate>
+		<ModificationDate>2011.01.16</ModificationDate>
+		<Version>1.0</Version>
+		<PluginType>STVI</PluginType>
+		<Package>
+			<PackageType>STVI</PackageType>
+			<Location>http://mka.net/R5000_tuning.zip</Location>
+			<MD5>D82E0271E2CAF9072FD2A9B2B84618EF</MD5>
+		</Package>
+		<STVImport>R5000_tuning.stvi</STVImport>
+		<ReleaseNotes>v1.0 initial release</ReleaseNotes>
+</SageTVPlugin>

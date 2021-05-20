@@ -1,0 +1,55 @@
+<SageTVPlugin>
+    <Name>DVB-S Importer</Name>
+    <Identifier>dvbsimporter</Identifier>
+    <Version>1.1.8</Version>
+    <Description>This plugin is able to automatically import/keep up-to-date the .FRQ file for all your native DVB-S tuners.</Description>
+    <Author>routerunner</Author>
+    <PluginType>Standard</PluginType>
+    <CreationDate>2012-11-23</CreationDate>
+    <ModificationDate>2019-08-24</ModificationDate>
+    <ReleaseNotes>
+1.0.0 - First Public Release.
+1.0.1 - Fixed bug on adding channels. Added registry fix for Hauppauge WinTV NOVA-HD-S2 tuner (Windows only).
+1.0.2 - Support whole KingOfSat satellite directory. Don't need to restart SageTV server.
+1.0.3 - Fixed Atlantic birds issues. Support LyngSat satellite directory.
+1.0.4 - Add support for unconventional LNB/FRQ file name combo.
+1.0.5 - Fixed empty FRQ file exception.
+1.0.6 - Add configurable support to feed and radio channels.
+1.0.7 - Fixed clearing FRQ files in case of incomplete data source.
+1.0.8 - Print error messages in system log.
+1.0.9 - Add new satellite position.
+1.1.0 - Fixed wrong DVB-S2 modulation bits.
+1.1.1 - Add support to remove/keep deleted channels. Removed 'pilot:0' from FRQ files to get the right value from TS.
+1.1.2 - Avoid misleading system error message when 'Discard Deleted' option set to FALSE.
+1.1.3 - Fixed crash when parsing not well formed frequency tables.
+1.1.4 - Fixed broken system messages.
+1.1.5 - Supports HTTPS updated satellite data source web sites.
+1.1.6 - Added unlimited body size support. Better looking FRQ file content.
+1.1.7 - Fixed always new added lineup system messages. Even better looking FRQ file content.
+1.1.8 - Fixed issue with UPDATE NOW! button in configuration settings.
+    </ReleaseNotes>
+    <Desktop>false</Desktop>
+    <ImplementationClass>DVBSImporter</ImplementationClass>
+    <Package>
+        <PackageType>JAR</PackageType>
+        <Location>ftp://stv:stv@www.rossisoft.co.uk/plugins/dvbsimporter/dvbsimporter_1_1_8.zip</Location>
+        <MD5>2df3da095128438ce8e311ff27c288d9</MD5>
+        <Overwrite>true</Overwrite>
+    </Package>
+    <Dependency>
+        <JVM />
+        <MinVersion>1.7</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Core />
+        <MinVersion>7.1</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>jsoup</Plugin>
+        <MinVersion>1.11.3</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>sagex-api</Plugin>
+        <MinVersion>7.1.9.3</MinVersion>
+    </Dependency>
+</SageTVPlugin>

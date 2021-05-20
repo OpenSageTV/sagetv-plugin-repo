@@ -1,0 +1,55 @@
+<SageTVPlugin>
+
+  <Name>Live Airings Green, Non-Live Airings Red</Name>
+
+  <Identifier>LiveGreenNonLiveRed</Identifier>
+
+  <Description>This plugin makes the EPG live airings text color green and the EPG non-live airings text color red.</Description>
+
+  <Author>49studebaker</Author>
+
+  <CreationDate>2015.05.25</CreationDate>
+
+  <Version>1.0.0</Version>
+
+
+
+<Dependency>
+
+  <STV>SageTV7</STV>
+
+  <MinVersion>7.0</MinVersion>
+
+</Dependency>
+
+
+
+<PluginType>STVI</PluginType>
+
+<STVImport>LiveGreenNonLiveRed.stvi</STVImport>
+
+
+
+<Package>
+
+  <PackageType>STVI</PackageType>
+
+  <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/LiveGreenNonLiveRed.zip</Location>
+
+  <MD5>F8003E331057158E7C0D009357D8AD1D</MD5>
+
+</Package>
+
+
+
+<ReleaseNotes>
+
+Version 1.0 - Initial release.
+
+</ReleaseNotes>
+
+
+
+
+<ModificationDate>2015-5-26</ModificationDate>
+</SageTVPlugin>

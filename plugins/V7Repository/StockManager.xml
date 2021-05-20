@@ -1,0 +1,38 @@
+<SageTVPlugin>
+  <Name>Stock Manager</Name>
+  <Identifier>StockManager</Identifier>
+  <Description>
+	This is a port from the JVL Stock Manager which was a plugin for SageMC.
+	It adds a new menu item under online called Stocks.  Stock Quotes are from yahoo finance.
+  </Description>
+  <Author>jvl711</Author>
+  <CreationDate>2010.05.28</CreationDate>
+  <ModificationDate>2010.06.1</ModificationDate>
+  <Version>2.1.1</Version>
+  <Desktop>false</Desktop>
+ <Dependency>
+    <STV>SageTV7</STV>
+    <MinVersion>7.0</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Plugin>stockquote</Plugin>
+    <MinVersion>1.0.0</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Plugin>rssutils</Plugin>
+    <MinVersion>1.1.0</MinVersion>
+  </Dependency>
+<PluginType>STVI</PluginType>
+ <Package>
+   <PackageType>STVI</PackageType>
+   <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/imovies/StockManager_2.1.1.zip</Location>
+   <MD5>AE6EBFB473AA9A77DD1006E0C45E1AA4</MD5>
+ </Package>
+<STVImport>StockManager.stvi</STVImport>
+<ReleaseNotes>
+2.1.0 - Inital release for SageTV7
+2.1.1 - Increased the number of decimal places from 2 to 4
+</ReleaseNotes>
+<Screenshot><![CDATA[http://forums.sagetv.com/forums/attachment.php?attachmentid=10360&d=1275059176]]></Screenshot>
+<Screenshot><![CDATA[http://forums.sagetv.com/forums/attachment.php?attachmentid=10361&d=1275059183]]></Screenshot>
+</SageTVPlugin>

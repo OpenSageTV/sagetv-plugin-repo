@@ -1,0 +1,27 @@
+<SageTVPlugin>
+  <Name>razr API</Name>
+  <Identifier>razr-api</Identifier>
+  <Description>razr API.  Dependency jar for my plugins</Description>
+  <Author>razrsharpe</Author>
+  <CreationDate>2010.05.21</CreationDate>
+  <ModificationDate>2010.11.13</ModificationDate>
+  <Version beta="true">0.1.2</Version>
+  <Desktop>false</Desktop>
+  <Dependency>
+    <Plugin>sagex-api</Plugin>
+    <MinVersion>7.0.9.0</MinVersion>
+  </Dependency>
+  <PluginType>Library</PluginType>
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetve/razr-api_v0.1.2.zip</Location>
+    <MD5>2e2ec5db44d95b691ef8b9b7602cc19e</MD5>
+  </Package>
+  <ReleaseNotes>0.1.2
+  -fix resolution parsing and sorting algorithm to accept non integer (ie float/double) frame per second (FPS) values in the resolution description.
+  -fix resolution parsing and sorting algorithm to accept and sort properly prepended text in the resolution description.
+
+  0.1.1
+  -Initial Release
+  </ReleaseNotes>
+</SageTVPlugin>

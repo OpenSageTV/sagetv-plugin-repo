@@ -1,0 +1,30 @@
+<SageTVPlugin>
+  <Name>MediaShrink</Name>
+  <Identifier>MediaShrink</Identifier>
+  <Description><![CDATA[An external utility for compressing Videos and DVD's using Handbrake.  NOTE: Requires external setup using Sage Job Queue (SJQ) to function, see MediaShrink thread in SageTV customization forums for configuration details.]]></Description>
+  <Author>evilpenguin</Author>
+  <CreationDate>2010.07.22</CreationDate>
+  <ModificationDate>2010.07.22</ModificationDate>
+  <Version>3.0.4</Version>
+  <Desktop>false</Desktop>
+  <OS>Windows</OS>
+  <PluginType>Library</PluginType>
+
+  <ReleaseNotes>
+     * v3.0.4
+     * Fixed support for DVD's with DTS audio
+     * Fixed support for VideoRedo v4
+     * Fixed issue where mkvmerge would fail trying to attach empty files
+     * Fixed issue where DVD's were named improperly when complete
+     * Fixed issue where when using batch file SJQ would always report the job as failing
+     * Fixed issue where MediaShrink wouldn't be able to detect if Handbrake or Videoredo crashed or failed
+     * Added /handbrakeFullCommand for specifying a full custom command line
+     * Added support for handbrake profiles.  For example /handbrakeProfile "Universal" /container mp4
+   </ReleaseNotes>
+
+  <Package>
+    <PackageType>System</PackageType>
+    <Location><![CDATA[http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/upnp2podcast/MediaShrink_v3.0.4.zip]]></Location>
+    <MD5>21a7a7179fe243993f049599b3e236bc</MD5>
+  </Package>
+</SageTVPlugin>

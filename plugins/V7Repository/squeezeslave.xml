@@ -1,0 +1,105 @@
+<SageTVPlugin>
+
+    <Name>Squeezeslave</Name>
+
+    <Identifier>squeezeslave</Identifier>
+
+    <Version>2.1.2</Version>
+
+    <Description>Allows to add Squeezeslave functionality to a SageTV extender (MediaMVP/HDx00). When enabled the extender can switch to a fully fledged headless Squeezebox player.</Description>
+
+    <Author>routerunner</Author>
+
+    <PluginType>Standard</PluginType>
+
+    <CreationDate>2012-01-16</CreationDate>
+
+    <ModificationDate>2012-09-07</ModificationDate>
+
+    <ReleaseNotes>
+
+1.0.0 - First Public Release. Supported extenders: HD200, HD300
+
+1.0.1 - Added support for LinuxOS and MacOS.
+
+    Linux: Add "/opt/sagetv/server/plugins/squeezeslaveplayer *(ro,sync,no_subtree_check)" in "/etc/exports" and restart the NFS server.
+
+    MacOS: Add "/SageTV-install-dir/plugins/squeezeslaveplayer -ro -mapall=nobody" in "/etc/exports" and restart the NFS server.
+
+1.0.2 - Fix bug introduced in previous release (LinuxOS and MacOS only).
+
+2.0.0 - Mutual exclusion mechanism (see thread for details). Added MediaMVP. Separate audio volume. Removed digital noise.
+
+2.0.1 - Fixed bug when setting a manual Squeeze Server IP address. Added option to disable the usage of internal FTP server in case you have your own already running.
+
+2.0.2 - Add option to change the internal FTP server default communication port. Improved mutual exclusion mechanism. Improved wireless connectivity.
+
+2.0.3 - Add support to systems with multiple NIC on different networks.
+
+2.0.4 - Fix issue on multiple NIC support on LinuxOS.
+
+2.1.0 - Add support to HD100 extender.
+
+2.1.1 - Add support for the remote control "Home" button. Add support to unlimited trial mode.
+
+2.1.2 - Add Wake-On-Line support to all extenders.
+
+    </ReleaseNotes>
+
+    <Desktop>false</Desktop>
+
+    <ImplementationClass>Squeezeslave</ImplementationClass>
+
+    <Package>
+
+        <PackageType>JAR</PackageType>
+
+        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/squeezeslave_2_1_2.zip</Location>
+
+        <MD5>8B564FEA16CCCE9CB52D310D8C873FAB</MD5>
+
+        <Overwrite>true</Overwrite>
+
+    </Package>
+
+    <Dependency>
+
+        <JVM />
+
+        <MinVersion>1.5</MinVersion>
+
+    </Dependency>
+
+    <Dependency>
+
+        <Core />
+
+        <MinVersion>7.1</MinVersion>
+
+    </Dependency>
+
+    <Dependency>
+
+        <Plugin>squeezeslaveplayer</Plugin>
+
+        <MinVersion>2.2.2</MinVersion>
+
+    </Dependency>
+
+    <Dependency>
+
+        <Plugin>sagex-api</Plugin>
+
+        <MinVersion>7.1.9.3</MinVersion>
+
+    </Dependency>
+
+    <Dependency>
+
+        <Plugin>telnet</Plugin>
+
+        <MinVersion>1.0.1</MinVersion>
+
+    </Dependency>
+
+</SageTVPlugin>

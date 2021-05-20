@@ -1,0 +1,227 @@
+<SageTVPlugin>
+
+   <Name>PlayOn For SageTV</Name>
+
+   <Identifier>PlayOnSTVI</Identifier>
+
+   <Description><![CDATA[Plugin for viewing PlayOn content in SageTV]]></Description>
+
+   <Author>evilpenguin</Author>
+
+   <CreationDate>2010.06.01</CreationDate>
+
+   <ModificationDate>2012.11.25</ModificationDate>
+
+   <Version>1.80</Version>
+
+   <Desktop>false</Desktop>
+
+   <OS>Windows</OS>
+
+   <Screenshot title="Main Menu"><![CDATA[http://forums.sagetv.com/forums/attachment.php?attachmentid=12281&d=1300743633]]></Screenshot>
+
+   <Screenshot title="Menu Settings"><![CDATA[http://forums.sagetv.com/forums/attachment.php?attachmentid=12286&d=1300744452]]></Screenshot>
+
+   <Screenshot title="ABC Shows"><![CDATA[http://forums.sagetv.com/forums/attachment.php?attachmentid=12280&d=1300743603]]></Screenshot>
+
+   <Screenshot title="Diamond TV"><![CDATA[http://forums.sagetv.com/forums/attachment.php?attachmentid=12283&d=1300743647]]></Screenshot>
+
+   <Screenshot title="Diamond TV Filtering"><![CDATA[http://forums.sagetv.com/forums/attachment.php?attachmentid=12285&d=1300744448]]></Screenshot>
+
+   <Screenshot title="Diamond 360 Flow"><![CDATA[http://forums.sagetv.com/forums/attachment.php?attachmentid=12279&d=1300743599]]></Screenshot>
+
+   <Screenshot title="Diamond List Flow"><![CDATA[http://forums.sagetv.com/forums/attachment.php?attachmentid=12284&d=1300744440]]></Screenshot>
+
+   <Webpage><![CDATA[http://forums.sagetv.com/forums/showthread.php?t=54756]]></Webpage>
+
+   <ReleaseNotes>
+
+     * v1.80
+
+     * UPnPBrowser: Fixed Netflix TV show queue importer
+
+     * UPnPBrowser: Added UPnPBrowser.jump to customize folders to skip over via RegEx
+
+     * UPnPBrowser: Added UPnPBrowser.images to specify custom images for PlayOn Folders
+
+     * UPnPBrowser: Added UPnPBrowser.regex to specify the queue importer sraping RegEx's for fixing things like the Netflix issue w/o a full plugin update
+
+     * UPnPBrowser: Made it so custom paths can contain multiple PlayOn folders for combining multiple menus together
+
+     * UPnPBrowser: Added the ability to force a folder name and description from within a custom path
+
+     * UPnPBrowser: If no custom image exists for path, just try finding a Hulu one since they have a lot of images for other shows
+
+     * UPnPBrowser: Added configurable length for commercials.
+
+     * STVi: Updated STVi to include updated presets
+
+     * STVi: Included some basic support for Gemstone ADM, see forum post for details.
+
+
+
+     * v1.60
+
+     * UPnPBrowser: Fixed issue where some charactors were crashing scraper
+
+     * UPnPBrowser: Updated Queue Importer to work with new Netflix TV format
+
+     * UPnPBrowser: Fixed issue with Queue Importer files being overwritten every night
+
+     * UPnPBrowser: Worked around issue with Queue Importer files with special charactors
+
+
+
+     * v1.55
+
+     * STVi: Accidentally modified a theme attribute that let the main menu wrap vertially
+
+
+
+     * v1.54
+
+     * STVi: Moved PlayOn to its own menu.  Didn't realize it would fit before.
+
+
+
+     * v1.53
+
+     * UPnPBrowser: Worked around annoying Anti-virus false positive issue.
+
+
+
+     * v1.52
+
+     * STVi: Added ability to keep PlayOn in Online
+
+     * STVi: Fixed options
+
+
+
+     * v1.51
+
+     * NOTE: Removed Linux support.  Not sure what the problem is and I don't have the time to figure out why it doesn't work.
+
+     * STVi: Added additional channels to the main menu
+
+     * STVi: Added setup menu for enabling disabling most channels
+
+     * STVi: Added shortcut to Queue Importer settings
+
+     * STVi: Cleaned up some unused code
+
+     * JAR: Added custom metadata properties for Queue Importer (Copyright, COmment)
+
+     * JAR: Added multiple different ways to import/clean content
+
+     * JAR: Tweaked defaults settings to disable automatic importing by default
+
+     * JAR: Added a STV utilites JAR for devs who want to support PlayOn content, see thread for more info
+
+     * UPnPBrowser: Added AtomicParsley for tagging dummy videos with queue importer info
+
+     * UPnPBrowser: Added video tag for diferentiating between Hulu/Netflix content
+
+     * UPnPBrowser: Stopped putting titles in file names to work around some annoying UTF8 issues
+
+     * UPnPBrowser: Fixed bug where PlayOn Queue Importer would import too many videos
+
+     * UPnPBrowser: Cleaning up a bunch of UTF-8 issues
+
+
+
+     * v1.4
+
+     * STVi: Fixed meathod of entring Online Servies menu (Thanks Andy!)
+
+     * STVi: Added options for configuring PlayOn Scraping
+
+     * STVi: Added ability to playback PlayOn dummy videos properly
+
+     * UPnPBrowser: Fixed some path issues for Linux
+
+     * UPnPBrowser: Displaying duration on video entries
+
+     * UPnPBrowser: Added ability to scrape PlayOn Paths and genrate dummy videos for importing into Sage
+
+     * UPnPBrowser: Fixed accounting for commericals in shows/clips under 1 minutes
+
+
+
+     *  v1.3
+
+     * STVi: Fixed unique names in main menu buttons
+
+     * STVi: Fixed linux file sepeators for launching UPnPBrowser.exe
+
+     * STVi: Added .property files for people with SageMC
+
+     * STVi: Added menu button for generic UPnP Browsing
+
+     * UPnPBrowser: Made commerical allowance longer
+
+     * UPnPBrowser: Fixed issue where finding parent folder of a folder was broken
+
+
+
+     * v1.2
+
+     * Fixed issue with 64-bit windows users
+
+     * Added option to do an extra long server scan when the device isn't found
+
+     * Invalidating .cache files if server changes
+
+     * Added depedency on v7 STV
+
+     * Fixed some spelling errors
+
+   </ReleaseNotes>
+
+   <PluginType>STVI</PluginType>
+
+   <Dependency>
+
+     <Plugin>UPnPBrowser</Plugin>
+
+     <MinVersion>1.80</MinVersion>
+
+   </Dependency>
+
+   <Dependency>
+
+     <STV>SageTV7</STV>
+
+     <MinVersion>7.0.23</MinVersion>
+
+   </Dependency>
+
+   <Dependency>
+
+     <Plugin>PlayOnForSageTV</Plugin>
+
+     <MinVersion>1.51</MinVersion>
+
+   </Dependency>
+
+   <Dependency>
+
+     <Plugin>PlayOnForSageTVUtilities</Plugin>
+
+     <MinVersion>1.51</MinVersion>
+
+   </Dependency>
+
+   <Package>
+
+     <PackageType>STVI</PackageType>
+
+     <Location><![CDATA[http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/upnp2podcast/PlayOnSTVI_v1_8.zip]]></Location>
+
+     <MD5>11f5d5441d9a5acf382e0c73e655762c</MD5>
+
+   </Package>
+
+   <STVImport>PlayOn_v1_8.stvi</STVImport>
+
+ </SageTVPlugin>

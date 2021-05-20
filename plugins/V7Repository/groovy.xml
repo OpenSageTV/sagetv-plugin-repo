@@ -1,0 +1,37 @@
+<SageTVPlugin>
+
+  <Name>groovy</Name>
+
+  <Identifier>groovy</Identifier>
+
+  <Description>SageTV Dependency JAR Plugin - no need to download directly</Description>
+
+  <Author>Slugger</Author>
+
+  <CreationDate>2010.11.03</CreationDate>
+
+  <ModificationDate>2012.12.22</ModificationDate>
+
+  <Version>2.0.5.1</Version>
+
+  <Dependency>
+
+     <JVM />
+
+     <MinVersion>1.5.0</MinVersion>
+
+  </Dependency>
+
+  <PluginType>Library</PluginType>
+
+  <Package>
+
+    <PackageType>JAR</PackageType>
+
+    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetv-addons/groovy-2.0.5.zip</Location>
+
+    <MD5>bea50caabb27424e5f01dbfaac2b17d7</MD5>
+
+  </Package>
+
+</SageTVPlugin>

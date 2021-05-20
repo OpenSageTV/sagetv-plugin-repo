@@ -1,0 +1,18 @@
+<SageTVPlugin>
+  <Name>beanshell</Name>
+  <Identifier>beanshell</Identifier>
+  <Description>SageTV Dependency JAR Plugin for bsh-2.0b4.jar - no need to download directly</Description>
+  <Author>koelec</Author>
+  <CreationDate>2010-06-07</CreationDate>
+  <ModificationDate>2010-06-07</ModificationDate>
+  <Version>2.0</Version>
+  <Desktop>false</Desktop>
+
+  <PluginType>Library</PluginType>
+
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetvkoelec/bsh-2.0b4.jar.zip</Location>
+    <MD5>D4BA8FE48E87AF37524A376D3091DC3B</MD5>
+  </Package>
+</SageTVPlugin>

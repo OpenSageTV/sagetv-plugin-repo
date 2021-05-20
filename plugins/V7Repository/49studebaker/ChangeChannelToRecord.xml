@@ -1,0 +1,67 @@
+<SageTVPlugin>
+
+  <Name>Change Channel to Record</Name>
+
+  <Identifier>ChangeChannelToRecord</Identifier>
+
+  <Description>SageTV asks the user if the channel should be changed when a upcoming recording on a different channel conflicts with live TV on the current channel. This plugin allows a user to set a default action.</Description>
+
+  <Author>49studebaker</Author>
+
+  <CreationDate>2010.09.02</CreationDate>
+
+  <Version>1.1.2</Version>
+
+
+
+<Dependency>
+
+  <STV>SageTV7</STV>
+
+  <MinVersion>7.0</MinVersion>
+
+</Dependency>
+
+
+
+<PluginType>STVI</PluginType>
+
+<STVImport>ChangeChannelToRecord.stvi</STVImport>
+
+
+
+<Package>
+
+  <PackageType>STVI</PackageType>
+
+
+
+
+
+<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/ChangeChannelToRecord.zip</Location>
+
+  <MD5>3A0A648596B0C351BA98F421A37A47A6</MD5>
+
+</Package>
+
+
+
+<ReleaseNotes>
+
+*Version 1.1.2 - Added options: "Ask, but change the channel if no response" and "Ask, but don't change the channel if no response".
+
+
+
+*Version 1.1.0 - Added configuration options: Main Menu...Setup...Detailed Setup...Customize..."Change Channel to Record"
+
+
+
+*Version 1.0.1 - Initial release.
+
+</ReleaseNotes>
+
+
+
+
+<ModificationDate>2015-5-24</ModificationDate>
+</SageTVPlugin>

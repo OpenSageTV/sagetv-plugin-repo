@@ -1,0 +1,18 @@
+<SageTVPlugin>
+       <Name>commons-exec</Name>
+       <Identifier>commons-exec</Identifier>
+       <Description>Apache Commons process execution library - dependency only</Description>
+       <Author>Slugger</Author>
+       <CreationDate>2010.09.10</CreationDate>
+       <ModificationDate>2010.09.10</ModificationDate>
+       <Version>1.0.1</Version>
+       <ResourcePath>plugins/commons-exec</ResourcePath>
+       <Webpage>http://commons.apache.org/exec/index.html</Webpage>
+       <PluginType>Library</PluginType>
+       <Package>
+               <PackageType>JAR</PackageType>
+               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/commons-exec-1.0.1.zip</Location>
+               <MD5>9AB584B4EFDB0777FA45D091E6159ABE</MD5>
+               <Overwrite>true</Overwrite> <!-- Defaults to true -->
+       </Package>
+</SageTVPlugin>

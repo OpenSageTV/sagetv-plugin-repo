@@ -1,0 +1,39 @@
+<SageTVPlugin>
+
+<Name>InControl JAR</Name>
+
+<Identifier>InControlJar</Identifier>
+
+<Description>InControl JAR is used by the InControl UI Mod.  This plugin has no use on its own.  Please select the InControl UI Mod for installation.</Description>
+
+<Author>Lamanmi - LaManSoft (www.lamansoft.com)</Author>
+
+<CreationDate>2010.05.22</CreationDate>
+
+<ModificationDate>2011.08.06</ModificationDate>
+
+<Version>1.4.3</Version>
+
+<PluginType>Standard</PluginType>
+
+<Package>
+
+	<PackageType>JAR</PackageType>
+
+	<Location>http://www.lamansoft.com/incontrol/InControl_1.4.3.jar.zip</Location>
+
+	<MD5>4df060948d1ae5f93745c0ae517bd893</MD5>
+
+</Package>
+
+<ImplementationClass>InControl.plugin</ImplementationClass>
+
+<Dependency>
+
+	<Core/>
+
+	<MinVersion>7.0.8</MinVersion>
+
+</Dependency>
+
+</SageTVPlugin>

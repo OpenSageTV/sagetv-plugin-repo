@@ -19,11 +19,12 @@
 <PluginType>STVI</PluginType>
  <Package>
    <PackageType>STVI</PackageType>
-   <Location>https://github.com/JREkiwi/MultiFunctionStop/releases/download/1.9.6/Multi_Function_Stop_1.9.6.zip</Location>
+   <Location>https://github.com/JREkiwi/MultispeedSkip/releases/download/1.6.1/Multispeed_Skip_1.6.1.zip</Location>
    <MD5>B3ED10801B7F9A33FF0CB8C0655496B2</MD5>
  </Package>
 <STVImport>Multispeed_Skip.stvi</STVImport>
-<ReleaseNotes>1.6.1.2
+<ReleaseNotes>
+1.6.1.2
 Change download to GitHub
 1.6.1.1
  Change download to HTTPS

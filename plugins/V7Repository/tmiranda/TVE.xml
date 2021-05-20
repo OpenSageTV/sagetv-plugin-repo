@@ -1,0 +1,221 @@
+<SageTVPlugin>
+
+	<Name>TVExplorer</Name>
+
+	<Identifier>TVE</Identifier>
+
+	<Description><![CDATA[TVExplorer is a replacement screen for the Recordings screens. It duplicates most/all of the functionality on those screens. Its layout is similar to Windows Explorer and/or the Malore Menus but has a number of differences/advantages.
+
+
+
+*	Very customizable to get the exact look/feel the user is after
+
+* Fully supports fanart/posters/banners.
+
+* Multiple different grouping/sorting/filtering settings.
+
+* Displays imported TV (videos that are TV but are not part of the Sage recording DB) alongside recorded TV. (It is possible to limit the scope of the imported TV search to certain directories using pathfilterexpressions or a property item. I recommend doing this with large dvd/bd collections)
+
+* Leverages metadata collected by BMT or mediascraper to determine if a particular video is TV and also displays season/episode information
+
+* Filters groups by Record Year, Original Airing Year, or Season/Episode.
+
+
+
+Note:
+
+This is based on a port of TVE v1.01.028 for SageMC to the STV3 Default STV and then to the SageTV7 STV by tmiranda.  Thanks tmiranda :) This is an interim release until TVE v2 is ready for release.]]>
+
+	</Description>
+
+	<Author>razrsharpe, tmiranda</Author>
+
+	<CreationDate>2010.05.21</CreationDate>
+
+	<ModificationDate>2013.01.04</ModificationDate>
+
+	<Version beta="true">1.05.06</Version>
+
+	<Desktop>false</Desktop>
+
+	<Webpage>http://forums.sagetv.com/forums/showthread.php?t=53531</Webpage>
+
+	<Webpage>http://code.google.com/p/sagetve/</Webpage>
+
+	<Screenshot><![CDATA[http://forums.sagetv.com/forums/attachment.php?attachmentid=11917&d=1296678388]]></Screenshot>
+
+	<Dependency>
+
+		<STV>SageTV7</STV>
+
+		<MinVersion>7.1</MinVersion>
+
+	</Dependency>
+
+	<Dependency>
+
+		<Plugin>phoenix-api</Plugin>
+
+		<MinVersion>2.3.13</MinVersion>
+
+	</Dependency>
+
+	<Dependency>
+
+		<Plugin>df_sageutils</Plugin>
+
+		<MinVersion>1.00</MinVersion>
+
+	</Dependency>
+
+	<Dependency>
+
+		<Plugin>sagemc-jar</Plugin>
+
+		<MinVersion>7.0.10</MinVersion>
+
+	</Dependency>
+
+	<PluginType>STVI</PluginType>
+
+	<Package>
+
+		<PackageType>STVI</PackageType>
+
+		<Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetve/TVExplorer_v1.05.06.zip</Location>
+
+		<MD5>218525078421f58de092414eb481b3c5</MD5>
+
+	</Package>
+
+	<Package>
+
+		<PackageType>JAR</PackageType>
+
+		<Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetve/sageortustve-api_v0.5.06.365.zip</Location>
+
+		<MD5>ec2ca09193dc1159bd8ff5ebb1729797</MD5>
+
+	</Package>
+
+	<STVImport>TVExplorer.stvi</STVImport>
+
+	<ReleaseNotes>
+
+	<![CDATA[
+
+1.05.06 01/04/2013
+
+-Fix possible UI hang when returning to TVE after stopping playback. (It may hang on getting the list of scheduled recordings.  The list of scheduled recordings will only be generated when displaying the scheduled recordings view.)
+
+
+
+1.05.05 12/19/2012
+
+-Fix bug introduced by phoenix changing cached images from png to jpq (banners and posters not showing)
+
+-#38 - Enhancement - Allow "movie" group seperate sorting option
+
+
+
+1.05.04 2/25/2011
+
+-Fix bug introduced by the attempts to fix Issue #27 that prevented the tve options from being navigated with a remote
+
+
+
+1.05.03 2/21/2011
+
+-#8 - Enhancement - Add % watched overlay
+
+-#33 - Defect - Fix scroll bar display issues - Group and Episode scroll bars are not same width
+
+-#34 - Enhancement - Add option to set the width of the Filter Select Panel
+
+-#35 - Defect - Add separate configurable delay to display the episode list when browsing groups
+
+-#36 - Defect - TVE "Allows" you to play future recordings
+
+
+
+1.04.01 1/29.2011
+
+-#26 - See if there is a way to make displaying the footer an option (or make it smaller)
+
+-#28 - Play list options plays first episode in list and not selected.
+
+-#29 - Misc fixes related to panel widths, padding, etc to work better with the default header and footers
+
+-#30 - make left selection panel width adjustable
+
+-#31 - allow floating point numbers for options that can use them
+
+-update ortustve.api to 0.5.06.365 (fix parse errors in ortustve.api.searh())
+
+
+
+1.03.01 1/22/2011
+
+-#4 - Episode Filter Displays Lexically
+
+-#9 - Title Length does not seem to make a difference
+
+-#20 - Episode title is not displayed for imported media (bmt 4.1 and later)
+
+-#21 - Filters do not stick when switching from recordings to upcoming recordings and then back
+
+-#22 - TVE does not play Netflix imported content from the Playon Importer
+
+-#23 - Switching between recordings and schedule episode list does not refresh properly
+
+-#25 - Make "Video" remote key (Sage Command: SageTV Recordings) default to TVE
+
+-Update sageortustve api to 0.5.05.364
+
+
+
+
+
+1.02.03 1/17/2011
+
+-#12 - Use the default v7 header and footer
+
+-#17 - Series banner support (non season specific)
+
+-#16 - Fix bug that would prevent banners from showing in some cases
+
+-#18 - Floating point options (ie TVEOptions settings that were 0-1) are now 0-100 so they can be easily entered from the keyboard.  Only the Options menu display 0-100, properties and code still use 0-1
+
+-#15 - Fix conflict with Fuzzy's Recording Schedule shortcut plugin.  "Record" does not do anything unless you are in the Group or Episode panel
+
+-#14 - Min phoenix version now 2.3.13 -> fixes fanart display issues for airing items (ie scheduled recordings)
+
+-#13 - Added option to totally disable bg fanart display
+
+-#19 - Added option to make TVE the default action when selecting on TV or TV->Recordings from the main menu.  Find the option under TVEOptions -> Main -> Use TVE as Default.
+
+
+
+1.01.028.004 1/15/2011
+
+-Parse original air date correctly for imported videos (bug introduced because phoenix changed the way they were storing the OAD)
+
+-Link generating the TVE Options menu items (text entry) to the default stv.  Now you should be able to adjust all options
+
+-Fixed saving and importing the TVEOptions settings
+
+-updated the sageortustve api to 0.5.04.361
+
+-updated manifest to rely on the sagemc jar (thanks stuckless).  No more manual downloading neccesary.
+
+
+
+1.01.028.003
+
+-Initial release for SageTV V7.  Based on the excellent work of tmiranda porting TVE 1.01.028 for the default STV3 and then to STV7.
+
+	]]>
+
+	</ReleaseNotes>
+
+</SageTVPlugin>

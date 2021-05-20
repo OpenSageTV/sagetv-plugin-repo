@@ -1,0 +1,21 @@
+<SageTVPlugin>
+  <Name>TAS Videos Scraper (Dependency for Tas Videos plugins)</Name>
+  <Identifier>tasVideosScraper</Identifier>
+  <Description><![CDATA[DO NOT DOWNLOAD DIRECTLY - This is a dependancy for the TAS Videos plugins and will be downloaded/updated automatically]]></Description>
+  <Author>evilpenguin</Author>
+
+  <CreationDate>2010.08.24</CreationDate>
+  <ModificationDate>2010.08.24</ModificationDate>
+  <Version>1.0</Version>
+
+  <Desktop>false</Desktop>
+  <OS>Windows</OS>
+
+  <PluginType>Library</PluginType>
+  <Package>
+    <PackageType>System</PackageType>
+    <Location><![CDATA[http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/upnp2podcast/tasVideosScraper_v1_0.zip]]></Location>
+    <MD5>a3213ec29565fa176d51cba16936a4cc</MD5>
+  </Package>
+
+</SageTVPlugin>

@@ -1,0 +1,18 @@
+<SageTVPlugin>
+  <Name>jcs</Name>
+  <Identifier>jcs</Identifier>
+  <Description>SageTV JAR Plugin for jcs-1.3.jar - no need to download directly</Description>
+  <Author>stuckless</Author>
+  <CreationDate>2010-04-08</CreationDate>
+  <ModificationDate>2010.04.09</ModificationDate>
+  <Version>1.3</Version>
+  <Desktop>false</Desktop>
+
+  <PluginType>Library</PluginType>
+
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/jcs-1.3.jar.zip</Location>
+    <MD5>0376355E6F020F41B4AD59F90D97D71D</MD5>
+  </Package>
+</SageTVPlugin>

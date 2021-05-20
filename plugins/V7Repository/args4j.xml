@@ -1,0 +1,35 @@
+<SageTVPlugin>
+
+       <Name>args4j</Name>
+
+       <Identifier>args4j</Identifier>
+
+       <Description>args4j - dependency only</Description>
+
+       <Author>Slugger</Author>
+
+       <CreationDate>2012.11.09</CreationDate>
+
+       <ModificationDate>2012.12.22</ModificationDate>
+
+       <Version>2.0.21.1</Version>
+
+       <ResourcePath>args4j</ResourcePath>
+
+       <Webpage>http://args4j.kohsuke.org/</Webpage>
+
+       <PluginType>Library</PluginType>
+
+       <Package>
+
+               <PackageType>JAR</PackageType>
+
+               <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetv-addons/args4j-2.0.21.zip</Location>
+
+               <MD5>e3fd0efdd09b5758f280c338abbb331c</MD5>
+
+               <Overwrite>true</Overwrite> <!-- Defaults to true -->
+
+       </Package>
+
+</SageTVPlugin>

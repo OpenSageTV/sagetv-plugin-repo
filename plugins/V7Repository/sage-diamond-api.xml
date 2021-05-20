@@ -1,0 +1,39 @@
+<SageTVPlugin>
+
+  <Name>Sage Diamond API</Name>
+
+  <Identifier>sage-diamond-api</Identifier>
+
+  <Description>Diamond UI API- Do not install directly just a dependency!!</Description>
+
+  <Author>PluckyHD</Author>
+
+  <CreationDate>2010-12-06</CreationDate>
+
+  <ModificationDate>2011.05.06</ModificationDate>
+
+  <Version>3.30</Version>
+
+  <Desktop>false</Desktop>
+
+<Dependency>
+
+   <Plugin>sagex-api</Plugin>
+
+    <MinVersion>7.1.5.5</MinVersion>
+
+  </Dependency>
+
+  <PluginType>Library</PluginType>
+
+  <Package>
+
+    <PackageType>JAR</PackageType>
+
+    <Location>http://babgvant.com/downloads/pluckyhd/DiamondAPI/SageDiamondAPIV3.30.zip</Location>
+
+    <MD5>374971f1c7d27e53333a70205cfe85f0</MD5>
+
+  </Package>
+
+</SageTVPlugin>

@@ -1,0 +1,32 @@
+<SageTVPlugin>
+       <Name>Slugger's Plugin Development Tools</Name>
+       <Identifier>slugger-dev-tools</Identifier>
+       <Description>
+Various Java classes and other tools to aid in the development of SageTV plugins.
+
+This package contains common classes and tools I use to aid in the development of plugins.  Anytime I think something might be useful to
+others, I'll add it to this package and make it available for all to use.  A very useful class in this package is the SagePluginThread class, which is an extension to java.lang.Thread that allows the thread to be halted gracefully at any time.  This is very nice for worker threads that should be stopped when SageTV or your plugin is stopped.  See the javadocs for futher details, including a usage example.
+
+Other items of interest include an ant task to automatically submit your plugin manifest to SageTV's plugin repository.
+
+To see exactly what's available in this version, see the javadocs link.
+	</Description>
+       <Author>Slugger</Author>
+       <CreationDate>2010.05.14</CreationDate>
+       <!-- <ModificationDate>2010.03.01</ModificationDate> -->
+       <Version>0.0.1</Version>
+       <ResourcePath>plugins/slugger-dev-tools</ResourcePath>
+       <Webpage>http://sagetv-addons.googlecode.com</Webpage>
+	<Webpage>http://sagetv-addons.googlecode.com/svn/tags/dev-0.0.1/doc/index.html</Webpage>
+        <Dependency>
+                <Core/>
+                <MinVersion>7.0.9</MinVersion>
+        </Dependency>
+       <PluginType>Library</PluginType>
+       <Package>
+               <PackageType>JAR</PackageType>
+               <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetv-addons/slugger-dev-tools-0.0.1.zip</Location>
+               <MD5>caab46f183fb7e6f4e882882ec62bd8b</MD5>
+               <Overwrite>true</Overwrite> <!-- Defaults to true -->
+       </Package>
+</SageTVPlugin>
