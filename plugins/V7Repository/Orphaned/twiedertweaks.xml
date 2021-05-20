@@ -1,0 +1,59 @@
+<SageTVPlugin>
+	<Name>twiederTweaks</Name>
+	<Identifier>twiedertweaks</Identifier>
+	<Description>A collection of SageTV7 UI tweaks
+This is a collection of SageTV7 interface tweaks:
+GLOBAL:
+ * Added the disk-usage bar to the bottom of the screen
+RECORDINGS
+ * Removed the "REC" indicator next to active recordings, moving remaining indicators to the right (for more title/episode space)
+ * Added red background to listings for currently active recordings
+ * Offset the episode name
+ * Added a configurable date to the right of the episode name
+ * Removed the numbering in the right panel for group recordings
+ * Made watched episode names font configurable in right panel for group recordings
+ * Made unwatched episode names font configurable in right panel for group recordings
+ * Added a configurable date next to the episode name in the right panel for group recordings
+ * Displays Season and Episode numbers in details
+ * Can display Season/Episode number instead of dates (listed above)
+
+This is a work-in-progess. Let me know if you like these tweaks, or what changes you would appreciate
+
+</Description>
+	<Author>twieder</Author>
+	<CreationDate>2010-05-25</CreationDate>
+	<ModificationDate>2010-06-01</ModificationDate>
+	<Version>0.7.5</Version>
+	<PluginType>STVI</PluginType>
+	<STVImport>twiederTweaks.stvi</STVImport>
+	<Dependency>
+		<Plugin>bmt</Plugin>
+	</Dependency>
+		<Dependency>
+		<Plugin>sageortus-api</Plugin>
+		<MinVersion>1.0</MinVersion>
+	</Dependency>
+	<Dependency>
+		<STV>SageTV7</STV>
+		<MinVersion>7.0</MinVersion>
+	</Dependency>
+	<ReleaseNotes>v0.6.5 - Added setup menu item.
+		Watched and Unwatched font styles and alpha are now configurable for right-side episode lists
+		Date source (Original, Airing or none) is configureable for both main listings and episode listings
+
+v0.7.0
+	Season/Episode now an option instead of date *
+	Season and Episode number displayed in listing and detail pages *
+		* note - these depend on BMT to get this information
+
+v0.7.5
+	Right panel sort is now working
+	Right panel scrolling bug fixed
+	Recording color border removed
+	</ReleaseNotes>
+	<Package>
+		<PackageType>STVI</PackageType>
+		<Location>http://www.wallofcats.com/sagetv/twiederTweaks_0.7.5.zip</Location>
+		<MD5>3FD046FF7FF7B72250B195DF18CCF5E0</MD5>
+	</Package>
+</SageTVPlugin>

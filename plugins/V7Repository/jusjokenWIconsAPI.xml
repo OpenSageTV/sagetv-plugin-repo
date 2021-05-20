@@ -1,0 +1,57 @@
+<SageTVPlugin>
+
+
+
+  <Name>WIconsAPI</Name>
+
+  <Identifier>jusjokenWIconsAPI</Identifier>
+
+  <Description>WIcons API- Do not install directly - just a dependency for Diamond!</Description>
+
+  <Author>jusjoken</Author>
+
+  <CreationDate>2011.11.28</CreationDate>
+
+  <ModificationDate>2015.10.17</ModificationDate>
+
+  <Version beta="true">1.006</Version>
+
+  <Desktop>false</Desktop>
+
+
+
+  <Dependency>
+
+    <Plugin>sagex-api</Plugin>
+
+    <MinVersion>7.1.5.5</MinVersion>
+
+  </Dependency>
+
+
+
+  <PluginType>Library</PluginType>
+
+  <Package>
+
+    <PackageType>JAR</PackageType>
+
+    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/diamond-legacy/WIconsAPI1_004.zip</Location>
+
+    <MD5>12bed63b2b80b0ff5f5ef17f8ecb64a0</MD5>
+
+  </Package>
+
+  <ReleaseNotes>
+
+     - 1.006 - NO CHANGES - moved the source files from Google Code to BinTray (under Diamond Legacy)
+
+     - 1.004 - added some missing icons and support for new png url icons from NWS
+
+     - 1.003 - add a missing icon and made NWS to use night icons for night forecasts
+
+  </ReleaseNotes>
+
+
+
+</SageTVPlugin>

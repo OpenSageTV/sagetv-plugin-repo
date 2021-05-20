@@ -1,0 +1,55 @@
+<SageTVPlugin>
+
+    <Name>Squeezeslave Player</Name>
+
+    <Identifier>squeezeslaveplayer</Identifier>
+
+    <Version>2.3.0</Version>
+
+    <Description>This is the Squeezeslave Player which runs on a SageTV extender (Unlimited Free Trial) - no need to install separately.</Description>
+
+    <Author>routerunner</Author>
+
+    <PluginType>Library</PluginType>
+
+    <CreationDate>2012-01-05</CreationDate>
+
+    <ModificationDate>2013-04-05</ModificationDate>
+
+    <ReleaseNotes>
+
+1.0.0 - First Public Release. Supported extenders: HD200, HD300
+
+2.0.0 - Added support for MediaMVP. Fixed digital noise on HDx00. Better synchronisation support. License required.
+
+2.0.1 - Better mutual exclusion mechanism. Fixed audio static noise issue with HD200/HD300 - IMPORTANT! Please hard power cycle the extender after the update.
+
+2.0.2 - Massively reduced CPU usage. Fixed Ogg Vorbis support issue.
+
+2.1.0 - Add support to HD100 extender. Support older HD300 firmware. Pure Digital Audio (HD100 only).
+
+2.2.0 - Add support to IR remote control (see Plugin: Squeezeslave v2 announcement thread for details). Capabilities registration mechanism (requires Squeeze Server v7.4 or above).
+
+2.2.1 - Various issue introduced by the remote control. Fix HD300 S/PDIF issue after watching HDTV. Added support for remote control "Home" button. Honour the LMS "Power on Resume" setting. Added unlimited trial mode.
+
+2.2.2 - Add support of Pure Digital Audio Output to MediaMVP. Add Wake-On-Line support to all extenders.
+
+2.3.0 - Add support of Pure Digital Audio Output to HD200/HD300. Add support of HDMI audio output to HD200/HD300.
+
+    </ReleaseNotes>
+
+    <Desktop>false</Desktop>
+
+    <Package>
+
+        <PackageType>System</PackageType>
+
+        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/squeezeslaveplayer_2_3_0.zip</Location>
+
+        <MD5>40BF43C57AD399685C72F7D4A70AB8FA</MD5>
+
+        <Overwrite>true</Overwrite>
+
+    </Package>
+
+</SageTVPlugin>

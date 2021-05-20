@@ -1,0 +1,183 @@
+<SageTVPlugin>
+
+  <Name>Multi-User Support General</Name>
+
+  <Identifier>multiusersupport</Identifier>
+
+  <Author>tmiranda</Author>
+
+  <CreationDate>2011.02.08</CreationDate>
+
+  <ModificationDate>2015.12.05</ModificationDate>
+
+  <Version beta="true">0.143</Version>
+
+  <Desktop>false</Desktop>
+
+
+
+  <Description>Support Plugin for Multi-User Support.</Description>
+
+
+
+  <Dependency>
+
+    <STV>SageTV7</STV>
+
+    <MinVersion>7.1</MinVersion>
+
+  </Dependency>
+
+
+
+  <Dependency>
+
+    <Plugin>sagex-api</Plugin>
+
+    <MinVersion>7.0.23.6</MinVersion>
+
+  </Dependency>
+
+
+
+  <PluginType>Standard</PluginType>
+
+
+
+  <ImplementationClass>tmiranda.mus.Plugin</ImplementationClass>
+
+
+
+  <Package>
+
+    <PackageType>JAR</PackageType>
+
+    <Location>http://github.com/tmiranda1962/MultiUser/releases/download/v0.143/MultiUserSupport.zip</Location>
+
+    <MD5>E040337C9C95400F44D256AE2BB17194</MD5>
+
+  </Package>
+
+
+
+  <ReleaseNotes>Version 0.143:
+
+- Moved hosting from Google Code to GitHub. No functionality change.
+
+
+
+Version 0.142:
+
+- Added ability to remove user but preserve Favorites and IsWatched() status.  Thanks to bikesquid.
+
+- Small change to getMediaFilesWithImportPrefix() that will hopefully fix the issue of folder view items not being alphabetized correctly.
+
+
+
+Version 0.141
+
+ - Fixes by jpaddock3000 to address DVD playback issues.
+
+ - Fixes by jpaddock3000 to set shows as watched if only a small amount at end is unwatched.
+
+
+
+Version 0.140:
+
+- Added support for implementing viewing limits.
+
+
+
+Version 0.130:
+
+- Added support for default user profile to use if no user is logged on.
+
+- Added some fixes to try to get DVD playback to resume at proper chapter for each user.
+
+
+
+Version 0.121:
+
+- Fixed bug that prevented Favorites from being added.
+
+- Fixed bug that prevented folder grouping from working properly.
+
+
+
+Version 0.12:
+
+- Changed behavior so Archive and Don't Like function in the same way as Watched.
+
+- Fixed bug that caused user data to get reset when password was changed.
+
+- Added ability to manually make other plugins compatible with the Multi-User plugin.
+
+
+
+Version 0.11:
+
+- Fixed bug introduced in v0.10 that prevented new users from being added.
+
+- Fixed bug that caused Manual records requested by a specific user to show up for all users that had not already initialized the Airing..
+
+- Debug enhancements when in advanced_debug mode.
+
+
+
+Version 0.10:
+
+- Enhancements to support delete_at_EOF.
+
+
+
+Version 0.09:
+
+- Fixed bug that caused DVD playback position to not be remembered. (May still not work correctly.)
+
+- Changed behavior of SetWatched() and ClearWatched().  Now if all users SetWatched() or ClearWatched() the change is reflected in the core.
+
+- Added infrastructure for multiple simultaneous logons.
+
+- Improved handling of partial recordings and other Objects that are not necessarily an Airing or MediaFile.
+
+
+
+Version 0.08:
+
+- Updates for compatibility with Sage 7.1.
+
+- Updated IsFavoriteObject.
+
+
+
+Version 0.07:
+
+- Added user debugging information to Plugin.start.
+
+- Added support for controlling if users see newly imported videos.
+
+- If no password is provided to setPassword it will default to the UserID.
+
+- Fixed bug that prevented users from seeing a Favorite added by Admin.
+
+- Fixed bug that may leave user associated with a Favorite that had been removed by the core.
+
+- Fixed bug that prevented loglevel from being changed from some UIs.
+
+
+
+Version 0.06:
+
+- Changed logging in User class.
+
+- Fixed bug that would cause logging to revert to WARN.
+
+- Fixed bug that would cause Airings to be marked as Watched prematurely which would allow the Sage core to delete the show before all users had watched it.
+
+- Fixed bug that prevented logging to start properly on SageClients that were running on the Sage server.
+
+</ReleaseNotes>
+
+
+
+</SageTVPlugin>

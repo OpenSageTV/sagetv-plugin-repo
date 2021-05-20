@@ -1,0 +1,89 @@
+<SageTVPlugin>
+
+  <Name>Network Encoder Monitor</Name>
+
+  <Identifier>network-encoder-monitor</Identifier>
+
+  <Description>This plugin will monitor all configured Network Monitor Encoders defined on SageTV to check their status. If Functioning=false, and the encoder comes online, Network Encoder will mark it again as true without need of a restart of SageTV</Description>
+
+  <Author>Jabroni</Author>
+
+  <CreationDate>2011.09.05</CreationDate>
+
+  <ModificationDate>2011.09.05</ModificationDate>
+
+  <Version>1.1.1</Version>
+
+  <Desktop>false</Desktop>
+
+  <Webpage><![CDATA[http://forums.sagetv.com/forums/showthread.php?p=514822]]></Webpage>
+
+
+
+  <Dependency>
+
+    <Plugin>sagex-api</Plugin>
+
+    <MinVersion>7.1.9.1</MinVersion>
+
+  </Dependency>
+
+  <Dependency>
+
+   <Plugin>javamail</Plugin>
+
+   <MinVersion>1.4.3</MinVersion>
+
+  </Dependency>
+
+
+
+  <PluginType>Standard</PluginType>
+
+
+
+  <Package>
+
+    <PackageType>JAR</PackageType>
+
+    <Location>http://dl.dropbox.com/u/17862/nem-1.1.1.zip</Location>
+
+    <MD5>50c73d922963472f2da265e3fa0ce254</MD5>
+
+  </Package>
+
+
+
+  <!-- Plugin Class is in the core sagex-api jar -->
+
+  <ImplementationClass>org.nem.NEMPlugin</ImplementationClass>
+
+
+
+  <ReleaseNotes>
+
+1.1.1
+
+* Small bugfix on the email message sent
+
+
+
+1.1
+
+* Added the ability to send the notification via email (Be sure to check the plugin configuration for the mail server settings)
+
+
+
+1.0
+
+* First Release.
+
+After installing, configure the plugin. Select which of the Network Tuners you want to monitor, how often (in seconds). Any change done of tunners and/or
+
+timer requires a restart by clicking the last button on the config screen.
+
+  </ReleaseNotes>
+
+
+
+</SageTVPlugin>

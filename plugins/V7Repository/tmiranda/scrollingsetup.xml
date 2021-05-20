@@ -1,0 +1,73 @@
+<SageTVPlugin>
+
+
+
+	<Name>Scrolling Setup on Main Menu</Name>
+
+
+
+  	<Identifier>scrollingsetup</Identifier>
+
+
+
+  	<Description>Adds a scrollbar to the Setup menu.  This is meant to be used by developers and has no end user functionality on its own.</Description>
+
+
+
+  	<Author>tmiranda</Author>
+
+
+
+  	<CreationDate>2011.01.15</CreationDate>
+
+  	<ModificationDate>2015.11.29</ModificationDate>
+
+
+
+  	<Version beta="false">1.00.20151129</Version>
+
+
+
+  	<Desktop>false</Desktop>
+
+
+
+  	<Dependency>
+
+    		<STV>SageTV7</STV>
+
+      	<MinVersion>7.0</MinVersion>
+
+  	</Dependency>
+
+
+
+  	<PluginType>STVI</PluginType>
+
+
+
+  	<Package>
+
+    		<PackageType>STVI</PackageType>
+
+    		<Location>http://github.com/tmiranda1962/Scrolling-Setup/releases/download/1.00.20151129/ScrollingSetup.zip</Location>
+
+    		<MD5>B459B63C21BCE3CE69D444566F886153</MD5>
+
+  	</Package>
+
+
+
+  	<STVImport>ScrollingSetup.stvi</STVImport>
+
+
+
+  	<ReleaseNotes>1.00.20151129 - Moved hosting from Google Code to GitHub. No functionality changes.
+
+1.00.20110115 - First release.
+
+</ReleaseNotes>
+
+
+
+</SageTVPlugin>

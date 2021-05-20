@@ -1,0 +1,131 @@
+<SageTVPlugin>
+
+       <Name>Schedules Direct EPG Plugin (OSS)</Name>
+
+       <Identifier>sdepg-oss</Identifier>
+
+       <Description>
+
+Native SageTV plugin for accessing EPG data via Schedules Direct.
+
+
+
+Please read the user guide for this plugin CAREFULLY prior to installation!
+
+There are special, additional steps required to install and uninstall this
+
+plugin.
+
+       </Description>
+
+       <Author>Slugger</Author>
+
+       <CreationDate>2015.09.02</CreationDate>
+
+       <ModificationDate>2015.09.03</ModificationDate>
+
+       <Version beta="true">1.0.0.1</Version>
+
+       <ResourcePath>plugins/sdepg</ResourcePath>
+
+       <Webpage>https://github.com/Slugger/sdepg/</Webpage>
+
+       <Webpage>http://www.schedulesdirect.org/</Webpage>
+
+       <ServerOnly>true</ServerOnly>
+
+       <Dependency>
+
+       		<JVM/>
+
+       		<MinVersion>1.7</MinVersion>
+
+       	</Dependency>
+
+       <Dependency>
+
+                <Core/>
+
+                <MinVersion>9.0.0.0</MinVersion>
+
+       </Dependency>
+
+        <Dependency>
+
+                <Plugin>groovy</Plugin>
+
+                <MinVersion>2.0.5</MinVersion>
+
+        </Dependency>
+
+        <Dependency>
+
+                <Plugin>log4j</Plugin>
+
+                <MinVersion>1.2.15</MinVersion>
+
+        </Dependency>
+
+        <Dependency>
+
+        	<Plugin>salicense</Plugin>
+
+        	<MinVersion>1.0.1</MinVersion>
+
+        </Dependency>
+
+        <Dependency>
+
+        	<Plugin>sdjson-api</Plugin>
+
+        	<MinVersion>0.20141201.1.0</MinVersion>
+
+        </Dependency>
+
+        <Dependency>
+
+        	<Plugin>sagex-api</Plugin>
+
+        	<MinVersion>7.1.9</MinVersion>
+
+        </Dependency>
+
+       <PluginType>Standard</PluginType>
+
+       <Package>
+
+               <PackageType>JAR</PackageType>
+
+               <Location>http://sourceforge.net/projects/sagetv-addons/files/sdepg/sdepg-jar-1.0.0.1.zip/download</Location>
+
+               <MD5>1e6b6964b6afc8ea7f009b2545345eba</MD5>
+
+               <Overwrite>true</Overwrite> <!-- Defaults to true -->
+
+       </Package>
+
+       <Package>
+
+       			<PackageType>System</PackageType>
+
+       			<Location>http://sourceforge.net/projects/sagetv-addons/files/sdepg/sdepg-conf-1.0.0.1.zip/download</Location>
+
+       			<MD5>45934f81dcf0be51428f2b41e70ac4e0</MD5>
+
+       			<Overwrite>true</Overwrite>
+
+       	</Package>
+
+       	<ImplementationClass>sagex.epg.schedulesdirect.plugin.Plugin</ImplementationClass>
+
+       	<ReleaseNotes><![CDATA[
+
+CHANGES SINCE LAST RELEASE
+
+
+
+* Initial release for open source SageTV!
+
+		]]></ReleaseNotes>
+
+</SageTVPlugin>

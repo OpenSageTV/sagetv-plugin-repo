@@ -1,0 +1,50 @@
+<SageTVPlugin>
+      <Name>sdjson-api</Name>
+      <Identifier>sdjson-api</Identifier>
+      <Description>sdjson: Schedules Direct Java API - dependency only</Description>
+      <Author>Slugger</Author>
+      <CreationDate>2012.12.22</CreationDate>
+      <ModificationDate>2015.04.25</ModificationDate>
+      <Version beta="true">0.20141201.1.0</Version>
+      <ResourcePath>plugins/sdjson</ResourcePath>
+      <Webpage>http://github.com/Slugger/sdjson-api</Webpage>
+      <PluginType>Library</PluginType>
+	<Dependency>
+		<JVM />
+		<MinVersion>1.7</MinVersion>
+	</Dependency>
+      <Dependency>
+         <Plugin>HttpClient</Plugin>
+         <MinVersion>4.2.1</MinVersion>
+      </Dependency>
+	  <Dependency>
+		<Plugin>json</Plugin>
+		<MinVersion>20140107.1</MinVersion>
+	  </Dependency>
+	  <Dependency>
+		<Plugin>commons-logging</Plugin>
+		<MinVersion>1.1.1</MinVersion>
+	  </Dependency>
+	  <Dependency>
+		<Plugin>log4j</Plugin>
+		<MinVersion>1.2.0</MinVersion>
+	  </Dependency>
+	  <Dependency>
+		<Plugin>commons-io</Plugin>
+		<MinVersion>1.4</MinVersion>
+	  </Dependency>
+	  <Dependency>
+	  	<Plugin>commons-codec</Plugin>
+	  	<MinVersion>1.3</MinVersion>
+	  </Dependency>
+        <Dependency>
+        	<Plugin>jackson-datatype-json-org</Plugin>
+        	<MinVersion>2.5.1</MinVersion>
+        </Dependency>
+      <Package>
+              <PackageType>JAR</PackageType>
+              <Location>http://sf.net/projects/sagetv-addons/files/sdjson-api/sdjson-api-0.20141201.1.0.zip/download</Location>
+              <MD5>3bc584b616111d7b47fd9326e1b8bd50</MD5>
+              <Overwrite>true</Overwrite> <!-- Defaults to true -->
+      </Package>
+</SageTVPlugin>

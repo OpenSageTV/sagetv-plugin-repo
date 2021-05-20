@@ -1,0 +1,22 @@
+<SageTVPlugin>
+	<Name>SQLite JDBC Driver</Name>
+	<Identifier>sqlitejdbc</Identifier>
+	<Description>Provides support for embedded SQLite databases within plugins - dependency only</Description>
+	<Author>Slugger</Author>
+	<CreationDate>2010.04.28</CreationDate>
+	<!-- <ModificationDate>2010.03.01</ModificationDate> -->
+	<Version>0.56</Version>
+	<ResourcePath>sqlitejdbc</ResourcePath>
+	<Webpage>http://www.zentus.com/sqlitejdbc/</Webpage>
+	<Dependency>
+		<Core/>
+		<MinVersion>7.0.0</MinVersion>
+	</Dependency>
+	<PluginType>Library</PluginType>
+	<Package>
+		<PackageType>JAR</PackageType>
+		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sqlitejdbc-0.56.zip</Location>
+		<MD5>7F0B6BA20C3B39059C2FE0B72791245A</MD5>
+		<Overwrite>true</Overwrite> <!-- Defaults to true -->
+	</Package>
+</SageTVPlugin>

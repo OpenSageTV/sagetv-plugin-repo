@@ -1,0 +1,67 @@
+<SageTVPlugin>
+
+  <Name>Fuzzy's Malore Tweaks</Name>
+
+  <Identifier>fuzzysmaloretweaks</Identifier>
+
+  <Description>A collection of Tweaks I've made for the Malore Menus.  Banners in the Show List, Remove Banner from Description pane.</Description>
+
+  <Author>Fuzzy</Author>
+
+  <CreationDate>2010-10-07</CreationDate>
+
+  <ModificationDate>2016.09.06</ModificationDate>
+
+  <Version beta="true">0.5.9.1</Version>
+
+  <PluginType>STVI</PluginType>
+
+  <ReleaseNotes>0.5.0 - Banners in Show List, Hide Banner in Description Pane
+
+  0.5.1 - Adjusted Banner/Bracket Alignment
+
+  0.5.8 - Added Local Caching to Banner Images - greatly increasing scrolling speed (after images have been displayed once to be cached).
+
+  0.5.9 - Updated Phoenix API dependency to 2.3.11
+
+  0.5.9.1 - No Change - submitted to force manifest update for google code changes</ReleaseNotes>
+
+  <Screenshot>http://dl.dropbox.com/u/8593871/Fuzzy's_Malore_Tweaks.jpg</Screenshot>
+
+  <Dependency>
+
+    <STV>SageTV7</STV>
+
+    <MinVersion>7.0</MinVersion>
+
+ </Dependency>
+
+  <Dependency>
+
+    <Plugin>PPMM</Plugin>
+
+    <MinVersion>1.02</MinVersion>
+
+ </Dependency>
+
+ <Dependency>
+
+  <Plugin>phoenix-api</Plugin>
+
+  <MinVersion>2.3.11</MinVersion>
+
+ </Dependency>
+
+  <Package>
+
+    <PackageType>STVI</PackageType>
+
+   <Location>http://dl.dropbox.com/u/8593871/Fuzzy's_Malore_Tweaks_v0.5.9.zip</Location>
+
+    <MD5>c92abe1ca283dfe792235d998d7a7432</MD5>
+
+  </Package>
+
+  <STVImport>Fuzzy's_Malore_Tweaks_v0.5.9.stvi</STVImport>
+
+</SageTVPlugin>

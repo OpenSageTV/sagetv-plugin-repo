@@ -1,0 +1,93 @@
+<SageTVPlugin>
+
+
+
+<Name>Tag Photos</Name>
+
+
+
+<Identifier>TP</Identifier>
+
+
+
+<Description>Tag Photos for SageTV 7. Tag photos during a slideshow or screensaver and review them later.
+
+</Description>
+
+
+
+<Author>tmiranda</Author>
+
+
+
+<CreationDate>2015.01.04</CreationDate>
+
+
+
+<ModificationDate>2015.01.07</ModificationDate>
+
+
+
+<Version beta="true">0.10</Version>
+
+
+
+<Desktop>false</Desktop>
+
+
+
+<Webpage>http://forums.sagetv.com/forums/showthread.php?t=45954</Webpage>
+
+
+
+<Dependency>
+
+  <STV>SageTV7</STV>
+
+  <MinVersion>7.0</MinVersion>
+
+</Dependency>
+
+
+
+<PluginType>STVI</PluginType>
+
+
+
+<Package>
+
+  <PackageType>STVI</PackageType>
+
+
+
+  <Location>http://sourceforge.net/projects/tmiranda-sage/files/tp.v0.10.zip/download</Location>
+
+
+
+  <MD5>12A1AB0E06D31B4CBA8783093E93090E</MD5>
+
+
+
+</Package>
+
+
+
+<STVImport>tp.stvi</STVImport>
+
+
+
+<ReleaseNotes>Version 0.10:
+
+- Now defaults to 5 pretagged photos instead of 0.
+
+- Added an option to change the number of pretagged photos.
+
+- Added a warning before untagging all photos.
+
+Version 0.01:
+
+- Initial alpha.</ReleaseNotes>
+
+
+
+</SageTVPlugin>

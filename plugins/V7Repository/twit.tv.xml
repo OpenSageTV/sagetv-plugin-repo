@@ -1,0 +1,61 @@
+<SageTVPlugin>
+
+ <Name>TWiT.TV Video Podcasts</Name>
+
+ <Identifier>twit.tv</Identifier>
+
+ <Description>Add the TWiT.TV video podcasts to your list of online services menu in SageTV.  Leo Laporte's network of popular podcasts including:  This Week In Tech, Tech News Today, Windows Weekly, MacBreak Weekly, The Tech Guy, and many more.  Please visit www.twit.tv for a complete listing of podcasts.  After installation you will find these feeds listed in the Online, More Online Service menu.</Description>
+
+ <Author>shadeBlue.com</Author>
+
+ <CreationDate>2010.09.04</CreationDate>
+
+ <ModificationDate>2016.04.24</ModificationDate>
+
+ <Version>7.5</Version>
+
+ <Desktop>false</Desktop>
+
+ <Dependency>
+
+    <Core />
+
+    <MinVersion>7.0</MinVersion>
+
+ </Dependency>
+
+<PluginType>Standard</PluginType>
+
+ <Package>
+
+   <PackageType>STVI</PackageType>
+
+   <Location><![CDATA[http://sagetv.shadeblue.com/twit/release/7.5/TWiTOnlineVideos.zip]]></Location>
+
+   <MD5>81d01cbbcd6f51a9536486c7883d24b3</MD5>
+
+ </Package>
+
+ <Screenshot><![CDATA[http://forums.sagetv.com/forums/downloads/twit3_Hl1.png]]></Screenshot>
+
+ <Screenshot><![CDATA[http://forums.sagetv.com/forums/downloads/twit2_mki.png]]></Screenshot>
+
+ <Webpage><![CDATA[http://forums.sagetv.com/forums/downloads.php?do=file&id=389]]></Webpage>
+
+<ReleaseNotes>
+
+7.5 : Updated to use lower resolution thumbmails for faster loading.
+
+7.4 : Added supprt for TWiT SD streams.
+
+7.3 : Fixed/Added TWiT Live Feeds back.
+
+7.2 : Update all current TWiT feeds to HD streams.
+
+7.1 : Added TWiT Live Feeds.
+
+7.0 : Initial Release for SageTV 7.0.
+
+</ReleaseNotes>
+
+</SageTVPlugin>

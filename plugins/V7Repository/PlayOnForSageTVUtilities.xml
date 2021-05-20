@@ -1,0 +1,32 @@
+<SageTVPlugin>
+   <Name>(DO NOT DOWNLOAD) PlayOn STV Utilities</Name>
+   <Identifier>PlayOnForSageTVUtilities</Identifier>
+   <Description><![CDATA[STV utilties for supporitng PlayOn Files #hidden]]></Description>
+   <Author>evilpenguin</Author>
+   <CreationDate>2011.03.15</CreationDate>
+
+   <ModificationDate>2011.3.20</ModificationDate>
+   <Version>1.51</Version>
+
+   <Webpage><![CDATA[http://forums.sagetv.com/forums/showthread.php?t=54756]]></Webpage>
+
+   <Desktop>false</Desktop>
+
+   <Dependency>
+    <Plugin>sagex-api</Plugin>
+    <MinVersion>7.0.23</MinVersion>
+   </Dependency>
+   <Dependency>
+    <STV>SageTV7</STV>
+    <MinVersion>7.0.23</MinVersion>
+   </Dependency>
+
+   <PluginType>Library</PluginType>
+
+   <Package>
+       <PackageType>JAR</PackageType>
+       <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/upnp2podcast/PlayOnUtils_v1_5.zip</Location>
+       <MD5>835426c436d44a51e412dcd6b6df630d</MD5>
+   </Package>
+
+ </SageTVPlugin>

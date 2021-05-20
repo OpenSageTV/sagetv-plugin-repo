@@ -1,0 +1,27 @@
+<SageTVPlugin>
+ <Name>Pixel Test</Name>
+ <Identifier>PixelTest</Identifier>
+ <Description>Pixel Test for STV7.  This extension provides a series of solid color fills to assist with dead pixel inspection. (for the Default STV).</Description>
+ <Author>shadeBlue.com</Author>
+ <CreationDate>2010.06.13</CreationDate>
+ <ModificationDate>2010.06.13</ModificationDate>
+ <Version>7.0</Version>
+ <Desktop>false</Desktop>
+ <Dependency>
+  <STV>SageTV7</STV>
+  <MinVersion>7.0</MinVersion>
+ </Dependency>
+<PluginType>STVI</PluginType>
+ <Package>
+   <PackageType>STVI</PackageType>
+   <Location>http://forums.sagetv.com/forums/downloads.php?do=file&amp;id=377&amp;act=down</Location>
+   <MD5>4535e81b7714862810f51629c8db99a1</MD5>
+ </Package>
+ <Screenshot><![CDATA[http://forums.sagetv.com/forums/attachment.php?attachmentid=10469&stc=1&d=1276473608]]></Screenshot>
+ <Screenshot><![CDATA[http://forums.sagetv.com/forums/attachment.php?attachmentid=10470&stc=1&d=1276473620]]></Screenshot>
+ <Screenshot><![CDATA[http://forums.sagetv.com/forums/attachment.php?attachmentid=10471&stc=1&d=1276473728]]></Screenshot>
+ <Webpage><![CDATA[http://forums.sagetv.com/forums/downloads.php?do=file&id=377]]></Webpage>
+<STVImport>PixelTest7.stvi</STVImport>
+<ReleaseNotes>Initial Release for SageTV 7.0
+</ReleaseNotes>
+</SageTVPlugin>

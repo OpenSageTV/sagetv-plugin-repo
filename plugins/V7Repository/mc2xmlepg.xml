@@ -1,0 +1,81 @@
+<SageTVPlugin>
+       <Name>mc2xml EPG Plugin</Name>
+       <Identifier>mc2xmlepg</Identifier>
+       <Description>
+Native SageTV plugin for accessing EPG data via mc2xml.
+
+Please read the user guide for this plugin CAREFULLY prior to installation!  There are special, additional steps required to install and uninstall this plugin.
+
+Please note that some features of this plugin are disabled without a sagetv-addons license.  This is NOT the same as your SageTV server, client, or PlaceShifter software license.  It is separate and can be obtained from my project web site at http://sagetv-addons.googlecode.com
+       </Description>
+       <Author>Slugger</Author>
+       <CreationDate>2011.10.15</CreationDate>
+       <ModificationDate>2012.07.25</ModificationDate>
+       <Version beta="true">0.0.1.1795</Version>
+       <ResourcePath>plugins/mc2xmlepg</ResourcePath>
+       <Webpage>http://sagetv-addons.googlecode.com</Webpage>
+       <Webpage>http://code.google.com/p/sagetv-addons/wiki/Mc2XmlEpgUserGuide</Webpage>
+       <Webpage>http://mc2xml.dyndns.org/</Webpage>
+       <ServerOnly>true</ServerOnly>
+       <Dependency>
+       		<JVM/>
+       		<MinVersion>1.5.0</MinVersion>
+       	</Dependency>
+       <Dependency>
+                <Core/>
+                <MinVersion>7.1.9.1</MinVersion>
+                <MaxVersion>7.1.9.256</MaxVersion>
+       </Dependency>
+        <Dependency>
+                <Plugin>groovy</Plugin>
+                <MinVersion>1.7.10</MinVersion>
+        </Dependency>
+        <Dependency>
+                <Plugin>log4j</Plugin>
+                <MinVersion>1.2.15</MinVersion>
+        </Dependency>
+        <Dependency>
+        	<Plugin>sagex-api</Plugin>
+        	<MinVersion>7.1.5.0</MinVersion>
+        </Dependency>
+        <Dependency>
+        	<Plugin>salicense</Plugin>
+        	<MinVersion>1.0.1</MinVersion>
+        </Dependency>
+        <Dependency>
+        	<Plugin>ant-launcher</Plugin>
+        	<MinVersion>1.8.2</MinVersion>
+        </Dependency>
+        <Dependency>
+        	<Plugin>HttpClient</Plugin>
+        	<MinVersion>4.0.1</MinVersion>
+        </Dependency>
+        <Dependency>
+        	<Plugin>tagsoup</Plugin>
+        	<MinVersion>1.2</MinVersion>
+        </Dependency>
+        <Dependency>
+        	<Plugin>commons-logging</Plugin>
+        	<MinVersion>1.1.1</MinVersion>
+        </Dependency>
+       <PluginType>Standard</PluginType>
+       <Package>
+               <PackageType>JAR</PackageType>
+               <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetv-addons/mc2xmlepg-jar-0.0.1.1795.zip</Location>
+               <MD5>0fefc66c19f82d25305eb97efaac7e88</MD5>
+               <Overwrite>true</Overwrite> <!-- Defaults to true -->
+       </Package>
+       <Package>
+       			<PackageType>System</PackageType>
+       			<Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetv-addons/mc2xmlepg-conf-0.0.1.1795.zip</Location>
+       			<MD5>be1bbe57333bd9c7413a1889515e67ce</MD5>
+       			<Overwrite>false</Overwrite>
+       	</Package>
+       	<ImplementationClass>com.google.code.sagetvaddons.mc2xmlepg.plugin.Plugin</ImplementationClass>
+       	<ReleaseNotes><![CDATA[
+CHANGES SINCE LAST RELEASE
+
+* Fix invalid use of text()
+
+		]]></ReleaseNotes>
+</SageTVPlugin>

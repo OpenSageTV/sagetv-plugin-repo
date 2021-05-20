@@ -1,0 +1,63 @@
+<SageTVPlugin>
+
+  <Name>Hide Channel Numbers in Program Guide</Name>
+
+  <Identifier>HideChannelNumbersInGuide</Identifier>
+
+
+
+<Description>
+
+This plugin hides the channel numbers in the program guide.
+
+</Description>
+
+
+
+  <Author>49studebaker</Author>
+
+  <CreationDate>2011.10.14</CreationDate>
+
+  <Version>1.0.0</Version>
+
+
+
+<Dependency>
+
+  <STV>SageTV7</STV>
+
+  <MinVersion>7.0</MinVersion>
+
+</Dependency>
+
+
+
+<PluginType>STVI</PluginType>
+
+<STVImport>HideChannelNumbersInGuide.stvi</STVImport>
+
+
+
+<Package>
+
+  <PackageType>STVI</PackageType>
+
+  <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/HideChannelNumbersInGuide.zip</Location>
+
+  <MD5>2CFB68E60EC0C04D7C32A971663240C1</MD5>
+
+</Package>
+
+
+
+<ReleaseNotes>
+
+*Version 1.0.0 - Initial release.
+
+</ReleaseNotes>
+
+
+
+
+<ModificationDate>2015-5-24</ModificationDate>
+</SageTVPlugin>

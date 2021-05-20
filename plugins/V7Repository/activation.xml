@@ -1,0 +1,18 @@
+<SageTVPlugin>
+  <Name>activation</Name>
+  <Identifier>activation</Identifier>
+  <Description>SageTV Dependency JAR Plugin for activation.jar - no need to download directly</Description>
+  <Author>flachbar, MeInMaui</Author>
+  <CreationDate>2010-04-08</CreationDate>
+  <ModificationDate>2010.04.27</ModificationDate>
+  <Version>1.0</Version>
+  <Desktop>false</Desktop>
+
+  <PluginType>Library</PluginType>
+
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/activation.jar.zip</Location>
+    <MD5>BC15E82EBD85356E31DFDF8B59092277</MD5>
+  </Package>
+</SageTVPlugin>

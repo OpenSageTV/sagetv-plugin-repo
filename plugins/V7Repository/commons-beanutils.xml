@@ -1,0 +1,18 @@
+<SageTVPlugin>
+       <Name>commons-beanutils</Name>
+       <Identifier>commons-beanutils</Identifier>
+       <Description>Apache Commons reflection utilities library - dependency only</Description>
+       <Author>Slugger</Author>
+       <CreationDate>2010.09.19</CreationDate>
+       <ModificationDate>2010.09.19</ModificationDate>
+       <Version>1.8.3</Version>
+       <ResourcePath>plugins/commons-beanutils</ResourcePath>
+       <Webpage>http://commons.apache.org/beanutils/</Webpage>
+       <PluginType>Library</PluginType>
+       <Package>
+               <PackageType>JAR</PackageType>
+               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/commons-beanutils-1.8.3.zip</Location>
+               <MD5>F00F0C51DAFB0F9CF1BE9063189895FA</MD5>
+               <Overwrite>true</Overwrite> <!-- Defaults to true -->
+       </Package>
+</SageTVPlugin>

@@ -1,0 +1,188 @@
+<SageTVPlugin>
+  <Name>Phoenix</Name>
+  <Identifier>phoenix</Identifier>
+  <Description>
+Phoenix is a STV replacement for SageTV7 providing the following features
+* Dynamic Menus
+* Custom Views
+* Custom Themes
+* Simplified UI Experience
+* Custom Landing Zones (Home Screens)
+  </Description>
+  <Screenshot><![CDATA[http://i253.photobucket.com/albums/hh68/bialio/phoenix/JanWeatherPS3SCreenShot.jpg]]></Screenshot>
+  <Author>meinmaui,bialio</Author>
+  <CreationDate>2011.01.15</CreationDate>
+  <ModificationDate>2013.06.12</ModificationDate>
+  <ResourcePath>plugins/phoenix</ResourcePath>
+  <Version beta="true">2.5.413</Version>
+  <Webpage><![CDATA[http://forums.sagetv.com/forums/showthread.php?t=50036]]></Webpage>
+
+  <Dependency>
+    <Plugin>phoenix-core</Plugin>
+    <MinVersion>2.5.5</MinVersion>
+  </Dependency>
+
+  <Dependency>
+    <Plugin>phoenix-compatability</Plugin>
+    <MinVersion>1.0.1</MinVersion>
+  </Dependency>
+
+  <PluginType>STV</PluginType>
+
+  <Package>
+    <PackageType>STV</PackageType>
+    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagephoenix/phoenix-stv-2.5.413.zip</Location>
+    <MD5>7824f39285f2c550b2adb08d61a93459</MD5>
+  </Package>
+
+  <Package>
+    <PackageType>System</PackageType>
+    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagephoenix/phoenix-theme-2.3.409.zip</Location>
+    <MD5>c33ceae1e8973105739b3b57d495e692</MD5>
+  </Package>
+
+  <Package>
+    <PackageType>System</PackageType>
+    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagephoenix/phoenix-theme2-2.5.201.zip</Location>
+    <MD5>f8664e810c6cf729f2bc1e77e70f02b0</MD5>
+  </Package>
+
+  <!--
+  <Package>
+    <PackageType>System</PackageType>
+    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagephoenix/phoenix-theme-2.5.413.zip</Location>
+    <MD5>b81341150c71853064dbfd75c214e4fb</MD5>
+  </Package>
+  -->
+
+  <ReleaseNotes><![CDATA[
+Build 413
+1) 'Goto current time' enabled in EPG
+2) Queuing Arrows added to horizontal navigation in LZ (can be enabled)
+3) Don't allow playing of past airings
+4) Refresh view after deleting a folder
+5) Fixed select / enter handling when called from a music track.
+6) Memories menu added to Landing Zone
+
+Build 411
+1. Misc updates for Phoenix
+2. Misc updates for Phoenix 2
+
+Build 410
+1. Fixes bug whereby sometimes Phoenix would not load the first time on some systems
+
+Build 409
+1. Weather added (using Yahoo Weather) to top navbar and the Metro Landing Zone
+2. Weather screen still not update
+3. New weather backgrounds
+
+Build 408
+1. Weather functionality hidden (pending update for Google Weather)
+2. Media Snapshot : Hitting 'Record' in the UMB while on a media item opens up the 'Media Snapshot' - this gives you 9 thumbnails of that recording, spaced evenly through the duration of the item. Easy way to check if you got the right recording.
+3. Moved OSD volume / message area down a little so that it doesn't overlap with the top OSD elements.
+4. Tweaked Comskip Autoskip logic, hopefully it will be more robust now. There is a small red dot added to the timebar when the Autoskip is active, this is to help with future debugging if it's not working.
+5. Added Season / Episode info into EPG show info.
+6. Updated Music browser to use optimized background loading
+7. Title sort in the UMB can be configured to always ignore leading prepositions. This setting is in UMB options.
+8. Added remote command listeners for "Video Library", "Picture Library", "Recording Schedule", "Live TV", "Library", "Setup", and "TV" sage commands.
+9. Fixed bug in recording activity on landing zone so that it only shows today and tomorrow.
+
+Build 407
+1) Global UI options
+* Simplified UI Options : This setting is enabled by default, and currently only effects the Detailed Information popup window. It basically simplifies the options that are visible by default. All the options are available, this just hides more of them initially. For instance, you have one option on an imported movie : 'Play'. As more areas of phoenix are modified for this 'minimal' approach, this setting will be tied into them.
+* Resume Without Prompting : bypasses the 'Resume or start from beginnning' prompt when enabled.
+
+2) New Universal Media Browser : "Inline" This browser replaces a lot of previous UMB variants - Movie Flow and Banner Flow are both being retired in favor of in this one. Old menu items using either of the old ones will still work, they just redirect to the Inline browser. It is called inline because browsing down to any folders happens 'inline'
+
+3) Grid Flow UMB
+* New options : direction of navigation (Horizontal or Vertical), hide-able information pane, as well as alpha masks that can be displayed on top of the background fanart.
+* Speed improvements.
+* Better illumination of the highlighted item in the grid.
+
+4) Option in Video OSD called 'Auto Skip Activity Buffer' - this is a timer in milliseconds that disables autoskip functionality for that long after a user interaction. So if your autoskip hits before the commercial starts, you can skip back and it won't try to skip again.
+5) Landing Zone TV : when there are conflicts a 'Resolve Conflicts' item is added to the menu that directs into the default STV's conflict resolution screen.
+6) Parental Controls : Phoenix uses the Parental Lock Code defined in the default UI. Basically the way it works (in Phoenix) is that IF there is Parental Lock Code defined, parental controls are on. If you want to disable them you have to clear the code.
+7) Other stuff.
+
+Build 406
+1) Fix for the Grid View not working on in build 405
+
+Build 405
+1) Two new landing zones. (Sage and Metro)
+2) Fanart backgrounds for landing zones.
+3) Music OSD - option added to always show the album cover during playback.
+4) Music OSD - Fanart backgrounds supported as a wallpaper type. Note that this adds Fanart backgrounds, if available, to the music backgrounds, and biases the random selection towards artist backgrounds. But you will still see some of the generic music art.
+4a) Fixed green bar or right edge of music OSD screen (not everyone was seeing this)
+5) Universal Media Browser :
+Select to Browse : this setting has been there for a while, but only active in the Single List. It is now used for both single list and banner flow. Basically this toggles the behaviour of the Right and Select keys - when enabled, Select navigates deeper into the VFS, and Right shows you the Detailed info for the folder (where you can delete all, or set all watched, etc).
+Tall List : this is variation on Single List
+
+New Option to hide the folder icon in the UMB.
+6) Landing Zone Menu updates :
+"Now Playing" item added to TV and Video (only visible when there is a video file going) and Music (only visible when there is music playing) - this is a menu item that gets you back to the playback screen.
+"Play DVD" item added to Video menu - plays a physical DVD on clients if there is one in the drive.
+7) Lots of little optimizations
+8) Detailed Info popup for Folders tweaked so that it works better - you'll see this more often (see 'Select to Browse' above)
+9) Music Browser
+Alpha Filter support - hit numbers to filter the list down to items starting with a particular letter.
+Action Menu support - Sort / Group on the fly are available. These are not sticky yet. Filters are not supported here yet either.
+10) Weather Background flakiness fixed.
+11) Action Menu - Grouping has an option now from the action menu to Keep or Prune folders - this gets rid of folders with a single item and promotes that item.
+12) A bunch of other stuff.
+
+Build 404
+1) Music Support
+2) New Filters (Recently Watched, Partially Watched)
+3) New Groupers (First Letter)
+
+Build 403
+1) Full Screen EPG
+2) Landing Zone:
+Option to set the gradient level for cross bars in Horizontal and Cross
+Added 'Customize Landing Zone' to the Global Options (contextual) menu, can be hidden
+Recording activity refactored to show more consistently, also now it is 'Recording Soon' instead of today, looking at the next 24 hours rather than from now until midnight.
+3) UMB Settings : new option to 'Show Watched Icon' in list items. Values are Never, TV, TV and Home Video, Always
+4) Video OSD Settings : new setting to specify the alpha value of the OSD mask.
+5) Landing Menu Customization
+Removed most of the hidden by default entries in the Landing Menu
+Added the ability to add Menu's and MenuItems to the Landing Menu
+Menu Items that are added are currently limited to Media Browsers - the UI guides you through selecting a View and Browser to use.
+6) Combined / consolidated vfs.xml and x-vfs.xml.
+7) New skin called 'Ice'
+8) Action Menu (UMB)
+enabled filters. Filters are not sticky.
+added ability to remove a sort / filter / group
+9) EPG Updates
+Added day of week to the date shown in the top left corner.
+Added option in Option Menu to goto the current time
+Handle the record button
+Direct entry of channel number now goes to that channel in the guide
+For items in the guide that are currently airing, a delay before tuning is introduced when 'Select' is pressed. During this delay, you can hit 'select' again to see the detailed info, or 'left' to cancel tuning. Default duration of the delay is 2 seconds.
+10) Moved Single List UMB and Detailed Info screens to use the Global Program Info - makes the info presented there more consistent with other places in the UI.
+11) Added listener for 'SageTV Recordings' event. This is the 'Videos' key on the Sage remote control. Goes to the TV view with the Default UMB by default, although this mapping can be fully changed in XML / properties.
+
+Moved the umb play/watched listeners into themes and added don't like listeners.
+Added the play/watched/don't like listeners to the Box landing zone
+Added a mouse click listener to the message alert icons to bring up the system messages display.
+Added umb options to disable the media count and media path displays at the bottom of the screen.
+
+Build 402
+1.  Fixed: Bluray not showing in views issue
+
+Build 401
+1.	Fixed: Play button plays currently selected item in UMB
+2.	Added: Watched button toggles watched status for currently selected item in UMB
+3.	Added: Closed Caption support under Playback Options in Video OSD options menu
+4.	Added: Audio Language selection under Playback Options in Video OSD options menu
+5.	Added: Blu-ray Title select to Video OSD options menu
+6.	Added: Subtitle Friendly time bar. Can be selected from Video OSD configuration options in options menu
+7.	Adjusted animation timing in TV Series UMB to make navigation more responsive.
+8.	Fixed: Display of current Phoenix STV version in System Info display
+9.  Alpha Filter quick nav
+10. Fixed a NPE in the landing zone's regarding the 'Recording Activity'
+
+Build 400
+1. Video Thumbnails
+2. First Public Beta Release
+  ]]></ReleaseNotes>
+</SageTVPlugin>

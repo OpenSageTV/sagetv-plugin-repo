@@ -1,0 +1,67 @@
+<SageTVPlugin>
+
+  <Name>DVBE4SageEPGImporter - DVBE4Sage EPG Importer Services</Name>
+
+  <Identifier>dvbe4sage-epg-importer</Identifier>
+
+  <Description>This plugin will accept the EPG data parsed from DVBE4Sage and import it to your configured lineup</Description>
+
+  <Author>Jabroni</Author>
+
+  <CreationDate>2011.09.10</CreationDate>
+
+  <ModificationDate>2011.09.10</ModificationDate>
+
+  <Version>1.0.0</Version>
+
+  <Desktop>false</Desktop>
+
+  <Webpage><![CDATA[http://code.google.com/p/dvbe4sage/]]></Webpage>
+
+
+
+
+
+  <Dependency>
+
+    <Plugin>sagex-api</Plugin>
+
+    <MinVersion>7.1.9.1</MinVersion>
+
+  </Dependency>
+
+
+
+  <PluginType>Standard</PluginType>
+
+
+
+  <Package>
+
+    <PackageType>JAR</PackageType>
+
+    <Location>http://dl.dropbox.com/u/17862/dvb4sageepgimport-1.0.0.zip</Location>
+
+    <MD5>53445902b42dad329d1cd6cc9f62bd06</MD5>
+
+  </Package>
+
+
+
+  <!-- Plugin Class is in the core sagex-api jar -->
+
+  <ImplementationClass>org.dvbe4sage.DVBEPGPlugin</ImplementationClass>
+
+
+
+  <ReleaseNotes>
+
+1.0
+
+* First Release. Be sure to have a fully configured DVBE4Sage Instance (which supports EIT Parsing) and point it to your listening Importer port.
+
+  </ReleaseNotes>
+
+
+
+</SageTVPlugin>

@@ -1,0 +1,59 @@
+<SageTVPlugin>
+
+    <Name>Telnet Protocol</Name>
+
+    <Identifier>telnet</Identifier>
+
+    <Version>1.0.2</Version>
+
+    <Description>Provides Telnet protocol support for the SageTV Media Extender family - no need to install separately.</Description>
+
+    <Author>routerunner</Author>
+
+    <PluginType>Library</PluginType>
+
+    <CreationDate>2012-01-02</CreationDate>
+
+    <ModificationDate>2012-01-21</ModificationDate>
+
+    <ReleaseNotes>
+
+1.0.0 - First Public Release
+
+1.0.1 - Added extra methods
+
+1.0.2 - Fix protocol command issue
+
+    </ReleaseNotes>
+
+    <Desktop>false</Desktop>
+
+    <Package>
+
+        <PackageType>JAR</PackageType>
+
+        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/telnet_1_0_2.zip</Location>
+
+        <MD5>BC643EAC2C8ECA50E043127B54AE7B91</MD5>
+
+        <Overwrite>true</Overwrite>
+
+    </Package>
+
+    <Dependency>
+
+        <JVM />
+
+        <MinVersion>1.5</MinVersion>
+
+    </Dependency>
+
+    <Dependency>
+
+        <Core />
+
+        <MinVersion>7.1</MinVersion>
+
+    </Dependency>
+
+</SageTVPlugin>

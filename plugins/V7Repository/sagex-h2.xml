@@ -1,0 +1,33 @@
+<SageTVPlugin>
+  <Name>SageTV H2 Database</Name>
+  <Identifier>sagex-h2</Identifier>
+  <Description>
+     SageTV H2 Core Plugin - A plugin that allows developers to utilize the H2 SQL database.  Includes the H2 jar and plugin controls to control the TCP, Web, an PG access serv
+ices.
+  </Description>
+  <Author>jphipps</Author>
+  <CreationDate>2010-04-08</CreationDate>
+  <ModificationDate>2010.11.13</ModificationDate>
+  <Version>1.0.8</Version>
+  <Desktop>false</Desktop>
+  <ReleaseNotes>
+      1.0.8 - Add additional custom functions and upgrade h2 to 1.2.145
+      *Note: The default Tcp port for H2 conflicts with the default port for Squeeze box, so you must change the port on one of the plugins to allow both to be used.
+  </ReleaseNotes>
+  <Dependency>
+    <Plugin>sagex-api</Plugin>
+    <MinVersion>7</MinVersion>
+  </Dependency>
+  <PluginType>Standard</PluginType>
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/ortus/sagex-h2.jar-1.0.8.zip</Location>
+    <MD5>771654e1f1ec1287ba83a8c6a28ab5fc</MD5>
+  </Package>
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/ortus/h2-1.2.145.jar.zip</Location>
+    <MD5>46ff35d82e22e106d0e9d430b3770824</MD5>
+  </Package>
+  <ImplementationClass>sagex.h2.SagexH2Plugin</ImplementationClass>
+</SageTVPlugin>

@@ -1,0 +1,145 @@
+<SageTVPlugin>
+
+<Name>Diamond Legacy - legacy version of Diamond - same as 3.321</Name>
+
+<Identifier>DiamondLegacySTVi</Identifier>
+
+<Description>This is the same release as the 3.321 diamond stvi and is only for users that have upgraded to Gemstone (once released) and wish to return to Diamond... as unlikely as that may be!!!! It does not contain ANY updates.</Description>
+
+<Author>JOrton,PluckyHD,EvilPenguin,jusjoken</Author>
+
+<CreationDate>2010.11.01</CreationDate>
+
+<ModificationDate>2015.10.17</ModificationDate>
+
+<Version beta="true">3.322</Version>
+
+
+
+<Dependency>
+
+ <Core/>
+
+  <MinVersion>7.1.9.1</MinVersion>
+
+</Dependency>
+
+
+
+<Dependency>
+
+ <STV>SageTV7</STV>
+
+ <MinVersion>7.1.9.6</MinVersion>
+
+</Dependency>
+
+
+
+<Dependency>
+
+ <Plugin>phoenix-api</Plugin>
+
+ <MinVersion>2.3.23</MinVersion>
+
+</Dependency>
+
+
+
+<Dependency>
+
+  <Plugin>jusjokenWIconsAPI</Plugin>
+
+  <MinVersion>1.006</MinVersion>
+
+</Dependency>
+
+
+
+<Dependency>
+
+ <Plugin>sage-diamond-api</Plugin>
+
+ <MinVersion>3.30</MinVersion>
+
+</Dependency>
+
+
+
+<Screenshot>http://babgvant.com/downloads/pluckyhd/DiamondImages/Diamond_Simplified_3.jpg</Screenshot>
+
+<Screenshot>http://babgvant.com/downloads/pluckyhd/DiamondImages/Diamond_Simplified_8.jpg</Screenshot>
+
+<Screenshot>http://babgvant.com/downloads/pluckyhd/DiamondImages/Diamond_Simplified_9.jpg</Screenshot>
+
+<Screenshot>http://babgvant.com/downloads/pluckyhd/DiamondImages/Diamond_Simplified_1.jpg</Screenshot>
+
+<Screenshot>http://babgvant.com/downloads/pluckyhd/DiamondImages/Diamond_Simplified_4.jpg</Screenshot>
+
+<Screenshot>http://babgvant.com/downloads/pluckyhd/DiamondImages/Diamond_Simplified_5.jpg</Screenshot>
+
+<Screenshot>http://babgvant.com/downloads/pluckyhd/DiamondImages/Diamond_Simplified_6.jpg</Screenshot>
+
+<Screenshot>http://babgvant.com/downloads/pluckyhd/DiamondImages/Diamond_Simplified_7.jpg</Screenshot>
+
+<Screenshot>http://babgvant.com/downloads/pluckyhd/DiamondImages/Diamond_Simplified_9.jpg</Screenshot>
+
+<Screenshot>http://babgvant.com/downloads/pluckyhd/DiamondImages/Diamond_Simplified_2.jpg</Screenshot>
+
+
+
+<Webpage>http://code.google.com/p/sagediamond/wiki/DiamondInformation</Webpage>
+
+<Webpage>http://code.google.com/p/sagediamond/</Webpage>
+
+
+
+<PluginType>STVI</PluginType>
+
+
+
+<Package>
+
+ <PackageType>STVI</PackageType>
+
+ <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/diamond-legacy/DiamondB3.30.zip</Location>
+
+ <MD5>bf157a7e2ee3607b4426c465e34c9520</MD5>
+
+</Package>
+
+
+
+<Package>
+
+ <PackageType>STVI</PackageType>
+
+ <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/diamond-legacy/DiamondSTVIB3.32.zip</Location>
+
+ <MD5>ae8275f8de1713a59ebb74d9fda0c112</MD5>
+
+</Package>
+
+
+
+<STVImport>DiamondB3.32.stvi</STVImport>
+
+
+
+<ReleaseNotes>
+
+  Version 3.322 NO CHNAGES - only moved the source files to BinTray from Google Code
+
+  Version 3.321 changes only related to WIcons update for weather icons for the NWS forecasts.
+
+  Version 3.320 Added support for Day/Night Weather icons. Fixed Watched Count issue.
+
+  Version 3.312 Same as 3.311 with correction to Core level in install package.
+
+  Version 3.311  Release to support the new Weather system in SageTV.
+
+</ReleaseNotes>
+
+
+
+</SageTVPlugin>

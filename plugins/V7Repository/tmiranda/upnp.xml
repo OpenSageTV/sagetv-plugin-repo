@@ -1,0 +1,105 @@
+<SageTVPlugin>
+
+  <Name>UPnP (PlayOn) Browser</Name>
+
+  <Identifier>upnp</Identifier>
+
+  <Author>tmiranda</Author>
+
+  <CreationDate>2015.11.14</CreationDate>
+
+  <ModificationDate>2016.06.26</ModificationDate>
+
+  <Version beta="false">0.06</Version>
+
+  <Desktop>false</Desktop>
+
+
+
+  <Description>UPnP (Universal Plug and Play) browser for SageTV.</Description>
+
+
+
+  <Dependency>
+
+    <STV>SageTV7</STV>
+
+    <MinVersion>7.0</MinVersion>
+
+  </Dependency>
+
+
+
+  <Dependency>
+
+    <Plugin>upnp-support</Plugin>
+
+	<MinVersion>0.06</MinVersion>
+
+  </Dependency>
+
+
+
+  <PluginType>STVI</PluginType>
+
+
+
+  <Package>
+
+    <PackageType>STVI</PackageType>
+
+    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/UPNP/UPnP-0.06.zip</Location>
+
+    <MD5>CF1EF63FC47F5D18B7A457D4AFD467A9</MD5>
+
+  </Package>
+
+
+
+  <STVImport>UPnP.stvi</STVImport>
+
+
+
+  <ReleaseNotes>Version 0.06:
+
+- Added ability to watch with padding to overcome the issue of some sources adding commercials which extend the reported run time.
+
+
+
+Version 0.05:
+
+- Added ability to hide devices.
+
+- Fixed a bug that would cause the wrong server IP if the setting was cleared by the user.
+
+
+
+Version 0.04:
+
+- Added very rudimentary UPnP server support.
+
+- Added ability to do progressive playback of videos.
+
+- Added support for containers that contained mixed content.
+
+- Added recording options.
+
+- Now handles mouse click on preview window.
+
+- Fixed a bug that prevented downloaded files from being deleted after being watched.
+
+
+
+Version 0.02:
+
+- Added ability to record videos.
+
+
+
+Version 0.01:
+
+- Initial Alpha.</ReleaseNotes>
+
+
+
+</SageTVPlugin>

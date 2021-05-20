@@ -1,0 +1,67 @@
+<SageTVPlugin>
+
+  <Name>System Monitor Utilities</Name>
+
+
+
+  <Identifier>SYSMONUTILS</Identifier>
+
+
+
+  <Description>Utilities for the System Monitor plugin. No need to install this directly.</Description>
+
+
+
+  <Author>tmiranda</Author>
+
+
+
+  <CreationDate>2010.05.25</CreationDate>
+
+
+
+  <ModificationDate>2015.11.21</ModificationDate>
+
+
+
+  <Version beta="false">1.02</Version>
+
+
+
+  <Desktop>false</Desktop>
+
+
+
+  <Dependency>
+
+   <STV>SageTV7</STV>
+
+   <MinVersion>7.0</MinVersion>
+
+  </Dependency>
+
+
+
+  <PluginType>Library</PluginType>
+
+
+
+  <Package>
+
+    <PackageType>JAR</PackageType>
+
+    <Location>http://github.com/tmiranda1962/SysMonUtils/releases/download/v1.02/SystemMonitorJARs-v1.01.zip</Location>
+
+    <MD5>2EC67EC8F1138E35CA20D802B105604B</MD5>
+
+  </Package>
+
+
+
+<ReleaseNotes>Version 1.02: Moved from Google Code to GitHub.
+
+Version 1.01: Fixed a bug that caused a solid yellow bar on Linux systems.</ReleaseNotes>
+
+
+
+</SageTVPlugin>

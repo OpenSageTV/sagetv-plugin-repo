@@ -1,0 +1,29 @@
+<SageTVPlugin>
+	<Name>Sage Object Metadata Factory</Name>
+	<Identifier>somf</Identifier>
+	<Description>Generate metadata maps for Sage objects - dependency only</Description>
+	<Author>Slugger</Author>
+	<CreationDate>2010.10.16</CreationDate>
+	<ModificationDate>2011.01.19</ModificationDate>
+	<Version beta="true">1.0.0.1338</Version>
+	<ResourcePath>plugins/somf</ResourcePath>
+	<Webpage>http://sagetv-addons.googlecode.com</Webpage>
+	<Dependency>
+		<JVM/>
+		<MinVersion>1.5.0</MinVersion>
+	</Dependency>
+	<Dependency>
+		<Core/>
+		<MinVersion>7.0.9</MinVersion>
+	</Dependency>
+	<Dependency>
+		<Plugin>sagex-api</Plugin>
+		<MinVersion>7.0.9</MinVersion>
+	</Dependency>
+	<PluginType>Library</PluginType>
+		<Package>
+		<PackageType>JAR</PackageType>
+		<Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetv-addons/somf-1.0.0.1338.zip</Location>
+		<MD5>f6a8b92dfc7042c1f5c900774fcff891</MD5>
+	</Package>
+</SageTVPlugin>

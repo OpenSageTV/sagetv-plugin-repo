@@ -1,0 +1,20 @@
+<SageTVPlugin>
+  <Name>Recording Schedule Shortcut</Name>
+  <Identifier>FuzzyJumpRecordings</Identifier>
+  <Description>Sets the RECORD button as a shortcut to the recording schedule (unless focused/playing a media object that will handle the RECORD press)</Description>
+  <Author>Fuzzy</Author>
+  <CreationDate>2011-01-04</CreationDate>
+  <ModificationDate>2011.01.04</ModificationDate>
+  <Version>1.0.0</Version>
+  <PluginType>STVI</PluginType>
+  <ReleaseNotes>1.0.0 - Initial Release</ReleaseNotes>
+  <Dependency>
+    <STV>SageTV7</STV>
+    <MinVersion>7.0</MinVersion>
+ </Dependency><Package>
+    <PackageType>STVI</PackageType>
+   <Location>http://dl.dropbox.com/u/8593871/Fuzzy_JumpRecordings.zip</Location>
+    <MD5>fedb2c60308a57216867ed1879972635</MD5>
+  </Package>
+  <STVImport>Fuzzy_JumpRecordings.stvi</STVImport>
+</SageTVPlugin>

@@ -1,0 +1,57 @@
+<SageTVPlugin>
+
+  <Name>Hide Footer Panel</Name>
+
+  <Identifier>HideFooter</Identifier>
+
+  <Description>Hides the footer panel.</Description>
+
+  <Author>49studebaker</Author>
+
+  <CreationDate>2010.06.01</CreationDate>
+
+  <ModificationDate>2010.06.03</ModificationDate>
+
+  <Version>1.0.1</Version>
+
+
+
+<Dependency>
+
+  <STV>SageTV7</STV>
+
+  <MinVersion>7.0</MinVersion>
+
+</Dependency>
+
+
+
+<PluginType>STVI</PluginType>
+
+<STVImport>HideFooter.stvi</STVImport>
+
+
+
+<Package>
+
+  <PackageType>STVI</PackageType>
+
+  <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/HideFooter.zip</Location>
+
+  <MD5>954F122839358DA0413ED2173CB7EBD1</MD5>
+
+</Package>
+
+
+
+<ReleaseNotes>
+
+Version 1.0 - Initial release.
+
+Version 1.0.1 - Fixed bug.
+
+</ReleaseNotes>
+
+
+
+</SageTVPlugin>

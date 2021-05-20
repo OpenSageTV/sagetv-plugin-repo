@@ -1,0 +1,48 @@
+<SageTVPlugin>
+
+  <Name>Recently Watched</Name>
+
+  <Identifier>RECENTLYWATCHED</Identifier>
+
+  <Description>Recently Watched for SageTV 7. Keep track of what shows you have recently watched.</Description>
+
+  <Author>tmiranda</Author>
+
+  <CreationDate>2010.07.01</CreationDate>
+
+  <ModificationDate>2011.01.31</ModificationDate>
+
+  <Version beta="false">1.4</Version>
+
+  <Desktop>false</Desktop>
+
+  <Webpage>http://forums.sagetv.com/forums/showthread.php?t=47420</Webpage>
+
+ <Dependency>
+	<STV>SageTV7</STV>
+	<MinVersion>7.0</MinVersion>
+  </Dependency>
+
+  <Dependency>
+    <Plugin>TMUTILS</Plugin>
+    <MinVersion>1.20</MinVersion>
+  </Dependency>
+
+  <PluginType>STVI</PluginType>
+
+  <Package>
+      <PackageType>STVI</PackageType>
+      <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/tmiranda/RecentlyWatched-v1.4.zip</Location>
+      <MD5>B71B0DCE890B391C16E73826C135792F</MD5>
+  </Package>
+
+<STVImport>RecentlyWatched.stvi</STVImport>
+
+<ReleaseNotes>Version 1.4:
+- Fixed bug that caused the wrong watched time to be displayed.
+- Fixed incompatibility with PlayON Plugin.
+
+Version 1.3. Fixed bug that caused Online Videos to fail.
+
+Version 1.2. Fixed dependency on sagex API.</ReleaseNotes>
+</SageTVPlugin>

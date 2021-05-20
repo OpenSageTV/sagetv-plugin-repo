@@ -1,0 +1,19 @@
+<SageTVPlugin>
+<Name>Favorites Filter JAR</Name>
+<Identifier>FavoriatesFilterJar</Identifier>
+<Description>Favorites Filter JAR to support Favorites Filter.  This JAR has no use without the Favorites Filter UI Mod.</Description>
+<Author>LaManSoft</Author>
+<CreationDate>2010.06.22</CreationDate>
+<ModificationDate>2010.06.22</ModificationDate>
+<Version>1.0.0</Version>
+<PluginType>Library</PluginType>
+<Package>
+	<PackageType>JAR</PackageType>
+	<Location>http://www.lamansoft.com/ff/FF_1.0.0.jar.zip</Location>
+	<MD5>5714123ae12e5b85f948d6a829e603e4</MD5>
+</Package>
+<Dependency>
+	<Core/>
+	<MinVersion>7.0.8</MinVersion>
+</Dependency>
+</SageTVPlugin>

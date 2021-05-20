@@ -1,0 +1,65 @@
+<SageTVPlugin>
+
+  <Name>Limit Intelligent Recordings</Name>
+
+  <Identifier>limitintelligent</Identifier>
+
+  <Author>tmiranda</Author>
+
+  <CreationDate>2012.01.02</CreationDate>
+
+  <ModificationDate>2015.11.29</ModificationDate>
+
+  <Version beta="true">1.10</Version>
+
+  <Desktop>false</Desktop>
+
+
+
+  <Description>Limit the number of episodes that SageTV will keep of intelligent recordings.</Description>
+
+
+
+  <Dependency>
+
+    <Plugin>sagex-api</Plugin>
+
+    <MinVersion>7.1.9.3</MinVersion>
+
+  </Dependency>
+
+
+
+  <PluginType>Standard</PluginType>
+
+
+
+  <Package>
+
+    <PackageType>JAR</PackageType>
+
+    <Location>http://github.com/tmiranda1962/Limit-Intelligent-Recordings/releases/download/v1.10/LimitIntelligentRecordings-1.00.zip</Location>
+
+    <MD5>B4B2070ADA01EEE202A8A908F809CE55</MD5>
+
+  </Package>
+
+
+
+  <ImplementationClass>tmiranda.lir.Plugin</ImplementationClass>
+
+
+
+  <ReleaseNotes>Version 1.10:
+
+- Moved hosting from Google Code to GutHub. No functionality changes.
+
+Version 1.00:
+
+- Initial Release.
+
+  </ReleaseNotes>
+
+
+
+</SageTVPlugin>

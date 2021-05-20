@@ -1,0 +1,41 @@
+<SageTVPlugin>
+
+
+
+  <Name>seamless-http</Name>
+
+  <Identifier>seamless-http</Identifier>
+
+  <Author>tmiranda</Author>
+
+  <CreationDate>2012.02.20</CreationDate>
+
+  <ModificationDate>2015.11.15</ModificationDate>
+
+  <Version beta="false">1.1.0</Version>
+
+  <Desktop>false</Desktop>
+
+
+
+  <Description>seamless-http library for SageTV. No need to download directly.</Description>
+
+
+
+  <PluginType>Library</PluginType>
+
+
+
+  <Package>
+
+    <PackageType>JAR</PackageType>
+
+    <Location>http://github.com/tmiranda1962/cling/releases/download/2.0.1/seamless-http-1.1.0.zip</Location>
+
+    <MD5>858CE1FAB8BB21CC9EC744E630BCE7B2</MD5>
+
+  </Package>
+
+
+
+</SageTVPlugin>

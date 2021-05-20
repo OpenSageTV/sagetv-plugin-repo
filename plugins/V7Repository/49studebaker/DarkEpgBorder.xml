@@ -1,0 +1,51 @@
+<SageTVPlugin>
+
+  <Name>Dark EPG Channel/Time Border</Name>
+
+  <Identifier>DarkEpgBorder</Identifier>
+
+  <Description>This plugin makes the EPG channel/time border dark.</Description>
+
+  <Author>49studebaker</Author>
+
+  <CreationDate>2015.06.05</CreationDate>
+
+  <Version>1.0</Version>
+
+
+
+<Dependency>
+
+  <STV>SageTV7</STV>
+
+  <MinVersion>7.0</MinVersion>
+
+</Dependency>
+
+
+
+<PluginType>STVI</PluginType>
+
+<STVImport>DarkEpgBorder.stvi</STVImport>
+
+
+
+<Package>
+
+  <PackageType>STVI</PackageType>
+
+  <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/DarkEpgBorder.zip</Location>
+
+  <MD5>D563AEE00B91BADB751DE14B4996037F</MD5>
+
+</Package>
+
+
+
+<ReleaseNotes>Version 1.0 - Initial release.</ReleaseNotes>
+
+
+
+
+<ModificationDate>2015-6-5</ModificationDate>
+</SageTVPlugin>

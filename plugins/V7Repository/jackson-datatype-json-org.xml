@@ -1,0 +1,241 @@
+<SageTVPlugin>
+
+
+
+
+
+
+
+  <Name>jackson-datatype-json-org</Name>
+
+
+
+
+
+
+
+  <Identifier>jackson-datatype-json-org</Identifier>
+
+
+
+
+
+
+
+  <Description>Jackson Datatype for json.org JSON Library</Description>
+
+
+
+
+
+
+
+  <Author>Slugger</Author>
+
+
+
+
+
+
+
+  <CreationDate>2015.03.22</CreationDate>
+
+
+
+
+
+
+
+  <ModificationDate>2015.03.22</ModificationDate>
+
+
+
+
+
+
+
+  <Version>2.5.1.1</Version>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <PluginType>Library</PluginType>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <Package>
+
+
+
+
+
+
+
+    <PackageType>JAR</PackageType>
+
+
+
+
+
+
+
+    <Location>http://sourceforge.net/projects/sagetv-addons/files/3rd_party_libs/jackson-datatype-json-org-2.5.1.zip/download</Location>
+
+
+
+
+
+
+
+    <MD5>fd2bdd91fa026fec95a21890a43a7ab9</MD5>
+
+
+
+
+
+
+
+  </Package>
+
+
+
+
+
+
+
+  <Dependency>
+
+
+
+    <Plugin>jackson-core</Plugin>
+
+
+
+    <MinVersion>2.5.1.1</MinVersion>
+
+
+
+  </Dependency>
+
+
+
+
+
+
+
+  <Dependency>
+
+
+
+    <Plugin>jackson-databind</Plugin>
+
+
+
+    <MinVersion>2.5.1.1</MinVersion>
+
+
+
+  </Dependency>
+
+
+
+
+
+
+
+  <Dependency>
+
+
+
+    <Plugin>jackson-annotations</Plugin>
+
+
+
+    <MinVersion>2.5.1.1</MinVersion>
+
+
+
+  </Dependency>
+
+
+
+
+
+
+
+  <Dependency>
+
+
+
+	<Plugin>json</Plugin>
+
+
+
+	<MinVersion>20140107.1</MinVersion>
+
+
+
+  </Dependency>
+
+
+
+
+
+
+
+  <ReleaseNotes>
+
+
+
+
+
+
+
+  Library used by Phoenix and TheMovieDB
+
+
+
+
+
+
+
+  </ReleaseNotes>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</SageTVPlugin>

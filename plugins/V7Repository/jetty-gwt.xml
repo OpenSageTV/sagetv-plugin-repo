@@ -1,0 +1,18 @@
+<SageTVPlugin>
+       <Name>jetty-gwt</Name>
+       <Identifier>jetty-gwt</Identifier>
+       <Description>Provides comet support for GWT-RPC apps running in Jetty - dependency only</Description>
+       <Author>Slugger</Author>
+       <CreationDate>2010.08.31</CreationDate>
+       <ModificationDate>2010.08.31</ModificationDate>
+       <Version>6.1.14</Version>
+       <ResourcePath>plugins/jetty-gwt</ResourcePath>
+       <Webpage>http://jetty.codehaus.org/jetty/</Webpage>
+       <PluginType>Library</PluginType>
+       <Package>
+               <PackageType>JAR</PackageType>
+               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/jetty-gwt-6.1.14.zip</Location>
+               <MD5>6DE0D42893CE78D7D70A85B13A5421F4</MD5>
+               <Overwrite>true</Overwrite> <!-- Defaults to true -->
+       </Package>
+</SageTVPlugin>

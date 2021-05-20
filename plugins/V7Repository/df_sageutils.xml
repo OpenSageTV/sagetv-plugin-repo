@@ -1,0 +1,18 @@
+<SageTVPlugin>
+  <Name>df_sageutils</Name>
+  <Identifier>df_sageutils</Identifier>
+  <Description>SageTV Dependency JAR Plugin for df_sageutils.jar - no need to download directly</Description>
+  <Author>flachbar, MeInMaui</Author>
+  <CreationDate>2010-04-08</CreationDate>
+  <ModificationDate>2010.04.27</ModificationDate>
+  <Version>1.0</Version>
+  <Desktop>false</Desktop>
+
+  <PluginType>Library</PluginType>
+
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/df_sageutils.jar.zip</Location>
+    <MD5>DCF9DF096E0161FD5060D9F6E581624E</MD5>
+  </Package>
+</SageTVPlugin>

@@ -1,0 +1,111 @@
+<SageTVPlugin>
+
+
+
+  <Name>Sage For Echo</Name>
+
+
+
+  <Identifier>sageforecho</Identifier>
+
+
+
+  <Description>Plugin needed to support the Amazon Echo skill to control SageTV.</Description>
+
+
+
+  <Author>tmiranda</Author>
+
+
+
+  <CreationDate>2016.9.29</CreationDate>
+
+  <ModificationDate>2017.02.05</ModificationDate>
+
+
+
+  <Version beta="true">0.05</Version>
+
+
+
+  <Desktop>false</Desktop>
+
+
+
+  <Webpage>https://forums.sagetv.com/forums/showthread.php?t=63281</Webpage>
+
+
+
+  <Dependency>
+
+    <STV>SageTV7</STV>
+
+      <MinVersion>7.0</MinVersion>
+
+  </Dependency>
+
+
+
+  <Dependency>
+
+    <Plugin>sageforechofunctions</Plugin>
+
+    <MinVersion>0.05</MinVersion>
+
+  </Dependency>
+
+
+
+  <PluginType>STVI</PluginType>
+
+
+
+  <Package>
+
+    <PackageType>STVI</PackageType>
+
+    <Location>http://bintray.com/tmiranda/SageTVPlugins/download_file?file_path=Echo%2Fecho-0.02.zip</Location>
+
+    <MD5>D96BD435F2B6C5BA715009A15ACB22B0</MD5>
+
+  </Package>
+
+
+
+  <STVImport>echo.stvi</STVImport>
+
+
+
+  <ReleaseNotes>Version 0.04, 0.05:
+
+- Force updating of echofunctions.
+
+
+
+Version 0.03:
+
+- Removed SageTV version 9 dependency.
+
+- echoFunction 0.03 dependency added.
+
+
+
+Version 0.02:
+
+- Added Great Room to STVi.
+
+- Updated JavaScript.
+
+- Now requires SageTV version 9.
+
+
+
+Version 0.01:
+
+- Initial release.
+
+  </ReleaseNotes>
+
+
+
+</SageTVPlugin>

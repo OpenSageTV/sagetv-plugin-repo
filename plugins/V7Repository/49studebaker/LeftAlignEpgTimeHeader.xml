@@ -1,0 +1,51 @@
+<SageTVPlugin>
+
+  <Name>Left-align EPG time header</Name>
+
+  <Identifier>LeftAlignEpgTimeHeader</Identifier>
+
+  <Description>Changes EPG time header from center-align to left-align</Description>
+
+  <Author>49studebaker</Author>
+
+  <CreationDate>2010.06.01</CreationDate>
+
+  <ModificationDate>2010.06.01</ModificationDate>
+
+  <Version>1.0</Version>
+
+
+
+<Dependency>
+
+  <STV>SageTV7</STV>
+
+  <MinVersion>7.0</MinVersion>
+
+</Dependency>
+
+
+
+<PluginType>STVI</PluginType>
+
+<STVImport>LeftAlignEpgTimeHeader.stvi</STVImport>
+
+
+
+<Package>
+
+  <PackageType>STVI</PackageType>
+
+  <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/LeftAlignEpgTimeHeader.zip</Location>
+
+  <MD5>CEB47C14C832A24EA129FF3FBC439F57</MD5>
+
+</Package>
+
+
+
+<ReleaseNotes>Version 1.0 - Initial release.</ReleaseNotes>
+
+
+
+</SageTVPlugin>

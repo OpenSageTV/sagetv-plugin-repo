@@ -1,0 +1,27 @@
+<SageTVPlugin>
+<Name>InControl (Connects SageTV/HomeSeer)</Name>
+<Identifier>InControl</Identifier>
+<Description>InControl is a SageTV plugin that works with the InControl HomeSeer plugin. It provides a real-time interactive interface between SageTV and Homeseer. With InControl, you are provided with easy to use, graphical interface in SageTV to control and monitor any HomeSeer devices. In addition, you can use HomeSeer to broadcast messages to SageTV.  This plugin requires your SageTV server is on a network and connected with an active HomeSeer (www.homeseer.com) server.</Description>
+<Author>Lamanmi - LaManSoft</Author>
+<CreationDate>2010.05.22</CreationDate>
+<ModificationDate>2011.02.12</ModificationDate>
+<Webpage>http://www.lamansoft.com</Webpage>
+<Screenshot>http://www.lamansoft.com/incontrol/InControlMain.gif</Screenshot>
+<Screenshot>http://www.lamansoft.com/incontrol/InControlMessage.gif</Screenshot>
+<Version>1.4.2</Version>
+<PluginType>STVI</PluginType>
+<Package>
+	<PackageType>STVI</PackageType>
+	<Location>http://www.lamansoft.com/incontrol/InControl_1.4.2.stvi.zip</Location>
+	<MD5>923837caa8de1108b22bcf78ca43b04c</MD5>
+</Package>
+<STVImport>InControl_1.4.2.stvi</STVImport>
+<Dependency>
+	<Core/>
+	<MinVersion>7.0.8</MinVersion>
+</Dependency>
+<Dependency>
+	<Plugin>InControlJar</Plugin>
+	<MinVersion>1.4.2</MinVersion>
+</Dependency>
+</SageTVPlugin>

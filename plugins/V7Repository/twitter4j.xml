@@ -1,0 +1,18 @@
+<SageTVPlugin>
+       <Name>twitter4j</Name>
+       <Identifier>twitter4j</Identifier>
+       <Description>Java implementation of Twitter API - dependency only</Description>
+       <Author>Slugger</Author>
+       <CreationDate>2010.05.30</CreationDate>
+       <ModificationDate>2010.05.30</ModificationDate>
+       <Version>2.1.2</Version>
+       <ResourcePath>plugins/twitter4j</ResourcePath>
+       <Webpage>http://www.twitter4j.org</Webpage>
+       <PluginType>Library</PluginType>
+       <Package>
+               <PackageType>JAR</PackageType>
+               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/twitter4j-2.1.2.zip</Location>
+               <MD5>8FEF72E15B00407461930A0318616C2C</MD5>
+               <Overwrite>true</Overwrite>
+       </Package>
+</SageTVPlugin>

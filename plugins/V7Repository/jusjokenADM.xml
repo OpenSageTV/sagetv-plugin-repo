@@ -1,0 +1,301 @@
+<SageTVPlugin>
+
+  <Name>ADM - Another Dynamic Menu</Name>
+
+  <Identifier>jusjokenADM</Identifier>
+
+  <Description>
+
+  A new approach to an old request - Another Dynamic Menu (ADM)
+
+   - works with Standard SageTV as well as with Diamond (see Diamond section in the Wiki)
+
+   - ADM Manager is always available from the Main Menu Options menu
+
+   - QLM - Quick Launch Menu - always available from nearly any SageTV screen
+
+   - How it works
+
+     - on initial load ADM will load a dynamic "Standard SageTV" menu item list
+
+     - ADM uses the Standard SageTV "Menu System" to display a dynamic list of user customizable Menu Items
+
+     - the menu Look and Feel is not ADM's - as it uses this from SageTV
+
+     - you can add, delete, hide any Menu Item or even start from scratch (Delete ALL) and build an entire new custom Menu
+
+     - you can Copy existing SageTV or Plugin added Menu Items to create new ADM Menu Items
+
+     - you can Create new Video Folder Browser Menu Items through the ADM Copy mode feature
+
+     - you can Create new File Browser Menu Items through the ADM Copy mode feature
+
+     - if you "mess up" you can always load the default menus and start again
+
+     - the menu items are saved at the client level but can be Exported and Imported from other clients
+
+     - you can get to your menu quickly by using the optional QLM feature
+
+
+
+  </Description>
+
+  <Author>jusjoken</Author>
+
+  <CreationDate>2011.06.24</CreationDate>
+
+  <ModificationDate>2015.10.17</ModificationDate>
+
+  <Version beta="true">0.504</Version>
+
+
+
+  <Dependency>
+
+    <STV>SageTV7</STV>
+
+      <MinVersion>7.1.9.0</MinVersion>
+
+  </Dependency>
+
+  <Dependency>
+
+    <Plugin>jusjokenADMapi</Plugin>
+
+    <MinVersion>0.504</MinVersion>
+
+  </Dependency>
+
+
+
+  <PluginType>STVI</PluginType>
+
+  <Package>
+
+    <PackageType>STVI</PackageType>
+
+    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/adm/ADM_0.503.zip</Location>
+
+    <MD5>1f549f378fac3f9a4bb16e1e658f4cc4</MD5>
+
+  </Package>
+
+
+
+  <Package>
+
+    <PackageType>STV</PackageType>
+
+    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/adm/ADMDefaults_0_422.zip</Location>
+
+    <MD5>a1da679b01b49db9920375ace429971f</MD5>
+
+  </Package>
+
+
+
+  <Screenshot>http://dl.dropbox.com/u/7826058/ADM/ADMCustomMenu.JPG</Screenshot>
+
+  <Screenshot>http://dl.dropbox.com/u/7826058/ADM/ADMManagerOverview.JPG</Screenshot>
+
+  <Screenshot>http://dl.dropbox.com/u/7826058/ADM/ADMVideoFolders.JPG</Screenshot>
+
+  <Screenshot>http://dl.dropbox.com/u/7826058/ADM/ADMEditAdvanced.JPG</Screenshot>
+
+  <Screenshot>http://dl.dropbox.com/u/7826058/ADM/ADMDiamondDefaultMenus.JPG</Screenshot>
+
+  <Screenshot>http://dl.dropbox.com/u/7826058/ADM/ADMQLMMenu.JPG</Screenshot>
+
+  <Screenshot>http://dl.dropbox.com/u/7826058/ADM/ADMQLMDiamondWidgets.JPG</Screenshot>
+
+
+
+
+
+  <Webpage>http://github.com/jusjoken/adm/blob/master/ADMInformation.md</Webpage>
+
+
+
+  <STVImport>ADM.stvi</STVImport>
+
+  <ReleaseNotes>
+
+    Version 0.504 (STVI 0.504 - API 0.503)
+
+      * No change to functionality
+
+      * MOVED the download location from Google Code to BinTray
+
+      * MOVED the source and Wiki from Google Code to GitHub
+
+    Version 0.50 (STVI 0.503 - API 0.503)
+
+      * Fix for incorrect WorkingDirectory Path on some clients - new approach
+
+      * Fix for Delete of menu items
+
+      * Fix for hidden focus item
+
+    Version 0.42 (STVI 0.424 - API 0.424)
+
+      * Fix for incorrect WorkingDirectory Path on some clients
+
+    Version 0.42 (STVI 0.423 - API 0.421)
+
+      * Fixed Mouse related issue for opening Main Menu submenus
+
+    Version 0.42 (0.422)
+
+      * Added Custom Menu to defaults if this feature in SageTV is enabled
+
+    Version 0.42 (0.421)
+
+      * Minor issue with Diamond Custom Flows in new Action Manager
+
+    Version 0.42 (0.420)
+
+      * New Quick Launch Menu (QLM)
+
+        * Optional new feature to display a menu on top of nearly any SageTV screen making the full ADM menu available quickly throughout SageTV
+
+        * With Diamond you can also optionally have the diamond Widgets displayed with the QLM
+
+      * Updated Action management
+
+        * Used when editing or creating Menu Items for the selection of the Action to perform
+
+        * Simpler approach (I hope) to selecting and finding the appropriate action (from a list of 120 available actions)
+
+        * Can be filtered by Music, TV, Video, etc
+
+        * Filter can be set to "sticky" to be available for subsequent uses when creating/adusting multiple similar menu items
+
+      * New Dynamic List Actions
+
+        * These menu items will be replaced with a dynamic list of menu items when they are displayed in the menus
+
+        * Available Types
+
+          * Music Playlist - current list of Music Playlists
+
+          * Video Playlist - current list of Video Playlists
+
+          * TV Revordings - list of 4-8 recording views depending on your settings
+
+          * Diamond Custom Flows - list of currently configured Diamond Custom Flows
+
+      * New Malore Actions
+
+        * Malore menu actions have been added/updated to work with the CopyMode
+
+        * New Malore Menu Actions are now available to jump directly to a specific Alternate View
+
+      * Updated Default Menus
+
+        * All menu items in the Default Menus are now ADM controllable menu items
+
+        * Removed the use of any SageTV submenus from the default menus as they are less flexible
+
+        * Note: SageTV Submenus are still supported and can be used with ADM except in the new QLM feature
+
+        * Previous Users of ADM: if you have minor modifications to your ADM menus then I recommend loading the Default Menus with this version and then applying your minor modifications again.  This will allow you to take full advantage of showing/hiding all menu items as well as use the new QLM feature.  If you have larger modifications and your current menus are working well for you then there is no need to change as this version is fully backwards compatible.
+
+      * ADM Manager option buttons (left side) now scrollable when required
+
+      * Other minor fixes
+
+    Version 0.40 (0.401)
+
+      * New User Based Menu Item control
+
+        * Block the display of Menu Items based on SageTV User Profiles
+
+      * ADM integrated with SageTV's new User Profile Permissions
+
+        * "Change UI configuration options" permission is now required to modify any ADM menus/settings
+
+      * Now handles Large Menu Lists with any number of items
+
+        * All 3 levels now support large menu item lists
+
+        * scrollbars automatically added when required
+
+      * ADM Manager
+
+        * Menu Items can now be reordered in either of the List by modes (Structured/Grouped)
+
+        * Options item updated to allow configuring the Max items to be displayed on each level before scrolling starts
+
+      * Other minor fixes
+
+    Version 0.38 (0.381)
+
+      * New Action Type to Launch an External Application
+
+      * Fixed copy of Menu Items that used a Menu Widget (like the Recipe Viewer)
+
+    Version 0.37 (0.370)
+
+      * New Action Type to Launch Specific File Browser Views
+
+        * actions available for Local, Network, Server, Imports and Recording Directories
+
+      * Updated ADM Copy
+
+        * now recognizes File Browser Views
+
+        * will allow copy of custom Plugin Menu items that launch a Dialog Menu such as the "Restart Sage from Setup Menu" Plugin
+
+      * Other minor fixes
+
+    Version 0.36 (0.367)
+
+      * Updated ADM Copy
+
+        * now recognizes Sage TV Recordings Views (4 standard plus up to 4 custom)
+
+        * handles Combined and Separate Video Folder views
+
+      * New Action Type to Launch Specific TV Recordings View
+
+        * works for Standard SageTV as well as Diamond TV Views
+
+      * New Action Type to Launch Default and Custom Diamond Flows (if using Diamond)
+
+      * New ADM Background Manager
+
+        * graphically select a Background for any Menu Item on any Level
+
+        * add your own Custom Backgrounds and associate them to any Menu Item
+
+      * Update for Video Folder Browser
+
+        * improved support for Linux systems
+
+        * handles Combined and Separate Video Folder views
+
+      * Fix for Clients/Extenders having their own Menu Settings
+
+      * Major refactoring of base code
+
+      * Other minor fixes
+
+    Version 0.35
+
+      * New ADM Copy Feature
+
+        * allows for the copy of Sage Menu items (Standard and from other Plugins) to ADM Menu Items
+
+        * allows for the creation of ADM Menu Items directly from the Videos Folder Browser for an specific Folder
+
+      * Fix for Linux path issues
+
+      * Fix for issues related to selecting a different Parent
+
+      * Other minor fixes
+
+    Version 0.33 - initial public beta
+
+  </ReleaseNotes>
+
+</SageTVPlugin>

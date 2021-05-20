@@ -1,0 +1,115 @@
+<SageTVPlugin>
+
+  <Name>Import/Export Channel Lineup</Name>
+
+  <Identifier>ImportExportChannelLineup</Identifier>
+
+
+
+<Description>
+
+This plugin gives users the ability to import their own custom channel lineup. This plugin can also be used to export "enabled" channels on a lineup.
+
+
+
+How to Import a Channel Lineup:
+
+
+
+1) Main Menu...Setup...Setup Video Sources...Select your video source...Channel Setup...Edit Channel Lineup..."Import Channel Lineup". A popup message should appear telling you that a file was created in the SageTV directory.
+
+2) Open the "name-of-video-source.import" file that was generated in the previous step, add your channel info, save, and close the file.
+
+***Note: If you are importing channels for a digital tuner(ATSC, DVB, QAM), the "CH:" number in the "name-of-video-source.import" must match the "CH:" number in the "name-of-video-source.frq" file. This does not apply to video inputs(Composite, S-Video, Component) since they do not need tuning info.
+
+3) In SageTV, run "Import Channel Lineup" again. Your channels should now be added to the channel lineup.
+
+.
+
+.
+
+How to Export a Channel Lineup:
+
+
+
+1) Main Menu...Setup...Setup Video Sources...Select your video source...Channel Setup.
+
+2) Make sure all the channel you want exported are "enabled".
+
+3) Edit Channel Lineup..."Export Enabled Channels on Lineup".
+
+4) A file called "name-of-video-source.export" will be created in the SageTV directory.
+
+***Note: In order to re-import the channels you will need to change the file extension from ".export" to ".import". Also, if the exported channels are from a digital tuner(ATSC, DVB, QAM), make a backup of the "name-of-video-source.frq" file.
+
+</Description>
+
+
+
+  <Author>49studebaker</Author>
+
+  <CreationDate>2014.05.31</CreationDate>
+
+  <Version>1.2.3</Version>
+
+
+
+<Dependency>
+
+  <STV>SageTV7</STV>
+
+  <MinVersion>7.0</MinVersion>
+
+</Dependency>
+
+
+
+<PluginType>STVI</PluginType>
+
+<STVImport>ImportExportChannelLineup.stvi</STVImport>
+
+
+
+<Package>
+
+  <PackageType>STVI</PackageType>
+
+  <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/ImportExportChannelLineup.zip</Location>
+
+  <MD5>BEC3B5149D01E9DC0E35A3089E663A67</MD5>
+
+</Package>
+
+
+
+<ReleaseNotes>
+
+*Version 1.2.3 - Fixed file name bug
+
+
+
+*Version 1.2.2 - Fixed file directory bug
+
+
+
+*Version 1.2.1 - Added instructions
+
+
+
+*Version 1.2.0 - Added video input type(Composite, Component, S-Video) to import file name.
+
+
+
+*Version 1.1.0 - Fixed bugs.
+
+
+
+*Version 1.0.0 - Initial beta release.
+
+</ReleaseNotes>
+
+
+
+
+<ModificationDate>2015-5-24</ModificationDate>
+</SageTVPlugin>

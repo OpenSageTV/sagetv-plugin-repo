@@ -1,0 +1,30 @@
+<SageTVPlugin>
+    <Name>DVB / TTX Subtitles Playback</Name>
+    <Identifier>LMSUBTITLES</Identifier>
+    <Description>
+        Allows playback of DVB and Teletext subtitles for recordings made with DVBViewer Recorder
+        or LM DVB Smart Recorder.
+
+        For enabling DVB and Teletext subtitles playback you'll need to also use a network
+        recorder that extract subtitles in real time like DVBViewer Recorder or LM DVB Smart
+        Recorder.
+    </Description>
+    <Author>LM Gestion - StephaneM</Author>
+    <CreationDate>2010-08-15</CreationDate>
+    <ModificationDate>2010-08-15</ModificationDate>
+    <Version>2.0</Version>
+    <Desktop>false</Desktop>
+    <PluginType>STVI</PluginType>
+    <STVImport>CaptionPlayback.stvi</STVImport>
+    <Dependency>
+        <STV>SageTV7</STV>
+        <MinVersion>7.0</MinVersion>
+    </Dependency>
+    <Package>
+        <PackageType>STVI</PackageType>
+        <Location>http://www.lmgestion.net/content/softwares/sagetv/captionplayback2.0.zip</Location>
+        <MD5>eb31bf99b3a93556c1f26e0e4f4f65a3</MD5>
+    </Package>
+    <Webpage>http://www.lmgestion.net/@en-us/4/22/124/article.asp</Webpage>
+    <Webpage>http://www.lmgestion.net/@en-us/4/22/90/article.asp</Webpage>
+</SageTVPlugin>

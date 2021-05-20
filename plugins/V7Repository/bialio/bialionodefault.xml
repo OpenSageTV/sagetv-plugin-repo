@@ -1,0 +1,26 @@
+<SageTVPlugin>
+  <Name>No Default Action in Main Menu</Name>
+  <Identifier>bialionodefault</Identifier>
+  <Description>Changes navigation mechanism in Main Menu - select always expands the submenu instead of jumping to the sage defined Default.
+  </Description>
+  <Author>bialio</Author>
+  <CreationDate>2010.07.06</CreationDate>
+  <ModificationDate>2010.07.06</ModificationDate>
+  <Version>1.0</Version>
+
+ <Dependency>
+    <STV>SageTV7</STV>
+    <MinVersion>7.0</MinVersion>
+ </Dependency>
+
+  <PluginType>STVI</PluginType>
+
+  <Package>
+    <PackageType>STVI</PackageType>
+    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/serenitybybialio/STV7.nodefaultaction.1.0.stvi.zip</Location>
+    <MD5>f4a0d121e01c4f35c9e316bc6b4ef957</MD5>
+  </Package>
+
+<STVImport>STV7.nodefaultaction.1.0.stvi</STVImport>
+
+</SageTVPlugin>

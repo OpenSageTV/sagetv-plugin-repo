@@ -1,0 +1,57 @@
+<SageTVPlugin>
+  <Name>Ortus Core API</Name>
+  <Identifier>sageortus-api</Identifier>
+  <Description>Ortus Core Sub System</Description>
+  <ReleaseNotes>
+	Ortus API Utility Library
+  </ReleaseNotes>
+  <Author>Team Ortus</Author>
+  <CreationDate>2010-04-12</CreationDate>
+  <ModificationDate>2010.07.23</ModificationDate>
+  <Version>1.0.13</Version>
+  <Desktop>false</Desktop>
+  <ResourcePath>Ortus</ResourcePath>
+
+  <Dependency>
+    <Plugin>sagex-api</Plugin>
+    <MinVersion>7.0.6.3</MinVersion>
+  </Dependency>
+
+  <Dependency>
+    <Plugin>sagex-h2</Plugin>
+  </Dependency>
+
+  <Dependency>
+    <Plugin>concurrent</Plugin>
+  </Dependency>
+
+  <Dependency>
+    <Plugin>jcs</Plugin>
+  </Dependency>
+
+  <Dependency>
+    <Plugin>log4j</Plugin>
+  </Dependency>
+
+  <Dependency>
+    <Plugin>commons-io</Plugin>
+  </Dependency>
+
+  <Dependency>
+    <Plugin>commons-lang</Plugin>
+  </Dependency>
+
+  <Dependency>
+    <Plugin>ortus-mq</Plugin>
+  </Dependency>
+
+  <PluginType>Standard</PluginType>
+
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/ortus/sageortus-jar-1.0.13.zip</Location>
+    <MD5>2cb8295d7bff0cc8c2ff08f69e03b3d1</MD5>
+  </Package>
+  <ImplementationClass>ortus.plugins.ortusPlugin</ImplementationClass>
+
+</SageTVPlugin>

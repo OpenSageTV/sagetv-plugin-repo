@@ -1,0 +1,265 @@
+<SageTVPlugin>
+
+
+
+  <Name>Multi-User Support</Name>
+
+
+
+  <Identifier>multiuserSTVi</Identifier>
+
+
+
+  <Description>Adds user profiles and multi-user support to SageTV.</Description>
+
+
+
+  <Author>tmiranda</Author>
+
+
+
+  <CreationDate>2011.02.08</CreationDate>
+
+  <ModificationDate>2015.12.07</ModificationDate>
+
+
+
+  <Version beta="true">0.17</Version>
+
+
+
+  <Desktop>false</Desktop>
+
+
+
+  <Webpage>http://forums.sagetv.com/forums/showthread.php?p=479692#post479692</Webpage>
+
+  <Webpage>http://code.google.com/p/tmiranda/wiki/MultiUser</Webpage>
+
+
+
+  <Dependency>
+
+    <STV>SageTV7</STV>
+
+      <MinVersion>7.1</MinVersion>
+
+  </Dependency>
+
+
+
+  <Dependency>
+
+    <Plugin>multiusersupport</Plugin>
+
+    <MinVersion>0.140</MinVersion>
+
+  </Dependency>
+
+
+
+  <PluginType>STVI</PluginType>
+
+
+
+  <Package>
+
+    <PackageType>STVI</PackageType>
+
+    <Location>http://github.com/tmiranda1962/MultiUser/releases/download/v0.143/MultiUser-0.14.zip</Location>
+
+    <MD5>55BAD5FC8B404A44CDC92E2233D13B5F</MD5>
+
+  </Package>
+
+
+
+  <STVImport>MultiUser.stvi</STVImport>
+
+
+
+  <ReleaseNotes>Version 0.17:
+
+- Fixed a bug in the manifest that prevented installation.
+
+
+
+Version 0.16:
+
+- Moved hosting from Google Code to GitHub. No change in functionality from version 0.14.
+
+
+
+Version 0.14:
+
+- Added ability to specify the user profile to use if no user is logged on.
+
+- Added ability to set viewing time limits for users.
+
+
+
+Version 0.13 Private build:
+
+- Added ability to specify the user profile to use if no user is logged on.
+
+
+
+Version 0.12:
+
+- Added ability to manually modify other plugins so they are compatible with the Multi-User plugin.
+
+- Added ability to delete for multiple users.
+
+- Changed behavior so Archive and Don't Like function in the same way as Watched.
+
+- Fixed bug that caused user settings to get reset after editing password or ShowImports setting.
+
+
+
+Version 0.11:
+
+- Fixed bug preventing changes to users.
+
+- Debug enhancements.
+
+
+
+Version 0.10:
+
+- Added option in "delete at EOF" dialog to delete for one or more users.
+
+- Fixed bug that caused some scheduled recordings to not show up the recording schedule menus.
+
+
+
+Version 0.09:
+
+- Added support for secondary users.
+
+- Added option to display or not display logged on primary and secondary users.
+
+
+
+Version 0.08:
+
+- Updated for Sage 7.1.
+
+- Added option to Share Favorite With Another User and Give Favorite to Another User.
+
+- Changed font color in footer to make user name more legible.
+
+- Fixed bug that prevented "Show Requester" option from appearing on recordings that were already in progress.
+
+- Fixed bug that prevented the Favorite icon from showing up in the user guide immediately after user added Airing as Favorite.
+
+
+
+Version 0.07:
+
+- Skipped beta 0.06 to make the STVi and the Support plugin numbers the same.
+
+- Added ability to control if users automatically get access to newly imported videos.
+
+- Changed the message that is displayed when "Show Requester" is selected and the recording is an IR.
+
+- Improved logic for Watch().
+
+- Improved logic for GetScheduledRecordings().
+
+- Fixed bug that would report an error if trying to logon last logged in user and the user was null.
+
+- See MultiUserSupport General plugin for other changes.
+
+
+
+Version 0.05:
+
+- First release to Plugin repository.
+
+- Added option that if enabled makes sure that the actions of users who have Intelligent Recording enabled are reflected in the core. (Watched, Don't Like, Archived.)
+
+- Added option to show user disk space usage if the disk space bar is enabled.
+
+- Fixed bug that caused tertiary menu to become unfocusable if the user switched from Admin to any other user, and the last focused item was an Admin only function.
+
+- Fixed bug that caused extenders to forget which user was logged on.
+
+- Fixed bug that would logon user that did not exist (which can happen if the same client is used to connect to multiple servers.)
+
+
+
+Version 0.04:
+
+- Added display of version number in Configuration dialog.
+
+- Added ability to manually remove all unneeded MediaFile and Airing data from the database.
+
+- Added ability to "Give To Another User" which will move recordings from one user to another.
+
+- Added ability to "Share With Another User" which makes MediaFiles visible to other users.
+
+- Added advanced debugging toggle.  If you really want to know how to use this post a request in the forums.
+
+- Changed behavior of setIntelligentRecordingDisabled() to be more consistent with rest of API.  Note that if Admin turns IR off it is turned off for all users. Individual users can re-enable IR.
+
+- Fixed bug that prevented tertiary menu from becoming active after using "Fast User Switch".
+
+- Fixed bug that prevented a Favorite recording of another user from being marked as a recording for another user.
+
+- Fixed bug that caused the "Show Requester" option to appear in the single MediaFile options dialog when it should not have appeared.
+
+- Fixed bug that left unnecessary data in the database after deleting a MediaFile or Airing.
+
+- Fixed bug that left unnecessary data in the database after deleting a User.
+
+- Fixed bug that prevented "Share With Another User" function from working propely.
+
+- Fixed bug that prevented Airings that were causing a conflict from appearing on the Conflict Resolution menu.
+
+- Fixed bug that caused MediaFiles to be reset to contain the values in the core. (Will cause all MediaFile data to be reset the first time this version of the Plugin is run.)
+
+- Cleaned up dialog appearances.
+
+
+
+Version 0.03:
+
+- Added ability to share MediaFiles with other users.
+
+- Added ability to share scheduled recordings with other users.
+
+- Added ability to see what users will be recording Airings.
+
+- Added check to ensure General Plugin is installed on Sage server before allowing multi-user access.
+
+- Added icon to recordings that will be recorded by other users.
+
+- Added "Fast User Switch".  On main menu, if "Use Passwords" is not enabled, pressing Forward (Ctrl-F on keyboard) will switch to the next user.
+
+- Moved configuration options into new dialog.
+
+- Fixed bug that prevented MediaFiles from being unarchived.
+
+- Fixed bug that prevented Intelligent Recording from being set on a per-user basis.
+
+- Fixed bug that prevented some MediaFiles from being played.
+
+- Fixed bug that caused an error if multiple sage servers were being used.
+
+
+
+Version 0.02:
+
+- Fixed bug that prevented passwords from being changed.
+
+- Fixed bug that caused new recordings to be visible to all users.
+
+
+
+Version 0.01:
+
+- Initial ALPHA release.</ReleaseNotes>
+
+
+
+</SageTVPlugin>

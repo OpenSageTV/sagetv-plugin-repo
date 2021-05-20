@@ -1,0 +1,20 @@
+<SageTVPlugin>
+  <Name>youtube-dl</Name>
+  <Identifier>youtube-dl</Identifier>
+  <Author>tmiranda</Author>
+  <CreationDate>2017.09.23</CreationDate>
+  <ModificationDate>2017.09.23</ModificationDate>
+  <Version beta="false">2017.09.15</Version>
+  <Desktop>false</Desktop>
+
+  <Description>youtube-dl repackaged as a Sage PlugIn.</Description>
+
+  <PluginType>Library</PluginType>
+
+  <Package>
+    <PackageType>System</PackageType>
+    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/YouTube2015/youtube-dl-2017.09.15.zip</Location>
+    <MD5>414804D12FD983561B9497123982C494</MD5>
+  </Package>
+
+</SageTVPlugin>

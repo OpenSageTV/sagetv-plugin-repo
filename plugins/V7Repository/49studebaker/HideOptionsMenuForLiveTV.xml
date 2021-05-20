@@ -1,0 +1,55 @@
+<SageTVPlugin>
+
+  <Name>Hide Options Menu when tuning a Live TV show.</Name>
+
+  <Identifier>HideOptionsMenuForLiveTV</Identifier>
+
+  <Description>Hides the options menu when tuning a live TV show.</Description>
+
+  <Author>49studebaker</Author>
+
+  <CreationDate>2010.06.07</CreationDate>
+
+  <ModificationDate>2010.06.07</ModificationDate>
+
+  <Version>1.0.0</Version>
+
+
+
+<Dependency>
+
+  <STV>SageTV7</STV>
+
+  <MinVersion>7.0</MinVersion>
+
+</Dependency>
+
+
+
+<PluginType>STVI</PluginType>
+
+<STVImport>HideOptionsMenuForLiveTV.stvi</STVImport>
+
+
+
+<Package>
+
+  <PackageType>STVI</PackageType>
+
+  <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/HideOptionsMenuForLiveTV.zip</Location>
+
+  <MD5>1A82E83D6FC151D1BD499E5F38296E4E</MD5>
+
+</Package>
+
+
+
+<ReleaseNotes>
+
+Version 1.0 - Initial release.
+
+</ReleaseNotes>
+
+
+
+</SageTVPlugin>

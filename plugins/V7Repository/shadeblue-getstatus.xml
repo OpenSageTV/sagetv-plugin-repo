@@ -1,0 +1,37 @@
+<SageTVPlugin>
+  <Name>External Status Socket Interface Plugin</Name>
+  <Identifier>shadeblue-getstatus</Identifier>
+  <Description><![CDATA[Modified version of Neilm's GetStatus Plugin (External Status Monitor Interface) to work in SageTV V7.]]></Description>
+  <Author>shadeblue.com</Author>
+  <CreationDate>2010.07.05</CreationDate>
+  <ModificationDate>2017.05.22</ModificationDate>
+  <Version>7.0.2</Version>
+  <Desktop>false</Desktop>
+  <Webpage><![CDATA[http://forums.sagetv.com/forums/downloads.php?do=file&id=387]]></Webpage>
+  <Webpage><![CDATA[http://forums.sagetv.com/forums/showthread.php?t=49520]]></Webpage>
+  <Webpage><![CDATA[http://forums.sagetv.com/forums/showthread.php?t=8757]]></Webpage>
+  <Dependency>
+    <STV>SageTV7</STV>
+    <MinVersion>7.0</MinVersion>
+  </Dependency>
+  <Dependency>
+    <JVM />
+    <MinVersion>1.5</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Core />
+    <MinVersion>7.0</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Plugin>sagex-api</Plugin>
+    <MinVersion>7.0.11.0</MinVersion>
+  </Dependency>
+  <PluginType>Standard</PluginType>
+  <Package>
+    <PackageType>JAR</PackageType>
+      <Location><![CDATA[http://download.shadeblue.com/sagetv/plugins/shadeblue-getstatus/7.0.2/shadeblue-getstatus-7.0.2.zip]]></Location>
+    <MD5>05067aa6ccd6f61c904dfdf8002f288b</MD5>
+  </Package>
+  <ImplementationClass>com.shadeblue.sagetv.plugin.getstatus.GetStatusPlugin</ImplementationClass>
+  <ReleaseNotes><![CDATA[Release 7.0.0 - modified to support new SageTV V7 plugin infrastructure]]></ReleaseNotes>
+</SageTVPlugin>

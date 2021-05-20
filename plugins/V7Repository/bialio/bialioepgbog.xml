@@ -1,0 +1,26 @@
+<SageTVPlugin>
+  <Name>EPG Back-On-Guide</Name>
+  <Identifier>bialioepgbog</Identifier>
+  <Description>Goes back to the previous screen when 'Guide' is pressed while in the EPG.
+  </Description>
+  <Author>bialio</Author>
+  <CreationDate>2010.05.24</CreationDate>
+  <ModificationDate>2010.05.24</ModificationDate>
+  <Version>1.0</Version>
+
+ <Dependency>
+    <STV>SageTV7</STV>
+    <MinVersion>7.0</MinVersion>
+ </Dependency>
+
+  <PluginType>STVI</PluginType>
+
+  <Package>
+    <PackageType>STVI</PackageType>
+    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/serenitybybialio/STV7.epg.bog.1.0.stvi.zip</Location>
+    <MD5>8f2048f5047631abfe1c80da2d5c0ff2</MD5>
+  </Package>
+
+<STVImport>STV7.epg.bog.1.0.stvi</STVImport>
+
+</SageTVPlugin>

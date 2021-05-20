@@ -1,0 +1,57 @@
+<SageTVPlugin>
+
+  <Name>Resolve LiveTV Conflict</Name>
+
+  <Identifier>ResolveLiveTVConflict</Identifier>
+
+  <Description>This plugin allows a user to set a default action, when a live tv channel is tuned and all tuners are currently in use.</Description>
+
+  <Author>49studebaker</Author>
+
+  <CreationDate>2010.09.05</CreationDate>
+
+  <Version>1.0.0</Version>
+
+
+
+<Dependency>
+
+  <STV>SageTV7</STV>
+
+  <MinVersion>7.0</MinVersion>
+
+</Dependency>
+
+
+
+<PluginType>STVI</PluginType>
+
+<STVImport>ResolveLiveTVConflict.stvi</STVImport>
+
+
+
+<Package>
+
+  <PackageType>STVI</PackageType>
+
+
+
+<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/ResolveLiveTVConflict.zip</Location>
+
+  <MD5>FBBC53EC6C6195968BE5395D3425D69D</MD5>
+
+</Package>
+
+
+
+<ReleaseNotes>
+
+*Version 1.0.0 - Initial release.
+
+</ReleaseNotes>
+
+
+
+
+<ModificationDate>2015-5-24</ModificationDate>
+</SageTVPlugin>

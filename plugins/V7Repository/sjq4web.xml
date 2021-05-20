@@ -1,0 +1,129 @@
+<SageTVPlugin>
+
+        <Name>Sage Job Queue (SJQ) Web UI</Name>
+
+        <Identifier>sjq4web</Identifier>
+
+        <Description><![CDATA[
+
+The SJQv4 web UI.  Load it via the /sage/sjq/sjq4.groovy URI in your SageTV web UI.
+
+        ]]></Description>
+
+        <Author>Slugger</Author>
+
+        <CreationDate>2012.01.15</CreationDate>
+
+        <ModificationDate>2014.04.25</ModificationDate>
+
+        <Version beta="true">4.0.0.4</Version>
+
+        <ResourcePath>plugins/sjq4web</ResourcePath>
+
+        <Webpage>http://sagetv-addons.sf.net</Webpage>
+
+
+
+        <Dependency>
+
+                <JVM/>
+
+                <MinVersion>1.5.0</MinVersion>
+
+        </Dependency>
+
+        <Dependency>
+
+                <Core/>
+
+                <MinVersion>7.1.9.1</MinVersion>
+
+                <MaxVersion>7.1.9.256</MaxVersion>
+
+        </Dependency>
+
+       <Dependency>
+
+                <Plugin>groovy</Plugin>
+
+                <MinVersion>1.7.10</MinVersion>
+
+        </Dependency>
+
+        <Dependency>
+
+                <Plugin>sagex-api</Plugin>
+
+                <MinVersion>7.1.9.0</MinVersion>
+
+        </Dependency>
+
+        <Dependency>
+
+                <Plugin>web</Plugin>
+
+                <MinVersion>2.36</MinVersion>
+
+        </Dependency>
+
+        <Dependency>
+
+                <Plugin>sjq</Plugin>
+
+                <MinVersion>4.0.0</MinVersion>
+
+        </Dependency>
+
+        <Dependency>
+
+                <Plugin>commons-lang</Plugin>
+
+                <MinVersion>2.4</MinVersion>
+
+        </Dependency>
+
+        <Dependency>
+
+                <Plugin>json</Plugin>
+
+                <MinVersion>1.0</MinVersion>
+
+        </Dependency>
+
+        <Dependency>
+
+                <Plugin>somf</Plugin>
+
+                <MinVersion>1.0.0.1338</MinVersion>
+
+        </Dependency>
+
+
+
+        <PluginType>Standard</PluginType>
+
+        <Package>
+
+                <PackageType>System</PackageType>
+
+                <Location>http://sourceforge.net/projects/sagetv-addons/files/sjq/sjq-web-4.0.0.4.zip/download</Location>
+
+                <MD5>4e21cbcfbe498852a879c1e4ae6cc1ff</MD5>
+
+                <Overwrite>true</Overwrite>
+
+        </Package>
+
+
+
+        <ReleaseNotes><![CDATA[
+
+
+
+* work around apparent org.json bug
+
+
+
+        ]]></ReleaseNotes>
+
+</SageTVPlugin>

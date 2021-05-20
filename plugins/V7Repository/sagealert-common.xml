@@ -1,0 +1,22 @@
+<SageTVPlugin>
+       <Name>SageAlert (common)</Name>
+       <Identifier>sagealert-common</Identifier>
+       <Description>Common classes required for SageAlert and for other plugins to add passive SageAlert support. (Dependency only, most users should not directly install this plugin.)</Description>
+       <Author>Slugger</Author>
+       <CreationDate>2010.05.29</CreationDate>
+       <ModificationDate>2011.06.14</ModificationDate>
+       <Version beta="true">2.0.2.1550</Version>
+       <ResourcePath>plugins/sagealert-common</ResourcePath>
+       <Webpage>http://sagetv-addons.googlecode.com</Webpage>
+       <PluginType>Library</PluginType>
+       <Dependency>
+       	<JVM/>
+       	<MinVersion>1.5.0</MinVersion>
+       </Dependency>
+       <Package>
+               <PackageType>JAR</PackageType>
+               <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetv-addons/sagealert-common-2.0.2.1550.zip</Location>
+               <MD5>0f50cb5d85e3d455d14e5f3604dcc2a5</MD5>
+               <Overwrite>true</Overwrite> <!-- Defaults to true -->
+       </Package>
+</SageTVPlugin>

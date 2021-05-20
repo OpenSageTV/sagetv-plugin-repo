@@ -1,0 +1,18 @@
+<SageTVPlugin>
+  <Name>Ortus Trailer Files</Name>
+  <Identifier>ortus-trailer-files</Identifier>
+  <Description>Ortus Trailer Theme</Description>
+  <Author>Team Ortus</Author>
+  <CreationDate>2010-07-16</CreationDate>
+  <ModificationDate>2010.07.21</ModificationDate>
+  <Version>1.0.1</Version>
+  <Desktop>false</Desktop>
+
+  <PluginType>Images</PluginType>
+
+  <Package>
+    <PackageType>System</PackageType>
+    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/ortus/ortus-trailer-files.zip</Location>
+    <MD5>bde0951298ef0522c724a1a1ea1e2b88</MD5>
+  </Package>
+</SageTVPlugin>

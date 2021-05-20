@@ -1,0 +1,91 @@
+<SageTVPlugin>
+
+
+
+	<Name>Install Disk Usage</Name>
+
+
+
+  	<Identifier>InstallDiskUsage</Identifier>
+
+
+
+  	<Description>Install Disk Usage for SageTV 7. This plugin displays a small bargraph in the header indicating how much space is left on the drive where SageTV is installed.
+
+
+
+To configure go to Setup->Detailed Setup->Customize and look for "Install Disk Usage" near the end of the list.</Description>
+
+
+
+	<Author>tmiranda</Author>
+
+
+
+  	<CreationDate>2010.07.26</CreationDate>
+
+
+
+  	<ModificationDate>2015.11.28</ModificationDate>
+
+
+
+  	<Version beta="false">1.20</Version>
+
+
+
+  	<Desktop>false</Desktop>
+
+
+
+	<Webpage>http://forums.sagetv.com/forums/showthread.php?p=438580#post438580</Webpage>
+
+
+
+	<Screenshot>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/tmiranda/BDU-Screenshot.JPG</Screenshot>
+
+	<Screenshot>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/tmiranda/BDU-Options.JPG</Screenshot>
+
+
+
+	<Dependency>
+
+		<STV>SageTV7</STV>
+
+		<MinVersion>7.0.23.1</MinVersion>
+
+	</Dependency>
+
+
+
+	<PluginType>STVI</PluginType>
+
+
+
+  	<Package>
+
+    		<PackageType>STVI</PackageType>
+
+    		<Location>http://github.com/tmiranda1962/Install-Disk-Usage/releases/download/v1.20/InstallDiskUsage-1.10.zip</Location>
+
+    		<MD5>41F6261CCA8962395B6F69213BA5710A</MD5>
+
+  	</Package>
+
+
+
+	<STVImport>InstallDiskUsage.stvi</STVImport>
+
+
+
+	<ReleaseNotes>Version 1.20 - Moved hosting from Google Code to GitHub. No functionality changes.
+
+Version 1.10 - Make use of STV hook to increase compatibility with other Plugins that need to put an icon in the header.
+
+Version 1.01 - Fixed an attribute initialization error.
+
+Version 1.00 - Initial release. Special thanks to jaminben for help with the icon.</ReleaseNotes>
+
+
+
+</SageTVPlugin>

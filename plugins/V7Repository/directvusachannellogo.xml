@@ -1,0 +1,16 @@
+<SageTVPlugin>
+  <Name>DirecTV-USA Channel Logo Pack</Name>
+  <Identifier>directvusachannellogo</Identifier>
+  <Description>A collection of channel logos for DirecTV's USA lineup. The intention is to create seaparate packs for local channels.</Description>
+  <Author>bcjenkins</Author>
+  <CreationDate>2010-05-20</CreationDate>
+  <ModificationDate>2010.05.20</ModificationDate>
+  <Version>0.0.3</Version>
+  <Desktop>false</Desktop>
+  <PluginType>Images</PluginType>
+  <Package>
+    <PackageType>ChannelLogo</PackageType>
+   <Location>http://dl.dropbox.com/u/4976/sagetv/directv-usa-cl-v.0.0.3.zip</Location>
+    <MD5>f019878d1ca06ac38e89acf9d56fa6fc</MD5>
+  </Package>
+</SageTVPlugin>
