@@ -100,9 +100,9 @@ This plugin installs a web GUI app within the Jetty plugin for online viewing an
 
                <PackageType>JAR</PackageType>
 
-               <Location>http://bintray.com/artifact/download/opensagetv/sagetv-plugins/sre/sre-jar-4.0.2.20160531211256.zip</Location>
+               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sre-jar-4.0.2.20210522091001.zip</Location>
 
-               <MD5>e20f8f81143c6d31669132cc9a98da9d</MD5>
+               <MD5>9BFBF5CFE52AA10BCD721245A9FA0DB8</MD5>
 
                <Overwrite>true</Overwrite> <!-- Defaults to true -->
 
@@ -112,9 +112,9 @@ This plugin installs a web GUI app within the Jetty plugin for online viewing an
 
                <PackageType>System</PackageType>
 
-               <Location>http://bintray.com/artifact/download/opensagetv/sagetv-plugins/sre/sre-conf-4.0.2.20160531211256.zip</Location>
+               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sre-conf-4.0.2.20210522091001.zip</Location>
 
-               <MD5>83f20cf3110bddb3c5ff16d63a23b091</MD5>
+               <MD5>0B56962AF48F1BD3D835040279D1C6B7</MD5>
 
                <Overwrite>false</Overwrite>
 

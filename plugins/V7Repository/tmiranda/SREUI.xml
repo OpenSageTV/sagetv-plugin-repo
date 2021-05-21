@@ -48,7 +48,7 @@
 
     <PackageType>STVI</PackageType>
 
-    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/SRE/SREv4-4.00.zip</Location>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/SREv4-4.00.zip</Location>
 
     <MD5>AD91C209312F10D9694458E82C3E806D</MD5>
 

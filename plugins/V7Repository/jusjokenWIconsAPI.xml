@@ -36,9 +36,9 @@
 
     <PackageType>JAR</PackageType>
 
-    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/diamond-legacy/WIconsAPI1_004.zip</Location>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/WIconsAPI1_004.zip</Location>
 
-    <MD5>12bed63b2b80b0ff5f5ef17f8ecb64a0</MD5>
+    <MD5>C2D64DD06F9A05D69AA8C68269A0EDDF</MD5>
 
   </Package>
 
