@@ -25,8 +25,8 @@
 
    <Package>
        <PackageType>JAR</PackageType>
-       <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/upnp2podcast/PlayOnUtils_v1_5.zip</Location>
-       <MD5>835426c436d44a51e412dcd6b6df630d</MD5>
+       <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/PlayOnUtils_v1_5.zip</Location>
+       <MD5>835426C436D44A51E412DCD6B6DF630D</MD5>
    </Package>
 
  </SageTVPlugin>

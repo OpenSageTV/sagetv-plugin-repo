@@ -82,9 +82,9 @@ This is based on a port of TVE v1.01.028 for SageMC to the STV3 Default STV and 
 
 		<PackageType>STVI</PackageType>
 
-		<Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetve/TVExplorer_v1.05.06.zip</Location>
+		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/TVExplorer_v1.05.06.zip</Location>
 
-		<MD5>218525078421f58de092414eb481b3c5</MD5>
+		<MD5>218525078421F58DE092414EB481B3C5</MD5>
 
 	</Package>
 
@@ -92,9 +92,9 @@ This is based on a port of TVE v1.01.028 for SageMC to the STV3 Default STV and 
 
 		<PackageType>JAR</PackageType>
 
-		<Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetve/sageortustve-api_v0.5.06.365.zip</Location>
+		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sageortustve-api_v0.5.06.365.zip</Location>
 
-		<MD5>ec2ca09193dc1159bd8ff5ebb1729797</MD5>
+		<MD5>EC2CA09193DC1159BD8FF5EBB1729797</MD5>
 
 	</Package>
 

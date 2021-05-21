@@ -22,14 +22,14 @@ want to run BMT from a console to generate .properties.
 
   <Package>
     <PackageType>JAR</PackageType>
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/customsagetv/bmt-jar-4.9.8.zip</Location>
-    <MD5>e6a653bdaa8e0443b8d8acc0b5a47b5f</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/bmt-jar-4.9.8.zip</Location>
+    <MD5>E6A653BDAA8E0443B8D8ACC0B5A47B5F</MD5>
   </Package>
 
   <Package>
     <PackageType>System</PackageType>
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/customsagetv/bmt-system-4.9.8.zip</Location>
-    <MD5>407239e2b2f6c927a656327431e3ba2b</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/bmt-system-4.9.8.zip</Location>
+    <MD5>407239E2B2F6C927A656327431E3BA2B</MD5>
   </Package>
   <ReleaseNotes>
 

@@ -14,8 +14,8 @@
   <PluginType>Library</PluginType>
   <Package>
     <PackageType>System</PackageType>
-    <Location><![CDATA[http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/upnp2podcast/tasVideosScraper_v1_0.zip]]></Location>
-    <MD5>a3213ec29565fa176d51cba16936a4cc</MD5>
+    <Location><![CDATA[https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/tasVideosScraper_v1_0.zip]]></Location>
+    <MD5>A3213EC29565FA176D51CBA16936A4CC</MD5>
   </Package>
 
 </SageTVPlugin>

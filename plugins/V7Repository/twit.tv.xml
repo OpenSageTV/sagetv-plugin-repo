@@ -30,9 +30,9 @@
 
    <PackageType>STVI</PackageType>
 
-   <Location><![CDATA[http://sagetv.shadeblue.com/twit/release/7.5/TWiTOnlineVideos.zip]]></Location>
+   <Location><![CDATA[https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/TWiTOnlineVideos.zip]]></Location>
 
-   <MD5>81d01cbbcd6f51a9536486c7883d24b3</MD5>
+   <MD5>81D01CBBCD6F51A9536486C7883D24B3</MD5>
 
  </Package>
 

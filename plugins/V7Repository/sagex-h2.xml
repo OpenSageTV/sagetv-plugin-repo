@@ -21,13 +21,13 @@ ices.
   <PluginType>Standard</PluginType>
   <Package>
     <PackageType>JAR</PackageType>
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/ortus/sagex-h2.jar-1.0.8.zip</Location>
-    <MD5>771654e1f1ec1287ba83a8c6a28ab5fc</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sagex-h2.jar-1.0.8.zip</Location>
+    <MD5>771654E1F1EC1287BA83A8C6A28AB5FC</MD5>
   </Package>
   <Package>
     <PackageType>JAR</PackageType>
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/ortus/h2-1.2.145.jar.zip</Location>
-    <MD5>46ff35d82e22e106d0e9d430b3770824</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/h2-1.2.145.jar.zip</Location>
+    <MD5>46FF35D82E22E106D0E9D430B3770824</MD5>
   </Package>
   <ImplementationClass>sagex.h2.SagexH2Plugin</ImplementationClass>
 </SageTVPlugin>

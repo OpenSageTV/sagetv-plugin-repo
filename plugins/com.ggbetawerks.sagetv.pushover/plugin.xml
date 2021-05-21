@@ -1,0 +1,34 @@
+<SageTVPlugin>
+    <Name>Pushover notifications for SageTV</Name>
+    <Identifier>com.ggbetawerks.sagetv.pushover</Identifier>
+    <Description>Can send SageTV System Messages to your Desktop and Mobile Device.  Requires a Pushover account.</Description>
+    <Author>Jonathan Warrington</Author>
+    <CreationDate>2016.10.08</CreationDate>
+    <ModificationDate>2016.10.10</ModificationDate>
+    <Version>1.0</Version>
+    <ResourcePath>com.ggbetawerks.sagetv.pushover</ResourcePath>
+    <Webpage><![CDATA[https://github.com/BartokW/com.ggbetawerks.sagetv.pushover]]></Webpage>
+
+    <Dependency>
+        <Core/>
+        <MinVersion>9.0</MinVersion>
+    </Dependency>
+
+    <Dependency>
+        <Plugin>sagex-api</Plugin>
+        <MinVersion>7.1.9.15</MinVersion>
+    </Dependency>
+
+    <PluginType>Standard</PluginType>
+
+    <Package>
+        <PackageType>JAR</PackageType>
+        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/com.ggbetawerks.sagetv.pushover.jar-1.0.zip</Location>
+        <MD5>0ACB5FC21272B30112CFF358D28FFC3F</MD5>
+    </Package>
+
+    <ImplementationClass>com.ggbetawerks.sagetv.pushover.PushoverPlugin</ImplementationClass>
+
+    <ReleaseNotes>
+    </ReleaseNotes>
+</SageTVPlugin>

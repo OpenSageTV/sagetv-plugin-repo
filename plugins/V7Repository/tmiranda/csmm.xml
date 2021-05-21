@@ -84,7 +84,7 @@
 
     		<PackageType>STVI</PackageType>
 
-    		<Location>http://github.com/tmiranda1962/plugins/releases/download/v0.01/CSM-v0.07.zip</Location>
+    		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/CSM-v0.07.zip</Location>
 
     		<MD5>A5A2EF7E559629973537DA8EE43B7ED3</MD5>
 

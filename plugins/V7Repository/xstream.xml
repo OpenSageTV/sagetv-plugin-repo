@@ -12,7 +12,7 @@
 
   <Package>
     <PackageType>JAR</PackageType>
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/ortus/xstream-1.3.1.jar.zip</Location>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/xstream-1.3.1.jar.zip</Location>
     <MD5>83ace31da72f9b13045f02ad0cb15ac6</MD5>
   </Package>
 </SageTVPlugin>

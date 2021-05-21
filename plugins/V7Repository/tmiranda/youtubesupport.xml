@@ -15,8 +15,8 @@
 
   <Package>
     <PackageType>JAR</PackageType>
-    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/YouTube2015/YouTube-1.10.zip</Location>
-    <MD5>0E7F1FA3F4728CE0BD7A675C60107A21</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/YouTube-1.10.1.zip</Location>
+    <MD5>6009F08AEFB42003DE51815EB478DBB8</MD5>
   </Package>
 
 </SageTVPlugin>

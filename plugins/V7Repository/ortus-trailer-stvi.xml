@@ -30,8 +30,8 @@
 
   <Package>
     <PackageType>STVI</PackageType>
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/ortus/ortus-trailer-stvi.zip</Location>
-    <MD5>e3e1ccca8bae99dfcddd0d184932db0e</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/ortus-trailer-stvi.zip</Location>
+    <MD5>E3E1CCCA8BAE99DFCDDD0D184932DB0E</MD5>
   </Package>
 
 <ReleaseNotes>Version 1.07 - Initial public beta release.</ReleaseNotes>

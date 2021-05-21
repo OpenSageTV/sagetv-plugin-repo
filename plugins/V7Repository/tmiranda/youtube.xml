@@ -53,8 +53,8 @@
 
    <Package>
     <PackageType>STVI</PackageType>
-    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/YouTube2015/YouTubeSTVi-1.10.zip</Location>
-    <MD5>CC7EC7C0B8C006A39506C990EAE80AA4</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/YouTubeSTVi-1.10.1.zip</Location>
+    <MD5>876CCE32BDC53D7834242792CB4F506E</MD5>
   </Package>
 
   <STVImport>YouTube.stvi</STVImport>

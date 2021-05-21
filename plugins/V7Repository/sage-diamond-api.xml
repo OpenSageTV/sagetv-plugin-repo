@@ -30,9 +30,9 @@
 
     <PackageType>JAR</PackageType>
 
-    <Location>http://babgvant.com/downloads/pluckyhd/DiamondAPI/SageDiamondAPIV3.30.zip</Location>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/SageDiamondAPIV3.30.zip</Location>
 
-    <MD5>374971f1c7d27e53333a70205cfe85f0</MD5>
+    <MD5>8B650721368B714A5DF4A17B31BEA856</MD5>
 
   </Package>
 

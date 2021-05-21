@@ -28,9 +28,9 @@
 
     <PackageType>System</PackageType>
 
-    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/YouTube2015/youtube.properties.zip</Location>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/youtube.properties.zip</Location>
 
-    <MD5>62654975AD0B25161531FB80BF8E5675</MD5>
+    <MD5>1495A349BA35891F8C90B638E32B15BD</MD5>
 
   </Package>
 

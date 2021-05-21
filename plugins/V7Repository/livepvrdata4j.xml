@@ -66,9 +66,9 @@
 
                <PackageType>JAR</PackageType>
 
-               <Location>http://bitbucket.org/skiingwiz/sagetv-sre/downloads/livepvrdata4j-5.0.0.1.zip</Location>
+               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/livepvrdata4j-5.0.0.1.zip</Location>
 
-               <MD5>aebcc1d091bcd84e6d3adf3c94fce1a8</MD5>
+               <MD5>AEBCC1D091BCD84E6D3ADF3C94FCE1A8</MD5>
 
                <Overwrite>true</Overwrite> <!-- Defaults to true -->
 

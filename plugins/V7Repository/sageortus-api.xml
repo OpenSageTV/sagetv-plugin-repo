@@ -49,8 +49,8 @@
 
   <Package>
     <PackageType>JAR</PackageType>
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/ortus/sageortus-jar-1.0.13.zip</Location>
-    <MD5>2cb8295d7bff0cc8c2ff08f69e03b3d1</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sageortus-jar-1.0.13.zip</Location>
+    <MD5>2CB8295D7BFF0CC8C2FF08F69E03B3D1</MD5>
   </Package>
   <ImplementationClass>ortus.plugins.ortusPlugin</ImplementationClass>
 

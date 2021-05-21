@@ -86,7 +86,7 @@
 
     		<PackageType>STVI</PackageType>
 
-    		<Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/tmiranda/PodcastRecorderSTVi-1.70.zip</Location>
+    		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/PodcastRecorderSTVi-1.70.zip</Location>
 
     		<MD5>D24B6544C113BE4BFC333A88701488CB</MD5>
 
