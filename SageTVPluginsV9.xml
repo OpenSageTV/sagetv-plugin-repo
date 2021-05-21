@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2021.0520.0018">
+<PluginRepository version="2021.0521.0411">
 <SageTVPlugin>
   <Name>OSD Enhancements</Name>
   <Identifier>jusjokenOSDEnhancements</Identifier>
@@ -417,8 +417,8 @@ NOTE: Be sure to clear your browser cache thoroughly after installing this updat
 
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/sagex.plugin.pushbullet/sagex.plugin.pushbullet-1.2.zip</Location>
-        <MD5>99addd815b1a7038de18e9854261258b</MD5>
+        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sagex.plugin.pushbullet.jar-1.2.zip</Location>
+        <MD5>A1D5C9D479B8AA55E55EC2C23201B7CD</MD5>
     </Package>
 
     <ImplementationClass>sagex.plugin.pushbullet.PushBulletPlugin</ImplementationClass>
@@ -1955,8 +1955,8 @@ V7 Port of External Apps import
 
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/SageTCPServer/SageTCPServer-2.3.6.1.zip</Location>
-        <MD5>405e201f4a952ea739eed97377c5421b</MD5>
+        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/SageTCPServer-2.3.6.1.zip</Location>
+        <MD5>AF7D533E7920B1FD8D07F7F72D8E0212</MD5>
     </Package>
 
     <ReleaseNotes> Version 2.3.6 Moved to a different file server.
@@ -3449,33 +3449,6 @@ As an aside, it is worth noting that this plugin is implemented completely in Gr
 
 </SageTVPlugin>
 <SageTVPlugin>
-    <Name>Audio Stream Toggle</Name>
-    <Identifier>LMAUDIOTOGGLE</Identifier>
-    <Description>
-        Allows switching audio streams during video playback by pressing on a button on your remote.
-
-        For switching audio streams you'll also need to assign the "DVD Change Audio" command to
-        a remote button or keyboard shortcut, either withing SageTV mappings or with your remote
-        control software.
-    </Description>
-    <Author>LM Gestion - StephaneM</Author>
-    <CreationDate>2010-08-14</CreationDate>
-    <ModificationDate>2010-08-14</ModificationDate>
-    <Version>1.0</Version>
-    <Desktop>false</Desktop>
-    <PluginType>STVI</PluginType>
-    <STVImport>AudioToggle.stvi</STVImport>
-    <Dependency>
-        <STV>SageTV7</STV>
-        <MinVersion>7.0</MinVersion>
-    </Dependency>
-    <Package>
-        <PackageType>STVI</PackageType>
-        <Location>http://www.lmgestion.net/content/softwares/sagetv/audiotoggle1.0.zip</Location>
-        <MD5>cce697e6b3febe7a43760196e99d7af4</MD5>
-    </Package>
-</SageTVPlugin>
-<SageTVPlugin>
 
   <Name>ant-javamail</Name>
 
@@ -3887,9 +3860,9 @@ This plugin installs a web GUI app within the Jetty plugin for online viewing an
 
     <PackageType>JAR</PackageType>
 
-    <Location>http://babgvant.com/downloads/pluckyhd/DiamondAPI/SageDiamondAPIV3.30.zip</Location>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/SageDiamondAPIV3.30.zip</Location>
 
-    <MD5>374971f1c7d27e53333a70205cfe85f0</MD5>
+    <MD5>8B650721368B714A5DF4A17B31BEA856</MD5>
 
   </Package>
 
@@ -4392,9 +4365,9 @@ Support latest salicense file format
 
  <PackageType>STVI</PackageType>
 
- <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/diamond-legacy/DiamondB3.30.zip</Location>
+ <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/DiamondB3.30.zip</Location>
 
- <MD5>bf157a7e2ee3607b4426c465e34c9520</MD5>
+ <MD5>BF157A7E2EE3607B4426C465E34C9520</MD5>
 
 </Package>
 
@@ -4404,9 +4377,9 @@ Support latest salicense file format
 
  <PackageType>STVI</PackageType>
 
- <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/diamond-legacy/DiamondSTVIB3.32.zip</Location>
+ <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/DiamondSTVIB3.32.zip</Location>
 
- <MD5>ae8275f8de1713a59ebb74d9fda0c112</MD5>
+ <MD5>AE8275F8DE1713A59EBB74D9FDA0C112</MD5>
 
 </Package>
 
@@ -4432,26 +4405,6 @@ Support latest salicense file format
 
 
 
-</SageTVPlugin>
-<SageTVPlugin>
-  <Name>Always Show SubMenus</Name>
-  <Identifier>FuzzyShowSubMenu</Identifier>
-  <Description>Changes Main Menu behavior to always show the Submenu of the Focused item.  Greatly improved menu navigation intuitiveness.</Description>
-  <Author>Fuzzy</Author>
-  <CreationDate>2010-07-06</CreationDate>
-  <ModificationDate>2010.07.06</ModificationDate>
-  <Version>1.0.0</Version>
-  <PluginType>STVI</PluginType>
-  <ReleaseNotes>1.0.0 - Initial Release</ReleaseNotes>
-  <Dependency>
-    <STV>SageTV7</STV>
-    <MinVersion>7.0</MinVersion>
- </Dependency><Package>
-    <PackageType>STVI</PackageType>
-   <Location>http://dl.dropbox.com/u/8593871/Fuzzy_ShowSubmenu.zip</Location>
-    <MD5>3F7BB14F8337469CB46FFDE124F27DCD</MD5>
-  </Package>
-  <STVImport>Fuzzy_ShowSubmenu.stvi</STVImport>
 </SageTVPlugin>
 <SageTVPlugin>
 
@@ -4641,8 +4594,8 @@ Support latest salicense file format
 
    <Package>
        <PackageType>JAR</PackageType>
-       <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/upnp2podcast/PlayOnUtils_v1_5.zip</Location>
-       <MD5>835426c436d44a51e412dcd6b6df630d</MD5>
+       <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/PlayOnUtils_v1_5.zip</Location>
+       <MD5>835426C436D44A51E412DCD6B6DF630D</MD5>
    </Package>
 
  </SageTVPlugin>
@@ -4880,8 +4833,8 @@ CHANGES SINCE LAST RELEASE
 
   <Package>
     <PackageType>STVI</PackageType>
-    <Location><![CDATA[http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/upnp2podcast/MovieTimesSTVi_v1_1_1.zip]]></Location>
-    <MD5>3b703470f63f2bc0469b1e966a942066</MD5>
+    <Location><![CDATA[https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/MovieTimesSTVi_v1_1_1.zip]]></Location>
+    <MD5>3B703470F63F2BC0469B1E966A942066</MD5>
   </Package>
 
   <STVImport>MovieTimes.stvi</STVImport>
@@ -4968,27 +4921,6 @@ CHANGES SINCE LAST RELEASE
 	</ReleaseNotes>
 </SageTVPlugin>
 <SageTVPlugin>
-  <Name>AutoSleep</Name>
-  <Identifier>AutoSleep</Identifier>
-  <Description>AutoSleep on 2 hours of inactivity.  Timeout (in minutes) can be changed in sageclient.properties: plugins/df/auto_sleep_time=120</Description>
-  <Author>Flachbar, Fuzzy</Author>
-  <CreationDate>2007-10-06</CreationDate>
-  <ModificationDate>2011.01.09</ModificationDate>
-  <Version>1.2.0</Version>
-  <PluginType>STVI</PluginType>
-  <ReleaseNotes>1.1.0 - Last v6 Release by Flachbar
-  1.2.0 - Initial v7 Release ported by Fuzzy</ReleaseNotes>
-  <Dependency>
-    <STV>SageTV7</STV>
-    <MinVersion>7.0</MinVersion>
- </Dependency><Package>
-    <PackageType>STVI</PackageType>
-   <Location>http://dl.dropbox.com/u/8593871/AutoSleep_1_2.zip</Location>
-    <MD5>08e5baef27048521e3155164058e80d1</MD5>
-  </Package>
-  <STVImport>AutoSleep_1_2.stvi</STVImport>
-</SageTVPlugin>
-<SageTVPlugin>
   <Name>Metadata Tools for SageTV - Commandline</Name>
   <Identifier>bmt</Identifier>
   <Description>
@@ -5012,14 +4944,14 @@ want to run BMT from a console to generate .properties.
 
   <Package>
     <PackageType>JAR</PackageType>
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/customsagetv/bmt-jar-4.9.8.zip</Location>
-    <MD5>e6a653bdaa8e0443b8d8acc0b5a47b5f</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/bmt-jar-4.9.8.zip</Location>
+    <MD5>E6A653BDAA8E0443B8D8ACC0B5A47B5F</MD5>
   </Package>
 
   <Package>
     <PackageType>System</PackageType>
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/customsagetv/bmt-system-4.9.8.zip</Location>
-    <MD5>407239e2b2f6c927a656327431e3ba2b</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/bmt-system-4.9.8.zip</Location>
+    <MD5>407239E2B2F6C927A656327431E3BA2B</MD5>
   </Package>
   <ReleaseNotes>
 
@@ -5254,8 +5186,8 @@ Updates: 1.01 - Correct NBC and Comedy Central Logos and recompress as 800x400 3
 
   <Package>
     <PackageType>System</PackageType>
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/ortus/ortus-trailer-files.zip</Location>
-    <MD5>bde0951298ef0522c724a1a1ea1e2b88</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/ortus-trailer-files.zip</Location>
+    <MD5>BDE0951298EF0522C724A1A1EA1E2B88</MD5>
   </Package>
 </SageTVPlugin>
 <SageTVPlugin>
@@ -5492,36 +5424,6 @@ wnload directly</Description>
   <ImplementationClass></ImplementationClass>
 </SageTVPlugin>
 <SageTVPlugin>
-    <Name>DVB / TTX Subtitles Playback</Name>
-    <Identifier>LMSUBTITLES</Identifier>
-    <Description>
-        Allows playback of DVB and Teletext subtitles for recordings made with DVBViewer Recorder
-        or LM DVB Smart Recorder.
-
-        For enabling DVB and Teletext subtitles playback you'll need to also use a network
-        recorder that extract subtitles in real time like DVBViewer Recorder or LM DVB Smart
-        Recorder.
-    </Description>
-    <Author>LM Gestion - StephaneM</Author>
-    <CreationDate>2010-08-15</CreationDate>
-    <ModificationDate>2010-08-15</ModificationDate>
-    <Version>2.0</Version>
-    <Desktop>false</Desktop>
-    <PluginType>STVI</PluginType>
-    <STVImport>CaptionPlayback.stvi</STVImport>
-    <Dependency>
-        <STV>SageTV7</STV>
-        <MinVersion>7.0</MinVersion>
-    </Dependency>
-    <Package>
-        <PackageType>STVI</PackageType>
-        <Location>http://www.lmgestion.net/content/softwares/sagetv/captionplayback2.0.zip</Location>
-        <MD5>eb31bf99b3a93556c1f26e0e4f4f65a3</MD5>
-    </Package>
-    <Webpage>http://www.lmgestion.net/@en-us/4/22/124/article.asp</Webpage>
-    <Webpage>http://www.lmgestion.net/@en-us/4/22/90/article.asp</Webpage>
-</SageTVPlugin>
-<SageTVPlugin>
        <Name>commons-exec</Name>
        <Identifier>commons-exec</Identifier>
        <Description>Apache Commons process execution library - dependency only</Description>
@@ -5585,73 +5487,6 @@ wnload directly</Description>
 		<Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetv-addons/somf-1.0.0.1338.zip</Location>
 		<MD5>f6a8b92dfc7042c1f5c900774fcff891</MD5>
 	</Package>
-</SageTVPlugin>
-<SageTVPlugin>
-
-  <Name>DVBE4SageEPGImporter - DVBE4Sage EPG Importer Services</Name>
-
-  <Identifier>dvbe4sage-epg-importer</Identifier>
-
-  <Description>This plugin will accept the EPG data parsed from DVBE4Sage and import it to your configured lineup</Description>
-
-  <Author>Jabroni</Author>
-
-  <CreationDate>2011.09.10</CreationDate>
-
-  <ModificationDate>2011.09.10</ModificationDate>
-
-  <Version>1.0.0</Version>
-
-  <Desktop>false</Desktop>
-
-  <Webpage><![CDATA[http://code.google.com/p/dvbe4sage/]]></Webpage>
-
-
-
-
-
-  <Dependency>
-
-    <Plugin>sagex-api</Plugin>
-
-    <MinVersion>7.1.9.1</MinVersion>
-
-  </Dependency>
-
-
-
-  <PluginType>Standard</PluginType>
-
-
-
-  <Package>
-
-    <PackageType>JAR</PackageType>
-
-    <Location>http://dl.dropbox.com/u/17862/dvb4sageepgimport-1.0.0.zip</Location>
-
-    <MD5>53445902b42dad329d1cd6cc9f62bd06</MD5>
-
-  </Package>
-
-
-
-  <!-- Plugin Class is in the core sagex-api jar -->
-
-  <ImplementationClass>org.dvbe4sage.DVBEPGPlugin</ImplementationClass>
-
-
-
-  <ReleaseNotes>
-
-1.0
-
-* First Release. Be sure to have a fully configured DVBE4Sage Instance (which supports EIT Parsing) and point it to your listening Importer port.
-
-  </ReleaseNotes>
-
-
-
 </SageTVPlugin>
 <SageTVPlugin>
 
@@ -5957,9 +5792,9 @@ wnload directly</Description>
 
                <PackageType>JAR</PackageType>
 
-               <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/livepvrdata4j/livepvrdata-shared-5.0.0.0.zip</Location>
+               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/livepvrdata-shared-5.0.0.0.zip</Location>
 
-               <MD5>63b51788e4ae4dda20eb30347eff279b</MD5>
+               <MD5>63B51788E4AE4DDA20EB30347EFF279B</MD5>
 
                <Overwrite>true</Overwrite> <!-- Defaults to true -->
 
@@ -5996,8 +5831,8 @@ wnload directly</Description>
 
    <Package>
        <PackageType>JAR</PackageType>
-       <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/upnp2podcast/PlayOnJARs_v1_5.zip</Location>
-       <MD5>570621b2a9210cc409fe9ac5825e54bd</MD5>
+       <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/PlayOnJARs_v1_5.zip</Location>
+       <MD5>570621B2A9210CC409FE9AC5825E54BD</MD5>
    </Package>
 
    <ImplementationClass>epplayon.EPPlayonPlugin</ImplementationClass>
@@ -6457,9 +6292,9 @@ Toggle disk bar on Home screen with 'Info' button
 
      <PackageType>STVI</PackageType>
 
-     <Location><![CDATA[http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/upnp2podcast/PlayOnSTVI_v1_8.zip]]></Location>
+     <Location><![CDATA[https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/PlayOnSTVI_v1_8.zip]]></Location>
 
-     <MD5>11f5d5441d9a5acf382e0c73e655762c</MD5>
+     <MD5>11F5D5441D9A5ACF382E0C73E655762C</MD5>
 
    </Package>
 
@@ -6943,8 +6778,8 @@ Initial release.
   <PluginType>Library</PluginType>
   <Package>
     <PackageType>System</PackageType>
-    <Location><![CDATA[http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/upnp2podcast/tasVideosScraper_v1_0.zip]]></Location>
-    <MD5>a3213ec29565fa176d51cba16936a4cc</MD5>
+    <Location><![CDATA[https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/tasVideosScraper_v1_0.zip]]></Location>
+    <MD5>A3213EC29565FA176D51CBA16936A4CC</MD5>
   </Package>
 
 </SageTVPlugin>
@@ -7083,8 +6918,8 @@ Initial release.
 
   <Package>
     <PackageType>JAR</PackageType>
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/ortus/sageortus-jar-1.0.13.zip</Location>
-    <MD5>2cb8295d7bff0cc8c2ff08f69e03b3d1</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sageortus-jar-1.0.13.zip</Location>
+    <MD5>2CB8295D7BFF0CC8C2FF08F69E03B3D1</MD5>
   </Package>
   <ImplementationClass>ortus.plugins.ortusPlugin</ImplementationClass>
 
@@ -7164,9 +6999,9 @@ Initial release.
 
     <PackageType>JAR</PackageType>
 
-    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/adm/ADMAPI_0.503.zip</Location>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/ADMAPI_0.503.zip</Location>
 
-    <MD5>76086685093738f4e03a8c3503454bdb</MD5>
+    <MD5>76086685093738F4E03A8C3503454BDB</MD5>
 
   </Package>
 
@@ -7498,8 +7333,8 @@ SJQv4 common classes; do not install manually.
 
   <Package>
     <PackageType>System</PackageType>
-    <Location><![CDATA[http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/upnp2podcast/MediaShrink_v3.0.4.zip]]></Location>
-    <MD5>21a7a7179fe243993f049599b3e236bc</MD5>
+    <Location><![CDATA[https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/MediaShrink_v3.0.4.zip]]></Location>
+    <MD5>21A7A7179FE243993F049599B3E236BC</MD5>
   </Package>
 </SageTVPlugin>
 <SageTVPlugin>
@@ -7945,13 +7780,13 @@ ices.
   <PluginType>Standard</PluginType>
   <Package>
     <PackageType>JAR</PackageType>
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/ortus/sagex-h2.jar-1.0.8.zip</Location>
-    <MD5>771654e1f1ec1287ba83a8c6a28ab5fc</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sagex-h2.jar-1.0.8.zip</Location>
+    <MD5>771654E1F1EC1287BA83A8C6A28AB5FC</MD5>
   </Package>
   <Package>
     <PackageType>JAR</PackageType>
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/ortus/h2-1.2.145.jar.zip</Location>
-    <MD5>46ff35d82e22e106d0e9d430b3770824</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/h2-1.2.145.jar.zip</Location>
+    <MD5>46FF35D82E22E106D0E9D430B3770824</MD5>
   </Package>
   <ImplementationClass>sagex.h2.SagexH2Plugin</ImplementationClass>
 </SageTVPlugin>
@@ -8639,6 +8474,104 @@ Version 1.0.0 - Initial Release
 
 </SageTVPlugin>
 <SageTVPlugin>
+    <Name>Audio Stream Toggle</Name>
+    <Identifier>LMAUDIOTOGGLE</Identifier>
+    <Description>
+        Allows switching audio streams during video playback by pressing on a button on your remote.
+
+        For switching audio streams you'll also need to assign the "DVD Change Audio" command to
+        a remote button or keyboard shortcut, either withing SageTV mappings or with your remote
+        control software.
+    </Description>
+    <Author>LM Gestion - StephaneM</Author>
+    <CreationDate>2010-08-14</CreationDate>
+    <ModificationDate>2010-08-14</ModificationDate>
+    <Version>1.0</Version>
+    <Desktop>false</Desktop>
+    <PluginType>STVI</PluginType>
+    <STVImport>AudioToggle.stvi</STVImport>
+    <Dependency>
+        <STV>SageTV7</STV>
+        <MinVersion>7.0</MinVersion>
+    </Dependency>
+    <Package>
+        <PackageType>STVI</PackageType>
+        <Location>http://www.lmgestion.net/content/softwares/sagetv/audiotoggle1.0.zip</Location>
+        <MD5>cce697e6b3febe7a43760196e99d7af4</MD5>
+    </Package>
+</SageTVPlugin>
+<SageTVPlugin>
+  <Name>Always Show SubMenus</Name>
+  <Identifier>FuzzyShowSubMenu</Identifier>
+  <Description>Changes Main Menu behavior to always show the Submenu of the Focused item.  Greatly improved menu navigation intuitiveness.</Description>
+  <Author>Fuzzy</Author>
+  <CreationDate>2010-07-06</CreationDate>
+  <ModificationDate>2010.07.06</ModificationDate>
+  <Version>1.0.0</Version>
+  <PluginType>STVI</PluginType>
+  <ReleaseNotes>1.0.0 - Initial Release</ReleaseNotes>
+  <Dependency>
+    <STV>SageTV7</STV>
+    <MinVersion>7.0</MinVersion>
+ </Dependency><Package>
+    <PackageType>STVI</PackageType>
+   <Location>http://dl.dropbox.com/u/8593871/Fuzzy_ShowSubmenu.zip</Location>
+    <MD5>3F7BB14F8337469CB46FFDE124F27DCD</MD5>
+  </Package>
+  <STVImport>Fuzzy_ShowSubmenu.stvi</STVImport>
+</SageTVPlugin>
+<SageTVPlugin>
+  <Name>AutoSleep</Name>
+  <Identifier>AutoSleep</Identifier>
+  <Description>AutoSleep on 2 hours of inactivity.  Timeout (in minutes) can be changed in sageclient.properties: plugins/df/auto_sleep_time=120</Description>
+  <Author>Flachbar, Fuzzy</Author>
+  <CreationDate>2007-10-06</CreationDate>
+  <ModificationDate>2011.01.09</ModificationDate>
+  <Version>1.2.0</Version>
+  <PluginType>STVI</PluginType>
+  <ReleaseNotes>1.1.0 - Last v6 Release by Flachbar
+  1.2.0 - Initial v7 Release ported by Fuzzy</ReleaseNotes>
+  <Dependency>
+    <STV>SageTV7</STV>
+    <MinVersion>7.0</MinVersion>
+ </Dependency><Package>
+    <PackageType>STVI</PackageType>
+   <Location>http://dl.dropbox.com/u/8593871/AutoSleep_1_2.zip</Location>
+    <MD5>08e5baef27048521e3155164058e80d1</MD5>
+  </Package>
+  <STVImport>AutoSleep_1_2.stvi</STVImport>
+</SageTVPlugin>
+<SageTVPlugin>
+    <Name>DVB / TTX Subtitles Playback</Name>
+    <Identifier>LMSUBTITLES</Identifier>
+    <Description>
+        Allows playback of DVB and Teletext subtitles for recordings made with DVBViewer Recorder
+        or LM DVB Smart Recorder.
+
+        For enabling DVB and Teletext subtitles playback you'll need to also use a network
+        recorder that extract subtitles in real time like DVBViewer Recorder or LM DVB Smart
+        Recorder.
+    </Description>
+    <Author>LM Gestion - StephaneM</Author>
+    <CreationDate>2010-08-15</CreationDate>
+    <ModificationDate>2010-08-15</ModificationDate>
+    <Version>2.0</Version>
+    <Desktop>false</Desktop>
+    <PluginType>STVI</PluginType>
+    <STVImport>CaptionPlayback.stvi</STVImport>
+    <Dependency>
+        <STV>SageTV7</STV>
+        <MinVersion>7.0</MinVersion>
+    </Dependency>
+    <Package>
+        <PackageType>STVI</PackageType>
+        <Location>http://www.lmgestion.net/content/softwares/sagetv/captionplayback2.0.zip</Location>
+        <MD5>eb31bf99b3a93556c1f26e0e4f4f65a3</MD5>
+    </Package>
+    <Webpage>http://www.lmgestion.net/@en-us/4/22/124/article.asp</Webpage>
+    <Webpage>http://www.lmgestion.net/@en-us/4/22/90/article.asp</Webpage>
+</SageTVPlugin>
+<SageTVPlugin>
 
 
 
@@ -8750,6 +8683,115 @@ Version 0.01:
 
 </SageTVPlugin>
 <SageTVPlugin>
+
+  <Name>DVBE4SageEPGImporter - DVBE4Sage EPG Importer Services</Name>
+
+  <Identifier>dvbe4sage-epg-importer</Identifier>
+
+  <Description>This plugin will accept the EPG data parsed from DVBE4Sage and import it to your configured lineup</Description>
+
+  <Author>Jabroni</Author>
+
+  <CreationDate>2011.09.10</CreationDate>
+
+  <ModificationDate>2011.09.10</ModificationDate>
+
+  <Version>1.0.0</Version>
+
+  <Desktop>false</Desktop>
+
+  <Webpage><![CDATA[http://code.google.com/p/dvbe4sage/]]></Webpage>
+
+
+
+
+
+  <Dependency>
+
+    <Plugin>sagex-api</Plugin>
+
+    <MinVersion>7.1.9.1</MinVersion>
+
+  </Dependency>
+
+
+
+  <PluginType>Standard</PluginType>
+
+
+
+  <Package>
+
+    <PackageType>JAR</PackageType>
+
+    <Location>http://dl.dropbox.com/u/17862/dvb4sageepgimport-1.0.0.zip</Location>
+
+    <MD5>53445902b42dad329d1cd6cc9f62bd06</MD5>
+
+  </Package>
+
+
+
+  <!-- Plugin Class is in the core sagex-api jar -->
+
+  <ImplementationClass>org.dvbe4sage.DVBEPGPlugin</ImplementationClass>
+
+
+
+  <ReleaseNotes>
+
+1.0
+
+* First Release. Be sure to have a fully configured DVBE4Sage Instance (which supports EIT Parsing) and point it to your listening Importer port.
+
+  </ReleaseNotes>
+
+
+
+</SageTVPlugin>
+<SageTVPlugin>
+  <Name>SageMyMovies API</Name>
+  <Identifier>smm-api</Identifier>
+  <Description>MyMovies API- no need to download directly</Description>
+  <Author>PluckyHD</Author>
+  <CreationDate>2010-05-21</CreationDate>
+  <ModificationDate>2010.01.21</ModificationDate>
+  <Version beta="true">1.2300</Version>
+  <Desktop>false</Desktop>
+  <OS>Windows</OS>
+  <Dependency>
+  <Core/>
+  <MinVersion>7.0.15</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Plugin>log4j</Plugin>
+    <MinVersion>1.2.15</MinVersion>
+  </Dependency>
+<Dependency>
+    <Plugin>sagex-api</Plugin>
+    <MinVersion>7.0.7.0</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Plugin>MSSQLJDBC</Plugin>
+    <MinVersion>2.0</MinVersion>
+  </Dependency>
+  <PluginType>Standard</PluginType>
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>http://babgvant.com/downloads/pluckyhd/smm-api-Bv1.2300.zip</Location>
+    <MD5>391cc06eb79dd062d7132cff0273c69d</MD5>
+  </Package>
+  <Package>
+  <PackageType>System</PackageType>
+  <Location>http://babgvant.com/downloads/pluckyhd/smm-api-backupfiles1.00.zip</Location>
+  <MD5>6312901f4d17649d225b8937adf6d8a5</MD5>
+  <Overwrite>true</Overwrite>
+  </Package>
+
+<ImplementationClass>PluginSageMyMovies.SMMPlugin</ImplementationClass>
+
+</SageTVPlugin>
+<SageTVPlugin>
 	<Name>twiederTweaks</Name>
 	<Identifier>twiedertweaks</Identifier>
 	<Description>A collection of SageTV7 UI tweaks
@@ -8807,6 +8849,83 @@ v0.7.5
 		<Location>http://www.wallofcats.com/sagetv/twiederTweaks_0.7.5.zip</Location>
 		<MD5>3FD046FF7FF7B72250B195DF18CCF5E0</MD5>
 	</Package>
+</SageTVPlugin>
+<SageTVPlugin>
+  <Name>Microsoft SQL JDBC</Name>
+  <Identifier>MSSQLJDBC</Identifier>
+  <Description>Microsoft SQL Server JDBC Driver- no need to download directly</Description>
+  <Author>PluckyHD</Author>
+  <CreationDate>2010-04-15</CreationDate>
+  <ModificationDate>2010.04.15</ModificationDate>
+  <Version>2.0</Version>
+  <Desktop>false</Desktop>
+  <OS>Windows</OS>
+
+  <PluginType>Library</PluginType>
+
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>http://babgvant.com/downloads/pluckyhd/sqljdbc4.zip</Location>
+    <MD5>dbd6a7b9486de71183affa22a30c1340</MD5>
+  </Package>
+</SageTVPlugin>
+<SageTVPlugin>
+  <Name>SageMyMovies</Name>
+  <Identifier>SageMyMovies</Identifier>
+  <Description>MyMovies is a Movie Collection manager original designed for Windows Media Center. It has an extensive database of user contributed content encompassing metadata and fanart for movies. How this differs from IMDB.com and the like is that contribution to the database earns you points that can be used to unlock additional features and functionality in MyMovies.
+MYMovies also supports a Server/Client architecture. Your collection can reside on a headless server and be managed by any other machine on your network running the client software. For more information on MyMovies please check out their website.
+I started this project as a way to bring my favorite collection management tool from WMC, MyMovies into SageTV for myself. The project has become much larger than I ever expected.
+Please note that this project was developed in my spare time. I have developed most of this by myself and I am only one person. I do not make any money from this project nor from My Movies. While I will try to fix issues in a timely manner, please try not to expect immediate responses as It can take some time to fix an issue. .
+tHIS PROGRAM WILL NOT RUN WITHOUTH MYMOVIES COLLECTION MANAGER RUNNING ON THIS CLIENT (OR SERVER IF IT IS EXTENDER)!!!Requires MyMovies collection manager version 3.17 R3 or later!!. </Description>
+  <Author>PluckyHD</Author>
+  <CreationDate>2010-05-21</CreationDate>
+  <ModificationDate>2011.3.8</ModificationDate>
+  <Version beta="true">1.1900</Version>
+  <Desktop>false</Desktop>
+   <ReleaseNotes> 1.1900 Fix for Diamond 3.00 stvi to work with it now allow disabling mymovies completely!! Requires MyMovies collection manager version 3.17 R3 or later!!. See wiki update logs for updates in this build. It is API as well as STVi updates.</ReleaseNotes>
+  <OS>Windows</OS>
+  <DemoVideo>http://www.youtube.com/watch?v=GG4YsvPRfAU</DemoVideo>
+  <DemoVideo>http://www.youtube.com/watch?v=Imy2wt27yRQ</DemoVideo>
+  <DemoVideo>http://www.youtube.com/watch?v=YYsE3iwn2iU</DemoVideo>
+  <Screenshot>http://babgvant.com/downloads/pluckyhd/SMM%20Release%201.jpg</Screenshot>
+  <Screenshot>http://babgvant.com/downloads/pluckyhd/SMM%20Release%202.jpg</Screenshot>
+  <Screenshot>http://babgvant.com/downloads/pluckyhd/SMM%20Release%203.jpg</Screenshot>
+  <Screenshot>http://babgvant.com/downloads/pluckyhd/SMM%20Release%204.jpg</Screenshot>
+  <Screenshot>http://babgvant.com/downloads/pluckyhd/SMM%20Release%205.jpg</Screenshot>
+  <Screenshot>http://babgvant.com/downloads/pluckyhd/SMM%20Release%206.jpg</Screenshot>
+  <Screenshot>http://babgvant.com/downloads/pluckyhd/SMM%20Release%207.jpg</Screenshot>
+  <Webpage>http://code.google.com/p/sagemediamanager/wiki/PageName</Webpage>
+  <Webpage>http://www.mymovies.dk/</Webpage>
+  <Dependency>
+  <Core/>
+  <MinVersion>7.1.2.0</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Plugin>log4j</Plugin>
+    <MinVersion>1.2.15</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Plugin>sagex-api</Plugin>
+    <MinVersion>7.0.9.0</MinVersion>
+  </Dependency>
+
+  <Dependency>
+    <Plugin>smm-api</Plugin>
+    <MinVersion>1.2200</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Plugin>MSSQLJDBC</Plugin>
+    <MinVersion>2.0</MinVersion>
+  </Dependency>
+
+<PluginType>STVI</PluginType>
+
+  <Package>
+    <PackageType>STVI</PackageType>
+    <Location>http://babgvant.com/downloads/pluckyhd/SageMyMoviesSTViV7UBetaV1.1900.zip</Location>
+    <MD5>0179a0121738a8ea2a04ddabf762c291</MD5>
+  </Package>
+<STVImport>SageMyMoviesSTViV7UBetaV1.1900.xml</STVImport>
 </SageTVPlugin>
 <SageTVPlugin>
        <Name>Sage Artifact Delete (SAD)</Name>
@@ -8958,55 +9077,13 @@ Changes since v1.0.0
 
                <PackageType>JAR</PackageType>
 
-               <Location>http://bitbucket.org/skiingwiz/sagetv-sre/downloads/livepvrdata4j-5.0.0.1.zip</Location>
+               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/livepvrdata4j-5.0.0.1.zip</Location>
 
-               <MD5>aebcc1d091bcd84e6d3adf3c94fce1a8</MD5>
+               <MD5>AEBCC1D091BCD84E6D3ADF3C94FCE1A8</MD5>
 
                <Overwrite>true</Overwrite> <!-- Defaults to true -->
 
        </Package>
-
-</SageTVPlugin>
-<SageTVPlugin>
-  <Name>SageMyMovies API</Name>
-  <Identifier>smm-api</Identifier>
-  <Description>MyMovies API- no need to download directly</Description>
-  <Author>PluckyHD</Author>
-  <CreationDate>2010-05-21</CreationDate>
-  <ModificationDate>2010.01.21</ModificationDate>
-  <Version beta="true">1.2300</Version>
-  <Desktop>false</Desktop>
-  <OS>Windows</OS>
-  <Dependency>
-  <Core/>
-  <MinVersion>7.0.15</MinVersion>
-  </Dependency>
-  <Dependency>
-    <Plugin>log4j</Plugin>
-    <MinVersion>1.2.15</MinVersion>
-  </Dependency>
-<Dependency>
-    <Plugin>sagex-api</Plugin>
-    <MinVersion>7.0.7.0</MinVersion>
-  </Dependency>
-  <Dependency>
-    <Plugin>MSSQLJDBC</Plugin>
-    <MinVersion>2.0</MinVersion>
-  </Dependency>
-  <PluginType>Standard</PluginType>
-  <Package>
-    <PackageType>JAR</PackageType>
-    <Location>http://babgvant.com/downloads/pluckyhd/smm-api-Bv1.2300.zip</Location>
-    <MD5>391cc06eb79dd062d7132cff0273c69d</MD5>
-  </Package>
-  <Package>
-  <PackageType>System</PackageType>
-  <Location>http://babgvant.com/downloads/pluckyhd/smm-api-backupfiles1.00.zip</Location>
-  <MD5>6312901f4d17649d225b8937adf6d8a5</MD5>
-  <Overwrite>true</Overwrite>
-  </Package>
-
-<ImplementationClass>PluginSageMyMovies.SMMPlugin</ImplementationClass>
 
 </SageTVPlugin>
 <SageTVPlugin>
@@ -9886,9 +9963,9 @@ Closes a security hole on the Parental Lock Code
 
      <PackageType>System</PackageType>
 
-     <Location><![CDATA[http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/upnp2podcast/PlayOnScraper_v1_8.zip]]></Location>
+     <Location><![CDATA[https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/PlayOnScraper_v1_8.zip]]></Location>
 
-     <MD5>75b111f64f81833ea94eaef0b4e631d8</MD5>
+     <MD5>75B111F64F81833EA94EAEF0B4E631D8</MD5>
 
    </Package>
 
@@ -10070,9 +10147,9 @@ Closes a security hole on the Parental Lock Code
 
    <PackageType>STVI</PackageType>
 
-   <Location><![CDATA[http://sagetv.shadeblue.com/twit/release/7.5/TWiTOnlineVideos.zip]]></Location>
+   <Location><![CDATA[https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/TWiTOnlineVideos.zip]]></Location>
 
-   <MD5>81d01cbbcd6f51a9536486c7883d24b3</MD5>
+   <MD5>81D01CBBCD6F51A9536486C7883D24B3</MD5>
 
  </Package>
 
@@ -10769,13 +10846,13 @@ Dump license validation log msg to logs when necessary
   <PluginType>Standard</PluginType>
   <Package>
     <PackageType>JAR</PackageType>
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/ortus/ortus-mq.jar-1.0.10.zip</Location>
-    <MD5>83a29c1df905b14844f24d3079bed05c</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/ortus-mq.jar-1.0.10.zip</Location>
+    <MD5>83A29C1DF905B14844F24D3079BED05C</MD5>
   </Package>
   <Package>
     <PackageType>System</PackageType>
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/ortus/ortus-mq-1.0.8.zip</Location>
-    <MD5>52d5e66d2455ee5672be0b4e7f1956dd</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/ortus-mq-1.0.8.zip</Location>
+    <MD5>52D5E66D2455EE5672BE0B4E7F1956DD</MD5>
   </Package>
   <ImplementationClass>ortus.mq.OrtusMQPlugin</ImplementationClass>
 </SageTVPlugin>
@@ -10793,7 +10870,7 @@ Dump license validation log msg to logs when necessary
 
   <Package>
     <PackageType>JAR</PackageType>
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/ortus/xstream-1.3.1.jar.zip</Location>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/xstream-1.3.1.jar.zip</Location>
     <MD5>83ace31da72f9b13045f02ad0cb15ac6</MD5>
   </Package>
 </SageTVPlugin>
@@ -10941,9 +11018,9 @@ SageTV Dependency JAR Plugin for sageortus.jar - no need to download directly
 <Package>
 <PackageType>JAR</PackageType>
 <Location>
-http://www.wallofcats.com/sagetv/sageortus.jar.zip
+https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sageortus.jar-1.0.21.zip
 </Location>
-<MD5>797F4EB14A7A643C7A011F1F801495AB</MD5>
+<MD5>042116A6610C789F6B8F56D7B504E1BB</MD5>
 </Package>
 </SageTVPlugin>
 <SageTVPlugin>
@@ -11158,29 +11235,10 @@ Added additional debug logging for scenario where media file is not seen as a mu
   <PluginType>Library</PluginType>
   <Package>
     <PackageType>System</PackageType>
-    <Location><![CDATA[http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/upnp2podcast/MovieTimesScraper_v1_1_1.zip]]></Location>
-    <MD5>508541a4e38277786c9033c3132ddf83</MD5>
+    <Location><![CDATA[https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/MovieTimesScraper_v1_1_1.zip]]></Location>
+    <MD5>508541A4E38277786C9033C3132DDF83</MD5>
   </Package>
 
-</SageTVPlugin>
-<SageTVPlugin>
-  <Name>Microsoft SQL JDBC</Name>
-  <Identifier>MSSQLJDBC</Identifier>
-  <Description>Microsoft SQL Server JDBC Driver- no need to download directly</Description>
-  <Author>PluckyHD</Author>
-  <CreationDate>2010-04-15</CreationDate>
-  <ModificationDate>2010.04.15</ModificationDate>
-  <Version>2.0</Version>
-  <Desktop>false</Desktop>
-  <OS>Windows</OS>
-
-  <PluginType>Library</PluginType>
-
-  <Package>
-    <PackageType>JAR</PackageType>
-    <Location>http://babgvant.com/downloads/pluckyhd/sqljdbc4.zip</Location>
-    <MD5>dbd6a7b9486de71183affa22a30c1340</MD5>
-  </Package>
 </SageTVPlugin>
 <SageTVPlugin>
 
@@ -12766,8 +12824,8 @@ shows in Guide that are Season Premieres.  Works with Default STV and Diamond UI
   <PluginType>Library</PluginType>
   <Package>
     <PackageType>System</PackageType>
-    <Location><![CDATA[http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/upnp2podcast/picasaWebScraper_v1_0.zip]]></Location>
-    <MD5>74dccf544820f854115a5800317702c7</MD5>
+    <Location><![CDATA[https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/picasaWebScraper_v1_0.zip]]></Location>
+    <MD5>74DCCF544820F854115A5800317702C7</MD5>
   </Package>
 
 </SageTVPlugin>
@@ -13102,9 +13160,9 @@ Final logging changes
 
     <PackageType>STVI</PackageType>
 
-    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/adm/ADM_0.503.zip</Location>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/ADM_0.503.zip</Location>
 
-    <MD5>1f549f378fac3f9a4bb16e1e658f4cc4</MD5>
+    <MD5>1F549F378FAC3F9A4BB16E1E658F4CC4</MD5>
 
   </Package>
 
@@ -13114,9 +13172,9 @@ Final logging changes
 
     <PackageType>STV</PackageType>
 
-    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/adm/ADMDefaults_0_422.zip</Location>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/ADMDefaults_0_422.zip</Location>
 
-    <MD5>a1da679b01b49db9920375ace429971f</MD5>
+    <MD5>A1DA679B01B49DB9920375ACE429971F</MD5>
 
   </Package>
 
@@ -13361,8 +13419,8 @@ Final logging changes
 
   <Package>
     <PackageType>STVI</PackageType>
-    <Location><![CDATA[http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/upnp2podcast/picasaWebSTVi_v1_0.zip]]></Location>
-    <MD5>18f72a505496d7ab26bfc26703bb1761</MD5>
+    <Location><![CDATA[https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/picasaWebSTVi_v1_0.zip]]></Location>
+    <MD5>18F72A505496D7AB26BFC26703BB1761</MD5>
   </Package>
 
   <STVImport>picasaWeb.stvi</STVImport>
@@ -14698,8 +14756,8 @@ Version 1.20:
   <Identifier>youtube-dl</Identifier>
   <Author>tmiranda</Author>
   <CreationDate>2017.09.23</CreationDate>
-  <ModificationDate>2017.09.23</ModificationDate>
-  <Version beta="false">2017.09.15</Version>
+  <ModificationDate>2021.05.21</ModificationDate>
+  <Version beta="false">2021.05.16</Version>
   <Desktop>false</Desktop>
 
   <Description>youtube-dl repackaged as a Sage PlugIn.</Description>
@@ -14708,8 +14766,8 @@ Version 1.20:
 
   <Package>
     <PackageType>System</PackageType>
-    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/YouTube2015/youtube-dl-2017.09.15.zip</Location>
-    <MD5>414804D12FD983561B9497123982C494</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/youtube-dl-2021.05.16.zip</Location>
+    <MD5>73E7B0BDA78B857CCAA24C44E53A3E4F</MD5>
   </Package>
 
 </SageTVPlugin>
@@ -14784,9 +14842,9 @@ Version 1.20:
 
     <PackageType>System</PackageType>
 
-    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/YouTube2015/youtube.properties.zip</Location>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/youtube.properties.zip</Location>
 
-    <MD5>62654975AD0B25161531FB80BF8E5675</MD5>
+    <MD5>1495A349BA35891F8C90B638E32B15BD</MD5>
 
   </Package>
 
@@ -15132,9 +15190,9 @@ This is based on a port of TVE v1.01.028 for SageMC to the STV3 Default STV and 
 
 		<PackageType>STVI</PackageType>
 
-		<Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetve/TVExplorer_v1.05.06.zip</Location>
+		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/TVExplorer_v1.05.06.zip</Location>
 
-		<MD5>218525078421f58de092414eb481b3c5</MD5>
+		<MD5>218525078421F58DE092414EB481B3C5</MD5>
 
 	</Package>
 
@@ -15142,9 +15200,9 @@ This is based on a port of TVE v1.01.028 for SageMC to the STV3 Default STV and 
 
 		<PackageType>JAR</PackageType>
 
-		<Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetve/sageortustve-api_v0.5.06.365.zip</Location>
+		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sageortustve-api_v0.5.06.365.zip</Location>
 
-		<MD5>ec2ca09193dc1159bd8ff5ebb1729797</MD5>
+		<MD5>EC2CA09193DC1159BD8FF5EBB1729797</MD5>
 
 	</Package>
 
@@ -15438,7 +15496,7 @@ This plugin provides support only.  To install PodcastRecorder please go to the 
 
     		<PackageType>JAR</PackageType>
 
-    		<Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/tmiranda/PodcastRecorder-0.70.zip</Location>
+    		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/PodcastRecorder-0.70.zip</Location>
 
     		<MD5>C5CB327D26EF91112B2C572779C4D135</MD5>
 
@@ -15641,8 +15699,8 @@ Version 1.00 - Initial release. Special thanks to jaminben for help with the ico
 
   <Package>
     <PackageType>JAR</PackageType>
-    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/YouTube2015/YouTube-1.10.zip</Location>
-    <MD5>0E7F1FA3F4728CE0BD7A675C60107A21</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/YouTube-1.10.1.zip</Location>
+    <MD5>6009F08AEFB42003DE51815EB478DBB8</MD5>
   </Package>
 
 </SageTVPlugin>
@@ -15935,8 +15993,8 @@ Version 0.01:
 
    <Package>
     <PackageType>STVI</PackageType>
-    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/YouTube2015/YouTubeSTVi-1.10.zip</Location>
-    <MD5>CC7EC7C0B8C006A39506C990EAE80AA4</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/YouTubeSTVi-1.10.1.zip</Location>
+    <MD5>876CCE32BDC53D7834242792CB4F506E</MD5>
   </Package>
 
   <STVImport>YouTube.stvi</STVImport>
@@ -16496,7 +16554,7 @@ Version 1.2. Fixed dependency on sagex API.</ReleaseNotes>
 
     		<PackageType>STVI</PackageType>
 
-    		<Location>http://github.com/tmiranda1962/plugins/releases/download/v0.01/CSM-v0.07.zip</Location>
+    		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/CSM-v0.07.zip</Location>
 
     		<MD5>A5A2EF7E559629973537DA8EE43B7ED3</MD5>
 
@@ -17176,7 +17234,7 @@ Version 0.10:
 
     		<PackageType>STVI</PackageType>
 
-    		<Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/tmiranda/PodcastRecorderSTVi-1.70.zip</Location>
+    		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/PodcastRecorderSTVi-1.70.zip</Location>
 
     		<MD5>D24B6544C113BE4BFC333A88701488CB</MD5>
 
@@ -17517,72 +17575,14 @@ Changes in 1.0.1.1513
 
   <Package>
     <PackageType>STVI</PackageType>
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/ortus/ortus-trailer-stvi.zip</Location>
-    <MD5>e3e1ccca8bae99dfcddd0d184932db0e</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/ortus-trailer-stvi.zip</Location>
+    <MD5>E3E1CCCA8BAE99DFCDDD0D184932DB0E</MD5>
   </Package>
 
 <ReleaseNotes>Version 1.07 - Initial public beta release.</ReleaseNotes>
 
 <STVImport>ortus-trailer.stvi</STVImport>
 
-</SageTVPlugin>
-<SageTVPlugin>
-  <Name>SageMyMovies</Name>
-  <Identifier>SageMyMovies</Identifier>
-  <Description>MyMovies is a Movie Collection manager original designed for Windows Media Center. It has an extensive database of user contributed content encompassing metadata and fanart for movies. How this differs from IMDB.com and the like is that contribution to the database earns you points that can be used to unlock additional features and functionality in MyMovies.
-MYMovies also supports a Server/Client architecture. Your collection can reside on a headless server and be managed by any other machine on your network running the client software. For more information on MyMovies please check out their website.
-I started this project as a way to bring my favorite collection management tool from WMC, MyMovies into SageTV for myself. The project has become much larger than I ever expected.
-Please note that this project was developed in my spare time. I have developed most of this by myself and I am only one person. I do not make any money from this project nor from My Movies. While I will try to fix issues in a timely manner, please try not to expect immediate responses as It can take some time to fix an issue. .
-tHIS PROGRAM WILL NOT RUN WITHOUTH MYMOVIES COLLECTION MANAGER RUNNING ON THIS CLIENT (OR SERVER IF IT IS EXTENDER)!!!Requires MyMovies collection manager version 3.17 R3 or later!!. </Description>
-  <Author>PluckyHD</Author>
-  <CreationDate>2010-05-21</CreationDate>
-  <ModificationDate>2011.3.8</ModificationDate>
-  <Version beta="true">1.1900</Version>
-  <Desktop>false</Desktop>
-   <ReleaseNotes> 1.1900 Fix for Diamond 3.00 stvi to work with it now allow disabling mymovies completely!! Requires MyMovies collection manager version 3.17 R3 or later!!. See wiki update logs for updates in this build. It is API as well as STVi updates.</ReleaseNotes>
-  <OS>Windows</OS>
-  <DemoVideo>http://www.youtube.com/watch?v=GG4YsvPRfAU</DemoVideo>
-  <DemoVideo>http://www.youtube.com/watch?v=Imy2wt27yRQ</DemoVideo>
-  <DemoVideo>http://www.youtube.com/watch?v=YYsE3iwn2iU</DemoVideo>
-  <Screenshot>http://babgvant.com/downloads/pluckyhd/SMM%20Release%201.jpg</Screenshot>
-  <Screenshot>http://babgvant.com/downloads/pluckyhd/SMM%20Release%202.jpg</Screenshot>
-  <Screenshot>http://babgvant.com/downloads/pluckyhd/SMM%20Release%203.jpg</Screenshot>
-  <Screenshot>http://babgvant.com/downloads/pluckyhd/SMM%20Release%204.jpg</Screenshot>
-  <Screenshot>http://babgvant.com/downloads/pluckyhd/SMM%20Release%205.jpg</Screenshot>
-  <Screenshot>http://babgvant.com/downloads/pluckyhd/SMM%20Release%206.jpg</Screenshot>
-  <Screenshot>http://babgvant.com/downloads/pluckyhd/SMM%20Release%207.jpg</Screenshot>
-  <Webpage>http://code.google.com/p/sagemediamanager/wiki/PageName</Webpage>
-  <Webpage>http://www.mymovies.dk/</Webpage>
-  <Dependency>
-  <Core/>
-  <MinVersion>7.1.2.0</MinVersion>
-  </Dependency>
-  <Dependency>
-    <Plugin>log4j</Plugin>
-    <MinVersion>1.2.15</MinVersion>
-  </Dependency>
-  <Dependency>
-    <Plugin>sagex-api</Plugin>
-    <MinVersion>7.0.9.0</MinVersion>
-  </Dependency>
-
-  <Dependency>
-    <Plugin>smm-api</Plugin>
-    <MinVersion>1.2200</MinVersion>
-  </Dependency>
-  <Dependency>
-    <Plugin>MSSQLJDBC</Plugin>
-    <MinVersion>2.0</MinVersion>
-  </Dependency>
-
-<PluginType>STVI</PluginType>
-
-  <Package>
-    <PackageType>STVI</PackageType>
-    <Location>http://babgvant.com/downloads/pluckyhd/SageMyMoviesSTViV7UBetaV1.1900.zip</Location>
-    <MD5>0179a0121738a8ea2a04ddabf762c291</MD5>
-  </Package>
-<STVImport>SageMyMoviesSTViV7UBetaV1.1900.xml</STVImport>
 </SageTVPlugin>
 <SageTVPlugin>
   <Name>Canadian Channel Logo Pack</Name>
@@ -18178,8 +18178,8 @@ Phoenix is a STV replacement for SageTV9 providing the following features
        <PluginType>Standard</PluginType>
        <Package>
                <PackageType>System</PackageType>
-               <Location>https://bintray.com/opensagetv/sagetv-plugins/download_file?file_path=stats4web%2Fstats-1.2.0.zip</Location>
-               <MD5>5924F415D34A956739BEE948BE348387</MD5>
+               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/stats-1.2.0.1.zip</Location>
+               <MD5>A0D478B40E95DDB0C1B78A7C8DB35F38</MD5>
                <Overwrite>true</Overwrite>
        </Package>
        <ReleaseNotes>
@@ -18188,6 +18188,40 @@ Phoenix is a STV replacement for SageTV9 providing the following features
 1.1.0 - Add Shows by Channel chart
 1.0   - Initial Release
        </ReleaseNotes>
+</SageTVPlugin>
+<SageTVPlugin>
+    <Name>Pushover notifications for SageTV</Name>
+    <Identifier>com.ggbetawerks.sagetv.pushover</Identifier>
+    <Description>Can send SageTV System Messages to your Desktop and Mobile Device.  Requires a Pushover account.</Description>
+    <Author>Jonathan Warrington</Author>
+    <CreationDate>2016.10.08</CreationDate>
+    <ModificationDate>2016.10.10</ModificationDate>
+    <Version>1.0</Version>
+    <ResourcePath>com.ggbetawerks.sagetv.pushover</ResourcePath>
+    <Webpage><![CDATA[https://github.com/BartokW/com.ggbetawerks.sagetv.pushover]]></Webpage>
+
+    <Dependency>
+        <Core/>
+        <MinVersion>9.0</MinVersion>
+    </Dependency>
+
+    <Dependency>
+        <Plugin>sagex-api</Plugin>
+        <MinVersion>7.1.9.15</MinVersion>
+    </Dependency>
+
+    <PluginType>Standard</PluginType>
+
+    <Package>
+        <PackageType>JAR</PackageType>
+        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/com.ggbetawerks.sagetv.pushover.jar-1.0.zip</Location>
+        <MD5>0ACB5FC21272B30112CFF358D28FFC3F</MD5>
+    </Package>
+
+    <ImplementationClass>com.ggbetawerks.sagetv.pushover.PushoverPlugin</ImplementationClass>
+
+    <ReleaseNotes>
+    </ReleaseNotes>
 </SageTVPlugin>
 <SageTVPlugin>
   <Identifier>GKusnickOpaquePanelTheme</Identifier>
@@ -18516,14 +18550,14 @@ Provides Sports Event monitoring for use by the SRE plugin
        <PluginType>Standard</PluginType>
        <Package>
                <PackageType>System</PackageType>
-               <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/livepvrdata-svc-1.8.1/livepvrdata-svc-war-master-c230884.zip</Location>
-               <MD5>c248439689cdbb04f17b20ec570899d9</MD5>
+               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/livepvrdata-svc-war-master-9ff749c.zip</Location>
+               <MD5>D16F91C72D1EF902D28ADE9DBF0336A6</MD5>
                <Overwrite>true</Overwrite>
        </Package>
        <Package>
                <PackageType>System</PackageType>
-               <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/livepvrdata-svc-1.8.1/livepvrdata-svc-context-master-c230884.zip</Location>
-               <MD5>6ea9eae70eb484bc33f8a83ba4c46bf2</MD5>
+               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/livepvrdata-svc-context-master-9ff749c.zip</Location>
+               <MD5>A07474D5AAFE1EE6ED026266E307675F</MD5>
                <Overwrite>true</Overwrite>
        </Package>
            <ReleaseNotes><![CDATA[
@@ -19523,39 +19557,5 @@ Moved to V9 repository
 1.0.1 - Moved Downloads from Google Code to Source Forge
 1.0   - Initial Release for STV7
 </ReleaseNotes>
-</SageTVPlugin>
-<SageTVPlugin>
-    <Name>Pushover notifications for SageTV</Name>
-    <Identifier>com.ggbetawerks.sagetv.pushover</Identifier>
-    <Description>Can send SageTV System Messages to your Desktop and Mobile Device.  Requires a Pushover account.</Description>
-    <Author>Jonathan Warrington</Author>
-    <CreationDate>2016.10.08</CreationDate>
-    <ModificationDate>2016.10.10</ModificationDate>
-    <Version>1.0</Version>
-    <ResourcePath>com.ggbetawerks.sagetv.pushover</ResourcePath>
-    <Webpage><![CDATA[https://github.com/BartokW/com.ggbetawerks.sagetv.pushover]]></Webpage>
-
-    <Dependency>
-        <Core/>
-        <MinVersion>9.0</MinVersion>
-    </Dependency>
-
-    <Dependency>
-        <Plugin>sagex-api</Plugin>
-        <MinVersion>7.1.9.15</MinVersion>
-    </Dependency>
-
-    <PluginType>Standard</PluginType>
-
-    <Package>
-        <PackageType>JAR</PackageType>
-        <Location>https://dl.bintray.com/bartokw/sagetv-plugins/com.ggbetawerks.sagetv.pushover/com.ggbetawerks.sagetv.pushover-1.0.zip</Location>
-        <MD5>d0a081a3b26c8fe8802623b1d8fc3914</MD5>
-    </Package>
-
-    <ImplementationClass>com.ggbetawerks.sagetv.pushover.PushoverPlugin</ImplementationClass>
-
-    <ReleaseNotes>
-    </ReleaseNotes>
 </SageTVPlugin>
 </PluginRepository>
