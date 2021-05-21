@@ -216,9 +216,9 @@
 
      <PackageType>STVI</PackageType>
 
-     <Location><![CDATA[http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/upnp2podcast/PlayOnSTVI_v1_8.zip]]></Location>
+     <Location><![CDATA[https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/PlayOnSTVI_v1_8.zip]]></Location>
 
-     <MD5>11f5d5441d9a5acf382e0c73e655762c</MD5>
+     <MD5>11F5D5441D9A5ACF382E0C73E655762C</MD5>
 
    </Package>
 

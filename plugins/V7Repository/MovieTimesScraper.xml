@@ -14,8 +14,8 @@
   <PluginType>Library</PluginType>
   <Package>
     <PackageType>System</PackageType>
-    <Location><![CDATA[http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/upnp2podcast/MovieTimesScraper_v1_1_1.zip]]></Location>
-    <MD5>508541a4e38277786c9033c3132ddf83</MD5>
+    <Location><![CDATA[https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/MovieTimesScraper_v1_1_1.zip]]></Location>
+    <MD5>508541A4E38277786C9033C3132DDF83</MD5>
   </Package>
 
 </SageTVPlugin>

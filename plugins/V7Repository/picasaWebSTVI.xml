@@ -32,8 +32,8 @@
 
   <Package>
     <PackageType>STVI</PackageType>
-    <Location><![CDATA[http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/upnp2podcast/picasaWebSTVi_v1_0.zip]]></Location>
-    <MD5>18f72a505496d7ab26bfc26703bb1761</MD5>
+    <Location><![CDATA[https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/picasaWebSTVi_v1_0.zip]]></Location>
+    <MD5>18F72A505496D7AB26BFC26703BB1761</MD5>
   </Package>
 
   <STVImport>picasaWeb.stvi</STVImport>

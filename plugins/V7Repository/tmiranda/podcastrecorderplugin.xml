@@ -88,7 +88,7 @@ This plugin provides support only.  To install PodcastRecorder please go to the 
 
     		<PackageType>JAR</PackageType>
 
-    		<Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/tmiranda/PodcastRecorder-0.70.zip</Location>
+    		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/PodcastRecorder-0.70.zip</Location>
 
     		<MD5>C5CB327D26EF91112B2C572779C4D135</MD5>
 

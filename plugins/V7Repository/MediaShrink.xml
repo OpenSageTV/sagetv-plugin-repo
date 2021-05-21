@@ -24,7 +24,7 @@
 
   <Package>
     <PackageType>System</PackageType>
-    <Location><![CDATA[http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/upnp2podcast/MediaShrink_v3.0.4.zip]]></Location>
-    <MD5>21a7a7179fe243993f049599b3e236bc</MD5>
+    <Location><![CDATA[https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/MediaShrink_v3.0.4.zip]]></Location>
+    <MD5>21A7A7179FE243993F049599B3E236BC</MD5>
   </Package>
 </SageTVPlugin>

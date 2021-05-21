@@ -14,8 +14,8 @@
   <PluginType>Library</PluginType>
   <Package>
     <PackageType>System</PackageType>
-    <Location><![CDATA[http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/upnp2podcast/picasaWebScraper_v1_0.zip]]></Location>
-    <MD5>74dccf544820f854115a5800317702c7</MD5>
+    <Location><![CDATA[https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/picasaWebScraper_v1_0.zip]]></Location>
+    <MD5>74DCCF544820F854115A5800317702C7</MD5>
   </Package>
 
 </SageTVPlugin>

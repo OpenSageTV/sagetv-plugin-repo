@@ -24,8 +24,8 @@
 
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/sagex.plugin.pushbullet/sagex.plugin.pushbullet-1.2.zip</Location>
-        <MD5>99addd815b1a7038de18e9854261258b</MD5>
+        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sagex.plugin.pushbullet.jar-1.2.zip</Location>
+        <MD5>A1D5C9D479B8AA55E55EC2C23201B7CD</MD5>
     </Package>
 
     <ImplementationClass>sagex.plugin.pushbullet.PushBulletPlugin</ImplementationClass>

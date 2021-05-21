@@ -13,8 +13,8 @@ SageTV Dependency JAR Plugin for sageortus.jar - no need to download directly
 <Package>
 <PackageType>JAR</PackageType>
 <Location>
-http://www.wallofcats.com/sagetv/sageortus.jar.zip
+https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sageortus.jar-1.0.21.zip
 </Location>
-<MD5>797F4EB14A7A643C7A011F1F801495AB</MD5>
+<MD5>042116A6610C789F6B8F56D7B504E1BB</MD5>
 </Package>
 </SageTVPlugin>

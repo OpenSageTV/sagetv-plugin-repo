@@ -102,9 +102,9 @@
 
  <PackageType>STVI</PackageType>
 
- <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/diamond-legacy/DiamondB3.30.zip</Location>
+ <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/DiamondB3.30.zip</Location>
 
- <MD5>bf157a7e2ee3607b4426c465e34c9520</MD5>
+ <MD5>BF157A7E2EE3607B4426C465E34C9520</MD5>
 
 </Package>
 
@@ -114,9 +114,9 @@
 
  <PackageType>STVI</PackageType>
 
- <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/diamond-legacy/DiamondSTVIB3.32.zip</Location>
+ <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/DiamondSTVIB3.32.zip</Location>
 
- <MD5>ae8275f8de1713a59ebb74d9fda0c112</MD5>
+ <MD5>AE8275F8DE1713A59EBB74D9FDA0C112</MD5>
 
 </Package>
 

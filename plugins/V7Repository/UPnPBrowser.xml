@@ -28,9 +28,9 @@
 
      <PackageType>System</PackageType>
 
-     <Location><![CDATA[http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/upnp2podcast/PlayOnScraper_v1_8.zip]]></Location>
+     <Location><![CDATA[https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/PlayOnScraper_v1_8.zip]]></Location>
 
-     <MD5>75b111f64f81833ea94eaef0b4e631d8</MD5>
+     <MD5>75B111F64F81833EA94EAEF0B4E631D8</MD5>
 
    </Package>
 

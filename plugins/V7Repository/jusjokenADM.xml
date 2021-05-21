@@ -74,9 +74,9 @@
 
     <PackageType>STVI</PackageType>
 
-    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/adm/ADM_0.503.zip</Location>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/ADM_0.503.zip</Location>
 
-    <MD5>1f549f378fac3f9a4bb16e1e658f4cc4</MD5>
+    <MD5>1F549F378FAC3F9A4BB16E1E658F4CC4</MD5>
 
   </Package>
 
@@ -86,9 +86,9 @@
 
     <PackageType>STV</PackageType>
 
-    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/adm/ADMDefaults_0_422.zip</Location>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/ADMDefaults_0_422.zip</Location>
 
-    <MD5>a1da679b01b49db9920375ace429971f</MD5>
+    <MD5>A1DA679B01B49DB9920375ACE429971F</MD5>
 
   </Package>
 

@@ -36,9 +36,9 @@
 
     <PackageType>JAR</PackageType>
 
-    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/adm/ADMAPI_0.503.zip</Location>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/ADMAPI_0.503.zip</Location>
 
-    <MD5>76086685093738f4e03a8c3503454bdb</MD5>
+    <MD5>76086685093738F4E03A8C3503454BDB</MD5>
 
   </Package>
 

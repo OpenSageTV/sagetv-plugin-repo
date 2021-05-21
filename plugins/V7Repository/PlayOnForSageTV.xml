@@ -28,8 +28,8 @@
 
    <Package>
        <PackageType>JAR</PackageType>
-       <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/upnp2podcast/PlayOnJARs_v1_5.zip</Location>
-       <MD5>570621b2a9210cc409fe9ac5825e54bd</MD5>
+       <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/PlayOnJARs_v1_5.zip</Location>
+       <MD5>570621B2A9210CC409FE9AC5825E54BD</MD5>
    </Package>
 
    <ImplementationClass>epplayon.EPPlayonPlugin</ImplementationClass>
