@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2021.0521.0411">
+<PluginRepository version="2021.0521.2227">
 <SageTVPlugin>
   <Name>OSD Enhancements</Name>
   <Identifier>jusjokenOSDEnhancements</Identifier>
@@ -577,8 +577,8 @@ NOTE: Be sure to clear your browser cache thoroughly after installing this updat
 
     <Package>
         <PackageType>STV</PackageType>
-        <Location><![CDATA[https://dl.bintray.com/opensagetv/sagetv/sagetv-themes/9.0/OriginalV2-9.0.1.zip]]></Location>
-        <MD5>166709c37832906e731bd466d6be5e53</MD5>
+        <Location><![CDATA[https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/OriginalV2-9.0.1.zip]]></Location>
+        <MD5>5A6773A394AE172FDD1E6D1EA872831C</MD5>
     </Package>
 
     <ReleaseNotes><![CDATA[
@@ -3603,9 +3603,9 @@ This plugin installs a web GUI app within the Jetty plugin for online viewing an
 
                <PackageType>JAR</PackageType>
 
-               <Location>http://bintray.com/artifact/download/opensagetv/sagetv-plugins/sre/sre-jar-4.0.2.20160531211256.zip</Location>
+               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sre-jar-4.0.2.20210522091001.zip</Location>
 
-               <MD5>e20f8f81143c6d31669132cc9a98da9d</MD5>
+               <MD5>9BFBF5CFE52AA10BCD721245A9FA0DB8</MD5>
 
                <Overwrite>true</Overwrite> <!-- Defaults to true -->
 
@@ -3615,9 +3615,9 @@ This plugin installs a web GUI app within the Jetty plugin for online viewing an
 
                <PackageType>System</PackageType>
 
-               <Location>http://bintray.com/artifact/download/opensagetv/sagetv-plugins/sre/sre-conf-4.0.2.20160531211256.zip</Location>
+               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sre-conf-4.0.2.20210522091001.zip</Location>
 
-               <MD5>83f20cf3110bddb3c5ff16d63a23b091</MD5>
+               <MD5>0B56962AF48F1BD3D835040279D1C6B7</MD5>
 
                <Overwrite>false</Overwrite>
 
@@ -5007,9 +5007,9 @@ want to run BMT from a console to generate .properties.
 
     <PackageType>JAR</PackageType>
 
-    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/diamond-legacy/WIconsAPI1_004.zip</Location>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/WIconsAPI1_004.zip</Location>
 
-    <MD5>12bed63b2b80b0ff5f5ef17f8ecb64a0</MD5>
+    <MD5>C2D64DD06F9A05D69AA8C68269A0EDDF</MD5>
 
   </Package>
 
@@ -11024,6 +11024,42 @@ https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sageortus.j
 </Package>
 </SageTVPlugin>
 <SageTVPlugin>
+  <Name>VideoOut Tools for the Extenders</Name>
+  <Identifier>videoouttools</Identifier>
+  <Description>This stvi plugin adds a popup menu to choose the new output resolution of the extender interactively (similar to the "Detailed Setup" > Multimedia > "Output Resolution" menu in the default STV). The menu is mapped to the "Video Out" remote button while in the media player.  It also can display the current mediafile's resolution and the extenders output on the OSD (this can be disabled thru Video Tools Options).
+
+This STVi replaces the default behavior of the "Video Out" remote button while in the Media Player. In other portions of the UI the "Video Out" button is the default behavior (cycling through available resolutions).
+
+To access Video Tools Options: press "Video Out" on the remote while in the media player and navigate to "Options".
+ </Description>
+  <Author>razrsharpe</Author>
+  <CreationDate>2010.05.21</CreationDate>
+  <ModificationDate>2010.11.13</ModificationDate>
+  <Version beta="true">1.0.2</Version>
+  <Desktop>false</Desktop>
+ <Dependency>
+<STV>SageTV7</STV>
+<MinVersion>7.0</MinVersion>
+</Dependency>
+  <Dependency>
+    <Plugin>razr-api</Plugin>
+    <MinVersion>0.1.2</MinVersion>
+  </Dependency>
+<PluginType>STVI</PluginType>
+  <Package>
+    <PackageType>STVI</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/VideoOutTools_v1.0.2.zip</Location>
+    <MD5>917BB441EC8660BA1A3AF5D339271C14</MD5>
+  </Package>
+<STVImport>VideoOutTools_v1.0.2.stvi</STVImport>
+<ReleaseNotes>1.0.2
+-updated razr-api (fix errors with prepended text and resolutions with non integer FPS values)
+
+1.0.1
+-Initial Release
+</ReleaseNotes>
+</SageTVPlugin>
+<SageTVPlugin>
 		<Name>Auto Aspect Ratio</Name>
 		<Identifier>neilm_autoaspect</Identifier>
 		<Description>Allows automatic switching of the playback Aspect Ratio, based on Airing title, airing channel, recording device, or any combination of these parameters. This is a direct repository import of the original plugin by neilm.</Description>
@@ -15377,7 +15413,7 @@ This is based on a port of TVE v1.01.028 for SageMC to the STV3 Default STV and 
 
     <PackageType>STVI</PackageType>
 
-    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/SRE/SREv4-4.00.zip</Location>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/SREv4-4.00.zip</Location>
 
     <MD5>AD91C209312F10D9694458E82C3E806D</MD5>
 
@@ -16669,7 +16705,7 @@ Version 1.2. Fixed dependency on sagex API.</ReleaseNotes>
 
     <PackageType>STVI</PackageType>
 
-    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/SRE/SREv4-4.00.zip</Location>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/SREv4-4.00.zip</Location>
 
     <MD5>AD91C209312F10D9694458E82C3E806D</MD5>
 
@@ -17583,6 +17619,72 @@ Changes in 1.0.1.1513
 
 <STVImport>ortus-trailer.stvi</STVImport>
 
+</SageTVPlugin>
+<SageTVPlugin>
+       <Name>SageSync</Name>
+       <Identifier>sagesync</Identifier>
+	<Description><![CDATA[
+Provide a dynamic hierarchy of playlists representing all of your SageTV recordings.  These playlists are suitable for playing your Sage recordings via third party media streamers such as Boxee, XBMC, etc.
+	]]></Description>
+       <Author>Slugger</Author>
+       <CreationDate>2012.02.03</CreationDate>
+       <ModificationDate>2012.02.15</ModificationDate>
+       <Version beta="true">0.0.0.1786</Version>
+       <ResourcePath>plugins/SageSync</ResourcePath>
+       <Webpage>http://sagetv-addons.googlecode.com</Webpage>
+       <ServerOnly>true</ServerOnly>
+       <Dependency>
+       		<JVM/>
+       		<MinVersion>1.5.0</MinVersion>
+       	</Dependency>
+       <Dependency>
+                <Core/>
+                <MinVersion>7.0</MinVersion>
+       </Dependency>
+        <Dependency>
+                <Plugin>groovy</Plugin>
+                <MinVersion>1.7.10</MinVersion>
+        </Dependency>
+        <Dependency>
+                <Plugin>log4j</Plugin>
+                <MinVersion>1.2.15</MinVersion>
+        </Dependency>
+        <Dependency>
+        	<Plugin>sagex-api</Plugin>
+        	<MinVersion>7.1.9.0</MinVersion>
+        </Dependency>
+        <Dependency>
+        	<Plugin>salicense</Plugin>
+        	<MinVersion>1.1.1</MinVersion>
+        </Dependency>
+        <Dependency>
+        	<Plugin>jpathwatch</Plugin>
+        	<MinVersion>0.93</MinVersion>
+        </Dependency>
+        <Dependency>
+        	<Plugin>commons-io</Plugin>
+        	<MinVersion>1.0</MinVersion>
+        </Dependency>
+       <PluginType>Standard</PluginType>
+       <Package>
+               <PackageType>JAR</PackageType>
+               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sagesync-jar-0.0.0.1786.zip</Location>
+               <MD5>8CDFCFBDB8B242F2BABF983A10B13CFD</MD5>
+               <Overwrite>true</Overwrite> <!-- Defaults to true -->
+       </Package>
+       <Package>
+       			<PackageType>System</PackageType>
+       			<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sagesync-conf-0.0.0.1786.zip</Location>
+       			<MD5>6D78D2A89644893E4EC9A604CB46A2BB</MD5>
+       			<Overwrite>false</Overwrite>
+       </Package>
+		<ImplementationClass>com.google.code.sagetvaddons.sagesync.plugin.PluginImpl</ImplementationClass>
+       	<ReleaseNotes><![CDATA[
+* Automatically recreate playlists when plugin settings are modified
+* Automatically recreate playlists when event type 'SageSync_Recreate' is fired
+* Automatically validate playlists when event type 'SageSync_Validate' is fired
+* Automatically recreate playlists when a transcode job has completed (note: this is a polling method so may not be 100% accurate, but it's the best I can do)
+       	]]></ReleaseNotes>
 </SageTVPlugin>
 <SageTVPlugin>
   <Name>Canadian Channel Logo Pack</Name>
