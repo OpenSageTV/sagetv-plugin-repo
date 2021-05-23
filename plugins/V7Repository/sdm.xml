@@ -42,13 +42,13 @@ This plugin is simply a wrapper around the aria2 command line download utility. 
        <PluginType>Standard</PluginType>
        <Package>
                <PackageType>JAR</PackageType>
-               <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetv-addons/sdm-jar-1.0.2.1452.zip</Location>
+               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sdm-jar-1.0.2.1452.zip</Location>
                <MD5>895afc6220782b925c665b509afdc74b</MD5>
                <Overwrite>true</Overwrite> <!-- Defaults to true -->
        </Package>
        <Package>
        			<PackageType>System</PackageType>
-       			<Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetv-addons/sdm-conf-1.0.2.1452.zip</Location>
+       			<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sdm-conf-1.0.2.1452.zip</Location>
        			<MD5>81f927587b6b30f18fb1263c65bda607</MD5>
        			<Overwrite>false</Overwrite>
        	</Package>

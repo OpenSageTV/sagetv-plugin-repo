@@ -252,7 +252,7 @@ Other plugins can also register and fire events to SageAlert, which can then be 
 
                <PackageType>JAR</PackageType>
 
-               <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetv-addons/sagealert-jar-2.0.2.1550.zip</Location>
+               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sagealert-jar-2.0.2.1550.zip</Location>
 
                <MD5>974317115f0b69f169f142c646081c9b</MD5>
 
@@ -264,7 +264,7 @@ Other plugins can also register and fire events to SageAlert, which can then be 
 
                <PackageType>System</PackageType>
 
-               <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetv-addons/sagealert-web-2.0.2.1550.zip</Location>
+               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sagealert-web-2.0.2.1550.zip</Location>
 
                <MD5>63e7ff9aed03d04569d5101ed6a2114b</MD5>
 
@@ -276,7 +276,7 @@ Other plugins can also register and fire events to SageAlert, which can then be 
 
                <PackageType>System</PackageType>
 
-               <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetv-addons/sagealert-conf-2.0.2.1550.zip</Location>
+               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sagealert-conf-2.0.2.1550.zip</Location>
 
                <MD5>91c61407cb0b774b7b6ea0856c67aaa1</MD5>
 

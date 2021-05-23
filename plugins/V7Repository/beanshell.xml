@@ -12,7 +12,7 @@
 
   <Package>
     <PackageType>JAR</PackageType>
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetvkoelec/bsh-2.0b4.jar.zip</Location>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/bsh-2.0b4.jar.zip</Location>
     <MD5>D4BA8FE48E87AF37524A376D3091DC3B</MD5>
   </Package>
 </SageTVPlugin>

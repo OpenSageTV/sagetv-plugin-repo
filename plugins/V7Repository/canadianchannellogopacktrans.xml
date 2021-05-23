@@ -55,7 +55,7 @@ Updates: 1.01 - Correct NBC and Comedy Central Logos and recompress as 800x400 3
   <PluginType>Images</PluginType>
   <Package>
     <PackageType>ChannelLogo</PackageType>
-   <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/jorton/AllCanadaTransparent.1.01.zip</Location>
+   <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/AllCanadaTransparent.1.01.zip</Location>
     <MD5>22aa874deb1f41089f96e882c87954aa</MD5>
   </Package>
 </SageTVPlugin>

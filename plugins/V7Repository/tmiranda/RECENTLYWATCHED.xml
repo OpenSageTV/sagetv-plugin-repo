@@ -32,7 +32,7 @@
 
   <Package>
       <PackageType>STVI</PackageType>
-      <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/tmiranda/RecentlyWatched-v1.4.zip</Location>
+      <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/RecentlyWatched-v1.4.zip</Location>
       <MD5>B71B0DCE890B391C16E73826C135792F</MD5>
   </Package>
 

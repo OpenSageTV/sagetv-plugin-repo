@@ -53,7 +53,7 @@ SJQv4 common classes; do not install manually.
 	<PluginType>Library</PluginType>
 	<Package>
 		<PackageType>JAR</PackageType>
-		<Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetv-addons/sjq-common-4.0.0.1569.zip</Location>
+		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sjq-common-4.0.0.1569.zip</Location>
 		<MD5>ea10d9709dc6e1b86ec34c3cfdd3b50f</MD5>
 	</Package>
 </SageTVPlugin>

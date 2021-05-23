@@ -24,7 +24,7 @@
 
                <PackageType>JAR</PackageType>
 
-               <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetv-addons/jcommander-1.32.zip</Location>
+               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/jcommander-1.32.zip</Location>
 
                <MD5>f6b15f60d68cddd0fd4cf605c2332db2</MD5>
 

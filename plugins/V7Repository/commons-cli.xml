@@ -12,7 +12,7 @@
 
   <Package>
     <PackageType>JAR</PackageType>
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetvkoelec/commons-cli-1.0.jar.zip</Location>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/commons-cli-1.0.jar.zip</Location>
     <MD5>E0C909AC029170C66AF9276DFE354EF9</MD5>
   </Package>
 </SageTVPlugin>

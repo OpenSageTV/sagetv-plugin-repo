@@ -19,7 +19,7 @@ icons etc...  It is a bit glossy and might not be for everyone.</Description>
 
 <Package>
   <PackageType>STVI</PackageType>
-  <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/jorton/MBDiamond.1.63.zip</Location>
+  <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/MBDiamond.1.63.zip</Location>
   <MD5>595b3114c60f46ca1b30b76026cb2883</MD5>
 </Package>
 

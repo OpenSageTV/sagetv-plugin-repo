@@ -40,13 +40,13 @@ Added additional debug logging for scenario where media file is not seen as a mu
  <Desktop>true</Desktop>
  <Package>
   <PackageType>JAR</PackageType>
-  <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetv-scrobbler/scrobbler-jar-0.2.zip</Location>
+  <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/scrobbler-jar-0.2.zip</Location>
   <MD5>c9441cda7681da45fdada08b1c6b3623</MD5>
   <Overwrite>true</Overwrite>
  </Package>
  <Package>
   <PackageType>System</PackageType>
-  <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetv-scrobbler/scrobbler-conf-0.2.zip</Location>
+  <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/scrobbler-conf-0.2.zip</Location>
   <MD5>b675a0fd5c5a4089bf53c083e81ef087</MD5>
   <Overwrite>true</Overwrite>
  </Package>

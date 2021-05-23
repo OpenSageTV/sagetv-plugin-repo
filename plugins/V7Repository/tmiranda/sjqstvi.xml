@@ -47,7 +47,7 @@
 
   	<Package>
     		<PackageType>STVI</PackageType>
-    		<Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/tmiranda/SJQ4-20110227.zip</Location>
+    		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/SJQ4-20110227.zip</Location>
     		<MD5>A00334C2617A2B5699C966FF98C576F8</MD5>
   	</Package>
 

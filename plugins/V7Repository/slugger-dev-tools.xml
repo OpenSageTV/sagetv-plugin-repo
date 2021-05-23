@@ -25,7 +25,7 @@ To see exactly what's available in this version, see the javadocs link.
        <PluginType>Library</PluginType>
        <Package>
                <PackageType>JAR</PackageType>
-               <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetv-addons/slugger-dev-tools-0.0.1.zip</Location>
+               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/slugger-dev-tools-0.0.1.zip</Location>
                <MD5>caab46f183fb7e6f4e882882ec62bd8b</MD5>
                <Overwrite>true</Overwrite> <!-- Defaults to true -->
        </Package>

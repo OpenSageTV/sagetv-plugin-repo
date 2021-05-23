@@ -88,17 +88,17 @@ The second Web page link refers to the forum discussion thread on SlimPlayer iss
 
 		<Package>
 			<PackageType>STVI</PackageType>
-			<Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetvkoelec/slimplayer-2.3.5-stvi.zip</Location>
+			<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/slimplayer-2.3.5-stvi.zip</Location>
 			<MD5>0914ECB31E18CCF925047E94E8091FB2</MD5>
 		</Package>
 		<Package>
 			<PackageType>JAR</PackageType>
-			<Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetvkoelec/slimplayer-2.3.4-jars.zip</Location>
+			<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/slimplayer-2.3.4-jars.zip</Location>
 			<MD5>7202669091652E423A9F45AEE2BF8717</MD5>
 		</Package>
 		<Package>
 			<PackageType>System</PackageType>
-			<Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetvkoelec/slimplayer-2.3.4-system.zip</Location>
+			<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/slimplayer-2.3.4-system.zip</Location>
 			<MD5>80C97CD0F910BAF0E154A4E0081C3550</MD5>
 		</Package>
 

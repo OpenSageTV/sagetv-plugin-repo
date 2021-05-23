@@ -36,7 +36,7 @@ considered Series Premieres.
 
     <PackageType>STVI</PackageType>
 
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/jorton/SeasonPremieres_V1.1.zip</Location>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/SeasonPremieres_V1.1.zip</Location>
 
     <MD5>dd1b2c6d1c4acf38b6c40e76d0ef2d13</MD5>
 

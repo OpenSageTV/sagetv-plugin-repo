@@ -30,7 +30,7 @@
 
         <PackageType>System</PackageType>
 
-        <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/cncbsagetv7/Gadget-SYS-1-1.zip</Location>
+        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/Gadget-SYS-1-1.zip</Location>
 
         <MD5>AE0D408263B9133B9593A229ABADB815</MD5>
 

@@ -142,7 +142,7 @@ Please see the user's guide for all the details, including common usage setup an
 
 		<PackageType>JAR</PackageType>
 
-		<Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetv-addons/sjq-jar-4.0.0.1569.zip</Location>
+		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sjq-jar-4.0.0.1569.zip</Location>
 
 		<MD5>bcbc3a3a715e9da17d842d65734876d9</MD5>
 
@@ -152,7 +152,7 @@ Please see the user's guide for all the details, including common usage setup an
 
 		<PackageType>System</PackageType>
 
-		<Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetv-addons/sjq-conf-4.0.0.1569.zip</Location>
+		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sjq-conf-4.0.0.1569.zip</Location>
 
 		<MD5>7c39baf0dbbea6c5d9c04e325069c819</MD5>
 

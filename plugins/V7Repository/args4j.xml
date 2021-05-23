@@ -24,7 +24,7 @@
 
                <PackageType>JAR</PackageType>
 
-               <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetv-addons/args4j-2.0.21.zip</Location>
+               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/args4j-2.0.21.zip</Location>
 
                <MD5>e3fd0efdd09b5758f280c338abbb331c</MD5>
 

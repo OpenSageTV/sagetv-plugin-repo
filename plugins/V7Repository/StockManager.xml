@@ -25,7 +25,7 @@
 <PluginType>STVI</PluginType>
  <Package>
    <PackageType>STVI</PackageType>
-   <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/imovies/StockManager_2.1.1.zip</Location>
+   <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/StockManager_2.1.1.zip</Location>
    <MD5>AE6EBFB473AA9A77DD1006E0C45E1AA4</MD5>
  </Package>
 <STVImport>StockManager.stvi</STVImport>
