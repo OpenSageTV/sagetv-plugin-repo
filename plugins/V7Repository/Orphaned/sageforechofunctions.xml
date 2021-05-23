@@ -1,0 +1,149 @@
+<SageTVPlugin>
+
+
+
+  <Name>Sage For Echo Functions</Name>
+
+
+
+  <Identifier>sageforechofunctions</Identifier>
+
+
+
+  <Description>Support Plugin needed for the Amazon Echo skill to control SageTV.</Description>
+
+
+
+  <Author>tmiranda</Author>
+
+
+
+  <CreationDate>2016.9.29</CreationDate>
+
+  <ModificationDate>2017.02.05</ModificationDate>
+
+
+
+  <Version beta="true">0.05</Version>
+
+
+
+  <Desktop>false</Desktop>
+
+
+
+  <Webpage>https://forums.sagetv.com/forums/showthread.php?t=63281</Webpage>
+
+
+
+  <Dependency>
+
+    <STV>SageTV7</STV>
+
+    <MinVersion>7.0</MinVersion>
+
+  </Dependency>
+
+
+
+  <Dependency>
+
+    <Plugin>sagex-api</Plugin>
+
+    <MinVersion>7.0.0.0</MinVersion>
+
+  </Dependency>
+
+
+
+   <Dependency>
+
+    <Plugin>sagex-api-services</Plugin>
+
+	<MinVersion>7.0.0.0</MinVersion>
+
+  </Dependency>
+
+
+
+   <Dependency>
+
+    <Plugin>phoenix-api</Plugin>
+
+    <MinVersion>2.3.0</MinVersion>
+
+  </Dependency>
+
+
+
+  <PluginType>Library</PluginType>
+
+
+
+  <Package>
+
+    <PackageType>System</PackageType>
+
+    <Location>http://bintray.com/tmiranda/SageTVPlugins/download_file?file_path=Echo%2Fsagex-0.05.zip</Location>
+
+    <MD5>C979347EBBC0F44B8F6C0D03E83E9E57</MD5>
+
+  </Package>
+
+
+
+  <Package>
+
+    <PackageType>JAR</PackageType>
+
+    <Location>http://bintray.com/tmiranda/SageTVPlugins/download_file?file_path=Echo%2FechoFunctions-0.05.zip</Location>
+
+    <MD5>18FB7CF89932E8D1DE36007447B9E080</MD5>
+
+  </Package>
+
+
+
+  <ReleaseNotes>Version 0.05:
+
+- Rewrote much of the JavaScript in Java.
+
+
+
+Version 0.04:
+
+- Added String prototype for replaceAll()
+
+- Added code to support automatic plugin updating.
+
+- Added code to gather java and operating system information for debugging.
+
+
+
+Version 0.03:
+
+- Removed SageTV v9 dependency.
+
+- Updated echoFunctions.js.
+
+
+
+Version 0.02:
+
+- Updated echoFunctions.js.
+
+- Added phoenix-api dependency.
+
+- Changed minimum version to SageTV 9.
+
+
+
+Version 0.01:
+
+- Initial release.
+
+  </ReleaseNotes>
+
+
+
+</SageTVPlugin>

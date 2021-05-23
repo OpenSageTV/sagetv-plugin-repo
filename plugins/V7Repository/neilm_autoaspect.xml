@@ -18,8 +18,8 @@
 		<PluginType>STVI</PluginType>
 		<Package>
 			<PackageType>System</PackageType>
-			<Location><![CDATA[ http://sageplugins.sourceforge.net/nielm_modules/autoaspect/autoaspect_1_3.zip ]]></Location>
-			<MD5>629630915755a89bdec31657d4c43b09</MD5>
+			<Location><![CDATA[ https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/autoaspect_1_3.zip ]]></Location>
+			<MD5>629630915755A89BDEC31657D4C43B09</MD5>
 			<Overwrite>false</Overwrite>
 		</Package>
 		<STVImport>..\\SageTV3\\autoaspect_import.stvi</STVImport>

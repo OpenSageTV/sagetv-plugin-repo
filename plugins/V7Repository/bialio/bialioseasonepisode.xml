@@ -23,8 +23,8 @@
 
   <Package>
     <PackageType>STVI</PackageType>
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/serenitybybialio/STV7.seasonepisode.1.0.1.stvi.zip</Location>
-    <MD5>359401e6a05a640cbbfe70b891c575d1</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/STV7.seasonepisode.1.0.1.stvi.zip</Location>
+    <MD5>359401E6A05A640CBBFE70B891C575D1</MD5>
   </Package>
 
 <STVImport>STV7.seasonepisode.1.0.1.stvi</STVImport>

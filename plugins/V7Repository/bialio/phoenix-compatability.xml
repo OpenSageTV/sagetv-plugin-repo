@@ -14,8 +14,8 @@ not be installed unless Phoenix is also installed.
 
   <Package>
     <PackageType>STVI</PackageType>
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagephoenix/phoenix-compatability-1.0.1.zip</Location>
-    <MD5>10e38d6e809cda2394a1e65c28f62716</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/phoenix-compatability-1.0.1.zip</Location>
+    <MD5>10E38D6E809CDA2394A1E65C28F62716</MD5>
   </Package>
 
   <STVImport>STV7.phoenix.compatability.1.0.1.stvi</STVImport>

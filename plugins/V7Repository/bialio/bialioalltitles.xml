@@ -17,8 +17,8 @@
 
   <Package>
     <PackageType>STVI</PackageType>
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/serenitybybialio/STV7.alltitles.1.0.stvi.zip</Location>
-    <MD5>d258adcf4abfddd79da1aefce7851424</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/STV7.alltitles.1.0.stvi.zip</Location>
+    <MD5>D258ADCF4ABFDDD79DA1AEFCE7851424</MD5>
   </Package>
 
 <STVImport>STV7.alltitles.1.0.stvi</STVImport>
