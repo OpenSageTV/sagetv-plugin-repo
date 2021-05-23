@@ -61,13 +61,13 @@ Please note that some features of this plugin are disabled without a sagetv-addo
        <PluginType>Standard</PluginType>
        <Package>
                <PackageType>JAR</PackageType>
-               <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetv-addons/mc2xmlepg-jar-0.0.1.1795.zip</Location>
+               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/mc2xmlepg-jar-0.0.1.1795.zip</Location>
                <MD5>0fefc66c19f82d25305eb97efaac7e88</MD5>
                <Overwrite>true</Overwrite> <!-- Defaults to true -->
        </Package>
        <Package>
        			<PackageType>System</PackageType>
-       			<Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetv-addons/mc2xmlepg-conf-0.0.1.1795.zip</Location>
+       			<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/mc2xmlepg-conf-0.0.1.1795.zip</Location>
        			<MD5>be1bbe57333bd9c7413a1889515e67ce</MD5>
        			<Overwrite>false</Overwrite>
        	</Package>

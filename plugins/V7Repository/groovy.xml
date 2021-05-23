@@ -28,7 +28,7 @@
 
     <PackageType>JAR</PackageType>
 
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetv-addons/groovy-2.0.5.zip</Location>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/groovy-2.0.5.zip</Location>
 
     <MD5>bea50caabb27424e5f01dbfaac2b17d7</MD5>
 

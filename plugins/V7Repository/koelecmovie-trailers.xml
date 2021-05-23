@@ -23,7 +23,7 @@ It leverages the SageTV Online Services YouTube channel for serving high quality
 
   <Package>
     <PackageType>STVI</PackageType>
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetvkoelec/movie_trailers_1.3_import.zip</Location>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/movie_trailers_1.3_import.zip</Location>
     <MD5>3BD56587EA5E8DB7A7E810304BAD71A2</MD5>
   </Package>
 

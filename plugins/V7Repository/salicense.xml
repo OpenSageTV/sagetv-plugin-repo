@@ -27,13 +27,13 @@ Most users should NOT need to install this plugin manually.  Other plugins that 
        <PluginType>Standard</PluginType>
        <Package>
             <PackageType>JAR</PackageType>
-            <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetv-addons/salicense-jar-1.3.1.zip</Location>
+            <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/salicense-jar-1.3.1.zip</Location>
             <MD5>9d08539bc5eae343554ccbe36802e0b9</MD5>
             <Overwrite>true</Overwrite> <!-- Defaults to true -->
        </Package>
        <Package>
        		<PackageType>System</PackageType>
-       		<Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetv-addons/salicense-conf-1.3.1.zip</Location>
+       		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/salicense-conf-1.3.1.zip</Location>
        		<MD5>1da0c0e4455037f7a6d4d3e1fc250e7d</MD5>
        		<Overwrite>false</Overwrite>
        </Package>

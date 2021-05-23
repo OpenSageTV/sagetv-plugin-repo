@@ -44,12 +44,12 @@ This plugin also provides a complete example of how to create custom events for 
        <PluginType>Standard</PluginType>
        <Package>
                <PackageType>JAR</PackageType>
-               <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetv-addons/customevents-jar-1.0.1.1513.zip</Location>
+               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/customevents-jar-1.0.1.1513.zip</Location>
                <MD5>5cb4019efb2fceaa1c73a6c6dfa4e251</MD5>
        </Package>
        <Package>
        			<PackageType>System</PackageType>
-       			<Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetv-addons/customevents-conf-1.0.1.1513.zip</Location>
+       			<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/customevents-conf-1.0.1.1513.zip</Location>
        			<MD5>d826388ccff4cd0c71a8a81cdbb204b6</MD5>
        			<Overwrite>false</Overwrite>
        	</Package>

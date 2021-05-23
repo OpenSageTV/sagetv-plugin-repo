@@ -23,7 +23,7 @@
 	<PluginType>Library</PluginType>
 		<Package>
 		<PackageType>JAR</PackageType>
-		<Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetv-addons/somf-1.0.0.1338.zip</Location>
+		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/somf-1.0.0.1338.zip</Location>
 		<MD5>f6a8b92dfc7042c1f5c900774fcff891</MD5>
 	</Package>
 </SageTVPlugin>

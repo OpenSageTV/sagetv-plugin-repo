@@ -11,7 +11,7 @@
  <PluginType>STVI</PluginType>
  <Package>
  <PackageType>STVI</PackageType>
- <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/rrnwse/OSDClockPlayTime_1.4.4.zip</Location>
+ <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/OSDClockPlayTime_1.4.4.zip</Location>
  <MD5>FAEB270722245D1D7425EB36A0C52403</MD5>
  </Package>
  <STVImport>OSDClockPlayTime_1.4.4.stvi</STVImport>

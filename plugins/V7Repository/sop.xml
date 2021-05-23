@@ -50,13 +50,13 @@ As an aside, it is worth noting that this plugin is implemented completely in Gr
        <PluginType>Standard</PluginType>
        <Package>
                <PackageType>JAR</PackageType>
-               <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetv-addons/sop-jar-1.0.1.1516.zip</Location>
+               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sop-jar-1.0.1.1516.zip</Location>
                <MD5>41f631c1c5f790da95dd2d3dd2100d72</MD5>
                <Overwrite>true</Overwrite> <!-- Defaults to true -->
        </Package>
        <Package>
        			<PackageType>System</PackageType>
-       			<Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetv-addons/sop-conf-1.0.1.1516.zip</Location>
+       			<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sop-conf-1.0.1.1516.zip</Location>
        			<MD5>fc16c9f2f3e6719a2c889c575c7aded2</MD5>
        			<Overwrite>false</Overwrite>
        	</Package>

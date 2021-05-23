@@ -11,7 +11,7 @@
  <Desktop>false</Desktop>
  <Package>
   <PackageType>JAR</PackageType>
-  <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetv-scrobbler/last.fm-bindings-2009.07.03.zip</Location>
+  <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/last.fm-bindings-2009.07.03.zip</Location>
   <MD5>16b6e5bf0669ea791851adafce5d0a90</MD5>
  </Package>
 </SageTVPlugin>

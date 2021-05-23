@@ -21,7 +21,7 @@ This is a port of "Phoenix Fanart for the Default STV" and also contains "BMT To
 <PluginType>STVI</PluginType>
   <Package>
     <PackageType>STVI</PackageType>
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/tmiranda/Phoenix-Fanart-for-Malore-Menus-v1.02.zip</Location>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/Phoenix-Fanart-for-Malore-Menus-v1.02.zip</Location>
     <MD5>970777EFA83ECD2EB327FE25F751BEC3</MD5>
   </Package>
 <STVImport>Phoenix Fanart for Malore Menus v1.02.stvi</STVImport>

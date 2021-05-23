@@ -10,7 +10,7 @@
   <PluginType>Library</PluginType>
   <Package>
     <PackageType>JAR</PackageType>
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/imovies/JVLStockQuote_1.0.0.zip</Location>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/JVLStockQuote_1.0.0.zip</Location>
     <MD5>064FD1CDCD5981AC324F1A71BD8EAF48</MD5>
   </Package>
 </SageTVPlugin>

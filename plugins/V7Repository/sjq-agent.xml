@@ -101,12 +101,12 @@ SJQv4 agent (task client).
 	<PluginType>Standard</PluginType>
 	<Package>
 		<PackageType>JAR</PackageType>
-		<Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetv-addons/sjq-agent-plugin-4.0.0.1650.zip</Location>
+		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sjq-agent-plugin-4.0.0.1650.zip</Location>
 		<MD5>cf9ca0f029f705c8b2b566c0219e52d0</MD5>
 	</Package>
 	<Package>
 		<PackageType>System</PackageType>
-		<Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetv-addons/sjq-agent-plugin-conf-4.0.0.1650.zip</Location>
+		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sjq-agent-plugin-conf-4.0.0.1650.zip</Location>
 		<MD5>da9988e634e9ae78a99d17b4f5c50d29</MD5>
 	</Package>
 	<ImplementationClass>com.google.code.sagetvaddons.sjq.agent.Plugin</ImplementationClass>

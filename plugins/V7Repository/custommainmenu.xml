@@ -14,7 +14,7 @@
 	<STVImport>STV7-CustomMainMenu-1.2.stvi</STVImport>
 	<Package>
 		<PackageType>STVI</PackageType>
-		<Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetv-custom-mainmenu/STV7-CustomMainMenu-1.2.zip</Location>
+		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/STV7-CustomMainMenu-1.2.zip</Location>
 		<MD5>790ED1428F0AEB78594975E2DFDBAE9A</MD5>
 	</Package>
 	<Screenshot>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetv-custom-mainmenu/CustomMainMenu-1.jpg</Screenshot>

@@ -45,7 +45,7 @@ Disclaimer - I have done my best to research (Google, Wikipedia, Lyngsat) and ch
   <PluginType>Images</PluginType>
   <Package>
     <PackageType>ChannelLogo</PackageType>
-   <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/jorton/ALLCANADA.zip</Location>
+   <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/ALLCANADA.zip</Location>
     <MD5>07380a9d7c066a5b145e36e55951d165</MD5>
   </Package>
 </SageTVPlugin>

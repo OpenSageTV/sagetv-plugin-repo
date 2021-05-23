@@ -15,7 +15,7 @@
        </Dependency>
        <Package>
                <PackageType>JAR</PackageType>
-               <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetv-addons/sagealert-common-2.0.2.1550.zip</Location>
+               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sagealert-common-2.0.2.1550.zip</Location>
                <MD5>0f50cb5d85e3d455d14e5f3604dcc2a5</MD5>
                <Overwrite>true</Overwrite> <!-- Defaults to true -->
        </Package>

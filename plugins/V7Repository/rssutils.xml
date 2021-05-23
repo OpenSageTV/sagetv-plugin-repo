@@ -10,7 +10,7 @@
   <PluginType>Library</PluginType>
   <Package>
     <PackageType>JAR</PackageType>
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/imovies/rssutils_1.1.0.zip</Location>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/rssutils_1.1.0.zip</Location>
     <MD5>13B5DE88AFD6231CD6A756F8D7BA0763</MD5>
   </Package>
 </SageTVPlugin>

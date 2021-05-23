@@ -12,7 +12,7 @@
 
   <Package>
     <PackageType>JAR</PackageType>
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetvkoelec/saxon-9.jar.zip</Location>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/saxon-9.jar.zip</Location>
     <MD5>907C3781DBB776B197446AD635C87EF9</MD5>
   </Package>
 <ReleaseNotes>Version 9.2 Home Edition</ReleaseNotes>

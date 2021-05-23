@@ -22,7 +22,7 @@ wnload directly</Description>
 
     <PackageType>JAR</PackageType>
 
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetv-addons/commons-compress-1.4.1.zip</Location>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/commons-compress-1.4.1.zip</Location>
 
     <MD5>69d1f9827858a54eee9e950f06ab0921</MD5>
 

@@ -29,7 +29,7 @@ SJQv4 network listener library; do not install manually.
 	<PluginType>Library</PluginType>
 	<Package>
 		<PackageType>JAR</PackageType>
-		<Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetv-addons/sjq-listener-4.0.0.1407.zip</Location>
+		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sjq-listener-4.0.0.1407.zip</Location>
 		<MD5>046219089ac990d85892aa63136ef31c</MD5>
 	</Package>
 	<ReleaseNotes>
