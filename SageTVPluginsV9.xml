@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2021.0521.2227">
+<PluginRepository version="2021.0523.0145">
 <SageTVPlugin>
   <Name>OSD Enhancements</Name>
   <Identifier>jusjokenOSDEnhancements</Identifier>
@@ -553,8 +553,8 @@ NOTE: Be sure to clear your browser cache thoroughly after installing this updat
 
     <Package>
         <PackageType>STV</PackageType>
-        <Location><![CDATA[https://dl.bintray.com/opensagetv/sagetv/sagetv-themes/9.0/SageTV3-9.0.zip]]></Location>
-        <MD5>0f500cde8bb0ee50354598156e3a2c19</MD5>
+        <Location><![CDATA[https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/SageTV3-9.0.zip]]></Location>
+        <MD5>B4D46CD7927F20DE0E2121DB7A7D067B</MD5>
     </Package>
 
     <ReleaseNotes><![CDATA[
@@ -6425,6 +6425,46 @@ Toggle disk bar on Home screen with 'Info' button
 
 </SageTVPlugin>
 <SageTVPlugin>
+  <Name>Phoenix Restful Apis</Name>
+  <Identifier>phoenix-rest</Identifier>
+  <Description>Provides JSON Rest services for some of the Phoenix services, such as browsing views.  This is primarily used by external devices, such as SmartPhones, to interact with Phoenix running on SageTV.</Description>
+  <Author>stuckless</Author>
+  <CreationDate>2010.11.21</CreationDate>
+  <ModificationDate>2010.11.21</ModificationDate>
+  <Version>1.0</Version>
+  <Desktop>false</Desktop>
+  <ResourcePath>phoenix-rest</ResourcePath>
+
+  <Dependency>
+    <Plugin>Jetty</Plugin>
+    <MinVersion>1.7</MinVersion>
+  </Dependency>
+
+  <Dependency>
+    <Plugin>phoenix-core</Plugin>
+    <MinVersion>2.3.4</MinVersion>
+  </Dependency>
+
+  <PluginType>Standard</PluginType>
+
+  <Package>
+    <PackageType>System</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/phoenix-rest-war-1.0.zip</Location>
+    <MD5>48DB930B1DB0274241A7A3A3FE57F265</MD5>
+  </Package>
+
+  <!-- context file must be installed after the war file -->
+  <Package>
+    <PackageType>System</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/phoenix-rest-context-1.0.zip</Location>
+    <MD5>7AE36985F85C6DCCDFA46F0165AB341B</MD5>
+  </Package>
+  <ReleaseNotes>
+1.0 - Initial Release
+* Exposes some Phoenix APIs over HTTP Rest calls
+  </ReleaseNotes>
+</SageTVPlugin>
+<SageTVPlugin>
 
        <Name>Schedules Direct EPG Plugin (OSS)</Name>
 
@@ -6782,6 +6822,24 @@ Initial release.
     <MD5>A3213EC29565FA176D51CBA16936A4CC</MD5>
   </Package>
 
+</SageTVPlugin>
+<SageTVPlugin>
+ <Name>OSD Clock and Play Time</Name>
+ <Identifier>osdclockplaytime</Identifier>
+ <Description>SageTV STVI Plugin for displaying clock and/or how long current media has been playing</Description>
+ <Author>toricred</Author>
+ <CreationDate>2010-05-29</CreationDate>
+ <ModificationDate>2011-02-13</ModificationDate>
+ <ReleaseNotes>Fix possible memory leak with playtime</ReleaseNotes>
+ <Version>1.4.4</Version>
+ <Desktop>false</Desktop>
+ <PluginType>STVI</PluginType>
+ <Package>
+ <PackageType>STVI</PackageType>
+ <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/rrnwse/OSDClockPlayTime_1.4.4.zip</Location>
+ <MD5>FAEB270722245D1D7425EB36A0C52403</MD5>
+ </Package>
+ <STVImport>OSDClockPlayTime_1.4.4.stvi</STVImport>
 </SageTVPlugin>
 <SageTVPlugin>
   <Name>J. River Media Center / Jukebox Explorer</Name>
@@ -8870,6 +8928,155 @@ v0.7.5
   </Package>
 </SageTVPlugin>
 <SageTVPlugin>
+
+
+
+  <Name>Sage For Echo Functions</Name>
+
+
+
+  <Identifier>sageforechofunctions</Identifier>
+
+
+
+  <Description>Support Plugin needed for the Amazon Echo skill to control SageTV.</Description>
+
+
+
+  <Author>tmiranda</Author>
+
+
+
+  <CreationDate>2016.9.29</CreationDate>
+
+  <ModificationDate>2017.02.05</ModificationDate>
+
+
+
+  <Version beta="true">0.05</Version>
+
+
+
+  <Desktop>false</Desktop>
+
+
+
+  <Webpage>https://forums.sagetv.com/forums/showthread.php?t=63281</Webpage>
+
+
+
+  <Dependency>
+
+    <STV>SageTV7</STV>
+
+    <MinVersion>7.0</MinVersion>
+
+  </Dependency>
+
+
+
+  <Dependency>
+
+    <Plugin>sagex-api</Plugin>
+
+    <MinVersion>7.0.0.0</MinVersion>
+
+  </Dependency>
+
+
+
+   <Dependency>
+
+    <Plugin>sagex-api-services</Plugin>
+
+	<MinVersion>7.0.0.0</MinVersion>
+
+  </Dependency>
+
+
+
+   <Dependency>
+
+    <Plugin>phoenix-api</Plugin>
+
+    <MinVersion>2.3.0</MinVersion>
+
+  </Dependency>
+
+
+
+  <PluginType>Library</PluginType>
+
+
+
+  <Package>
+
+    <PackageType>System</PackageType>
+
+    <Location>http://bintray.com/tmiranda/SageTVPlugins/download_file?file_path=Echo%2Fsagex-0.05.zip</Location>
+
+    <MD5>C979347EBBC0F44B8F6C0D03E83E9E57</MD5>
+
+  </Package>
+
+
+
+  <Package>
+
+    <PackageType>JAR</PackageType>
+
+    <Location>http://bintray.com/tmiranda/SageTVPlugins/download_file?file_path=Echo%2FechoFunctions-0.05.zip</Location>
+
+    <MD5>18FB7CF89932E8D1DE36007447B9E080</MD5>
+
+  </Package>
+
+
+
+  <ReleaseNotes>Version 0.05:
+
+- Rewrote much of the JavaScript in Java.
+
+
+
+Version 0.04:
+
+- Added String prototype for replaceAll()
+
+- Added code to support automatic plugin updating.
+
+- Added code to gather java and operating system information for debugging.
+
+
+
+Version 0.03:
+
+- Removed SageTV v9 dependency.
+
+- Updated echoFunctions.js.
+
+
+
+Version 0.02:
+
+- Updated echoFunctions.js.
+
+- Added phoenix-api dependency.
+
+- Changed minimum version to SageTV 9.
+
+
+
+Version 0.01:
+
+- Initial release.
+
+  </ReleaseNotes>
+
+
+
+</SageTVPlugin>
+<SageTVPlugin>
   <Name>SageMyMovies</Name>
   <Identifier>SageMyMovies</Identifier>
   <Description>MyMovies is a Movie Collection manager original designed for Windows Media Center. It has an extensive database of user contributed content encompassing metadata and fanart for movies. How this differs from IMDB.com and the like is that contribution to the database earns you points that can be used to unlock additional features and functionality in MyMovies.
@@ -9418,8 +9625,8 @@ Users who are upgrading should modify their plugin settings as follows:
 
   <Package>
     <PackageType>STVI</PackageType>
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/serenitybybialio/STV7.mytv.0.2.stvi.zip</Location>
-    <MD5>cb818c8c77eb8d7ed9e864a68c6f2bc9</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/STV7.mytv.0.2.stvi.zip</Location>
+    <MD5>CB818C8C77EB8D7ED9E864A68C6F2BC9</MD5>
   </Package>
 
 <STVImport>STV7.mytv.0.2.stvi</STVImport>
@@ -9458,20 +9665,20 @@ Phoenix is a STV replacement for SageTV7 providing the following features
 
   <Package>
     <PackageType>STV</PackageType>
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagephoenix/phoenix-stv-2.5.413.zip</Location>
-    <MD5>7824f39285f2c550b2adb08d61a93459</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/phoenix-stv-2.5.413.zip</Location>
+    <MD5>7824F39285F2C550B2ADB08D61A93459</MD5>
   </Package>
 
   <Package>
     <PackageType>System</PackageType>
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagephoenix/phoenix-theme-2.3.409.zip</Location>
-    <MD5>c33ceae1e8973105739b3b57d495e692</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/phoenix-theme-2.3.409.zip</Location>
+    <MD5>C33CEAE1E8973105739B3B57D495E692</MD5>
   </Package>
 
   <Package>
     <PackageType>System</PackageType>
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagephoenix/phoenix-theme2-2.5.201.zip</Location>
-    <MD5>f8664e810c6cf729f2bc1e77e70f02b0</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/phoenix-theme2-2.5.201.zip</Location>
+    <MD5>F8664E810C6CF729F2BC1E77E70F02B0</MD5>
   </Package>
 
   <!--
@@ -9651,9 +9858,9 @@ Build 400
 
 <PackageType>STVI</PackageType>
 
-<Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/jorton/DiamondMyTV_1.0.zip</Location>
+<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/DiamondMyTV_1.0.zip</Location>
 
-<MD5>a212c7dfd874a52f6d140bc9b3b83710</MD5>
+<MD5>A212C7DFD874A52F6D140BC9B3B83710</MD5>
 
 </Package>
 
@@ -9687,8 +9894,8 @@ Build 400
 
   <Package>
     <PackageType>STVI</PackageType>
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/serenitybybialio/STV7.seasonepisode.1.0.1.stvi.zip</Location>
-    <MD5>359401e6a05a640cbbfe70b891c575d1</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/STV7.seasonepisode.1.0.1.stvi.zip</Location>
+    <MD5>359401E6A05A640CBBFE70B891C575D1</MD5>
   </Package>
 
 <STVImport>STV7.seasonepisode.1.0.1.stvi</STVImport>
@@ -9713,8 +9920,8 @@ Build 400
 
   <Package>
     <PackageType>STVI</PackageType>
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/serenitybybialio/STV7.epg.bog.1.0.stvi.zip</Location>
-    <MD5>8f2048f5047631abfe1c80da2d5c0ff2</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/STV7.epg.bog.1.0.stvi.zip</Location>
+    <MD5>8F2048F5047631ABFE1C80DA2D5C0FF2</MD5>
   </Package>
 
 <STVImport>STV7.epg.bog.1.0.stvi</STVImport>
@@ -9739,8 +9946,8 @@ Build 400
 
   <Package>
     <PackageType>STVI</PackageType>
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/serenitybybialio/STV7.nodefaultaction.1.0.stvi.zip</Location>
-    <MD5>f4a0d121e01c4f35c9e316bc6b4ef957</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/STV7.nodefaultaction.1.0.stvi.zip</Location>
+    <MD5>F4A0D121E01C4F35C9E316BC6B4EF957</MD5>
   </Package>
 
 <STVImport>STV7.nodefaultaction.1.0.stvi</STVImport>
@@ -9765,8 +9972,8 @@ Build 400
 
   <Package>
     <PackageType>STVI</PackageType>
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/serenitybybialio/STV7.alltitles.1.0.stvi.zip</Location>
-    <MD5>d258adcf4abfddd79da1aefce7851424</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/STV7.alltitles.1.0.stvi.zip</Location>
+    <MD5>D258ADCF4ABFDDD79DA1AEFCE7851424</MD5>
   </Package>
 
 <STVImport>STV7.alltitles.1.0.stvi</STVImport>
@@ -9814,9 +10021,9 @@ Load this UI Mod and then set the theme from the Advanced menu of Detailed Setup
 
          <PackageType>STVI</PackageType>
 
-         <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/serenitybybialio/stv7_p2_compatability_v1.0.1.zip</Location>
+         <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/stv7_p2_compatability_v1.0.1.zip</Location>
 
-         <MD5>85496728c0317a379ab94b29b61f2527</MD5>
+         <MD5>85496728C0317A379AB94B29B61F2527</MD5>
 
       </Package>
 
@@ -9853,8 +10060,8 @@ not be installed unless Phoenix is also installed.
 
   <Package>
     <PackageType>STVI</PackageType>
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagephoenix/phoenix-compatability-1.0.1.zip</Location>
-    <MD5>10e38d6e809cda2394a1e65c28f62716</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/phoenix-compatability-1.0.1.zip</Location>
+    <MD5>10E38D6E809CDA2394A1E65C28F62716</MD5>
   </Package>
 
   <STVImport>STV7.phoenix.compatability.1.0.1.stvi</STVImport>
@@ -9887,8 +10094,8 @@ Closes a security hole on the Parental Lock Code
 
   <Package>
     <PackageType>STVI</PackageType>
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/serenitybybialio/STV7-phoenix-fanart-0.1.9.stvi.zip</Location>
-    <MD5>5c8fb6f68a8b38d67945e6c709d743c0</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/STV7-phoenix-fanart-0.1.9.stvi.zip</Location>
+    <MD5>5C8FB6F68A8B38D67945E6C709D743C0</MD5>
   </Package>
 
 <ReleaseNotes>0.1.9 - Cleaned up some uninstantiated attributes, added Phoenix Fanart for TV Thumbnail view
@@ -9921,8 +10128,8 @@ Closes a security hole on the Parental Lock Code
 
 <Package>
   <PackageType>STVI</PackageType>
-  <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/serenitybybialio/STV7.serenity.theme.1.0.zip</Location>
-  <MD5>4872da66d09afaeed5d0da1c24a08cb8</MD5>
+  <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/STV7.serenity.theme.1.0.zip</Location>
+  <MD5>4872DA66D09AFAEED5D0DA1C24A08CB8</MD5>
 </Package>
 
 <Screenshot>http://i253.photobucket.com/albums/hh68/bialio/Serenity/Serenity%20V7/screenshot.jpg</Screenshot>
@@ -11079,8 +11286,8 @@ To access Video Tools Options: press "Video Out" on the remote while in the medi
 		<PluginType>STVI</PluginType>
 		<Package>
 			<PackageType>System</PackageType>
-			<Location><![CDATA[ http://sageplugins.sourceforge.net/nielm_modules/autoaspect/autoaspect_1_3.zip ]]></Location>
-			<MD5>629630915755a89bdec31657d4c43b09</MD5>
+			<Location><![CDATA[ https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/autoaspect_1_3.zip ]]></Location>
+			<MD5>629630915755A89BDEC31657D4C43B09</MD5>
 			<Overwrite>false</Overwrite>
 		</Package>
 		<STVImport>..\\SageTV3\\autoaspect_import.stvi</STVImport>
@@ -13596,6 +13803,98 @@ Final logging changes
     <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/commons-net-1.4.1.jar.zip</Location>
     <MD5>EAAF1B6CFEA6707AA1D4141EE2EB234A</MD5>
   </Package>
+</SageTVPlugin>
+<SageTVPlugin>
+  <Name>SageTV Mobile Web Interface</Name>
+  <Identifier>MobileWeb</Identifier>
+  <Description>Manage SageTV activity from mobile web browsers.</Description>
+  <Author>jreichen</Author>
+  <CreationDate>2008.11.23</CreationDate>
+  <ModificationDate>2011.03.06</ModificationDate>
+  <Version>2.1.0.42</Version>
+  <Desktop>false</Desktop>
+  <ResourcePath>mobileweb</ResourcePath>
+  <Screenshot title="Main Menu">http://sageplugins.sourceforge.net/screenshots/mobileweb/menu.png</Screenshot>
+  <Screenshot title="iPhone Details Page">http://sageplugins.sourceforge.net/screenshots/mobileweb/iPhone%20Details%20Page.png</Screenshot>
+  <Screenshot title="iPad Details Page">http://sageplugins.sourceforge.net/screenshots/mobileweb/iPad%20Details%20Page.png</Screenshot>
+  <Webpage title="Forum Support Thread">http://forums.sagetv.com/forums/showthread.php?t=52157</Webpage>
+  <Webpage title="Mobile Web Interface Wiki">http://tools.assembla.com/sageplugins/wiki/MobileWebInterface</Webpage>
+  <Webpage title="GeekTonic.com Review">http://www.geektonic.com/2010/11/sage-on-go-sagetv-gets-ipad-iphone-and_07.html</Webpage>
+  <DemoVideo title="GeekTonic Demo on YouTube">http://www.youtube.com/watch?v=mYSf-gXyMYU</DemoVideo>
+  <ReleaseNotes>
+    <![CDATA[
+Version 2.1.0
+1. Mobile Web Remote (contributed by forum user PiX64!)
+2. Add System Messages section to Home page
+3. Store client, extender, and placeshifter descriptive names in Sage.properties
+4. Edit client, extender, and placeshifter descriptive names from mobile web interface (click on the context in the home page to go to the client/extender details page)
+5. Fix display of actual recording times in recording lists and detailed info page
+6. Fix First Run/ReRun info on detailed info page
+7. Don't identify Android browsers as Safari (both are based on WebKit)
+8. Show message on recordings page if no recordings exist
+
+Version 2.0.0
+1. SageTV v7-style interface (switch from blue to gray as well as other style changes)
+2. Convert TV recordings in real time and watch on iPhone, iPod touch, and iPad
+3. Support latest watched time when starting and suspending viewing on iPhone, iPod touch, and iPad
+4. Start playback of TV recordings on extenders, placeshifters, and clients
+5. Convert all images to support transparency (may display strangely on older mobile browsers)
+6. Improved font handling when switching between portrait and landscape modes on iPhone, iPod touch, and iPad
+7. Fixed HTML to make CSS styling easier
+8. View what's playing on SageTV Clients
+9. Change max number of hours in TV listings from 12 to 24
+
+Version 1.4.1
+1. Fixed error 'mobile_menu.json (The system cannot find the path specified)'
+
+Version 1.4.0
+1. View what's playing on SageTV Clients from the home page
+2. Favorite Automatic Conversions
+3. Adopt conventions for /apps application
+4. Regenerated tag library for SageTV v7 API
+5. Don't hard-code resource path of mobile_menu.json
+6. Close mobile_menu.json file reader
+7. Convert end-of-line characters from LF (Linux) to CRLF (Windows) for the /apps files.
+8. Increase maximum for Favorite Keep at Most from 15 to 63
+9. Remember last values for video conversions
+
+Version 1.3
+1. Support for SageTV Plugin Manager
+    ]]>
+  </ReleaseNotes>
+  <Dependency>
+    <Core></Core>
+    <MinVersion>7.0.10</MinVersion>
+  </Dependency>
+  <Dependency>
+    <JVM></JVM>
+    <MinVersion>1.5</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Plugin>Jetty</Plugin>
+    <MinVersion>2.0.1</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Plugin>sagex-api</Plugin>
+    <MinVersion>7.0.15</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Plugin>mediastreaming</Plugin>
+    <MinVersion>1.0.0</MinVersion>
+  </Dependency>
+  <PluginType>Standard</PluginType>
+  <Package>
+    <PackageType>System</PackageType>
+    <Location>http://downloads.sourceforge.net/project/sageplugins/Mobile%20Web%20Interface/2.1.0/plugin/sagewebapp-war-file-2.1.0.42.zip?use_mirror=</Location>
+    <MD5>c0cf47c29f717f612baab978eb2bc7d8</MD5>
+  </Package>
+  <!-- context file must be installed after the war file -->
+  <Package>
+    <PackageType>System</PackageType>
+    <Location>http://downloads.sourceforge.net/project/sageplugins/Mobile%20Web%20Interface/2.1.0/plugin/sagewebapp-context-file-2.1.0.42.zip?use_mirror=</Location>
+    <MD5>3b05057f0b7dc2d9d8e3699f31d18f04</MD5>
+  </Package>
+  <ImplementationClass></ImplementationClass>
 </SageTVPlugin>
 <SageTVPlugin>
 
