@@ -31,20 +31,20 @@ Phoenix is a STV replacement for SageTV7 providing the following features
 
   <Package>
     <PackageType>STV</PackageType>
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagephoenix/phoenix-stv-2.5.413.zip</Location>
-    <MD5>7824f39285f2c550b2adb08d61a93459</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/phoenix-stv-2.5.413.zip</Location>
+    <MD5>7824F39285F2C550B2ADB08D61A93459</MD5>
   </Package>
 
   <Package>
     <PackageType>System</PackageType>
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagephoenix/phoenix-theme-2.3.409.zip</Location>
-    <MD5>c33ceae1e8973105739b3b57d495e692</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/phoenix-theme-2.3.409.zip</Location>
+    <MD5>C33CEAE1E8973105739B3B57D495E692</MD5>
   </Package>
 
   <Package>
     <PackageType>System</PackageType>
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagephoenix/phoenix-theme2-2.5.201.zip</Location>
-    <MD5>f8664e810c6cf729f2bc1e77e70f02b0</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/phoenix-theme2-2.5.201.zip</Location>
+    <MD5>F8664E810C6CF729F2BC1E77E70F02B0</MD5>
   </Package>
 
   <!--

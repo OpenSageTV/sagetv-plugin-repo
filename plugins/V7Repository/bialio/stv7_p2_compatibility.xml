@@ -40,9 +40,9 @@ Load this UI Mod and then set the theme from the Advanced menu of Detailed Setup
 
          <PackageType>STVI</PackageType>
 
-         <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/serenitybybialio/stv7_p2_compatability_v1.0.1.zip</Location>
+         <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/stv7_p2_compatability_v1.0.1.zip</Location>
 
-         <MD5>85496728c0317a379ab94b29b61f2527</MD5>
+         <MD5>85496728C0317A379AB94B29B61F2527</MD5>
 
       </Package>
 

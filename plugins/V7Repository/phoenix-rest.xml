@@ -1,0 +1,40 @@
+<SageTVPlugin>
+  <Name>Phoenix Restful Apis</Name>
+  <Identifier>phoenix-rest</Identifier>
+  <Description>Provides JSON Rest services for some of the Phoenix services, such as browsing views.  This is primarily used by external devices, such as SmartPhones, to interact with Phoenix running on SageTV.</Description>
+  <Author>stuckless</Author>
+  <CreationDate>2010.11.21</CreationDate>
+  <ModificationDate>2010.11.21</ModificationDate>
+  <Version>1.0</Version>
+  <Desktop>false</Desktop>
+  <ResourcePath>phoenix-rest</ResourcePath>
+
+  <Dependency>
+    <Plugin>Jetty</Plugin>
+    <MinVersion>1.7</MinVersion>
+  </Dependency>
+
+  <Dependency>
+    <Plugin>phoenix-core</Plugin>
+    <MinVersion>2.3.4</MinVersion>
+  </Dependency>
+
+  <PluginType>Standard</PluginType>
+
+  <Package>
+    <PackageType>System</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/phoenix-rest-war-1.0.zip</Location>
+    <MD5>48DB930B1DB0274241A7A3A3FE57F265</MD5>
+  </Package>
+
+  <!-- context file must be installed after the war file -->
+  <Package>
+    <PackageType>System</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/phoenix-rest-context-1.0.zip</Location>
+    <MD5>7AE36985F85C6DCCDFA46F0165AB341B</MD5>
+  </Package>
+  <ReleaseNotes>
+1.0 - Initial Release
+* Exposes some Phoenix APIs over HTTP Rest calls
+  </ReleaseNotes>
+</SageTVPlugin>

@@ -19,8 +19,8 @@
 
   <Package>
     <PackageType>STVI</PackageType>
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/serenitybybialio/STV7.mytv.0.2.stvi.zip</Location>
-    <MD5>cb818c8c77eb8d7ed9e864a68c6f2bc9</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/STV7.mytv.0.2.stvi.zip</Location>
+    <MD5>CB818C8C77EB8D7ED9E864A68C6F2BC9</MD5>
   </Package>
 
 <STVImport>STV7.mytv.0.2.stvi</STVImport>

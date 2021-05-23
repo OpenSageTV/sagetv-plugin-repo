@@ -18,8 +18,8 @@
 
 <Package>
   <PackageType>STVI</PackageType>
-  <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/serenitybybialio/STV7.serenity.theme.1.0.zip</Location>
-  <MD5>4872da66d09afaeed5d0da1c24a08cb8</MD5>
+  <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/STV7.serenity.theme.1.0.zip</Location>
+  <MD5>4872DA66D09AFAEED5D0DA1C24A08CB8</MD5>
 </Package>
 
 <Screenshot>http://i253.photobucket.com/albums/hh68/bialio/Serenity/Serenity%20V7/screenshot.jpg</Screenshot>

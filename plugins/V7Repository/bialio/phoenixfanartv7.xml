@@ -22,8 +22,8 @@
 
   <Package>
     <PackageType>STVI</PackageType>
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/serenitybybialio/STV7-phoenix-fanart-0.1.9.stvi.zip</Location>
-    <MD5>5c8fb6f68a8b38d67945e6c709d743c0</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/STV7-phoenix-fanart-0.1.9.stvi.zip</Location>
+    <MD5>5C8FB6F68A8B38D67945E6C709D743C0</MD5>
   </Package>
 
 <ReleaseNotes>0.1.9 - Cleaned up some uninstantiated attributes, added Phoenix Fanart for TV Thumbnail view

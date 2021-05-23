@@ -17,8 +17,8 @@
 
   <Package>
     <PackageType>STVI</PackageType>
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/serenitybybialio/STV7.epg.bog.1.0.stvi.zip</Location>
-    <MD5>8f2048f5047631abfe1c80da2d5c0ff2</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/STV7.epg.bog.1.0.stvi.zip</Location>
+    <MD5>8F2048F5047631ABFE1C80DA2D5C0FF2</MD5>
   </Package>
 
 <STVImport>STV7.epg.bog.1.0.stvi</STVImport>

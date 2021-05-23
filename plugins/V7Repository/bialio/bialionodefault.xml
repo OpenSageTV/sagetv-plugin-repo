@@ -17,8 +17,8 @@
 
   <Package>
     <PackageType>STVI</PackageType>
-    <Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/serenitybybialio/STV7.nodefaultaction.1.0.stvi.zip</Location>
-    <MD5>f4a0d121e01c4f35c9e316bc6b4ef957</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/STV7.nodefaultaction.1.0.stvi.zip</Location>
+    <MD5>F4A0D121E01C4F35C9E316BC6B4EF957</MD5>
   </Package>
 
 <STVImport>STV7.nodefaultaction.1.0.stvi</STVImport>

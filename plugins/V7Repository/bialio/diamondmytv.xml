@@ -36,9 +36,9 @@
 
 <PackageType>STVI</PackageType>
 
-<Location>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/jorton/DiamondMyTV_1.0.zip</Location>
+<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/DiamondMyTV_1.0.zip</Location>
 
-<MD5>a212c7dfd874a52f6d140bc9b3b83710</MD5>
+<MD5>A212C7DFD874A52F6D140BC9B3B83710</MD5>
 
 </Package>
 
