@@ -7,12 +7,12 @@
   <Version>0.1.1</Version>
   <Desktop>false</Desktop>
   <PluginType>STVI</PluginType>
-  <Screenshot>http://dl.dropbox.com/u/7563789/sagetv/removeVolumeArea/screenshot.png</Screenshot>
+  <Screenshot>https://github.com/arumsey/sagetv-remove-volume-area/blob/master/screenshot.png?raw=true</Screenshot>
   <STVImport>NoVolOnOSD.stvi</STVImport>
   <Package>
     <PackageType>STVI</PackageType>
-   <Location>http://dl.dropbox.com/u/7563789/sagetv/removeVolumeArea/NoVolOnOSD.zip</Location>
-    <MD5>00f1cb97f39fdfe0dd905fecc2c53ba7</MD5>
+   <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/NoVolOnOSD.zip</Location>
+    <MD5>00F1CB97F39FDFE0DD905FECC2C53BA7</MD5>
   </Package>
 
 <ModificationDate>2010-6-19</ModificationDate>
