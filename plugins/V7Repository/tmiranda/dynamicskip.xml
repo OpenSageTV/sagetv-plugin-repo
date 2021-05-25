@@ -36,7 +36,7 @@
 
     <PackageType>STVI</PackageType>
 
-    <Location>http://github.com/tmiranda1962/Dynamic-Skip-Times/releases/download/v1.0/DST-0.05.zip</Location>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/DST-0.05.zip</Location>
 
     <MD5>B98B23DA3F12B1C8958559F62338C743</MD5>
 
