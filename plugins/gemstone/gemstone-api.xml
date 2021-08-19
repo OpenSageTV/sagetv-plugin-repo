@@ -10,8 +10,8 @@
   <Author>jusjoken,Fuzzy,PluckyHD</Author>
 
   <CreationDate>2010-12-06</CreationDate>
-  <ModificationDate>2019.01.20</ModificationDate>
-  <Version>1.0501</Version>
+  <ModificationDate>2021.08.18</ModificationDate>
+  <Version>1.0601</Version>
   <Desktop>false</Desktop>
 
   <Dependency>
@@ -20,6 +20,7 @@
   </Dependency>
 
   <ReleaseNotes>
+    Version 1.0601 Change weather system to use OpenWeatherMap using the 3.x version of the Google Weather plugin
     Version 1.0501 Minor changes to remove weather underground and add dark sky
     Version 1.0402 Minor change to handle default weather location
     Version 1.0401 Misc fixes - see forums
@@ -30,8 +31,8 @@
 
   <Package>
     <PackageType>JAR</PackageType>
-    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/GemstoneAPI1_0501.zip</Location>
-    <MD5>CA7D9BF5AA6A283676B55A5BA252DA64</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/GemstoneAPI1_0601.zip</Location>
+    <MD5>a957f47d5fef54729be4f84f898aa614</MD5>
   </Package>
 
 </SageTVPlugin>
