@@ -6,8 +6,8 @@
   <Description>Major update of the Diamond STVi.</Description>
   <Author>JOrton,jusjoken,Fuzzy,EvilPenguin,bialio,PluckyHD</Author>
   <CreationDate>2010.11.01</CreationDate>
-  <ModificationDate>2019.01.20</ModificationDate>
-  <Version>4.0501</Version>
+  <ModificationDate>2021.08.18</ModificationDate>
+  <Version>4.0601</Version>
 
   <Dependency>
    <Core/>
@@ -21,12 +21,12 @@
 
   <Dependency>
     <Plugin>googleweather</Plugin>
-    <MinVersion>2.0.2</MinVersion>
+    <MinVersion>3.0.1</MinVersion>
   </Dependency>
 
   <Dependency>
    <Plugin>gemstone-api</Plugin>
-   <MinVersion>1.0501</MinVersion>
+   <MinVersion>1.0601</MinVersion>
   </Dependency>
 
   <Dependency>
@@ -34,17 +34,12 @@
    <MinVersion>1.0407</MinVersion>
   </Dependency>
 
-  <Dependency>
-   <Plugin>gemstone-icons</Plugin>
-   <MinVersion>1.013</MinVersion>
-  </Dependency>
-
   <PluginType>STVI</PluginType>
 
   <Package>
    <PackageType>STV</PackageType>
-   <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/Gemstone1_0501.zip</Location>
-   <MD5>557F8BC9C8B5BAB7E000BD9D90007204</MD5>
+   <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/Gemstone1_0601.zip</Location>
+   <MD5>eafc4c1600bd40f9a0ce561154d3d461</MD5>
   </Package>
 
   <Package>
@@ -56,6 +51,12 @@
   <STVImport>GemstonePlugin.stvi</STVImport>
 
   <ReleaseNotes>
+    Version 1.0601 Changed weather system to use OpenWeatherMap from the updated Google Weather plugin
+                   OpenWeatherMap - this requires a developer key.
+                    - Sign up at https://home.openweathermap.org/users/sign_up
+                    - Create a file in the root SageTV folder called owmkey.properties with only 1 line in it "key=userkey"
+                    - no quotes in the line and replace userkey with the one you get when signing up
+                    - without a user key Open Weather will not update nor allow locations to be added
     Version 1.0501 Removed Weather Underground and fixed Yahoo Weather
                    Added Dark Sky Weather - this requires a developer key.
                     - Sign up at https://darksky.net/dev
