@@ -6,8 +6,8 @@
   <Description>Major update of the Diamond STVi.</Description>
   <Author>JOrton,jusjoken,Fuzzy,EvilPenguin,bialio,PluckyHD</Author>
   <CreationDate>2010.11.01</CreationDate>
-  <ModificationDate>2021.08.18</ModificationDate>
-  <Version>4.0601</Version>
+  <ModificationDate>2021.08.21</ModificationDate>
+  <Version>4.0602</Version>
 
   <Dependency>
    <Core/>
@@ -21,7 +21,7 @@
 
   <Dependency>
     <Plugin>googleweather</Plugin>
-    <MinVersion>3.0.1</MinVersion>
+    <MinVersion>3.0.2</MinVersion>
   </Dependency>
 
   <Dependency>
@@ -38,8 +38,8 @@
 
   <Package>
    <PackageType>STV</PackageType>
-   <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/Gemstone1_0601.zip</Location>
-   <MD5>eafc4c1600bd40f9a0ce561154d3d461</MD5>
+   <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/Gemstone1_0602.zip</Location>
+   <MD5>b7b3af845cbe43da46f18a316fd023cf</MD5>
   </Package>
 
   <Package>
@@ -51,6 +51,7 @@
   <STVImport>GemstonePlugin.stvi</STVImport>
 
   <ReleaseNotes>
+    Version 1.0602 Fix for weather backgrounds
     Version 1.0601 Changed weather system to use OpenWeatherMap from the updated Google Weather plugin
                    OpenWeatherMap - this requires a developer key.
                     - Sign up at https://home.openweathermap.org/users/sign_up
