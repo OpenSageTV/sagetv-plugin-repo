@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2021.0821.1349">
+<PluginRepository version="2021.0821.1846">
 <SageTVPlugin>
   <Name>OSD Enhancements</Name>
   <Identifier>jusjokenOSDEnhancements</Identifier>
@@ -3227,7 +3227,7 @@ Initial release.
   <Author>JOrton,jusjoken,Fuzzy,EvilPenguin,bialio,PluckyHD</Author>
   <CreationDate>2010.11.01</CreationDate>
   <ModificationDate>2021.08.21</ModificationDate>
-  <Version>4.0602</Version>
+  <Version>4.0603.2</Version>
 
   <Dependency>
    <Core/>
@@ -3258,8 +3258,8 @@ Initial release.
 
   <Package>
    <PackageType>STV</PackageType>
-   <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/Gemstone1_0602.zip</Location>
-   <MD5>b7b3af845cbe43da46f18a316fd023cf</MD5>
+   <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/Gemstone1_0603.zip</Location>
+   <MD5>cd5bd87c3acdd8df275ef24abecbb6e8</MD5>
   </Package>
 
   <Package>
@@ -3271,6 +3271,7 @@ Initial release.
   <STVImport>GemstonePlugin.stvi</STVImport>
 
   <ReleaseNotes>
+    Version 1.0603 Fix for weather backgrounds #2
     Version 1.0602 Fix for weather backgrounds
     Version 1.0601 Changed weather system to use OpenWeatherMap from the updated Google Weather plugin
                    OpenWeatherMap - this requires a developer key.
