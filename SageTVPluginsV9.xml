@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2021.0825.1205">
+<PluginRepository version="2021.0828.1555">
 <SageTVPlugin>
   <Name>OSD Enhancements</Name>
   <Identifier>jusjokenOSDEnhancements</Identifier>
@@ -3126,8 +3126,8 @@ Initial release.
   <Author>jusjoken,Fuzzy,PluckyHD</Author>
 
   <CreationDate>2010-12-06</CreationDate>
-  <ModificationDate>2021.08.22</ModificationDate>
-  <Version>1.0604</Version>
+  <ModificationDate>2021.08.28</ModificationDate>
+  <Version>1.0606</Version>
   <Desktop>false</Desktop>
 
   <Dependency>
@@ -3136,6 +3136,7 @@ Initial release.
   </Dependency>
 
   <ReleaseNotes>
+    Version 1.0606 Fix for flow filters and improved logging
     Version 1.0604 Fix for weather forecast widgets and added logging for flow filters
     Version 1.0601 Change weather system to use OpenWeatherMap using the 3.x version of the Google Weather plugin
     Version 1.0501 Minor changes to remove weather underground and add dark sky
@@ -3148,8 +3149,8 @@ Initial release.
 
   <Package>
     <PackageType>JAR</PackageType>
-    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/GemstoneAPI1_0604.zip</Location>
-    <MD5>81f1a4ade760db8e78331d4df4e24d1e</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/GemstoneAPI1_0606.zip</Location>
+    <MD5>bed4adc91dd5f058b76f318e36359c2c</MD5>
   </Package>
 
 </SageTVPlugin>
@@ -3227,8 +3228,8 @@ Initial release.
   <Description>Major update of the Diamond STVi.</Description>
   <Author>JOrton,jusjoken,Fuzzy,EvilPenguin,bialio,PluckyHD</Author>
   <CreationDate>2010.11.01</CreationDate>
-  <ModificationDate>2021.08.25</ModificationDate>
-  <Version>4.0605</Version>
+  <ModificationDate>2021.08.28</ModificationDate>
+  <Version>4.0606</Version>
 
   <Dependency>
    <Core/>
@@ -3242,12 +3243,12 @@ Initial release.
 
   <Dependency>
     <Plugin>googleweather</Plugin>
-    <MinVersion>3.0.2</MinVersion>
+    <MinVersion>3.0.3</MinVersion>
   </Dependency>
 
   <Dependency>
    <Plugin>gemstone-api</Plugin>
-   <MinVersion>1.0604</MinVersion>
+   <MinVersion>1.0606</MinVersion>
   </Dependency>
 
   <Dependency>
@@ -3259,8 +3260,8 @@ Initial release.
 
   <Package>
    <PackageType>STV</PackageType>
-   <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/Gemstone1_0605.zip</Location>
-   <MD5>fc25b409a113579b5446d6a9177e5138</MD5>
+   <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/Gemstone1_0606.zip</Location>
+   <MD5>5c19c84f80f5e3531fd229c74ea087b3</MD5>
   </Package>
 
   <Package>
@@ -3272,6 +3273,7 @@ Initial release.
   <STVImport>GemstonePlugin.stvi</STVImport>
 
   <ReleaseNotes>
+    Version 1.0606 Fix for filters and changes to improve logging
     Version 1.0605 Fix for idle lockups
     Version 1.0604 Fix for weather forecast widgets and added logging for flow filters
     Version 1.0603 Fix for weather backgrounds #2
@@ -5228,7 +5230,7 @@ Updates: 1.01 - Correct NBC and Comedy Central Logos and recompress as 800x400 3
 <SageTVPlugin>
 	<Name>Google Weather</Name>
 	<Identifier>googleweather</Identifier>
-	<Version>3.0.2</Version>
+	<Version>3.0.3</Version>
 	<Description>A weather support library that is used by SageTV's updated weather system to retrieve weather information from OpenWeather.</Description>
 	<Author>Opus4, jusjoken</Author>
 	
@@ -5245,10 +5247,6 @@ Updates: 1.01 - Correct NBC and Comedy Central Logos and recompress as 800x400 3
         <MinVersion>2.4</MinVersion>
     </Dependency>
     <Dependency>
-        <Plugin>log4j</Plugin>
-        <MinVersion>1.2.17</MinVersion>
-    </Dependency>
-    <Dependency>
         <Plugin>gson</Plugin>
         <MinVersion>1.7.1</MinVersion>
     </Dependency>
@@ -5259,8 +5257,11 @@ Updates: 1.01 - Correct NBC and Comedy Central Logos and recompress as 800x400 3
 
 	<PluginType>Library</PluginType>
 	<CreationDate>2011.10.31</CreationDate>
-	<ModificationDate>2021.08.21</ModificationDate>
+	<ModificationDate>2021.08.28</ModificationDate>
 	<ReleaseNotes>Updated public release.
+
+Version 3.0.3:
+Logging fixes
 
 Version 3.0.2:
 Fix for weather backgrounds in gemstone
@@ -5293,8 +5294,8 @@ The weather data is updated no more often than every 30 minutes.
 
 	<Package>
 		<PackageType>JAR</PackageType>
-		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/GoogleWeather_3_0_2.zip</Location>
-		<MD5>4e37290b57d9a20921a107775ce4910b</MD5>
+		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/GoogleWeather_3_0_3.zip</Location>
+		<MD5>a9216a9ad025cbcf9d753c0ac4c64cc4</MD5>
 	</Package>
 
 </SageTVPlugin>
