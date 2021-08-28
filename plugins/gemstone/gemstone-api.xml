@@ -10,8 +10,8 @@
   <Author>jusjoken,Fuzzy,PluckyHD</Author>
 
   <CreationDate>2010-12-06</CreationDate>
-  <ModificationDate>2021.08.22</ModificationDate>
-  <Version>1.0604</Version>
+  <ModificationDate>2021.08.28</ModificationDate>
+  <Version>1.0606</Version>
   <Desktop>false</Desktop>
 
   <Dependency>
@@ -20,6 +20,7 @@
   </Dependency>
 
   <ReleaseNotes>
+    Version 1.0606 Fix for flow filters and improved logging
     Version 1.0604 Fix for weather forecast widgets and added logging for flow filters
     Version 1.0601 Change weather system to use OpenWeatherMap using the 3.x version of the Google Weather plugin
     Version 1.0501 Minor changes to remove weather underground and add dark sky
@@ -32,8 +33,8 @@
 
   <Package>
     <PackageType>JAR</PackageType>
-    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/GemstoneAPI1_0604.zip</Location>
-    <MD5>81f1a4ade760db8e78331d4df4e24d1e</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/GemstoneAPI1_0606.zip</Location>
+    <MD5>bed4adc91dd5f058b76f318e36359c2c</MD5>
   </Package>
 
 </SageTVPlugin>

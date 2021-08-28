@@ -1,7 +1,7 @@
 <SageTVPlugin>
 	<Name>Google Weather</Name>
 	<Identifier>googleweather</Identifier>
-	<Version>3.0.2</Version>
+	<Version>3.0.3</Version>
 	<Description>A weather support library that is used by SageTV's updated weather system to retrieve weather information from OpenWeather.</Description>
 	<Author>Opus4, jusjoken</Author>
 	
@@ -18,10 +18,6 @@
         <MinVersion>2.4</MinVersion>
     </Dependency>
     <Dependency>
-        <Plugin>log4j</Plugin>
-        <MinVersion>1.2.17</MinVersion>
-    </Dependency>
-    <Dependency>
         <Plugin>gson</Plugin>
         <MinVersion>1.7.1</MinVersion>
     </Dependency>
@@ -32,8 +28,11 @@
 
 	<PluginType>Library</PluginType>
 	<CreationDate>2011.10.31</CreationDate>
-	<ModificationDate>2021.08.21</ModificationDate>
+	<ModificationDate>2021.08.28</ModificationDate>
 	<ReleaseNotes>Updated public release.
+
+Version 3.0.3:
+Logging fixes
 
 Version 3.0.2:
 Fix for weather backgrounds in gemstone
@@ -66,8 +65,8 @@ The weather data is updated no more often than every 30 minutes.
 
 	<Package>
 		<PackageType>JAR</PackageType>
-		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/GoogleWeather_3_0_2.zip</Location>
-		<MD5>4e37290b57d9a20921a107775ce4910b</MD5>
+		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/GoogleWeather_3_0_3.zip</Location>
+		<MD5>a9216a9ad025cbcf9d753c0ac4c64cc4</MD5>
 	</Package>
 
 </SageTVPlugin>
