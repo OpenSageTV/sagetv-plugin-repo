@@ -6,8 +6,8 @@
   <Description>Major update of the Diamond STVi.</Description>
   <Author>JOrton,jusjoken,Fuzzy,EvilPenguin,bialio,PluckyHD</Author>
   <CreationDate>2010.11.01</CreationDate>
-  <ModificationDate>2021.08.25</ModificationDate>
-  <Version>4.0605</Version>
+  <ModificationDate>2021.08.28</ModificationDate>
+  <Version>4.0606</Version>
 
   <Dependency>
    <Core/>
@@ -21,12 +21,12 @@
 
   <Dependency>
     <Plugin>googleweather</Plugin>
-    <MinVersion>3.0.2</MinVersion>
+    <MinVersion>3.0.3</MinVersion>
   </Dependency>
 
   <Dependency>
    <Plugin>gemstone-api</Plugin>
-   <MinVersion>1.0604</MinVersion>
+   <MinVersion>1.0606</MinVersion>
   </Dependency>
 
   <Dependency>
@@ -38,8 +38,8 @@
 
   <Package>
    <PackageType>STV</PackageType>
-   <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/Gemstone1_0605.zip</Location>
-   <MD5>fc25b409a113579b5446d6a9177e5138</MD5>
+   <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/Gemstone1_0606.zip</Location>
+   <MD5>5c19c84f80f5e3531fd229c74ea087b3</MD5>
   </Package>
 
   <Package>
@@ -51,6 +51,7 @@
   <STVImport>GemstonePlugin.stvi</STVImport>
 
   <ReleaseNotes>
+    Version 1.0606 Fix for filters and changes to improve logging
     Version 1.0605 Fix for idle lockups
     Version 1.0604 Fix for weather forecast widgets and added logging for flow filters
     Version 1.0603 Fix for weather backgrounds #2
