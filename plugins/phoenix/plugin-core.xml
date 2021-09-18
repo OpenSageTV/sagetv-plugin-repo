@@ -13,24 +13,28 @@
     </Description>
     <Author>stuckless,jusjoken,bialio,meinmaui</Author>
     <CreationDate>2010.06.05</CreationDate>
-    <ModificationDate>2019.01.19</ModificationDate>
+    <ModificationDate>2021.09.18</ModificationDate>
     <ResourcePath>phoenix-core</ResourcePath>
-    <Version>3.3.0</Version>
+    <Version>3.3.1</Version>
 
     <Webpage><![CDATA[https://github.com/stuckless/sagetv-phoenix-core]]></Webpage>
 
     <Dependency>
         <Plugin>phoenix-api</Plugin>
-        <MinVersion>3.3.0</MinVersion>
+        <MinVersion>3.3.1</MinVersion>
     </Dependency>
     <PluginType>Standard</PluginType>
     <Package>
         <PackageType>System</PackageType>
-        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/phoenix-core-3.3.0.1.zip</Location>
-        <MD5>D98A88DF4CA74D39B16C045F150C6C8C</MD5>
+        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/phoenix-core-3.3.1.zip</Location>
+        <MD5>bf7393dbdf47a77d0f054268815fffba</MD5>
     </Package>
     <ImplementationClass>sagex.phoenix.plugin.PhoenixPlugin</ImplementationClass>
     <ReleaseNotes>
+# 3.3.1
+* Removed weather functionality as all included providers are no longer available
+* Weather for Gemstone and SageTV is now handled by the GWeather plugin
+
 # 3.2.3
 * Fanart Image fix (redirection not handled correctly)
 
@@ -40,7 +44,7 @@
 * The API will ignore changes that are the same. ie, setting same provider over and over, or setting the same units or locations, etc, will just be ignored, and not passed to the implementation.
 * The weather configuration can be "locked" (in BMT Weather Configuration). ie, if you have weather set to Yahoo with a location and units, you can "lock" it so that any API request to change this this will be ignored. I did this mainly because of a bug in Gemstore where it keeps changing my weather provider and units
 * SageTV Debugging - Exposed SageTV debugging flags to BMT Web UI (configuration)
-
+ 
 # 3.2.1
 * Fixes to allow failed TV lookups to retry (most failures are "Too many connections")
 
