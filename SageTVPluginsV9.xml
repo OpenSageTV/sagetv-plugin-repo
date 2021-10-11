@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2021.0918.1647">
+<PluginRepository version="2021.1011.2109">
 <SageTVPlugin>
   <Name>OSD Enhancements</Name>
   <Identifier>jusjokenOSDEnhancements</Identifier>
@@ -9,8 +9,8 @@
   </Description>
   <Author>jusjoken</Author>
   <CreationDate>2010.06.06</CreationDate>
-  <ModificationDate>2018.03.08</ModificationDate>
-  <Version>1.4.1</Version>
+  <ModificationDate>2021.10.11</ModificationDate>
+  <Version>1.4.2</Version>
 
 <Dependency>
   <STV>SageTV7</STV>
@@ -23,13 +23,12 @@
 
 <Package>
   <PackageType>STVI</PackageType>
-  <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/osdenhancements/OSD_Enhancements.zip</Location>
+  <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/OSD_Enhancements.zip</Location>
   <MD5>2838073c5a0c6bde3a227f4b16922ac8</MD5>
 </Package>
 
-<Screenshot>https://dl.bintray.com/opensagetv/sagetv-plugins/osdenhancements/OSD_Enhancements_time_remaining.PNG</Screenshot>
-  
 <ReleaseNotes>
+Version 1.4.2 - Moved from BinTray to OpenSagTV - no other changes
 Version 1.4.1 - Moved from dropbox to BinTray - no other changes
 Version 1.4 - Fixed Play toggle issue when in Fast Forward.
 Version 1.3
