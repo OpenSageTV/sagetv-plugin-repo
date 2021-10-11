@@ -9,7 +9,7 @@
   <Author>jusjoken</Author>
   <CreationDate>2010.06.06</CreationDate>
   <ModificationDate>2021.10.11</ModificationDate>
-  <Version>1.4.3</Version>
+  <Version>1.4.4</Version>
 
 <Dependency>
   <STV>SageTV7</STV>
@@ -27,7 +27,7 @@
 </Package>
 
 <ReleaseNotes>
-Version 1.4.3 - Moved from BinTray to OpenSagTV - no other changes
+Version 1.4.4 - Moved from BinTray to OpenSagTV - no other changes
 Version 1.4.1 - Moved from dropbox to BinTray - no other changes
 Version 1.4 - Fixed Play toggle issue when in Fast Forward.
 Version 1.3
