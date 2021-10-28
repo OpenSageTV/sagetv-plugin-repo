@@ -3,8 +3,8 @@
   <Identifier>youtubesupport</Identifier>
   <Author>tmiranda</Author>
   <CreationDate>2015.08.23</CreationDate>
-  <ModificationDate>2017.10.07</ModificationDate>
-  <Version beta="false">1.10</Version>
+  <ModificationDate>2021.10.28</ModificationDate>
+  <Version beta="false">1.101</Version>
   <Desktop>false</Desktop>
 
   <Description>The recording engine for the YouTube (2015) UI Mod Plugin. No need to install this directly.</Description>

@@ -3,8 +3,8 @@
   <Identifier>youtube</Identifier>
   <Author>tmiranda</Author>
   <CreationDate>2015.06.30</CreationDate>
-  <ModificationDate>2017.10.08</ModificationDate>
-  <Version beta="false">1.10</Version>
+  <ModificationDate>2021.10.28</ModificationDate>
+  <Version beta="false">1.101</Version>
   <Desktop>false</Desktop>
 
   <Description>Watch YouTube videos again. Record, search, browse popular, create favorites, and more.</Description>
@@ -36,17 +36,17 @@
 
   <Dependency>
     <Plugin>youtubesupport</Plugin>
-    <MinVersion>1.10</MinVersion>
+    <MinVersion>1.101</MinVersion>
   </Dependency>
 
   <Dependency>
     <Plugin>youtubeproperties</Plugin>
-    <MinVersion>1.03</MinVersion>
+    <MinVersion>1.031</MinVersion>
   </Dependency>
 
   <Dependency>
     <Plugin>youtube-dl</Plugin>
-    <MinVersion>2017.09.15</MinVersion>
+    <MinVersion>2021.05.16</MinVersion>
   </Dependency>
 
   <PluginType>STVI</PluginType>
@@ -59,7 +59,9 @@
 
   <STVImport>YouTube.stvi</STVImport>
 
-  <ReleaseNotes>Version 1.10:
+  <ReleaseNotes>
+Version 1.101: moved to github only
+Version 1.10:
 - Updated youtube-dl to version 2017.09.15.
 - Fixed a bug that prevented some Linux users from logging in to their YouTube account.
 - Adapted the STVi to work with STV version 9.0.9.2.
