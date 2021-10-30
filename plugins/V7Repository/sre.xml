@@ -22,9 +22,9 @@ This plugin installs a web GUI app within the Jetty plugin for online viewing an
 
        <CreationDate>2007.03.27</CreationDate>
 
-       <ModificationDate>2016.05.31</ModificationDate>
+       <ModificationDate>2021.10.30</ModificationDate>
 
-       <Version beta="true">4.0.2</Version>
+       <Version beta="true">4.0.3</Version>
 
        <ResourcePath>plugins/sre4</ResourcePath>
 
@@ -50,7 +50,7 @@ This plugin installs a web GUI app within the Jetty plugin for online viewing an
 
                 <Plugin>groovy</Plugin>
 
-                <MinVersion>1.7.10</MinVersion>
+                <MinVersion>2.0.5.2</MinVersion>
 
         </Dependency>
 
@@ -82,7 +82,7 @@ This plugin installs a web GUI app within the Jetty plugin for online viewing an
 
         	<Plugin>livepvrdata4j</Plugin>
 
-        	<MinVersion>5.0.0</MinVersion>
+        	<MinVersion>5.0.0.3</MinVersion>
 
         </Dependency>
 
@@ -90,7 +90,7 @@ This plugin installs a web GUI app within the Jetty plugin for online viewing an
 
         	<Plugin>livepvrdataserver</Plugin>
 
-        	<MinVersion>1.0.1</MinVersion>
+        	<MinVersion>1.8.1</MinVersion>
 
         </Dependency>
 
