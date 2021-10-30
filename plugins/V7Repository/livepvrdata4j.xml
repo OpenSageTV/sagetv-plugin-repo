@@ -10,9 +10,9 @@
 
        <CreationDate>2010.07.03</CreationDate>
 
-       <ModificationDate>2011.09.02</ModificationDate>
+       <ModificationDate>2021.10.30</ModificationDate>
 
-       <Version>5.0.0.2</Version>
+       <Version>5.0.0.3</Version>
 
        <ResourcePath>plugins/livepvrdata4j</ResourcePath>
 
@@ -46,7 +46,7 @@
 
 		<Plugin>livepvrdata-shared</Plugin>
 
-		<MinVersion>5.0.0.0</MinVersion>
+		<MinVersion>5.0.0.1</MinVersion>
 
 	</Dependency>
 
