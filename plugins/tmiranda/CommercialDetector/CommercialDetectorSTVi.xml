@@ -15,9 +15,9 @@
 
   <CreationDate>2010.08.06</CreationDate>
 
-  <ModificationDate>2021.05.16</ModificationDate>
+  <ModificationDate>2021.11.07</ModificationDate>
 
-  <Version beta="false">1.33.1</Version>
+  <Version beta="false">1.33.2</Version>
 
   <Desktop>false</Desktop>
 
@@ -39,7 +39,7 @@
 
     <Plugin>CommercialDetector</Plugin>
 
-    <MinVersion>1.00</MinVersion>
+    <MinVersion>1.16.2</MinVersion>
 
   </Dependency>
 
@@ -49,7 +49,7 @@
 
     <Plugin>ComskipPlayback</Plugin>
 
-    <MinVersion>2.1.2</MinVersion>
+    <MinVersion>2.1.3.3</MinVersion>
 
   </Dependency>
 
