@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2021.1030.1421">
+<PluginRepository version="2021.1107.1358">
 <SageTVPlugin>
   <Name>OSD Enhancements</Name>
   <Identifier>jusjokenOSDEnhancements</Identifier>
@@ -19599,8 +19599,8 @@ Version 1.10:
   <Identifier>CommercialDetector</Identifier>
   <Author>tmiranda</Author>
   <CreationDate>2010.08.01</CreationDate>
-  <ModificationDate>2021.05.16</ModificationDate>
-  <Version beta="false">1.16.1</Version>
+  <ModificationDate>2021.11.07</ModificationDate>
+  <Version beta="false">1.16.2</Version>
   <Desktop>false</Desktop>
   <Webpage>http://code.google.com/p/tmiranda/wiki/CommercialDetector</Webpage>
   <Webpage>http://forums.sagetv.com/forums/showthread.php?t=49958</Webpage>
@@ -19614,7 +19614,7 @@ Version 1.10:
 
   <Dependency>
     <Plugin>comskip</Plugin>
-    <MinVersion>80.042.001</MinVersion>
+    <MinVersion>80.042.003.2</MinVersion>
   </Dependency>
 
   <OS>Windows</OS>
@@ -19629,7 +19629,7 @@ Version 1.10:
     <MD5>9783C27B956C42CC2FD781B57A990EBC</MD5>
   </Package>
 
-  <ReleaseNotes>Version 1.16.1:
+  <ReleaseNotes>Version 1.16.2:
 -Move to V9 repository
 Version 1.16:
 - Cleaned up code.
@@ -19727,9 +19727,9 @@ Version 0.10 - First Beta.</ReleaseNotes>
 
   <CreationDate>2010.08.06</CreationDate>
 
-  <ModificationDate>2021.05.16</ModificationDate>
+  <ModificationDate>2021.11.07</ModificationDate>
 
-  <Version beta="false">1.33.1</Version>
+  <Version beta="false">1.33.2</Version>
 
   <Desktop>false</Desktop>
 
@@ -19751,7 +19751,7 @@ Version 0.10 - First Beta.</ReleaseNotes>
 
     <Plugin>CommercialDetector</Plugin>
 
-    <MinVersion>1.00</MinVersion>
+    <MinVersion>1.16.2</MinVersion>
 
   </Dependency>
 
@@ -19761,7 +19761,7 @@ Version 0.10 - First Beta.</ReleaseNotes>
 
     <Plugin>ComskipPlayback</Plugin>
 
-    <MinVersion>2.1.2</MinVersion>
+    <MinVersion>2.1.3.3</MinVersion>
 
   </Dependency>
 
@@ -19851,9 +19851,9 @@ Version 1.00 - Initial release.</ReleaseNotes>
 
   <CreationDate>2011.05.30</CreationDate>
 
-  <ModificationDate>2021.05.16</ModificationDate>
+  <ModificationDate>2021.11.07</ModificationDate>
 
-  <Version beta="false">80.042.003.1</Version>
+  <Version beta="false">80.042.003.2</Version>
 
   <Desktop>false</Desktop>
 
