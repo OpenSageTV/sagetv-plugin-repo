@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2021.1107.1358">
+<PluginRepository version="2021.1110.1348">
 <SageTVPlugin>
   <Name>OSD Enhancements</Name>
   <Identifier>jusjokenOSDEnhancements</Identifier>
@@ -15709,9 +15709,9 @@ This is based on a port of TVE v1.01.028 for SageMC to the STV3 Default STV and 
 
   <CreationDate>2010.09.09</CreationDate>
 
-  <ModificationDate>2016.01.18</ModificationDate>
+  <ModificationDate>2021.11.10</ModificationDate>
 
-  <Version beta="false">4.00.2016011801</Version>
+  <Version beta="false">4.00.2021111001</Version>
 
   <Desktop>false</Desktop>
 
@@ -15731,7 +15731,7 @@ This is based on a port of TVE v1.01.028 for SageMC to the STV3 Default STV and 
 
     <Plugin>sre</Plugin>
 
-    <MinVersion>4.0.0.1706</MinVersion>
+    <MinVersion>4.0.3</MinVersion>
 
   </Dependency>
 
@@ -17003,9 +17003,9 @@ Version 1.2. Fixed dependency on sagex API.</ReleaseNotes>
 
   <CreationDate>2010.09.09</CreationDate>
 
-  <ModificationDate>2016.01.18</ModificationDate>
+  <ModificationDate>2021.11.10</ModificationDate>
 
-  <Version beta="false">4.00.2016011801</Version>
+  <Version beta="false">4.00.2021111001</Version>
 
   <Desktop>true</Desktop>
 
@@ -17025,7 +17025,7 @@ Version 1.2. Fixed dependency on sagex API.</ReleaseNotes>
 
     <Plugin>sre</Plugin>
 
-    <MinVersion>4.0.0.1706</MinVersion>
+    <MinVersion>4.0.3</MinVersion>
 
   </Dependency>
 
