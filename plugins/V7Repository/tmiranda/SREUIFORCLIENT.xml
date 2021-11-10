@@ -12,9 +12,9 @@
 
   <CreationDate>2010.09.09</CreationDate>
 
-  <ModificationDate>2016.01.18</ModificationDate>
+  <ModificationDate>2021.11.10</ModificationDate>
 
-  <Version beta="false">4.00.2016011801</Version>
+  <Version beta="false">4.00.2021111001</Version>
 
   <Desktop>true</Desktop>
 
@@ -34,7 +34,7 @@
 
     <Plugin>sre</Plugin>
 
-    <MinVersion>4.0.0.1706</MinVersion>
+    <MinVersion>4.0.3</MinVersion>
 
   </Dependency>
 
