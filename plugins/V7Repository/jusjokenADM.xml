@@ -44,9 +44,9 @@
 
   <CreationDate>2011.06.24</CreationDate>
 
-  <ModificationDate>2015.10.17</ModificationDate>
+  <ModificationDate>2021.12.13</ModificationDate>
 
-  <Version beta="true">0.504</Version>
+  <Version beta="true">0.504.1</Version>
 
 
 
@@ -62,7 +62,7 @@
 
     <Plugin>jusjokenADMapi</Plugin>
 
-    <MinVersion>0.504</MinVersion>
+    <MinVersion>0.504.1</MinVersion>
 
   </Dependency>
 
@@ -119,6 +119,12 @@
   <STVImport>ADM.stvi</STVImport>
 
   <ReleaseNotes>
+
+    Version 0.504.1 
+
+      * No change to functionality
+
+      * MOVED the download location from Bintray to Github
 
     Version 0.504 (STVI 0.504 - API 0.503)
 
