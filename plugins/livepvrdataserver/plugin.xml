@@ -6,13 +6,13 @@ Provides Sports Event monitoring for use by the SRE plugin
     ]]></Description>
        <Author>skiingwiz</Author>
        <CreationDate>2016.04.23</CreationDate>
-       <ModificationDate>2020.09.01</ModificationDate>
-       <Version beta="true">1.8.1</Version>
+       <ModificationDate>2021.12.23</ModificationDate>
+       <Version>2.0.1</Version>
        <ResourcePath>plugins/livepvrdata-server</ResourcePath>
        <Webpage>https://github.com/livepvrdata-oss/livepvrdata-svc</Webpage>
        <Dependency>
                <JVM/>
-               <MinVersion>1.7</MinVersion>
+               <MinVersion>1.8</MinVersion>
            </Dependency>
        <Dependency>
                 <Core/>
@@ -24,22 +24,18 @@ Provides Sports Event monitoring for use by the SRE plugin
         </Dependency>
         <Dependency>
                 <Plugin>jetty</Plugin>
-                <MinVersion>2.3.0.14</MinVersion>
+                <MinVersion>3.0.1</MinVersion>
         </Dependency>
        <PluginType>Standard</PluginType>
        <Package>
                <PackageType>System</PackageType>
-               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/livepvrdata-svc-war-master-9ff749c.zip</Location>
-               <MD5>D16F91C72D1EF902D28ADE9DBF0336A6</MD5>
-               <Overwrite>true</Overwrite>
-       </Package>
-       <Package>
-               <PackageType>System</PackageType>
-               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/livepvrdata-svc-context-master-9ff749c.zip</Location>
-               <MD5>A07474D5AAFE1EE6ED026266E307675F</MD5>
+               <Location>http://github.com/livepvrdata-oss/livepvrdata-svc/releases/download/2.0.1/livepvrdata-svc-war-2.0.1.zip</Location>
+               <MD5>c5bfee6dccb73edd468fb39d62b5e782</MD5>
                <Overwrite>true</Overwrite>
        </Package>
            <ReleaseNotes><![CDATA[
+2.0.1
+* Changes to support Jetty 9
 1.8.1
 * Fix WNBA monitor assignment
 1.8

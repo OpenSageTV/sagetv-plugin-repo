@@ -3,36 +3,36 @@
 	<Name>Batch Metadata Tools - Web Interface</Name>
 	<Identifier>bmtweb</Identifier>
 	<Description>
-		Web Interface for Batch Metadata Tools, commonly referred
-		to as bmt. The web interface enables you to do edit metadata manually
-		from a web browser. In addition to simple editing of metadata, bmt is
-		build on the Phoenix APIs, and it provides a web interface to the
-		Phoenix Views. ie, It allows you to browser your media collection from
-		the web web browser. While browsing your collection you can also find
-		metadata and fanart for a group of media files, or for a single item.
-
-		BMT also provides a number of other batch tools for cleaning up metadata, or
-		performing some common operations.  Some of these include; Exporting a
-		.properties for some or all mediafiles; Cleaning up Genres; Setting the
-		watched status on files, etc
+Web Interface for Batch Metadata Tools, commonly referred
+to as bmt. The web interface enables you to do edit metadata manually
+from a web browser. In addition to simple editing of metadata, bmt is
+build on the Phoenix APIs, and it provides a web interface to the
+Phoenix Views. ie, It allows you to browser your media collection from
+the web web browser. While browsing your collection you can also find
+metadata and fanart for a group of media files, or for a single item.
+		
+BMT also provides a number of other batch tools for cleaning up metadata, or
+performing some common operations.  Some of these include; Exporting a
+.properties for some or all mediafiles; Cleaning up Genres; Setting the
+watched status on files, etc
 	</Description>
 	<Screenshot><![CDATA[http://forums.sagetv.com/forums/attachment.php?attachmentid=9772&stc=1&d=1266629522]]></Screenshot>
 	<Author>stuckless</Author>
 	<CreationDate>2008.07.19</CreationDate>
-	<ModificationDate>2017.02.12</ModificationDate>
-	<Version>4.101.0</Version>
+	<ModificationDate>2022.01.12</ModificationDate>
+	<Version>4.301.0</Version>
 	<Desktop>false</Desktop>
 	<ResourcePath>plugins/bmtweb</ResourcePath>
 	<Webpage><![CDATA[http://forums.sagetv.com/forums/forumdisplay.php?f=46]]></Webpage>
 
 	<Dependency>
 		<Plugin>Jetty</Plugin>
-		<MinVersion>1.7</MinVersion>
+		<MinVersion>3.0.1</MinVersion>
 	</Dependency>
 
 	<Dependency>
 		<Plugin>phoenix-core</Plugin>
-		<MinVersion>2.3.47</MinVersion>
+		<MinVersion>3.3.1</MinVersion>
 	</Dependency>
 
 	<Dependency>
@@ -49,22 +49,24 @@
 
 	<Package>
 		<PackageType>System</PackageType>
-		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/bmtweb-war-4.101.0.1.zip
+		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/bmtweb-war-4.301.0.zip
 		</Location>
-		<MD5>FC76E91A839287760246DF6DA9225C94</MD5>
+		<MD5>dae8bd1c89c12685a17a57621716cbfb</MD5>
 	</Package>
 
 	<!-- context file must be installed after the war file -->
 	<Package>
 		<PackageType>System</PackageType>
-		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/bmtweb-context-4.101.0.1.zip
+		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/bmtweb-config-4.301.0.zip
 		</Location>
-		<MD5>268BEAF984FD4C8E682E36E947152D70</MD5>
+		<MD5>0a21b03ac2fa9b4c40601980b973a3c0</MD5>
 	</Package>
 	<ReleaseNotes>
-		4.100.0
-		* Updated for SageTV V9
-		* Fixed Search so that it does a title contains search by default
-		* Fixed Add Matcher so that it works with () and so that it cleans up older entries with same ID.
+4.300.0
+* Updated for jetty 9 and changes for TMDB to handle TV
+4.100.0
+* Updated for SageTV V9
+* Fixed Search so that it does a title contains search by default
+* Fixed Add Matcher so that it works with () and so that it cleans up older entries with same ID.  	
 	</ReleaseNotes>
 </SageTVPlugin>
