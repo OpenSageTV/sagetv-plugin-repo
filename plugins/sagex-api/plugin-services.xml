@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SageTVPlugin>
-  <Name>sagex-services - SageTV Remote API Services</Name>
+  <Name>SageTV Sagex Remote API Services (sagex-services)</Name>
   <Identifier>sagex-api-services</Identifier>
   <Description>HTTP and RMI services for SageTV (HTTP services require Jetty Plugin).  HTTP services includes JSON/JSONP and Xml formats.</Description>
   <Author>stuckless</Author>
   <CreationDate>2008.10.05</CreationDate>
-  <ModificationDate>2018.03.04</ModificationDate>
-  <Version>9.1.7.0</Version>
+  <ModificationDate>2021.12.21</ModificationDate>
+  <Version>9.2.6.1</Version>
   <Desktop>false</Desktop>
   <ResourcePath>sagex-api</ResourcePath>
   <Webpage><![CDATA[http://forums.sagetv.com/forums/showthread.php?t=36044]]></Webpage>
@@ -18,36 +18,38 @@
 
   <Dependency>
     <JVM/>
-    <MinVersion>1.7</MinVersion>
+    <MinVersion>1.8</MinVersion>
   </Dependency>
 
   <Dependency>
     <Plugin>Jetty</Plugin>
-    <MinVersion>1.7</MinVersion>
+    <MinVersion>3.0.1</MinVersion>
   </Dependency>
 
   <Dependency>
     <Plugin>sagex-api</Plugin>
-    <MinVersion>9.1.7.0</MinVersion>
+    <MinVersion>9.2.6.1</MinVersion>
   </Dependency>
 
   <PluginType>Standard</PluginType>
 
   <Package>
     <PackageType>System</PackageType>
-    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sagex-api-services-9.1.7.0.zip</Location>
-    <MD5>C1CE149B44BDAB90ED2F9FD251E06855</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sagex-api-services-9.2.6.1.zip</Location>
+    <MD5>894a8b5cad4147adf8b8fa5d355249e6</MD5>
   </Package>
 
   <!-- Plugin Class is in the core sagex-api jar -->
   <ImplementationClass>sagex.plugin.impl.SagexRemoteAPIPlugin</ImplementationClass>
 
   <ReleaseNotes>
-    9.1.7
+9.2.6
+    * Build for Github sources and Jetty 9
+9.1.7
     * Added OpenAPI (swagger) reference guide
 
-    9.0.0
+9.0.0
     * Updated to SageTV 9
   </ReleaseNotes>
-
+  
 </SageTVPlugin>

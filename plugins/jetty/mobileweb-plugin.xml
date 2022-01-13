@@ -1,22 +1,24 @@
 <SageTVPlugin>
-    <Name>SageTV Mobile Web Interface</Name>
-    <Identifier>MobileWeb</Identifier>
-    <Description>Manage SageTV activity from mobile web browsers.</Description>
-    <Author>jreichen</Author>
-    <CreationDate>2008.11.23</CreationDate>
-    <ModificationDate>2011.03.06</ModificationDate>
-    <Version>2.1.0.47</Version>
-    <Desktop>false</Desktop>
-    <ResourcePath>mobileweb</ResourcePath>
-    <Screenshot title="Main Menu">http://sageplugins.sourceforge.net/screenshots/mobileweb/menu.png</Screenshot>
-    <Screenshot title="iPhone Details Page">http://sageplugins.sourceforge.net/screenshots/mobileweb/iPhone%20Details%20Page.png</Screenshot>
-    <Screenshot title="iPad Details Page">http://sageplugins.sourceforge.net/screenshots/mobileweb/iPad%20Details%20Page.png</Screenshot>
-    <Webpage title="Forum Support Thread">http://forums.sagetv.com/forums/showthread.php?t=52157</Webpage>
-    <Webpage title="Mobile Web Interface Wiki">http://tools.assembla.com/sageplugins/wiki/MobileWebInterface</Webpage>
-    <Webpage title="GeekTonic.com Review">http://www.geektonic.com/2010/11/sage-on-go-sagetv-gets-ipad-iphone-and_07.html</Webpage>
-    <DemoVideo title="GeekTonic Demo on YouTube">http://www.youtube.com/watch?v=mYSf-gXyMYU</DemoVideo>
-    <ReleaseNotes>
-        <![CDATA[
+  <Name>SageTV Mobile Web Interface</Name>
+  <Identifier>MobileWeb</Identifier>
+  <Description>Manage SageTV activity from mobile web browsers.</Description>
+  <Author>jreichen,jusjoken</Author>
+  <CreationDate>2008.11.23</CreationDate>
+  <ModificationDate>2022.01.12</ModificationDate>
+  <Version>3.0.1.25</Version>
+  <Desktop>false</Desktop>
+  <ResourcePath>mobileweb</ResourcePath>
+  <Screenshot title="Main Menu">http://sageplugins.sourceforge.net/screenshots/mobileweb/menu.png</Screenshot>
+  <Screenshot title="iPhone Details Page">http://sageplugins.sourceforge.net/screenshots/mobileweb/iPhone%20Details%20Page.png</Screenshot>
+  <Screenshot title="iPad Details Page">http://sageplugins.sourceforge.net/screenshots/mobileweb/iPad%20Details%20Page.png</Screenshot>
+  <Webpage title="Forum Support Thread">http://forums.sagetv.com/forums/showthread.php?t=52157</Webpage>
+  <Webpage title="Mobile Web Interface Wiki">http://tools.assembla.com/sageplugins/wiki/MobileWebInterface</Webpage>
+  <Webpage title="GeekTonic.com Review">http://www.geektonic.com/2010/11/sage-on-go-sagetv-gets-ipad-iphone-and_07.html</Webpage>
+  <DemoVideo title="GeekTonic Demo on YouTube">http://www.youtube.com/watch?v=mYSf-gXyMYU</DemoVideo>
+  <ReleaseNotes>
+    <![CDATA[
+Version 3.0.1
+1. Changes to support Jetty 9
 Version 2.1.0
 1. Mobile Web Remote (contributed by forum user PiX64!)
 2. Add System Messages section to Home page
@@ -26,7 +28,7 @@ Version 2.1.0
 6. Fix First Run/ReRun info on detailed info page
 7. Don't identify Android browsers as Safari (both are based on WebKit)
 8. Show message on recordings page if no recordings exist
-
+ 
 Version 2.0.0
 1. SageTV v7-style interface (switch from blue to gray as well as other style changes)
 2. Convert TV recordings in real time and watch on iPhone, iPod touch, and iPad
@@ -37,10 +39,10 @@ Version 2.0.0
 7. Fixed HTML to make CSS styling easier
 8. View what's playing on SageTV Clients
 9. Change max number of hours in TV listings from 12 to 24
-
+ 
 Version 1.4.1
 1. Fixed error 'mobile_menu.json (The system cannot find the path specified)'
-
+ 
 Version 1.4.0
 1. View what's playing on SageTV Clients from the home page
 2. Favorite Automatic Conversions
@@ -51,42 +53,36 @@ Version 1.4.0
 7. Convert end-of-line characters from LF (Linux) to CRLF (Windows) for the /apps files.
 8. Increase maximum for Favorite Keep at Most from 15 to 63
 9. Remember last values for video conversions
-
+ 
 Version 1.3
 1. Support for SageTV Plugin Manager
     ]]>
-    </ReleaseNotes>
-    <Dependency>
-        <Core></Core>
-        <MinVersion>9.0</MinVersion>
-    </Dependency>
-    <Dependency>
-        <JVM></JVM>
-        <MinVersion>1.7</MinVersion>
-    </Dependency>
-    <Dependency>
-        <Plugin>Jetty</Plugin>
-        <MinVersion>2.0.1</MinVersion>
-    </Dependency>
-    <Dependency>
-        <Plugin>sagex-api</Plugin>
-        <MinVersion>9.0</MinVersion>
-    </Dependency>
-    <Dependency>
-        <Plugin>mediastreaming</Plugin>
-        <MinVersion>1.0.0</MinVersion>
-    </Dependency>
-    <PluginType>Standard</PluginType>
-    <Package>
-        <PackageType>System</PackageType>
-        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sagewebapp-war-file-2.1.0.42.zip</Location>
-        <MD5>C0CF47C29F717F612BAAB978EB2BC7D8</MD5>
-    </Package>
-    <!-- context file must be installed after the war file -->
-    <Package>
-        <PackageType>System</PackageType>
-        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sagewebapp-context-file-2.1.0.42.zip</Location>
-        <MD5>3B05057F0B7DC2D9D8E3699F31D18F04</MD5>
-    </Package>
-    <ImplementationClass></ImplementationClass>
+  </ReleaseNotes>
+  <Dependency>
+    <Core></Core>
+    <MinVersion>9.0.0</MinVersion>
+  </Dependency>
+  <Dependency>
+    <JVM></JVM>
+    <MinVersion>1.8</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Plugin>Jetty</Plugin>
+    <MinVersion>3.0.1</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Plugin>sagex-api</Plugin>
+    <MinVersion>9.1.7.0</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Plugin>mediastreaming</Plugin>
+    <MinVersion>2.0.1</MinVersion>
+  </Dependency>
+  <PluginType>Standard</PluginType>
+  <Package>
+    <PackageType>System</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sagewebapp-war-file-3.0.1.25.zip</Location>
+    <MD5>1ec66918a8fb326e3486ebe09cc0d92a</MD5>
+  </Package>
+  <ImplementationClass></ImplementationClass>
 </SageTVPlugin>

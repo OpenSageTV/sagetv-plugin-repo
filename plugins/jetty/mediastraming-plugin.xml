@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SageTVPlugin>
+  <Name>Media Streaming Services</Name>
+  <Identifier>mediastreaming</Identifier>
+  <Description>Provides HTTP Live Streaming services to the Mobile Web Interface.  Used for viewing SageTV recordings on iPhone, iPod, and iPad.  It can be extended by plugin developers to support other clients and audio/video formats.</Description>
+  <Author>jreichen, Fonceur, jusjoken</Author>
+  <CreationDate>2010.10.13</CreationDate>
+  <ModificationDate>2022.01.12</ModificationDate>
+  <Version>2.0.1</Version>
+  <Desktop>false</Desktop>
+  <ResourcePath>mediastreaming</ResourcePath>
+  <!--Screenshot title="Main Menu">http://forums.sagetv.com/forums/downloads/mobile_menu_f3J.png</Screenshot>
+  <Webpage title="Forum Support Thread">http://forums.sagetv.com/forums/showthread.php?t=48460</Webpage>
+  <Webpage title="Mobile Web Interface Wiki">http://tools.assembla.com/sageplugins/wiki/MobileWebInterface</Webpage-->
+  <ReleaseNotes>
+    <![CDATA[
+Version 2.0.1
+    Changes to support Jetty 9
+Version 1.3.5
+    Modifying the resolutions.
+Version 1.3.4
+    Try to use the original video's frame rate.
+    Adjust bit rates based on initial quality.
+
+Version 1.3.3
+    Starting at higher initial bit rate.
+    Disabled -bt.
+    Reduced volume to 512.
+    Increased audio bit rate to 64kbps.
+    Removed the 640 kBps quality.
+
+Version 1.3.2 
+    Removed the 1840 kBps quality.
+    Reordered the qualities.
+
+Version 1.3.1 
+   Disabled the authentication to enable Android streaming.
+	
+Version 1.3.0 
+    1. Increased the resolutions.
+    2. Reduced the frame rate at lower bit rate.
+    3. Added one higher bit rate.
+    4. Replaced left over SageTV.API calls by sagex ones.
+    5. Removed the unknown user agents restrictions.
+    6. Implemented some Eclipse recommendations.
+    7. Increased the audio bit rate by 20%.
+    
+Version 1.2.0
+1. Rethrow IllegalArgumentException so and HTTP error code will be returned if the URL contains invalid parameters
+2. Log error messages
+3. Return HTTP error code if exception thrown by servlets
+4. Return exception message as content body
+5. Change response content type
+6. Pass servlet request object to playlist generators
+7. Calculate aspect ratio from width and height if it's not provided by SageTV metadata
+8. Add support for Android and Lavf (ffmpeg-based players such as VPlayer and Mirage) User-Agents.  This does not necessarily mean these will immediately work in clients that use this service.  Those must be fixed separately by their developers.
+9. Return more meaningful errors if Quality or User-Agent parameters are invalid.
+10. Refactor HTTP Live Streaming Playlist Code
+11. Put absolute URLs in HTTP Live Streaming Playlists
+ 
+Version 1.1.2
+1. Fix bug in HTTP Live Streaming servlets that returns HTTP 500 and results in a crossed out play button on the video thumbnail.  Attempting to start playback by clicking the thumbnail or Watch Now -> On this Page was unresponsive.
+ 
+Version 1.1.1
+1. Fix bug in HTTP Live Streaming playlist generation
+ 
+Version 1.1.0
+1. Increase volume on HTTP Live Streaming videos.
+2. Create a default web page to explain that this plugin is not used directly by the user.
+3. Use SageTV's ffmpeg for transcoding.  The web streaming should now support the same files as the Sage core.  Some users had reported problems with playing or seeking through avi, mkv, mpeg2, and wmv files.
+4. Fixed problems watching shows currently being recorded.
+  - Playback duration was the length of the recording when playback began
+  - Playback would fail if started immediately after recording started
+5. Added a URL to allow clients to kill transcoding processes on the server.  The Mobile Web Interface does not use this API.
+6. Added more logging detail
+ 
+Version 1.0.0
+1. Real-time variable bitrate transcoding of SageTV recordings to iPhone, iPod touch, and iPad devices.
+    ]]>
+  </ReleaseNotes>
+  <Dependency>
+    <Core></Core>
+    <MinVersion>9.0.0</MinVersion>
+  </Dependency>
+  <Dependency>
+    <JVM></JVM>
+    <MinVersion>1.8</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Plugin>Jetty</Plugin>
+    <MinVersion>3.0.1</MinVersion>
+  </Dependency>
+  <PluginType>Standard</PluginType>
+  <Package>
+    <PackageType>System</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/mediastreaming-war-file-2.0.1.zip</Location>
+    <MD5>88855bc7864531971f5762df5e2a96e6</MD5>
+  </Package>
+  <ImplementationClass></ImplementationClass>
+</SageTVPlugin>

@@ -1,50 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SageTVPlugin>
-    <Name>Jetty Web Server</Name>
-    <Identifier>Jetty</Identifier>
-    <Description>
-        <![CDATA[
+  <Name>Jetty Web Server</Name>
+  <Identifier>Jetty</Identifier>
+  <Description>
+    <![CDATA[
 Provides a platform for SageTV web application plugins.
-
+ 
 Currently available web applications can manage SageTV recordings from desktop or mobile web browsers, manage fanart and metadata, provide remote web services for SageTV, configure batch job processing, and more.
-
-The plugin consists of two parts.  The first part is Jetty, a 3rd-party Java web server from Mortbay Consulting that can be embedded in a Java program such as SageTV.  The second part is a set of plugin classes created by the author that interact with SageTV to start, stop, and configure the Jetty web server.
+ 
+The plugin consists of two parts.  The first part is Jetty, a 3rd-party Java web server from the Eclipse Foundation that can be embedded in a Java program such as SageTV.  The second part is a set of plugin classes created by the author that interact with SageTV to start, stop, and configure the Jetty web server.
     ]]>
-    </Description>
-    <Author>jreichen</Author>
-    <CreationDate>2008.06.01</CreationDate>
-    <ModificationDate>2011.04.23</ModificationDate>
-    <Version>2.3.0.17</Version>
-    <Desktop>false</Desktop>
-    <ResourcePath>jetty</ResourcePath>
-    <Screenshot title="Web Application List">http://sageplugins.sourceforge.net/screenshots/jetty/SageTVWebApps.png</Screenshot>
-    <Webpage title="Jetty Plugin 2.0 Forum Support Thread">http://forums.sagetv.com/forums/showthread.php?t=48818</Webpage>
-    <Webpage title="Jetty Plugin Wiki">http://tools.assembla.com/sageplugins/wiki/Jetty</Webpage>
-    <Webpage title="Jetty Home Page - Mortbay Consulting">http://jetty.codehaus.org/jetty/</Webpage>
-    <ReleaseNotes>
-        <![CDATA[
+  </Description>
+  <Author>jreichen, jusjoken</Author>
+  <CreationDate>2008.06.01</CreationDate>
+  <ModificationDate>2022.01.12</ModificationDate>
+  <Version>3.0.2.246</Version>
+  <Desktop>false</Desktop>
+  <ResourcePath>jetty</ResourcePath>
+  <Screenshot title="Web Application List">http://sageplugins.sourceforge.net/screenshots/jetty/SageTVWebApps.png</Screenshot>
+  <Webpage title="Jetty Plugin 2.0 Forum Support Thread">http://forums.sagetv.com/forums/showthread.php?t=48818</Webpage>
+  <Webpage title="Jetty Home Page">http://eclipse.org/jetty/</Webpage>
+  <Webpage title="Plugin Source Code">https://github.com/jusjoken/SageTV-JettyStarter</Webpage>
+  <ReleaseNotes>
+    <![CDATA[
+Version 3.0.0
+1. Migrate from Jetty 6 to Jetty 9
+    - Requires Java 8, supports Java 9+
+    - Support dropped for the Apache connector (AJP)
+ 
 Version 2.3.0
 1. Remove Ant JAR from this download and instead rely on the Ant plugin dependency
-
+ 
 Version 2.2.1
 1. Change logging from stderr to stdout.  It appears something else is hijacking stderr.
 2. Add logging about classloader and temporary web app directory
-
+  
 Version 2.2.0
 1. Minor apps web page formatting changes
 2. Add user to the 'user' role if none specified in realm.properties
 3. Fix displayed version of installed plugin
-
+  
 Version 2.1.0
 1. SageTV v7-style interface for 'apps' web application (switch from blue to gray as well as other style changes)
 2. Remove duplicate timestamps on Jetty's log entries in the SageTV log file.
 3. Override Jetty's war file extraction logic to address HTTP 404 and 503 errors.
-
+ 
 Version 2.0.1
 1. Fix Windows file-locking issue
 2. Display message on /apps page when no web applications are installed
 3. Convert end-of-line characters from LF (Linux) to CRLF (Windows) for the /apps files.
-
+ 
 Version 2.0
 1. Added SageTV Web Applications webapp as a Jetty home page.
 2. Add properties to display HTTP and HTTPS URLs for web server.
@@ -52,57 +57,64 @@ Version 2.0
 4. Mark modified properties to indicate when web server restart is required.
 5. Preload UPnP devices to improve perceived performance.
 6. Deliver updated default mime types in jetty/etc/mime.types.
-7. Log web application startup errors.
-
+7. Log web application startup errors. 
+ 
 Version 1.7.5 beta
 1. Initial support for SageTV Plugin Manager
 2. Configuration options for port numbers, SSL, default username and password, logging level, and UPnP router configuration.
 3. Increase maximum HTML form size to support Google Web Toolkit applications.
 4. Obfuscate the password stored in realm.properties.
     ]]>
-    </ReleaseNotes>
-    <Dependency>
-        <Core></Core>
-        <MinVersion>9.0</MinVersion>
-    </Dependency>
-    <Dependency>
-        <JVM></JVM>
-        <MinVersion>1.7</MinVersion>
-    </Dependency>
-    <Dependency>
-        <Plugin>sagex-api</Plugin>
-        <MinVersion>9.0</MinVersion>
-    </Dependency>
-    <Dependency>
-        <Plugin>ant</Plugin>
-        <MinVersion>1.8.2</MinVersion>
-    </Dependency>
-    <PluginType>Standard</PluginType>
-    <Package>
-        <PackageType>JAR</PackageType>
-        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/jetty-starter-jars-2.3.0.14.zip</Location>
-        <MD5>EBC8F8BAD569ABC032BE14A56D82C8AC</MD5>
-    </Package>
-    <Package>
-        <PackageType>System</PackageType>
-        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/jetty-starter-config-files-2.3.0.14.zip</Location>
-        <MD5>5655915B46B3A4A7E4CDA4B921FF8560</MD5>
-    </Package>
-    <Package>
-        <PackageType>System</PackageType>
-        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/jetty-starter-user-config-files-2.3.0.14.zip</Location>
-        <MD5>FD7C812BCB0A02018BCF8C694635DFAD</MD5>
-        <Overwrite>false</Overwrite>
-    </Package>
-    <Package>
-        <PackageType>System</PackageType>
-        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/jetty-starter-webapp-war-file-2.3.0.14.zip</Location>
-        <MD5>50E991DDAA942CE46D04D7673418281E</MD5>
-    </Package>
-    <Package>
-        <PackageType>System</PackageType>
-        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/jetty-starter-webapp-context-file-2.3.0.14.zip</Location>
-        <MD5>8144BE030148A469DBCDF95CC29531F1</MD5>
-    </Package>
-    <ImplementationClass>sagex.jetty.starter.JettyPlugin</ImplementationClass>
+  </ReleaseNotes>
+  <Dependency>
+    <Core></Core>
+    <MinVersion>9.0.0</MinVersion>
+  </Dependency>
+  <Dependency>
+    <JVM></JVM>
+    <MinVersion>1.8</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Plugin>sagex-api</Plugin>
+    <MinVersion>9.1.7.0</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Plugin>ant</Plugin>
+    <MinVersion>1.8.2</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Plugin>slf4j-api</Plugin>
+    <MinVersion>1.7.12</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Plugin>slf4j-log4j12</Plugin>
+    <MinVersion>1.7.12</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Plugin>log4j</Plugin>
+    <MinVersion>1.2.17</MinVersion>
+  </Dependency>
+  <PluginType>Standard</PluginType>
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/jetty-starter-jars-3.0.2.246.zip</Location>
+    <MD5>a5851eb77ece3f9beb4a6744218aa8ca</MD5>
+  </Package>
+  <Package>
+    <PackageType>System</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/jetty-starter-config-files-3.0.2.246.zip</Location>
+    <MD5>d601307ec2ae6fd4b95e993541996c86</MD5>
+  </Package>
+  <Package>
+    <PackageType>System</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/jetty-starter-user-config-files-3.0.2.246.zip</Location>
+    <MD5>1e26fdb287280d9cbfc5239f7c1437c8</MD5>
+    <Overwrite>false</Overwrite>
+  </Package>
+  <Package>
+    <PackageType>System</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/jetty-starter-webapp-war-file-3.0.2.246.zip</Location>
+    <MD5>1b308968ccc298fbdc278280f00f20d6</MD5>
+  </Package>
+  <ImplementationClass>sagex.jetty.starter.JettyPlugin</ImplementationClass>
 </SageTVPlugin>
