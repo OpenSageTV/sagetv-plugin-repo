@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2021.1221.1406">
+<PluginRepository version="2022.0113.1420">
 <SageTVPlugin>
 
   <Name>BlueTwo (addon for MBDiamond)</Name>
@@ -2918,24 +2918,26 @@ Version 1.1 - Added play toggle.
        </Package>
 </SageTVPlugin>
 <SageTVPlugin>
-    <Name>SageTV Mobile Web Interface</Name>
-    <Identifier>MobileWeb</Identifier>
-    <Description>Manage SageTV activity from mobile web browsers.</Description>
-    <Author>jreichen</Author>
-    <CreationDate>2008.11.23</CreationDate>
-    <ModificationDate>2011.03.06</ModificationDate>
-    <Version>2.1.0.47</Version>
-    <Desktop>false</Desktop>
-    <ResourcePath>mobileweb</ResourcePath>
-    <Screenshot title="Main Menu">http://sageplugins.sourceforge.net/screenshots/mobileweb/menu.png</Screenshot>
-    <Screenshot title="iPhone Details Page">http://sageplugins.sourceforge.net/screenshots/mobileweb/iPhone%20Details%20Page.png</Screenshot>
-    <Screenshot title="iPad Details Page">http://sageplugins.sourceforge.net/screenshots/mobileweb/iPad%20Details%20Page.png</Screenshot>
-    <Webpage title="Forum Support Thread">http://forums.sagetv.com/forums/showthread.php?t=52157</Webpage>
-    <Webpage title="Mobile Web Interface Wiki">http://tools.assembla.com/sageplugins/wiki/MobileWebInterface</Webpage>
-    <Webpage title="GeekTonic.com Review">http://www.geektonic.com/2010/11/sage-on-go-sagetv-gets-ipad-iphone-and_07.html</Webpage>
-    <DemoVideo title="GeekTonic Demo on YouTube">http://www.youtube.com/watch?v=mYSf-gXyMYU</DemoVideo>
-    <ReleaseNotes>
-        <![CDATA[
+  <Name>SageTV Mobile Web Interface</Name>
+  <Identifier>MobileWeb</Identifier>
+  <Description>Manage SageTV activity from mobile web browsers.</Description>
+  <Author>jreichen,jusjoken</Author>
+  <CreationDate>2008.11.23</CreationDate>
+  <ModificationDate>2022.01.12</ModificationDate>
+  <Version>3.0.1.25</Version>
+  <Desktop>false</Desktop>
+  <ResourcePath>mobileweb</ResourcePath>
+  <Screenshot title="Main Menu">http://sageplugins.sourceforge.net/screenshots/mobileweb/menu.png</Screenshot>
+  <Screenshot title="iPhone Details Page">http://sageplugins.sourceforge.net/screenshots/mobileweb/iPhone%20Details%20Page.png</Screenshot>
+  <Screenshot title="iPad Details Page">http://sageplugins.sourceforge.net/screenshots/mobileweb/iPad%20Details%20Page.png</Screenshot>
+  <Webpage title="Forum Support Thread">http://forums.sagetv.com/forums/showthread.php?t=52157</Webpage>
+  <Webpage title="Mobile Web Interface Wiki">http://tools.assembla.com/sageplugins/wiki/MobileWebInterface</Webpage>
+  <Webpage title="GeekTonic.com Review">http://www.geektonic.com/2010/11/sage-on-go-sagetv-gets-ipad-iphone-and_07.html</Webpage>
+  <DemoVideo title="GeekTonic Demo on YouTube">http://www.youtube.com/watch?v=mYSf-gXyMYU</DemoVideo>
+  <ReleaseNotes>
+    <![CDATA[
+Version 3.0.1
+1. Changes to support Jetty 9
 Version 2.1.0
 1. Mobile Web Remote (contributed by forum user PiX64!)
 2. Add System Messages section to Home page
@@ -2945,7 +2947,7 @@ Version 2.1.0
 6. Fix First Run/ReRun info on detailed info page
 7. Don't identify Android browsers as Safari (both are based on WebKit)
 8. Show message on recordings page if no recordings exist
-
+ 
 Version 2.0.0
 1. SageTV v7-style interface (switch from blue to gray as well as other style changes)
 2. Convert TV recordings in real time and watch on iPhone, iPod touch, and iPad
@@ -2956,10 +2958,10 @@ Version 2.0.0
 7. Fixed HTML to make CSS styling easier
 8. View what's playing on SageTV Clients
 9. Change max number of hours in TV listings from 12 to 24
-
+ 
 Version 1.4.1
 1. Fixed error 'mobile_menu.json (The system cannot find the path specified)'
-
+ 
 Version 1.4.0
 1. View what's playing on SageTV Clients from the home page
 2. Favorite Automatic Conversions
@@ -2970,91 +2972,189 @@ Version 1.4.0
 7. Convert end-of-line characters from LF (Linux) to CRLF (Windows) for the /apps files.
 8. Increase maximum for Favorite Keep at Most from 15 to 63
 9. Remember last values for video conversions
-
+ 
 Version 1.3
 1. Support for SageTV Plugin Manager
     ]]>
-    </ReleaseNotes>
-    <Dependency>
-        <Core></Core>
-        <MinVersion>9.0</MinVersion>
-    </Dependency>
-    <Dependency>
-        <JVM></JVM>
-        <MinVersion>1.7</MinVersion>
-    </Dependency>
-    <Dependency>
-        <Plugin>Jetty</Plugin>
-        <MinVersion>2.0.1</MinVersion>
-    </Dependency>
-    <Dependency>
-        <Plugin>sagex-api</Plugin>
-        <MinVersion>9.0</MinVersion>
-    </Dependency>
-    <Dependency>
-        <Plugin>mediastreaming</Plugin>
-        <MinVersion>1.0.0</MinVersion>
-    </Dependency>
-    <PluginType>Standard</PluginType>
-    <Package>
-        <PackageType>System</PackageType>
-        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sagewebapp-war-file-2.1.0.42.zip</Location>
-        <MD5>C0CF47C29F717F612BAAB978EB2BC7D8</MD5>
-    </Package>
-    <!-- context file must be installed after the war file -->
-    <Package>
-        <PackageType>System</PackageType>
-        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sagewebapp-context-file-2.1.0.42.zip</Location>
-        <MD5>3B05057F0B7DC2D9D8E3699F31D18F04</MD5>
-    </Package>
-    <ImplementationClass></ImplementationClass>
+  </ReleaseNotes>
+  <Dependency>
+    <Core></Core>
+    <MinVersion>9.0.0</MinVersion>
+  </Dependency>
+  <Dependency>
+    <JVM></JVM>
+    <MinVersion>1.8</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Plugin>Jetty</Plugin>
+    <MinVersion>3.0.1</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Plugin>sagex-api</Plugin>
+    <MinVersion>9.1.7.0</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Plugin>mediastreaming</Plugin>
+    <MinVersion>2.0.1</MinVersion>
+  </Dependency>
+  <PluginType>Standard</PluginType>
+  <Package>
+    <PackageType>System</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sagewebapp-war-file-3.0.1.25.zip</Location>
+    <MD5>1ec66918a8fb326e3486ebe09cc0d92a</MD5>
+  </Package>
+  <ImplementationClass></ImplementationClass>
 </SageTVPlugin>
 <SageTVPlugin>
-    <Name>Jetty Web Server</Name>
-    <Identifier>Jetty</Identifier>
-    <Description>
-        <![CDATA[
-Provides a platform for SageTV web application plugins.
+  <Name>Media Streaming Services</Name>
+  <Identifier>mediastreaming</Identifier>
+  <Description>Provides HTTP Live Streaming services to the Mobile Web Interface.  Used for viewing SageTV recordings on iPhone, iPod, and iPad.  It can be extended by plugin developers to support other clients and audio/video formats.</Description>
+  <Author>jreichen, Fonceur, jusjoken</Author>
+  <CreationDate>2010.10.13</CreationDate>
+  <ModificationDate>2022.01.12</ModificationDate>
+  <Version>2.0.1</Version>
+  <Desktop>false</Desktop>
+  <ResourcePath>mediastreaming</ResourcePath>
+  <!--Screenshot title="Main Menu">http://forums.sagetv.com/forums/downloads/mobile_menu_f3J.png</Screenshot>
+  <Webpage title="Forum Support Thread">http://forums.sagetv.com/forums/showthread.php?t=48460</Webpage>
+  <Webpage title="Mobile Web Interface Wiki">http://tools.assembla.com/sageplugins/wiki/MobileWebInterface</Webpage-->
+  <ReleaseNotes>
+    <![CDATA[
+Version 2.0.1
+    Changes to support Jetty 9
+Version 1.3.5
+    Modifying the resolutions.
+Version 1.3.4
+    Try to use the original video's frame rate.
+    Adjust bit rates based on initial quality.
 
-Currently available web applications can manage SageTV recordings from desktop or mobile web browsers, manage fanart and metadata, provide remote web services for SageTV, configure batch job processing, and more.
+Version 1.3.3
+    Starting at higher initial bit rate.
+    Disabled -bt.
+    Reduced volume to 512.
+    Increased audio bit rate to 64kbps.
+    Removed the 640 kBps quality.
 
-The plugin consists of two parts.  The first part is Jetty, a 3rd-party Java web server from Mortbay Consulting that can be embedded in a Java program such as SageTV.  The second part is a set of plugin classes created by the author that interact with SageTV to start, stop, and configure the Jetty web server.
+Version 1.3.2 
+    Removed the 1840 kBps quality.
+    Reordered the qualities.
+
+Version 1.3.1 
+   Disabled the authentication to enable Android streaming.
+	
+Version 1.3.0 
+    1. Increased the resolutions.
+    2. Reduced the frame rate at lower bit rate.
+    3. Added one higher bit rate.
+    4. Replaced left over SageTV.API calls by sagex ones.
+    5. Removed the unknown user agents restrictions.
+    6. Implemented some Eclipse recommendations.
+    7. Increased the audio bit rate by 20%.
+    
+Version 1.2.0
+1. Rethrow IllegalArgumentException so and HTTP error code will be returned if the URL contains invalid parameters
+2. Log error messages
+3. Return HTTP error code if exception thrown by servlets
+4. Return exception message as content body
+5. Change response content type
+6. Pass servlet request object to playlist generators
+7. Calculate aspect ratio from width and height if it's not provided by SageTV metadata
+8. Add support for Android and Lavf (ffmpeg-based players such as VPlayer and Mirage) User-Agents.  This does not necessarily mean these will immediately work in clients that use this service.  Those must be fixed separately by their developers.
+9. Return more meaningful errors if Quality or User-Agent parameters are invalid.
+10. Refactor HTTP Live Streaming Playlist Code
+11. Put absolute URLs in HTTP Live Streaming Playlists
+ 
+Version 1.1.2
+1. Fix bug in HTTP Live Streaming servlets that returns HTTP 500 and results in a crossed out play button on the video thumbnail.  Attempting to start playback by clicking the thumbnail or Watch Now -> On this Page was unresponsive.
+ 
+Version 1.1.1
+1. Fix bug in HTTP Live Streaming playlist generation
+ 
+Version 1.1.0
+1. Increase volume on HTTP Live Streaming videos.
+2. Create a default web page to explain that this plugin is not used directly by the user.
+3. Use SageTV's ffmpeg for transcoding.  The web streaming should now support the same files as the Sage core.  Some users had reported problems with playing or seeking through avi, mkv, mpeg2, and wmv files.
+4. Fixed problems watching shows currently being recorded.
+  - Playback duration was the length of the recording when playback began
+  - Playback would fail if started immediately after recording started
+5. Added a URL to allow clients to kill transcoding processes on the server.  The Mobile Web Interface does not use this API.
+6. Added more logging detail
+ 
+Version 1.0.0
+1. Real-time variable bitrate transcoding of SageTV recordings to iPhone, iPod touch, and iPad devices.
     ]]>
-    </Description>
-    <Author>jreichen</Author>
-    <CreationDate>2008.06.01</CreationDate>
-    <ModificationDate>2011.04.23</ModificationDate>
-    <Version>2.3.0.17</Version>
-    <Desktop>false</Desktop>
-    <ResourcePath>jetty</ResourcePath>
-    <Screenshot title="Web Application List">http://sageplugins.sourceforge.net/screenshots/jetty/SageTVWebApps.png</Screenshot>
-    <Webpage title="Jetty Plugin 2.0 Forum Support Thread">http://forums.sagetv.com/forums/showthread.php?t=48818</Webpage>
-    <Webpage title="Jetty Plugin Wiki">http://tools.assembla.com/sageplugins/wiki/Jetty</Webpage>
-    <Webpage title="Jetty Home Page - Mortbay Consulting">http://jetty.codehaus.org/jetty/</Webpage>
-    <ReleaseNotes>
-        <![CDATA[
+  </ReleaseNotes>
+  <Dependency>
+    <Core></Core>
+    <MinVersion>9.0.0</MinVersion>
+  </Dependency>
+  <Dependency>
+    <JVM></JVM>
+    <MinVersion>1.8</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Plugin>Jetty</Plugin>
+    <MinVersion>3.0.1</MinVersion>
+  </Dependency>
+  <PluginType>Standard</PluginType>
+  <Package>
+    <PackageType>System</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/mediastreaming-war-file-2.0.1.zip</Location>
+    <MD5>88855bc7864531971f5762df5e2a96e6</MD5>
+  </Package>
+  <ImplementationClass></ImplementationClass>
+</SageTVPlugin>
+<SageTVPlugin>
+  <Name>Jetty Web Server</Name>
+  <Identifier>Jetty</Identifier>
+  <Description>
+    <![CDATA[
+Provides a platform for SageTV web application plugins.
+ 
+Currently available web applications can manage SageTV recordings from desktop or mobile web browsers, manage fanart and metadata, provide remote web services for SageTV, configure batch job processing, and more.
+ 
+The plugin consists of two parts.  The first part is Jetty, a 3rd-party Java web server from the Eclipse Foundation that can be embedded in a Java program such as SageTV.  The second part is a set of plugin classes created by the author that interact with SageTV to start, stop, and configure the Jetty web server.
+    ]]>
+  </Description>
+  <Author>jreichen, jusjoken</Author>
+  <CreationDate>2008.06.01</CreationDate>
+  <ModificationDate>2022.01.12</ModificationDate>
+  <Version>3.0.2.246</Version>
+  <Desktop>false</Desktop>
+  <ResourcePath>jetty</ResourcePath>
+  <Screenshot title="Web Application List">http://sageplugins.sourceforge.net/screenshots/jetty/SageTVWebApps.png</Screenshot>
+  <Webpage title="Jetty Plugin 2.0 Forum Support Thread">http://forums.sagetv.com/forums/showthread.php?t=48818</Webpage>
+  <Webpage title="Jetty Home Page">http://eclipse.org/jetty/</Webpage>
+  <Webpage title="Plugin Source Code">https://github.com/jusjoken/SageTV-JettyStarter</Webpage>
+  <ReleaseNotes>
+    <![CDATA[
+Version 3.0.0
+1. Migrate from Jetty 6 to Jetty 9
+    - Requires Java 8, supports Java 9+
+    - Support dropped for the Apache connector (AJP)
+ 
 Version 2.3.0
 1. Remove Ant JAR from this download and instead rely on the Ant plugin dependency
-
+ 
 Version 2.2.1
 1. Change logging from stderr to stdout.  It appears something else is hijacking stderr.
 2. Add logging about classloader and temporary web app directory
-
+  
 Version 2.2.0
 1. Minor apps web page formatting changes
 2. Add user to the 'user' role if none specified in realm.properties
 3. Fix displayed version of installed plugin
-
+  
 Version 2.1.0
 1. SageTV v7-style interface for 'apps' web application (switch from blue to gray as well as other style changes)
 2. Remove duplicate timestamps on Jetty's log entries in the SageTV log file.
 3. Override Jetty's war file extraction logic to address HTTP 404 and 503 errors.
-
+ 
 Version 2.0.1
 1. Fix Windows file-locking issue
 2. Display message on /apps page when no web applications are installed
 3. Convert end-of-line characters from LF (Linux) to CRLF (Windows) for the /apps files.
-
+ 
 Version 2.0
 1. Added SageTV Web Applications webapp as a Jetty home page.
 2. Add properties to display HTTP and HTTPS URLs for web server.
@@ -3062,59 +3162,66 @@ Version 2.0
 4. Mark modified properties to indicate when web server restart is required.
 5. Preload UPnP devices to improve perceived performance.
 6. Deliver updated default mime types in jetty/etc/mime.types.
-7. Log web application startup errors.
-
+7. Log web application startup errors. 
+ 
 Version 1.7.5 beta
 1. Initial support for SageTV Plugin Manager
 2. Configuration options for port numbers, SSL, default username and password, logging level, and UPnP router configuration.
 3. Increase maximum HTML form size to support Google Web Toolkit applications.
 4. Obfuscate the password stored in realm.properties.
     ]]>
-    </ReleaseNotes>
-    <Dependency>
-        <Core></Core>
-        <MinVersion>9.0</MinVersion>
-    </Dependency>
-    <Dependency>
-        <JVM></JVM>
-        <MinVersion>1.7</MinVersion>
-    </Dependency>
-    <Dependency>
-        <Plugin>sagex-api</Plugin>
-        <MinVersion>9.0</MinVersion>
-    </Dependency>
-    <Dependency>
-        <Plugin>ant</Plugin>
-        <MinVersion>1.8.2</MinVersion>
-    </Dependency>
-    <PluginType>Standard</PluginType>
-    <Package>
-        <PackageType>JAR</PackageType>
-        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/jetty-starter-jars-2.3.0.14.zip</Location>
-        <MD5>EBC8F8BAD569ABC032BE14A56D82C8AC</MD5>
-    </Package>
-    <Package>
-        <PackageType>System</PackageType>
-        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/jetty-starter-config-files-2.3.0.14.zip</Location>
-        <MD5>5655915B46B3A4A7E4CDA4B921FF8560</MD5>
-    </Package>
-    <Package>
-        <PackageType>System</PackageType>
-        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/jetty-starter-user-config-files-2.3.0.14.zip</Location>
-        <MD5>FD7C812BCB0A02018BCF8C694635DFAD</MD5>
-        <Overwrite>false</Overwrite>
-    </Package>
-    <Package>
-        <PackageType>System</PackageType>
-        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/jetty-starter-webapp-war-file-2.3.0.14.zip</Location>
-        <MD5>50E991DDAA942CE46D04D7673418281E</MD5>
-    </Package>
-    <Package>
-        <PackageType>System</PackageType>
-        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/jetty-starter-webapp-context-file-2.3.0.14.zip</Location>
-        <MD5>8144BE030148A469DBCDF95CC29531F1</MD5>
-    </Package>
-    <ImplementationClass>sagex.jetty.starter.JettyPlugin</ImplementationClass>
+  </ReleaseNotes>
+  <Dependency>
+    <Core></Core>
+    <MinVersion>9.0.0</MinVersion>
+  </Dependency>
+  <Dependency>
+    <JVM></JVM>
+    <MinVersion>1.8</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Plugin>sagex-api</Plugin>
+    <MinVersion>9.1.7.0</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Plugin>ant</Plugin>
+    <MinVersion>1.8.2</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Plugin>slf4j-api</Plugin>
+    <MinVersion>1.7.12</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Plugin>slf4j-log4j12</Plugin>
+    <MinVersion>1.7.12</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Plugin>log4j</Plugin>
+    <MinVersion>1.2.17</MinVersion>
+  </Dependency>
+  <PluginType>Standard</PluginType>
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/jetty-starter-jars-3.0.2.246.zip</Location>
+    <MD5>a5851eb77ece3f9beb4a6744218aa8ca</MD5>
+  </Package>
+  <Package>
+    <PackageType>System</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/jetty-starter-config-files-3.0.2.246.zip</Location>
+    <MD5>d601307ec2ae6fd4b95e993541996c86</MD5>
+  </Package>
+  <Package>
+    <PackageType>System</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/jetty-starter-user-config-files-3.0.2.246.zip</Location>
+    <MD5>1e26fdb287280d9cbfc5239f7c1437c8</MD5>
+    <Overwrite>false</Overwrite>
+  </Package>
+  <Package>
+    <PackageType>System</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/jetty-starter-webapp-war-file-3.0.2.246.zip</Location>
+    <MD5>1b308968ccc298fbdc278280f00f20d6</MD5>
+  </Package>
+  <ImplementationClass>sagex.jetty.starter.JettyPlugin</ImplementationClass>
 </SageTVPlugin>
 <SageTVPlugin>
 
@@ -3521,13 +3628,13 @@ Note that the framework architecture has been revamped for SageTV V7.  Existing 
 </Package>
 </SageTVPlugin>
 <SageTVPlugin>
-  <Name>sagex-services - SageTV Remote API Services</Name>
+  <Name>SageTV Sagex Remote API Services (sagex-services)</Name>
   <Identifier>sagex-api-services</Identifier>
   <Description>HTTP and RMI services for SageTV (HTTP services require Jetty Plugin).  HTTP services includes JSON/JSONP and Xml formats.</Description>
   <Author>stuckless</Author>
   <CreationDate>2008.10.05</CreationDate>
-  <ModificationDate>2018.03.04</ModificationDate>
-  <Version>9.1.7.0</Version>
+  <ModificationDate>2021.12.21</ModificationDate>
+  <Version>9.2.6.1</Version>
   <Desktop>false</Desktop>
   <ResourcePath>sagex-api</ResourcePath>
   <Webpage><![CDATA[http://forums.sagetv.com/forums/showthread.php?t=36044]]></Webpage>
@@ -3539,47 +3646,49 @@ Note that the framework architecture has been revamped for SageTV V7.  Existing 
 
   <Dependency>
     <JVM/>
-    <MinVersion>1.7</MinVersion>
+    <MinVersion>1.8</MinVersion>
   </Dependency>
 
   <Dependency>
     <Plugin>Jetty</Plugin>
-    <MinVersion>1.7</MinVersion>
+    <MinVersion>3.0.1</MinVersion>
   </Dependency>
 
   <Dependency>
     <Plugin>sagex-api</Plugin>
-    <MinVersion>9.1.7.0</MinVersion>
+    <MinVersion>9.2.6.1</MinVersion>
   </Dependency>
 
   <PluginType>Standard</PluginType>
 
   <Package>
     <PackageType>System</PackageType>
-    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sagex-api-services-9.1.7.0.zip</Location>
-    <MD5>C1CE149B44BDAB90ED2F9FD251E06855</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sagex-api-services-9.2.6.1.zip</Location>
+    <MD5>894a8b5cad4147adf8b8fa5d355249e6</MD5>
   </Package>
 
   <!-- Plugin Class is in the core sagex-api jar -->
   <ImplementationClass>sagex.plugin.impl.SagexRemoteAPIPlugin</ImplementationClass>
 
   <ReleaseNotes>
-    9.1.7
+9.2.6
+    * Build for Github sources and Jetty 9
+9.1.7
     * Added OpenAPI (swagger) reference guide
 
-    9.0.0
+9.0.0
     * Updated to SageTV 9
   </ReleaseNotes>
-
+  
 </SageTVPlugin>
 <SageTVPlugin>
-  <Name>sagex-api - SageTV API Extensions</Name>
+  <Name>SageTV Sagex API Extensions (sagex-api)</Name>
   <Identifier>sagex-api</Identifier>
   <Description>SageTV API Wrappers with Remote API capabilities</Description>
   <Author>stuckless</Author>
   <CreationDate>2008.10.05</CreationDate>
-  <ModificationDate>2018.03.04</ModificationDate>
-  <Version>9.1.7.0</Version>
+  <ModificationDate>2021.12.21</ModificationDate>
+  <Version>9.2.6.1</Version>
   <Desktop>false</Desktop>
   <ResourcePath>sagex-api</ResourcePath>
   <Webpage><![CDATA[http://forums.sagetv.com/forums/showthread.php?t=36044]]></Webpage>
@@ -3588,16 +3697,18 @@ Note that the framework architecture has been revamped for SageTV V7.  Existing 
 
   <Package>
     <PackageType>JAR</PackageType>
-    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sagex-api-9.1.7.0.zip</Location>
-    <MD5>E3993FEC82D99990494E6FEBD0972DC8</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sagex-api-9.2.6.1.zip</Location>
+    <MD5>fd4f6746a9a4f649536f07515bdfcbf3</MD5>
   </Package>
 
   <ReleaseNotes>
-    9.1.7
+9.2.6
+    * Build for Github sources and Jetty 9
+9.1.7
     * RMI is now stateless to avoid memory leaks
     * removed deprecated and legacy RPC connectors
 
-    9.0.0
+9.0.0
     * Upgraded to SageTV 9
   </ReleaseNotes>
 
@@ -3608,7 +3719,7 @@ Note that the framework architecture has been revamped for SageTV V7.  Existing 
 
   <Dependency>
     <JVM/>
-    <MinVersion>1.7</MinVersion>
+    <MinVersion>1.8</MinVersion>
   </Dependency>
 
 </SageTVPlugin>
@@ -4006,15 +4117,17 @@ Note that the framework architecture has been revamped for SageTV V7.  Existing 
   <Description>Manage SageTV activity, media files, and playlists from desktop web browsers.</Description>
   <Author>nielm, jreichen, Slugger, skiingwiz</Author>
   <CreationDate>2004.11.18</CreationDate>
-  <ModificationDate>2021.05.16</ModificationDate>
-  <Version>3.3.1.1</Version>
+  <ModificationDate>2021.12.17</ModificationDate>
+  <Version>4.0.0</Version>
   <Desktop>false</Desktop>
   <ResourcePath>webserver</ResourcePath>
   <Webpage title="Web Interface Wiki">http://tools.assembla.com/sageplugins/wiki/WebServer</Webpage>
   <Webpage title="GeekTonic Review">http://www.geektonic.com/2008/03/sagetv-web-interface-control-sagetv.html</Webpage>
   <ReleaseNotes>
     <![CDATA[
-Move to V9 repository
+Version 4.0.0
+1. Changes to support Jetty 9.
+2. Drop support for embedded HTTP server (require Jetty)
 
 Version 3.3.1
 1. Fix showing null Season in some cases.
@@ -4052,46 +4165,46 @@ Version 2.43
 1. Fix relative url bug with menu images in groovy header template
 2. Isolate user groovy includes into webserver/groovy/_classes/ directory
 3. Change default jQuery UI template to something that sort of fits with other CSS
-
+ 
 Version 2.42
 1. Restore internal image server classes that I thought were dead code
-
+ 
 Version 2.41
 1. Update jQuery version; pull lib from Google servers
 2. Add support to restart SageTV from web UI (experimental)
 3. Add spport to run JVM GC from web UI (experimental)
 4. Update ddsmoothmenu to latest available
 5. Build updates to support move back to SourceForge
-
+ 
 Version 2.40
 1. Issue 361: Add support for button options in online plugin manager
-
+ 
 Version 2.39
 1. Issue 357: Ensure menu injections are processed only once
 2. Fix invalid relative references to images in groovy header/footer
-
+ 
 Version 2.38
 1. Issue 356: Fix invalid reference to background image in CSS
 2. Issue 352: Fix typo on schedule recording page
 3. Issue 329: Move command buttons to top of System Messages page
 4. Fix bug with menu injections where injections into existing menus didn't work
-
+ 
 Version 2.37
 1. Migrate source code from svn to git
 2. Build fixes to support building from git
 3. Fix bug in Firefox where menu would push title area off the screen
-
+ 
 Version 2.36
 1. Fix Plugin Manager bug where list options were not defaulting to the current value
 2. Use new jQuery based menu; allows for user injected custom additions
-
+ 
 Version 2.35
 1. Fixes to support Groovy 2.0
-
+ 
 Version 2.34
 1. Increase min version of sagetv-addons license plugin required to allow client installs
 2. Issue 334: Refresh plugin manifest from server on each load of the Plugin Manager web UI
-
+ 
 Version 2.33
  1. Add support for groovy and GSP processing from plugin resource path
  2. SREv4: Web UI updates to support new GSP policies
@@ -4102,7 +4215,7 @@ Version 2.33
  7. Add UserRecord editor (new feature; beta quality)
  8. Add Plugin Manager (new feature; beta quality)
  9. Issue 327: Use gtools lib for extender commands
-
+ 
 NOTE: Be sure to clear your browser cache thoroughly after installing this update!
     ]]>
   </ReleaseNotes>
@@ -4112,7 +4225,7 @@ NOTE: Be sure to clear your browser cache thoroughly after installing this updat
   </Dependency>
   <Dependency>
     <JVM/>
-    <MinVersion>1.7</MinVersion>
+    <MinVersion>1.8</MinVersion>
   </Dependency>
   <Dependency>
     <Plugin>sageutls</Plugin>
@@ -4124,7 +4237,7 @@ NOTE: Be sure to clear your browser cache thoroughly after installing this updat
   </Dependency>
   <Dependency>
     <Plugin>Jetty</Plugin>
-    <MinVersion>2.0.1</MinVersion>
+    <MinVersion>3.0.1</MinVersion>
   </Dependency>
   <Dependency>
   	<Plugin>groovy</Plugin>
@@ -4132,7 +4245,7 @@ NOTE: Be sure to clear your browser cache thoroughly after installing this updat
   </Dependency>
   <Dependency>
   	<Plugin>sagex-api</Plugin>
-  	<MinVersion>7.1.9</MinVersion>
+  	<MinVersion>9.2.6.1</MinVersion>
   </Dependency>
   <Dependency>
   	<Plugin>commons-lang</Plugin>
@@ -4149,137 +4262,24 @@ NOTE: Be sure to clear your browser cache thoroughly after installing this updat
   <PluginType>Standard</PluginType>
   <Package>
     <PackageType>JAR</PackageType>
-    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sage-webui-jar-3.3.1.1.zip</Location>
-    <MD5>A3F83EDCFAA0D860A06AA5ABA913A255</MD5>
+    <Location>https://bitbucket.org/skiingwiz/sagetv-webui/downloads/sage-webui-jar-4.0.0.zip</Location>
+    <MD5>24224d608caa972794ed48033a4a9d06</MD5>
   </Package>
   <Package>
     <PackageType>System</PackageType>
-    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sage-webui-properties-3.3.1.1.zip</Location>
-    <MD5>14202E9603B5D7F6DDB0F2BFB7714D95</MD5>
+    <Location>https://bitbucket.org/skiingwiz/sagetv-webui/downloads/sage-webui-properties-4.0.0.zip</Location>
+    <MD5>9ac478bee9197d4af0d3cd56464dca29</MD5>
   </Package>
   <Package>
     <PackageType>System</PackageType>
-    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sage-webui-user-3.3.1.1.zip</Location>
-    <MD5>F693E5D6A4199EBCC0156FF85FAE0C84</MD5>
+    <Location>https://bitbucket.org/skiingwiz/sagetv-webui/downloads/sage-webui-user-4.0.0.zip</Location>
+    <MD5>f72c544118c6db9d0f2fe0e5b49f2fd0</MD5>
     <Overwrite>false</Overwrite>
   </Package>
   <Package>
     <PackageType>System</PackageType>
-    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sage-webui-jetty-3.3.1.1.zip</Location>
-    <MD5>9E86DFAFA3019C77759967B2A09125EE</MD5>
-  </Package>
-  <!-- context file must be installed after the war file -->
-  <Package>
-    <PackageType>System</PackageType>
-    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sage-webui-context-3.3.1.1.zip</Location>
-    <MD5>1D7740F35730E9C1519F067986FCE26B</MD5>
-    <Overwrite>false</Overwrite>
-  </Package>
-  <ImplementationClass></ImplementationClass>
-</SageTVPlugin>
-<SageTVPlugin>
-  <Name>Media Streaming Services</Name>
-  <Identifier>mediastreaming</Identifier>
-  <Description>Provides HTTP Live Streaming services to the Mobile Web Interface.  Used for viewing SageTV recordings on iPhone, iPod, and iPad.  It can be extended by plugin developers to support other clients and audio/video formats.</Description>
-  <Author>jreichen, Fonceur</Author>
-  <CreationDate>2010.10.13</CreationDate>
-  <ModificationDate>2021.05.16</ModificationDate>
-  <Version>1.3.7.90.1</Version>
-  <Desktop>false</Desktop>
-  <ResourcePath>mediastreaming</ResourcePath>
-  <!--Screenshot title="Main Menu">http://forums.sagetv.com/forums/downloads/mobile_menu_f3J.png</Screenshot>
-  <Webpage title="Forum Support Thread">http://forums.sagetv.com/forums/showthread.php?t=48460</Webpage>
-  <Webpage title="Mobile Web Interface Wiki">http://tools.assembla.com/sageplugins/wiki/MobileWebInterface</Webpage-->
-  <ReleaseNotes>
-    <![CDATA[
-Move to V9 repository
-
-Version 1.3.5
-    Modifying the resolutions.
-
-Version 1.3.4
-    Try to use the original video's frame rate.
-    Adjust bit rates based on initial quality.
-
-Version 1.3.3
-    Starting at higher initial bit rate.
-    Disabled -bt.
-    Reduced volume to 512.
-    Increased audio bit rate to 64kbps.
-    Removed the 640 kBps quality.
-
-Version 1.3.2
-    Removed the 1840 kBps quality.
-    Reordered the qualities.
-
-Version 1.3.1
-   Disabled the authentication to enable Android streaming.
-
-Version 1.3.0
-    1. Increased the resolutions.
-    2. Reduced the frame rate at lower bit rate.
-    3. Added one higher bit rate.
-    4. Replaced left over SageTV.API calls by sagex ones.
-    5. Removed the unknown user agents restrictions.
-    6. Implemented some Eclipse recommendations.
-    7. Increased the audio bit rate by 20%.
-
-Version 1.2.0
-1. Rethrow IllegalArgumentException so and HTTP error code will be returned if the URL contains invalid parameters
-2. Log error messages
-3. Return HTTP error code if exception thrown by servlets
-4. Return exception message as content body
-5. Change response content type
-6. Pass servlet request object to playlist generators
-7. Calculate aspect ratio from width and height if it's not provided by SageTV metadata
-8. Add support for Android and Lavf (ffmpeg-based players such as VPlayer and Mirage) User-Agents.  This does not necessarily mean these will immediately work in clients that use this service.  Those must be fixed separately by their developers.
-9. Return more meaningful errors if Quality or User-Agent parameters are invalid.
-10. Refactor HTTP Live Streaming Playlist Code
-11. Put absolute URLs in HTTP Live Streaming Playlists
-
-Version 1.1.2
-1. Fix bug in HTTP Live Streaming servlets that returns HTTP 500 and results in a crossed out play button on the video thumbnail.  Attempting to start playback by clicking the thumbnail or Watch Now -> On this Page was unresponsive.
-
-Version 1.1.1
-1. Fix bug in HTTP Live Streaming playlist generation
-
-Version 1.1.0
-1. Increase volume on HTTP Live Streaming videos.
-2. Create a default web page to explain that this plugin is not used directly by the user.
-3. Use SageTV's ffmpeg for transcoding.  The web streaming should now support the same files as the Sage core.  Some users had reported problems with playing or seeking through avi, mkv, mpeg2, and wmv files.
-4. Fixed problems watching shows currently being recorded.
-  - Playback duration was the length of the recording when playback began
-  - Playback would fail if started immediately after recording started
-5. Added a URL to allow clients to kill transcoding processes on the server.  The Mobile Web Interface does not use this API.
-6. Added more logging detail
-
-Version 1.0.0
-1. Real-time variable bitrate transcoding of SageTV recordings to iPhone, iPod touch, and iPad devices.
-    ]]>
-  </ReleaseNotes>
-  <Dependency>
-    <Core></Core>
-    <MinVersion>7.0.16</MinVersion>
-  </Dependency>
-  <Dependency>
-    <JVM></JVM>
-    <MinVersion>1.6</MinVersion>
-  </Dependency>
-  <Dependency>
-    <Plugin>Jetty</Plugin>
-    <MinVersion>2.0.1</MinVersion>
-  </Dependency>
-  <PluginType>Standard</PluginType>
-  <Package>
-    <PackageType>System</PackageType>
-    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/mediastreaming-war-file-1.3.7.90.1.zip</Location>
-    <MD5>16BFE2CC0AB093A31508144268B59085</MD5>
-  </Package>
-  <!-- context file must be installed after the war file -->
-  <Package>
-    <PackageType>System</PackageType>
-    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/mediastreaming-context-file-1.3.7.90.1.zip</Location>
-    <MD5>01AEEEDA918B67B187ADE1830ED839F8</MD5>
+    <Location>https://bitbucket.org/skiingwiz/sagetv-webui/downloads/sage-webui-jetty-4.0.0.zip</Location>
+    <MD5>bd28b7f05859ecda47e584968da841c7</MD5>
   </Package>
   <ImplementationClass></ImplementationClass>
 </SageTVPlugin>
@@ -4571,36 +4571,36 @@ Phoenix is a STV replacement for SageTV9 providing the following features
 	<Name>Batch Metadata Tools - Web Interface</Name>
 	<Identifier>bmtweb</Identifier>
 	<Description>
-		Web Interface for Batch Metadata Tools, commonly referred
-		to as bmt. The web interface enables you to do edit metadata manually
-		from a web browser. In addition to simple editing of metadata, bmt is
-		build on the Phoenix APIs, and it provides a web interface to the
-		Phoenix Views. ie, It allows you to browser your media collection from
-		the web web browser. While browsing your collection you can also find
-		metadata and fanart for a group of media files, or for a single item.
-
-		BMT also provides a number of other batch tools for cleaning up metadata, or
-		performing some common operations.  Some of these include; Exporting a
-		.properties for some or all mediafiles; Cleaning up Genres; Setting the
-		watched status on files, etc
+Web Interface for Batch Metadata Tools, commonly referred
+to as bmt. The web interface enables you to do edit metadata manually
+from a web browser. In addition to simple editing of metadata, bmt is
+build on the Phoenix APIs, and it provides a web interface to the
+Phoenix Views. ie, It allows you to browser your media collection from
+the web web browser. While browsing your collection you can also find
+metadata and fanart for a group of media files, or for a single item.
+		
+BMT also provides a number of other batch tools for cleaning up metadata, or
+performing some common operations.  Some of these include; Exporting a
+.properties for some or all mediafiles; Cleaning up Genres; Setting the
+watched status on files, etc
 	</Description>
 	<Screenshot><![CDATA[http://forums.sagetv.com/forums/attachment.php?attachmentid=9772&stc=1&d=1266629522]]></Screenshot>
 	<Author>stuckless</Author>
 	<CreationDate>2008.07.19</CreationDate>
-	<ModificationDate>2017.02.12</ModificationDate>
-	<Version>4.101.0</Version>
+	<ModificationDate>2022.01.12</ModificationDate>
+	<Version>4.301.0</Version>
 	<Desktop>false</Desktop>
 	<ResourcePath>plugins/bmtweb</ResourcePath>
 	<Webpage><![CDATA[http://forums.sagetv.com/forums/forumdisplay.php?f=46]]></Webpage>
 
 	<Dependency>
 		<Plugin>Jetty</Plugin>
-		<MinVersion>1.7</MinVersion>
+		<MinVersion>3.0.1</MinVersion>
 	</Dependency>
 
 	<Dependency>
 		<Plugin>phoenix-core</Plugin>
-		<MinVersion>2.3.47</MinVersion>
+		<MinVersion>3.3.1</MinVersion>
 	</Dependency>
 
 	<Dependency>
@@ -4617,23 +4617,25 @@ Phoenix is a STV replacement for SageTV9 providing the following features
 
 	<Package>
 		<PackageType>System</PackageType>
-		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/bmtweb-war-4.101.0.1.zip
+		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/bmtweb-war-4.301.0.zip
 		</Location>
-		<MD5>FC76E91A839287760246DF6DA9225C94</MD5>
+		<MD5>dae8bd1c89c12685a17a57621716cbfb</MD5>
 	</Package>
 
 	<!-- context file must be installed after the war file -->
 	<Package>
 		<PackageType>System</PackageType>
-		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/bmtweb-context-4.101.0.1.zip
+		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/bmtweb-config-4.301.0.zip
 		</Location>
-		<MD5>268BEAF984FD4C8E682E36E947152D70</MD5>
+		<MD5>0a21b03ac2fa9b4c40601980b973a3c0</MD5>
 	</Package>
 	<ReleaseNotes>
-		4.100.0
-		* Updated for SageTV V9
-		* Fixed Search so that it does a title contains search by default
-		* Fixed Add Matcher so that it works with () and so that it cleans up older entries with same ID.
+4.300.0
+* Updated for jetty 9 and changes for TMDB to handle TV
+4.100.0
+* Updated for SageTV V9
+* Fixed Search so that it does a title contains search by default
+* Fixed Add Matcher so that it works with () and so that it cleans up older entries with same ID.  	
 	</ReleaseNotes>
 </SageTVPlugin>
 <SageTVPlugin>
@@ -4752,28 +4754,6 @@ NOTE: You must install VLC seperately in order for the plugin to work. Version 1
   v1.1 - Albums and tags are now displayed alphabetically with "folders" (categories and sub-categories) grouped at the end like in PSE.
   v1.2 - Fix PSE9 file paths.  Add simple Details menu screen for current slideshow file (to see file path and other details).
 </ReleaseNotes>
-</SageTVPlugin>
-<SageTVPlugin>
-       <Name>SageAlert (common)</Name>
-       <Identifier>sagealert-common</Identifier>
-       <Description>Common classes required for SageAlert and for other plugins to add passive SageAlert support. (Dependency only, most users should not directly install this plugin.)</Description>
-       <Author>Slugger</Author>
-       <CreationDate>2010.05.29</CreationDate>
-       <ModificationDate>2011.06.14</ModificationDate>
-       <Version beta="true">2.0.2.1550</Version>
-       <ResourcePath>plugins/sagealert-common</ResourcePath>
-       <Webpage>http://sagetv-addons.googlecode.com</Webpage>
-       <PluginType>Library</PluginType>
-       <Dependency>
-       	<JVM/>
-       	<MinVersion>1.5.0</MinVersion>
-       </Dependency>
-       <Package>
-               <PackageType>JAR</PackageType>
-               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sagealert-common-2.0.2.1550.zip</Location>
-               <MD5>0f50cb5d85e3d455d14e5f3604dcc2a5</MD5>
-               <Overwrite>true</Overwrite> <!-- Defaults to true -->
-       </Package>
 </SageTVPlugin>
 <SageTVPlugin>
 <Name>InControl (Connects SageTV/HomeSeer)</Name>
@@ -12257,313 +12237,6 @@ Provide a dynamic hierarchy of playlists representing all of your SageTV recordi
        	]]></ReleaseNotes>
 </SageTVPlugin>
 <SageTVPlugin>
-
-       <Name>SageAlert</Name>
-
-       <Identifier>sagealert</Identifier>
-
-       <Description><![CDATA[
-
-SageAlert listens for important/interesting SageTV events and will send notifications of those events to various notification platforms.
-
-
-
-WARNING: Starting with v2.0.0.920, SageAlert requires a sagetv-addons license file to unlock all features!  This license file is separate from the SageTV software license and can be obtained from the sagetv-addons project site at http://code.google.com/p/sagetv-addons/wiki/PluginPricing.  There are ways to unlock the software without a license file and those options are discussed in the licensing FAQ doc at http://code.google.com/p/sagetv-addons/wiki/PluginPricing.  In this version, the following features are DISABLED without a license:
-
-
-
-* SMTP server support
-
-* Sending more than one notification per event
-
-* Process executor server support
-
-
-
-See the donations wiki page for more details.
-
-
-
-Currently, SageAlert supports sending notifications to the following server types:
-
-
-
-* Email
-
-* Twitter
-
-* Growl
-
-* CSV file
-
-* Process executor
-
-
-
-Simply load the web GUI for SageAlert and configure the various events by telling SageAlert which notifications to send for each supported event type.  Then when those events are received by SageAlert, you will receive the notification(s) as configured.
-
-
-
-Typical uses of SageAlert include:
-
-
-
-* Post tweets of interesting events to a Twitter account for your HTPC.  Your SageTV server can tweet what it's recording, when clients connect/disconnect, when users are watching tv (and what they're watching, etc.).
-
-
-
-* Receive an email any time someone connects to the SageTV server.
-
-
-
-* Receive an email any time a system message is posted by SageTV.  This is an excellent way to receive instant alerts of possible problems with your SageTV server.
-
-
-
-* If your cell phone provider has an email to SMS gateway (most do these days) then you can receive text messages about system messages, connected users, etc.
-
-
-
-* Start up a process in response to an alert; the contents of the alert (subject, message, source event) are provided as environment variables in the process' execution environment.
-
-
-
-At this time, all configuration of SageAlert is done via the web GUI, which is installed at the /sagealert/ context in your Jetty plugin.  A future version of SageAlert may introduce some configuration options into the STV.
-
-
-
-Other plugins can also register and fire events to SageAlert, which can then be configured for notification.
-
-       ]]></Description>
-
-       <Author>Slugger</Author>
-
-       <CreationDate>2010.05.29</CreationDate>
-
-       <ModificationDate>2011.06.14</ModificationDate>
-
-       <Version>2.0.2.1550</Version>
-
-       <ResourcePath>plugins/sagealert</ResourcePath>
-
-       <Webpage>http://sagetv-addons.googlecode.com</Webpage>
-
-       <Webpage>http://code.google.com/p/sagetv-addons/wiki/DonationsFaq</Webpage>
-
-       <PluginType>Standard</PluginType>
-
-       <ServerOnly>true</ServerOnly>
-
-       <Dependency>
-
-       	<JVM/>
-
-       	<MinVersion>1.5.0</MinVersion>
-
-       </Dependency>
-
-       <Dependency>
-
-       	<Core/>
-
-       	<MinVersion>7.0.12</MinVersion>
-
-       </Dependency>
-
-       <Dependency>
-
-       	<Plugin>jetty</Plugin>
-
-       	<MinVersion>2.2.0.9</MinVersion>
-
-       </Dependency>
-
-       <Dependency>
-
-       	<Plugin>log4j</Plugin>
-
-       	<MinVersion>1.2.15</MinVersion>
-
-       </Dependency>
-
-       <Dependency>
-
-       	<Plugin>json</Plugin>
-
-       	<MinVersion>1.0</MinVersion>
-
-       </Dependency>
-
-       <Dependency>
-
-       	<Plugin>GKusnickToolsLib</Plugin>
-
-       	<MinVersion>1.2</MinVersion>
-
-       </Dependency>
-
-       <Dependency>
-
-       	<Plugin>javamail</Plugin>
-
-       	<MinVersion>1.4.3</MinVersion>
-
-       </Dependency>
-
-       <Dependency>
-
-       	<Plugin>libgrowl</Plugin>
-
-       	<MinVersion>0.1.1.1</MinVersion>
-
-       </Dependency>
-
-       <Dependency>
-
-       	<Plugin>twitter4j</Plugin>
-
-       	<MinVersion>2.1.2</MinVersion>
-
-       </Dependency>
-
-       <Dependency>
-
-       	<Plugin>commons-io</Plugin>
-
-       	<MinVersion>1.4</MinVersion>
-
-       </Dependency>
-
-       <Dependency>
-
-        <Plugin>commons-codec</Plugin>
-
-        <MinVersion>1.3</MinVersion>
-
-       </Dependency>
-
-       <Dependency>
-
-       	<Plugin>sqlitejdbc</Plugin>
-
-       	<MinVersion>0.56</MinVersion>
-
-       </Dependency>
-
-       <Dependency>
-
-       	<Plugin>commons-logging</Plugin>
-
-       	<MinVersion>1.1.1</MinVersion>
-
-       </Dependency>
-
-       <Dependency>
-
-        <Plugin>sagealert-common</Plugin>
-
-        <MinVersion>2.0.2.1550</MinVersion>
-
-       </Dependency>
-
-	   <Dependency>
-
-		<Plugin>gxt</Plugin>
-
-		<MinVersion>2.1.1.1</MinVersion>
-
-	   </Dependency>
-
-	   <Dependency>
-
-	    <Plugin>commons-exec</Plugin>
-
-	    <MinVersion>1.0.1</MinVersion>
-
-	   </Dependency>
-
-	   <Dependency>
-
-	    <Plugin>commons-lang</Plugin>
-
-	    <MinVersion>2.4</MinVersion>
-
-	   </Dependency>
-
-	   <Dependency>
-
-	    <Plugin>commons-beanutils</Plugin>
-
-	    <MinVersion>1.8.3</MinVersion>
-
-	   </Dependency>
-
-	   <Dependency>
-
-	    <Plugin>salicense</Plugin>
-
-	    <MinVersion>1.1.0</MinVersion>
-
-	   </Dependency>
-
-       <Package>
-
-               <PackageType>JAR</PackageType>
-
-               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sagealert-jar-2.0.2.1550.zip</Location>
-
-               <MD5>974317115f0b69f169f142c646081c9b</MD5>
-
-               <Overwrite>true</Overwrite> <!-- Defaults to true -->
-
-       </Package>
-
-       <Package>
-
-               <PackageType>System</PackageType>
-
-               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sagealert-web-2.0.2.1550.zip</Location>
-
-               <MD5>63e7ff9aed03d04569d5101ed6a2114b</MD5>
-
-               <Overwrite>true</Overwrite> <!-- Defaults to true -->
-
-       </Package>
-
-       <Package>
-
-               <PackageType>System</PackageType>
-
-               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sagealert-conf-2.0.2.1550.zip</Location>
-
-               <MD5>91c61407cb0b774b7b6ea0856c67aaa1</MD5>
-
-               <Overwrite>false</Overwrite> <!-- Defaults to true -->
-
-       </Package>
-
-       <ImplementationClass>com.google.code.sagetvaddons.sagealert.plugin.Plugin</ImplementationClass>
-
-       <ReleaseNotes><![CDATA[
-
-Changes since 2.0.2.1532
-
-
-
-------------------------------------------------------------------------
-
-r1550 | derek@battams.ca | 2011-06-14 10:48:30 -0400 (Tue, 14 Jun 2011) | 1 line
-
-
-
-Support latest salicense file format
-
-------------------------------------------------------------------------
-
-       ]]></ReleaseNotes>
-
-</SageTVPlugin>
-<SageTVPlugin>
   <Name>MediaShrink</Name>
   <Identifier>MediaShrink</Identifier>
   <Description><![CDATA[An external utility for compressing Videos and DVD's using Handbrake.  NOTE: Requires external setup using Sage Job Queue (SJQ) to function, see MediaShrink thread in SageTV customization forums for configuration details.]]></Description>
@@ -12894,98 +12567,6 @@ As an aside, it is worth noting that this plugin is implemented completely in Gr
   <STVImport>sage7-JA_reorg-TV_4.stvi</STVImport>
 
   </SageTVPlugin>
-<SageTVPlugin>
-  <Name>SageTV Mobile Web Interface</Name>
-  <Identifier>MobileWeb</Identifier>
-  <Description>Manage SageTV activity from mobile web browsers.</Description>
-  <Author>jreichen</Author>
-  <CreationDate>2008.11.23</CreationDate>
-  <ModificationDate>2011.03.06</ModificationDate>
-  <Version>2.1.0.42</Version>
-  <Desktop>false</Desktop>
-  <ResourcePath>mobileweb</ResourcePath>
-  <Screenshot title="Main Menu">http://sageplugins.sourceforge.net/screenshots/mobileweb/menu.png</Screenshot>
-  <Screenshot title="iPhone Details Page">http://sageplugins.sourceforge.net/screenshots/mobileweb/iPhone%20Details%20Page.png</Screenshot>
-  <Screenshot title="iPad Details Page">http://sageplugins.sourceforge.net/screenshots/mobileweb/iPad%20Details%20Page.png</Screenshot>
-  <Webpage title="Forum Support Thread">http://forums.sagetv.com/forums/showthread.php?t=52157</Webpage>
-  <Webpage title="Mobile Web Interface Wiki">http://tools.assembla.com/sageplugins/wiki/MobileWebInterface</Webpage>
-  <Webpage title="GeekTonic.com Review">http://www.geektonic.com/2010/11/sage-on-go-sagetv-gets-ipad-iphone-and_07.html</Webpage>
-  <DemoVideo title="GeekTonic Demo on YouTube">http://www.youtube.com/watch?v=mYSf-gXyMYU</DemoVideo>
-  <ReleaseNotes>
-    <![CDATA[
-Version 2.1.0
-1. Mobile Web Remote (contributed by forum user PiX64!)
-2. Add System Messages section to Home page
-3. Store client, extender, and placeshifter descriptive names in Sage.properties
-4. Edit client, extender, and placeshifter descriptive names from mobile web interface (click on the context in the home page to go to the client/extender details page)
-5. Fix display of actual recording times in recording lists and detailed info page
-6. Fix First Run/ReRun info on detailed info page
-7. Don't identify Android browsers as Safari (both are based on WebKit)
-8. Show message on recordings page if no recordings exist
-
-Version 2.0.0
-1. SageTV v7-style interface (switch from blue to gray as well as other style changes)
-2. Convert TV recordings in real time and watch on iPhone, iPod touch, and iPad
-3. Support latest watched time when starting and suspending viewing on iPhone, iPod touch, and iPad
-4. Start playback of TV recordings on extenders, placeshifters, and clients
-5. Convert all images to support transparency (may display strangely on older mobile browsers)
-6. Improved font handling when switching between portrait and landscape modes on iPhone, iPod touch, and iPad
-7. Fixed HTML to make CSS styling easier
-8. View what's playing on SageTV Clients
-9. Change max number of hours in TV listings from 12 to 24
-
-Version 1.4.1
-1. Fixed error 'mobile_menu.json (The system cannot find the path specified)'
-
-Version 1.4.0
-1. View what's playing on SageTV Clients from the home page
-2. Favorite Automatic Conversions
-3. Adopt conventions for /apps application
-4. Regenerated tag library for SageTV v7 API
-5. Don't hard-code resource path of mobile_menu.json
-6. Close mobile_menu.json file reader
-7. Convert end-of-line characters from LF (Linux) to CRLF (Windows) for the /apps files.
-8. Increase maximum for Favorite Keep at Most from 15 to 63
-9. Remember last values for video conversions
-
-Version 1.3
-1. Support for SageTV Plugin Manager
-    ]]>
-  </ReleaseNotes>
-  <Dependency>
-    <Core></Core>
-    <MinVersion>7.0.10</MinVersion>
-  </Dependency>
-  <Dependency>
-    <JVM></JVM>
-    <MinVersion>1.5</MinVersion>
-  </Dependency>
-  <Dependency>
-    <Plugin>Jetty</Plugin>
-    <MinVersion>2.0.1</MinVersion>
-  </Dependency>
-  <Dependency>
-    <Plugin>sagex-api</Plugin>
-    <MinVersion>7.0.15</MinVersion>
-  </Dependency>
-  <Dependency>
-    <Plugin>mediastreaming</Plugin>
-    <MinVersion>1.0.0</MinVersion>
-  </Dependency>
-  <PluginType>Standard</PluginType>
-  <Package>
-    <PackageType>System</PackageType>
-    <Location>http://downloads.sourceforge.net/project/sageplugins/Mobile%20Web%20Interface/2.1.0/plugin/sagewebapp-war-file-2.1.0.42.zip?use_mirror=</Location>
-    <MD5>c0cf47c29f717f612baab978eb2bc7d8</MD5>
-  </Package>
-  <!-- context file must be installed after the war file -->
-  <Package>
-    <PackageType>System</PackageType>
-    <Location>http://downloads.sourceforge.net/project/sageplugins/Mobile%20Web%20Interface/2.1.0/plugin/sagewebapp-context-file-2.1.0.42.zip?use_mirror=</Location>
-    <MD5>3b05057f0b7dc2d9d8e3699f31d18f04</MD5>
-  </Package>
-  <ImplementationClass></ImplementationClass>
-</SageTVPlugin>
 <SageTVPlugin>
        <Name>Sage Download Manager (SDM)</Name>
        <Identifier>sdm</Identifier>
@@ -19680,6 +19261,169 @@ ices.
 <STVImport>SageCollegeProject_PublicBeta_1.26.stvi</STVImport>
 </SageTVPlugin>
 <SageTVPlugin>
+       <Name>SageAlert (common)</Name>
+       <Identifier>sagealert-common</Identifier>
+       <Description>Common classes required for SageAlert and for other plugins to add passive SageAlert support. (Dependency only, most users should not directly install this plugin.)</Description>
+       <Author>Slugger,jusjoken</Author>
+       <CreationDate>2010.05.29</CreationDate>
+       <ModificationDate>2022.01.12</ModificationDate>
+       <Version beta="true">2.1.1.1600</Version>
+       <ResourcePath>plugins/sagealert-common</ResourcePath>
+       <Webpage>http://sagetv-addons.googlecode.com</Webpage>
+       <PluginType>Library</PluginType>
+       <Dependency>
+       	<JVM/>
+       	<MinVersion>1.8</MinVersion>
+       	<MaxVersion>1.9</MaxVersion>
+       </Dependency>
+       <Package>
+               <PackageType>JAR</PackageType>
+               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sagealert-common-2.1.1.1600.zip</Location>
+               <MD5>02399b9447aa0e5595dbc1de47dd0a91</MD5>
+               <Overwrite>true</Overwrite> <!-- Defaults to true -->
+       </Package>
+</SageTVPlugin>
+<SageTVPlugin>
+       <Name>SageAlert</Name>
+       <Identifier>sagealert</Identifier>
+       <Description><![CDATA[
+SageAlert listens for important/interesting SageTV events and will send notifications of those events to various notification platforms.
+ 
+Currently, SageAlert supports sending notifications to the following server types:
+ 
+* Email
+* Twitter
+* Growl
+* CSV file
+* Process executor
+ 
+Simply load the web GUI for SageAlert and configure the various events by telling SageAlert which notifications to send for each supported event type.  Then when those events are received by SageAlert, you will receive the notification(s) as configured.
+ 
+Typical uses of SageAlert include:
+ 
+* Post tweets of interesting events to a Twitter account for your HTPC.  Your SageTV server can tweet what it's recording, when clients connect/disconnect, when users are watching tv (and what they're watching, etc.).
+ 
+* Receive an email any time someone connects to the SageTV server.
+ 
+* Receive an email any time a system message is posted by SageTV.  This is an excellent way to receive instant alerts of possible problems with your SageTV server.
+ 
+* If your cell phone provider has an email to SMS gateway (most do these days) then you can receive text messages about system messages, connected users, etc.
+ 
+* Start up a process in response to an alert; the contents of the alert (subject, message, source event) are provided as environment variables in the process' execution environment.
+ 
+At this time, all configuration of SageAlert is done via the web GUI, which is installed at the /sagealert/ context in your Jetty plugin.  A future version of SageAlert may introduce some configuration options into the STV.
+ 
+Other plugins can also register and fire events to SageAlert, which can then be configured for notification.
+       ]]></Description>
+       <Author>Slugger,jusjoken</Author>
+       <CreationDate>2010.05.29</CreationDate>
+       <ModificationDate>2022.01.12</ModificationDate>
+       <Version>2.1.1.1600</Version>
+       <ResourcePath>plugins/sagealert</ResourcePath>
+       <Webpage>https://github.com/jusjoken/sagetv-addons.sagealert</Webpage>
+       <PluginType>Standard</PluginType>
+       <ServerOnly>true</ServerOnly>
+       <Dependency>
+       	<JVM/>
+       	<MinVersion>1.8</MinVersion>
+       	<MaxVersion>1.9</MaxVersion>
+       </Dependency>
+       <Dependency>
+       	<Core/>
+       	<MinVersion>9.0.0</MinVersion>
+       </Dependency>
+       <Dependency>
+       	<Plugin>jetty</Plugin>
+       	<MinVersion>3.0.1</MinVersion>
+       </Dependency>
+       <Dependency>
+       	<Plugin>log4j</Plugin>
+       	<MinVersion>1.2.15</MinVersion>
+       </Dependency>
+       <Dependency>
+       	<Plugin>json</Plugin>
+       	<MinVersion>1.0</MinVersion>
+       </Dependency>
+       <Dependency>
+       	<Plugin>GKusnickToolsLib</Plugin>
+       	<MinVersion>1.2</MinVersion>
+       </Dependency>
+       <Dependency>
+       	<Plugin>javamail</Plugin>
+       	<MinVersion>1.4.3</MinVersion>
+       </Dependency>
+       <Dependency>
+       	<Plugin>libgrowl</Plugin>
+       	<MinVersion>0.1.1.1</MinVersion>
+       </Dependency>
+       <Dependency>
+       	<Plugin>twitter4j</Plugin>
+       	<MinVersion>2.1.2</MinVersion>
+       </Dependency>
+       <Dependency>
+       	<Plugin>commons-io</Plugin>
+       	<MinVersion>1.4</MinVersion>
+       </Dependency>
+       <Dependency>
+        <Plugin>commons-codec</Plugin>
+        <MinVersion>1.3</MinVersion>
+       </Dependency>
+       <Dependency>
+       	<Plugin>sqlitejdbc</Plugin>
+       	<MinVersion>0.56</MinVersion>
+       </Dependency>
+       <Dependency>
+       	<Plugin>commons-logging</Plugin>
+       	<MinVersion>1.1.1</MinVersion>
+       </Dependency>
+       <Dependency>
+        <Plugin>sagealert-common</Plugin>
+        <MinVersion>2.1.1.1600</MinVersion>
+       </Dependency>
+	   <Dependency>
+		<Plugin>gxt</Plugin>
+		<MinVersion>2.1.1.1</MinVersion>
+	   </Dependency>
+	   <Dependency>
+	    <Plugin>commons-exec</Plugin>
+	    <MinVersion>1.0.1</MinVersion>
+	   </Dependency>
+	   <Dependency>
+	    <Plugin>commons-lang</Plugin>
+	    <MinVersion>2.4</MinVersion>
+	   </Dependency>
+	   <Dependency>
+	    <Plugin>commons-beanutils</Plugin>
+	    <MinVersion>1.8.3</MinVersion>
+	   </Dependency>
+	   <Dependency>
+	    <Plugin>salicense</Plugin>
+	    <MinVersion>1.1.0</MinVersion>
+	   </Dependency>
+       <Package>
+               <PackageType>JAR</PackageType>
+               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sagealert-jar-2.1.1.1600.zip</Location>
+               <MD5>86ffd4acfdf8a42edae2345a34ae86a4</MD5>
+               <Overwrite>true</Overwrite> <!-- Defaults to true -->
+       </Package>
+       <Package>
+               <PackageType>System</PackageType>
+               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sagealert-web-2.1.1.1600.zip</Location>
+               <MD5>b05b4094dead16bd05f3712c9287f1c8</MD5>
+               <Overwrite>true</Overwrite> <!-- Defaults to true -->
+       </Package>
+       <Package>
+               <PackageType>System</PackageType>
+               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sagealert-conf-2.1.1.1600.zip</Location>
+               <MD5>d4e0d8865ebd68e66e581e2c070f4dc8</MD5>
+               <Overwrite>false</Overwrite> <!-- Defaults to true -->
+       </Package>
+       <ImplementationClass>com.google.code.sagetvaddons.sagealert.plugin.Plugin</ImplementationClass>
+       <ReleaseNotes>
+       * 2.1.0 - updated to work with Jetty 9
+       </ReleaseNotes>
+</SageTVPlugin>
+<SageTVPlugin>
   <Name>CVF - Custom Video Folder</Name>
   <Identifier>jusjokenCVF</Identifier>
   <Description>
@@ -19797,13 +19541,13 @@ Provides Sports Event monitoring for use by the SRE plugin
     ]]></Description>
        <Author>skiingwiz</Author>
        <CreationDate>2016.04.23</CreationDate>
-       <ModificationDate>2020.09.01</ModificationDate>
-       <Version beta="true">1.8.1</Version>
+       <ModificationDate>2021.12.23</ModificationDate>
+       <Version>2.0.1</Version>
        <ResourcePath>plugins/livepvrdata-server</ResourcePath>
        <Webpage>https://github.com/livepvrdata-oss/livepvrdata-svc</Webpage>
        <Dependency>
                <JVM/>
-               <MinVersion>1.7</MinVersion>
+               <MinVersion>1.8</MinVersion>
            </Dependency>
        <Dependency>
                 <Core/>
@@ -19815,22 +19559,18 @@ Provides Sports Event monitoring for use by the SRE plugin
         </Dependency>
         <Dependency>
                 <Plugin>jetty</Plugin>
-                <MinVersion>2.3.0.14</MinVersion>
+                <MinVersion>3.0.1</MinVersion>
         </Dependency>
        <PluginType>Standard</PluginType>
        <Package>
                <PackageType>System</PackageType>
-               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/livepvrdata-svc-war-master-9ff749c.zip</Location>
-               <MD5>D16F91C72D1EF902D28ADE9DBF0336A6</MD5>
-               <Overwrite>true</Overwrite>
-       </Package>
-       <Package>
-               <PackageType>System</PackageType>
-               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/livepvrdata-svc-context-master-9ff749c.zip</Location>
-               <MD5>A07474D5AAFE1EE6ED026266E307675F</MD5>
+               <Location>http://github.com/livepvrdata-oss/livepvrdata-svc/releases/download/2.0.1/livepvrdata-svc-war-2.0.1.zip</Location>
+               <MD5>c5bfee6dccb73edd468fb39d62b5e782</MD5>
                <Overwrite>true</Overwrite>
        </Package>
            <ReleaseNotes><![CDATA[
+2.0.1
+* Changes to support Jetty 9
 1.8.1
 * Fix WNBA monitor assignment
 1.8
