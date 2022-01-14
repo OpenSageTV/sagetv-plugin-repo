@@ -13,16 +13,18 @@ The plugin consists of two parts.  The first part is Jetty, a 3rd-party Java web
   </Description>
   <Author>jreichen, jusjoken</Author>
   <CreationDate>2008.06.01</CreationDate>
-  <ModificationDate>2022.01.12</ModificationDate>
-  <Version>3.0.2.246</Version>
+  <ModificationDate>2022.01.14</ModificationDate>
+  <Version>3.0.3.250</Version>
   <Desktop>false</Desktop>
   <ResourcePath>jetty</ResourcePath>
-  <Screenshot title="Web Application List">http://sageplugins.sourceforge.net/screenshots/jetty/SageTVWebApps.png</Screenshot>
-  <Webpage title="Jetty Plugin 2.0 Forum Support Thread">http://forums.sagetv.com/forums/showthread.php?t=48818</Webpage>
+  <Screenshot title="Web Application List">https://raw.githubusercontent.com/jusjoken/SageTV-JettyStarter/master/resources/WebApplications.png</Screenshot>
+  <Webpage title="Jetty Plugin 3.0 Forum Support Thread">https://forums.sagetv.com/forums/showthread.php?t=66898</Webpage>
   <Webpage title="Jetty Home Page">http://eclipse.org/jetty/</Webpage>
   <Webpage title="Plugin Source Code">https://github.com/jusjoken/SageTV-JettyStarter</Webpage>
   <ReleaseNotes>
     <![CDATA[
+Version 3.0.3
+1. Add plugin configuration option to disable login security
 Version 3.0.0
 1. Migrate from Jetty 6 to Jetty 9
     - Requires Java 8, supports Java 9+
@@ -97,24 +99,24 @@ Version 1.7.5 beta
   <PluginType>Standard</PluginType>
   <Package>
     <PackageType>JAR</PackageType>
-    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/jetty-starter-jars-3.0.2.246.zip</Location>
-    <MD5>a5851eb77ece3f9beb4a6744218aa8ca</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/jetty-starter-jars-3.0.3.250.zip</Location>
+    <MD5>0676369088edf3fc606538b846e932b4</MD5>
   </Package>
   <Package>
     <PackageType>System</PackageType>
-    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/jetty-starter-config-files-3.0.2.246.zip</Location>
-    <MD5>d601307ec2ae6fd4b95e993541996c86</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/jetty-starter-config-files-3.0.3.250.zip</Location>
+    <MD5>f08e3508e497cf4d1540adbe8756f330</MD5>
   </Package>
   <Package>
     <PackageType>System</PackageType>
-    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/jetty-starter-user-config-files-3.0.2.246.zip</Location>
-    <MD5>1e26fdb287280d9cbfc5239f7c1437c8</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/jetty-starter-user-config-files-3.0.3.250.zip</Location>
+    <MD5>c6f34e7b9095d41070cb5b88828fd4fd</MD5>
     <Overwrite>false</Overwrite>
   </Package>
   <Package>
     <PackageType>System</PackageType>
-    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/jetty-starter-webapp-war-file-3.0.2.246.zip</Location>
-    <MD5>1b308968ccc298fbdc278280f00f20d6</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/jetty-starter-webapp-war-file-3.0.3.250.zip</Location>
+    <MD5>68ed5ab5828a5f652243baca9847840e</MD5>
   </Package>
   <ImplementationClass>sagex.jetty.starter.JettyPlugin</ImplementationClass>
 </SageTVPlugin>
