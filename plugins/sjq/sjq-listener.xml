@@ -6,8 +6,8 @@ SJQv4 network listener library; do not install manually.
 	</Description>
 	<Author>Slugger</Author>
 	<CreationDate>2007.05.02</CreationDate>
-	<ModificationDate>2011.02.26</ModificationDate>
-	<Version beta="true">4.0.0.1407</Version>
+	<ModificationDate>2022.01.19</ModificationDate>
+	<Version beta="true">4.0.0.1701</Version>
 	<ResourcePath>plugins/sjq</ResourcePath>
 	<Webpage>http://sagetv-addons.googlecode.com</Webpage>
 	<Dependency>
