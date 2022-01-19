@@ -26,9 +26,9 @@ Please see the user's guide for all the details, including common usage setup an
 
 	<CreationDate>2007.05.02</CreationDate>
 
-	<ModificationDate>2011.06.20</ModificationDate>
+	<ModificationDate>2022.01.19</ModificationDate>
 
-	<Version beta="true">4.0.0.1569</Version>
+	<Version beta="true">4.0.0.1701</Version>
 
 	<ResourcePath>plugins/sjq</ResourcePath>
 
@@ -100,7 +100,7 @@ Please see the user's guide for all the details, including common usage setup an
 
 		<Plugin>sjq-common</Plugin>
 
-		<MinVersion>4.0.0.1569</MinVersion>
+		<MinVersion>4.0.0.1701</MinVersion>
 
 	</Dependency>
 
@@ -108,7 +108,7 @@ Please see the user's guide for all the details, including common usage setup an
 
 		<Plugin>sjq-listener</Plugin>
 
-		<MinVersion>4.0.0.1248</MinVersion>
+		<MinVersion>4.0.0.1701</MinVersion>
 
 	</Dependency>
 

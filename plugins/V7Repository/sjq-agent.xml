@@ -6,8 +6,8 @@ SJQv4 agent (task client).
 	</Description>
 	<Author>Slugger</Author>
 	<CreationDate>2010.11.03</CreationDate>
-	<ModificationDate>2011.10.18</ModificationDate>
-	<Version beta="true">4.0.0.1650</Version>
+	<ModificationDate>2022.01.19</ModificationDate>
+	<Version beta="true">4.0.0.1701</Version>
 	<ResourcePath>plugins/sjq-agent</ResourcePath>
 	<Webpage>http://sagetv-addons.googlecode.com</Webpage>
 	<Dependency>
@@ -44,11 +44,11 @@ SJQv4 agent (task client).
 	</Dependency>
 	<Dependency>
 		<Plugin>sjq-listener</Plugin>
-		<MinVersion>4.0.0.1248</MinVersion>
+		<MinVersion>4.0.0.1701</MinVersion>
 	</Dependency>
 	<Dependency>
 		<Plugin>sjq-common</Plugin>
-		<MinVersion>4.0.0.1568</MinVersion>
+		<MinVersion>4.0.0.1701</MinVersion>
 	</Dependency>
 	<Dependency>
 		<Plugin>jpathwatch</Plugin>
