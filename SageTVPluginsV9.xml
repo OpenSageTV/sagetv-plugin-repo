@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2022.0114.1445">
+<PluginRepository version="2022.0119.1333">
 <SageTVPlugin>
 
   <Name>BlueTwo (addon for MBDiamond)</Name>
@@ -3856,6 +3856,962 @@ Note that the framework architecture has been revamped for SageTV V7.  Existing 
 
     <ReleaseNotes>
     </ReleaseNotes>
+</SageTVPlugin>
+<SageTVPlugin>
+
+	<Name>Sage Job Queue (SJQ)</Name>
+
+	<Identifier>sjq</Identifier>
+
+	<Description><![CDATA[
+
+SJQ allows users to selectively perform tasks on any and all SageTV objects.
+
+
+
+NOTE: SJQv4 requires a sagetv-addons license to unlock all features.  If you're upgrading from SJQv3 then you will require a license file to unlock all features.  DO NOT UPGRADE IF YOU DO NOT WISH TO DONATE.  THERE IS NO DOWNGRADE OPTION AVAILABLE IN SAGETV FOR PLUGINS SO ONCE YOU UPGRADE YOU ARE COMMITTED TO VERSION 4!!
+
+
+
+SJQ can be used to selectively perform various tasks on your SageTV objects.  The most common use is to selectively perform comskip on recordings known to have commercials while ignoring recordings from channels known not to have commercials (HBO, PBS, PPV, etc.).
+
+
+
+Please see the user's guide for all the details, including common usage setup and examples.
+
+	]]></Description>
+
+	<Author>Slugger</Author>
+
+	<CreationDate>2007.05.02</CreationDate>
+
+	<ModificationDate>2022.01.19</ModificationDate>
+
+	<Version beta="true">4.0.0.1701</Version>
+
+	<ResourcePath>plugins/sjq</ResourcePath>
+
+	<Webpage>http://sagetv-addons.googlecode.com</Webpage>
+
+	<Webpage>http://code.google.com/p/sagetv-addons/wiki/Sjq4UserGuide</Webpage>
+
+	<Webpage>http://code.google.com/p/sagetv-addons/wiki/PluginPricing</Webpage>
+
+	<ServerOnly>true</ServerOnly>
+
+	<Dependency>
+
+		<JVM/>
+
+		<MinVersion>1.5.0</MinVersion>
+
+	</Dependency>
+
+	<Dependency>
+
+		<Core/>
+
+		<MinVersion>7.0.18</MinVersion>
+
+	</Dependency>
+
+		<Dependency>
+
+		<Plugin>GKusnickToolsLib</Plugin>
+
+		<MinVersion>1.2</MinVersion>
+
+	</Dependency>
+
+	<Dependency>
+
+		<Plugin>log4j</Plugin>
+
+		<MinVersion>1.2.15</MinVersion>
+
+	</Dependency>
+
+	<Dependency>
+
+		<Plugin>commons-lang</Plugin>
+
+		<MinVersion>2.4</MinVersion>
+
+	</Dependency>
+
+	<Dependency>
+
+		<Plugin>commons-io</Plugin>
+
+		<MinVersion>1.4</MinVersion>
+
+	</Dependency>
+
+	<Dependency>
+
+		<Plugin>cron4j</Plugin>
+
+		<MinVersion>2.2.1</MinVersion>
+
+	</Dependency>
+
+	<Dependency>
+
+		<Plugin>sjq-common</Plugin>
+
+		<MinVersion>4.0.0.1701</MinVersion>
+
+	</Dependency>
+
+	<Dependency>
+
+		<Plugin>sjq-listener</Plugin>
+
+		<MinVersion>4.0.0.1701</MinVersion>
+
+	</Dependency>
+
+	<Dependency>
+
+		<Plugin>commons-codec</Plugin>
+
+		<MinVersion>1.3</MinVersion>
+
+	</Dependency>
+
+	<Dependency>
+
+		<Plugin>sagex-api-services</Plugin>
+
+		<MinVersion>7.0.23.2</MinVersion>
+
+	</Dependency>
+
+	<Dependency>
+
+		<Plugin>salicense</Plugin>
+
+		<MinVersion>1.1.0</MinVersion>
+
+	</Dependency>
+
+	<PluginType>Standard</PluginType>
+
+	<Package>
+
+		<PackageType>JAR</PackageType>
+
+		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sjq-jar-4.0.0.1569.zip</Location>
+
+		<MD5>bcbc3a3a715e9da17d842d65734876d9</MD5>
+
+	</Package>
+
+	<Package>
+
+		<PackageType>System</PackageType>
+
+		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sjq-conf-4.0.0.1569.zip</Location>
+
+		<MD5>7c39baf0dbbea6c5d9c04e325069c819</MD5>
+
+	</Package>
+
+	<ImplementationClass>com.google.code.sagetvaddons.sjq.server.Plugin</ImplementationClass>
+
+	<ReleaseNotes><![CDATA[
+
+Changes since 4.0.0.1319
+
+
+
+------------------------------------------------------------------------
+
+r1319 | derek@battams.ca | 2010-12-12 20:10:40 -0500 (Sun, 12 Dec 2010) | 1 line
+
+
+
+fix stable ptr
+
+------------------------------------------------------------------------
+
+r1323 | derek@battams.ca | 2010-12-13 16:10:31 -0500 (Mon, 13 Dec 2010) | 1 line
+
+
+
+Fixes locale issues for non English locales with floating point columns in the database
+
+------------------------------------------------------------------------
+
+r1326 | derek@battams.ca | 2010-12-13 16:14:42 -0500 (Mon, 13 Dec 2010) | 1 line
+
+
+
+update min agent ver
+
+------------------------------------------------------------------------
+
+r1329 | derek@battams.ca | 2011-01-19 15:30:32 -0500 (Wed, 19 Jan 2011) | 3 lines
+
+
+
+Fixes issue 282
+
+
+
+Add boolean flag to Task objects for icon status
+
+------------------------------------------------------------------------
+
+r1330 | derek@battams.ca | 2011-01-19 15:39:11 -0500 (Wed, 19 Jan 2011) | 1 line
+
+
+
+Server side fixes for issue 282
+
+------------------------------------------------------------------------
+
+r1333 | derek@battams.ca | 2011-01-19 15:45:46 -0500 (Wed, 19 Jan 2011) | 1 line
+
+
+
+incr min clnt ver
+
+------------------------------------------------------------------------
+
+r1334 | derek@battams.ca | 2011-01-19 16:04:28 -0500 (Wed, 19 Jan 2011) | 1 line
+
+
+
+Fix invalid column reference in SQL statement
+
+------------------------------------------------------------------------
+
+r1337 | derek@battams.ca | 2011-01-19 16:07:18 -0500 (Wed, 19 Jan 2011) | 1 line
+
+
+
+update min clnt ver
+
+------------------------------------------------------------------------
+
+r1339 | derek@battams.ca | 2011-01-19 16:29:06 -0500 (Wed, 19 Jan 2011) | 1 line
+
+
+
+incr min SOMF ver
+
+------------------------------------------------------------------------
+
+r1341 | derek@battams.ca | 2011-01-19 16:43:20 -0500 (Wed, 19 Jan 2011) | 1 line
+
+
+
+Handle tasks dangling in STARTED state (mark them as failed after 30 seconds)
+
+------------------------------------------------------------------------
+
+r1342 | derek@battams.ca | 2011-01-19 16:45:28 -0500 (Wed, 19 Jan 2011) | 1 line
+
+
+
+update javadocs
+
+------------------------------------------------------------------------
+
+r1356 | derek@battams.ca | 2011-01-29 17:26:14 -0500 (Sat, 29 Jan 2011) | 3 lines
+
+
+
+Server side fixes for issue 274 and issue 287
+
+
+
+Fix 274: Allow log output larger than 64KB for tests and exes; Fix 287: Allow dynamic modification of exe args from test script
+
+------------------------------------------------------------------------
+
+r1363 | derek@battams.ca | 2011-01-31 19:36:14 -0500 (Mon, 31 Jan 2011) | 3 lines
+
+
+
+Fixes issue 288
+
+
+
+Add ability to dynamically adjust a task's used resources at runtime (in Groovy) via Tools.setTaskResources(int)
+
+------------------------------------------------------------------------
+
+r1365 | derek@battams.ca | 2011-02-02 08:45:14 -0500 (Wed, 02 Feb 2011) | 1 line
+
+
+
+Allow read/write of client mapdir settings from datastore; add mapdir property to Client objects
+
+------------------------------------------------------------------------
+
+r1367 | derek@battams.ca | 2011-02-02 08:55:49 -0500 (Wed, 02 Feb 2011) | 1 line
+
+
+
+incr min agent ver
+
+------------------------------------------------------------------------
+
+r1369 | derek@battams.ca | 2011-02-02 09:06:09 -0500 (Wed, 02 Feb 2011) | 1 line
+
+
+
+incr min agent ver
+
+------------------------------------------------------------------------
+
+r1370 | derek@battams.ca | 2011-02-02 09:23:28 -0500 (Wed, 02 Feb 2011) | 1 line
+
+
+
+Fix SQL syntax error
+
+------------------------------------------------------------------------
+
+r1371 | derek@battams.ca | 2011-02-02 10:18:11 -0500 (Wed, 02 Feb 2011) | 1 line
+
+
+
+Fix SQL logic error when calculating a client's used resources when adjusting for runtime adjustments
+
+------------------------------------------------------------------------
+
+r1373 | derek@battams.ca | 2011-02-02 10:21:36 -0500 (Wed, 02 Feb 2011) | 1 line
+
+
+
+incr min agent ver
+
+------------------------------------------------------------------------
+
+r1374 | derek@battams.ca | 2011-02-02 11:30:29 -0500 (Wed, 02 Feb 2011) | 1 line
+
+
+
+update javadocs
+
+------------------------------------------------------------------------
+
+r1378 | derek@battams.ca | 2011-02-05 10:08:51 -0500 (Sat, 05 Feb 2011) | 1 line
+
+
+
+Fix bug where auto registration of new task clients at startup would fail with SQL error
+
+------------------------------------------------------------------------
+
+r1380 | derek@battams.ca | 2011-02-05 11:02:02 -0500 (Sat, 05 Feb 2011) | 1 line
+
+
+
+incr min agent ver
+
+------------------------------------------------------------------------
+
+r1390 | derek@battams.ca | 2011-02-14 19:18:16 -0500 (Mon, 14 Feb 2011) | 1 line
+
+
+
+Add support for generating system messages for failed tasks (via SysMsgOnFail task property)
+
+------------------------------------------------------------------------
+
+r1392 | derek@battams.ca | 2011-02-14 19:22:49 -0500 (Mon, 14 Feb 2011) | 1 line
+
+
+
+incr min agent ver
+
+------------------------------------------------------------------------
+
+r1394 | derek@battams.ca | 2011-02-14 22:48:16 -0500 (Mon, 14 Feb 2011) | 1 line
+
+
+
+update javadocs
+
+------------------------------------------------------------------------
+
+r1396 | derek@battams.ca | 2011-02-15 12:37:56 -0500 (Tue, 15 Feb 2011) | 1 line
+
+
+
+incr min agent ver
+
+------------------------------------------------------------------------
+
+r1401 | derek@battams.ca | 2011-02-26 14:49:15 -0500 (Sat, 26 Feb 2011) | 1 line
+
+
+
+Fix various bugs with SetArgs and GetArgs commands (manifests as various IOException errors in log files)
+
+------------------------------------------------------------------------
+
+r1404 | derek@battams.ca | 2011-02-26 15:01:00 -0500 (Sat, 26 Feb 2011) | 1 line
+
+
+
+incr min agent ver
+
+------------------------------------------------------------------------
+
+r1426 | derek@battams.ca | 2011-03-06 14:29:15 -0500 (Sun, 06 Mar 2011) | 1 line
+
+
+
+Migrate to sagetv-addons license server for licensing validation
+
+------------------------------------------------------------------------
+
+r1551 | derek@battams.ca | 2011-06-14 10:49:54 -0400 (Tue, 14 Jun 2011) | 1 line
+
+
+
+Support latest salicense file format
+
+------------------------------------------------------------------------
+
+r1559 | derek@battams.ca | 2011-06-16 14:34:00 -0400 (Thu, 16 Jun 2011) | 3 lines
+
+
+
+Fixes issue 301
+
+
+
+Fix race condition on plugin startup where multi task client registration could fail even if the license file is valid
+
+------------------------------------------------------------------------
+
+r1560 | derek@battams.ca | 2011-06-20 10:28:42 -0400 (Mon, 20 Jun 2011) | 1 line
+
+
+
+Ensure licensing is only enforced on the server side
+
+------------------------------------------------------------------------
+
+r1563 | derek@battams.ca | 2011-06-20 10:37:52 -0400 (Mon, 20 Jun 2011) | 1 line
+
+
+
+incr min agent ver
+
+------------------------------------------------------------------------
+
+r1565 | derek@battams.ca | 2011-06-20 10:40:05 -0400 (Mon, 20 Jun 2011) | 1 line
+
+
+
+incr min agent ver (again)
+
+------------------------------------------------------------------------
+
+r1566 | derek@battams.ca | 2011-06-20 10:59:54 -0400 (Mon, 20 Jun 2011) | 1 line
+
+
+
+Do NOT access data store from Plugin ctor! How many times must I make this mistake! :(
+
+------------------------------------------------------------------------
+
+r1568 | derek@battams.ca | 2011-06-20 11:04:56 -0400 (Mon, 20 Jun 2011) | 1 line
+
+
+
+incr min agent ver
+
+------------------------------------------------------------------------
+
+r1569 | derek@battams.ca | 2011-06-20 11:38:46 -0400 (Mon, 20 Jun 2011) | 1 line
+
+
+
+Dump license validation log msg to logs when necessary
+
+------------------------------------------------------------------------
+
+	]]></ReleaseNotes>
+
+</SageTVPlugin>
+<SageTVPlugin>
+	<Name>sjq-common</Name>
+	<Identifier>sjq-common</Identifier>
+	<Description><![CDATA[
+SJQv4 common classes; do not install manually.
+	]]></Description>
+	<Author>Slugger</Author>
+	<CreationDate>2007.05.02</CreationDate>
+	<ModificationDate>2022.01.19</ModificationDate>
+	<Version beta="true">4.0.0.1701</Version>
+	<ResourcePath>plugins/sjq</ResourcePath>
+	<Webpage>http://sagetv-addons.googlecode.com</Webpage>
+	<Dependency>
+		<JVM/>
+		<MinVersion>1.5.0</MinVersion>
+	</Dependency>
+	<Dependency>
+		<Core/>
+		<MinVersion>7.0.18</MinVersion>
+	</Dependency>
+	<Dependency>
+		<Plugin>GKusnickToolsLib</Plugin>
+		<MinVersion>1.2</MinVersion>
+	</Dependency>
+	<Dependency>
+		<Plugin>log4j</Plugin>
+		<MinVersion>1.2.15</MinVersion>
+	</Dependency>
+	<Dependency>
+		<Plugin>commons-io</Plugin>
+		<MinVersion>1.4</MinVersion>
+	</Dependency>
+	<Dependency>
+		<Plugin>commons-lang</Plugin>
+		<MinVersion>2.4</MinVersion>
+	</Dependency>
+	<Dependency>
+		<Plugin>sagex-h2</Plugin>
+		<MinVersion>1.0.7</MinVersion>
+	</Dependency>
+	<Dependency>
+		<Plugin>somf</Plugin>
+		<MinVersion>1.0.0.1338</MinVersion>
+	</Dependency>
+	<Dependency>
+		<Plugin>sagex-api</Plugin>
+		<MinVersion>7.0.23.2</MinVersion>
+	</Dependency>
+	<Dependency>
+		<Plugin>sjq-listener</Plugin>
+		<MinVersion>4.0.0.1248</MinVersion>
+	</Dependency>
+	<PluginType>Library</PluginType>
+	<Package>
+		<PackageType>JAR</PackageType>
+		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sjq-common-4.0.0.1569.zip</Location>
+		<MD5>ea10d9709dc6e1b86ec34c3cfdd3b50f</MD5>
+	</Package>
+</SageTVPlugin>
+<SageTVPlugin>
+	<Name>sjq-listener</Name>
+	<Identifier>sjq-listener</Identifier>
+	<Description>
+SJQv4 network listener library; do not install manually.
+	</Description>
+	<Author>Slugger</Author>
+	<CreationDate>2007.05.02</CreationDate>
+	<ModificationDate>2022.01.19</ModificationDate>
+	<Version beta="true">4.0.0.1701</Version>
+	<ResourcePath>plugins/sjq</ResourcePath>
+	<Webpage>http://sagetv-addons.googlecode.com</Webpage>
+	<Dependency>
+		<JVM/>
+		<MinVersion>1.5.0</MinVersion>
+	</Dependency>
+	<Dependency>
+		<Core/>
+		<MinVersion>7.0.9</MinVersion>
+	</Dependency>
+	<Dependency>
+		<Plugin>commons-lang</Plugin>
+		<MinVersion>2.4</MinVersion>
+	</Dependency>
+	<Dependency>
+		<Plugin>log4j</Plugin>
+		<MinVersion>1.2.15</MinVersion>
+	</Dependency>
+	<PluginType>Library</PluginType>
+	<Package>
+		<PackageType>JAR</PackageType>
+		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sjq-listener-4.0.0.1407.zip</Location>
+		<MD5>046219089ac990d85892aa63136ef31c</MD5>
+	</Package>
+	<ReleaseNotes>
+Changes since 4.0.0.1070
+
+------------------------------------------------------------------------
+r1070 | derek@battams.ca | 2010-10-14 13:40:38 -0400 (Thu, 14 Oct 2010) | 1 line
+
+Add plugin manifest; update bld process
+------------------------------------------------------------------------
+r1074 | derek@battams.ca | 2010-10-14 16:48:34 -0400 (Thu, 14 Oct 2010) | 1 line
+
+Allow halting of listeners via interruption signal
+------------------------------------------------------------------------
+r1150 | derek@battams.ca | 2010-10-26 14:55:29 -0400 (Tue, 26 Oct 2010) | 1 line
+
+Add ThreadLocal SocketDetails instances so we can properly query socket details about the active connection
+------------------------------------------------------------------------
+r1161 | derek@battams.ca | 2010-10-27 20:55:08 -0400 (Wed, 27 Oct 2010) | 1 line
+
+This is no longer a server only plugin (because of the ListenerClient class)
+------------------------------------------------------------------------
+r1224 | derek@battams.ca | 2010-11-06 10:26:03 -0400 (Sat, 06 Nov 2010) | 1 line
+
+Allow signalling to stop listener
+------------------------------------------------------------------------
+r1227 | derek@battams.ca | 2010-11-06 10:44:21 -0400 (Sat, 06 Nov 2010) | 1 line
+
+Revert changes in 1224
+------------------------------------------------------------------------
+r1248 | derek@battams.ca | 2010-11-09 18:05:56 -0500 (Tue, 09 Nov 2010) | 1 line
+
+Change loggers to instance variables to support cases where multiple packages are using the Listener plugin
+------------------------------------------------------------------------
+r1405 | derek@battams.ca | 2011-02-26 15:38:34 -0500 (Sat, 26 Feb 2011) | 1 line
+
+Add port number to remote addr for easier debugging
+------------------------------------------------------------------------
+r1406 | derek@battams.ca | 2011-02-26 15:49:31 -0500 (Sat, 26 Feb 2011) | 1 line
+
+Adding more verbose logging in Listener
+------------------------------------------------------------------------
+r1407 | derek@battams.ca | 2011-02-26 18:19:24 -0500 (Sat, 26 Feb 2011) | 1 line
+
+Final logging changes
+------------------------------------------------------------------------
+	</ReleaseNotes>
+</SageTVPlugin>
+<SageTVPlugin>
+    <Name>Sage Job Queue (SJQ) Web UI</Name>
+    <Identifier>sjq4web</Identifier>
+    <Description><![CDATA[The SJQv4 web UI.  Load it via the /sage/sjq/sjq4.groovy URI in your SageTV web UI.]]></Description>
+    <Author>Slugger</Author>
+    <CreationDate>2012.01.15</CreationDate>
+    <ModificationDate>2021.12.20</ModificationDate>
+    <Version beta="true">4.0.0.5</Version>
+    <ResourcePath>plugins/sjq4web</ResourcePath>
+    <Webpage>http://sagetv-addons.sf.net</Webpage>
+    <Dependency>
+        <JVM/>
+             <MinVersion>1.5.0</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Core/>
+            <MinVersion>7.1.9.1</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>groovy</Plugin>
+        <MinVersion>1.7.10</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>sagex-api</Plugin>
+        <MinVersion>7.1.9.0</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>web</Plugin>
+        <MinVersion>3.0</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>sjq</Plugin>
+        <MinVersion>4.0.0</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>commons-lang</Plugin>
+        <MinVersion>2.4</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>json</Plugin>
+        <MinVersion>1.0</MinVersion>
+    </Dependency>
+    <Dependency>
+        <Plugin>somf</Plugin>
+        <MinVersion>1.0.0.1338</MinVersion>
+    </Dependency>
+    <PluginType>Standard</PluginType>
+    <Package>
+        <PackageType>System</PackageType>
+        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sjq-web-4.0.0.4.zip</Location>
+        <MD5>4e21cbcfbe498852a879c1e4ae6cc1ff</MD5>
+        <Overwrite>true</Overwrite>
+    </Package>
+    <ReleaseNotes>
+	* updated to remove v7 max version limit and to point to github
+	</ReleaseNotes>
+</SageTVPlugin>
+<SageTVPlugin>
+	<Name>Sage Job Queue Agent (Task Client)</Name>
+	<Identifier>sjq-agent</Identifier>
+	<Description>
+SJQv4 agent (task client).
+	</Description>
+	<Author>Slugger</Author>
+	<CreationDate>2010.11.03</CreationDate>
+	<ModificationDate>2022.01.19</ModificationDate>
+	<Version beta="true">4.0.0.1701</Version>
+	<ResourcePath>plugins/sjq-agent</ResourcePath>
+	<Webpage>http://sagetv-addons.googlecode.com</Webpage>
+	<Dependency>
+		<JVM/>
+		<MinVersion>1.6</MinVersion>
+	</Dependency>
+	<Dependency>
+		<Core/>
+		<MinVersion>7.0.18</MinVersion>
+	</Dependency>
+	<Dependency>
+		<Plugin>sagex-api</Plugin>
+		<MinVersion>7.0.23.2</MinVersion>
+	</Dependency>
+	<Dependency>
+		<Plugin>log4j</Plugin>
+		<MinVersion>1.2.15</MinVersion>
+	</Dependency>
+	<Dependency>
+		<Plugin>sagex-h2</Plugin>
+		<MinVersion>1.0.8</MinVersion>
+	</Dependency>
+	<Dependency>
+		<Plugin>commons-exec</Plugin>
+		<MinVersion>1.0.1</MinVersion>
+	</Dependency>
+	<Dependency>
+		<Plugin>commons-io</Plugin>
+		<MinVersion>1.4</MinVersion>
+	</Dependency>
+	<Dependency>
+		<Plugin>commons-lang</Plugin>
+		<MinVersion>2.4</MinVersion>
+	</Dependency>
+	<Dependency>
+		<Plugin>sjq-listener</Plugin>
+		<MinVersion>4.0.0.1701</MinVersion>
+	</Dependency>
+	<Dependency>
+		<Plugin>sjq-common</Plugin>
+		<MinVersion>4.0.0.1701</MinVersion>
+	</Dependency>
+	<Dependency>
+		<Plugin>jpathwatch</Plugin>
+		<MinVersion>0.93.1</MinVersion>
+	</Dependency>
+	<Dependency>
+		<Plugin>groovy</Plugin>
+		<MinVersion>1.7.10</MinVersion>
+	</Dependency>
+	<Dependency>
+		<Plugin>somf</Plugin>
+		<MinVersion>1.0.0.1338</MinVersion>
+	</Dependency>
+	<Dependency>
+		<Plugin>commons-cli</Plugin>
+		<MinVersion>1.0</MinVersion>
+	</Dependency>
+	<Dependency>
+		<Plugin>commons-codec</Plugin>
+		<MinVersion>1.3</MinVersion>
+	</Dependency>
+	<Dependency>
+		<Plugin>gtools</Plugin>
+		<MinVersion>1.0.3</MinVersion>
+	</Dependency>
+	<Dependency>
+		<Plugin>ant-launcher</Plugin>
+		<MinVersion>1.8.2</MinVersion>
+	</Dependency>
+	<Dependency>
+		<Plugin>ant-javamail</Plugin>
+		<MinVersion>1.8.2</MinVersion>
+	</Dependency>
+	<Dependency>
+		<Plugin>junit</Plugin>
+		<MinVersion>4.8.2</MinVersion>
+	</Dependency>
+	<Dependency>
+		<Plugin>javamail</Plugin>
+		<MinVersion>1.4.3</MinVersion>
+	</Dependency>
+	<Dependency>
+		<Plugin>myjavatools-xml</Plugin>
+		<MinVersion>5.0</MinVersion>
+	</Dependency>
+	<Dependency>
+		<Plugin>snark</Plugin>
+		<MinVersion>0.5</MinVersion>
+	</Dependency>
+	<PluginType>Standard</PluginType>
+	<Package>
+		<PackageType>JAR</PackageType>
+		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sjq-agent-plugin-4.0.0.1650.zip</Location>
+		<MD5>cf9ca0f029f705c8b2b566c0219e52d0</MD5>
+	</Package>
+	<Package>
+		<PackageType>System</PackageType>
+		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sjq-agent-plugin-conf-4.0.0.1650.zip</Location>
+		<MD5>da9988e634e9ae78a99d17b4f5c50d29</MD5>
+	</Package>
+	<ImplementationClass>com.google.code.sagetvaddons.sjq.agent.Plugin</ImplementationClass>
+	<ReleaseNotes><![CDATA[
+Changes since 4.0.0.1320
+
+------------------------------------------------------------------------
+r1320 | derek@battams.ca | 2010-12-12 20:15:34 -0500 (Sun, 12 Dec 2010) | 1 line
+
+Build fixes
+------------------------------------------------------------------------
+r1324 | derek@battams.ca | 2010-12-13 16:12:12 -0500 (Mon, 13 Dec 2010) | 1 line
+
+update sjq-common
+------------------------------------------------------------------------
+r1325 | derek@battams.ca | 2010-12-13 16:13:38 -0500 (Mon, 13 Dec 2010) | 1 line
+
+update sjq-common for plugin
+------------------------------------------------------------------------
+r1331 | derek@battams.ca | 2011-01-19 15:43:23 -0500 (Wed, 19 Jan 2011) | 1 line
+
+update sjq-common
+------------------------------------------------------------------------
+r1332 | derek@battams.ca | 2011-01-19 15:45:04 -0500 (Wed, 19 Jan 2011) | 1 line
+
+incr min common plugin ver
+------------------------------------------------------------------------
+r1335 | derek@battams.ca | 2011-01-19 16:06:17 -0500 (Wed, 19 Jan 2011) | 1 line
+
+update sjq-common
+------------------------------------------------------------------------
+r1336 | derek@battams.ca | 2011-01-19 16:06:55 -0500 (Wed, 19 Jan 2011) | 1 line
+
+update min common plugin ver
+------------------------------------------------------------------------
+r1340 | derek@battams.ca | 2011-01-19 16:30:11 -0500 (Wed, 19 Jan 2011) | 1 line
+
+Add SOMF plugin to standalone pkgs and as a dep for plugin client
+------------------------------------------------------------------------
+r1350 | derek@battams.ca | 2011-01-23 13:51:32 -0500 (Sun, 23 Jan 2011) | 3 lines
+
+Fixes issue 268
+
+Add :MAPDIR equivalent from SJQv3 to SJQv4
+------------------------------------------------------------------------
+r1353 | derek@battams.ca | 2011-01-28 22:41:06 -0500 (Fri, 28 Jan 2011) | 1 line
+
+Fix bug where file paths were treated incorrectly as case sensitive on Windows for mapDir() function
+------------------------------------------------------------------------
+r1354 | derek@battams.ca | 2011-01-28 23:08:14 -0500 (Fri, 28 Jan 2011) | 1 line
+
+Update mapDir() with Apache Commons calls; make it less bug prone (hopefully)
+------------------------------------------------------------------------
+r1355 | derek@battams.ca | 2011-01-29 17:24:41 -0500 (Sat, 29 Jan 2011) | 4 lines
+
+Fixes issue 274
+Fixes issue 287
+
+Fix 274: Allow log output from tests and tasks longer than 64KB; Fix 287: Allow dynamic modification of exe args from test script
+------------------------------------------------------------------------
+r1357 | derek@battams.ca | 2011-01-30 01:25:16 -0500 (Sun, 30 Jan 2011) | 1 line
+
+Create javadocs for Tools class; rename HelperUtils to Tools to match global name within Groovy env so javadocs aren't confusing
+------------------------------------------------------------------------
+r1364 | derek@battams.ca | 2011-01-31 19:42:26 -0500 (Mon, 31 Jan 2011) | 1 line
+
+Task agent fixes for issue 288
+------------------------------------------------------------------------
+r1366 | derek@battams.ca | 2011-02-02 08:54:20 -0500 (Wed, 02 Feb 2011) | 1 line
+
+update sjq-common; update h2 driver; incr min sjq-common ver for plugin
+------------------------------------------------------------------------
+r1368 | derek@battams.ca | 2011-02-02 09:05:07 -0500 (Wed, 02 Feb 2011) | 1 line
+
+support new Client class from common
+------------------------------------------------------------------------
+r1372 | derek@battams.ca | 2011-02-02 10:20:52 -0500 (Wed, 02 Feb 2011) | 1 line
+
+update sjq-common
+------------------------------------------------------------------------
+r1379 | derek@battams.ca | 2011-02-05 11:01:10 -0500 (Sat, 05 Feb 2011) | 1 line
+
+update sjq-common
+------------------------------------------------------------------------
+r1388 | derek@battams.ca | 2011-02-14 08:48:35 -0500 (Mon, 14 Feb 2011) | 1 line
+
+Fix bug where mapdir setting was not being saved properly when edited from the UI
+------------------------------------------------------------------------
+r1389 | derek@battams.ca | 2011-02-14 19:17:31 -0500 (Mon, 14 Feb 2011) | 1 line
+
+Support SysMsgOnFail task property
+------------------------------------------------------------------------
+r1391 | derek@battams.ca | 2011-02-14 19:22:15 -0500 (Mon, 14 Feb 2011) | 1 line
+
+update sjq-common
+------------------------------------------------------------------------
+r1395 | derek@battams.ca | 2011-02-15 12:37:28 -0500 (Tue, 15 Feb 2011) | 1 line
+
+update sjq-common
+------------------------------------------------------------------------
+r1402 | derek@battams.ca | 2011-02-26 14:49:47 -0500 (Sat, 26 Feb 2011) | 1 line
+
+Fix various bugs with SetArgs and GetArgs commands (manifests as various IOException errors in log files)
+------------------------------------------------------------------------
+r1403 | derek@battams.ca | 2011-02-26 15:00:12 -0500 (Sat, 26 Feb 2011) | 1 line
+
+update sjq-common
+------------------------------------------------------------------------
+r1482 | derek@battams.ca | 2011-04-10 10:41:50 -0400 (Sun, 10 Apr 2011) | 1 line
+
+Update various upstream libs
+------------------------------------------------------------------------
+r1508 | derek@battams.ca | 2011-04-24 09:50:48 -0400 (Sun, 24 Apr 2011) | 3 lines
+
+Fixes issue 293
+
+Fix bug where command args with spaces/special characters in them were being passed to the exe with quotes around them
+------------------------------------------------------------------------
+r1509 | derek@battams.ca | 2011-04-24 10:01:51 -0400 (Sun, 24 Apr 2011) | 1 line
+
+Update manifest
+------------------------------------------------------------------------
+r1510 | derek@battams.ca | 2011-04-24 11:34:31 -0400 (Sun, 24 Apr 2011) | 1 line
+
+Just tell commons-exec not to quote args
+------------------------------------------------------------------------
+r1528 | derek@battams.ca | 2011-05-16 09:05:22 -0400 (Mon, 16 May 2011) | 1 line
+
+Update gtools jar
+------------------------------------------------------------------------
+r1542 | derek@battams.ca | 2011-06-11 11:28:54 -0400 (Sat, 11 Jun 2011) | 1 line
+
+Update gtools lib
+------------------------------------------------------------------------
+r1543 | derek@battams.ca | 2011-06-11 11:32:45 -0400 (Sat, 11 Jun 2011) | 1 line
+
+add commons-net lib to standalone packages
+------------------------------------------------------------------------
+r1544 | derek@battams.ca | 2011-06-11 11:37:04 -0400 (Sat, 11 Jun 2011) | 1 line
+
+Update sagex-api jar
+------------------------------------------------------------------------
+r1561 | derek@battams.ca | 2011-06-20 10:32:08 -0400 (Mon, 20 Jun 2011) | 1 line
+
+Add SOP jar to standalone packages
+------------------------------------------------------------------------
+r1562 | derek@battams.ca | 2011-06-20 10:37:05 -0400 (Mon, 20 Jun 2011) | 1 line
+
+Update sjq-common
+------------------------------------------------------------------------
+r1564 | derek@battams.ca | 2011-06-20 10:39:27 -0400 (Mon, 20 Jun 2011) | 1 line
+
+incr min common ver
+------------------------------------------------------------------------
+r1567 | derek@battams.ca | 2011-06-20 11:04:22 -0400 (Mon, 20 Jun 2011) | 1 line
+
+update sjq-common
+------------------------------------------------------------------------
+r1650 | derek@battams.ca | 2011-10-18 16:42:38 -0400 (Tue, 18 Oct 2011) | 3 lines
+
+Fixes issue 306
+
+Log script output even when the script fails
+------------------------------------------------------------------------
+	]]></ReleaseNotes>
 </SageTVPlugin>
 <SageTVPlugin>
 
@@ -9995,491 +10951,6 @@ Disclaimer - I have done my best to research (Google, Wikipedia, Lyngsat) and ch
 </SageTVPlugin>
 <SageTVPlugin>
 
-	<Name>Sage Job Queue (SJQ)</Name>
-
-	<Identifier>sjq</Identifier>
-
-	<Description><![CDATA[
-
-SJQ allows users to selectively perform tasks on any and all SageTV objects.
-
-
-
-NOTE: SJQv4 requires a sagetv-addons license to unlock all features.  If you're upgrading from SJQv3 then you will require a license file to unlock all features.  DO NOT UPGRADE IF YOU DO NOT WISH TO DONATE.  THERE IS NO DOWNGRADE OPTION AVAILABLE IN SAGETV FOR PLUGINS SO ONCE YOU UPGRADE YOU ARE COMMITTED TO VERSION 4!!
-
-
-
-SJQ can be used to selectively perform various tasks on your SageTV objects.  The most common use is to selectively perform comskip on recordings known to have commercials while ignoring recordings from channels known not to have commercials (HBO, PBS, PPV, etc.).
-
-
-
-Please see the user's guide for all the details, including common usage setup and examples.
-
-	]]></Description>
-
-	<Author>Slugger</Author>
-
-	<CreationDate>2007.05.02</CreationDate>
-
-	<ModificationDate>2011.06.20</ModificationDate>
-
-	<Version beta="true">4.0.0.1569</Version>
-
-	<ResourcePath>plugins/sjq</ResourcePath>
-
-	<Webpage>http://sagetv-addons.googlecode.com</Webpage>
-
-	<Webpage>http://code.google.com/p/sagetv-addons/wiki/Sjq4UserGuide</Webpage>
-
-	<Webpage>http://code.google.com/p/sagetv-addons/wiki/PluginPricing</Webpage>
-
-	<ServerOnly>true</ServerOnly>
-
-	<Dependency>
-
-		<JVM/>
-
-		<MinVersion>1.5.0</MinVersion>
-
-	</Dependency>
-
-	<Dependency>
-
-		<Core/>
-
-		<MinVersion>7.0.18</MinVersion>
-
-	</Dependency>
-
-		<Dependency>
-
-		<Plugin>GKusnickToolsLib</Plugin>
-
-		<MinVersion>1.2</MinVersion>
-
-	</Dependency>
-
-	<Dependency>
-
-		<Plugin>log4j</Plugin>
-
-		<MinVersion>1.2.15</MinVersion>
-
-	</Dependency>
-
-	<Dependency>
-
-		<Plugin>commons-lang</Plugin>
-
-		<MinVersion>2.4</MinVersion>
-
-	</Dependency>
-
-	<Dependency>
-
-		<Plugin>commons-io</Plugin>
-
-		<MinVersion>1.4</MinVersion>
-
-	</Dependency>
-
-	<Dependency>
-
-		<Plugin>cron4j</Plugin>
-
-		<MinVersion>2.2.1</MinVersion>
-
-	</Dependency>
-
-	<Dependency>
-
-		<Plugin>sjq-common</Plugin>
-
-		<MinVersion>4.0.0.1569</MinVersion>
-
-	</Dependency>
-
-	<Dependency>
-
-		<Plugin>sjq-listener</Plugin>
-
-		<MinVersion>4.0.0.1248</MinVersion>
-
-	</Dependency>
-
-	<Dependency>
-
-		<Plugin>commons-codec</Plugin>
-
-		<MinVersion>1.3</MinVersion>
-
-	</Dependency>
-
-	<Dependency>
-
-		<Plugin>sagex-api-services</Plugin>
-
-		<MinVersion>7.0.23.2</MinVersion>
-
-	</Dependency>
-
-	<Dependency>
-
-		<Plugin>salicense</Plugin>
-
-		<MinVersion>1.1.0</MinVersion>
-
-	</Dependency>
-
-	<PluginType>Standard</PluginType>
-
-	<Package>
-
-		<PackageType>JAR</PackageType>
-
-		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sjq-jar-4.0.0.1569.zip</Location>
-
-		<MD5>bcbc3a3a715e9da17d842d65734876d9</MD5>
-
-	</Package>
-
-	<Package>
-
-		<PackageType>System</PackageType>
-
-		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sjq-conf-4.0.0.1569.zip</Location>
-
-		<MD5>7c39baf0dbbea6c5d9c04e325069c819</MD5>
-
-	</Package>
-
-	<ImplementationClass>com.google.code.sagetvaddons.sjq.server.Plugin</ImplementationClass>
-
-	<ReleaseNotes><![CDATA[
-
-Changes since 4.0.0.1319
-
-
-
-------------------------------------------------------------------------
-
-r1319 | derek@battams.ca | 2010-12-12 20:10:40 -0500 (Sun, 12 Dec 2010) | 1 line
-
-
-
-fix stable ptr
-
-------------------------------------------------------------------------
-
-r1323 | derek@battams.ca | 2010-12-13 16:10:31 -0500 (Mon, 13 Dec 2010) | 1 line
-
-
-
-Fixes locale issues for non English locales with floating point columns in the database
-
-------------------------------------------------------------------------
-
-r1326 | derek@battams.ca | 2010-12-13 16:14:42 -0500 (Mon, 13 Dec 2010) | 1 line
-
-
-
-update min agent ver
-
-------------------------------------------------------------------------
-
-r1329 | derek@battams.ca | 2011-01-19 15:30:32 -0500 (Wed, 19 Jan 2011) | 3 lines
-
-
-
-Fixes issue 282
-
-
-
-Add boolean flag to Task objects for icon status
-
-------------------------------------------------------------------------
-
-r1330 | derek@battams.ca | 2011-01-19 15:39:11 -0500 (Wed, 19 Jan 2011) | 1 line
-
-
-
-Server side fixes for issue 282
-
-------------------------------------------------------------------------
-
-r1333 | derek@battams.ca | 2011-01-19 15:45:46 -0500 (Wed, 19 Jan 2011) | 1 line
-
-
-
-incr min clnt ver
-
-------------------------------------------------------------------------
-
-r1334 | derek@battams.ca | 2011-01-19 16:04:28 -0500 (Wed, 19 Jan 2011) | 1 line
-
-
-
-Fix invalid column reference in SQL statement
-
-------------------------------------------------------------------------
-
-r1337 | derek@battams.ca | 2011-01-19 16:07:18 -0500 (Wed, 19 Jan 2011) | 1 line
-
-
-
-update min clnt ver
-
-------------------------------------------------------------------------
-
-r1339 | derek@battams.ca | 2011-01-19 16:29:06 -0500 (Wed, 19 Jan 2011) | 1 line
-
-
-
-incr min SOMF ver
-
-------------------------------------------------------------------------
-
-r1341 | derek@battams.ca | 2011-01-19 16:43:20 -0500 (Wed, 19 Jan 2011) | 1 line
-
-
-
-Handle tasks dangling in STARTED state (mark them as failed after 30 seconds)
-
-------------------------------------------------------------------------
-
-r1342 | derek@battams.ca | 2011-01-19 16:45:28 -0500 (Wed, 19 Jan 2011) | 1 line
-
-
-
-update javadocs
-
-------------------------------------------------------------------------
-
-r1356 | derek@battams.ca | 2011-01-29 17:26:14 -0500 (Sat, 29 Jan 2011) | 3 lines
-
-
-
-Server side fixes for issue 274 and issue 287
-
-
-
-Fix 274: Allow log output larger than 64KB for tests and exes; Fix 287: Allow dynamic modification of exe args from test script
-
-------------------------------------------------------------------------
-
-r1363 | derek@battams.ca | 2011-01-31 19:36:14 -0500 (Mon, 31 Jan 2011) | 3 lines
-
-
-
-Fixes issue 288
-
-
-
-Add ability to dynamically adjust a task's used resources at runtime (in Groovy) via Tools.setTaskResources(int)
-
-------------------------------------------------------------------------
-
-r1365 | derek@battams.ca | 2011-02-02 08:45:14 -0500 (Wed, 02 Feb 2011) | 1 line
-
-
-
-Allow read/write of client mapdir settings from datastore; add mapdir property to Client objects
-
-------------------------------------------------------------------------
-
-r1367 | derek@battams.ca | 2011-02-02 08:55:49 -0500 (Wed, 02 Feb 2011) | 1 line
-
-
-
-incr min agent ver
-
-------------------------------------------------------------------------
-
-r1369 | derek@battams.ca | 2011-02-02 09:06:09 -0500 (Wed, 02 Feb 2011) | 1 line
-
-
-
-incr min agent ver
-
-------------------------------------------------------------------------
-
-r1370 | derek@battams.ca | 2011-02-02 09:23:28 -0500 (Wed, 02 Feb 2011) | 1 line
-
-
-
-Fix SQL syntax error
-
-------------------------------------------------------------------------
-
-r1371 | derek@battams.ca | 2011-02-02 10:18:11 -0500 (Wed, 02 Feb 2011) | 1 line
-
-
-
-Fix SQL logic error when calculating a client's used resources when adjusting for runtime adjustments
-
-------------------------------------------------------------------------
-
-r1373 | derek@battams.ca | 2011-02-02 10:21:36 -0500 (Wed, 02 Feb 2011) | 1 line
-
-
-
-incr min agent ver
-
-------------------------------------------------------------------------
-
-r1374 | derek@battams.ca | 2011-02-02 11:30:29 -0500 (Wed, 02 Feb 2011) | 1 line
-
-
-
-update javadocs
-
-------------------------------------------------------------------------
-
-r1378 | derek@battams.ca | 2011-02-05 10:08:51 -0500 (Sat, 05 Feb 2011) | 1 line
-
-
-
-Fix bug where auto registration of new task clients at startup would fail with SQL error
-
-------------------------------------------------------------------------
-
-r1380 | derek@battams.ca | 2011-02-05 11:02:02 -0500 (Sat, 05 Feb 2011) | 1 line
-
-
-
-incr min agent ver
-
-------------------------------------------------------------------------
-
-r1390 | derek@battams.ca | 2011-02-14 19:18:16 -0500 (Mon, 14 Feb 2011) | 1 line
-
-
-
-Add support for generating system messages for failed tasks (via SysMsgOnFail task property)
-
-------------------------------------------------------------------------
-
-r1392 | derek@battams.ca | 2011-02-14 19:22:49 -0500 (Mon, 14 Feb 2011) | 1 line
-
-
-
-incr min agent ver
-
-------------------------------------------------------------------------
-
-r1394 | derek@battams.ca | 2011-02-14 22:48:16 -0500 (Mon, 14 Feb 2011) | 1 line
-
-
-
-update javadocs
-
-------------------------------------------------------------------------
-
-r1396 | derek@battams.ca | 2011-02-15 12:37:56 -0500 (Tue, 15 Feb 2011) | 1 line
-
-
-
-incr min agent ver
-
-------------------------------------------------------------------------
-
-r1401 | derek@battams.ca | 2011-02-26 14:49:15 -0500 (Sat, 26 Feb 2011) | 1 line
-
-
-
-Fix various bugs with SetArgs and GetArgs commands (manifests as various IOException errors in log files)
-
-------------------------------------------------------------------------
-
-r1404 | derek@battams.ca | 2011-02-26 15:01:00 -0500 (Sat, 26 Feb 2011) | 1 line
-
-
-
-incr min agent ver
-
-------------------------------------------------------------------------
-
-r1426 | derek@battams.ca | 2011-03-06 14:29:15 -0500 (Sun, 06 Mar 2011) | 1 line
-
-
-
-Migrate to sagetv-addons license server for licensing validation
-
-------------------------------------------------------------------------
-
-r1551 | derek@battams.ca | 2011-06-14 10:49:54 -0400 (Tue, 14 Jun 2011) | 1 line
-
-
-
-Support latest salicense file format
-
-------------------------------------------------------------------------
-
-r1559 | derek@battams.ca | 2011-06-16 14:34:00 -0400 (Thu, 16 Jun 2011) | 3 lines
-
-
-
-Fixes issue 301
-
-
-
-Fix race condition on plugin startup where multi task client registration could fail even if the license file is valid
-
-------------------------------------------------------------------------
-
-r1560 | derek@battams.ca | 2011-06-20 10:28:42 -0400 (Mon, 20 Jun 2011) | 1 line
-
-
-
-Ensure licensing is only enforced on the server side
-
-------------------------------------------------------------------------
-
-r1563 | derek@battams.ca | 2011-06-20 10:37:52 -0400 (Mon, 20 Jun 2011) | 1 line
-
-
-
-incr min agent ver
-
-------------------------------------------------------------------------
-
-r1565 | derek@battams.ca | 2011-06-20 10:40:05 -0400 (Mon, 20 Jun 2011) | 1 line
-
-
-
-incr min agent ver (again)
-
-------------------------------------------------------------------------
-
-r1566 | derek@battams.ca | 2011-06-20 10:59:54 -0400 (Mon, 20 Jun 2011) | 1 line
-
-
-
-Do NOT access data store from Plugin ctor! How many times must I make this mistake! :(
-
-------------------------------------------------------------------------
-
-r1568 | derek@battams.ca | 2011-06-20 11:04:56 -0400 (Mon, 20 Jun 2011) | 1 line
-
-
-
-incr min agent ver
-
-------------------------------------------------------------------------
-
-r1569 | derek@battams.ca | 2011-06-20 11:38:46 -0400 (Mon, 20 Jun 2011) | 1 line
-
-
-
-Dump license validation log msg to logs when necessary
-
-------------------------------------------------------------------------
-
-	]]></ReleaseNotes>
-
-</SageTVPlugin>
-<SageTVPlugin>
-
   <Name>Windows Sidebar/Desktop Gadget Support</Name>
 
   <Identifier>wingadgetsupport</Identifier>
@@ -10759,65 +11230,6 @@ It leverages the SageTV Online Services YouTube channel for serving high quality
 
 <STVImport>ortus-trailer.stvi</STVImport>
 
-</SageTVPlugin>
-<SageTVPlugin>
-	<Name>sjq-common</Name>
-	<Identifier>sjq-common</Identifier>
-	<Description><![CDATA[
-SJQv4 common classes; do not install manually.
-	]]></Description>
-	<Author>Slugger</Author>
-	<CreationDate>2007.05.02</CreationDate>
-	<ModificationDate>2011.06.20</ModificationDate>
-	<Version beta="true">4.0.0.1569</Version>
-	<ResourcePath>plugins/sjq</ResourcePath>
-	<Webpage>http://sagetv-addons.googlecode.com</Webpage>
-	<Dependency>
-		<JVM/>
-		<MinVersion>1.5.0</MinVersion>
-	</Dependency>
-	<Dependency>
-		<Core/>
-		<MinVersion>7.0.18</MinVersion>
-	</Dependency>
-	<Dependency>
-		<Plugin>GKusnickToolsLib</Plugin>
-		<MinVersion>1.2</MinVersion>
-	</Dependency>
-	<Dependency>
-		<Plugin>log4j</Plugin>
-		<MinVersion>1.2.15</MinVersion>
-	</Dependency>
-	<Dependency>
-		<Plugin>commons-io</Plugin>
-		<MinVersion>1.4</MinVersion>
-	</Dependency>
-	<Dependency>
-		<Plugin>commons-lang</Plugin>
-		<MinVersion>2.4</MinVersion>
-	</Dependency>
-	<Dependency>
-		<Plugin>sagex-h2</Plugin>
-		<MinVersion>1.0.7</MinVersion>
-	</Dependency>
-	<Dependency>
-		<Plugin>somf</Plugin>
-		<MinVersion>1.0.0.1338</MinVersion>
-	</Dependency>
-	<Dependency>
-		<Plugin>sagex-api</Plugin>
-		<MinVersion>7.0.23.2</MinVersion>
-	</Dependency>
-	<Dependency>
-		<Plugin>sjq-listener</Plugin>
-		<MinVersion>4.0.0.1248</MinVersion>
-	</Dependency>
-	<PluginType>Library</PluginType>
-	<Package>
-		<PackageType>JAR</PackageType>
-		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sjq-common-4.0.0.1569.zip</Location>
-		<MD5>ea10d9709dc6e1b86ec34c3cfdd3b50f</MD5>
-	</Package>
 </SageTVPlugin>
 <SageTVPlugin>
 
@@ -14627,86 +15039,6 @@ The weather data is updated no more often than every 30 minutes.
     </Dependency>
 </SageTVPlugin>
 <SageTVPlugin>
-	<Name>sjq-listener</Name>
-	<Identifier>sjq-listener</Identifier>
-	<Description>
-SJQv4 network listener library; do not install manually.
-	</Description>
-	<Author>Slugger</Author>
-	<CreationDate>2007.05.02</CreationDate>
-	<ModificationDate>2011.02.26</ModificationDate>
-	<Version beta="true">4.0.0.1407</Version>
-	<ResourcePath>plugins/sjq</ResourcePath>
-	<Webpage>http://sagetv-addons.googlecode.com</Webpage>
-	<Dependency>
-		<JVM/>
-		<MinVersion>1.5.0</MinVersion>
-	</Dependency>
-	<Dependency>
-		<Core/>
-		<MinVersion>7.0.9</MinVersion>
-	</Dependency>
-	<Dependency>
-		<Plugin>commons-lang</Plugin>
-		<MinVersion>2.4</MinVersion>
-	</Dependency>
-	<Dependency>
-		<Plugin>log4j</Plugin>
-		<MinVersion>1.2.15</MinVersion>
-	</Dependency>
-	<PluginType>Library</PluginType>
-	<Package>
-		<PackageType>JAR</PackageType>
-		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sjq-listener-4.0.0.1407.zip</Location>
-		<MD5>046219089ac990d85892aa63136ef31c</MD5>
-	</Package>
-	<ReleaseNotes>
-Changes since 4.0.0.1070
-
-------------------------------------------------------------------------
-r1070 | derek@battams.ca | 2010-10-14 13:40:38 -0400 (Thu, 14 Oct 2010) | 1 line
-
-Add plugin manifest; update bld process
-------------------------------------------------------------------------
-r1074 | derek@battams.ca | 2010-10-14 16:48:34 -0400 (Thu, 14 Oct 2010) | 1 line
-
-Allow halting of listeners via interruption signal
-------------------------------------------------------------------------
-r1150 | derek@battams.ca | 2010-10-26 14:55:29 -0400 (Tue, 26 Oct 2010) | 1 line
-
-Add ThreadLocal SocketDetails instances so we can properly query socket details about the active connection
-------------------------------------------------------------------------
-r1161 | derek@battams.ca | 2010-10-27 20:55:08 -0400 (Wed, 27 Oct 2010) | 1 line
-
-This is no longer a server only plugin (because of the ListenerClient class)
-------------------------------------------------------------------------
-r1224 | derek@battams.ca | 2010-11-06 10:26:03 -0400 (Sat, 06 Nov 2010) | 1 line
-
-Allow signalling to stop listener
-------------------------------------------------------------------------
-r1227 | derek@battams.ca | 2010-11-06 10:44:21 -0400 (Sat, 06 Nov 2010) | 1 line
-
-Revert changes in 1224
-------------------------------------------------------------------------
-r1248 | derek@battams.ca | 2010-11-09 18:05:56 -0500 (Tue, 09 Nov 2010) | 1 line
-
-Change loggers to instance variables to support cases where multiple packages are using the Listener plugin
-------------------------------------------------------------------------
-r1405 | derek@battams.ca | 2011-02-26 15:38:34 -0500 (Sat, 26 Feb 2011) | 1 line
-
-Add port number to remote addr for easier debugging
-------------------------------------------------------------------------
-r1406 | derek@battams.ca | 2011-02-26 15:49:31 -0500 (Sat, 26 Feb 2011) | 1 line
-
-Adding more verbose logging in Listener
-------------------------------------------------------------------------
-r1407 | derek@battams.ca | 2011-02-26 18:19:24 -0500 (Sat, 26 Feb 2011) | 1 line
-
-Final logging changes
-------------------------------------------------------------------------
-	</ReleaseNotes>
-</SageTVPlugin>
-<SageTVPlugin>
 <Name>Favorites Filter JAR</Name>
 <Identifier>FavoriatesFilterJar</Identifier>
 <Description>Favorites Filter JAR to support Favorites Filter.  This JAR has no use without the Favorites Filter UI Mod.</Description>
@@ -15164,63 +15496,6 @@ CHANGES SINCE LAST RELEASE
     <MD5>fedb2c60308a57216867ed1879972635</MD5>
   </Package>
   <STVImport>Fuzzy_JumpRecordings.stvi</STVImport>
-</SageTVPlugin>
-<SageTVPlugin>
-    <Name>Sage Job Queue (SJQ) Web UI</Name>
-    <Identifier>sjq4web</Identifier>
-    <Description><![CDATA[The SJQv4 web UI.  Load it via the /sage/sjq/sjq4.groovy URI in your SageTV web UI.]]></Description>
-    <Author>Slugger</Author>
-    <CreationDate>2012.01.15</CreationDate>
-    <ModificationDate>2021.12.20</ModificationDate>
-    <Version beta="true">4.0.0.5</Version>
-    <ResourcePath>plugins/sjq4web</ResourcePath>
-    <Webpage>http://sagetv-addons.sf.net</Webpage>
-    <Dependency>
-        <JVM/>
-             <MinVersion>1.5.0</MinVersion>
-    </Dependency>
-    <Dependency>
-        <Core/>
-            <MinVersion>7.1.9.1</MinVersion>
-    </Dependency>
-    <Dependency>
-        <Plugin>groovy</Plugin>
-        <MinVersion>1.7.10</MinVersion>
-    </Dependency>
-    <Dependency>
-        <Plugin>sagex-api</Plugin>
-        <MinVersion>7.1.9.0</MinVersion>
-    </Dependency>
-    <Dependency>
-        <Plugin>web</Plugin>
-        <MinVersion>3.0</MinVersion>
-    </Dependency>
-    <Dependency>
-        <Plugin>sjq</Plugin>
-        <MinVersion>4.0.0</MinVersion>
-    </Dependency>
-    <Dependency>
-        <Plugin>commons-lang</Plugin>
-        <MinVersion>2.4</MinVersion>
-    </Dependency>
-    <Dependency>
-        <Plugin>json</Plugin>
-        <MinVersion>1.0</MinVersion>
-    </Dependency>
-    <Dependency>
-        <Plugin>somf</Plugin>
-        <MinVersion>1.0.0.1338</MinVersion>
-    </Dependency>
-    <PluginType>Standard</PluginType>
-    <Package>
-        <PackageType>System</PackageType>
-        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sjq-web-4.0.0.4.zip</Location>
-        <MD5>4e21cbcfbe498852a879c1e4ae6cc1ff</MD5>
-        <Overwrite>true</Overwrite>
-    </Package>
-    <ReleaseNotes>
-	* updated to remove v7 max version limit and to point to github
-	</ReleaseNotes>
 </SageTVPlugin>
 <SageTVPlugin>
 
@@ -16905,281 +17180,6 @@ CHANGES SINCE LAST RELEASE
                <MD5>119BEC643DCC9499E515AEBD2740C37C</MD5>
                <Overwrite>true</Overwrite> <!-- Defaults to true -->
        </Package>
-</SageTVPlugin>
-<SageTVPlugin>
-	<Name>Sage Job Queue Agent (Task Client)</Name>
-	<Identifier>sjq-agent</Identifier>
-	<Description>
-SJQv4 agent (task client).
-	</Description>
-	<Author>Slugger</Author>
-	<CreationDate>2010.11.03</CreationDate>
-	<ModificationDate>2011.10.18</ModificationDate>
-	<Version beta="true">4.0.0.1650</Version>
-	<ResourcePath>plugins/sjq-agent</ResourcePath>
-	<Webpage>http://sagetv-addons.googlecode.com</Webpage>
-	<Dependency>
-		<JVM/>
-		<MinVersion>1.6</MinVersion>
-	</Dependency>
-	<Dependency>
-		<Core/>
-		<MinVersion>7.0.18</MinVersion>
-	</Dependency>
-	<Dependency>
-		<Plugin>sagex-api</Plugin>
-		<MinVersion>7.0.23.2</MinVersion>
-	</Dependency>
-	<Dependency>
-		<Plugin>log4j</Plugin>
-		<MinVersion>1.2.15</MinVersion>
-	</Dependency>
-	<Dependency>
-		<Plugin>sagex-h2</Plugin>
-		<MinVersion>1.0.8</MinVersion>
-	</Dependency>
-	<Dependency>
-		<Plugin>commons-exec</Plugin>
-		<MinVersion>1.0.1</MinVersion>
-	</Dependency>
-	<Dependency>
-		<Plugin>commons-io</Plugin>
-		<MinVersion>1.4</MinVersion>
-	</Dependency>
-	<Dependency>
-		<Plugin>commons-lang</Plugin>
-		<MinVersion>2.4</MinVersion>
-	</Dependency>
-	<Dependency>
-		<Plugin>sjq-listener</Plugin>
-		<MinVersion>4.0.0.1248</MinVersion>
-	</Dependency>
-	<Dependency>
-		<Plugin>sjq-common</Plugin>
-		<MinVersion>4.0.0.1568</MinVersion>
-	</Dependency>
-	<Dependency>
-		<Plugin>jpathwatch</Plugin>
-		<MinVersion>0.93.1</MinVersion>
-	</Dependency>
-	<Dependency>
-		<Plugin>groovy</Plugin>
-		<MinVersion>1.7.10</MinVersion>
-	</Dependency>
-	<Dependency>
-		<Plugin>somf</Plugin>
-		<MinVersion>1.0.0.1338</MinVersion>
-	</Dependency>
-	<Dependency>
-		<Plugin>commons-cli</Plugin>
-		<MinVersion>1.0</MinVersion>
-	</Dependency>
-	<Dependency>
-		<Plugin>commons-codec</Plugin>
-		<MinVersion>1.3</MinVersion>
-	</Dependency>
-	<Dependency>
-		<Plugin>gtools</Plugin>
-		<MinVersion>1.0.3</MinVersion>
-	</Dependency>
-	<Dependency>
-		<Plugin>ant-launcher</Plugin>
-		<MinVersion>1.8.2</MinVersion>
-	</Dependency>
-	<Dependency>
-		<Plugin>ant-javamail</Plugin>
-		<MinVersion>1.8.2</MinVersion>
-	</Dependency>
-	<Dependency>
-		<Plugin>junit</Plugin>
-		<MinVersion>4.8.2</MinVersion>
-	</Dependency>
-	<Dependency>
-		<Plugin>javamail</Plugin>
-		<MinVersion>1.4.3</MinVersion>
-	</Dependency>
-	<Dependency>
-		<Plugin>myjavatools-xml</Plugin>
-		<MinVersion>5.0</MinVersion>
-	</Dependency>
-	<Dependency>
-		<Plugin>snark</Plugin>
-		<MinVersion>0.5</MinVersion>
-	</Dependency>
-	<PluginType>Standard</PluginType>
-	<Package>
-		<PackageType>JAR</PackageType>
-		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sjq-agent-plugin-4.0.0.1650.zip</Location>
-		<MD5>cf9ca0f029f705c8b2b566c0219e52d0</MD5>
-	</Package>
-	<Package>
-		<PackageType>System</PackageType>
-		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sjq-agent-plugin-conf-4.0.0.1650.zip</Location>
-		<MD5>da9988e634e9ae78a99d17b4f5c50d29</MD5>
-	</Package>
-	<ImplementationClass>com.google.code.sagetvaddons.sjq.agent.Plugin</ImplementationClass>
-	<ReleaseNotes><![CDATA[
-Changes since 4.0.0.1320
-
-------------------------------------------------------------------------
-r1320 | derek@battams.ca | 2010-12-12 20:15:34 -0500 (Sun, 12 Dec 2010) | 1 line
-
-Build fixes
-------------------------------------------------------------------------
-r1324 | derek@battams.ca | 2010-12-13 16:12:12 -0500 (Mon, 13 Dec 2010) | 1 line
-
-update sjq-common
-------------------------------------------------------------------------
-r1325 | derek@battams.ca | 2010-12-13 16:13:38 -0500 (Mon, 13 Dec 2010) | 1 line
-
-update sjq-common for plugin
-------------------------------------------------------------------------
-r1331 | derek@battams.ca | 2011-01-19 15:43:23 -0500 (Wed, 19 Jan 2011) | 1 line
-
-update sjq-common
-------------------------------------------------------------------------
-r1332 | derek@battams.ca | 2011-01-19 15:45:04 -0500 (Wed, 19 Jan 2011) | 1 line
-
-incr min common plugin ver
-------------------------------------------------------------------------
-r1335 | derek@battams.ca | 2011-01-19 16:06:17 -0500 (Wed, 19 Jan 2011) | 1 line
-
-update sjq-common
-------------------------------------------------------------------------
-r1336 | derek@battams.ca | 2011-01-19 16:06:55 -0500 (Wed, 19 Jan 2011) | 1 line
-
-update min common plugin ver
-------------------------------------------------------------------------
-r1340 | derek@battams.ca | 2011-01-19 16:30:11 -0500 (Wed, 19 Jan 2011) | 1 line
-
-Add SOMF plugin to standalone pkgs and as a dep for plugin client
-------------------------------------------------------------------------
-r1350 | derek@battams.ca | 2011-01-23 13:51:32 -0500 (Sun, 23 Jan 2011) | 3 lines
-
-Fixes issue 268
-
-Add :MAPDIR equivalent from SJQv3 to SJQv4
-------------------------------------------------------------------------
-r1353 | derek@battams.ca | 2011-01-28 22:41:06 -0500 (Fri, 28 Jan 2011) | 1 line
-
-Fix bug where file paths were treated incorrectly as case sensitive on Windows for mapDir() function
-------------------------------------------------------------------------
-r1354 | derek@battams.ca | 2011-01-28 23:08:14 -0500 (Fri, 28 Jan 2011) | 1 line
-
-Update mapDir() with Apache Commons calls; make it less bug prone (hopefully)
-------------------------------------------------------------------------
-r1355 | derek@battams.ca | 2011-01-29 17:24:41 -0500 (Sat, 29 Jan 2011) | 4 lines
-
-Fixes issue 274
-Fixes issue 287
-
-Fix 274: Allow log output from tests and tasks longer than 64KB; Fix 287: Allow dynamic modification of exe args from test script
-------------------------------------------------------------------------
-r1357 | derek@battams.ca | 2011-01-30 01:25:16 -0500 (Sun, 30 Jan 2011) | 1 line
-
-Create javadocs for Tools class; rename HelperUtils to Tools to match global name within Groovy env so javadocs aren't confusing
-------------------------------------------------------------------------
-r1364 | derek@battams.ca | 2011-01-31 19:42:26 -0500 (Mon, 31 Jan 2011) | 1 line
-
-Task agent fixes for issue 288
-------------------------------------------------------------------------
-r1366 | derek@battams.ca | 2011-02-02 08:54:20 -0500 (Wed, 02 Feb 2011) | 1 line
-
-update sjq-common; update h2 driver; incr min sjq-common ver for plugin
-------------------------------------------------------------------------
-r1368 | derek@battams.ca | 2011-02-02 09:05:07 -0500 (Wed, 02 Feb 2011) | 1 line
-
-support new Client class from common
-------------------------------------------------------------------------
-r1372 | derek@battams.ca | 2011-02-02 10:20:52 -0500 (Wed, 02 Feb 2011) | 1 line
-
-update sjq-common
-------------------------------------------------------------------------
-r1379 | derek@battams.ca | 2011-02-05 11:01:10 -0500 (Sat, 05 Feb 2011) | 1 line
-
-update sjq-common
-------------------------------------------------------------------------
-r1388 | derek@battams.ca | 2011-02-14 08:48:35 -0500 (Mon, 14 Feb 2011) | 1 line
-
-Fix bug where mapdir setting was not being saved properly when edited from the UI
-------------------------------------------------------------------------
-r1389 | derek@battams.ca | 2011-02-14 19:17:31 -0500 (Mon, 14 Feb 2011) | 1 line
-
-Support SysMsgOnFail task property
-------------------------------------------------------------------------
-r1391 | derek@battams.ca | 2011-02-14 19:22:15 -0500 (Mon, 14 Feb 2011) | 1 line
-
-update sjq-common
-------------------------------------------------------------------------
-r1395 | derek@battams.ca | 2011-02-15 12:37:28 -0500 (Tue, 15 Feb 2011) | 1 line
-
-update sjq-common
-------------------------------------------------------------------------
-r1402 | derek@battams.ca | 2011-02-26 14:49:47 -0500 (Sat, 26 Feb 2011) | 1 line
-
-Fix various bugs with SetArgs and GetArgs commands (manifests as various IOException errors in log files)
-------------------------------------------------------------------------
-r1403 | derek@battams.ca | 2011-02-26 15:00:12 -0500 (Sat, 26 Feb 2011) | 1 line
-
-update sjq-common
-------------------------------------------------------------------------
-r1482 | derek@battams.ca | 2011-04-10 10:41:50 -0400 (Sun, 10 Apr 2011) | 1 line
-
-Update various upstream libs
-------------------------------------------------------------------------
-r1508 | derek@battams.ca | 2011-04-24 09:50:48 -0400 (Sun, 24 Apr 2011) | 3 lines
-
-Fixes issue 293
-
-Fix bug where command args with spaces/special characters in them were being passed to the exe with quotes around them
-------------------------------------------------------------------------
-r1509 | derek@battams.ca | 2011-04-24 10:01:51 -0400 (Sun, 24 Apr 2011) | 1 line
-
-Update manifest
-------------------------------------------------------------------------
-r1510 | derek@battams.ca | 2011-04-24 11:34:31 -0400 (Sun, 24 Apr 2011) | 1 line
-
-Just tell commons-exec not to quote args
-------------------------------------------------------------------------
-r1528 | derek@battams.ca | 2011-05-16 09:05:22 -0400 (Mon, 16 May 2011) | 1 line
-
-Update gtools jar
-------------------------------------------------------------------------
-r1542 | derek@battams.ca | 2011-06-11 11:28:54 -0400 (Sat, 11 Jun 2011) | 1 line
-
-Update gtools lib
-------------------------------------------------------------------------
-r1543 | derek@battams.ca | 2011-06-11 11:32:45 -0400 (Sat, 11 Jun 2011) | 1 line
-
-add commons-net lib to standalone packages
-------------------------------------------------------------------------
-r1544 | derek@battams.ca | 2011-06-11 11:37:04 -0400 (Sat, 11 Jun 2011) | 1 line
-
-Update sagex-api jar
-------------------------------------------------------------------------
-r1561 | derek@battams.ca | 2011-06-20 10:32:08 -0400 (Mon, 20 Jun 2011) | 1 line
-
-Add SOP jar to standalone packages
-------------------------------------------------------------------------
-r1562 | derek@battams.ca | 2011-06-20 10:37:05 -0400 (Mon, 20 Jun 2011) | 1 line
-
-Update sjq-common
-------------------------------------------------------------------------
-r1564 | derek@battams.ca | 2011-06-20 10:39:27 -0400 (Mon, 20 Jun 2011) | 1 line
-
-incr min common ver
-------------------------------------------------------------------------
-r1567 | derek@battams.ca | 2011-06-20 11:04:22 -0400 (Mon, 20 Jun 2011) | 1 line
-
-update sjq-common
-------------------------------------------------------------------------
-r1650 | derek@battams.ca | 2011-10-18 16:42:38 -0400 (Tue, 18 Oct 2011) | 3 lines
-
-Fixes issue 306
-
-Log script output even when the script fails
-------------------------------------------------------------------------
-	]]></ReleaseNotes>
 </SageTVPlugin>
 <SageTVPlugin>
 
