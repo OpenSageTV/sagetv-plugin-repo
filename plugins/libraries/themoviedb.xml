@@ -73,6 +73,6 @@
         <MD5>5209a85a3da7169c1eda29365dc479f9</MD5>
     </Package>
     <ReleaseNotes>
-        Library used by Phoenix and TheMovieDB
+        Library used by Phoenix and TheMovieDB 4
     </ReleaseNotes>
 </SageTVPlugin>
