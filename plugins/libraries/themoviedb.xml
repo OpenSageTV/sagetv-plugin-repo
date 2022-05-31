@@ -4,8 +4,8 @@
     <Description>The Movie DB Library</Description>
     <Author>stuckless</Author>
     <CreationDate>2013.04.19</CreationDate>
-    <ModificationDate>2015.12.12</ModificationDate>
-    <Version>4.1.0</Version>
+    <ModificationDate>2022.05.31</ModificationDate>
+    <Version>4.4.0</Version>
     <PluginType>Library</PluginType>
     <Dependency>
         <Plugin>junit</Plugin>
@@ -69,8 +69,8 @@
     </Dependency>
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/themoviedbapi-4.1.zip</Location>
-        <MD5>CDB25A5D4C85A978FBB4F44D7EB1258C</MD5>
+        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/themoviedbapi-4.4.zip</Location>
+        <MD5>90c06b67a983a394927cd58fc036b9a7</MD5>
     </Package>
     <ReleaseNotes>
         Library used by Phoenix and TheMovieDB
