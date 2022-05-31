@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2022.0531.1306">
+<PluginRepository version="2022.0531.1401">
 <SageTVPlugin>
 
   <Name>BlueTwo (addon for MBDiamond)</Name>
@@ -2692,10 +2692,10 @@ Port of Upcoming Movies import
     <Package>
         <PackageType>JAR</PackageType>
         <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/themoviedbapi-4.4.zip</Location>
-        <MD5>90c06b67a983a394927cd58fc036b9a7</MD5>
+        <MD5>5209a85a3da7169c1eda29365dc479f9</MD5>
     </Package>
     <ReleaseNotes>
-        Library used by Phoenix and TheMovieDB
+        Library used by Phoenix and TheMovieDB 4
     </ReleaseNotes>
 </SageTVPlugin>
 <SageTVPlugin>
