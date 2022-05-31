@@ -70,9 +70,9 @@
     <Package>
         <PackageType>JAR</PackageType>
         <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/themoviedbapi-4.4.zip</Location>
-        <MD5>90c06b67a983a394927cd58fc036b9a7</MD5>
+        <MD5>5209a85a3da7169c1eda29365dc479f9</MD5>
     </Package>
     <ReleaseNotes>
-        Library used by Phoenix and TheMovieDB
+        Library used by Phoenix and TheMovieDB 4
     </ReleaseNotes>
 </SageTVPlugin>
