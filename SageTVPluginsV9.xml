@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2022.0531.1401">
+<PluginRepository version="2022.0618.1259">
 <SageTVPlugin>
 
   <Name>BlueTwo (addon for MBDiamond)</Name>
@@ -2371,9 +2371,13 @@ Port of Upcoming Movies import
     <Description>The TV DB Library</Description>
     <Author>stuckless</Author>
     <CreationDate>2015.12.12</CreationDate>
-    <ModificationDate>2015.12.12</ModificationDate>
-    <Version>1.8.0</Version>
+    <ModificationDate>2022.06.18</ModificationDate>
+    <Version>1.10.0</Version>
     <PluginType>Library</PluginType>
+    <Dependency>
+        <Plugin>jaxws</Plugin>
+        <MinVersion>2.3.1</MinVersion>
+    </Dependency>
     <Dependency>
         <Plugin>junit</Plugin>
         <MinVersion>4.12.0</MinVersion>
@@ -2420,8 +2424,8 @@ Port of Upcoming Movies import
     </Dependency>
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/thetvdbapi-1.8.zip</Location>
-        <MD5>DD0D2A841A8EE0151C0562FF14F42B27</MD5>
+        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/thetvdbapi-1.10.zip</Location>
+        <MD5>3037a68980cc2138fdd4210c19409ca4</MD5>
     </Package>
     <ReleaseNotes>
         Library used by Phoenix and TheTVDB
