@@ -19,8 +19,8 @@ watched status on files, etc
 	<Screenshot><![CDATA[http://forums.sagetv.com/forums/attachment.php?attachmentid=9772&stc=1&d=1266629522]]></Screenshot>
 	<Author>stuckless</Author>
 	<CreationDate>2008.07.19</CreationDate>
-	<ModificationDate>2022.01.14</ModificationDate>
-	<Version>4.302.0</Version>
+	<ModificationDate>2022.07.01</ModificationDate>
+	<Version>4.403.0</Version>
 	<Desktop>false</Desktop>
 	<ResourcePath>plugins/bmtweb</ResourcePath>
 	<Webpage><![CDATA[http://forums.sagetv.com/forums/forumdisplay.php?f=46]]></Webpage>
@@ -32,7 +32,7 @@ watched status on files, etc
 
 	<Dependency>
 		<Plugin>phoenix-core</Plugin>
-		<MinVersion>3.3.1</MinVersion>
+		<MinVersion>3.4.3</MinVersion>
 	</Dependency>
 
 	<Dependency>
@@ -49,21 +49,21 @@ watched status on files, etc
 
 	<Package>
 		<PackageType>System</PackageType>
-		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/bmtweb-war-4.302.0.zip
+		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/bmtweb-war-4.403.0.zip
 		</Location>
-		<MD5>9d855ae60f27a2a23edde618002b6716</MD5>
+		<MD5>795149685ed8c1352c6322144541b9b7</MD5>
 	</Package>
 
 	<!-- context file must be installed after the war file -->
 	<Package>
 		<PackageType>System</PackageType>
-		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/bmtweb-config-4.302.0.zip
+		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/bmtweb-config-4.403.0.zip
 		</Location>
-		<MD5>74b165ebf5f2c2247f5ff164a07d01f6</MD5>
+		<MD5>0e1c5a92091f8c0e3e18caafa7be03c6</MD5>
 	</Package>
 	<ReleaseNotes>
-4.302.0
-* Updated to support security config changes in Jetty Web Server
+4.403.0
+* Updated to allow TMDB as a TV provider and added the new TVDB V4 provider (needs a subscription to use)
 4.300.0
 * Updated for jetty 9 and changes for TMDB to handle TV
 4.100.0

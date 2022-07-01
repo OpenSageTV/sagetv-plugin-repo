@@ -5,15 +5,15 @@
   <Description>HTTP and RMI services for SageTV (HTTP services require Jetty Plugin).  HTTP services includes JSON/JSONP and Xml formats.</Description>
   <Author>stuckless</Author>
   <CreationDate>2008.10.05</CreationDate>
-  <ModificationDate>2021.12.21</ModificationDate>
-  <Version>9.2.6.1</Version>
+  <ModificationDate>2022.06.01</ModificationDate>
+  <Version>9.2.8.1</Version>
   <Desktop>false</Desktop>
   <ResourcePath>sagex-api</ResourcePath>
   <Webpage><![CDATA[http://forums.sagetv.com/forums/showthread.php?t=36044]]></Webpage>
 
   <Dependency>
     <Core/>
-    <MinVersion>9.1.7</MinVersion>
+    <MinVersion>9.2.0</MinVersion>
   </Dependency>
 
   <Dependency>
@@ -28,21 +28,25 @@
 
   <Dependency>
     <Plugin>sagex-api</Plugin>
-    <MinVersion>9.2.6.1</MinVersion>
+    <MinVersion>9.2.8.1</MinVersion>
   </Dependency>
 
   <PluginType>Standard</PluginType>
 
   <Package>
     <PackageType>System</PackageType>
-    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sagex-api-services-9.2.6.1.zip</Location>
-    <MD5>894a8b5cad4147adf8b8fa5d355249e6</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sagex-api-services-9.2.8.1.zip</Location>
+    <MD5>1d013dc2ea83df32c216f12b06849f8c</MD5>
   </Package>
 
   <!-- Plugin Class is in the core sagex-api jar -->
   <ImplementationClass>sagex.plugin.impl.SagexRemoteAPIPlugin</ImplementationClass>
 
   <ReleaseNotes>
+9.2.8
+    * Added support for api's added since 9.0 (mostly related to Person and SD EPG)
+    * Updated generate api to support the new javadocs format that removed frame support
+      * note: all api's have been regenerated as of this version
 9.2.6
     * Build for Github sources and Jetty 9
 9.1.7
