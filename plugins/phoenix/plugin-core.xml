@@ -13,24 +13,30 @@
     </Description>
     <Author>stuckless,jusjoken,bialio,meinmaui</Author>
     <CreationDate>2010.06.05</CreationDate>
-    <ModificationDate>2021.09.18</ModificationDate>
+    <ModificationDate>2022.07.01</ModificationDate>
     <ResourcePath>phoenix-core</ResourcePath>
-    <Version>3.3.1</Version>
+    <Version>3.4.3</Version>
 
     <Webpage><![CDATA[https://github.com/stuckless/sagetv-phoenix-core]]></Webpage>
 
     <Dependency>
         <Plugin>phoenix-api</Plugin>
-        <MinVersion>3.3.1</MinVersion>
+        <MinVersion>3.4.3</MinVersion>
     </Dependency>
     <PluginType>Standard</PluginType>
     <Package>
         <PackageType>System</PackageType>
-        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/phoenix-core-3.3.1.zip</Location>
-        <MD5>bf7393dbdf47a77d0f054268815fffba</MD5>
+        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/phoenix-core-3.4.3.zip</Location>
+        <MD5>76ed0d87414aab4bed149615358b28bb</MD5>
     </Package>
     <ImplementationClass>sagex.phoenix.plugin.PhoenixPlugin</ImplementationClass>
     <ReleaseNotes>
+# 3.4.3
+* Added TMDB as a free TV provider
+* Added TVDB V4 as a TV provider - needs a PIN with a subscription to TVDB
+* Fix: Old TVDB provider should now work on Java 11
+* Fix: if Fanart is disabled (local and central), metadata will still be retrieved unless Automatic  Fanart/Metadata is disabled
+
 # 3.3.1
 * Removed weather functionality as all included providers are no longer available
 * Weather for Gemstone and SageTV is now handled by the GWeather plugin
