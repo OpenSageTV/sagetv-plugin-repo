@@ -4,8 +4,8 @@
     <Description>The Movie DB Library</Description>
     <Author>stuckless</Author>
     <CreationDate>2013.04.19</CreationDate>
-    <ModificationDate>2022.05.31</ModificationDate>
-    <Version>4.4.0</Version>
+    <ModificationDate>2022.07.07</ModificationDate>
+    <Version>4.4.1</Version>
     <PluginType>Library</PluginType>
     <Dependency>
         <Plugin>junit</Plugin>
@@ -29,15 +29,15 @@
     </Dependency>
     <Dependency>
         <Plugin>jackson-core</Plugin>
-        <MinVersion>2.6.3.0</MinVersion>
+        <MinVersion>2.9.8</MinVersion>
     </Dependency>
     <Dependency>
         <Plugin>jackson-annotations</Plugin>
-        <MinVersion>2.6.3.0</MinVersion>
+        <MinVersion>2.9.8</MinVersion>
     </Dependency>
     <Dependency>
         <Plugin>jackson-databind</Plugin>
-        <MinVersion>2.6.3.0</MinVersion>
+        <MinVersion>2.9.8</MinVersion>
     </Dependency>
     <Dependency>
         <Plugin>HttpClient</Plugin>
@@ -57,7 +57,7 @@
     </Dependency>
     <Dependency>
         <Plugin>commons-io</Plugin>
-        <MinVersion>2.4</MinVersion>
+        <MinVersion>2.5</MinVersion>
     </Dependency>
     <Dependency>
         <Plugin>api-common</Plugin>
