@@ -7,8 +7,8 @@
     </Description>
     <Author>stuckless,jusjoken,bialio,meinmaui</Author>
     <CreationDate>2008.10.05</CreationDate>
-    <ModificationDate>2022.07.01</ModificationDate>
-    <Version>3.4.3</Version>
+    <ModificationDate>2022.07.07</ModificationDate>
+    <Version>3.4.3.1</Version>
     <ResourcePath>phoenix-api</ResourcePath>
     <Webpage><![CDATA[https://github.com/stuckless/sagetv-phoenix-core]]></Webpage>
 
@@ -36,7 +36,7 @@
     </Dependency>
     <Dependency>
         <Plugin>commons-io</Plugin>
-        <MinVersion>2.4</MinVersion>
+        <MinVersion>2.5</MinVersion>
     </Dependency>
     <Dependency>
         <Plugin>commons-lang</Plugin>
@@ -52,15 +52,15 @@
     </Dependency>
     <Dependency>
         <Plugin>gson</Plugin>
-        <MinVersion>1.7.1</MinVersion>
+        <MinVersion>2.7</MinVersion>
     </Dependency>
     <Dependency>
         <Plugin>jsoup</Plugin>
-        <MinVersion>1.7.1</MinVersion>
+        <MinVersion>1.11.3</MinVersion>
     </Dependency>
     <Dependency>
         <Plugin>themoviedb</Plugin>
-        <MinVersion>4.4.0</MinVersion>
+        <MinVersion>4.4.1</MinVersion>
     </Dependency>
     <Dependency>
         <Plugin>thetvdbapi</Plugin>
@@ -84,6 +84,8 @@
     </Package>
 
     <ReleaseNotes>
+# 3.4.3.1
+* changes to minimum versions on some dependencies
 # 3.4.3
 * Added TMDB as a free TV provider
 * Added TVDB V4 as a TV provider - needs a PIN with a subscription to TVDB

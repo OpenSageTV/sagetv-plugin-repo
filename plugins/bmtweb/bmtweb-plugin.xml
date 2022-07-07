@@ -19,8 +19,8 @@ watched status on files, etc
 	<Screenshot><![CDATA[http://forums.sagetv.com/forums/attachment.php?attachmentid=9772&stc=1&d=1266629522]]></Screenshot>
 	<Author>stuckless</Author>
 	<CreationDate>2008.07.19</CreationDate>
-	<ModificationDate>2022.07.01</ModificationDate>
-	<Version>4.403.0</Version>
+	<ModificationDate>2022.07.07</ModificationDate>
+	<Version>4.403.1</Version>
 	<Desktop>false</Desktop>
 	<ResourcePath>plugins/bmtweb</ResourcePath>
 	<Webpage><![CDATA[http://forums.sagetv.com/forums/forumdisplay.php?f=46]]></Webpage>
@@ -32,7 +32,7 @@ watched status on files, etc
 
 	<Dependency>
 		<Plugin>phoenix-core</Plugin>
-		<MinVersion>3.4.3</MinVersion>
+		<MinVersion>3.4.3.1</MinVersion>
 	</Dependency>
 
 	<Dependency>
@@ -62,6 +62,8 @@ watched status on files, etc
 		<MD5>0e1c5a92091f8c0e3e18caafa7be03c6</MD5>
 	</Package>
 	<ReleaseNotes>
+4.403.1
+* changes to minimum versions on some dependencies
 4.403.0
 * Updated to allow TMDB as a TV provider and added the new TVDB V4 provider (needs a subscription to use)
 4.300.0
