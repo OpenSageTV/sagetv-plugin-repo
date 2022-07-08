@@ -13,15 +13,15 @@
     </Description>
     <Author>stuckless,jusjoken,bialio,meinmaui</Author>
     <CreationDate>2010.06.05</CreationDate>
-    <ModificationDate>2022.07.01</ModificationDate>
+    <ModificationDate>2022.07.08</ModificationDate>
     <ResourcePath>phoenix-core</ResourcePath>
-    <Version>3.4.3</Version>
+    <Version>3.4.3.1</Version>
 
     <Webpage><![CDATA[https://github.com/stuckless/sagetv-phoenix-core]]></Webpage>
 
     <Dependency>
         <Plugin>phoenix-api</Plugin>
-        <MinVersion>3.4.3</MinVersion>
+        <MinVersion>3.4.3.1</MinVersion>
     </Dependency>
     <PluginType>Standard</PluginType>
     <Package>
@@ -31,6 +31,8 @@
     </Package>
     <ImplementationClass>sagex.phoenix.plugin.PhoenixPlugin</ImplementationClass>
     <ReleaseNotes>
+# 3.4.3.1
+* changes to minimum versions on some dependencies
 # 3.4.3
 * Added TMDB as a free TV provider
 * Added TVDB V4 as a TV provider - needs a PIN with a subscription to TVDB
