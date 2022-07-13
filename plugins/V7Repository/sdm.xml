@@ -1,0 +1,69 @@
+<SageTVPlugin>
+       <Name>Sage Download Manager (SDM)</Name>
+       <Identifier>sdm</Identifier>
+       <Description>SDM is an RPC controllable file download manager capable of downloading via HTTP(S), FTP(S), BitTorrent and others.
+
+On its own, this plugin does not serve much purpose, but combined with other plugins, such as SJQv4, this plugin provides the download services component that other applications are built upon.
+
+This plugin is simply a wrapper around the aria2 command line download utility.  In order for this plugin to operate, you must install aria2 on your SageTV server.  This wrapper uses command line options only available in aria2 v1.11.0 or later.
+       </Description>
+       <Author>Slugger</Author>
+       <CreationDate>2011.03.29</CreationDate>
+       <ModificationDate>2011.03.29</ModificationDate>
+       <Version>1.0.2.1452</Version>
+       <ResourcePath>plugins/sdm</ResourcePath>
+       <Webpage>http://sagetv-addons.googlecode.com</Webpage>
+       <Webpage>http://aria2.sf.net</Webpage>
+       <ServerOnly>true</ServerOnly>
+       <Dependency>
+       		<JVM/>
+       		<MinVersion>1.5.0</MinVersion>
+       	</Dependency>
+       <Dependency>
+                <Core/>
+                <MinVersion>7.0.0</MinVersion>
+       </Dependency>
+        <Dependency>
+                <Plugin>commons-exec</Plugin>
+                <MinVersion>1.0.1</MinVersion>
+        </Dependency>
+        <Dependency>
+                <Plugin>log4j</Plugin>
+                <MinVersion>1.2.15</MinVersion>
+        </Dependency>
+        <Dependency>
+        	<Plugin>sagex-api</Plugin>
+        	<MinVersion>7.0.0</MinVersion>
+        </Dependency>
+        <Dependency>
+        	<Plugin>xmlrpc-clnt</Plugin>
+        	<MinVersion>3.1.3.1</MinVersion>
+        </Dependency>
+       <PluginType>Standard</PluginType>
+       <Package>
+               <PackageType>JAR</PackageType>
+               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sdm-jar-1.0.2.1452.zip</Location>
+               <MD5>895afc6220782b925c665b509afdc74b</MD5>
+               <Overwrite>true</Overwrite> <!-- Defaults to true -->
+       </Package>
+       <Package>
+       			<PackageType>System</PackageType>
+       			<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sdm-conf-1.0.2.1452.zip</Location>
+       			<MD5>81f927587b6b30f18fb1263c65bda607</MD5>
+       			<Overwrite>false</Overwrite>
+       	</Package>
+       	<ImplementationClass>com.google.code.sagetvaddons.sdm.Plugin</ImplementationClass>
+       	<ReleaseNotes>
+1.0.2
+=====
+Add support for configuring a download completed hook.
+
+1.0.1
+=====
+Fix bug where aria2 session file was not being created properly when needed; other minor fixes.
+
+1.0.0
+=====
+Initial release.
+       	</ReleaseNotes>
+</SageTVPlugin>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SageTVPlugin>
+
+  <Name>OneTimeFavorite</Name>
+
+  <Identifier>OneTimeFavoriteSTVi</Identifier>
+
+  <Description>Adds the ability to have a Favorite record only once.  In the Favorite Details menu you will notice a new option - One Time Favorite.</Description>
+
+  <Author>tmiranda</Author>
+
+
+
+  <CreationDate>2011.05.22</CreationDate>
+
+  <ModificationDate>2021.05.16</ModificationDate>
+
+  <Version beta="false">1.02.1</Version>
+
+  <Desktop>false</Desktop>
+
+
+
+  <Dependency>
+
+    <STV>SageTV7</STV>
+
+    <MinVersion>7.1</MinVersion>
+
+  </Dependency>
+
+
+
+  <Dependency>
+
+    <Plugin>OneTimeFavoriteGeneral</Plugin>
+
+    <MinVersion>1.01</MinVersion>
+
+  </Dependency>
+
+
+
+  <PluginType>STVI</PluginType>
+
+
+
+  <Package>
+
+    <PackageType>STVI</PackageType>
+
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/OneTimeFavoriteSTVi-0.02.zip</Location>
+
+    <MD5>7E3D709767FE73B98390BDF88527D8DE</MD5>
+
+  </Package>
+
+
+
+  <STVImport>OneTimeFavoriteSTVi.stvi</STVImport>
+
+
+
+  <ReleaseNotes>
+- Move to V9 repository
+
+Version 1.02:
+
+- Migrated hosting to BinTray. No change in functionality.
+
+
+
+Version 1.01:
+
+- Changed dependency to force use of the latest general plugin.
+
+
+
+Version 1.00:
+
+- First public release.
+
+
+
+Version 0.02:
+
+- Forum release.</ReleaseNotes>
+
+</SageTVPlugin>

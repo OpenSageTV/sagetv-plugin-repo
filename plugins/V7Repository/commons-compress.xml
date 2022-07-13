@@ -1,0 +1,31 @@
+<SageTVPlugin>
+
+  <Name>commons-compress</Name>
+
+  <Identifier>commons-compress</Identifier>
+
+  <Description>SageTV Dependency JAR Plugin for commons-compress - no need to do
+
+wnload directly</Description>
+
+  <Author>Slugger</Author>
+
+  <CreationDate>2012-12-12</CreationDate>
+
+  <ModificationDate>2012.12.22</ModificationDate>
+
+  <Version>1.4.1.1</Version>
+
+  <PluginType>Library</PluginType>
+
+  <Package>
+
+    <PackageType>JAR</PackageType>
+
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/commons-compress-1.4.1.zip</Location>
+
+    <MD5>69d1f9827858a54eee9e950f06ab0921</MD5>
+
+  </Package>
+
+</SageTVPlugin>

@@ -1,0 +1,39 @@
+<SageTVPlugin>
+
+  <Name>YouTube Properties</Name>
+
+  <Identifier>youtubeproperties</Identifier>
+
+  <Author>tmiranda</Author>
+
+  <CreationDate>2016.01.10</CreationDate>
+
+  <ModificationDate>2021.10.28</ModificationDate>
+
+  <Version beta="false">1.031</Version>
+
+  <Desktop>false</Desktop>
+
+
+
+  <Description>Properties file for the YouTube (2015) UI Mod Plugin. No need to install this directly.</Description>
+
+
+
+  <PluginType>Library</PluginType>
+
+
+
+  <Package>
+
+    <PackageType>System</PackageType>
+
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/youtube.properties.zip</Location>
+
+    <MD5>1495A349BA35891F8C90B638E32B15BD</MD5>
+
+  </Package>
+
+
+
+</SageTVPlugin>

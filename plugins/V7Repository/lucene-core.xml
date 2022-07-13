@@ -1,0 +1,17 @@
+<SageTVPlugin>
+  <Name>lucene-core</Name>
+  <Identifier>lucene-core</Identifier>
+  <Description>SageTV Dependency JAR Plugin for lucene-core-3.0.1.jar - no need to download directly</Description>
+  <Author>stuckless</Author>
+  <CreationDate>2010-04-08</CreationDate>
+  <ModificationDate>2010.06.24</ModificationDate>
+  <Version>3.0.1</Version>
+
+  <PluginType>Library</PluginType>
+
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/lucene-core-3.0.1.jar.zip</Location>
+    <MD5>EB9DFA1952D90D5F5875914E764F62D1</MD5>
+  </Package>
+</SageTVPlugin>

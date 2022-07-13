@@ -1,0 +1,32 @@
+<SageTVPlugin>
+  <Name>Season and Episode Number in Details</Name>
+  <Identifier>bialioseasonepisode</Identifier>
+  <CreationDate>2010.09.19</CreationDate>
+  <ModificationDate>2010.09.19</ModificationDate>
+  <Description>Adds TV show's Season and Episode number to detailed info
+  </Description>
+  <Author>bialio</Author>
+  <Version>1.0.1</Version>
+  <Screenshot>http://i253.photobucket.com/albums/hh68/bialio/Sage/SeasonEpisodeScreenShot.jpg</Screenshot>
+
+  <Dependency>
+    <Plugin>phoenix-api</Plugin>
+    <MinVersion>2.0.12</MinVersion>
+  </Dependency>
+
+ <Dependency>
+    <STV>SageTV7</STV>
+    <MinVersion>7.0</MinVersion>
+ </Dependency>
+
+  <PluginType>STVI</PluginType>
+
+  <Package>
+    <PackageType>STVI</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/STV7.seasonepisode.1.0.1.stvi.zip</Location>
+    <MD5>359401E6A05A640CBBFE70B891C575D1</MD5>
+  </Package>
+
+<STVImport>STV7.seasonepisode.1.0.1.stvi</STVImport>
+
+</SageTVPlugin>

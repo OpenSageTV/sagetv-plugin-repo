@@ -1,0 +1,33 @@
+<SageTVPlugin>
+
+  <Name>The Complete Comcast Transparent Channel Logo Pack</Name>
+
+  <Identifier>The Complete Comcast Transparent Channel Logo Pack</Identifier>
+
+  <Description>High quality, transparent channel logos for Comcast subscribers (Originally meant for San Francisco Bay Area Comcast lineup).  Once you install this logo pack, you may need to rename some of the logo file names to match the channel names displayed in the SageTV's Guide.  You can rename the logo filenames under the sageTV program folder located: "..SageTVSageTVChannelLogos".  A big thanks to "karljayne" from our sageTV forums for supplying many of these icons.</Description>
+
+  <Author>mkanet</Author>
+
+  <CreationDate>2011-01-17</CreationDate>
+
+  <ModificationDate>2011-07-16</ModificationDate>
+
+  <Version>1.0.1</Version>
+
+  <Desktop>false</Desktop>
+
+  <PluginType>Images</PluginType>
+
+  <Package>
+
+    <PackageType>ChannelLogo</PackageType>
+
+   <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/ChannelLogos.zip
+
+</Location>
+
+    <MD5>5c0c951afb509c52f0d02b49e8aace51</MD5>
+
+  </Package>
+
+</SageTVPlugin>

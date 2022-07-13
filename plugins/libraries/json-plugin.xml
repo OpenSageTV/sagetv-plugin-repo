@@ -50,11 +50,11 @@
 
 
 
-        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/libraries/json-20140107.zip</Location>
+        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/json-20140107.zip</Location>
 
 
 
-        <MD5>4d25e3f4d99bb0c7705fc31437bb1014</MD5>
+        <MD5>4D25E3F4D99BB0C7705FC31437BB1014</MD5>
 
 
 

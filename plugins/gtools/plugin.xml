@@ -31,8 +31,8 @@
        <PluginType>Standard</PluginType>
        <Package>
                <PackageType>JAR</PackageType>
-               <Location>https://bintray.com/opensagetv/sagetv-plugins/download_file?file_path=gtools-jar-1.0.4.zip</Location>
-               <MD5>1c68f64d64c736668d45438c2e764570</MD5>
+               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/gtools-jar-1.0.4.1.zip</Location>
+               <MD5>7FADDDD8B6BAEF6A13AEBC6CB374DC4E</MD5>
                <Overwrite>true</Overwrite> <!-- Defaults to true -->
        </Package>
       	<ReleaseNotes>
@@ -42,28 +42,28 @@ Fix extender power off on linux platforms
 
 v1.0.3
 ======
- 
-Add ability to power on, power off, reboot, and poll the state of media 
+
+Add ability to power on, power off, reboot, and poll the state of media
 extender devices.  These methods are in the GlobalHelpers class.
- 
+
 v1.0.2
 ======
- 
+
 Add UtilityHelpers class
- 
+
 Reclassify plugin as a library plugin instead of a standard plugin
- 
+
 Add Groovy plugin dependency
- 
+
 v1.0.1
 ======
- 
-Fix bug in EzRssFavorite where IOErrors were not being caught and causing 
+
+Fix bug in EzRssFavorite where IOErrors were not being caught and causing
 scripts to terminate prematurely.
- 
+
 v1.0.0
 ======
- 
+
 Initial release.
        	</ReleaseNotes>
 </SageTVPlugin>

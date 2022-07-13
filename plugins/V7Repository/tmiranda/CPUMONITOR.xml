@@ -1,0 +1,95 @@
+<SageTVPlugin>
+
+
+
+  <Name>CPU Meter</Name>
+
+
+
+  <Identifier>CPUMONITOR</Identifier>
+
+
+
+  <Description>Simple CPU meter for Sage7+.  Puts a bar graph in the header that displays the CPU usage.</Description>
+
+
+
+  <Author>tmiranda</Author>
+
+
+
+  <CreationDate>2010.05.26</CreationDate>
+
+
+
+  <ModificationDate>2015.11.29</ModificationDate>
+
+
+
+  <Version beta="false">1.20</Version>
+
+
+
+  <Desktop>false</Desktop>
+
+
+
+  <Dependency>
+
+    <STV>SageTV7</STV>
+
+    <MinVersion>7.0.23.1</MinVersion>
+
+  </Dependency>
+
+
+
+  <Dependency>
+
+    <Plugin>SYSMONUTILS</Plugin>
+
+    <MinVersion>1.01</MinVersion>
+
+  </Dependency>
+
+
+
+  <PluginType>STVI</PluginType>
+
+
+
+  <Package>
+
+    <PackageType>STVI</PackageType>
+
+    <Location>http://github.com/tmiranda1962/CPU-Meter/releases/download/v1.20/CPUMeter-v1.10.zip</Location>
+
+    <MD5>4CEE2B04B8611B321D9FFF62A9DBEDF9</MD5>
+
+  </Package>
+
+
+
+  <Webpage>http://forums.sagetv.com/forums/showthread.php?p=427341#post427341</Webpage>
+
+
+
+  <STVImport>CPUMeter.stvi</STVImport>
+
+
+
+  <ReleaseNotes>Version 1.20 - Moved hosting from Google Code to GitHub. No functionality changes.
+
+Version 1.10 - Make use of STV hook to increase compatibility with other Plugins that need to put an icon in the header.
+
+Version 1.03 - Fixed a bug that caused a solid yellow line on Linux systems.
+
+Version 1.02 - Internal version that was never released.
+
+Version 1.01 - Fixed bug that caused bar to not show red if CPU usage exceeds 90%.
+
+Version 1.00 - Initial release.</ReleaseNotes>
+
+
+
+</SageTVPlugin>

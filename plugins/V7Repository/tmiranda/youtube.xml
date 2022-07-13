@@ -1,0 +1,279 @@
+<SageTVPlugin>
+  <Name>YouTube (2015)</Name>
+  <Identifier>youtube</Identifier>
+  <Author>tmiranda</Author>
+  <CreationDate>2015.06.30</CreationDate>
+  <ModificationDate>2021.10.28</ModificationDate>
+  <Version beta="false">1.101</Version>
+  <Desktop>false</Desktop>
+
+  <Description>Watch YouTube videos again. Record, search, browse popular, create favorites, and more.</Description>
+
+  <Dependency>
+    <JVM>JVM</JVM>
+    <MinVersion>1.6</MinVersion>
+  </Dependency>
+
+  <Dependency>
+    <Plugin>sagex-api</Plugin>
+    <MinVersion>7.0.0.0</MinVersion>
+  </Dependency>
+
+  <Dependency>
+    <Plugin>gson</Plugin>
+  </Dependency>
+
+  <Dependency>
+    <Plugin>jackson-core</Plugin>
+  </Dependency>
+
+  <Dependency>
+    <Plugin>commons-io</Plugin>
+  </Dependency>
+
+  <OS>Windows</OS>
+  <OS>Linux</OS>
+
+  <Dependency>
+    <Plugin>youtubesupport</Plugin>
+    <MinVersion>1.101</MinVersion>
+  </Dependency>
+
+  <Dependency>
+    <Plugin>youtubeproperties</Plugin>
+    <MinVersion>1.031</MinVersion>
+  </Dependency>
+
+  <Dependency>
+    <Plugin>youtube-dl</Plugin>
+    <MinVersion>2021.05.16</MinVersion>
+  </Dependency>
+
+  <PluginType>STVI</PluginType>
+
+   <Package>
+    <PackageType>STVI</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/YouTubeSTVi-1.10.1.zip</Location>
+    <MD5>876CCE32BDC53D7834242792CB4F506E</MD5>
+  </Package>
+
+  <STVImport>YouTube.stvi</STVImport>
+
+  <ReleaseNotes>
+Version 1.101: moved to github only
+Version 1.10:
+- Updated youtube-dl to version 2017.09.15.
+- Fixed a bug that prevented some Linux users from logging in to their YouTube account.
+- Adapted the STVi to work with STV version 9.0.9.2.
+
+Version 1.09:
+- Updated youtube-dl to version 2017.01.29.
+- Fixed bug in the recording engine introduced in latest build of SageTV9.
+
+Version 1.08:
+- Removed dependency on SageTV7.
+
+Version 1.07:
+- Fixed a bug that caused recording to fail of the user was not logged on to a YouTube account.
+- Fixed a bug that would cause Favorite Channels to be duplicated.
+- Added ability to not fetch watched videos when browsing Favorite Channels.
+- Added ability to exclude Favorite Channels from What's New.
+
+Version 1.06:
+- Forum release.
+
+Version 1.05:
+- Fixed a regression bug that caused downloads to fail when using SageTV version 7.
+
+Version 1.04:
+- Added ability to edit the main menu.
+
+Version 1.03:
+- Added ability to view and record Subscribed channels for the logged on user.
+- What's New will include results from Subscribed channels if the user has selected to view them with Favorites.
+- Added ability to view channel and related playlists of the logged on user.
+- Fixed a bug introduced in v1.02 that prevented logging on to YouTube account.
+- Added error checking for a malformed youtube.properties file.
+- Reorganized Retrieval and sort order options menu.
+- If a video is recorded, watched, and deleted the Watched icon will appear when the video is displayed. (Was actually added in v1.02 but never mentioned in the change log.)
+- Split youtube-dl and youtube.properties into separate PlugIns.
+- Upgraded youtube-dl to the 2016.01.09 version.
+
+Version 1.02:
+- Updated youtube-dl to 2015.12.10 version which addresses a bug that caused errors getting the DASH manifest.
+- Added a check for a hung download job.
+- Added main class that shows JAR version.
+- Added Sort Order preferences for Channel Playlists.
+- Added Menu Option to control if watched videos are displayed.
+- Fixed NPE when there were no TopicIDs.
+- Fixed a bug that would sometimes redownload videos after watching them even if "re-record deleted" was set to false.
+- Added debug information to better detect "re-record deleted" error.
+- Improved error recovery if there was a Java exception in methods used in the BeforeMenuLoad hook. This was causing a "spinning circle of death" error if YouTube was unreachable.
+- Now clears all cached items when the user changes "Maximum Items to Fetch".
+
+Version 1.01:
+- Fixed a bug that prevented some "What's New" items from displaying.
+
+Version 1.0:
+- Added ability to browse Viewing History.
+- Added a Retrieval and Sort Order option to disable grouping What's New by channel.
+- Honor the "ignore leading article" configuration setting when sorting.
+- Fixed a bug that would cause keyword favorites to be re-recorded after being deleted.
+- Fixed a bug that would cause the right panel to display incorrect info after a keyword favorite had been edited.
+- Fixed a bug that would cause too few keyword favorites to be recorded if there were videos in the list that did not exceed the minimum duration.
+- Fixed a bug that would cause the keyword favorite menu to revert if a favorite was changed, then browsed, then returned to keyword favorite menu.
+- Fixed a bug that would throw a NPE if there was one keyword favorite and it was edited but not actually changed.
+
+Version 0.15:
+- Added advanced option to specify if Keyword Favorites are to be included in "What's New" results.
+- Added advanced option to Remove All Keyword Favorites.
+- Added ability to have Keyword Favorites automatically downloaded.
+- Removed advanced option "Remove All Recording History".
+- Slightly rearranged advanced options menu.
+- Fixed a bug that would cause the wrong results being returned (from cache) when the list order had changed.
+
+Version 0.14:
+- Added "Best of YouTube" to the main menu.
+- Rearranged the main menu order.
+- Added advanced option to specify how far from the end of the video (in seconds) is considered "watched".
+- Added "Favorite by Keyword".
+- What's New now honors the sort order preference of "When Listing Favorite Channels".
+- Added option to control he listing order of Videos in What's New.
+- Fixed a bug that would keep the "delete downloaded" option available on the options menu after the file had been deleted.
+- Fixed a bug that would prevent videos with a video ID starting with a hyphen to be played (or downloaded).
+- Fixed a bug that would prevent watched time from being updated if video was playing in preview window or background.
+- Fixed a bug that would cause return to wrong menu if video was playing in preview window stop was pressed.
+
+Version 0.13:
+- Added option to display more videos from the channel if not specifically browsing a Channel.
+- Added wait dialogs to avoid the spinning circle.
+- Added "Recommended for You" to the main menu.  (User must be logged in.)
+- Added option to browse related videos.
+- Added option to change the region (country).
+- If user selects "Display Videos" for a Channel that does not have any Videos, then display the Playlists instead.
+- Removed unused "Display Favorites from Account" option.
+- Improved YouTube response error handling.
+- Improved speed of "What's New".
+- Fixed a bug in "What's New" that would cause an error if the channel title was less than 10 characters long.
+
+Version 0.12:
+- Added "What's New" to the main menu.
+- Added Menu Appearance to the options menu.
+- Added option to Set/Clear Watched for all videos in a Channel.
+- If search history is disabled, do not allow cycling through existing history in the search dialog.
+- Rearranged main options menu.
+
+Version 0.11:
+- Added ability to log on to an actual YouTube account.
+- Added option to sort Favorite Channels, Playlists and Videos alphabetically.
+- Added option to only record Favorites that exceed a minimum duration.
+- Added support for boolean operators NOT (-) and OR (|) when searching.
+- When displaying a list make sure focus is set to the first element in the list.
+- Fixed a bug that would cause Favorites to not be recorded after an error in FavoritesManager or receiving a 'backend error' from YouTube.
+- Fixed a bug that would cause the focused item to always be displayed at the top of the list when returning to a menu.
+- Fixed a bug that would cause watched bars to not be displayed when a video was manually set to Watched.
+- Fixed a bug that would cause preview area to display default image when returning to the YouTube menu from another menu.
+- Visual enhancements to icon area in name panel and preview panel.
+
+Version 0.10:
+- When Favorite options are changed, check for new Favorites immediately.
+- Added advanced option to check for new Favorites immediately.
+- Added ability to change Favorite recording options from the videos menu.
+- Added ability to independently control the ordering for video search, channel search, video list and channel list.
+- Changed menu launch mechanism to avoid having the old OnlineVideo logic executed.
+- Fixed a bug that would cause Favorites to get constantly re-recorded even if they were already imported into the database.
+
+Version 0.09:
+- Added ability to have new Videos from Favorite channels automatically downloaded.
+- When browsing channels right panel now shows video and subscriber count.
+- Added more caching to speed up reloading of options menus for Channels and Videos.
+- Added advanced options to clear Favorites, clear Search History and to disable search history.
+- To help recovering from YouTube internal errors, do not cache empty lists.
+- Fixed a bug that would allow a user to edit the recording queue on a SageClient.
+- Fixed a bug that would cause the plugin to fail if it was disabled in the Plugin Manager and then re-enabled.
+
+Version 0.08:
+- Added ability to record (download) one or more YouTube videos. Recording options are available on the Options menu.
+- Improvements to main menu.
+- Added icon fade in/out effects.
+- Added search history. In the Search dialog the Skip Forward and Skip Backward keys will cycle through the history.
+- Added ability to set and clear watched status for a video.
+- Added ability to select download format. Default is 'best'. See here for options: https://github.com/rg3/youtube-dl#format-selection
+- Added advanced option to display available video formats.
+- Now honors the setting "Use wrap-around scrolling in single column vertical lists". (The setting is located in Setup->Detailed Setup->Customize)
+- Performance enhancements: Caches search conversions, the video URL, and video format so subsequent requests are faster.
+- If the Options key is pressed in the Search dialog, abandon the search.
+- Fixed a bug introduced in beta 0.07 that caused searches to fail if there were more than 50 matches.
+- Fixed a bug that would cause logging level on SageClient to not be reflected on the server.
+- Fixed a bug that would show watched bars (for VideoObject) even if they were disabled.
+- Added dependency of youtubesupport (the recording engine).
+- Known bug: Clicking on the preview window in a SageClient does not activate the OSD.
+
+Version 0.07:
+- Added Linux support.
+- Improvements to main menu.
+- Added option to change the logging level.
+- Added ability to search for Videos and Channels related to the current Video or Channel.
+- Display view count for Channels as well as Videos.
+- Improvements to video information and channel information dialogs.
+- Display dates, durations, and view counts in better formats.
+- Improved performance by caching items that are likely to be fetched frequently.
+- Fixed a bug that caused the OnDisc icon to not be displayed.
+- Fixed a bug that would cause some unneeded processes to continue to run if youtube-dl generated an exception.
+- Fixed a bug that would cause an error if the temp file location was on a different filesystem than SageTV.
+- Added commons-io dependency.
+
+Version 0.06:
+- Added support for Right arrow keystroke.
+- Added support for watched bars and marker.
+- Added option to delete file if it has already been downloaded.
+- Added option to resume watching.
+- Added option to download to alternate location.
+- Added OSD information when doing progressive playback.
+- Added dialog showing progress when searching for Channels or Videos.
+- Added dialog showing progress when setting up for download.
+- Added icon area to right panel. (HD, Watched, Downloaded.)
+- Fixed a bug that caused thumbnail to display over the preview window if preview was active.
+- Fixed a bug that caused downloaded video to be deleted prematurely.
+- Enhanced display consistency by converting all SearchResult objects to their native form.
+- Enhancements to options menus.
+- Internal improvements for efficiencies and future enhancements.
+
+Version 0.05:
+- If file download is necessary and it has already been downloaded, don't download it again.
+- Options menus now have basic/advanced mode.
+- Added basic support for Activities.
+- Display highest resolution thumbnail available.
+- Improvements to right side panels.
+- Various bug fixes.
+
+Version 0.04:
+- Added Playlist support.
+- Added options menu to Channels.
+- Added option to delete downloaded files immediately after watching.
+- When navigating backwards through the menus the focus is now set properly.
+- Clicking on the arrow in the menu title now goes back to the proper menu.
+- After watching a video the menu returns to the proper place.
+- Various cosmetic improvements.
+
+Version 0.03:
+- Fixed bug preventing videos from playing on Windows OS with UAC enabled.
+- Moved scroll bar to left side of the pane.
+- Added options menu.
+- Videos now download to same temp directory as used by the default STV.
+
+Version 0.02:
+- Added menu animations.
+- Cleaned up right side of the menu.
+- Added scroll bar.
+- Added detailed information for Videos.
+- Added basic options menu for Videos.
+- Improved search for Videos.
+- Added search channels by keyword.
+- Added dependencies for gson, jackson-core.
+- Added dependency for JVM 1.6 or higher.
+
+Version 0.01:
+- Proof of concept.</ReleaseNotes>
+
+</SageTVPlugin>

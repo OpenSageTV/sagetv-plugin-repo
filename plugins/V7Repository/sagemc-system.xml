@@ -1,0 +1,37 @@
+<SageTVPlugin>
+  <Name>SageMC - Core System</Name>
+  <Identifier>sagemc-system</Identifier>
+  <Description>SageMC STV Replacement for SageTV.  This is the core SageMC system.  Normally you would not install this plugin directly, but rather install the SageMC plugin that will automatically install this plugin as well.</Description>
+  <Author>MeInMaui, flachbar</Author>
+  <CreationDate>2006.11.17</CreationDate>
+  <ModificationDate>2010.06.10</ModificationDate>
+  <Version>7.0.10</Version>
+  <Webpage><![CDATA[http://forums.sagetv.com/forums/downloads.php?do=file&id=141]]></Webpage>
+
+  <PluginType>Library</PluginType>
+
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sagemc-jar-7.0.10.zip</Location>
+    <MD5>b88aaf0a27eceb0afe393ae460ec4b15</MD5>
+  </Package>
+
+  <Package>
+    <PackageType>System</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sagemc-system-7.0.10.zip</Location>
+    <MD5>c894cac242f1b0af6eb1a3253fc25282</MD5>
+  </Package>
+
+  <Package>
+    <PackageType>System</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sagemc-system-configuration-7.0.10.zip</Location>
+    <MD5>b648fd480e011aee69394618354b65cf</MD5>
+    <Overwrite>false</Overwrite>
+  </Package>
+
+  <Package>
+    <PackageType>System</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sagemc-stv-themes-7.0.10.zip</Location>
+    <MD5>8d9d8ea977520d2b7c64d03287aa606d</MD5>
+  </Package>
+</SageTVPlugin>

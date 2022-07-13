@@ -1,0 +1,26 @@
+<SageTVPlugin>
+ <Name>Basic Sleep Timer</Name>
+ <Identifier>BasicSleepTimer</Identifier>
+ <Description>Adds basic sleep timer support.  Accessible from the options menu when watching a video file.</Description>
+ <Author>jvl711</Author>
+ <CreationDate>2010.05.23</CreationDate>
+ <ModificationDate>2010.05.26</ModificationDate>
+ <Version beta="true">1.1.3</Version>
+ <Desktop>false</Desktop>
+ <Dependency>
+<STV>SageTV7</STV>
+<MinVersion>7.0</MinVersion>
+</Dependency>
+<PluginType>STVI</PluginType>
+ <Package>
+   <PackageType>STVI</PackageType>
+   <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/Basic_Sleep_Timer_1.1.3.zip</Location>
+   <MD5>CFBB89DB31CFC6BBF15E5C957C9ABF96</MD5>
+ </Package>
+<STVImport>Basic_Sleep_Timer.stvi</STVImport>
+<ReleaseNotes>
+1.0.0 - Inital build
+1.1.3 - Added and option to cancel when sage is about to go to sleep.
+      - Changed the sleep command from SageCommand("Power Off") -> Exit()
+</ReleaseNotes>
+</SageTVPlugin>

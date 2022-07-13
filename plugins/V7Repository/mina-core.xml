@@ -1,0 +1,16 @@
+<SageTVPlugin>
+  <Name>Apache Mina Core</Name>
+  <Identifier>mina-core</Identifier>
+  <Description>SageTV Dependency JAR Plugin for Apache Mina Core (mina-core-1.1.7.jar) - no need to download directly</Description>
+  <Author>shadeBlue.com</Author>
+  <CreationDate>2010.07.04</CreationDate>
+  <ModificationDate>2010.07.04</ModificationDate>
+  <Version>1.1.7</Version>
+  <Desktop>false</Desktop>
+  <PluginType>Library</PluginType>
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/mina-core-1.1.7.zip</Location>
+    <MD5>895E26D67E6899A188E3AAAD4870D286</MD5>
+  </Package>
+</SageTVPlugin>

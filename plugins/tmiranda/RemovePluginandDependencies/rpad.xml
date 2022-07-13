@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SageTVPlugin>
+
+
+
+	<Name>Remove Plugin and Dependencies</Name>
+
+  	<Identifier>rpad</Identifier>
+
+  	<Description>Adds the ability to completely uninstall a Plugin and all of its dependencies.  Also provides the ability to search for and remove unused Plugins.</Description>
+
+  	<Author>tmiranda</Author>
+
+  	<CreationDate>2010.12.05</CreationDate>
+
+  	<ModificationDate>2021.05.16</ModificationDate>
+
+  	<Version beta="false">0.06.1</Version>
+
+  	<Desktop>false</Desktop>
+
+	<Webpage>http://forums.sagetv.com/forums/showthread.php?p=470570#post470570</Webpage>
+
+
+
+  	<Dependency>
+
+    	<STV>SageTV7</STV>
+
+      	<MinVersion>7.0.17</MinVersion>
+
+  	</Dependency>
+
+
+
+	<Dependency>
+
+		<JVM/>
+
+		<MinVersion>1.6</MinVersion>
+
+	</Dependency>
+
+
+
+	<Dependency>
+
+		<Plugin>sagex-api</Plugin>
+
+		<MinVersion>7.0.19</MinVersion>
+
+	</Dependency>
+
+
+
+  	<PluginType>STVI</PluginType>
+
+
+
+  	<Package>
+
+    		<PackageType>STVI</PackageType>
+
+    		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/RemovePluginAndDependencies.zip</Location>
+
+    		<MD5>5453ED6E5B3F005AD51BD3A42E25E3EB</MD5>
+
+  	</Package>
+
+
+
+  	<Package>
+
+    		<PackageType>JAR</PackageType>
+
+    		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/RPAD.zip</Location>
+
+    		<MD5>3379FEE2B2EEC5D7B8F03F7009FE6043</MD5>
+
+  	</Package>
+
+
+
+  	<STVImport>RemovePluginAndDependencies.stvi</STVImport>
+
+
+
+  	<ReleaseNotes>Version 0.6.1:
+- Move to V9 Repository
+
+Version 0.6:
+
+- Migrated hosting to BinTray. No change in functionality.
+
+
+
+Beta 0.5:
+
+- Fixed bug that caused needed dependencies to be marked as unneeded.
+
+- Fixed bug that caused loglevel to always be set to WARN.
+
+
+
+Beta 0.4 - First public beta.</ReleaseNotes>
+
+</SageTVPlugin>

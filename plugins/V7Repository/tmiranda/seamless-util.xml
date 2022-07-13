@@ -1,0 +1,41 @@
+<SageTVPlugin>
+
+
+
+  <Name>seamless-util</Name>
+
+  <Identifier>seamless-util</Identifier>
+
+  <Author>tmiranda</Author>
+
+  <CreationDate>2012.02.20</CreationDate>
+
+  <ModificationDate>2015.11.15</ModificationDate>
+
+  <Version beta="false">1.1.0</Version>
+
+  <Desktop>false</Desktop>
+
+
+
+  <Description>seamless-util library for SageTV. No need to download directly.</Description>
+
+
+
+  <PluginType>Library</PluginType>
+
+
+
+  <Package>
+
+    <PackageType>JAR</PackageType>
+
+    <Location>http://github.com/tmiranda1962/cling/releases/download/2.0.1/seamless-util-1.1.0.zip</Location>
+
+    <MD5>4214D4D2D9A389F9F1FC35FC8B733C5A</MD5>
+
+  </Package>
+
+
+
+</SageTVPlugin>

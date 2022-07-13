@@ -1,0 +1,47 @@
+<SageTVPlugin>
+
+
+
+  <Name>zADMAPI</Name>
+
+  <Identifier>jusjokenADMAPI</Identifier>
+
+  <Description>ADM API- Do not install directly - just a dependency for ADM!</Description>
+
+  <Author>jusjoken</Author>
+
+  <CreationDate>2011.06.24</CreationDate>
+
+  <ModificationDate>2021.12.13</ModificationDate>
+
+  <Version beta="true">0.504.1</Version>
+
+  <Desktop>false</Desktop>
+
+
+
+  <Dependency>
+
+    <Plugin>sagex-api</Plugin>
+
+    <MinVersion>7.1.8</MinVersion>
+
+  </Dependency>
+
+
+
+  <PluginType>Library</PluginType>
+
+  <Package>
+
+    <PackageType>JAR</PackageType>
+
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/ADMAPI_0.503.zip</Location>
+
+    <MD5>76086685093738F4E03A8C3503454BDB</MD5>
+
+  </Package>
+
+
+
+</SageTVPlugin>

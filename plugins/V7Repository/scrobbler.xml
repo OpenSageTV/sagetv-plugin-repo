@@ -1,0 +1,73 @@
+<SageTVPlugin>
+ <Name>Scrobbler</Name>
+ <Identifier>scrobbler</Identifier>
+ <Version>0.2</Version>
+ <Description><![CDATA[A last.fm scrobbler plugin.
+
+In order to use the plugin, it needs to be configured and enabled.
+
+Option 1 - Client installation
+When installed in a SageTV Client (SageTVClient.exe), configure the plugin using the plugin configuration screen.
+
+Option 2 - Server installation
+When installed in a SageTV server client (SageTV.exe), you have to manually configure the plugin as follows if a plugin configuration screen does not appear.
+To manually configure the plugin, you will need to add your last.fm username and password to SageClient.properties and also set the plugin to be active.
+
+Any time a setting is changed, you will need to disable and enable the plugin.
+
+The following settings are stored in SageClient.properties:
+scrobbler/scrobble=true or false
+scrobbler/username=your last.fm username
+scrobbler/password=your last.fm password
+
+NOTE: The password is stored in plain text. Secure access to it to your liking.]]>
+ </Description>
+ <Author>smilingfrog.com</Author>
+ <PluginType>Standard</PluginType>
+ <CreationDate>2010-07-15</CreationDate>
+ <ModificationDate>2010-08-16</ModificationDate>
+ <ReleaseNotes><![CDATA[REVISION HISTORY
+0.1
+Initial Version
+
+0.2
+Updated last.fm client id
+Added additional debug logging for scenario where media file is not seen as a music file]]>
+ </ReleaseNotes>
+ <ResourcePath>plugins/scrobbler</ResourcePath>
+ <Webpage>http://code.google.com/p/sagetv-scrobbler</Webpage>
+ <ImplementationClass>com.smilingfrog.sagetv.scrobbler.Plugin</ImplementationClass>
+ <Desktop>true</Desktop>
+ <Package>
+  <PackageType>JAR</PackageType>
+  <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/scrobbler-jar-0.2.zip</Location>
+  <MD5>c9441cda7681da45fdada08b1c6b3623</MD5>
+  <Overwrite>true</Overwrite>
+ </Package>
+ <Package>
+  <PackageType>System</PackageType>
+  <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/scrobbler-conf-0.2.zip</Location>
+  <MD5>b675a0fd5c5a4089bf53c083e81ef087</MD5>
+  <Overwrite>true</Overwrite>
+ </Package>
+ <Dependency>
+  <JVM/>
+  <MinVersion>1.5</MinVersion>
+ </Dependency>
+ <Dependency>
+  <Core/>
+  <MinVersion>7.0.11</MinVersion>
+ </Dependency>
+ <Dependency>
+  <Plugin>log4j</Plugin>
+  <MinVersion>1.2.15</MinVersion>
+ </Dependency>
+ <Dependency>
+  <Plugin>GKusnickToolsLib</Plugin>
+  <MinVersion>1.1.16</MinVersion>
+ </Dependency>
+ <Dependency>
+  <Plugin>last.fm-bindings</Plugin>
+  <MinVersion>2009.07.03</MinVersion>
+ </Dependency>
+</SageTVPlugin>

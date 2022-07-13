@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SageTVPlugin>
+ <Name>Restart Sage from Setup Menu</Name>
+ <Identifier>SetupRestartSTV7</Identifier>
+ <Description><![CDATA[Adds an option to the Setup menu to restart the SageTV server.]]> </Description>
+ <Author>skiingwiz</Author>
+ <CreationDate>2010.06.20</CreationDate>
+ <ModificationDate>2021.05.16</ModificationDate>
+ <Version>1.0.3.1</Version>
+ <Desktop>false</Desktop>
+ <Dependency>
+  <STV>SageTV7</STV>
+  <MinVersion>7.0</MinVersion>
+ </Dependency>
+<PluginType>STVI</PluginType>
+ <Package>
+   <PackageType>STVI</PackageType>
+   <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/STV7-setup-restart-1.0.stvi.zip</Location>
+   <MD5>995D8F461117B9435E799B10188BB680</MD5>
+ </Package>
+ <Webpage><![CDATA[http://forums.sagetv.com/forums/showthread.php?t=49258]]></Webpage>
+<STVImport>STV7-setup-restart-1.0.stvi</STVImport>
+<ReleaseNotes>
+If this is run on an installation that does not run SageTV as a service, it will restart the local instance.
+Moved to V9 repository
+1.0.2 - Moved Downloads from Source Forge to BinTray
+1.0.1 - Moved Downloads from Google Code to Source Forge
+1.0   - Initial Release for STV7
+</ReleaseNotes>
+</SageTVPlugin>

@@ -1,0 +1,18 @@
+<SageTVPlugin>
+  <Name>xstream</Name>
+  <Identifier>xstream</Identifier>
+  <Description>SageTV Dependency JAR Plugin for xstream-1.3.1 - no need to download directly</Description>
+  <Author>jphipp</Author>
+  <CreationDate>2011-01-28</CreationDate>
+  <ModificationDate>2011.01.28</ModificationDate>
+  <Version>1.3.1</Version>
+  <Desktop>false</Desktop>
+
+  <PluginType>Library</PluginType>
+
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/xstream-1.3.1.jar.zip</Location>
+    <MD5>83ace31da72f9b13045f02ad0cb15ac6</MD5>
+  </Package>
+</SageTVPlugin>

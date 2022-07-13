@@ -1,0 +1,25 @@
+<SageTVPlugin>
+  <Name>Recipe (Text File) Viewer</Name>
+  <Identifier>recipeviewer</Identifier>
+  <Description>This is a port of the SageMC Recipe Viewer.  It allows you to specify a home directory and then browse, search, view, and print recipes (as text files).  It is useful as a recipe viewer but can be used for any text files.  A Recipes submenu item is added to the main menu Search item.</Description>
+  <Author>cncb</Author>
+  <CreationDate>2010.08.29</CreationDate>
+  <ModificationDate>2010.09.05</ModificationDate>
+  <Version beta="false">1.1</Version>
+  <Desktop>false</Desktop>
+ <Dependency>
+<STV>SageTV7</STV>
+<MinVersion>7.0</MinVersion>
+</Dependency>
+<PluginType>STVI</PluginType>
+  <Package>
+    <PackageType>STVI</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/recipes-STVI-1-1.zip</Location>
+    <MD5>1DADF4E2AFFBD75485DEAAC255BF0B40</MD5>
+  </Package>
+<Webpage>http://forums.sagetv.com/forums/showthread.php?p=445342#post445342</Webpage>
+<Screenshot>http://forums.sagetv.com/forums/attachment.php?attachmentid=11061</Screenshot>
+<Screenshot>http://forums.sagetv.com/forums/attachment.php?attachmentid=11062</Screenshot>
+<STVImport>recipes-1-1.stvi</STVImport>
+<ReleaseNotes></ReleaseNotes>
+</SageTVPlugin>

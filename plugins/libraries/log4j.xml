@@ -10,7 +10,7 @@
     <PluginType>Library</PluginType>
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/libraries/log4j-1.2.17.zip</Location>
-        <MD5>cb61134bd8cce8030647a86c472f2606</MD5>
+        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/log4j-1.2.17.zip</Location>
+        <MD5>5D4C7035FE728C444B4E14FB68A84559</MD5>
     </Package>
 </SageTVPlugin>

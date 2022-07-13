@@ -1,0 +1,145 @@
+<SageTVPlugin>
+
+
+
+  <Name>ActiveAspectRatios</Name>
+
+  <Identifier>ActiveAspectRatios</Identifier>
+
+  <Description>Automatically adjusts aspect ratio using information provided by comskip.exe.</Description>
+
+  <Author>tmiranda</Author>
+
+
+
+  <CreationDate>2011.05.15</CreationDate>
+
+  <ModificationDate>2015.04.09</ModificationDate>
+
+  <Version beta="false">1.20</Version>
+
+
+
+  <Desktop>false</Desktop>
+
+
+
+  <Webpage>http://forums.sagetv.com/forums/showthread.php?t=55730</Webpage>
+
+
+
+  <Dependency>
+
+    <STV>SageTV7</STV>
+
+    <MinVersion>7.1</MinVersion>
+
+  </Dependency>
+
+
+
+  <Dependency>
+
+    <Plugin>sagex-api</Plugin>
+
+    <MinVersion>7.0.23.6</MinVersion>
+
+  </Dependency>
+
+
+
+  <PluginType>STVI</PluginType>
+
+
+
+  <Package>
+
+    <PackageType>STVI</PackageType>
+
+    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/ActiveAspectRatios/ActiveAspectRatiosSTVi-1.20.zip</Location>
+
+    <MD5>8C0D69DA6A3472A9FD7DBD718A8BBE67</MD5>
+
+  </Package>
+
+
+
+  <STVImport>ActiveAspectRatiosSTVi.stvi</STVImport>
+
+
+
+  <Package>
+
+    <PackageType>JAR</PackageType>
+
+    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/ActiveAspectRatios/ActiveAspectRatios-1.20.zip</Location>
+
+    <MD5>11266782A7551C13F3044A4276BDC0E5</MD5>
+
+  </Package>
+
+
+
+  <ReleaseNotes>Version 1.20:
+
+- Added an informational pop-up on the first run warning that comskip.ini must be setup properly.
+
+- Added an option to disable showing current aspect ratio on timeline.
+
+- When displaying the OSD Options Menu give the user the choice to display the AAR Options or go to the default Aspect Ratio Mode sub menu.
+
+- If no ratio information is available then the Aspect Ratio Toggle key will have the default behavior.
+
+- Do not allow user to exclude the channel for an Airing that does not have a channel.
+
+- Fixed a NPE if a non-mpg video was missing an .aspects file.
+
+- Fixed a bug that caused the close button to disappear on the mode mapping menu.
+
+- Fixed a bug that caused the Options menu to be too narrow if the user was not using advanced options in other menus.
+
+- Fixed a bug that would reset aspect ratio to default if show had no aspect ratio information and the user had selected a custom aspect ratio.
+
+- Migrated hosting to bintray.
+
+
+
+Version 1.10:
+
+- Migrated to SourceForge.
+
+
+
+Version 1.00:
+
+- First public release.
+
+
+
+Version 0.04 Beta:
+
+- Added sagex dependency to manifest.
+
+- Fixed bug that caused timeline to show 0 for some shows without aspect ratio information.
+
+- Reduced debug information produced by STVi.
+
+
+
+Version 0.03 Beta:
+
+- Fixed bug that caused plugin to ignore default AR Mode.
+
+- Added ability to remove channels from the list of channels with fixed AR Modes.
+
+- Added Aspect listener in various dialogs.
+
+- Various cosmetic changes.
+
+
+
+Version 0.02 Beta:
+
+- First forum release.</ReleaseNotes>
+
+</SageTVPlugin>

@@ -1,0 +1,64 @@
+<SageTVPlugin>
+       <Name>Sage Artifact Delete (SAD)</Name>
+       <Identifier>sad</Identifier>
+       <Description>Sage Artifact Delete is a simple plugin that will listen for media object deletion events and will delete any artifacts associated with the media object automatically.
+
+This plugin is ideal for automatic cleanup of comskip files (edl), properties files, log files, etc.  By default the artifact deletion is delayed for 30 seconds.  This gives other processes a chance to copy the artifacts before SAD deletes them.
+       </Description>
+       <Author>Slugger</Author>
+       <CreationDate>2010.05.22</CreationDate>
+       <ModificationDate>2010.09.24</ModificationDate>
+       <Version>1.0.1.1052</Version>
+       <ResourcePath>plugins/sad</ResourcePath>
+       <Webpage>http://sagetv-addons.googlecode.com</Webpage>
+       <ServerOnly>true</ServerOnly>
+       <Dependency>
+       		<JVM/>
+       		<MinVersion>1.5.0</MinVersion>
+       	</Dependency>
+       <Dependency>
+                <Core/>
+                <MinVersion>7.0.9</MinVersion>
+       </Dependency>
+		<Dependency>
+                <Plugin>GKusnickToolsLib</Plugin>
+                <MinVersion>1.2</MinVersion>
+        </Dependency>
+        <Dependency>
+                <Plugin>commons-io</Plugin>
+                <MinVersion>1.4</MinVersion>
+        </Dependency>
+        <Dependency>
+                <Plugin>log4j</Plugin>
+                <MinVersion>1.2.15</MinVersion>
+        </Dependency>
+        <Dependency>
+        	<Plugin>phoenix-api</Plugin>
+        	<MinVersion>1.73.2</MinVersion>
+        </Dependency>
+        <Dependency>
+        	<Plugin>sagex-api</Plugin>
+        	<MinVersion>7.0.9.0</MinVersion>
+        </Dependency>
+       <PluginType>Standard</PluginType>
+       <Package>
+               <PackageType>JAR</PackageType>
+               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sad-jar-1.0.1.1052.zip</Location>
+               <MD5>896490d2d1223910242f327c0b506ea7</MD5>
+               <Overwrite>true</Overwrite> <!-- Defaults to true -->
+       </Package>
+       <Package>
+       			<PackageType>System</PackageType>
+       			<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sad-conf-1.0.1.1052.zip</Location>
+       			<MD5>bef90ce9ac97579cf8bbd68fb42a1d47</MD5>
+       			<Overwrite>false</Overwrite>
+       	</Package>
+       	<ImplementationClass>com.google.code.sagetvaddons.sad.Plugin</ImplementationClass>
+       	<ReleaseNotes>
+Changes since v1.0.0
+
+* Update required minimum version of GKusnick API wrappers
+* Mark plugin as a server only plugin
+* Update ProGuard settings for class optimization settings
+       	</ReleaseNotes>
+</SageTVPlugin>

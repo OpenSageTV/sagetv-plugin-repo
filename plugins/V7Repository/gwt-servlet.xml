@@ -1,0 +1,22 @@
+<SageTVPlugin>
+       <Name>GWT Servlet Jar</Name>
+       <Identifier>gwt-servlet</Identifier>
+       <Description>GWT servlet jar - dependency only</Description>
+       <Author>Slugger</Author>
+       <CreationDate>2010.08.24</CreationDate>
+       <ModificationDate>2010.08.24</ModificationDate>
+       <Version>2.0.4</Version>
+       <ResourcePath>plugins/gwt-servlet</ResourcePath>
+       <Webpage>http://code.google.com/webtoolkit/</Webpage>
+       <PluginType>Library</PluginType>
+       <Dependency>
+          <JVM/>
+          <MinVersion>1.5.0</MinVersion>
+       </Dependency>
+       <Package>
+               <PackageType>JAR</PackageType>
+               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/gwt-servlet-2.0.4.zip</Location>
+               <MD5>E5AED0BD82F3E602CD0401ABBAB79830</MD5>
+               <Overwrite>true</Overwrite> <!-- Defaults to true -->
+       </Package>
+</SageTVPlugin>

@@ -1,0 +1,20 @@
+<SageTVPlugin>
+<Name>sageortus library</Name>
+<Identifier>sageortus</Identifier>
+<Description>
+SageTV Dependency JAR Plugin for sageortus.jar - no need to download directly
+</Description>
+<Author>ortus</Author>
+<CreationDate>2010-05-29</CreationDate>
+<ModificationDate>2010-05-29</ModificationDate>
+<Version>1.0</Version>
+<Desktop>false</Desktop>
+<PluginType>Library</PluginType>
+<Package>
+<PackageType>JAR</PackageType>
+<Location>
+https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sageortus.jar-1.0.21.zip
+</Location>
+<MD5>042116A6610C789F6B8F56D7B504E1BB</MD5>
+</Package>
+</SageTVPlugin>

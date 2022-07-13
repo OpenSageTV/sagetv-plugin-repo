@@ -48,10 +48,11 @@
   </Dependency>
   <PluginType>STVI</PluginType>
   <STVImport>CVF.stvi</STVImport>
+  <STVImport>CVF_AddSetClearWatchedOption.stvi</STVImport>
   <Package>
     <PackageType>STVI</PackageType>
-    <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/cvf/CVF_1_27.zip</Location>
-    <MD5>b97f315fb5de4178bd4a2ff5fbb4d75f</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/CVF_1_27.1.zip</Location>
+    <MD5>3F90108B15D5D809DC7C35A0CC5060D8</MD5>
   </Package>
   <Screenshot>https://github.com/jusjoken/cvf/raw/master/screenshots/CVF_Watched_LargePreview_RemovedThumbs.PNG</Screenshot>
   <Screenshot>https://github.com/jusjoken/cvf/raw/master/screenshots/CVF_Focus_SeasonEpisode_Sort.PNG</Screenshot>

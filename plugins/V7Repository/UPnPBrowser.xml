@@ -1,0 +1,37 @@
+<SageTVPlugin>
+
+   <Name>UPnP Browser for PlayOn Plugin</Name>
+
+   <Identifier>UPnPBrowser</Identifier>
+
+   <Description><![CDATA[Helper Library for PlayOn plugin.  No need to download manullay, will update with UI MOD::PlayOn For SageTV]]></Description>
+
+   <Screenshot><![CDATA[http://docs.google.com/uc?id=0B_sMJcYiGvN4Njk1ZGEzZTQtOWFlNS00MWM0LTgzM2ItMWM2NGNhZjIwZjQ1&export=download&hl=en]]></Screenshot>
+
+   <Author>evilpenguin</Author>
+
+   <CreationDate>2009.09.15</CreationDate>
+
+   <ModificationDate>2012.11.25</ModificationDate>
+
+   <Version>1.80</Version>
+
+   <Desktop>false</Desktop>
+
+   <OS>Windows</OS>
+
+   <Webpage><![CDATA[http://forums.sagetv.com/forums/showthread.php?t=44446]]></Webpage>
+
+   <PluginType>Library</PluginType>
+
+   <Package>
+
+     <PackageType>System</PackageType>
+
+     <Location><![CDATA[https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/PlayOnScraper_v1_8.zip]]></Location>
+
+     <MD5>75B111F64F81833EA94EAEF0B4E631D8</MD5>
+
+   </Package>
+
+</SageTVPlugin>

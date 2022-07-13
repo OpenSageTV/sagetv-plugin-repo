@@ -1,0 +1,23 @@
+<SageTVPlugin>
+  <Name>Trakt TV Properties</Name>
+  <Identifier>trakt-properties</Identifier>
+  <Author>tmiranda</Author>
+  <CreationDate>2018.09.28</CreationDate>
+  <ModificationDate>2018.09.28</ModificationDate>
+  <Version beta="true">0.01</Version>
+  <Desktop>false</Desktop>
+
+  <Description>Support files for Trakt TV. No need to install directly.</Description>
+
+  <PluginType>Library</PluginType>
+
+  <Package>
+    <PackageType>System</PackageType>
+    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/trakt/trakt-properties.zip</Location>
+    <MD5>DAF7857B0C4EDFB44A632EF33B18C750</MD5>
+  </Package>
+
+  <ReleaseNotes>Version 0.01:
+- Initial release.</ReleaseNotes>
+
+</SageTVPlugin>

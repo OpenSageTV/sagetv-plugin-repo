@@ -1,0 +1,23 @@
+<SageTVPlugin>
+  <Name>Nielm's Sage XML Info</Name>
+  <Identifier>sagexmlinfo</Identifier>
+  <Description>A library for importing data into and exporting data from the SageTV database.</Description>
+  <Author>nielm</Author>
+  <CreationDate>2006.03.17</CreationDate>
+  <ModificationDate>2010.05.16</ModificationDate>
+  <Version>1.4.1</Version>
+  <Desktop>false</Desktop>
+  <ResourcePath>sagexmlinfo</ResourcePath>
+  <Webpage>http://tools.assembla.com/sageplugins/wiki/SageXmlInfo</Webpage>
+  <Dependency>
+    <Plugin>sageutls</Plugin>
+    <MinVersion>1.4</MinVersion>
+  </Dependency>
+  <PluginType>Library</PluginType>
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/nielm-sagexmlinfo-jars-1.4.1.zip</Location>
+    <MD5>F71477CD380589B48976B73D86AAD78D</MD5>
+  </Package>
+  <ImplementationClass></ImplementationClass>
+</SageTVPlugin>

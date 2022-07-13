@@ -1,0 +1,51 @@
+<SageTVPlugin>
+
+  <Name>Display Recordings Menu On Startup</Name>
+
+  <Identifier>DisplayRecordingsMenuOnStartup</Identifier>
+
+  <Description>Displays the "Recordings Menu" instead of the "Main Menu" when SageTV starts up.</Description>
+
+  <Author>49studebaker</Author>
+
+  <CreationDate>2010.06.10</CreationDate>
+
+  <ModificationDate>2010.06.10</ModificationDate>
+
+  <Version>1.0.01</Version>
+
+
+
+<Dependency>
+
+  <STV>SageTV7</STV>
+
+  <MinVersion>7.0</MinVersion>
+
+</Dependency>
+
+
+
+<PluginType>STVI</PluginType>
+
+<STVImport>DisplayRecordingsMenuOnStartup.stvi</STVImport>
+
+
+
+<Package>
+
+  <PackageType>STVI</PackageType>
+
+  <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/DisplayRecordingsMenuOnStartup.zip</Location>
+
+  <MD5>C535328E5797522A46F4DB2E6B1DCB92</MD5>
+
+</Package>
+
+
+
+<ReleaseNotes>Version 1.0 - Initial release.</ReleaseNotes>
+
+
+
+</SageTVPlugin>

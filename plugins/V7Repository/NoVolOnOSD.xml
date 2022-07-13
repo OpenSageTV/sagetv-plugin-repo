@@ -1,0 +1,19 @@
+<SageTVPlugin>
+  <Name>Hide Volume Area from OSD</Name>
+  <Identifier>NoVolOnOSD</Identifier>
+  <Description>This plugin will hide the volume icon and slider form the media player on screen display (OSD).  This plugin is particularly useful for users who have set up their remote to control volume through a different source (eg. A/V receiver) and do not have SageTV control the volume.</Description>
+  <Author>pvrpenguin</Author>
+  <CreationDate>2010-06-19</CreationDate>
+  <Version>0.1.1</Version>
+  <Desktop>false</Desktop>
+  <PluginType>STVI</PluginType>
+  <Screenshot>https://github.com/arumsey/sagetv-remove-volume-area/blob/master/screenshot.png?raw=true</Screenshot>
+  <STVImport>NoVolOnOSD.stvi</STVImport>
+  <Package>
+    <PackageType>STVI</PackageType>
+   <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/NoVolOnOSD.zip</Location>
+    <MD5>00F1CB97F39FDFE0DD905FECC2C53BA7</MD5>
+  </Package>
+
+<ModificationDate>2010-6-19</ModificationDate>
+</SageTVPlugin>

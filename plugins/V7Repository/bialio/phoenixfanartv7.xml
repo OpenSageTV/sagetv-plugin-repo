@@ -1,0 +1,38 @@
+<SageTVPlugin>
+  <Name>Phoenix Fanart for SageTV V7</Name>
+  <Identifier>phoenixfanartv7</Identifier>
+  <Description>Uses fanart from the Phoenix API central fanart repository in the default SageTV Version 7 UI.
+  </Description>
+  <Author>bialio</Author>
+  <CreationDate>2010.05.19</CreationDate>
+  <ModificationDate>2010.05.26</ModificationDate>
+  <Version>0.1.9</Version>
+
+  <Dependency>
+    <Plugin>phoenix-api</Plugin>
+    <MinVersion>1.73.2</MinVersion>
+  </Dependency>
+
+ <Dependency>
+    <STV>SageTV7</STV>
+    <MinVersion>7.0</MinVersion>
+ </Dependency>
+
+  <PluginType>STVI</PluginType>
+
+  <Package>
+    <PackageType>STVI</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/STV7-phoenix-fanart-0.1.9.stvi.zip</Location>
+    <MD5>5C8FB6F68A8B38D67945E6C709D743C0</MD5>
+  </Package>
+
+<ReleaseNotes>0.1.9 - Cleaned up some uninstantiated attributes, added Phoenix Fanart for TV Thumbnail view
+0.1.8 - Added code to remove text from Grid View if there is Phoenix Fanart for that item.
+0.1.7 - Initial Release
+</ReleaseNotes>
+
+<STVImport>STV7-phoenix-fanart-0.1.9.stvi</STVImport>
+
+<Screenshot>http://i253.photobucket.com/albums/hh68/bialio/Sage/v7MovieWall.jpg</Screenshot>
+
+</SageTVPlugin>

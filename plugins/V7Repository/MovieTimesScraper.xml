@@ -1,0 +1,21 @@
+<SageTVPlugin>
+  <Name>Movie Times Scraper (Dependency for Movie Times plugins)</Name>
+  <Identifier>MovieTimesScraper</Identifier>
+  <Description><![CDATA[DO NOT DOWNLOAD DIRECTLY - This is a dependancy for the Movie Times plugins and will be downloaded/updated automatically]]></Description>
+  <Author>evilpenguin</Author>
+
+  <CreationDate>2010.08.24</CreationDate>
+  <ModificationDate>2010.09.01</ModificationDate>
+  <Version>1.2</Version>
+
+  <Desktop>false</Desktop>
+  <OS>Windows</OS>
+
+  <PluginType>Library</PluginType>
+  <Package>
+    <PackageType>System</PackageType>
+    <Location><![CDATA[https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/MovieTimesScraper_v1_1_1.zip]]></Location>
+    <MD5>508541A4E38277786C9033C3132DDF83</MD5>
+  </Package>
+
+</SageTVPlugin>

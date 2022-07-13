@@ -1,0 +1,77 @@
+<SageTVPlugin>
+
+
+
+  <Name>"Diamond MKANET Mod" sub-theme</Name>
+
+  <Identifier>diamond-mkanet-sub-theme</Identifier>
+
+  <Description>The purpose of this sub-theme is to enhance 'Diamond for Default SageTV7 STV' default graphics by offering a bonus sub-theme called, 'Diamond MKANET Mod'.  This sub-theme was originally made to modify Diamond to suit my taste.  I prefer 'warmer' color tones and more graphics variety.  See screenshots.
+
+
+
+</Description>
+
+  <Author>mkanet</Author>
+
+  <CreationDate>2011.02.20</CreationDate>
+
+  <ModificationDate>2012.01.08</ModificationDate>
+
+  <Version>1.1.3</Version>
+
+
+
+<PluginType>Theme</PluginType>
+
+
+
+<Package>
+
+  <PackageType>STVI</PackageType>
+
+  <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/diamond-mkanet-sub-theme-31-update.zip</Location>
+
+
+
+  <MD5>d7595dcbb3bfa6868398e5fdf5500175</MD5>
+
+</Package>
+
+
+
+<Screenshot>http://i67.photobucket.com/albums/h283/mkanet/TV-MKA-1.png</Screenshot>
+
+<Screenshot>http://i67.photobucket.com/albums/h283/mkanet/Search-MKA-1.png</Screenshot>
+
+<Screenshot>http://i67.photobucket.com/albums/h283/mkanet/Online-MKA-1.png</Screenshot>
+
+<Screenshot>http://i67.photobucket.com/albums/h283/mkanet/Photos-MKA-1.png</Screenshot>
+
+<Screenshot>http://i67.photobucket.com/albums/h283/mkanet/Exit-MKA-1.png</Screenshot>
+
+<Screenshot>http://i67.photobucket.com/albums/h283/mkanet/TV-MKA-2.png</Screenshot>
+
+<Screenshot>http://i67.photobucket.com/albums/h283/mkanet/YouTube-MKA-1.png</Screenshot>
+
+
+
+
+
+<ReleaseNotes>
+
+Version 1.1.3 - Replaced a couple of backgrounds with nicer ones
+
+Version 1.1.2 - Removed Dependency (caused problems installing on extenders)
+
+Version 1.1.1 - Fixed compatibility error message during plugin install
+
+Version 1.1.0 - Refined graphics to accomodate Diamond 3.1 and newer
+
+Version 1.0.0 - Initial Release
+
+</ReleaseNotes>
+
+
+
+</SageTVPlugin>

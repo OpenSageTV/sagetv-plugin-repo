@@ -69,8 +69,8 @@
 
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/SageTCPServer/SageTCPServer-2.3.6.1.zip</Location>
-        <MD5>405e201f4a952ea739eed97377c5421b</MD5>
+        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/SageTCPServer-2.3.6.1.zip</Location>
+        <MD5>AF7D533E7920B1FD8D07F7F72D8E0212</MD5>
     </Package>
 
     <ReleaseNotes> Version 2.3.6 Moved to a different file server.

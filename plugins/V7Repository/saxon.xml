@@ -1,0 +1,19 @@
+<SageTVPlugin>
+  <Name>saxon XSLT 2.0, XQuery 1.0, and XPath 2.0</Name>
+  <Identifier>saxon</Identifier>
+  <Description>SageTV Dependency JAR Plugin for saxon-9.jar - open source implementations of XSLT 2.0, XQuery 1.0, and XPath 2.0.</Description>
+  <Author>koelec</Author>
+  <CreationDate>2010-06-07</CreationDate>
+  <ModificationDate>2010-06-09</ModificationDate>
+  <Version>9.2</Version>
+  <Desktop>false</Desktop>
+
+  <PluginType>Library</PluginType>
+
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/saxon-9.jar.zip</Location>
+    <MD5>907C3781DBB776B197446AD635C87EF9</MD5>
+  </Package>
+<ReleaseNotes>Version 9.2 Home Edition</ReleaseNotes>
+</SageTVPlugin>

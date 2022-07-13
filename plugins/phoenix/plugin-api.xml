@@ -7,24 +7,24 @@
     </Description>
     <Author>stuckless,jusjoken,bialio,meinmaui</Author>
     <CreationDate>2008.10.05</CreationDate>
-    <ModificationDate>2019.01.19</ModificationDate>
-    <Version>3.3.0</Version>
+    <ModificationDate>2022.07.07</ModificationDate>
+    <Version>3.4.3.1</Version>
     <ResourcePath>phoenix-api</ResourcePath>
     <Webpage><![CDATA[https://github.com/stuckless/sagetv-phoenix-core]]></Webpage>
 
     <Dependency>
         <Core/>
-        <MinVersion>9.0.0</MinVersion>
+        <MinVersion>9.2.0</MinVersion>
     </Dependency>
 
     <Dependency>
         <JVM/>
-        <MinVersion>1.7</MinVersion>
+        <MinVersion>1.8</MinVersion>
     </Dependency>
 
     <Dependency>
         <Plugin>sagex-api</Plugin>
-        <MinVersion>9.0.0.7</MinVersion>
+        <MinVersion>9.2.8.1</MinVersion>
     </Dependency>
     <Dependency>
         <Plugin>commons-codec</Plugin>
@@ -36,7 +36,7 @@
     </Dependency>
     <Dependency>
         <Plugin>commons-io</Plugin>
-        <MinVersion>2.4</MinVersion>
+        <MinVersion>2.5</MinVersion>
     </Dependency>
     <Dependency>
         <Plugin>commons-lang</Plugin>
@@ -52,19 +52,19 @@
     </Dependency>
     <Dependency>
         <Plugin>gson</Plugin>
-        <MinVersion>1.7.1</MinVersion>
+        <MinVersion>2.7</MinVersion>
     </Dependency>
     <Dependency>
         <Plugin>jsoup</Plugin>
-        <MinVersion>1.7.1</MinVersion>
+        <MinVersion>1.11.3</MinVersion>
     </Dependency>
     <Dependency>
         <Plugin>themoviedb</Plugin>
-        <MinVersion>4.1.0</MinVersion>
+        <MinVersion>4.4.1</MinVersion>
     </Dependency>
     <Dependency>
         <Plugin>thetvdbapi</Plugin>
-        <MinVersion>1.8.0</MinVersion>
+        <MinVersion>1.10.0</MinVersion>
     </Dependency>
     <Dependency>
         <Plugin>commons-net</Plugin>
@@ -79,11 +79,23 @@
 
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/phoenix/3.3.0/phoenix-api-3.3.0.zip</Location>
-        <MD5>9dcd2fdd1456a3cbbd09fa954ed91cc0</MD5>
+        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/phoenix-api-3.4.3.zip</Location>
+        <MD5>84975352aeb13a88a5e3c8ca0cc7129e</MD5>
     </Package>
 
     <ReleaseNotes>
+# 3.4.3.1
+* changes to minimum versions on some dependencies
+# 3.4.3
+* Added TMDB as a free TV provider
+* Added TVDB V4 as a TV provider - needs a PIN with a subscription to TVDB
+* Fix: Old TVDB provider should now work on Java 11
+* Fix: if Fanart is disabled (local and central), metadata will still be retrieved unless Automatic  Fanart/Metadata is disabled
+
+# 3.3.1
+* Removed weather functionality as all included providers are no longer available
+* Weather for Gemstone and SageTV is now handled by the GWeather plugin
+
 # 3.2.3
 * Fanart Image fix (redirection not handled correctly)
 
@@ -93,7 +105,7 @@
 * The API will ignore changes that are the same. ie, setting same provider over and over, or setting the same units or locations, etc, will just be ignored, and not passed to the implementation.
 * The weather configuration can be "locked" (in BMT Weather Configuration). ie, if you have weather set to Yahoo with a location and units, you can "lock" it so that any API request to change this this will be ignored. I did this mainly because of a bug in Gemstore where it keeps changing my weather provider and units
 * SageTV Debugging - Exposed SageTV debugging flags to BMT Web UI (configuration)
-
+ 
 # 3.2.1
 * Fixes to allow failed TV lookups to retry (most failures are "Too many connections")
 

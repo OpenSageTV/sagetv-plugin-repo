@@ -1,0 +1,37 @@
+<SageTVPlugin>
+
+  <Name>tagsoup</Name>
+
+  <Identifier>tagsoup</Identifier>
+
+  <Description>SageTV Dependency JAR Plugin - no need to download directly</Description>
+
+  <Author>Slugger</Author>
+
+  <CreationDate>2011.06.26</CreationDate>
+
+  <ModificationDate>2011.06.26</ModificationDate>
+
+  <Version>1.2</Version>
+
+  <Dependency>
+
+     <JVM />
+
+     <MinVersion>1.5.0</MinVersion>
+
+  </Dependency>
+
+  <PluginType>Library</PluginType>
+
+  <Package>
+
+    <PackageType>JAR</PackageType>
+
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/tagsoup-1.2.zip</Location>
+
+    <MD5>D08990F17818A4A9BD7168140DA98800</MD5>
+
+  </Package>
+
+</SageTVPlugin>

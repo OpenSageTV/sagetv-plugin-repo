@@ -1,0 +1,185 @@
+<SageTVPlugin>
+
+
+
+	<Name>Podcast Recorder</Name>
+
+
+
+  	<Identifier>podcastrecorderplugin</Identifier>
+
+
+
+  	<Description>Podcast Recorder provides the ability to manually record Podcasts or select Podcasts as Favorites and automatically record them.
+
+This plugin provides support only.  To install PodcastRecorder please go to the "UI Mod" section of the plugin manager.</Description>
+
+
+
+	<Author>tmiranda</Author>
+
+
+
+  	<CreationDate>2010.10.01</CreationDate>
+
+
+
+  	<ModificationDate>2011.04.29</ModificationDate>
+
+
+
+  	<Version beta="true">0.70</Version>
+
+
+
+  	<Desktop>false</Desktop>
+
+
+
+	<Dependency>
+
+		<STV>SageTV7</STV>
+
+		<MinVersion>7.1</MinVersion>
+
+	</Dependency>
+
+
+
+  	<Dependency>
+
+    		<Plugin>sagex-api</Plugin>
+
+    		<MinVersion>7.0.15.0</MinVersion>
+
+  	</Dependency>
+
+
+
+  	<Dependency>
+
+    		<Plugin>ortus-mq</Plugin>
+
+    		<MinVersion>1.0.10</MinVersion>
+
+  	</Dependency>
+
+
+
+  	<Dependency>
+
+    		<Plugin>log4j</Plugin>
+
+    		<MinVersion>1.2.15</MinVersion>
+
+  	</Dependency>
+
+
+
+	<PluginType>Standard</PluginType>
+
+
+
+	<ImplementationClass>tmiranda.podcastrecorder.Plugin</ImplementationClass>
+
+
+
+  	<Package>
+
+    		<PackageType>JAR</PackageType>
+
+    		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/PodcastRecorder-0.70.zip</Location>
+
+    		<MD5>C5CB327D26EF91112B2C572779C4D135</MD5>
+
+  	</Package>
+
+
+
+	<ReleaseNotes>Beta 0.70:
+
+- Added API to manually mark or unmark an Episode as downloaded.
+
+- Try to get Episode title from AiringID, if it's been set.
+
+- Remove redundant database update to improve performance.
+
+- Will now monitor the directory specified in the online options for old files that need to be cleaned up.
+
+- Fixed problem with servialVersionUID that caused database to be invalid for each new release.
+
+
+
+Beta 0.60:
+
+- Added ability to record more than the default number of displayed items (usually 20) for Podcasts such as YouTube Channels.
+
+- Start using SetManualRecordProperty() to store metadata.
+
+- Fixed bug that would cause the Favorite status of recorded Episodes to remain the same even though the user changed the Favorite status of the Podcast.
+
+- Fixed bug that prevented MediaFile metadata from getting the correct Favorite status.
+
+
+
+Beta 0.50:
+
+- Major overhaul of database routines.
+
+- Fixed bug preventing Channel.Com items from being recorded.
+
+- PodcastKey was not serializable which caused errors when running from a SageClient.
+
+- Added check for downloaded files with 0 length.  Consider this a failed download.
+
+- Added custom Airing metadata for IsPodcast and IsFavoritePodcast.
+
+- Improvements to debugging information.
+
+
+
+Beta 0.40:
+
+- Fixed bug that caused excessive memory usage.
+
+- Updated for Sage 7.1.
+
+
+
+Beta 0.25:
+
+- Recorded Podcasts now appear as Recordings instead of Imported Videos.
+
+- Fixed a bug that caused the loglevel to reset to "Error".
+
+- Fixed a bug that caused database to continually grow causing Java out of memory errors.
+
+- Changed the way information is stored so that in the future upgrading the plugin will not result in losing all Favorite information.
+
+- Added Configuration option to display advanced settings.
+
+- Added an advanced setting to optionally display a system message if new Favorite Podcasts are available.
+
+- Added an advanced setting to optionally display a system message of Favorite Podcasts have been downloaded.
+
+- Added an advanced setting to allow manual checking for new episodes.
+
+- Added an advanced setting that prints the entire database into the logfile.
+
+- Updated plugin manifest to include dependency on log4j since it is missing from the ortus-mq manifest.
+
+- Improved changing how often scan for new Podcasts occurs.
+
+- Improved the handling of stop() and destroy().
+
+- Improved error handling when sending messages to and from the server.
+
+- Improved error handling if an exception happens while downloading Podcasts.
+
+
+
+Beta 0.22 - First public release.</ReleaseNotes>
+
+
+
+</SageTVPlugin>

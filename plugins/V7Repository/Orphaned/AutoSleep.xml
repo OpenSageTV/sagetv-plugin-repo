@@ -1,0 +1,21 @@
+<SageTVPlugin>
+  <Name>AutoSleep</Name>
+  <Identifier>AutoSleep</Identifier>
+  <Description>AutoSleep on 2 hours of inactivity.  Timeout (in minutes) can be changed in sageclient.properties: plugins/df/auto_sleep_time=120</Description>
+  <Author>Flachbar, Fuzzy</Author>
+  <CreationDate>2007-10-06</CreationDate>
+  <ModificationDate>2011.01.09</ModificationDate>
+  <Version>1.2.0</Version>
+  <PluginType>STVI</PluginType>
+  <ReleaseNotes>1.1.0 - Last v6 Release by Flachbar
+  1.2.0 - Initial v7 Release ported by Fuzzy</ReleaseNotes>
+  <Dependency>
+    <STV>SageTV7</STV>
+    <MinVersion>7.0</MinVersion>
+ </Dependency><Package>
+    <PackageType>STVI</PackageType>
+   <Location>http://dl.dropbox.com/u/8593871/AutoSleep_1_2.zip</Location>
+    <MD5>08e5baef27048521e3155164058e80d1</MD5>
+  </Package>
+  <STVImport>AutoSleep_1_2.stvi</STVImport>
+</SageTVPlugin>

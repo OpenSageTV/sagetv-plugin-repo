@@ -1,0 +1,82 @@
+<SageTVPlugin>
+
+	<Name>Sage Job Queue (SJQ) UI</Name>
+
+  	<Identifier>sjqstvi</Identifier>
+
+  	<Description>Adds a user-friendly interface to Sage Job Queue v4.</Description>
+
+  	<Author>tmiranda</Author>
+
+  	<CreationDate>2010.11.08</CreationDate>
+  	<ModificationDate>2011.02.27</ModificationDate>
+
+  	<Version beta="true">4.00.20110227</Version>
+
+	<Webpage>http://code.google.com/p/tmiranda/wiki/SJQv4UserInterface</Webpage>
+
+	<Screenshot>http://tmiranda.googlecode.com/svn/trunk/SJQ/ScreenShots/SJQ-MainMenu-RegisterClient.JPG</Screenshot>
+	<Screenshot>http://tmiranda.googlecode.com/svn/trunk/SJQ/ScreenShots/SJQ-AddTask.JPG</Screenshot>
+	<Screenshot>http://tmiranda.googlecode.com/svn/trunk/SJQ/ScreenShots/SJQ-ShowClients.JPG</Screenshot>
+	<Screenshot>http://tmiranda.googlecode.com/svn/trunk/SJQ/ScreenShots/SJQ-ShowQueuedTasks.JPG</Screenshot>
+	<Screenshot>http://tmiranda.googlecode.com/svn/trunk/SJQ/ScreenShots/SJQ-AssignTasksToEvents.JPG</Screenshot>
+
+  	<Desktop>false</Desktop>
+
+  	<Dependency>
+    		<STV>SageTV7</STV>
+      	<MinVersion>7.0</MinVersion>
+  	</Dependency>
+
+  	<Dependency>
+    		<Plugin>sjq-common</Plugin>
+    		<MinVersion>4.0.0.1301</MinVersion>
+  	</Dependency>
+
+	<Dependency>
+		<Plugin>cron4j</Plugin>
+		<MinVersion>2.2.1</MinVersion>
+	</Dependency>
+
+	<Dependency>
+		<Plugin>scrollingsetup</Plugin>
+		<MinVersion>1.00.20110115</MinVersion>
+	</Dependency>
+
+  	<PluginType>STVI</PluginType>
+
+  	<Package>
+    		<PackageType>STVI</PackageType>
+    		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/SJQ4-20110227.zip</Location>
+    		<MD5>A00334C2617A2B5699C966FF98C576F8</MD5>
+  	</Package>
+
+  	<STVImport>SJQ4.stvi</STVImport>
+
+  	<ReleaseNotes>4.00.20110227:
+- Added support for mapping directories on Clients.
+- Fixed formatting error that caused the Commit button to go off the bottom of the Create task menu.
+- Fixed a bug that would cause Task to not be reassigned to Events if the user removed the Task and then did not commit the change.
+
+4.00.20110115:
+- Fixed a bug that caused the Tasks to disappear from the Queued Tasks and Completed Tasks menus (issue 281).
+- Fixed a bug that prevented user from being able to unassign a Task from an Event if the Task no longer was supported by any Client (issue 280).
+- Changed Record dialog so user is not forced to assign manual recording to an event (issue 275).
+- Removed the scrollbar from the Setup menu and placed it in a separate Plugin (issue 276).
+
+4.00.20101219:
+- Fix problem that arose when too many items were put into the Setup Menu (issue 269).
+- Fix problem with data input dialog if not in Numeric Text Entry mode (issue 270).
+- Improve appearance of metadata display dialog (issue 266).
+- Add scroll bar on Choose Tasks for Events dialog (issue 265).
+
+4.00.20101213:
+- Fix for incorrect parsing of crontab entry on Task Editor Menu.
+- Fix for incorrect ClientInFocus on Clients Menu.
+- Added cron4j dependency to STVi manifest.
+
+4.00.20101128:
+- First public beta.
+</ReleaseNotes>
+
+</SageTVPlugin>

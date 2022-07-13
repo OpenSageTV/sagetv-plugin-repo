@@ -1,0 +1,36 @@
+<SageTVPlugin>
+  <Name>VideoOut Tools for the Extenders</Name>
+  <Identifier>videoouttools</Identifier>
+  <Description>This stvi plugin adds a popup menu to choose the new output resolution of the extender interactively (similar to the "Detailed Setup" > Multimedia > "Output Resolution" menu in the default STV). The menu is mapped to the "Video Out" remote button while in the media player.  It also can display the current mediafile's resolution and the extenders output on the OSD (this can be disabled thru Video Tools Options).
+
+This STVi replaces the default behavior of the "Video Out" remote button while in the Media Player. In other portions of the UI the "Video Out" button is the default behavior (cycling through available resolutions).
+
+To access Video Tools Options: press "Video Out" on the remote while in the media player and navigate to "Options".
+ </Description>
+  <Author>razrsharpe</Author>
+  <CreationDate>2010.05.21</CreationDate>
+  <ModificationDate>2010.11.13</ModificationDate>
+  <Version beta="true">1.0.2</Version>
+  <Desktop>false</Desktop>
+ <Dependency>
+<STV>SageTV7</STV>
+<MinVersion>7.0</MinVersion>
+</Dependency>
+  <Dependency>
+    <Plugin>razr-api</Plugin>
+    <MinVersion>0.1.2</MinVersion>
+  </Dependency>
+<PluginType>STVI</PluginType>
+  <Package>
+    <PackageType>STVI</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/VideoOutTools_v1.0.2.zip</Location>
+    <MD5>917BB441EC8660BA1A3AF5D339271C14</MD5>
+  </Package>
+<STVImport>VideoOutTools_v1.0.2.stvi</STVImport>
+<ReleaseNotes>1.0.2
+-updated razr-api (fix errors with prepended text and resolutions with non integer FPS values)
+
+1.0.1
+-Initial Release
+</ReleaseNotes>
+</SageTVPlugin>

@@ -1,0 +1,80 @@
+<SageTVPlugin>
+	<Name>sjq-listener</Name>
+	<Identifier>sjq-listener</Identifier>
+	<Description>
+SJQv4 network listener library; do not install manually.
+	</Description>
+	<Author>Slugger</Author>
+	<CreationDate>2007.05.02</CreationDate>
+	<ModificationDate>2022.01.19</ModificationDate>
+	<Version beta="true">4.0.0.1701</Version>
+	<ResourcePath>plugins/sjq</ResourcePath>
+	<Webpage>http://sagetv-addons.googlecode.com</Webpage>
+	<Dependency>
+		<JVM/>
+		<MinVersion>1.5.0</MinVersion>
+	</Dependency>
+	<Dependency>
+		<Core/>
+		<MinVersion>7.0.9</MinVersion>
+	</Dependency>
+	<Dependency>
+		<Plugin>commons-lang</Plugin>
+		<MinVersion>2.4</MinVersion>
+	</Dependency>
+	<Dependency>
+		<Plugin>log4j</Plugin>
+		<MinVersion>1.2.15</MinVersion>
+	</Dependency>
+	<PluginType>Library</PluginType>
+	<Package>
+		<PackageType>JAR</PackageType>
+		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sjq-listener-4.0.0.1407.zip</Location>
+		<MD5>046219089ac990d85892aa63136ef31c</MD5>
+	</Package>
+	<ReleaseNotes>
+Changes since 4.0.0.1070
+
+------------------------------------------------------------------------
+r1070 | derek@battams.ca | 2010-10-14 13:40:38 -0400 (Thu, 14 Oct 2010) | 1 line
+
+Add plugin manifest; update bld process
+------------------------------------------------------------------------
+r1074 | derek@battams.ca | 2010-10-14 16:48:34 -0400 (Thu, 14 Oct 2010) | 1 line
+
+Allow halting of listeners via interruption signal
+------------------------------------------------------------------------
+r1150 | derek@battams.ca | 2010-10-26 14:55:29 -0400 (Tue, 26 Oct 2010) | 1 line
+
+Add ThreadLocal SocketDetails instances so we can properly query socket details about the active connection
+------------------------------------------------------------------------
+r1161 | derek@battams.ca | 2010-10-27 20:55:08 -0400 (Wed, 27 Oct 2010) | 1 line
+
+This is no longer a server only plugin (because of the ListenerClient class)
+------------------------------------------------------------------------
+r1224 | derek@battams.ca | 2010-11-06 10:26:03 -0400 (Sat, 06 Nov 2010) | 1 line
+
+Allow signalling to stop listener
+------------------------------------------------------------------------
+r1227 | derek@battams.ca | 2010-11-06 10:44:21 -0400 (Sat, 06 Nov 2010) | 1 line
+
+Revert changes in 1224
+------------------------------------------------------------------------
+r1248 | derek@battams.ca | 2010-11-09 18:05:56 -0500 (Tue, 09 Nov 2010) | 1 line
+
+Change loggers to instance variables to support cases where multiple packages are using the Listener plugin
+------------------------------------------------------------------------
+r1405 | derek@battams.ca | 2011-02-26 15:38:34 -0500 (Sat, 26 Feb 2011) | 1 line
+
+Add port number to remote addr for easier debugging
+------------------------------------------------------------------------
+r1406 | derek@battams.ca | 2011-02-26 15:49:31 -0500 (Sat, 26 Feb 2011) | 1 line
+
+Adding more verbose logging in Listener
+------------------------------------------------------------------------
+r1407 | derek@battams.ca | 2011-02-26 18:19:24 -0500 (Sat, 26 Feb 2011) | 1 line
+
+Final logging changes
+------------------------------------------------------------------------
+	</ReleaseNotes>
+</SageTVPlugin>

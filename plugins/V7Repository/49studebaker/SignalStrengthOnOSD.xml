@@ -1,0 +1,59 @@
+<SageTVPlugin>
+
+  <Name>Signal Strength on OSD</Name>
+
+  <Identifier>SignalStrengthOnOSD</Identifier>
+
+  <Description>Displays the tv tuner signal strength on the OSD</Description>
+
+  <Author>49studebaker</Author>
+
+  <CreationDate>2010.05.29</CreationDate>
+
+  <ModificationDate>2010.06.02</ModificationDate>
+
+  <Version>1.0.2</Version>
+
+
+
+<Dependency>
+
+  <STV>SageTV7</STV>
+
+  <MinVersion>7.0</MinVersion>
+
+</Dependency>
+
+
+
+<PluginType>STVI</PluginType>
+
+<STVImport>SignalStrengthOnOSD.stvi</STVImport>
+
+
+
+<Package>
+
+  <PackageType>STVI</PackageType>
+
+  <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/SignalStrengthOnOSD.zip</Location>
+
+  <MD5>D571EB22FC28D0F42020733728DA6DE0</MD5>
+
+</Package>
+
+
+
+<ReleaseNotes>
+
+Version 1.0 - Initial release.
+
+Version 1.0.1 -Fixed bug
+
+Version 1.0.2 -Fixed bug that occured with "Hide Footer" plugin
+
+</ReleaseNotes>
+
+
+
+</SageTVPlugin>

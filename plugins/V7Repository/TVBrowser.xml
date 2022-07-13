@@ -1,0 +1,50 @@
+<SageTVPlugin>
+  <Name>TVBrowser</Name>
+  <Identifier>TVBrowser</Identifier>
+  <Description>Combines Imported and Recorded TV.
+               Sorts TV according to Season and Episode when available.
+			   </Description>
+  <Author>broconne</Author>
+  <CreationDate>2010-11-01</CreationDate>
+  <ModificationDate>2010.11.01</ModificationDate>
+  <Version beta="true">0.7</Version>
+  <Desktop>false</Desktop>
+  <ReleaseNotes>
+   * v0.7
+   * Added Regular expression keypad searching for series.  Stop=Backspace, Delete=Clear.
+   * Added sorting toggle (Alphabetical,Recent,Oldest)
+   * STVI Cleanup
+   * v0.6.1
+   * Fixed reported delete problem where item to delete did not change on multiple invocations.
+   * Modified watched behavior of series to follow that of episodes:  No progress bar if 100%, Watched icon added, font style change.
+   * v0.6
+   * Added play support for series.  Plays next available if possible - otherwise navigates to episode screen.
+   * Added additional exception handling and logging to assist in debugging blank TVB initial screens.
+   * Fixed bug where recorded movies were included in TVB.
+   * Added delete support to recordings and imported TV.
+   * Added episode progress bar.
+   * Changed text to red if a series/episode has an active recording.
+   * Added ability to detect when a recording has started/stopped and removed.
+   * Added additional season information if no series information exists.
+   * Removed Poster area if series has no associated posters.
+   * v0.5
+   * Initial Release
+    </ReleaseNotes>
+  <Dependency>
+  <Core/>
+  <MinVersion>7.0.23</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Plugin>TVBrowserAPI</Plugin>
+    <MinVersion>0.7</MinVersion>
+  </Dependency>
+
+<PluginType>STVI</PluginType>
+
+  <Package>
+    <PackageType>STVI</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/TVBrowser-0.7.zip</Location>
+    <MD5>6894ECEA6EBA6B0FD0EF204E59F940D1</MD5>
+  </Package>
+<STVImport>TVBrowser.stvi</STVImport>
+</SageTVPlugin>

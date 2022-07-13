@@ -1,0 +1,142 @@
+<SageTVPlugin>
+ <Name>Complementary Metadata Tools (CMT)</Name>
+ <Identifier>CMT</Identifier>
+ <Description>Provides the ability to edit metadata within SageTV and fetch and manage metadata and fanart.
+ Displays and saves information from the Internet Movie Data Base.
+ Provides access to BMT configuration, scanning and lookups from within SageTV.
+ Can create .my and .properties files for recordings, cleanup orphan .my and .properties files and import information from .my files into the SageTV wiz.bin.
+ Provides the ability to display information from .my files in Recording and Video Detail panels.
+ ***** THIS PLUGIN REPLACES "Read, Write and Edit Metadata" and "IMDB Search" plugins in SageTV 7.1</Description>
+ <Author>JREkiwi</Author>
+ <CreationDate>2011.04.02</CreationDate>
+ <ModificationDate>2021.03.13</ModificationDate>
+ <Version>3.1.9</Version>
+ <Desktop>false</Desktop>
+ <Dependency>
+  <STV>SageTV7</STV>
+  <MinVersion>7.1</MinVersion>
+ </Dependency>
+ <Dependency>
+  <JVM></JVM>
+  <MinVersion>1.8</MinVersion>
+  </Dependency>
+ <Dependency>
+  <Plugin>df_sageutils</Plugin>
+  <MinVersion>1.0</MinVersion>
+ </Dependency>
+ <Dependency>
+  <Plugin>sageutls</Plugin>
+  <MinVersion>1.4.2</MinVersion>
+ </Dependency>
+  <Dependency>
+   <Plugin>phoenix-api</Plugin>
+   <MinVersion>2.5.13</MinVersion>
+  </Dependency>
+  <Dependency>
+   <Plugin>phoenix-core</Plugin>
+  <MinVersion>2.5.13</MinVersion>
+ </Dependency>
+ <Dependency>
+  <Plugin>nielm_sageimdb</Plugin>
+  <MinVersion>2.0.4</MinVersion>
+ </Dependency>
+<Webpage>https://forums.sagetv.com/forums/showthread.php?t=49360</Webpage>
+<PluginType>STVI</PluginType>
+ <Package>
+   <PackageType>STVI</PackageType>
+   <Location>https://github.com/JREkiwi/CMT/releases/download/3.1.9/CMT_3.1.9.zip</Location>
+   <MD5>45D4C71FAE6482E4F1E2C857E91BC56A</MD5>
+ </Package>
+<STVImport>CMT.stvi</STVImport>
+<ReleaseNotes>3.1.9
+New version of nielm_sageimdb
+Remove Trailer Search that hasn't worked for years
+3.1.8.2
+New version of nielm_sageimdb
+
+3.1.8.1
+Change download to https
+
+3.1.8
+Reinstate Season and Epsiode numbers on Program for display and save
+Reinstate Birth Info on Person
+Add Death Info on Person
+Fix multiple nicknames
+
+3.1.7.1
+New manifest for updated niem_sageimdb
+
+3.1.7
+Changes to library scanning to reduce impact
+New nielm_sageimdb thanks spencerw
+
+3.1.6
+Change from using UserRecords as the WIZ.BIN impact didn't justify the benefit. Will cause a temporary increase in WIZ.BIN size that will reduce.
+Fix changing recordings to videos when enable_converting_imported_videos_to_tv_recordings is enabled
+Added ability to set Season and Episode Number if not already set when changing videos to recordings
+
+3.1.5
+Cleanup user records from WIZ.BIN for files that have been deleted.  May cause a temporary increase in WIZ.BIN size, but size will reduce following the next restart or EPG update
+
+3.1.4
+Force removal of old IMDB Search plugin
+Fix Options and OK not working in some configurations
+
+3.1.3
+Change dependencies for new IMDB JAR
+Change default Online Video Search to YouTube
+Fix issue with occasionally grabbing the wrong title for IMDB search when playing a video
+
+3.1.2
+Change dependencies for new IMDB JAR
+Reinstate IMDB person Filomographies as they are mostly working
+
+3.1.1
+Change dependencies for new IMDB JAR
+Temporarily remove IMDB person Filomographies as they don't work yet
+
+3.1.0
+Change IMDB Trailers to use YouTube
+Add Move Imported Videos to Recordings
+Add Move Group of Imported Videos to Recordings
+Add Move Recording to Imported Videos
+
+3.0.8
+Change dependencies for new IMDB JAR
+Tweaks for Gemstone
+
+3.0.7
+Add IMDB Goofs
+Change manifest for updated IMDB JAR file
+
+3.0.6
+Fix reflections in Edit Metadata
+Add support for phoenix music backgrounds
+
+3.0.5
+Changes to common code for Fanart scaling
+
+3.0.4
+Added viewing/deleting of thumbnails
+Fixes for some changes in IMDB Trivia and Quotes format
+Change person search to handle roles appended to persons name
+Changes for changed usage of Title and Episode fields for imported videos in SageTV 7.1.8
+
+3.0.3
+Add saving Original Air Date from IMDB
+Fix null exceptions when processing IMDB Trivia
+
+3.0.2
+Fix exception when running BMT type scans on UNC directory paths
+Change .properties file creation to produce a file containing ALL properties
+Change timing of automatic .properties file creation to allow for BMT etc to fetch info first
+Change .properties overwrite control to use AddUserRecord to maintain written status
+Add detection of Diamond plugin for Global use of background and thumbnail handling
+Add background processing shared by Phoenix Fanart and Upcoming Movies
+
+3.0.0
+Merge of RW Metadata and IMDB Search imports
+Add Phoenix image scaling
+Setup for change in usage of GetShowTitle() and GetShowEpisode() for future API changes in SageTV 7.1
+</ReleaseNotes>
+</SageTVPlugin>

@@ -1,0 +1,65 @@
+<SageTVPlugin>
+
+
+
+      <Name>P2 Compatibility</Name>
+
+      <Identifier>stv7_p2_compatibility</Identifier>
+
+      <Description>P2 Compatibility Theme and small UI mods to make the default UI feel more like P2
+
+Load this UI Mod and then set the theme from the Advanced menu of Detailed Setup.
+
+      </Description>
+
+      <Author>bialio</Author>
+
+      <CreationDate>2013.06.06</CreationDate>
+
+      <ModificationDate>2013.06.07</ModificationDate>
+
+      <Version>1.0.1</Version>
+
+
+
+      <Dependency>
+
+         <STV>SageTV7</STV>
+
+         <MinVersion>7.0</MinVersion>
+
+      </Dependency>
+
+
+
+      <PluginType>STVI</PluginType>
+
+
+
+      <Package>
+
+         <PackageType>STVI</PackageType>
+
+         <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/stv7_p2_compatability_v1.0.1.zip</Location>
+
+         <MD5>85496728C0317A379AB94B29B61F2527</MD5>
+
+      </Package>
+
+
+
+      <STVImport>stv7_p2_compatability_v1.0.1.stvi</STVImport>
+
+
+
+      <Screenshot>http://i253.photobucket.com/albums/hh68/bialio/phoenix/P2CompatabilityScreenshot.jpg</Screenshot>
+
+      <ReleaseNotes>1.0.1 First release
+
+1.0 Private release
+
+      </ReleaseNotes>
+
+
+
+   </SageTVPlugin>

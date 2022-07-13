@@ -1,0 +1,32 @@
+<SageTVPlugin>
+
+  <Name>Serenity</Name>
+  <Identifier>themeserenity</Identifier>
+  <Description>Serenity Theme for SageTV V7.
+  </Description>
+  <Author>bialio</Author>
+  <CreationDate>2010.05.20</CreationDate>
+  <ModificationDate>2010.05.25</ModificationDate>
+  <Version>1.0</Version>
+
+<Dependency>
+  <STV>SageTV7</STV>
+  <MinVersion>7.0</MinVersion>
+</Dependency>
+
+<PluginType>Theme</PluginType>
+
+<Package>
+  <PackageType>STVI</PackageType>
+  <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/STV7.serenity.theme.1.0.zip</Location>
+  <MD5>4872DA66D09AFAEED5D0DA1C24A08CB8</MD5>
+</Package>
+
+<Screenshot>http://i253.photobucket.com/albums/hh68/bialio/Serenity/Serenity%20V7/screenshot.jpg</Screenshot>
+
+<ReleaseNotes>1.0 Full release, highlites changed to orange, grey PVC removed, OSD modified
+0.2 Updated a few more button assets to 'serenity orange'
+0.1 Original release
+</ReleaseNotes>
+
+</SageTVPlugin>

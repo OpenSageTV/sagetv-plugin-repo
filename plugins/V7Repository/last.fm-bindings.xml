@@ -1,0 +1,17 @@
+<SageTVPlugin>
+ <Name>last.fm-bindings</Name>
+ <Identifier>last.fm-bindings</Identifier>
+ <Version>2009.07.03</Version>
+ <Description>SageTV Dependency JAR Plugin for last.fm-bindings.jar - no need to download directly</Description>
+ <Author>janni kovacs</Author>
+ <PluginType>Library</PluginType>
+ <CreationDate>2009-07-03</CreationDate>
+ <ModificationDate>2009-07-03</ModificationDate>
+ <Webpage>http://www.u-mass.de/lastfm</Webpage>
+ <Desktop>false</Desktop>
+ <Package>
+  <PackageType>JAR</PackageType>
+  <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/last.fm-bindings-2009.07.03.zip</Location>
+  <MD5>16b6e5bf0669ea791851adafce5d0a90</MD5>
+ </Package>
+</SageTVPlugin>

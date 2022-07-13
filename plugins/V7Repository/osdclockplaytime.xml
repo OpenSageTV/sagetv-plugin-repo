@@ -1,0 +1,18 @@
+<SageTVPlugin>
+ <Name>OSD Clock and Play Time</Name>
+ <Identifier>osdclockplaytime</Identifier>
+ <Description>SageTV STVI Plugin for displaying clock and/or how long current media has been playing</Description>
+ <Author>toricred</Author>
+ <CreationDate>2010-05-29</CreationDate>
+ <ModificationDate>2011-02-13</ModificationDate>
+ <ReleaseNotes>Fix possible memory leak with playtime</ReleaseNotes>
+ <Version>1.4.4</Version>
+ <Desktop>false</Desktop>
+ <PluginType>STVI</PluginType>
+ <Package>
+ <PackageType>STVI</PackageType>
+ <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/OSDClockPlayTime_1.4.4.zip</Location>
+ <MD5>FAEB270722245D1D7425EB36A0C52403</MD5>
+ </Package>
+ <STVImport>OSDClockPlayTime_1.4.4.stvi</STVImport>
+</SageTVPlugin>

@@ -1,0 +1,76 @@
+<SageTVPlugin>
+  <Name>nielm_sageimdb</Name>
+  <Identifier>nielm_sageimdb</Identifier>
+  <Description>SageTV Dependency JAR Plugin for nielm_sageimdb.jar - there is normally no need to download directly</Description>
+  <Author>nielm, JREkiwi</Author>
+  <CreationDate>2010-04-08</CreationDate>
+  <ModificationDate>2021.03.13</ModificationDate>
+  <Version>2.0.4</Version>
+  <Desktop>false</Desktop>
+
+  <PluginType>Library</PluginType>
+ <Webpage>http://forums.sagetv.com/forums/showthread.php?t=51165</Webpage>
+  <Dependency>
+    <Plugin>sageutls</Plugin>
+    <MinVersion>1.4.1</MinVersion>
+  </Dependency>
+ <Dependency>
+  <JVM></JVM>
+  <MinVersion>1.8</MinVersion>
+  </Dependency>
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>https://github.com/JREkiwi/sageimdb/releases/download/2.0.4/nielm_sageimdb_2.0.4.zip</Location>
+    <MD5>4E17DE145C39F4560D90436035935728</MD5>
+  </Package>
+  <ReleaseNotes>2.0.4
+ Fix for changes on IMDB website
+2.0.3
+ Fix for IMDB "New Interface"
+
+2.0.2.1
+Change download to https
+
+2.0.2
+Reinstate Season and Epsiode numbers on Program
+Reinstate Birth Info on Person
+Fix multiple nicknames
+Add Death Info on Person
+Add getPob() getDod() getPod()
+Change Java reference to 1.6
+
+2.0.1
+Cast update. thanks again spencerw
+
+2.0.0
+Fix to work with reformatted IMDB. thanks spencerw
+
+1.8.8
+Third pass at fixing Person lookup after IMDB format change
+Fix Person filmographies for missing single type entries and exceptions
+
+1.8.7
+Second pass at fixing Person lookup after IMDB format change
+Filmographies for TV still require work
+Fix Locations and Plot summaries
+
+1.8.6
+First pass at fixing Person lookup after IMDB format change
+Filmographies do not work yet
+
+1.8.5
+Fix Quotes, Trivia and Goofs after another format change at IMDB
+1.8.4
+Interim fix for "new and improved" search on IMDB site that returns less information
+1.8.3
+Workaround for changes to Episodes on IMDB site
+Add getGoofs()
+1.8.2
+Fixed Quote formatting
+1.8.1
+Fixed Actor Roles
+1.8
+Fixed reading of Person data
+Fixed reading of Title Trivia
+</ReleaseNotes>
+</SageTVPlugin>

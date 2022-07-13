@@ -1,0 +1,51 @@
+<SageTVPlugin>
+
+  <Name>Hide EPG scroll bar</Name>
+
+  <Identifier>HideEpgScrollBar</Identifier>
+
+  <Description>Hides the EPG scroll bar.</Description>
+
+  <Author>49studebaker</Author>
+
+  <CreationDate>2010.06.01</CreationDate>
+
+  <ModificationDate>2010.06.01</ModificationDate>
+
+  <Version>1.0</Version>
+
+
+
+<Dependency>
+
+  <STV>SageTV7</STV>
+
+  <MinVersion>7.0</MinVersion>
+
+</Dependency>
+
+
+
+<PluginType>STVI</PluginType>
+
+<STVImport>HideEpgScrollBar.stvi</STVImport>
+
+
+
+<Package>
+
+  <PackageType>STVI</PackageType>
+
+  <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/HideEpgScrollBar.zip</Location>
+
+  <MD5>29315FD9DB0E21C07F6C8C5DD40566B4</MD5>
+
+</Package>
+
+
+
+<ReleaseNotes>Version 1.0 - Initial release.</ReleaseNotes>
+
+
+
+</SageTVPlugin>

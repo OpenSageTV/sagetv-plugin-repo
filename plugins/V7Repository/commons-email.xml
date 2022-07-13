@@ -1,0 +1,18 @@
+<SageTVPlugin>
+  <Name>commons-email</Name>
+  <Identifier>commons-email</Identifier>
+  <Description>SageTV Dependency JAR Plugin for commons-email-1.2.jar - no need to download directly</Description>
+  <Author>koelec</Author>
+  <CreationDate>2010-06-12</CreationDate>
+  <ModificationDate>2010-06-12</ModificationDate>
+  <Version>1.0</Version>
+  <Desktop>false</Desktop>
+
+  <PluginType>Library</PluginType>
+
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/commons-email-1.2.jar.zip</Location>
+    <MD5>BB9F32712F98D2AF1D24CC6E47798330</MD5>
+  </Package>
+</SageTVPlugin>

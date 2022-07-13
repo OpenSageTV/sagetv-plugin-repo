@@ -1,0 +1,31 @@
+<SageTVPlugin>
+	<Name>Custom Main Menu</Name>
+	<Identifier>custommainmenu</Identifier>
+	<Description>Allows you to enable/disable any of the Main Menu items in the default STV7.</Description>
+	<Author>Wade</Author>
+	<CreationDate>2010.06.06</CreationDate>
+	<ModificationDate>2011.03.12</ModificationDate>
+	<Version>1.2</Version>
+	<Dependency>
+		<STV>SageTV7</STV>
+		<MinVersion>7.1</MinVersion>
+	</Dependency>
+	<PluginType>STVI</PluginType>
+	<STVImport>STV7-CustomMainMenu-1.2.stvi</STVImport>
+	<Package>
+		<PackageType>STVI</PackageType>
+		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/STV7-CustomMainMenu-1.2.zip</Location>
+		<MD5>790ED1428F0AEB78594975E2DFDBAE9A</MD5>
+	</Package>
+	<Screenshot>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetv-custom-mainmenu/CustomMainMenu-1.jpg</Screenshot>
+	<Screenshot>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetv-custom-mainmenu/CustomMainMenu-2.jpg</Screenshot>
+	<Screenshot>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetv-custom-mainmenu/CustomMainMenu-3.jpg</Screenshot>
+	<Screenshot>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetv-custom-mainmenu/CustomMainMenu-4.jpg</Screenshot>
+	<Screenshot>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/sagetv-custom-mainmenu/CustomMainMenu-5.jpg</Screenshot>
+	<ReleaseNotes>
+	Version 1.2 - Updated to handle changes to the Main Menu in v7.1.
+	Version 1.1.01 - Added MaxVersion.
+	Version 1.1 - Ack!  The STVImported Hook runs each time, not just on the initial install.  Fixes settings.
+	Version 1.0 - Initial release.
+	</ReleaseNotes>
+</SageTVPlugin>

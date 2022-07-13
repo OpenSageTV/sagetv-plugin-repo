@@ -1,0 +1,17 @@
+<SageTVPlugin>
+       <Name>rsslib4j</Name>
+       <Identifier>rsslib4j</Identifier>
+       <Description>RSS feed consumer for Java</Description>
+       <Author>Slugger</Author>
+       <CreationDate>2011.03.21</CreationDate>
+       <ModificationDate>2011.03.21</ModificationDate>
+       <Version>0.2</Version>
+       <ResourcePath>plugins/rsslib4j</ResourcePath>
+       <Webpage>http://sourceforge.net/projects/rsslib4j/</Webpage>
+       <PluginType>Library</PluginType>
+       <Package>
+               <PackageType>JAR</PackageType>
+               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/rsslib4j-0.2.zip</Location>
+               <MD5>A7C0ADB5CE5C60B8ABE5F90520801ED2</MD5>
+       </Package>
+</SageTVPlugin>

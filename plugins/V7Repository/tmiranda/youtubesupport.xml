@@ -1,0 +1,22 @@
+<SageTVPlugin>
+  <Name>YouTube Recording Engine</Name>
+  <Identifier>youtubesupport</Identifier>
+  <Author>tmiranda</Author>
+  <CreationDate>2015.08.23</CreationDate>
+  <ModificationDate>2021.10.28</ModificationDate>
+  <Version beta="false">1.101</Version>
+  <Desktop>false</Desktop>
+
+  <Description>The recording engine for the YouTube (2015) UI Mod Plugin. No need to install this directly.</Description>
+
+  <PluginType>Standard</PluginType>
+
+  <ImplementationClass>tmiranda.youtube.Plugin</ImplementationClass>
+
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/YouTube-1.10.1.zip</Location>
+    <MD5>6009F08AEFB42003DE51815EB478DBB8</MD5>
+  </Package>
+
+</SageTVPlugin>

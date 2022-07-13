@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SageTVPlugin>
+    <Name>SageTV 7 UI - for use with V9 (same as UI installed with SageTV)</Name>
+    <Identifier>SageTV7</Identifier>
+    <Description>This plugin version of the SageTV 7 UI should be current with the latest SageTV release (dependent on developers keeping them current). It is provided for those who want the UI updated without installing the latest version (ie: Java version issues)</Description>
+    <Screenshot></Screenshot>
+    <Author>sagetv</Author>
+    <CreationDate>2021.08.18</CreationDate>
+    <ModificationDate>2021.08.18</ModificationDate>
+    <Version>9.2.6.1</Version>
+    <Webpage><![CDATA[https://forums.sagetv.com/]]></Webpage>
+
+    <Dependency>
+      <Plugin>googleweather</Plugin>
+      <MinVersion>3.0.1</MinVersion>
+    </Dependency>
+
+    <PluginType>STV</PluginType>
+
+    <Package>
+        <PackageType>STV</PackageType>
+        <Location><![CDATA[https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/SageTV7_9_2_6_1.zip]]></Location>
+        <MD5>4a7bcded7763cc405aa476490a2c01a0</MD5>
+    </Package>
+
+    <ReleaseNotes>
+	9.2.6.1 - initial release incase users want to update to get the new weather system prior to a new installer being ready or to avoid some of the recent Java update issues
+        * you will need to select "SageTV7_FullUIPlugin" from Detailed Setup, Advanced, Set Full UI Package, to use this STV
+    	Includes OpenWeatherMap - this requires a developer key.
+               - Sign up at https://home.openweathermap.org/users/sign_up
+               - Create a file in the root SageTV folder called owmkey.properties with only 1 line in it "key=userkey"
+               - no quotes in the line and replace userkey with the one you get when signing up
+               - without a user key Open Weather will not update nor allow locations to be added	</ReleaseNotes>
+</SageTVPlugin>

@@ -1,0 +1,49 @@
+<SageTVPlugin>
+
+  <Name>MBDiamond</Name>
+  <Identifier>mbdiamond</Identifier>
+  <Description>MB Diamond Theme for SageTV V7.0.12 and up.  Based loosely on some of the elements of Media Browser Diamond Theme and a bunch of updated
+
+icons etc...  It is a bit glossy and might not be for everyone.</Description>
+  <Author>jorton</Author>
+  <CreationDate>2010.06.30</CreationDate>
+  <ModificationDate>2010.08.06</ModificationDate>
+  <Version>1.63</Version>
+
+<Dependency>
+  <STV>SageTV7</STV>
+  <MinVersion>7.0.12</MinVersion>
+</Dependency>
+
+<PluginType>Theme</PluginType>
+
+<Package>
+  <PackageType>STVI</PackageType>
+  <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/MBDiamond.1.63.zip</Location>
+  <MD5>595b3114c60f46ca1b30b76026cb2883</MD5>
+</Package>
+
+<Screenshot>http://dl.dropbox.com/u/8067076/MBDiamond/Preview.jpg</Screenshot>
+<Screenshot>http://dl.dropbox.com/u/8067076/MBDiamond/PreviewGreen.jpg</Screenshot>
+<Screenshot>http://dl.dropbox.com/u/8067076/MBDiamond/Sample_2.jpg</Screenshot>
+<Screenshot>http://dl.dropbox.com/u/8067076/MBDiamond/Sample_3.jpg</Screenshot>
+<Screenshot>http://dl.dropbox.com/u/8067076/MBDiamond/Sample_4.jpg</Screenshot>
+<Screenshot>http://dl.dropbox.com/u/8067076/MBDiamond/Sample_5.jpg</Screenshot>
+<Screenshot>http://dl.dropbox.com/u/8067076/MBDiamond/Sample_6.jpg</Screenshot>
+<Screenshot>http://dl.dropbox.com/u/8067076/MBDiamond/Sample_7.jpg</Screenshot>
+<Screenshot>http://dl.dropbox.com/u/8067076/MBDiamond/Sample_8.jpg</Screenshot>
+<Screenshot>http://dl.dropbox.com/u/8067076/MBDiamond/Sample_9.jpg</Screenshot>
+
+<ReleaseNotes>1.63 - Corrected Thumbnail (Sorry Brent94Z) 1.62 - Corrected Guide Overlay issue and fixed Video Thumbnail background. 1.61 - Fixed the
+
+real problem with the parent theme. 1.6 - Updated missing image for screen saver. 1.5-Updated theme.properties file to make compatible with 7.0.12 Beta.
+
+ 1.4 Updated Theme.Properties file to use single background file, Thanks to JREKiwi. 1.3 Update containes mostly cleaned up images and more icons, also
+
+included "Blue.zip" to revert easily from green back to blue and updated the sample photos. 1.2 various updates to icons and menu items.  1.1 update
+
+change backgrounds to Sagetv Blue V6 style and also now includes a file "Green.zip" in the Theme/MBDiamond/ folder that contains copies of the green
+
+grass backgrounds if you would like to manually update by unzipping to the folder,just make backups of the blue ones first ;o).</ReleaseNotes>
+
+</SageTVPlugin>

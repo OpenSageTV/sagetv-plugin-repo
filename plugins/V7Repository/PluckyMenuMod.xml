@@ -1,0 +1,30 @@
+<SageTVPlugin>
+
+  <Name>Plucky's Menu Mod</Name>
+  <Identifier>PluckyMenuMod</Identifier>
+  <Description>Modified Horizontal Main menu for main menu screen with options. Allows menu to be placed at the top, bottom, or middle of the screen. As well as has a theme that modifies the backgrounds.There is also a matching theme in the themes section to get the backgrounds shown in screenshot.
+  </Description>
+  <Author>PluckyHD</Author>
+  <CreationDate>2010.06.07</CreationDate>
+  <ModificationDate>2010.06.07</ModificationDate>
+  <Version beta="true">1.00</Version>
+
+<Dependency>
+  <STV>SageTV7</STV>
+  <MinVersion>7.0</MinVersion>
+</Dependency>
+
+
+<PluginType>STVI</PluginType>
+  <Package>
+    <PackageType>STVI</PackageType>
+    <Location>http://babgvant.com/downloads/pluckyhd/PluckysMenuModV1.00.zip</Location>
+    <MD5>0f0fdf30dcc510f934c02e7457fe0bd8</MD5>
+  </Package>
+
+<STVImport>PluckysMenuModV1.00.xml</STVImport>
+
+<Screenshot>http://babgvant.com/downloads/pluckyhd/MenuMod.jpg</Screenshot>
+<DemoVideo>http://www.youtube.com/watch?v=3RPAp0Iva98</DemoVideo>
+
+</SageTVPlugin>

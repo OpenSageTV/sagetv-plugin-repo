@@ -1,0 +1,69 @@
+<SageTVPlugin>
+
+  <Name>Dynamic Skip Times</Name>
+
+  <Identifier>dynamicskip</Identifier>
+
+  <Description>Change the Forward and Reverse skip times based on the show you are watching.</Description>
+
+  <Author>tmiranda</Author>
+
+  <CreationDate>2011.12.06</CreationDate>
+
+  <ModificationDate>2015.11.29</ModificationDate>
+
+  <Version beta="false">1.00</Version>
+
+  <Desktop>false</Desktop>
+
+
+
+  <Dependency>
+
+    <STV>SageTV7</STV>
+
+    <MinVersion>7.0</MinVersion>
+
+  </Dependency>
+
+
+
+  <PluginType>STVI</PluginType>
+
+
+
+  <Package>
+
+    <PackageType>STVI</PackageType>
+
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/DST-0.05.zip</Location>
+
+    <MD5>B98B23DA3F12B1C8958559F62338C743</MD5>
+
+  </Package>
+
+
+
+  <STVImport>DST.stvi</STVImport>
+
+  <ReleaseNotes>Version 1.00:
+
+- Moved hosting from Google Code to GitHub. No functionality changes.
+
+Version 0.05:
+
+- Removed need to enter "-" before rewind times.
+
+- Added option to reset times back to default.
+
+Version 0.04:
+
+- Changed manifest so it's not just for desktops.
+
+Version 0.03:
+
+- Public beta.
+
+  </ReleaseNotes>
+
+</SageTVPlugin>

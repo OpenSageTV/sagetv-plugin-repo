@@ -1,0 +1,58 @@
+<SageTVPlugin>
+  <Name>SageMyMovies</Name>
+  <Identifier>SageMyMovies</Identifier>
+  <Description>MyMovies is a Movie Collection manager original designed for Windows Media Center. It has an extensive database of user contributed content encompassing metadata and fanart for movies. How this differs from IMDB.com and the like is that contribution to the database earns you points that can be used to unlock additional features and functionality in MyMovies.
+MYMovies also supports a Server/Client architecture. Your collection can reside on a headless server and be managed by any other machine on your network running the client software. For more information on MyMovies please check out their website.
+I started this project as a way to bring my favorite collection management tool from WMC, MyMovies into SageTV for myself. The project has become much larger than I ever expected.
+Please note that this project was developed in my spare time. I have developed most of this by myself and I am only one person. I do not make any money from this project nor from My Movies. While I will try to fix issues in a timely manner, please try not to expect immediate responses as It can take some time to fix an issue. .
+tHIS PROGRAM WILL NOT RUN WITHOUTH MYMOVIES COLLECTION MANAGER RUNNING ON THIS CLIENT (OR SERVER IF IT IS EXTENDER)!!!Requires MyMovies collection manager version 3.17 R3 or later!!. </Description>
+  <Author>PluckyHD</Author>
+  <CreationDate>2010-05-21</CreationDate>
+  <ModificationDate>2011.3.8</ModificationDate>
+  <Version beta="true">1.1900</Version>
+  <Desktop>false</Desktop>
+   <ReleaseNotes> 1.1900 Fix for Diamond 3.00 stvi to work with it now allow disabling mymovies completely!! Requires MyMovies collection manager version 3.17 R3 or later!!. See wiki update logs for updates in this build. It is API as well as STVi updates.</ReleaseNotes>
+  <OS>Windows</OS>
+  <DemoVideo>http://www.youtube.com/watch?v=GG4YsvPRfAU</DemoVideo>
+  <DemoVideo>http://www.youtube.com/watch?v=Imy2wt27yRQ</DemoVideo>
+  <DemoVideo>http://www.youtube.com/watch?v=YYsE3iwn2iU</DemoVideo>
+  <Screenshot>http://babgvant.com/downloads/pluckyhd/SMM%20Release%201.jpg</Screenshot>
+  <Screenshot>http://babgvant.com/downloads/pluckyhd/SMM%20Release%202.jpg</Screenshot>
+  <Screenshot>http://babgvant.com/downloads/pluckyhd/SMM%20Release%203.jpg</Screenshot>
+  <Screenshot>http://babgvant.com/downloads/pluckyhd/SMM%20Release%204.jpg</Screenshot>
+  <Screenshot>http://babgvant.com/downloads/pluckyhd/SMM%20Release%205.jpg</Screenshot>
+  <Screenshot>http://babgvant.com/downloads/pluckyhd/SMM%20Release%206.jpg</Screenshot>
+  <Screenshot>http://babgvant.com/downloads/pluckyhd/SMM%20Release%207.jpg</Screenshot>
+  <Webpage>http://code.google.com/p/sagemediamanager/wiki/PageName</Webpage>
+  <Webpage>http://www.mymovies.dk/</Webpage>
+  <Dependency>
+  <Core/>
+  <MinVersion>7.1.2.0</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Plugin>log4j</Plugin>
+    <MinVersion>1.2.15</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Plugin>sagex-api</Plugin>
+    <MinVersion>7.0.9.0</MinVersion>
+  </Dependency>
+
+  <Dependency>
+    <Plugin>smm-api</Plugin>
+    <MinVersion>1.2200</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Plugin>MSSQLJDBC</Plugin>
+    <MinVersion>2.0</MinVersion>
+  </Dependency>
+
+<PluginType>STVI</PluginType>
+
+  <Package>
+    <PackageType>STVI</PackageType>
+    <Location>http://babgvant.com/downloads/pluckyhd/SageMyMoviesSTViV7UBetaV1.1900.zip</Location>
+    <MD5>0179a0121738a8ea2a04ddabf762c291</MD5>
+  </Package>
+<STVImport>SageMyMoviesSTViV7UBetaV1.1900.xml</STVImport>
+</SageTVPlugin>

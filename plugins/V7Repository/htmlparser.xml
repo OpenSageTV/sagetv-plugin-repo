@@ -1,0 +1,18 @@
+<SageTVPlugin>
+  <Name>htmlparser</Name>
+  <Identifier>htmlparser</Identifier>
+  <Description>SageTV Dependency JAR Plugin for htmlparser-1.6.jar - no need to download directly</Description>
+  <Author>stuckless</Author>
+  <CreationDate>2010-04-08</CreationDate>
+  <ModificationDate>2010.04.10</ModificationDate>
+  <Version>1.6</Version>
+  <Desktop>false</Desktop>
+
+  <PluginType>Library</PluginType>
+
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/htmlparser-1.6.jar.zip</Location>
+    <MD5>E0C23FA097F2F6E6D29FEF452BAC7AAB</MD5>
+  </Package>
+</SageTVPlugin>

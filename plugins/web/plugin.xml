@@ -4,14 +4,18 @@
   <Description>Manage SageTV activity, media files, and playlists from desktop web browsers.</Description>
   <Author>nielm, jreichen, Slugger, skiingwiz</Author>
   <CreationDate>2004.11.18</CreationDate>
-  <ModificationDate>2018.02.04</ModificationDate>
-  <Version>3.3.1</Version>
+  <ModificationDate>2021.12.17</ModificationDate>
+  <Version>4.0.0</Version>
   <Desktop>false</Desktop>
   <ResourcePath>webserver</ResourcePath>
   <Webpage title="Web Interface Wiki">http://tools.assembla.com/sageplugins/wiki/WebServer</Webpage>
   <Webpage title="GeekTonic Review">http://www.geektonic.com/2008/03/sagetv-web-interface-control-sagetv.html</Webpage>
   <ReleaseNotes>
     <![CDATA[
+Version 4.0.0
+1. Changes to support Jetty 9.
+2. Drop support for embedded HTTP server (require Jetty)
+
 Version 3.3.1
 1. Fix showing null Season in some cases.
 2. Fix roles interfering with actor links.
@@ -48,46 +52,46 @@ Version 2.43
 1. Fix relative url bug with menu images in groovy header template
 2. Isolate user groovy includes into webserver/groovy/_classes/ directory
 3. Change default jQuery UI template to something that sort of fits with other CSS
-
+ 
 Version 2.42
 1. Restore internal image server classes that I thought were dead code
-
+ 
 Version 2.41
 1. Update jQuery version; pull lib from Google servers
 2. Add support to restart SageTV from web UI (experimental)
 3. Add spport to run JVM GC from web UI (experimental)
 4. Update ddsmoothmenu to latest available
 5. Build updates to support move back to SourceForge
-
+ 
 Version 2.40
 1. Issue 361: Add support for button options in online plugin manager
-
+ 
 Version 2.39
 1. Issue 357: Ensure menu injections are processed only once
 2. Fix invalid relative references to images in groovy header/footer
-
+ 
 Version 2.38
 1. Issue 356: Fix invalid reference to background image in CSS
 2. Issue 352: Fix typo on schedule recording page
 3. Issue 329: Move command buttons to top of System Messages page
 4. Fix bug with menu injections where injections into existing menus didn't work
-
+ 
 Version 2.37
 1. Migrate source code from svn to git
 2. Build fixes to support building from git
 3. Fix bug in Firefox where menu would push title area off the screen
-
+ 
 Version 2.36
 1. Fix Plugin Manager bug where list options were not defaulting to the current value
 2. Use new jQuery based menu; allows for user injected custom additions
-
+ 
 Version 2.35
 1. Fixes to support Groovy 2.0
-
+ 
 Version 2.34
 1. Increase min version of sagetv-addons license plugin required to allow client installs
 2. Issue 334: Refresh plugin manifest from server on each load of the Plugin Manager web UI
-
+ 
 Version 2.33
  1. Add support for groovy and GSP processing from plugin resource path
  2. SREv4: Web UI updates to support new GSP policies
@@ -98,7 +102,7 @@ Version 2.33
  7. Add UserRecord editor (new feature; beta quality)
  8. Add Plugin Manager (new feature; beta quality)
  9. Issue 327: Use gtools lib for extender commands
-
+ 
 NOTE: Be sure to clear your browser cache thoroughly after installing this update!
     ]]>
   </ReleaseNotes>
@@ -108,7 +112,7 @@ NOTE: Be sure to clear your browser cache thoroughly after installing this updat
   </Dependency>
   <Dependency>
     <JVM/>
-    <MinVersion>1.7</MinVersion>
+    <MinVersion>1.8</MinVersion>
   </Dependency>
   <Dependency>
     <Plugin>sageutls</Plugin>
@@ -120,7 +124,7 @@ NOTE: Be sure to clear your browser cache thoroughly after installing this updat
   </Dependency>
   <Dependency>
     <Plugin>Jetty</Plugin>
-    <MinVersion>2.0.1</MinVersion>
+    <MinVersion>3.0.1</MinVersion>
   </Dependency>
   <Dependency>
   	<Plugin>groovy</Plugin>
@@ -128,7 +132,7 @@ NOTE: Be sure to clear your browser cache thoroughly after installing this updat
   </Dependency>
   <Dependency>
   	<Plugin>sagex-api</Plugin>
-  	<MinVersion>7.1.9</MinVersion>
+  	<MinVersion>9.2.6.1</MinVersion>
   </Dependency>
   <Dependency>
   	<Plugin>commons-lang</Plugin>
@@ -145,31 +149,24 @@ NOTE: Be sure to clear your browser cache thoroughly after installing this updat
   <PluginType>Standard</PluginType>
   <Package>
     <PackageType>JAR</PackageType>
-    <Location>https://bintray.com/artifact/download/opensagetv/sagetv-plugins/webui-3.3.1/sage-webui-jar-3.3.1.zip</Location>
-    <MD5>cea05c43463d092cd5443e1adcac486b</MD5>
+    <Location>https://bitbucket.org/skiingwiz/sagetv-webui/downloads/sage-webui-jar-4.0.0.zip</Location>
+    <MD5>24224d608caa972794ed48033a4a9d06</MD5>
   </Package>
   <Package>
     <PackageType>System</PackageType>
-    <Location>https://bintray.com/artifact/download/opensagetv/sagetv-plugins/webui-3.3.1/sage-webui-properties-3.3.1.zip</Location>
-    <MD5>7541a42651578ce2233ad260cdcbd71f</MD5>
+    <Location>https://bitbucket.org/skiingwiz/sagetv-webui/downloads/sage-webui-properties-4.0.0.zip</Location>
+    <MD5>9ac478bee9197d4af0d3cd56464dca29</MD5>
   </Package>
   <Package>
     <PackageType>System</PackageType>
-    <Location>https://bintray.com/artifact/download/opensagetv/sagetv-plugins/webui-3.3.1/sage-webui-user-3.3.1.zip</Location>
-    <MD5>2ab8a84b3cf46caf2fccbb2d3850c145</MD5>
+    <Location>https://bitbucket.org/skiingwiz/sagetv-webui/downloads/sage-webui-user-4.0.0.zip</Location>
+    <MD5>f72c544118c6db9d0f2fe0e5b49f2fd0</MD5>
     <Overwrite>false</Overwrite>
   </Package>
   <Package>
     <PackageType>System</PackageType>
-    <Location>https://bintray.com/artifact/download/opensagetv/sagetv-plugins/webui-3.3.1/sage-webui-jetty-3.3.1.zip</Location>
-    <MD5>7a595daae401d3ca42e7048934786598</MD5>
-  </Package>
-  <!-- context file must be installed after the war file -->
-  <Package>
-    <PackageType>System</PackageType>
-    <Location>https://bintray.com/artifact/download/opensagetv/sagetv-plugins/webui-3.3.1/sage-webui-context-3.3.1.zip</Location>
-    <MD5>a73f38f4f69c39e92e457881734fad57</MD5>
-    <Overwrite>false</Overwrite>
+    <Location>https://bitbucket.org/skiingwiz/sagetv-webui/downloads/sage-webui-jetty-4.0.0.zip</Location>
+    <MD5>bd28b7f05859ecda47e584968da841c7</MD5>
   </Package>
   <ImplementationClass></ImplementationClass>
 </SageTVPlugin>

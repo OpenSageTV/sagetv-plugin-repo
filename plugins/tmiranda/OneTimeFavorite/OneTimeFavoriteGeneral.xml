@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SageTVPlugin>
+
+
+
+  <Name>OneTimeFavorite General</Name>
+
+  <Identifier>OneTimeFavoriteGeneral</Identifier>
+
+  <Author>tmiranda</Author>
+
+  <CreationDate>2011.05.21</CreationDate>
+
+  <ModificationDate>2021.05.16</ModificationDate>
+
+  <Version beta="false">1.02.1</Version>
+
+  <Desktop>false</Desktop>
+
+  <Description>Support Plugin for OneTimeFavorite UI Mod Plugin.</Description>
+
+
+
+  <Dependency>
+
+    <STV>SageTV7</STV>
+
+    <MinVersion>7.1</MinVersion>
+
+  </Dependency>
+
+
+
+  <Dependency>
+
+    <Plugin>sagex-api</Plugin>
+
+    <MinVersion>7.0.23.6</MinVersion>
+
+  </Dependency>
+
+
+
+  <PluginType>Standard</PluginType>
+
+  <ImplementationClass>tmiranda.otf.Plugin</ImplementationClass>
+
+
+
+  <Package>
+
+    <PackageType>JAR</PackageType>
+
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/OneTimeFavorite-1.01.zip</Location>
+
+    <MD5>4A592D1020F1B4F57C1B7D0F645ADBBD</MD5>
+
+  </Package>
+
+
+
+  <ReleaseNotes>
+- Move to V9 repository
+
+Version 1.02:
+
+- Migrated hosting to BinTray. No change in functionality.
+
+
+
+Version 1.01:
+
+- One Time Favorites become manual recordings.
+
+
+
+Version 1.00:
+
+- First public release.
+
+
+
+Version 0.02:
+
+- Forum release.</ReleaseNotes>
+
+</SageTVPlugin>

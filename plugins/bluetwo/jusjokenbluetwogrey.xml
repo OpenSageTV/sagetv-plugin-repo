@@ -13,19 +13,19 @@
 <Dependency>
   <STV>SageTV7</STV>
   <MinVersion>7.0</MinVersion>
-</Dependency> 
+</Dependency>
 
 <PluginType>Theme</PluginType>
 
 <Package>
   <PackageType>STVI</PackageType>
-  <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/bluetwo/BlueTwoGrey.zip</Location>
-  <MD5>c85a7523ee46942006b310b17950c57d</MD5>
+  <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/BlueTwoGrey.zip</Location>
+  <MD5>C85A7523EE46942006B310B17950C57D</MD5>
 </Package>
 
 <Screenshot>https://dl.bintray.com/opensagetv/sagetv-plugins/bluetwo/BlueTwoGreyMenu.png</Screenshot>
 <Screenshot>https://dl.bintray.com/opensagetv/sagetv-plugins/bluetwo/BlueTwoGreyVideoFolder.png</Screenshot>
-  
+
 <ReleaseNotes>
 1.13 No change - just moved the files
 1.12 Initial public release

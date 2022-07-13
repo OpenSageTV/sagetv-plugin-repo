@@ -1,0 +1,106 @@
+<SageTVPlugin>
+  <Name>Phoenix Fanart for SageTV</Name>
+  <Identifier>PhoenixFanart</Identifier>
+  <Description>Uses fanart from the Phoenix API central fanart repository in the default SageTV Version 7.1 UI.
+  *** This plugin is a MERGE and REPLACEMENT for the Phoenix Fanart for SageTV V7 by bialio and Phoenix Fanart for Malore Menus by tmiranda, Tiki ***
+  </Description>
+  <Author>JREkiwi</Author>
+  <CreationDate>2011.04.02</CreationDate>
+  <ModificationDate>2021.03.13</ModificationDate>
+  <Version>1.0.8.3</Version>
+  <Webpage>http://forums.sagetv.com/forums/showthread.php?t=55300</Webpage>
+ <Dependency>
+  <JVM></JVM>
+  <MinVersion>1.8</MinVersion>
+  </Dependency>
+ <Dependency>
+  <Plugin>df_sageutils</Plugin>
+  <MinVersion>1.0</MinVersion>
+ </Dependency>
+ <Dependency>
+  <Plugin>sageutls</Plugin>
+  <MinVersion>1.4.2</MinVersion>
+ </Dependency>
+  <Dependency>
+   <Plugin>phoenix-api</Plugin>
+   <MinVersion>2.5.13</MinVersion>
+  </Dependency>
+  <Dependency>
+   <Plugin>phoenix-core</Plugin>
+  <MinVersion>2.5.13</MinVersion>
+ </Dependency>
+ <Dependency>
+  <Plugin>nielm_sageimdb</Plugin>
+  <MinVersion>1.8.8</MinVersion>
+ </Dependency>
+ <Dependency>
+    <Plugin>CMT</Plugin>
+    <MinVersion>3.1.9</MinVersion>
+  </Dependency>
+ <Dependency>
+  <Core></Core>
+  <MinVersion>7.1.5</MinVersion>
+ </Dependency>
+   <PluginType>STVI</PluginType>
+   <Package>
+    <PackageType>STVI</PackageType>
+    <Location>https://github.com/JREkiwi/PhoenixFanart/releases/download/1.0.8/Phoenix_Fanart_1.0.8.zip</Location>
+    <MD5>097ADC3FC3578DCB01FDA0C36B009E48</MD5>
+  </Package>
+ <ReleaseNotes>1.0.8.3
+ Change download to GitHub
+ 1.0.8.2
+ Fix Java Dependency
+
+ 1.0.8.1
+ Change download to HTTPS
+
+1.0.8
+Change to Display art in the preview area when using Diamond and backgrounds are disabled
+Add/Fix Backgrounds/Posters in playback Info popup
+Add Music Fanart on most panels
+
+1.0.7
+Initial Music Fanart support. (Backgrounds and Thumbnails in Album Detail)
+
+1.0.6
+Added option to control banner display in description area and show list and in malore menus (like Fuzzy's malore mods))
+Added poster in DVD info popup
+Fix black spot in preview area
+Rewrite fanart selection code to be more flexible with finding banners etc.
+Fix issues with preview area in Upcoming Movies when a background exists
+Add art in favorite previous/future airing display
+Various other things I found as I worked through the code
+
+1.0.5
+Improve scrolling of videos when posters are enabled
+Added display of posters in Video Detail for DVDs
+Fix not displaying preview window fanart in Program Guide if full screen backgrounds is disabled
+Fix reflection display a different image sometimes
+Rework malore preview display area code
+
+1.0.4
+Fix missing Preview fanart for movies that had the Movie category removed by BMT processing
+Fix missing thumbnail in preview area if no other fanart exists
+Fix default background for Videos
+
+1.0.3
+Added option to not scale backgrounds and posters
+Change Poster default scaling
+Added display of banners for folders
+Added option for preference for display in preview area for folders, Banners, Background, Episode Fanart
+Change to use Episode specific fanart in Detailed info if available
+
+1.0.2
+Change background processing for EPG and Scheduled Recordings for smoother scrolling
+Change so that if Diamond is enabled, use the Diamond thumbnails and backgrounds
+
+1.0.0
+Merged bialio's Phoenix Fanart for SageTV and tmiranda's Phoenix Fanart for malore Menus
+Fixes for changes in the default STV
+Added optional background in detailed info panels
+Added optional background in EPG and Scheduled Recordings panels
+Scaling and caching based on UI resolution
+</ReleaseNotes>
+<STVImport>Phoenix_Fanart.stvi</STVImport>
+</SageTVPlugin>

@@ -13,24 +13,36 @@
     </Description>
     <Author>stuckless,jusjoken,bialio,meinmaui</Author>
     <CreationDate>2010.06.05</CreationDate>
-    <ModificationDate>2019.01.19</ModificationDate>
+    <ModificationDate>2022.07.08</ModificationDate>
     <ResourcePath>phoenix-core</ResourcePath>
-    <Version>3.3.0</Version>
+    <Version>3.4.3.1</Version>
 
     <Webpage><![CDATA[https://github.com/stuckless/sagetv-phoenix-core]]></Webpage>
 
     <Dependency>
         <Plugin>phoenix-api</Plugin>
-        <MinVersion>3.3.0</MinVersion>
+        <MinVersion>3.4.3.1</MinVersion>
     </Dependency>
     <PluginType>Standard</PluginType>
     <Package>
         <PackageType>System</PackageType>
-        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/phoenix/3.3.0/phoenix-core-3.3.0.zip</Location>
-        <MD5>5d7d151af3014be5653ab9138fde70ab</MD5>
+        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/phoenix-core-3.4.3.zip</Location>
+        <MD5>76ed0d87414aab4bed149615358b28bb</MD5>
     </Package>
     <ImplementationClass>sagex.phoenix.plugin.PhoenixPlugin</ImplementationClass>
     <ReleaseNotes>
+# 3.4.3.1
+* changes to minimum versions on some dependencies
+# 3.4.3
+* Added TMDB as a free TV provider
+* Added TVDB V4 as a TV provider - needs a PIN with a subscription to TVDB
+* Fix: Old TVDB provider should now work on Java 11
+* Fix: if Fanart is disabled (local and central), metadata will still be retrieved unless Automatic  Fanart/Metadata is disabled
+
+# 3.3.1
+* Removed weather functionality as all included providers are no longer available
+* Weather for Gemstone and SageTV is now handled by the GWeather plugin
+
 # 3.2.3
 * Fanart Image fix (redirection not handled correctly)
 
@@ -40,7 +52,7 @@
 * The API will ignore changes that are the same. ie, setting same provider over and over, or setting the same units or locations, etc, will just be ignored, and not passed to the implementation.
 * The weather configuration can be "locked" (in BMT Weather Configuration). ie, if you have weather set to Yahoo with a location and units, you can "lock" it so that any API request to change this this will be ignored. I did this mainly because of a bug in Gemstore where it keeps changing my weather provider and units
 * SageTV Debugging - Exposed SageTV debugging flags to BMT Web UI (configuration)
-
+ 
 # 3.2.1
 * Fixes to allow failed TV lookups to retry (most failures are "Too many connections")
 

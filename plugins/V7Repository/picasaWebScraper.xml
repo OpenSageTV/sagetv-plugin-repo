@@ -1,0 +1,21 @@
+<SageTVPlugin>
+  <Name>Picasa Web Scraper (Dependency for Picasa Web Albums plugins)</Name>
+  <Identifier>picasaWebScraper</Identifier>
+  <Description><![CDATA[DO NOT DOWNLOAD DIRECTLY - This is a dependancy for the Picasa Web Albums plugins and will be downloaded/updated automatically]]></Description>
+  <Author>evilpenguin</Author>
+
+  <CreationDate>2010.08.24</CreationDate>
+  <ModificationDate>2010.08.24</ModificationDate>
+  <Version>1.0</Version>
+
+  <Desktop>false</Desktop>
+  <OS>Windows</OS>
+
+  <PluginType>Library</PluginType>
+  <Package>
+    <PackageType>System</PackageType>
+    <Location><![CDATA[https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/picasaWebScraper_v1_0.zip]]></Location>
+    <MD5>74DCCF544820F854115A5800317702C7</MD5>
+  </Package>
+
+</SageTVPlugin>

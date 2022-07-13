@@ -1,0 +1,69 @@
+<SageTVPlugin>
+       <Name>Sage Object Properties (SOP)</Name>
+       <Identifier>sop</Identifier>
+       <Description>
+Provides ability to attach properties to objects not supported by the core Sage API.
+
+This plugin provides a single API that allows getting and setting of properties for all objects supported by the Sage API plus those object types supported by this plugin.
+
+This plugin adds support for attaching properties to Show and Airing objects.  See the javadocs for the risks involved is attaching properties to these objects.
+
+To set/get properties on objects, use the SageProps API provided by this plugin.  You can use this API to get/set properties on natively supported object types along with the objects supported by this plugin.  The API is, therefore, a single API that can be used for all property set/get operations.
+
+The javadocs for the API are available at http://sagetv-addons.googlecode.com/svn/trunk/sop/docs/index.html
+
+As an aside, it is worth noting that this plugin is implemented completely in Groovy script.  See http://forums.sagetv.com/forums/showthread.php?t=55166 for more details, if interested.
+       </Description>
+       <Author>Slugger</Author>
+       <CreationDate>2011.04.12</CreationDate>
+       <ModificationDate>2011.05.02</ModificationDate>
+       <Version>1.0.1.1516</Version>
+       <ResourcePath>plugins/sop</ResourcePath>
+       <Webpage>http://sagetv-addons.googlecode.com</Webpage>
+       <Webpage>http://sagetv-addons.googlecode.com/svn/trunk/sop/docs/index.html</Webpage>
+       <Webpage>http://forums.sagetv.com/forums/showthread.php?t=55166</Webpage>
+       <ServerOnly>true</ServerOnly>
+       <Dependency>
+       		<JVM/>
+       		<MinVersion>1.5.0</MinVersion>
+       	</Dependency>
+       <Dependency>
+                <Core/>
+                <MinVersion>7.0.23</MinVersion>
+       </Dependency>
+        <Dependency>
+                <Plugin>groovy</Plugin>
+                <MinVersion>1.7.10</MinVersion>
+        </Dependency>
+        <Dependency>
+                <Plugin>log4j</Plugin>
+                <MinVersion>1.2.15</MinVersion>
+        </Dependency>
+        <Dependency>
+        	<Plugin>sagex-h2</Plugin>
+        	<MinVersion>1.0.8</MinVersion>
+        </Dependency>
+        <Dependency>
+        	<Plugin>sagex-api</Plugin>
+        	<MinVersion>7.1.5.0</MinVersion>
+        </Dependency>
+       <PluginType>Standard</PluginType>
+       <Package>
+               <PackageType>JAR</PackageType>
+               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sop-jar-1.0.1.1516.zip</Location>
+               <MD5>41f631c1c5f790da95dd2d3dd2100d72</MD5>
+               <Overwrite>true</Overwrite> <!-- Defaults to true -->
+       </Package>
+       <Package>
+       			<PackageType>System</PackageType>
+       			<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sop-conf-1.0.1.1516.zip</Location>
+       			<MD5>fc16c9f2f3e6719a2c889c575c7aded2</MD5>
+       			<Overwrite>false</Overwrite>
+       	</Package>
+       	<ImplementationClass>com.google.code.sagetvaddons.sop.Plugin</ImplementationClass>
+       	<ReleaseNotes>
+* Fix bug that disallowed use of API outside of Sage server JVM.
+
+* All additonal methods to API; see javadocs for details on what's new
+       	</ReleaseNotes>
+</SageTVPlugin>

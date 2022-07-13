@@ -1,0 +1,51 @@
+<SageTVPlugin>
+  <Name>Canadian Channel Logo Pack</Name>
+  <Identifier>canadianchannellogopack</Identifier>
+  <Description>A complete collection of hi-res channel logos (600x300 JPG's) cleaned up and scaled with Photoshop on black backgrounds for the following areas,
+
+BELL EAST
+BELL WEST
+TELUS TV CALGARY
+TELUS TV SAT BC AB
+BELL TV CABLE TORONTO
+SHAW CALGARY DIGITAL
+SHAW DIRECT EAST (Starchoice)
+SHAW DIRECT WEST (Starchoice)
+SHAW NANAIMO DIGITAL
+SHAW VANCOUVER DIGITAL
+SHAW VICTORIA DIGITAL
+SHAW EDMONTON DIGITAL
+SHAW SASKATOON DIGITAL
+SHAW WINNEPEG DIGITAL
+SHAW KELOWNA DIGITAL
+SHAW PRINCEGEORGE DIGITAL
+ROGERS TORONTO DIGITAL
+ROGERS KITCHENER GRAND RIVER DIGITAL
+ROGERS BRAMPTON DIGITAL
+ROGERS MISS REXDALE DIGITAL
+ROGERS OTTAWA DIGITAL
+COGECO OAKVILLE DIGITAL
+VIDEOTRON MONTREAL
+VIDEOTRON QUEBEC CITY DIGITAL
+
+This pack contains 960 logos named to work with the above providers and lineups verifed on Zap2it within the last few weeks.  All channels are included and I hope by picking the lineups above I will have created enough overlap for the other areas not included.  You should be able to just install this set and all channels should show up without renaming the files etc.  There is a chance that if you are not in one of the above areas that the odd channel might be missing (local or specialty etc) and you will have to source the missing channel image.
+
+The download is about 20MB in size.
+
+I will be converting the whole set to transparent logos as I have time in the near future.
+
+Disclaimer - I have done my best to research (Google, Wikipedia, Lyngsat) and choose the correct logo for each channel but there is a chance that there may be some logos that won't match so please let me know and I will correct.  International logos were a bit of a problem as most channels didn't have a hi res image availible but I think they turned out ok most of the time.
+
+</Description>
+  <Author>jorton</Author>
+  <CreationDate>2010-07-08</CreationDate>
+  <ModificationDate>2010.07.08</ModificationDate>
+  <Version>1.0</Version>
+  <Desktop>false</Desktop>
+  <PluginType>Images</PluginType>
+  <Package>
+    <PackageType>ChannelLogo</PackageType>
+   <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/ALLCANADA.zip</Location>
+    <MD5>07380a9d7c066a5b145e36e55951d165</MD5>
+  </Package>
+</SageTVPlugin>

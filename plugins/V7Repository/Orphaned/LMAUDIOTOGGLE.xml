@@ -1,0 +1,27 @@
+<SageTVPlugin>
+    <Name>Audio Stream Toggle</Name>
+    <Identifier>LMAUDIOTOGGLE</Identifier>
+    <Description>
+        Allows switching audio streams during video playback by pressing on a button on your remote.
+
+        For switching audio streams you'll also need to assign the "DVD Change Audio" command to
+        a remote button or keyboard shortcut, either withing SageTV mappings or with your remote
+        control software.
+    </Description>
+    <Author>LM Gestion - StephaneM</Author>
+    <CreationDate>2010-08-14</CreationDate>
+    <ModificationDate>2010-08-14</ModificationDate>
+    <Version>1.0</Version>
+    <Desktop>false</Desktop>
+    <PluginType>STVI</PluginType>
+    <STVImport>AudioToggle.stvi</STVImport>
+    <Dependency>
+        <STV>SageTV7</STV>
+        <MinVersion>7.0</MinVersion>
+    </Dependency>
+    <Package>
+        <PackageType>STVI</PackageType>
+        <Location>http://www.lmgestion.net/content/softwares/sagetv/audiotoggle1.0.zip</Location>
+        <MD5>cce697e6b3febe7a43760196e99d7af4</MD5>
+    </Package>
+</SageTVPlugin>

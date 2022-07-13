@@ -1,0 +1,67 @@
+<SageTVPlugin>
+
+  <Name>24 Hour Clock</Name>
+
+  <Identifier>HC24</Identifier>
+
+  <Description>Display all times is 24 hour format.  A special gift to FigetyRat in his quest to "fight against SageTV's discrimination against Americans that use the 24h time format."</Description>
+
+  <Author>tmiranda</Author>
+
+  <CreationDate>2010.07.04</CreationDate>
+
+  <ModificationDate>2015.11.21</ModificationDate>
+
+  <Version beta="false">1.02</Version>
+
+  <Desktop>false</Desktop>
+
+  <Webpage>http://forums.sagetv.com/forums/showthread.php?t=49441</Webpage>
+
+
+
+  <Dependency>
+
+    <STV>SageTV7</STV>
+
+    <MinVersion>7.0</MinVersion>
+
+  </Dependency>
+
+
+
+  <PluginType>STVI</PluginType>
+
+
+
+  <Package>
+
+    <PackageType>STVI</PackageType>
+
+    <Location>http://github.com/tmiranda1962/24-Hour-Clock/releases/download/v1.02/24-Hour-Clock.zip</Location>
+
+    <MD5>E720443ADFF8148EEA25F7FDA0466B6E</MD5>
+
+  </Package>
+
+
+
+  <Package>
+
+    <PackageType>JAR</PackageType>
+
+    <Location>http://github.com/tmiranda1962/24-Hour-Clock/releases/download/v1.02/24HC.zip</Location>
+
+    <MD5>91DEE40B277F3EB5EA5EB4F419C090DB</MD5>
+
+  </Package>
+
+
+
+<STVImport>24-Hour-Clock.stvi</STVImport>
+
+<ReleaseNotes>Version 1.02: Migrated from Google Code to GitHub.
+
+Version 1.01: Added support for the hidden menus.</ReleaseNotes>
+
+</SageTVPlugin>

@@ -1,0 +1,51 @@
+<SageTVPlugin>
+
+  <Name>Windows Sidebar/Desktop Gadget Support</Name>
+
+  <Identifier>wingadgetsupport</Identifier>
+
+  <Description>Windows Sidebar/Desktop Gadget support file.  Also ensures that the required sagex API Services (and therefore jetty web server) are installed.</Description>
+
+  <Author>cncb</Author>
+
+  <CreationDate>2011.02.23</CreationDate>
+
+  <ModificationDate>2011.04.03</ModificationDate>
+
+  <Version beta="false">1.1</Version>
+
+  <Desktop>false</Desktop>
+
+ <Dependency>
+
+<Plugin>sagex-api-services</Plugin>
+
+<MinVersion>7.1.5.5</MinVersion>
+
+</Dependency>
+
+<PluginType>Standard</PluginType>
+
+    <Package>
+
+        <PackageType>System</PackageType>
+
+        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/Gadget-SYS-1-1.zip</Location>
+
+        <MD5>AE0D408263B9133B9593A229ABADB815</MD5>
+
+    </Package>
+
+<Webpage>http://forums.sagetv.com/forums/showthread.php?t=54192</Webpage>
+
+<Screenshot>http://forums.sagetv.com/forums/attachment.php?attachmentid=12056</Screenshot>
+
+<STVImport></STVImport>
+
+<ReleaseNotes>
+
+    v1.1 - Support for new channel logos, playback time formatted for hours, auto reconnect for Now Playing clients, custom Recording Schedule item HTML text.
+
+</ReleaseNotes>
+
+</SageTVPlugin>

@@ -1,0 +1,18 @@
+<SageTVPlugin>
+  <Name>commons-lang</Name>
+  <Identifier>commons-lang</Identifier>
+  <Description>SageTV Dependency JAR Plugin for commons-lang-2.4.jar - no need to download directly</Description>
+  <Author>stuckless</Author>
+  <CreationDate>2010-04-08</CreationDate>
+  <ModificationDate>2010.04.10</ModificationDate>
+  <Version>2.4</Version>
+  <Desktop>false</Desktop>
+
+  <PluginType>Library</PluginType>
+
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/commons-lang-2.4.jar.zip</Location>
+    <MD5>9B93D462E41A9AA0C07E40938E98CE12</MD5>
+  </Package>
+</SageTVPlugin>

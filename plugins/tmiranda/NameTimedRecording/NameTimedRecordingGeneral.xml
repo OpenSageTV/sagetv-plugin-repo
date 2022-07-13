@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SageTVPlugin>
+
+  <Name>Name Timed Recording General</Name>
+
+  <Identifier>NameTimedRecordingGeneral</Identifier>
+
+  <Author>tmiranda</Author>
+
+  <CreationDate>2011.04.17</CreationDate>
+
+  <ModificationDate>2021.05.16</ModificationDate>
+
+  <Version beta="false">1.36.1</Version>
+
+  <Desktop>false</Desktop>
+
+  <Description>Support Plugin for Named Timed Recording. No need to install this directly.</Description>
+
+
+
+  <Dependency>
+
+    <STV>SageTV7</STV>
+
+    <MinVersion>7.1</MinVersion>
+
+  </Dependency>
+
+
+
+  <Dependency>
+
+    <Plugin>sagex-api</Plugin>
+
+    <MinVersion>7.0.23.6</MinVersion>
+
+  </Dependency>
+
+
+
+  <PluginType>Standard</PluginType>
+
+  <ImplementationClass>tmiranda.ntr.Plugin</ImplementationClass>
+
+
+
+  <Package>
+
+    <PackageType>JAR</PackageType>
+
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/NameTimedRecordingGeneral-1.30.zip</Location>
+
+    <MD5>A1E5C5ED5872A4B6FFB8B9D59719541B</MD5>
+
+  </Package>
+
+
+
+  <ReleaseNotes>
+-Move to V9 repository
+
+Version 1.36:
+
+- Moved hosting to BinTray. No change in functionality.
+
+
+
+Version 1.30:
+
+- Fixed bug that would occur if two timed recordings with the same recurrence happened on the same channel.
+
+- Added ability to edit the names of existing timed recordings and manual recordings.
+
+- Improved dialog that displays suggested names.
+
+- Added logging.
+
+- Known Issue: Will not work properly for languages other than English.
+
+
+
+Version 1.25:
+
+- Added support so STV can check if plugin is installed on the server.
+
+
+
+Version 1.20:
+
+- Enhanced method used to set metadata for recurring timed recording.
+
+- Changed status to beta so it's the same as the STVi portion of the plugin.
+
+
+
+Version 1.10:
+
+- First release.</ReleaseNotes>
+
+</SageTVPlugin>

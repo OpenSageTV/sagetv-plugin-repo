@@ -26,7 +26,7 @@
 
   <Dependency>
     <Plugin>nielm_sageimdb</Plugin>
-    <MinVersion>1.0</MinVersion>
+    <MinVersion>2.0.4</MinVersion>
   </Dependency>
 
   <Dependency>
@@ -63,7 +63,7 @@
 
   <Package>
     <PackageType>STV</PackageType>
-    <Location>https://bintray.com/jrekiwi/SageTV/download_file?file_path=SageMC%2Fsagemc-stv-7.0.11.zip</Location>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sagemc-stv-7.0.11.zip</Location>
     <MD5>DCEC3911DBC4503F58E7A3AAB2F93A98</MD5>
   </Package>
 <ReleaseNotes>

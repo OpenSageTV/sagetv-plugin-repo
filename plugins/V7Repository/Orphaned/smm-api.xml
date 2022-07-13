@@ -1,0 +1,42 @@
+<SageTVPlugin>
+  <Name>SageMyMovies API</Name>
+  <Identifier>smm-api</Identifier>
+  <Description>MyMovies API- no need to download directly</Description>
+  <Author>PluckyHD</Author>
+  <CreationDate>2010-05-21</CreationDate>
+  <ModificationDate>2010.01.21</ModificationDate>
+  <Version beta="true">1.2300</Version>
+  <Desktop>false</Desktop>
+  <OS>Windows</OS>
+  <Dependency>
+  <Core/>
+  <MinVersion>7.0.15</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Plugin>log4j</Plugin>
+    <MinVersion>1.2.15</MinVersion>
+  </Dependency>
+<Dependency>
+    <Plugin>sagex-api</Plugin>
+    <MinVersion>7.0.7.0</MinVersion>
+  </Dependency>
+  <Dependency>
+    <Plugin>MSSQLJDBC</Plugin>
+    <MinVersion>2.0</MinVersion>
+  </Dependency>
+  <PluginType>Standard</PluginType>
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>http://babgvant.com/downloads/pluckyhd/smm-api-Bv1.2300.zip</Location>
+    <MD5>391cc06eb79dd062d7132cff0273c69d</MD5>
+  </Package>
+  <Package>
+  <PackageType>System</PackageType>
+  <Location>http://babgvant.com/downloads/pluckyhd/smm-api-backupfiles1.00.zip</Location>
+  <MD5>6312901f4d17649d225b8937adf6d8a5</MD5>
+  <Overwrite>true</Overwrite>
+  </Package>
+
+<ImplementationClass>PluginSageMyMovies.SMMPlugin</ImplementationClass>
+
+</SageTVPlugin>

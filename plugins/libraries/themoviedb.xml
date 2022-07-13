@@ -4,8 +4,8 @@
     <Description>The Movie DB Library</Description>
     <Author>stuckless</Author>
     <CreationDate>2013.04.19</CreationDate>
-    <ModificationDate>2015.12.12</ModificationDate>
-    <Version>4.1.0</Version>
+    <ModificationDate>2022.07.07</ModificationDate>
+    <Version>4.4.1</Version>
     <PluginType>Library</PluginType>
     <Dependency>
         <Plugin>junit</Plugin>
@@ -29,15 +29,15 @@
     </Dependency>
     <Dependency>
         <Plugin>jackson-core</Plugin>
-        <MinVersion>2.6.3.0</MinVersion>
+        <MinVersion>2.9.8</MinVersion>
     </Dependency>
     <Dependency>
         <Plugin>jackson-annotations</Plugin>
-        <MinVersion>2.6.3.0</MinVersion>
+        <MinVersion>2.9.8</MinVersion>
     </Dependency>
     <Dependency>
         <Plugin>jackson-databind</Plugin>
-        <MinVersion>2.6.3.0</MinVersion>
+        <MinVersion>2.9.8</MinVersion>
     </Dependency>
     <Dependency>
         <Plugin>HttpClient</Plugin>
@@ -57,7 +57,7 @@
     </Dependency>
     <Dependency>
         <Plugin>commons-io</Plugin>
-        <MinVersion>2.4</MinVersion>
+        <MinVersion>2.5</MinVersion>
     </Dependency>
     <Dependency>
         <Plugin>api-common</Plugin>
@@ -69,10 +69,10 @@
     </Dependency>
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/libraries/themoviedbapi-4.1.zip</Location>
-        <MD5>a8d39ee1eb383b0f3be7dceee4e9a0c9</MD5>
+        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/themoviedbapi-4.4.zip</Location>
+        <MD5>5209a85a3da7169c1eda29365dc479f9</MD5>
     </Package>
     <ReleaseNotes>
-        Library used by Phoenix and TheMovieDB
+        Library used by Phoenix and TheMovieDB 4
     </ReleaseNotes>
 </SageTVPlugin>

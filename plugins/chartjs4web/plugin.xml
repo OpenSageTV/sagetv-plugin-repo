@@ -15,8 +15,8 @@
        <PluginType>Library</PluginType>
        <Package>
                <PackageType>System</PackageType>
-               <Location>https://bintray.com/opensagetv/sagetv-plugins/download_file?file_path=chartjs%2Fchartjs-1.0.2.zip</Location>
-               <MD5>E248D6FB7AFF8FDFBC5FFC5D2DA1C619</MD5>
+               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/chartjs-1.0.2.1.zip</Location>
+               <MD5>ED0E8D191F7C1B0F8633C87FB5832068</MD5>
                <Overwrite>true</Overwrite>
        </Package>
 </SageTVPlugin>

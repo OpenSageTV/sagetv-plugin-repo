@@ -1,0 +1,38 @@
+<SageTVPlugin>
+ <Name>Multispeed Skip</Name>
+ <Identifier>MultispeedSkip</Identifier>
+ <Description>With this plugin, the FF/REW buttons in the full-screen video page become more like VCR FF/REW buttons, giving continuous FF/REW functionality, with speeds varying from 2x to 128x.</Description>
+ <Author>nielm, JREkiwi</Author>
+ <CreationDate>2005.04.12</CreationDate>
+ <ModificationDate>2021.03.13</ModificationDate>
+ <Version>1.6.1.2</Version>
+ <Desktop>false</Desktop>
+ <Webpage>http://forums.sagetv.com/forums/showthread.php?t=51165</Webpage>
+ <Dependency>
+  <STV>SageTV7</STV>
+  <MinVersion>7.0</MinVersion>
+ </Dependency>
+ <Dependency>
+  <JVM></JVM>
+  <MinVersion>1.8</MinVersion>
+  </Dependency>
+<PluginType>STVI</PluginType>
+ <Package>
+   <PackageType>STVI</PackageType>
+   <Location>https://github.com/JREkiwi/MultispeedSkip/releases/download/1.6.1/Multispeed_Skip_1.6.1.zip</Location>
+   <MD5>B3ED10801B7F9A33FF0CB8C0655496B2</MD5>
+ </Package>
+<STVImport>Multispeed_Skip.stvi</STVImport>
+<ReleaseNotes>
+1.6.1.2
+Change download to GitHub
+1.6.1.1
+ Change download to HTTPS
+
+ 1.6.1
+Fix sizing and location of speed indicator
+Fix conflict with Multi Function Stop plugin
+1.6
+Port of nielm's Multispeed_Skip import
+</ReleaseNotes>
+</SageTVPlugin>

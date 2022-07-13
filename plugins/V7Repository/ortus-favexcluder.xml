@@ -1,0 +1,17 @@
+<SageTVPlugin>
+  <Name>ortus-favexcluder</Name>
+  <Identifier>ortus-favexcluder</Identifier>
+  <Description>SageTV Dependency JAR Plugin for ortus-favexcluder.jar - no need to download directly</Description>
+  <Author>flachbar, jphipps</Author>
+  <CreationDate>2010-06-04</CreationDate>
+  <ModificationDate>2010.06.04</ModificationDate>
+  <Version>1.0</Version>
+
+  <PluginType>Library</PluginType>
+
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/ortus_favexcluder.jar-1.0.zip</Location>
+    <MD5>DE038005174EDD9DB441887E24ADA892</MD5>
+  </Package>
+</SageTVPlugin>

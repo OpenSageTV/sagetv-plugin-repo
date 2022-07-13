@@ -1,0 +1,18 @@
+<SageTVPlugin>
+       <Name>commons-pool</Name>
+       <Identifier>commons-pool</Identifier>
+       <Description>Apache Commons generic object pooling library - dependency only</Description>
+       <Author>Slugger</Author>
+       <CreationDate>2010.05.08</CreationDate>
+       <!-- <ModificationDate>2010.03.01</ModificationDate> -->
+       <Version>1.5.4</Version>
+       <ResourcePath>plugins/commons-pool</ResourcePath>
+       <Webpage>http://commons.apache.org/pool/index.html</Webpage>
+       <PluginType>Library</PluginType>
+       <Package>
+               <PackageType>JAR</PackageType>
+               <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/commons-pool-1.5.4.zip</Location>
+               <MD5>80CB2BEF8F40EC2E6F9D776F5C8A5B7A</MD5>
+               <Overwrite>true</Overwrite> <!-- Defaults to true -->
+       </Package>
+</SageTVPlugin>

@@ -1,0 +1,16 @@
+<SageTVPlugin>
+  <Name>Stock Quote Library</Name>
+  <Identifier>stockquote</Identifier>
+  <Description>SageTV Dependency JAR Plugin for Stock Quotes</Description>
+  <Author>jvl711</Author>
+  <CreationDate>2010.05.27</CreationDate>
+  <ModificationDate>2010.05.27</ModificationDate>
+  <Version>1.0.0</Version>
+  <Desktop>false</Desktop>
+  <PluginType>Library</PluginType>
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/JVLStockQuote_1.0.0.zip</Location>
+    <MD5>064FD1CDCD5981AC324F1A71BD8EAF48</MD5>
+  </Package>
+</SageTVPlugin>

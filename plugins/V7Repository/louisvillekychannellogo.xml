@@ -1,0 +1,16 @@
+<SageTVPlugin>
+  <Name>Louisville, KY Channel Logo Pack</Name>
+  <Identifier>louisvillekychannellogo</Identifier>
+  <Description>A collection of channel logos for the Louisville, KY area lineup. This can be used in conjunction with other logo packs to build a complete set.</Description>
+  <Author>bcjenkins</Author>
+  <CreationDate>2010-05-20</CreationDate>
+  <ModificationDate>2010.05.20</ModificationDate>
+  <Version>0.0.4</Version>
+  <Desktop>false</Desktop>
+  <PluginType>Images</PluginType>
+  <Package>
+    <PackageType>ChannelLogo</PackageType>
+   <Location>http://dl.dropbox.com/u/4976/sagetv/louisville-ky-cl-v.0.0.4.zip</Location>
+    <MD5>e3039d60716995da4a5f325e92433b20</MD5>
+  </Package>
+</SageTVPlugin>

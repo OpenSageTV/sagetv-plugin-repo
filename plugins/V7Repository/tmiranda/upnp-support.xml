@@ -1,0 +1,197 @@
+<SageTVPlugin>
+
+  <Name>UPnP Support</Name>
+
+  <Identifier>upnp-support</Identifier>
+
+  <Author>tmiranda</Author>
+
+  <CreationDate>2015.11.14</CreationDate>
+
+  <ModificationDate>2016.06.26</ModificationDate>
+
+  <Version beta="false">0.06</Version>
+
+  <Desktop>false</Desktop>
+
+
+
+  <Description>Support library for UPnP UI Mod. No need to install this directly.</Description>
+
+
+
+  <Dependency>
+
+    <Plugin>sagex-api</Plugin>
+
+    <MinVersion>7.1.9.26</MinVersion>
+
+  </Dependency>
+
+
+
+  <Dependency>
+
+    <Plugin>sagex-api-services</Plugin>
+
+    <MinVersion>7.1.9.26</MinVersion>
+
+  </Dependency>
+
+
+
+  <Dependency>
+
+    <Plugin>cling-core</Plugin>
+
+    <MinVersion>2.0.1</MinVersion>
+
+  </Dependency>
+
+
+
+  <Dependency>
+
+    <Plugin>cling-support</Plugin>
+
+	<MinVersion>2.0.1</MinVersion>
+
+  </Dependency>
+
+
+
+  <Dependency>
+
+    <Plugin>seamless-http</Plugin>
+
+	<MinVersion>1.1.0</MinVersion>
+
+  </Dependency>
+
+
+
+  <Dependency>
+
+    <Plugin>seamless-util</Plugin>
+
+	<MinVersion>1.1.0</MinVersion>
+
+  </Dependency>
+
+
+
+  <Dependency>
+
+    <Plugin>seamless-xml</Plugin>
+
+	<MinVersion>1.1.0</MinVersion>
+
+  </Dependency>
+
+
+
+  <Dependency>
+
+    <Plugin>commons-io</Plugin>
+
+	<MinVersion>2.4</MinVersion>
+
+  </Dependency>
+
+
+
+  <Dependency>
+
+    <Plugin>commons-lang</Plugin>
+
+	<MinVersion>2.4</MinVersion>
+
+  </Dependency>
+
+
+
+  <Dependency>
+
+    <Plugin>jetty</Plugin>
+
+	<MinVersion>2.3.0.14</MinVersion>
+
+  </Dependency>
+
+
+
+  <Dependency>
+
+    <Plugin>phoenix-core</Plugin>
+
+    <MinVersion>2.5.13</MinVersion>
+
+  </Dependency>
+
+
+
+  <Dependency>
+
+    <Plugin>dom4j</Plugin>
+
+    <MinVersion>1.6.1</MinVersion>
+
+  </Dependency>
+
+
+
+  <PluginType>Standard</PluginType>
+
+
+
+   <ImplementationClass>tmiranda.upnp.Plugin</ImplementationClass>
+
+
+
+   <Package>
+
+    <PackageType>JAR</PackageType>
+
+    <Location>http://dl.bintray.com/opensagetv/sagetv-plugins/UPNP/PlayOn-0.06.zip</Location>
+
+    <MD5>E72B27C144341645F44268BC42CE26A8</MD5>
+
+  </Package>
+
+
+
+  <ReleaseNotes>Version 0.06:
+
+- Fixed getDurationAsMillis to support adding padding to run time.
+
+
+
+Version 0.5:
+
+- Added support functions.
+
+
+
+Version 0.04:
+
+- Fixed progressive playback of video.
+
+- Added ContentDirectory service.
+
+- Added UPnP server capabilities.
+
+- Bug fixes.
+
+
+
+Version 0.02:
+
+- Added ability to record videos.
+
+
+
+Version 0.01:
+
+- Initial release.</ReleaseNotes>
+
+</SageTVPlugin>

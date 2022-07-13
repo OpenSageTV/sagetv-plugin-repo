@@ -1,0 +1,57 @@
+<SageTVPlugin>
+  <Name>J. River Media Center / Jukebox Explorer</Name>
+  <Identifier>jrmcexplorer</Identifier>
+  <Description>Take advantage of the powerful and flexible filtering, tagging, organizing, playlists, and dynamic smartlists of J. River Media Center for music, photos, and videos inside SageTV.  This also works with the free, music-only Media Jukebox application.  Note that the JRMC (or Jukebox) application has to be running in the backgound for this plugin but all playback is done within SageTV so this also works on extenders.  Your media files do not have to be imported into the Sage database (DVDs are the only exception).
+
+  ** The JRMC (or Jukebox) application needs to be closed (not running) before installing or updating this plugin.  See the SageTV forum for one-time JRMC setup information.
+ </Description>
+  <Author>cncb</Author>
+  <CreationDate>2010.06.15</CreationDate>
+  <ModificationDate>2010.09.05</ModificationDate>
+  <Version beta="false">1.3</Version>
+  <Desktop>false</Desktop>
+ <Dependency>
+<STV>SageTV7</STV>
+<MinVersion>7.0</MinVersion>
+</Dependency>
+<PluginType>STVI</PluginType>
+  <Package>
+    <PackageType>STVI</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/JRMC-STVI-1-3.zip</Location>
+    <MD5>86ADB586C562D47408472ABA984202B4</MD5>
+  </Package>
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/JRMC-JAR-1-3.zip</Location>
+    <MD5>345AC845500406CC289ACB20AE75D411</MD5>
+  </Package>
+  <Package>
+    <PackageType>System</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/JRMC-SYS-1-3.zip</Location>
+    <MD5>DCC9FA371CB56FB02CF6FEEC7B2CADF3</MD5>
+  </Package>
+<Webpage>http://forums.sagetv.com/forums/showthread.php?p=431495#post431495</Webpage>
+<Screenshot>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/jrmc_1.jpg</Screenshot>
+<Screenshot>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/jrmc_2.jpg</Screenshot>
+<Screenshot>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/jrmc_3.jpg</Screenshot>
+<Screenshot>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/jrmc_4.jpg</Screenshot>
+<Screenshot>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/jrmc_5.jpg</Screenshot>
+<STVImport>JRMC-1-3.stvi</STVImport>
+<ReleaseNotes>
+  Version 1.3
+  * Enable numeric text entry on text input screens.
+  * Allow slideshow list to be cleared.
+
+  Version 1.2
+  * Added save and restore of playback queues between sessions (these are stored as playlists in JRMC).
+  * Added creating new playlists and ability to add multiple files at one time to playlists.
+  * Added Edit Mode enable/disable to prevent unwanted rating changes and playlist additions.
+  * Bundled SageJRMCServer with plugin download.
+
+  Version 1.1
+  * Implemented volume leveling/replay gain for HD100/200 (disabled by default - enable in Settings).  Can now display current volume in Now Playing to see gain changes.
+  * Pressing number 0-5 buttons in Now Playing or Slideshow screens will allow rating current file.
+  * Can now add individual files to existing Playlists.
+  * Fixed some slideshow video playback issues.
+</ReleaseNotes>
+</SageTVPlugin>

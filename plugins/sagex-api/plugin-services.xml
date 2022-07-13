@@ -1,53 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SageTVPlugin>
-  <Name>sagex-services - SageTV Remote API Services</Name>
+  <Name>SageTV Sagex Remote API Services (sagex-services)</Name>
   <Identifier>sagex-api-services</Identifier>
   <Description>HTTP and RMI services for SageTV (HTTP services require Jetty Plugin).  HTTP services includes JSON/JSONP and Xml formats.</Description>
   <Author>stuckless</Author>
   <CreationDate>2008.10.05</CreationDate>
-  <ModificationDate>2018.03.04</ModificationDate>
-  <Version>9.1.7.0</Version>
+  <ModificationDate>2022.06.01</ModificationDate>
+  <Version>9.2.8.1</Version>
   <Desktop>false</Desktop>
   <ResourcePath>sagex-api</ResourcePath>
   <Webpage><![CDATA[http://forums.sagetv.com/forums/showthread.php?t=36044]]></Webpage>
 
   <Dependency>
     <Core/>
-    <MinVersion>9.1.7</MinVersion>
+    <MinVersion>9.2.0</MinVersion>
   </Dependency>
 
   <Dependency>
     <JVM/>
-    <MinVersion>1.7</MinVersion>
+    <MinVersion>1.8</MinVersion>
   </Dependency>
 
   <Dependency>
     <Plugin>Jetty</Plugin>
-    <MinVersion>1.7</MinVersion>
+    <MinVersion>3.0.1</MinVersion>
   </Dependency>
 
   <Dependency>
     <Plugin>sagex-api</Plugin>
-    <MinVersion>9.1.7.0</MinVersion>
+    <MinVersion>9.2.8.1</MinVersion>
   </Dependency>
 
   <PluginType>Standard</PluginType>
 
   <Package>
     <PackageType>System</PackageType>
-    <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/sagex-api/9.1.7.0/sagex-api-services-9.1.7.0.zip</Location>
-    <MD5>532b0de9474793d4f0e4c77a1335ce25</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sagex-api-services-9.2.8.1.zip</Location>
+    <MD5>1d013dc2ea83df32c216f12b06849f8c</MD5>
   </Package>
 
   <!-- Plugin Class is in the core sagex-api jar -->
   <ImplementationClass>sagex.plugin.impl.SagexRemoteAPIPlugin</ImplementationClass>
 
   <ReleaseNotes>
-    9.1.7
+9.2.8
+    * Added support for api's added since 9.0 (mostly related to Person and SD EPG)
+    * Updated generate api to support the new javadocs format that removed frame support
+      * note: all api's have been regenerated as of this version
+9.2.6
+    * Build for Github sources and Jetty 9
+9.1.7
     * Added OpenAPI (swagger) reference guide
 
-    9.0.0
+9.0.0
     * Updated to SageTV 9
   </ReleaseNotes>
-
+  
 </SageTVPlugin>

@@ -1,0 +1,181 @@
+<SageTVPlugin>
+
+
+
+	<Name>Podcast Recorder UI</Name>
+
+
+
+  	<Identifier>PodcastRecorderSTVi</Identifier>
+
+
+
+  	<Description>PodcastRecorder is a plugin that allows you to manually record Podcasts or select Podcasts as Favorites and have them automatically recorded.</Description>
+
+
+
+  	<Author>tmiranda</Author>
+
+
+
+  	<CreationDate>2010.10.01</CreationDate>
+
+  	<ModificationDate>2011.04.29</ModificationDate>
+
+
+
+  	<Version beta="true">1.70</Version>
+
+
+
+  	<Desktop>false</Desktop>
+
+
+
+	<Screenshot>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/tmiranda/PodcastRecorder-FavoriteMenu.JPG</Screenshot>
+
+	<Screenshot>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/tmiranda/PodcastRecorder-MainScreen.JPG</Screenshot>
+
+	<Screenshot>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/tmiranda/PodcastRecorder-RecordingMenu.JPG</Screenshot>
+
+	<Screenshot>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/tmiranda/PodcastRecorder-Favorite.JPG</Screenshot>
+
+	<Screenshot>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/tmiranda/PodcastRecorder-MainFavoriteMenu.JPG</Screenshot>
+
+
+
+  	<Webpage>http://forums.sagetv.com/forums/showthread.php?p=453223#post453223</Webpage>
+
+
+
+  	<Dependency>
+
+    		<STV>SageTV7</STV>
+
+      	<MinVersion>7.1</MinVersion>
+
+  	</Dependency>
+
+
+
+  	<Dependency>
+
+    		<Plugin>ortus-mq</Plugin>
+
+    		<MinVersion>1.0.10</MinVersion>
+
+  	</Dependency>
+
+
+
+  	<Dependency>
+
+    		<Plugin>podcastrecorderplugin</Plugin>
+
+    		<MinVersion>0.70</MinVersion>
+
+  	</Dependency>
+
+
+
+  	<PluginType>STVI</PluginType>
+
+
+
+  	<Package>
+
+    		<PackageType>STVI</PackageType>
+
+    		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/PodcastRecorderSTVi-1.70.zip</Location>
+
+    		<MD5>D24B6544C113BE4BFC333A88701488CB</MD5>
+
+  	</Package>
+
+
+
+  	<STVImport>PodcastRecorderSTVi.stvi</STVImport>
+
+
+
+  	<ReleaseNotes>Beta 1.70:
+
+- Add ability to mark episodes as recorded even if they have not been. This is useful to "catch up" and only record new episodes rather than having to record all previous episodes.
+
+- Add Database Browser function to aid in debugging user problems.
+
+- More fixes for Channels.com.  (Still not 100% reliable.) Fixes may have the side effect of allowing individual PlayOn items to be recorded but this needs further investigation.
+
+- Fix bug that prevented Channels.com items from being downloaded if the menu had been reloaded.
+
+- If the user has specified a download directory it will be monitored for old files.
+
+- Fix NullPointerException caused when looking at some ChannelsDotCom items.
+
+- Fix bug that caused all Favorite information to be lost when upgrading. (Upgrading to version 1.70 will result in all Favorite information being lost, but this should be the last time that happens.)
+
+- Removed redundant database update to improve performance.
+
+
+
+Beta 1.60:
+
+- Add support for Channels.com. (But it's still not working correctly.)
+
+- Can now record single Episodes from PlayOn.  Recording multiple Episodes and selecting PlayOn items as a Favorite is not supported.
+
+- If in Recorded TV menu add Favorite icon next to Podcasts that are Favorites. If using the malore menus the icon will only show up if using double rows on the right side.
+
+- If in Online menu add RSS icon next to Podcasts that have been recorded.
+
+- Add ability to jump to Online Favorite Manager from recording option menus.
+
+- Add ability to record more than the default number of displayed items (usually 20) for Podcasts such as YouTube Channels.
+
+- Fix bug that prevented Favorite Podcast from being removed from the Online Favorite Manager after it was removed as a favorite.
+
+- Fix bug that allowed pressing Favorite and Record on non Podcasts items such as Back, Next and Previous.
+
+- Fix bug that caused Favorite Options dialog to not use default values set by user.
+
+- Fix bug that would cause the Favorite status of recorded Episodes to remain the same even though the user changed the Favorite status of the Podcast.
+
+- Fix bug that prevented MediaFile metadata from getting the correct Favorite status.
+
+- Improve error message that is displayed if adding a Favorite fails.
+
+
+
+Beta 1.50:
+
+- Fixed bug that caused Podcasts to be recorded more than one time.
+
+- Added check to make sure server and client have the same version installed.
+
+- Begin to add support for Channels.com but it's still not completed.
+
+- In Recording menu display RSS icon next to items that are Podcasts.
+
+- In Online menu display RSS icon next to Podcasts that have been recorded.
+
+- Cosmetic enhancement to options menu that appears when Podcast is selected.
+
+
+
+Beta 1.40:
+
+- Updated for SageTV version 7.1.
+
+- Fixed bug that caused large memory usage leading to SageTV to slowdowns.
+
+- When browsing recorded shows that are Podcasts, suppress the Favorite options.
+
+- When displaying detailed info for recorded Podcasts, suppress the Misc data since it contains internal information.
+
+
+
+Beta 1.20 - First public release.</ReleaseNotes>
+
+
+
+</SageTVPlugin>

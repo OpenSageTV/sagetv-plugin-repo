@@ -1,0 +1,55 @@
+<SageTVPlugin>
+
+  <Name>Hide F/A/M/W/HD/1 Icons in Lists</Name>
+
+  <Identifier>HideIconsInFileLists</Identifier>
+
+  <Description>Hides "F/A/M/W/HD/1" icons in lists</Description>
+
+  <Author>49studebaker</Author>
+
+  <CreationDate>2010.06.19</CreationDate>
+
+  <ModificationDate>2010.06.19</ModificationDate>
+
+  <Version>1.0.0</Version>
+
+
+
+<Dependency>
+
+  <STV>SageTV7</STV>
+
+  <MinVersion>7.0</MinVersion>
+
+</Dependency>
+
+
+
+<PluginType>STVI</PluginType>
+
+<STVImport>HideIconsInFileLists.stvi</STVImport>
+
+
+
+<Package>
+
+  <PackageType>STVI</PackageType>
+
+  <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/HideIconsInFileLists.zip</Location>
+
+  <MD5>BCBF9E9D854F14B1893531786ADCEF5F</MD5>
+
+</Package>
+
+
+
+<ReleaseNotes>
+
+Version 1.0 - Initial release.
+
+</ReleaseNotes>
+
+
+
+</SageTVPlugin>

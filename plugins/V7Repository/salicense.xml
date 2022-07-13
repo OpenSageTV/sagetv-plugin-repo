@@ -1,0 +1,89 @@
+<SageTVPlugin>
+       <Name>sagetv-addons License Server</Name>
+       <Identifier>salicense</Identifier>
+       <Description><![CDATA[
+The sagetv-addons license server plugin provides a global validation point for all other plugins that require a sagetv-addons license file.  This plugin helps to centralize and simplify license validation in the other plugins that use sagetv-addons licensing.
+
+Most users should NOT need to install this plugin manually.  Other plugins that need to validate this license will automatically install this plugin.  Manually installing and configuring this plugin ahead of time is also acceptable.
+       ]]></Description>
+       <Author>Slugger</Author>
+       <CreationDate>2011.03.06</CreationDate>
+       <ModificationDate>2013.08.05</ModificationDate>
+       <Version>1.3.1</Version>
+       <ResourcePath>plugins/salicense</ResourcePath>
+       <Webpage>http://sagetv-addons.googlecode.com</Webpage>
+       <Dependency>
+       		<JVM/>
+       		<MinVersion>1.5.0</MinVersion>
+       </Dependency>
+       <Dependency>
+            <Core/>
+            <MinVersion>7.0.0</MinVersion>
+       </Dependency>
+       <Dependency>
+       		<Plugin>sagex-api</Plugin>
+        	<MinVersion>7.0.23.9</MinVersion>
+       </Dependency>
+       <PluginType>Standard</PluginType>
+       <Package>
+            <PackageType>JAR</PackageType>
+            <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/salicense-jar-1.3.1.zip</Location>
+            <MD5>9d08539bc5eae343554ccbe36802e0b9</MD5>
+            <Overwrite>true</Overwrite> <!-- Defaults to true -->
+       </Package>
+       <Package>
+       		<PackageType>System</PackageType>
+       		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/salicense-conf-1.3.1.zip</Location>
+       		<MD5>1da0c0e4455037f7a6d4d3e1fc250e7d</MD5>
+       		<Overwrite>false</Overwrite>
+       </Package>
+       <ImplementationClass>com.google.code.sagetvaddons.license.Plugin</ImplementationClass>
+       <ReleaseNotes><![CDATA[
+======
+v1.3.1
+======
+
+It's life time licenses for everyone! This update removes license validation
+and instead validates anything, everything, and everyone as a valid life time
+license holder!
+
+I'd like to thank everyone for their support over the years, especially to
+those who have donated to the Canadian Cancer Society through their license
+purchases! Your support of this charity is very much appreciated!
+
+The PayPal button has been deleted and will no longer accept payments. My
+PayPal payment processor/license generator has been taken offline and my
+database of payee info will be destroyed in the very near future. Be sure
+to upgrade to this version and you can forget about your license file!
+
+======
+v1.2.0
+======
+
+Support for IBM JREs; requires generation of new license files.
+
+======
+v1.1.1
+======
+
+Support for installation of license server on SageClients
+
+======
+v1.1.0
+======
+
+Support for new license file format.
+
+======
+v1.0.1
+======
+
+Ignore case when comparing email addresses.
+
+======
+v1.0.0
+======
+
+Initial release.
+	   ]]></ReleaseNotes>
+</SageTVPlugin>

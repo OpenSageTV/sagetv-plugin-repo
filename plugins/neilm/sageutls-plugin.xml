@@ -11,8 +11,8 @@
     <PluginType>Library</PluginType>
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/nielm/nielm-sageutls-jars-1.4.2.zip</Location>
-        <MD5>ef36e4e8450a604a0494f0e461dfe6e2</MD5>
+        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/nielm-sageutls-jars-1.4.2.zip</Location>
+        <MD5>EF36E4E8450A604A0494F0E461DFE6E2</MD5>
     </Package>
     <ImplementationClass></ImplementationClass>
 </SageTVPlugin>

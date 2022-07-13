@@ -4,9 +4,13 @@
     <Description>The TV DB Library</Description>
     <Author>stuckless</Author>
     <CreationDate>2015.12.12</CreationDate>
-    <ModificationDate>2015.12.12</ModificationDate>
-    <Version>1.8.0</Version>
+    <ModificationDate>2022.06.18</ModificationDate>
+    <Version>1.10.0</Version>
     <PluginType>Library</PluginType>
+    <Dependency>
+        <Plugin>jaxws</Plugin>
+        <MinVersion>2.3.1</MinVersion>
+    </Dependency>
     <Dependency>
         <Plugin>junit</Plugin>
         <MinVersion>4.12.0</MinVersion>
@@ -53,8 +57,8 @@
     </Dependency>
     <Package>
         <PackageType>JAR</PackageType>
-        <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/libraries/thetvdbapi-1.8.zip</Location>
-        <MD5>1ac3efa6d5f2e8747e9bd19ccb371f9e</MD5>
+        <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/thetvdbapi-1.10.zip</Location>
+        <MD5>3037a68980cc2138fdd4210c19409ca4</MD5>
     </Package>
     <ReleaseNotes>
         Library used by Phoenix and TheTVDB

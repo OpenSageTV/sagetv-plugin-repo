@@ -1,0 +1,405 @@
+<SageTVPlugin>
+
+<Name>SageTV Catchup</Name>
+
+<Identifier>sagetvcatchup</Identifier>
+
+<Description>
+
+<![CDATA[
+
+Plugin to integrate UK catchup TV sources into SageTV for UK users.
+
+
+
+
+
+Requires separate installation of get_iplayer.
+
+
+
+
+
+Use version 2.94 or later of get_iplayer which handles the latest changes to BBC IPlayer website.
+
+]]>
+
+
+
+</Description>
+
+<Author>michaeldjcox</Author>
+
+<CreationDate>2013.04.01</CreationDate>
+
+<ModificationDate>2015.08.19</ModificationDate>
+
+<Version beta="false">1.0.1</Version>
+
+<Desktop>false</Desktop>
+
+<Dependency>
+
+<Plugin>sagex-api</Plugin>
+
+<MinVersion>7.0.15.0</MinVersion>
+
+</Dependency>
+
+<ServerOnly>true</ServerOnly>
+
+<ResourcePath>sagetvcatchup</ResourcePath>
+
+<Screenshot title="TopMenu"><![CDATA[http://cdn.rawgit.com/michaeldjcox/sagetvcatchup/master/screenshots/TopMenu.png]]></Screenshot>
+
+<Screenshot title="AirDate"><![CDATA[http://cdn.rawgit.com/michaeldjcox/sagetvcatchup/master/screenshots/AirDate.png]]></Screenshot>
+
+<Screenshot title="AtoZ"><![CDATA[http://cdn.rawgit.com/michaeldjcox/sagetvcatchup/master/screenshots/AtoZ.png]]></Screenshot>
+
+<Screenshot title="Channel"><![CDATA[http://cdn.rawgit.com/michaeldjcox/sagetvcatchup/master/screenshots/Channel.png]]></Screenshot>
+
+<Screenshot title="Favourites"><![CDATA[http://cdn.rawgit.com/michaeldjcox/sagetvcatchup/master/screenshots/Favourites.png]]></Screenshot>
+
+<Screenshot title="Genre"><![CDATA[http://cdn.rawgit.com/michaeldjcox/sagetvcatchup/master/screenshots/Genre.png]]></Screenshot>
+
+<Screenshot title="LastChance"><![CDATA[http://cdn.rawgit.com/michaeldjcox/sagetvcatchup/master/screenshots/LastChance.png]]></Screenshot>
+
+<Screenshot title="MostPopular"><![CDATA[http://cdn.rawgit.com/michaeldjcox/sagetvcatchup/master/screenshots/MostPopular.png]]></Screenshot>
+
+<Screenshot title="New"><![CDATA[http://cdn.rawgit.com/michaeldjcox/sagetvcatchup/master/screenshots/New.png]]></Screenshot>
+
+<Screenshot title="Sources"><![CDATA[http://cdn.rawgit.com/michaeldjcox/sagetvcatchup/master/screenshots/Sources.png]]></Screenshot>
+
+<Screenshot title="Search"><![CDATA[http://cdn.rawgit.com/michaeldjcox/sagetvcatchup/master/screenshots/Search.png]]></Screenshot>
+
+<Screenshot title="Status"><![CDATA[http://cdn.rawgit.com/michaeldjcox/sagetvcatchup/master/screenshots/Status.png]]></Screenshot>
+
+<Screenshot title="Episodes"><![CDATA[http://cdn.rawgit.com/michaeldjcox/sagetvcatchup/master/screenshots/Episodes.png]]></Screenshot>
+
+<Screenshot title="Control"><![CDATA[http://cdn.rawgit.com/michaeldjcox/sagetvcatchup/master/screenshots/Control.png]]></Screenshot>
+
+<Screenshot title="MetaData"><![CDATA[http://cdn.rawgit.com/michaeldjcox/sagetvcatchup/master/screenshots/MetaData.png]]></Screenshot>
+
+<Screenshot title="RecordingStatus"><![CDATA[http://cdn.rawgit.com/michaeldjcox/sagetvcatchup/master/screenshots/RecordingStatus.png]]></Screenshot>
+
+<Screenshot title="RecordingProgress"><![CDATA[http://cdn.rawgit.com/michaeldjcox/sagetvcatchup/master/screenshots/RecordingProgress.png]]></Screenshot>
+
+<Screenshot title="CatalogingStatus"><![CDATA[http://cdn.rawgit.com/michaeldjcox/sagetvcatchup/master/screenshots/CatalogingStatus.png]]></Screenshot>
+
+<Screenshot title="WebPage"><![CDATA[http://cdn.rawgit.com/michaeldjcox/sagetvcatchup/master/screenshots/WebPage.png]]></Screenshot>
+
+<Screenshot title="Configure"><![CDATA[http://cdn.rawgit.com/michaeldjcox/sagetvcatchup/master/screenshots/Configure.png]]></Screenshot>
+
+<PluginType>Standard</PluginType>
+
+<Package>
+
+<PackageType>System</PackageType>
+
+<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sagetvcatchup-1.0.1-plugin.zip</Location>
+
+<MD5>1C6EDAF78DEED79082E6D302A033264D</MD5>
+
+<Overwrite>true</Overwrite> <!-- Defaults to true -->
+
+</Package>
+
+<ImplementationClass>uk.co.mdjcox.sagetv.catchup.CatchupPlugin</ImplementationClass>
+
+<ReleaseNotes>
+
+<![CDATA[
+
+
+
+
+
+1.0.1 - Breakfix following BBC Iplayer website changes.
+
+
+
+
+
+      - Require get_iplayer 2.94 and remove dependence on playlist URLS which BBC blocks access to
+
+
+
+
+
+1.0.0 - First official release.
+
+
+
+
+
+      - Online Services menu. Show the last air date rather than original air date in episode detail
+
+      - Online Services menu. Cataloging status - add a count of subcategories
+
+      - Online Services menu. Add recording progress to stop button on episode control menu
+
+      - Online Services menu. Add "Last chance" category for soon to be removed episodes
+
+      - Online Services menu. Add "Most popular" category based on BBC web site
+
+      - Online Services menu. Rework "New" category to be based on availability dates.
+
+      - Online Services menu. Only one "Air date", "New", "Favourite" etc category for all sources
+
+      - Online Services menu. Move "Air date", "New", "Favourite" etc to the top level
+
+      - Online Services menu. Add "Sources" categories below which IPlayer and Test go
+
+      - Online Services menu. Add icons for some sub categories
+
+      - Web Page: Fix issue where podcasts cannot be navigated from remote machine
+
+      - Web Page: Duration, last air date, available and removal dates added to episode views.
+
+      - Cataloging: extract duration and last air date from iplayer meta data
+
+      - Cataloging: extract available and removal dates from iplayer meta data
+
+      - Cataloging: reduce air date categories with larger time periods for much older content
+
+      - Cataloging: Fix issue of some catalog errors accumulating across catalog runs
+
+      - Cataloging: Only one "Air date", "New", "Favourite" etc category for all sources
+
+      - Recording: add channel, duration, and last air date to SageTV airing meta data
+
+      - Recording: download the episode fanart to the recording directory.
+
+      - Recording: fix episode title so it has the SageTVs title - SeasonNr - EpisodeNr format
+
+      - Recording: fix episode number which was being set to same value as series number
+
+      - Recording: upload to sagetv asynchronously from the server so as to not block recording
+
+      - Recording: fix issue where some failed recordings gets listed as still in progress
+
+      - Test: reduce size of the test video to reduce deployment upload times
+
+
+
+
+
+0.3.6 - Fifth beta release.
+
+
+
+
+
+      - SageTV Plugin: Fix issue with recordingDir property being overridden with online props dir
+
+      - SageTV Plugin: Make online video property file dir and suffix configurable
+
+      - Cataloging: Fix issue where Iplayer programmes get into lists for the Test source
+
+
+
+
+
+0.3.5 - Fourth beta release.
+
+
+
+
+
+      - SageTV Plugin: Fix issue with configurability of recording commands
+
+
+
+
+
+0.3.4 Third beta release.
+
+
+
+
+
+      - Online services menu: fix truncation of categories due to incorrect escaping of titles
+
+      - SageTV Plugin: Configurability of ports and timeouts and recording commands
+
+      - Recording: Better status reporting
+
+      - Recording: Two threads for watching and one for queued recordings
+
+      - Recording: Configurable timeouts
+
+      - Recording: upload to SageTV retries move of recording file
+
+      - Recording: recording will not wait for completed file if the recording was stopped or failed
+
+      - Recording: get_iplayer command line is now configurable
+
+      - Recording: remove use of relative path to recording dir
+
+      - General: RMI services made to survive suspend/resume of host
+
+
+
+
+
+0.3.3 Second beta release.
+
+
+
+
+
+      Online services menu:
+
+
+
+
+
+      - Recording and catalog status moved down a level as SageTV caches at top level
+
+      - Reverse order sorting of categories and episodes by orig air date
+
+      - Added a search podcast to allow programme search from SageTV
+
+      - Moved show icons from episode to programme level for better meta-data visibility
+
+      - Improved visibility of meta-data at episode level
+
+      - Added a "New" category for programmes added since the last catalog
+
+      - Added a "Favourite" category for programmes which are also SageTV favourites
+
+      - Added recording status messages to recordings podcast including percent done
+
+      - Added grouping of recordings by outcome e.g. in progress, failed, completed
+
+      - Made improvements to catalog status reporting including time taken to catalog
+
+      - Catalog errors are now grouped by message
+
+
+
+
+
+      Recording:
+
+
+
+
+
+      - Add "Watch and Keep mode" as SageTV only lets you record if fully downloaded.
+
+      - Made recording and streaming much more resilient to different outcomes
+
+
+
+
+
+      SageTV plugin:
+
+
+
+
+
+      - Add enable/disable of individual sources in plugin configuration screen.
+
+      - Allow catchup server port and recording directory to be configured from SageTV
+
+
+
+
+
+      Cataloging:
+
+
+
+
+
+      - Reduce cataloging time to 10 mins - previously took hours
+
+      - Remove the catchup server host and port from podcast URLs from the catalog
+
+      - Add a catalog start hour so cataloging starts at a set hour of day and occurs every X hours
+
+      - Only start cataloging on startup if the catalog is sparse otherwise wait for scheduled time
+
+      - Deal with duplicate programme entries in iplayer
+
+      - Made catalog downloads interruptable so that cataloging can be more quickly terminated
+
+      - Made catalog downloads retry on failure
+
+
+
+
+
+      Web page:
+
+
+
+
+
+      - Add Type column to category web page
+
+      - Add Type column to programmes web page
+
+      - Add error summary to catalog error web page
+
+      - Control links in web server home page redirect back to home page
+
+      - Home page now shows active thread count and heap stats
+
+      - Home page now shows growing size of catalog in progress and size of last catalog
+
+
+
+
+
+      General:
+
+
+
+
+
+      - Moved the catchup server to its own JVM to limit the plugins impact on SageTV classpath
+
+      - Set up RMI servers in plugin and the now separate server for better control and feedback
+
+      - Add seed properties for 32bit windows e.g. windows XP
+
+      - Increased maximum heap size to 500Mb
+
+
+
+
+
+      Media sources:
+
+
+
+
+
+      - Fix Demand5 meta data (but demand5 no longer works possible due to encryption)
+
+      - Fix Iplayer series and episode number parsing errors
+
+
+
+
+
+0.2.7 First beta release.
+
+
+
+
+
+      - Contains Iplayer catalog, watch and record to TV recordings
+
+]]>
+
+
+
+
+
+</ReleaseNotes>
+
+</SageTVPlugin>

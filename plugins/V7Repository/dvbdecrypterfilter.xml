@@ -1,0 +1,49 @@
+<SageTVPlugin>
+    <Name>DVB Decrypter Smartcard Client Filter</Name>
+    <Identifier>dvbdecrypterfilter</Identifier>
+    <Version>1.2.9</Version>
+    <Description>This is the DVB Decrypter and smartcard directshow filter - no need to install separately.</Description>
+    <Author>routerunner</Author>
+    <PluginType>Library</PluginType>
+    <CreationDate>2013-08-16</CreationDate>
+    <ModificationDate>2019-08-30</ModificationDate>
+    <ReleaseNotes>
+1.0.0 - First Public Release.
+1.0.1 - Fix the Italian channels issue.
+1.0.2 - Fix first tuning can fail, improved channel tuning performance.
+1.0.3 - More card sharing friendly. Web server can be accessed from local network.
+1.0.4 - Fixes crash sometime when closing SageTV after the first usage. General optimization to reduce CPU load.
+1.0.5 - Fixes BSkyB channels support.
+1.0.6 - Improved channel tuning speed.
+1.0.7 - Fixes Astra 19.2ºE channels support.
+1.0.8 - Implement variable alignment sync algorithm.
+1.0.9 - Improved CPU usage. Fixes rare instability issue on closing SageTV.
+1.1.0 - Introducing the parallel decrypter algorithm. License scheme in place.
+1.1.1 - Introducing the dynamic multi packet algorithm.
+1.1.2 - Fixes the random 'no signal' issue requiring second attempt. Added proper IRDETO support. Added more card validation logging.
+1.1.3 - Fixes some transponders doesn't contain the CAT table.
+1.1.4 - Keep connection alive which can be important for some card readers.
+1.1.5 - Support the 'in the middle of a program encryption switch' like what's happening on some Tivusat channels.
+1.1.6 - Fix FireDTV support. Fix glitch on multiple high bitrate HD recordings. Increased tuning speed.
+1.1.7 - Smaller, faster and more stable than ever. Improved card server error handling. Support channel scan preview (unencrypted only).
+1.1.8 - Broken.
+1.1.9 - Support Sky New Zealand. Removed unreliable bypass mechanism. Minor fix and improvement.
+1.2.0 - Unlimited number of local/remote card readers with support of unique, multiple or same CAID, just add any reader with a unique group number. Automatic dynamic card reader allocation for each tuner to evenly balance cards usage. The oscam.user file gets only regenerated after modification to oscam.server, otherwise left untouched allowing users to add other personal accounts not related to STV, also no need to restart OsCAM server any more. Improved encrypted channels tuning speed. Typically 2/3 seconds from pressing the play button on a program from EPG to watching. New and improved tuner identification algorithm, this works in conjunction with the Java plugin. Channel scan support. Improved installation and registering of the filter from Windows 7 (32/64) onwards.
+1.2.1 - Fixes minor bugs in transport stream handling in particular on encrypted channels.
+1.2.2 - Automatically installs the 32/64 bit version of the filter.
+1.2.3 - Fixed issue with installation script.
+1.2.4 - Fixed issue with installation script (Part #2).
+1.2.5 - Make the installation script less pedandic.
+1.2.6 - Enabled debug logging.
+1.2.7 - Changed license scheme. Removed single scrambling algorithm for efficiency. Improved memory footprint. Fix very long EMM/ECM handling.
+1.2.8 - Improved bad reception/weather resilience.
+1.2.9 - Let STV to handle transport stream errors as well.
+    </ReleaseNotes>
+    <Desktop>false</Desktop>
+    <Package>
+        <PackageType>System</PackageType>
+        <Location>ftp://stv:stv@www.rossisoft.co.uk/plugins/dvbdecrypterfilter/dvbdecrypterfilter_1_2_9.zip</Location>
+        <MD5>ddb73ea46d88ad208f4bf3352a52372f</MD5>
+        <Overwrite>true</Overwrite>
+    </Package>
+</SageTVPlugin>

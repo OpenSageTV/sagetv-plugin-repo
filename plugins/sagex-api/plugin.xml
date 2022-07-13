@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SageTVPlugin>
-  <Name>sagex-api - SageTV API Extensions</Name>
+  <Name>SageTV Sagex API Extensions (sagex-api)</Name>
   <Identifier>sagex-api</Identifier>
   <Description>SageTV API Wrappers with Remote API capabilities</Description>
   <Author>stuckless</Author>
   <CreationDate>2008.10.05</CreationDate>
-  <ModificationDate>2018.03.04</ModificationDate>
-  <Version>9.1.7.0</Version>
+  <ModificationDate>2022.06.01</ModificationDate>
+  <Version>9.2.8.1</Version>
   <Desktop>false</Desktop>
   <ResourcePath>sagex-api</ResourcePath>
   <Webpage><![CDATA[http://forums.sagetv.com/forums/showthread.php?t=36044]]></Webpage>
@@ -15,27 +15,33 @@
 
   <Package>
     <PackageType>JAR</PackageType>
-    <Location>https://dl.bintray.com/opensagetv/sagetv-plugins/sagex-api/9.1.7.0/sagex-api-9.1.7.0.zip</Location>
-    <MD5>0012e9ca02251b378f12dbcd4a9cd953</MD5>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sagex-api-9.2.8.1.zip</Location>
+    <MD5>a5f9f43c5c19de92c4fcf08715e35c31</MD5>
   </Package>
 
   <ReleaseNotes>
-    9.1.7
+9.2.8
+    * Added support for api's added since 9.0 (mostly related to Person and SD EPG)
+    * Updated generate api to support the new javadocs format that removed frame support
+      * note: all api's have been regenerated as of this version
+9.2.6
+    * Build for Github sources and Jetty 9
+9.1.7
     * RMI is now stateless to avoid memory leaks
     * removed deprecated and legacy RPC connectors
 
-    9.0.0
+9.0.0
     * Upgraded to SageTV 9
   </ReleaseNotes>
 
   <Dependency>
     <Core/>
-    <MinVersion>9.1.7</MinVersion>
+    <MinVersion>9.2.0</MinVersion>
   </Dependency>
 
   <Dependency>
     <JVM/>
-    <MinVersion>1.7</MinVersion>
+    <MinVersion>1.8</MinVersion>
   </Dependency>
 
 </SageTVPlugin>

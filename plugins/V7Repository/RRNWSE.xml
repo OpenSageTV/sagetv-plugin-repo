@@ -1,0 +1,18 @@
+<SageTVPlugin>
+  <Name>Replace Index Numbers with Season/Episode in Recordings Screen</Name>
+  <Identifier>RRNWSE</Identifier>
+  <Description>Replaces the numbers in the recordings group information with the Season and Episode number</Description>
+  <Author>toricred</Author>
+  <CreationDate>2010-11-06</CreationDate>
+  <ModificationDate>2010.04.09</ModificationDate>
+  <Version>0.3</Version>
+  <Desktop>false</Desktop>
+  <PluginType>STVI</PluginType>
+  <STVImport>RecordingGroupsNoNumsSE.stvi</STVImport>
+  <Screenshot>http://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/rrnwse/ScreenShot.jpg</Screenshot>
+  <Package>
+    <PackageType>STVI</PackageType>
+   <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/RecordingGroupsNoNumsSE.zip</Location>
+    <MD5>1A9C6CB6E75D8D3FDACD89842C5D5C03</MD5>
+  </Package>
+</SageTVPlugin>

@@ -16,8 +16,8 @@
 
     <Package>
         <PackageType>STV</PackageType>
-        <Location><![CDATA[https://dl.bintray.com/opensagetv/sagetv/sagetv-themes/9.0/SageTV3-9.0.zip]]></Location>
-        <MD5>0f500cde8bb0ee50354598156e3a2c19</MD5>
+        <Location><![CDATA[https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/SageTV3-9.0.zip]]></Location>
+        <MD5>B4D46CD7927F20DE0E2121DB7A7D067B</MD5>
     </Package>
 
     <ReleaseNotes><![CDATA[
