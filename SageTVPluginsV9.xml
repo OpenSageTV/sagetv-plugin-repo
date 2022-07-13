@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2022.0708.1125">
+<PluginRepository version="2022.0713.2326">
 <SageTVPlugin>
 
   <Name>BlueTwo (addon for MBDiamond)</Name>
@@ -3744,15 +3744,15 @@ Note that the framework architecture has been revamped for SageTV V7.  Existing 
 	<Author>jvl711</Author>
 	<OS>Windows</OS>
 	<CreationDate>2020.12.10</CreationDate>
-	<ModificationDate>2021.04.30</ModificationDate>
-	<Version>1.0.5</Version>
+	<ModificationDate>2022.07.06</ModificationDate>
+	<Version>1.1.0</Version>
 	<PluginType>Standard</PluginType>
 	<Desktop>false</Desktop>
 	<Webpage>https://github.com/jvl711/FFmpeg</Webpage>
 	<Package>
         <PackageType>System</PackageType>
-        <Location>https://github.com/jvl711/FFmpeg/releases/download/SageTVTranscoder_v1.0.5/SageTVTranscoderWinx32_v1.0.5.zip</Location>
-        <MD5>b1fe88db3cb981dbfec9e6ef476cd3bb</MD5>
+        <Location>https://github.com/jvl711/FFmpeg/releases/download/SageTVTranscoder_v1.1.0/SageTVTranscoderWinx32_v1.1.0.zip</Location>
+        <MD5>b2f00709cba08c0ee6c021d24162d85e</MD5>
     </Package>
 	<ReleaseNotes><![CDATA[
 	1.0.0 - Intial feature complete release
@@ -3770,15 +3770,15 @@ Note that the framework architecture has been revamped for SageTV V7.  Existing 
 	<Author>jvl711</Author>
 	<OS>Linux</OS>
 	<CreationDate>2020.12.10</CreationDate>
-	<ModificationDate>2021.07.27</ModificationDate>
-	<Version>1.0.6</Version>
+	<ModificationDate>2022.07.06</ModificationDate>
+	<Version>1.1.0</Version>
 	<PluginType>Standard</PluginType>
 	<Desktop>false</Desktop>
 	<Webpage>https://github.com/jvl711/FFmpeg</Webpage>
 	<Package>
         <PackageType>System</PackageType>
-        <Location>https://github.com/jvl711/FFmpeg/releases/download/SageTVTranscoder_v1.0.6/SageTVTranscoderLinux_v1.0.6.zip</Location>
-        <MD5>9be47593defd8329ca20cb625de96711</MD5>
+        <Location>https://github.com/jvl711/FFmpeg/releases/download/SageTVTranscoder_v1.1.0/SageTVTranscoderLinux_v1.1.0.zip</Location>
+        <MD5>64e2b262254c4410f9b17b045e3d8310</MD5>
     </Package>
 	<ReleaseNotes><![CDATA[
 	1.0.0 - Intial feature complete release
@@ -3786,8 +3786,7 @@ Note that the framework architecture has been revamped for SageTV V7.  Existing 
     1.0.2 - Fixed an issue with thumbnail generation on client machine. "stv://127.0.0.1/" translated to locally accessible path.
     1.0.3 - Fixed an issue with livetv transcoding (ACTIVEFILE/INACTIVEFILE).  Not stoping transcode at end of recording.
     1.0.4 - Added libx265 to the build
-	1.0.5 - Added linux build.  Added DLLs that were required for the windows builds with x265
-	1.0.6 - Added linux build.  Will not be releasing winx32 or winx64 in this version since there was no change.  This linux build is beta.
+	1.0.5 - Added linux build.  Will not be releasing winx32 or winx64 in this version since there was no change.  This linux build is beta.
 	]]></ReleaseNotes>
 </SageTVPlugin>
 
@@ -3798,15 +3797,15 @@ Note that the framework architecture has been revamped for SageTV V7.  Existing 
 	<Author>jvl711</Author>
 	<OS>Windows</OS>
 	<CreationDate>2020.12.10</CreationDate>
-	<ModificationDate>2021.04.30</ModificationDate>
-	<Version>1.0.5</Version>
+	<ModificationDate>2022.07.06</ModificationDate>
+	<Version>1.1.0</Version>
 	<PluginType>Standard</PluginType>
 	<Desktop>false</Desktop>
 	<Webpage>https://github.com/jvl711/FFmpeg</Webpage>
 	<Package>
         <PackageType>System</PackageType>
-        <Location>https://github.com/jvl711/FFmpeg/releases/download/SageTVTranscoder_v1.0.5/SageTVTranscoderWinx64_v1.0.5.zip</Location>
-        <MD5>24e72efb3896571b92f80bf2dd29a031</MD5>
+        <Location>https://github.com/jvl711/FFmpeg/releases/download/SageTVTranscoder_v1.1.0/SageTVTranscoderWinx64_v1.1.0.zip</Location>
+        <MD5>377fc1c347c2bb8ca63693431b0755b2</MD5>
     </Package>
 	<ReleaseNotes><![CDATA[
 	1.0.0 - Intial feature complete release
