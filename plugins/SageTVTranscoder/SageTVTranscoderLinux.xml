@@ -10,19 +10,12 @@
 	<Version>1.1.0</Version>
 	<PluginType>Standard</PluginType>
 	<Desktop>false</Desktop>
-	<Webpage>https://github.com/jvl711/FFmpeg</Webpage>
+	<Webpage>https://github.com/jvl711/SageTVTranscoder-FFmpeg</Webpage>
 	<Package>
         <PackageType>System</PackageType>
-        <Location>https://github.com/jvl711/FFmpeg/releases/download/SageTVTranscoder_v1.1.0/SageTVTranscoderLinux_v1.1.0.zip</Location>
+        <Location>https://github.com/jvl711/SageTVTranscoder-FFmpeg/releases/releases/download/SageTVTranscoder_v1.1.0/SageTVTranscoderLinux_v1.1.0.zip</Location>
         <MD5>64e2b262254c4410f9b17b045e3d8310</MD5>
     </Package>
-	<ReleaseNotes><![CDATA[
-	1.0.0 - Intial feature complete release
-	1.0.1 - Added build for windows 32 bit
-    1.0.2 - Fixed an issue with thumbnail generation on client machine. "stv://127.0.0.1/" translated to locally accessible path.
-    1.0.3 - Fixed an issue with livetv transcoding (ACTIVEFILE/INACTIVEFILE).  Not stoping transcode at end of recording.
-    1.0.4 - Added libx265 to the build
-	1.0.5 - Added linux build.  Will not be releasing winx32 or winx64 in this version since there was no change.  This linux build is beta.
-	]]></ReleaseNotes>
+	<ReleaseNotes><![CDATA[See github project for details https://github.com/jvl711/SageTVTranscoder-FFmpeg]]></ReleaseNotes>
 </SageTVPlugin>
 
