@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2022.0714.1403">
+<PluginRepository version="2022.0714.1419">
 <SageTVPlugin>
 
   <Name>BlueTwo (addon for MBDiamond)</Name>
@@ -3751,7 +3751,7 @@ Note that the framework architecture has been revamped for SageTV V7.  Existing 
 	<Webpage>https://github.com/jvl711/SageTVTranscoder-FFmpeg</Webpage>
 	<Package>
         <PackageType>System</PackageType>
-        <Location>https://github.com/jvl711/SageTVTranscoder-FFmpeg/releases/download/SageTVTranscoder_v1.1.0/SageTVTranscoderWinx32_v1.1.0.zip</Location>
+        <Location>https://github.com/jvl711/SageTVTranscoder-FFmpeg/releases/download/v1.1.0/SageTVTranscoderWinx32_v1.1.0.zip</Location>
         <MD5>b2f00709cba08c0ee6c021d24162d85e</MD5>
     </Package>
 	<ReleaseNotes><![CDATA[See github page for release details: https://github.com/jvl711/SageTVTranscoder-FFmpeg]]></ReleaseNotes>
@@ -3771,7 +3771,7 @@ Note that the framework architecture has been revamped for SageTV V7.  Existing 
 	<Webpage>https://github.com/jvl711/SageTVTranscoder-FFmpeg</Webpage>
 	<Package>
         <PackageType>System</PackageType>
-        <Location>https://github.com/jvl711/SageTVTranscoder-FFmpeg/releases/download/SageTVTranscoder_v1.1.0/SageTVTranscoderLinux_v1.1.0.zip</Location>
+        <Location>https://github.com/jvl711/SageTVTranscoder-FFmpeg/releases/download/v1.1.0/SageTVTranscoderLinux_v1.1.0.zip</Location>
         <MD5>64e2b262254c4410f9b17b045e3d8310</MD5>
     </Package>
 	<ReleaseNotes><![CDATA[See github project for details https://github.com/jvl711/SageTVTranscoder-FFmpeg]]></ReleaseNotes>
@@ -3791,7 +3791,7 @@ Note that the framework architecture has been revamped for SageTV V7.  Existing 
 	<Webpage>https://github.com/jvl711/SageTVTranscoder-FFmpeg</Webpage>
 	<Package>
         <PackageType>System</PackageType>
-        <Location>https://github.com/jvl711/SageTVTranscoder-FFmpeg/releases/download/SageTVTranscoder_v1.1.0/SageTVTranscoderWinx64_v1.1.0.zip</Location>
+        <Location>https://github.com/jvl711/SageTVTranscoder-FFmpeg/releases/download/v1.1.0/SageTVTranscoderWinx64_v1.1.0.zip</Location>
         <MD5>377fc1c347c2bb8ca63693431b0755b2</MD5>
     </Package>
 	<ReleaseNotes><![CDATA[See github page for release details: https://github.com/jvl711/SageTVTranscoder-FFmpeg]]></ReleaseNotes>
