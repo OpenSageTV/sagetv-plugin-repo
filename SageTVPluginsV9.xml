@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2022.1008.1255">
+<PluginRepository version="2022.1008.1301">
 <SageTVPlugin>
 
   <Name>BlueTwo (addon for MBDiamond)</Name>
@@ -3771,7 +3771,7 @@ Note that the framework architecture has been revamped for SageTV V7.  Existing 
 	<Webpage>https://github.com/jvl711/FFmpeg</Webpage>
 	<Package>
         <PackageType>System</PackageType>
-        <Location>https://github.com/jvl711/SageTVTranscoder-FFmpeg/releases/download/SageTVTranscoder_v1.2.2/SageTVTranscoderWinx32_v1.2.2.zip</Location>
+        <Location>https://github.com/jvl711/SageTVTranscoder-FFmpeg/releases/download/v1.2.2/SageTVTranscoderWinx32_v1.2.2.zip</Location>
         <MD5>a787265bbeefbd090bd45ef7864726cf</MD5>
     </Package>
 	<ReleaseNotes><![CDATA[
@@ -3797,7 +3797,7 @@ Note that the framework architecture has been revamped for SageTV V7.  Existing 
 	<Webpage>https://github.com/jvl711/FFmpeg</Webpage>
 	<Package>
         <PackageType>System</PackageType>
-		<Location>https://github.com/jvl711/SageTVTranscoder-FFmpeg/releases/download/1.2.2/SageTVTranscoderLinux_v1.2.2.zip</Location>
+		<Location>https://github.com/jvl711/SageTVTranscoder-FFmpeg/releases/download/v1.2.2/SageTVTranscoderLinux_v1.2.2.zip</Location>
         <MD5>62626f595dc40e8dc9bb07f57cc7b27d</MD5>
     </Package>
 	<ReleaseNotes><![CDATA[See https://github.com/jvl711/SageTVTranscoder-FFmpeg/releases for release notes ]]></ReleaseNotes>
@@ -3817,7 +3817,7 @@ Note that the framework architecture has been revamped for SageTV V7.  Existing 
 	<Webpage>https://github.com/jvl711/FFmpeg</Webpage>
 	<Package>
         <PackageType>System</PackageType>
-        <Location>https://github.com/jvl711/SageTVTranscoder-FFmpeg/releases/download/SageTVTranscoder_v1.2.2/SageTVTranscoderWinx64_v1.2.2.zip</Location>
+        <Location>https://github.com/jvl711/SageTVTranscoder-FFmpeg/releases/download/v1.2.2/SageTVTranscoderWinx64_v1.2.2.zip</Location>
         <MD5>730f650b251d511be814ce2eea403ad1</MD5>
     </Package>
 	<ReleaseNotes><![CDATA[See https://github.com/jvl711/SageTVTranscoder-FFmpeg/releases for release notes ]]></ReleaseNotes>
