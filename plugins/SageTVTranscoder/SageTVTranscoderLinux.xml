@@ -6,16 +6,16 @@
 	<Author>jvl711</Author>
 	<OS>Linux</OS>
 	<CreationDate>2020.12.10</CreationDate>
-	<ModificationDate>2022.07.06</ModificationDate>
-	<Version>1.1.0</Version>
+	<ModificationDate>2022.10.04</ModificationDate>
+	<Version>1.2.2</Version>
 	<PluginType>Standard</PluginType>
 	<Desktop>false</Desktop>
-	<Webpage>https://github.com/jvl711/SageTVTranscoder-FFmpeg</Webpage>
+	<Webpage>https://github.com/jvl711/FFmpeg</Webpage>
 	<Package>
         <PackageType>System</PackageType>
-        <Location>https://github.com/jvl711/SageTVTranscoder-FFmpeg/releases/download/v1.1.0/SageTVTranscoderLinux_v1.1.0.zip</Location>
-        <MD5>64e2b262254c4410f9b17b045e3d8310</MD5>
+		<Location>https://github.com/jvl711/SageTVTranscoder-FFmpeg/releases/download/1.2.2/SageTVTranscoderLinux_v1.2.2.zip</Location>
+        <MD5>62626f595dc40e8dc9bb07f57cc7b27d</MD5>
     </Package>
-	<ReleaseNotes><![CDATA[See github project for details https://github.com/jvl711/SageTVTranscoder-FFmpeg]]></ReleaseNotes>
+	<ReleaseNotes><![CDATA[See https://github.com/jvl711/SageTVTranscoder-FFmpeg/releases for release notes ]]></ReleaseNotes>
 </SageTVPlugin>
 
