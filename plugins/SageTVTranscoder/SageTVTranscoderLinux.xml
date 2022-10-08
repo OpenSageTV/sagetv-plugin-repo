@@ -13,7 +13,7 @@
 	<Webpage>https://github.com/jvl711/FFmpeg</Webpage>
 	<Package>
         <PackageType>System</PackageType>
-		<Location>https://github.com/jvl711/SageTVTranscoder-FFmpeg/releases/download/1.2.2/SageTVTranscoderLinux_v1.2.2.zip</Location>
+		<Location>https://github.com/jvl711/SageTVTranscoder-FFmpeg/releases/download/v1.2.2/SageTVTranscoderLinux_v1.2.2.zip</Location>
         <MD5>62626f595dc40e8dc9bb07f57cc7b27d</MD5>
     </Package>
 	<ReleaseNotes><![CDATA[See https://github.com/jvl711/SageTVTranscoder-FFmpeg/releases for release notes ]]></ReleaseNotes>
