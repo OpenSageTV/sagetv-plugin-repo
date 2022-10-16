@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SageTVPlugin>
-  <Name>Media Format Parser Plugin Windows x64</Name>
-  <Identifier>MediaFormatParserPluginWinx64</Identifier>
+  <Name>Media Format Parser Plugin Linux</Name>
+  <Identifier>MediaFormatParserPluginLinux</Identifier>
   <Author>jvl711</Author>
-  <CreationDate>2020.05.07</CreationDate>
+  <CreationDate>2022.16.10</CreationDate>
   <ModificationDate>2022.10.16</ModificationDate>
   <Version beta="false">0.8</Version>
-  <OS>Windows</OS>
+  <OS>Linux</OS>
   <Desktop>false</Desktop>
-  <Description>Media parser plugin based on FFmpeg for 64 bit SageTV</Description>
+  <Description>Media parser plugin based on FFmpeg for Linux SageTV</Description>
   <PluginType>Standard</PluginType>
   <ImplementationClass>jvl.mediaformat.MediaFormatParserPlugin</ImplementationClass>
   <Package>
@@ -22,7 +22,7 @@
     <MinVersion>9.2.2</MinVersion>
   </Dependency>  
   <Dependency>
-    <Plugin>JavaFFmpegLibraryWinx64</Plugin>
+    <Plugin>JavaFFmpegLibraryLinux</Plugin>
     <MinVersion>0.6</MinVersion>
   </Dependency>
   <ReleaseNotes>See Info: https://github.com/jvl711/MediaFormatParserPlugin</ReleaseNotes>
