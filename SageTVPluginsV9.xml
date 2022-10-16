@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2022.1008.1301">
+<PluginRepository version="2022.1016.1246">
 <SageTVPlugin>
 
   <Name>BlueTwo (addon for MBDiamond)</Name>
@@ -2793,12 +2793,40 @@ Version 1.1 - Added play toggle.
 
 </SageTVPlugin>
 <SageTVPlugin>
+  <Name>Media Format Parser Plugin Linux</Name>
+  <Identifier>MediaFormatParserPluginLinux</Identifier>
+  <Author>jvl711</Author>
+  <CreationDate>2022.16.10</CreationDate>
+  <ModificationDate>2022.10.16</ModificationDate>
+  <Version beta="false">0.8</Version>
+  <OS>Linux</OS>
+  <Desktop>false</Desktop>
+  <Description>Media parser plugin based on FFmpeg for Linux SageTV</Description>
+  <PluginType>Standard</PluginType>
+  <ImplementationClass>jvl.mediaformat.MediaFormatParserPlugin</ImplementationClass>
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>https://github.com/jvl711/MediaFormatParserPlugin/releases/download/0.8/MediaFormatParserPlugin_v0.8.zip</Location>
+    <MD5>8d2871667584c8dd8d2b97376c9eb0e4</MD5>
+  </Package>
+  <Webpage>https://github.com/jvl711/MediaFormatParserPlugin</Webpage>
+  <Dependency>
+    <core/>
+    <MinVersion>9.2.2</MinVersion>
+  </Dependency>  
+  <Dependency>
+    <Plugin>JavaFFmpegLibraryLinux</Plugin>
+    <MinVersion>0.6</MinVersion>
+  </Dependency>
+  <ReleaseNotes>See Info: https://github.com/jvl711/MediaFormatParserPlugin</ReleaseNotes>
+</SageTVPlugin>
+<SageTVPlugin>
   <Name>Media Format Parser Plugin Windows x32</Name>
   <Identifier>MediaFormatParserPluginWinx32</Identifier>
   <Author>jvl711</Author>
   <CreationDate>2020.05.07</CreationDate>
-  <ModificationDate>2021.03.30</ModificationDate>
-  <Version beta="false">0.7</Version>
+  <ModificationDate>2022.10.16</ModificationDate>
+  <Version beta="false">0.8</Version>
   <OS>Windows</OS>
   <Desktop>false</Desktop>
   <Description>Media parser plugin based on FFmpeg for 32 bit SageTV</Description>
@@ -2806,8 +2834,8 @@ Version 1.1 - Added play toggle.
   <ImplementationClass>jvl.mediaformat.MediaFormatParserPlugin</ImplementationClass>
   <Package>
     <PackageType>JAR</PackageType>
-    <Location>https://github.com/jvl711/MediaFormatParserPlugin/releases/download/0.7/MediaFormatParserPlugin_v0.7.zip</Location>
-    <MD5>15051755764942ef0b2e768db148a6f4</MD5>
+    <Location>https://github.com/jvl711/MediaFormatParserPlugin/releases/download/0.8/MediaFormatParserPlugin_v0.8.zip</Location>
+    <MD5>8d2871667584c8dd8d2b97376c9eb0e4</MD5>
   </Package>
   <Webpage>https://github.com/jvl711/MediaFormatParserPlugin</Webpage>
   <Dependency>
@@ -2816,24 +2844,17 @@ Version 1.1 - Added play toggle.
   </Dependency>  
   <Dependency>
     <Plugin>JavaFFmpegLibraryWinx32</Plugin>
-    <MinVersion>0.5</MinVersion>
+    <MinVersion>0.6</MinVersion>
   </Dependency>
-  <ReleaseNotes><![CDATA[
-  0.7 - Fixed an issue where it tries to open a codec for a data stream.  This caused it to error and not properly parse
-  0.6 - Fixed a call on format substitution to use the new one in the plugin class
-  0.5 - Added format substition for MATROSKA,WEBM because the substituion will be removed from SageTV core
-      - Fixed the stream id field to pull from FFmpeg and be formated in hex
-  0.3-alpha - Added meta data and thumbnail parsing
-  0.2-alpha - initial version
-  ]]></ReleaseNotes>
+  <ReleaseNotes>See Info: https://github.com/jvl711/MediaFormatParserPlugin</ReleaseNotes>
 </SageTVPlugin>
 <SageTVPlugin>
   <Name>Media Format Parser Plugin Windows x64</Name>
   <Identifier>MediaFormatParserPluginWinx64</Identifier>
   <Author>jvl711</Author>
   <CreationDate>2020.05.07</CreationDate>
-  <ModificationDate>2021.03.30</ModificationDate>
-  <Version beta="false">0.7</Version>
+  <ModificationDate>2022.10.16</ModificationDate>
+  <Version beta="false">0.8</Version>
   <OS>Windows</OS>
   <Desktop>false</Desktop>
   <Description>Media parser plugin based on FFmpeg for 64 bit SageTV</Description>
@@ -2841,8 +2862,8 @@ Version 1.1 - Added play toggle.
   <ImplementationClass>jvl.mediaformat.MediaFormatParserPlugin</ImplementationClass>
   <Package>
     <PackageType>JAR</PackageType>
-    <Location>https://github.com/jvl711/MediaFormatParserPlugin/releases/download/0.7/MediaFormatParserPlugin_v0.7.zip</Location>
-    <MD5>15051755764942ef0b2e768db148a6f4</MD5>
+    <Location>https://github.com/jvl711/MediaFormatParserPlugin/releases/download/0.8/MediaFormatParserPlugin_v0.8.zip</Location>
+    <MD5>8d2871667584c8dd8d2b97376c9eb0e4</MD5>
   </Package>
   <Webpage>https://github.com/jvl711/MediaFormatParserPlugin</Webpage>
   <Dependency>
@@ -2851,16 +2872,9 @@ Version 1.1 - Added play toggle.
   </Dependency>  
   <Dependency>
     <Plugin>JavaFFmpegLibraryWinx64</Plugin>
-    <MinVersion>0.5</MinVersion>
+    <MinVersion>0.6</MinVersion>
   </Dependency>
-  <ReleaseNotes><![CDATA[
-  0.7 - Fixed an issue where it tries to open a codec for a data stream.  This caused it to error and not properly parse
-  0.6 - Fixed a call on format substitution to use the new one in the plugin class
-  0.5 - Added format substition for MATROSKA,WEBM because the substituion will be removed from SageTV core
-      - Fixed the stream id field to pull from FFmpeg and be formated in hex
-  0.3-alpha - Added meta data and thumbnail parsing
-  0.2-alpha - initial version
-  ]]></ReleaseNotes>
+  <ReleaseNotes>See Info: https://github.com/jvl711/MediaFormatParserPlugin</ReleaseNotes>
 </SageTVPlugin>
 <SageTVPlugin>
 	<Name>JavaFFmpegLibrary Windows x64</Name>
