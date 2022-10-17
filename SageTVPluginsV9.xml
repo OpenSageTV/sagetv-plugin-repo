@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2022.1016.1301">
+<PluginRepository version="2022.1017.2259">
 <SageTVPlugin>
 
   <Name>BlueTwo (addon for MBDiamond)</Name>
@@ -2900,7 +2900,7 @@ Version 1.1 - Added play toggle.
 	<Identifier>JavaFFmpegLibraryLinux</Identifier>
 	<Description>JNI Wrapper library around FFmpeg library for SageTV</Description>
 	<Author>jvl711</Author>
-	<OS>Windows</OS>
+	<OS>Linux</OS>
 	<CreationDate>2020.05.01</CreationDate>
 	<ModificationDate>2022.09.29</ModificationDate>
 	<Version>0.6</Version>
