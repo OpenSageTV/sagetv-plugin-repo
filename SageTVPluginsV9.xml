@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2022.1017.2259">
+<PluginRepository version="2022.1018.0049">
 <SageTVPlugin>
 
   <Name>BlueTwo (addon for MBDiamond)</Name>
@@ -2883,7 +2883,7 @@ Version 1.1 - Added play toggle.
 	<Author>jvl711</Author>
 	<OS>Windows</OS>
 	<CreationDate>2020.05.01</CreationDate>
-	<ModificationDate>2022.09.29</ModificationDate>
+	<ModificationDate>2022.10.18</ModificationDate>
 	<Version>0.6</Version>
 	<PluginType>Library</PluginType>
 	<Desktop>false</Desktop>
@@ -2891,7 +2891,7 @@ Version 1.1 - Added play toggle.
 	<Package>
         <PackageType>System</PackageType>
         <Location>https://github.com/jvl711/JavaFFmpegLibrary/releases/download/v0.6/JavaFFmpegLibraryWin64_v0.6.zip</Location>
-        <MD5>641b45b73cf3c213eae7a90a73711868</MD5>
+        <MD5>bf20feb47afd08bbd2bdd7c01b0d7ad5</MD5>
     </Package>
 </SageTVPlugin>
 
@@ -2902,7 +2902,7 @@ Version 1.1 - Added play toggle.
 	<Author>jvl711</Author>
 	<OS>Linux</OS>
 	<CreationDate>2020.05.01</CreationDate>
-	<ModificationDate>2022.09.29</ModificationDate>
+	<ModificationDate>2022.10.18</ModificationDate>
 	<Version>0.6</Version>
 	<PluginType>Library</PluginType>
 	<Desktop>false</Desktop>
@@ -2910,7 +2910,7 @@ Version 1.1 - Added play toggle.
 	<Package>
         <PackageType>System</PackageType>
         <Location>https://github.com/jvl711/JavaFFmpegLibrary/releases/download/v0.6/JavaFFmpegLibraryLinux_v0.6.zip</Location>
-        <MD5>641b45b73cf3c213eae7a90a73711868</MD5>
+        <MD5>a81cded4ef920b6858b45ea2e661c483</MD5>
     </Package>
 </SageTVPlugin>
 
@@ -2921,7 +2921,7 @@ Version 1.1 - Added play toggle.
 	<Author>jvl711</Author>
 	<OS>Windows</OS>
 	<CreationDate>2020.05.01</CreationDate>
-	<ModificationDate>2022.09.29</ModificationDate>
+	<ModificationDate>2022.10.18</ModificationDate>
 	<Version>0.6</Version>
 	<PluginType>Library</PluginType>
 	<Desktop>false</Desktop>
@@ -2929,7 +2929,7 @@ Version 1.1 - Added play toggle.
 	<Package>
         <PackageType>System</PackageType>
         <Location>https://github.com/jvl711/JavaFFmpegLibrary/releases/download/v0.6/JavaFFmpegLibraryWin32_v0.6.zip</Location>
-        <MD5>641b45b73cf3c213eae7a90a73711868</MD5>
+        <MD5>9d637084bd06e22117baf6227a118b51</MD5>
         <ReleaseNotes><![CDATA[]]></ReleaseNotes>
     </Package>
 </SageTVPlugin>
