@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2022.1109.1316">
+<PluginRepository version="2023.0303.1412">
 <SageTVPlugin>
 
   <Name>BlueTwo (addon for MBDiamond)</Name>
@@ -3225,7 +3225,7 @@ Version 1.7.5 beta
   </Dependency>
   <Dependency>
     <Plugin>ant</Plugin>
-    <MinVersion>1.8.2</MinVersion>
+    <MinVersion>1.8.2.1</MinVersion>
   </Dependency>
   <Dependency>
     <Plugin>slf4j-api</Plugin>
@@ -15287,15 +15287,15 @@ The weather data is updated no more often than every 30 minutes.
 
   <Identifier>ant</Identifier>
 
-  <Description>SageTV Dependency JAR Plugin - no need to download directly</Description>
+  <Description>SageTV Dependency JAR Plugin -no need to download directly</Description>
 
   <Author>Slugger</Author>
 
   <CreationDate>2011.04.10</CreationDate>
 
-  <ModificationDate>2011.04.10</ModificationDate>
+  <ModificationDate>2023.03.03</ModificationDate>
 
-  <Version>1.8.2</Version>
+  <Version>1.8.2.1</Version>
 
   <Dependency>
 
