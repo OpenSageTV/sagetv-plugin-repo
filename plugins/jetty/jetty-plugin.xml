@@ -82,7 +82,7 @@ Version 1.7.5 beta
   </Dependency>
   <Dependency>
     <Plugin>ant</Plugin>
-    <MinVersion>1.8.2</MinVersion>
+    <MinVersion>1.8.2.1</MinVersion>
   </Dependency>
   <Dependency>
     <Plugin>slf4j-api</Plugin>
