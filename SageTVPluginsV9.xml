@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2023.0303.1412">
+<PluginRepository version="2023.0308.1332">
 <SageTVPlugin>
 
   <Name>BlueTwo (addon for MBDiamond)</Name>
@@ -5394,15 +5394,15 @@ NOTE: Be sure to clear your browser cache thoroughly after installing this updat
     </Dependency>
     <Dependency>
         <Plugin>commons-dbutils</Plugin>
-        <MinVersion>1.3</MinVersion>
+        <MinVersion>1.3.1</MinVersion>
     </Dependency>
     <Dependency>
         <Plugin>commons-io</Plugin>
-        <MinVersion>2.4</MinVersion>
+        <MinVersion>2.5</MinVersion>
     </Dependency>
     <Dependency>
         <Plugin>commons-lang</Plugin>
-        <MinVersion>2.4</MinVersion>
+        <MinVersion>2.4.1</MinVersion>
     </Dependency>
     <Dependency>
         <Plugin>log4j</Plugin>
@@ -5410,15 +5410,15 @@ NOTE: Be sure to clear your browser cache thoroughly after installing this updat
     </Dependency>
     <Dependency>
         <Plugin>dom4j</Plugin>
-        <MinVersion>1.6.1</MinVersion>
+        <MinVersion>1.6.2</MinVersion>
     </Dependency>
     <Dependency>
         <Plugin>gson</Plugin>
-        <MinVersion>1.7.1</MinVersion>
+        <MinVersion>2.7</MinVersion>
     </Dependency>
     <Dependency>
         <Plugin>jsoup</Plugin>
-        <MinVersion>1.7.1</MinVersion>
+        <MinVersion>1.11.3</MinVersion>
     </Dependency>
     <Dependency>
         <Plugin>themoviedb</Plugin>
@@ -5430,11 +5430,11 @@ NOTE: Be sure to clear your browser cache thoroughly after installing this updat
     </Dependency>
     <Dependency>
         <Plugin>commons-net</Plugin>
-        <MinVersion>1.4.1</MinVersion>
+        <MinVersion>1.4.2</MinVersion>
     </Dependency>
     <Dependency>
         <Plugin>htmlparser</Plugin>
-        <MinVersion>1.6</MinVersion>
+        <MinVersion>1.6.1</MinVersion>
     </Dependency>
 
     <PluginType>Library</PluginType>
@@ -6147,24 +6147,6 @@ https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/sageortus.j
    <ImplementationClass>epplayon.EPPlayonPlugin</ImplementationClass>
 
  </SageTVPlugin>
-<SageTVPlugin>
-  <Name>commons-net</Name>
-  <Identifier>commons-net</Identifier>
-  <Description>SageTV Dependency JAR Plugin for commons-net-1.4.1.jar - no need to download directly</Description>
-  <Author>stuckless</Author>
-  <CreationDate>2010-04-08</CreationDate>
-  <ModificationDate>2010.04.10</ModificationDate>
-  <Version>1.4.1</Version>
-  <Desktop>false</Desktop>
-
-  <PluginType>Library</PluginType>
-
-  <Package>
-    <PackageType>JAR</PackageType>
-    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/commons-net-1.4.1.jar.zip</Location>
-    <MD5>EAAF1B6CFEA6707AA1D4141EE2EB234A</MD5>
-  </Package>
-</SageTVPlugin>
 <SageTVPlugin>
 
   <Name>myjavatools-lib</Name>
@@ -10557,24 +10539,6 @@ Version 1.0.0 - Initial Release
   </ReleaseNotes>
 </SageTVPlugin>
 <SageTVPlugin>
-  <Name>htmlparser</Name>
-  <Identifier>htmlparser</Identifier>
-  <Description>SageTV Dependency JAR Plugin for htmlparser-1.6.jar - no need to download directly</Description>
-  <Author>stuckless</Author>
-  <CreationDate>2010-04-08</CreationDate>
-  <ModificationDate>2010.04.10</ModificationDate>
-  <Version>1.6</Version>
-  <Desktop>false</Desktop>
-
-  <PluginType>Library</PluginType>
-
-  <Package>
-    <PackageType>JAR</PackageType>
-    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/htmlparser-1.6.jar.zip</Location>
-    <MD5>E0C23FA097F2F6E6D29FEF452BAC7AAB</MD5>
-  </Package>
-</SageTVPlugin>
-<SageTVPlugin>
 
 
 
@@ -13377,24 +13341,6 @@ wnload directly</Description>
 
 </SageTVPlugin>
 <SageTVPlugin>
-  <Name>dom4j</Name>
-  <Identifier>dom4j</Identifier>
-  <Description>SageTV Dependency JAR Plugin for dom4j-1.6.1.jar - no need to download directly</Description>
-  <Author>stuckless</Author>
-  <CreationDate>2010-04-08</CreationDate>
-  <ModificationDate>2010.04.10</ModificationDate>
-  <Version>1.6.1</Version>
-  <Desktop>false</Desktop>
-
-  <PluginType>Library</PluginType>
-
-  <Package>
-    <PackageType>JAR</PackageType>
-    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/dom4j-1.6.1.jar.zip</Location>
-    <MD5>296ECEDEFE1BC5B749A51780363B32F2</MD5>
-  </Package>
-</SageTVPlugin>
-<SageTVPlugin>
   <Name>SageMC - Library</Name>
   <Identifier>sagemc-jar</Identifier>
   <Description>SageMC main JAR/Library</Description>
@@ -15198,24 +15144,6 @@ The weather data is updated no more often than every 30 minutes.
 
 </SageTVPlugin>
 <SageTVPlugin>
-  <Name>commons-lang</Name>
-  <Identifier>commons-lang</Identifier>
-  <Description>SageTV Dependency JAR Plugin for commons-lang-2.4.jar - no need to download directly</Description>
-  <Author>stuckless</Author>
-  <CreationDate>2010-04-08</CreationDate>
-  <ModificationDate>2010.04.10</ModificationDate>
-  <Version>2.4</Version>
-  <Desktop>false</Desktop>
-
-  <PluginType>Library</PluginType>
-
-  <Package>
-    <PackageType>JAR</PackageType>
-    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/commons-lang-2.4.jar.zip</Location>
-    <MD5>9B93D462E41A9AA0C07E40938E98CE12</MD5>
-  </Package>
-</SageTVPlugin>
-<SageTVPlugin>
   <Name>commons-email</Name>
   <Identifier>commons-email</Identifier>
   <Description>SageTV Dependency JAR Plugin for commons-email-1.2.jar - no need to download directly</Description>
@@ -15279,43 +15207,6 @@ The weather data is updated no more often than every 30 minutes.
 
 <Screenshot>http://babgvant.com/downloads/pluckyhd/MenuMod.jpg</Screenshot>
 <DemoVideo>http://www.youtube.com/watch?v=3RPAp0Iva98</DemoVideo>
-
-</SageTVPlugin>
-<SageTVPlugin>
-
-  <Name>ant</Name>
-
-  <Identifier>ant</Identifier>
-
-  <Description>SageTV Dependency JAR Plugin -no need to download directly</Description>
-
-  <Author>Slugger</Author>
-
-  <CreationDate>2011.04.10</CreationDate>
-
-  <ModificationDate>2023.03.03</ModificationDate>
-
-  <Version>1.8.2.1</Version>
-
-  <Dependency>
-
-     <JVM />
-
-     <MinVersion>1.5.0</MinVersion>
-
-  </Dependency>
-
-  <PluginType>Library</PluginType>
-
-  <Package>
-
-    <PackageType>JAR</PackageType>
-
-    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/ant-1.8.2.zip</Location>
-
-    <MD5>B8DCEBCC9DD77D09E6AED7501281FC17</MD5>
-
-  </Package>
 
 </SageTVPlugin>
 <SageTVPlugin>
@@ -17864,24 +17755,6 @@ Changes in 1.0.1.1513
                <MD5>6DE0D42893CE78D7D70A85B13A5421F4</MD5>
                <Overwrite>true</Overwrite> <!-- Defaults to true -->
        </Package>
-</SageTVPlugin>
-<SageTVPlugin>
-  <Name>commons-dbutils</Name>
-  <Identifier>commons-dbutils</Identifier>
-  <Description>SageTV Dependency JAR Plugin for commons-dbutils-1.3.jar - no need to download directly</Description>
-  <Author>stuckless</Author>
-  <CreationDate>2010-04-08</CreationDate>
-  <ModificationDate>2010.04.10</ModificationDate>
-  <Version>1.3</Version>
-  <Desktop>false</Desktop>
-
-  <PluginType>Library</PluginType>
-
-  <Package>
-    <PackageType>JAR</PackageType>
-    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/commons-dbutils-1.3.jar.zip</Location>
-    <MD5>02C616EE631E3946198117E3450B8F68</MD5>
-  </Package>
 </SageTVPlugin>
 <SageTVPlugin>
   <Name>VideoOut Tools for the Extenders</Name>
