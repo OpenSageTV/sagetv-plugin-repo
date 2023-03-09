@@ -1,0 +1,18 @@
+<SageTVPlugin>
+  <Name>commons-dbutils</Name>
+  <Identifier>commons-dbutils</Identifier>
+  <Description>SageTV Dependency JAR Plugin for commons-dbutils-1.3.jar - no need to download directly</Description>
+  <Author>stuckless</Author>
+  <CreationDate>2010-04-08</CreationDate>
+  <ModificationDate>2023.03.08</ModificationDate>
+  <Version>1.3.1</Version>
+  <Desktop>false</Desktop>
+
+  <PluginType>Library</PluginType>
+
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/commons-dbutils-1.3.jar.zip</Location>
+    <MD5>02C616EE631E3946198117E3450B8F68</MD5>
+  </Package>
+</SageTVPlugin>
