@@ -120,7 +120,7 @@ NOTE: Be sure to clear your browser cache thoroughly after installing this updat
   </Dependency>
   <Dependency>
     <Plugin>sagexmlinfo</Plugin>
-    <MinVersion>1.4</MinVersion>
+    <MinVersion>1.4.2</MinVersion>
   </Dependency>
   <Dependency>
     <Plugin>Jetty</Plugin>
