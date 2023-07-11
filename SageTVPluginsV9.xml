@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2023.0323.0140">
+<PluginRepository version="2023.0711.1142">
 <SageTVPlugin>
 
   <Name>BlueTwo (addon for MBDiamond)</Name>
@@ -2932,6 +2932,67 @@ Version 1.1 - Added play toggle.
         <MD5>9d637084bd06e22117baf6227a118b51</MD5>
         <ReleaseNotes><![CDATA[]]></ReleaseNotes>
     </Package>
+</SageTVPlugin>
+<SageTVPlugin>
+
+  <Name>Signal Strength on OSD</Name>
+
+  <Identifier>SignalStrengthOnOSD</Identifier>
+
+  <Description>Displays the tv tuner signal strength on the OSD</Description>
+
+  <Author>49studebaker</Author>
+
+  <CreationDate>2010.05.29</CreationDate>
+
+  <ModificationDate>2023.07.11</ModificationDate>
+
+  <Version>1.0.5</Version>
+
+
+
+<Dependency>
+
+  <STV>SageTV7</STV>
+
+  <MinVersion>7.0</MinVersion>
+
+</Dependency>
+
+
+
+<PluginType>STVI</PluginType>
+
+<STVImport>SignalStrengthOnOSD.stvi</STVImport>
+
+
+
+<Package>
+
+  <PackageType>STVI</PackageType>
+
+  <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/SignalStrengthOnOSD.zip</Location>
+
+  <MD5>D571EB22FC28D0F42020733728DA6DE0</MD5>
+
+</Package>
+
+
+
+<ReleaseNotes>
+
+Version 1.0 - Initial release.
+
+Version 1.0.1 -Fixed bug
+
+Version 1.0.2 -Fixed bug that occured with "Hide Footer" plugin
+
+Version 1.0.5 -No change - just version number
+
+</ReleaseNotes>
+
+
+
 </SageTVPlugin>
 <SageTVPlugin>
        <Name>chartjs for SageTV Web Interface</Name>
@@ -11611,65 +11672,6 @@ How to Export a Channel Lineup:
 
 
 <ModificationDate>2015-5-24</ModificationDate>
-</SageTVPlugin>
-<SageTVPlugin>
-
-  <Name>Signal Strength on OSD</Name>
-
-  <Identifier>SignalStrengthOnOSD</Identifier>
-
-  <Description>Displays the tv tuner signal strength on the OSD</Description>
-
-  <Author>49studebaker</Author>
-
-  <CreationDate>2010.05.29</CreationDate>
-
-  <ModificationDate>2010.06.02</ModificationDate>
-
-  <Version>1.0.2</Version>
-
-
-
-<Dependency>
-
-  <STV>SageTV7</STV>
-
-  <MinVersion>7.0</MinVersion>
-
-</Dependency>
-
-
-
-<PluginType>STVI</PluginType>
-
-<STVImport>SignalStrengthOnOSD.stvi</STVImport>
-
-
-
-<Package>
-
-  <PackageType>STVI</PackageType>
-
-  <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/SignalStrengthOnOSD.zip</Location>
-
-  <MD5>D571EB22FC28D0F42020733728DA6DE0</MD5>
-
-</Package>
-
-
-
-<ReleaseNotes>
-
-Version 1.0 - Initial release.
-
-Version 1.0.1 -Fixed bug
-
-Version 1.0.2 -Fixed bug that occured with "Hide Footer" plugin
-
-</ReleaseNotes>
-
-
-
 </SageTVPlugin>
 <SageTVPlugin>
 
