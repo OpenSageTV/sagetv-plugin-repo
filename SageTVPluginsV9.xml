@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2023.0309.1228">
+<PluginRepository version="2023.0323.0140">
 <SageTVPlugin>
 
   <Name>BlueTwo (addon for MBDiamond)</Name>
@@ -5223,7 +5223,7 @@ NOTE: Be sure to clear your browser cache thoroughly after installing this updat
   </Dependency>
   <Dependency>
     <Plugin>sagexmlinfo</Plugin>
-    <MinVersion>1.4</MinVersion>
+    <MinVersion>1.4.2</MinVersion>
   </Dependency>
   <Dependency>
     <Plugin>Jetty</Plugin>
@@ -5381,6 +5381,29 @@ NOTE: Be sure to clear your browser cache thoroughly after installing this updat
 
   </Package>
 
+</SageTVPlugin>
+<SageTVPlugin>
+  <Name>Nielm's Sage XML Info</Name>
+  <Identifier>sagexmlinfo</Identifier>
+  <Description>A library for importing data into and exporting data from the SageTV database.</Description>
+  <Author>nielm</Author>
+  <CreationDate>2006.03.17</CreationDate>
+  <ModificationDate>2023.03.11</ModificationDate>
+  <Version>1.4.2</Version>
+  <Desktop>false</Desktop>
+  <ResourcePath>sagexmlinfo</ResourcePath>
+  <Webpage>http://tools.assembla.com/sageplugins/wiki/SageXmlInfo</Webpage>
+  <Dependency>
+    <Plugin>sageutls</Plugin>
+    <MinVersion>1.4</MinVersion>
+  </Dependency>
+  <PluginType>Library</PluginType>
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/nielm-sagexmlinfo-jars-1.4.1.zip</Location>
+    <MD5>F71477CD380589B48976B73D86AAD78D</MD5>
+  </Package>
+  <ImplementationClass></ImplementationClass>
 </SageTVPlugin>
 <SageTVPlugin>
   <Name>commons-dbutils</Name>
@@ -16663,29 +16686,6 @@ Load this UI Mod and then set the theme from the Advanced menu of Detailed Setup
 
 </SageTVPlugin>
 <SageTVPlugin>
-  <Name>Nielm's Sage XML Info</Name>
-  <Identifier>sagexmlinfo</Identifier>
-  <Description>A library for importing data into and exporting data from the SageTV database.</Description>
-  <Author>nielm</Author>
-  <CreationDate>2006.03.17</CreationDate>
-  <ModificationDate>2010.05.16</ModificationDate>
-  <Version>1.4.1</Version>
-  <Desktop>false</Desktop>
-  <ResourcePath>sagexmlinfo</ResourcePath>
-  <Webpage>http://tools.assembla.com/sageplugins/wiki/SageXmlInfo</Webpage>
-  <Dependency>
-    <Plugin>sageutls</Plugin>
-    <MinVersion>1.4</MinVersion>
-  </Dependency>
-  <PluginType>Library</PluginType>
-  <Package>
-    <PackageType>JAR</PackageType>
-    <Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/nielm-sagexmlinfo-jars-1.4.1.zip</Location>
-    <MD5>F71477CD380589B48976B73D86AAD78D</MD5>
-  </Package>
-  <ImplementationClass></ImplementationClass>
-</SageTVPlugin>
-<SageTVPlugin>
 		<Name>SlimPlayer Internet Radio</Name>
 		<Identifier>koelecslimplayer</Identifier>
 		<Description>Slimplayer - Internet Radio (free and commercial services) streamed from Squeezebox Server.
@@ -19595,8 +19595,8 @@ Provides Sports Event monitoring for use by the SRE plugin
     ]]></Description>
        <Author>skiingwiz</Author>
        <CreationDate>2016.04.23</CreationDate>
-       <ModificationDate>2021.12.23</ModificationDate>
-       <Version>2.0.1</Version>
+       <ModificationDate>2023.03.22</ModificationDate>
+       <Version>2.1.0</Version>
        <ResourcePath>plugins/livepvrdata-server</ResourcePath>
        <Webpage>https://github.com/livepvrdata-oss/livepvrdata-svc</Webpage>
        <Dependency>
@@ -19618,11 +19618,14 @@ Provides Sports Event monitoring for use by the SRE plugin
        <PluginType>Standard</PluginType>
        <Package>
                <PackageType>System</PackageType>
-               <Location>http://github.com/livepvrdata-oss/livepvrdata-svc/releases/download/2.0.1/livepvrdata-svc-war-2.0.1.zip</Location>
-               <MD5>c5bfee6dccb73edd468fb39d62b5e782</MD5>
+               <Location>http://github.com/livepvrdata-oss/livepvrdata-svc/releases/download/2.1.0/livepvrdata-svc-war-2.1.0.zip</Location>
+               <MD5>2a51033e4e76f84c9459924fc562c512</MD5>
                <Overwrite>true</Overwrite>
        </Package>
            <ReleaseNotes><![CDATA[
+2.1.0
+* Move to different MLB monitor
+* Update team maps
 2.0.1
 * Changes to support Jetty 9
 1.8.1
