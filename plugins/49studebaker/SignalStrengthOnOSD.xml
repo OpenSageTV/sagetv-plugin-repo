@@ -10,9 +10,9 @@
 
   <CreationDate>2010.05.29</CreationDate>
 
-  <ModificationDate>2010.06.02</ModificationDate>
+  <ModificationDate>2023.07.11</ModificationDate>
 
-  <Version>1.0.2</Version>
+  <Version>1.0.5</Version>
 
 
 
@@ -51,6 +51,8 @@ Version 1.0 - Initial release.
 Version 1.0.1 -Fixed bug
 
 Version 1.0.2 -Fixed bug that occured with "Hide Footer" plugin
+
+Version 1.0.5 -No change - just version number
 
 </ReleaseNotes>
 
