@@ -6,8 +6,8 @@
   <Description>Major update of the Diamond STVi.</Description>
   <Author>JOrton,jusjoken,Fuzzy,EvilPenguin,bialio,PluckyHD</Author>
   <CreationDate>2010.11.01</CreationDate>
-  <ModificationDate>2021.08.28</ModificationDate>
-  <Version>4.0606</Version>
+  <ModificationDate>2024.10.28</ModificationDate>
+  <Version>4.0607</Version>
 
   <Dependency>
    <Core/>
@@ -21,7 +21,7 @@
 
   <Dependency>
     <Plugin>googleweather</Plugin>
-    <MinVersion>3.0.3</MinVersion>
+    <MinVersion>3.1.0</MinVersion>
   </Dependency>
 
   <Dependency>
@@ -51,6 +51,7 @@
   <STVImport>GemstonePlugin.stvi</STVImport>
 
   <ReleaseNotes>
+    Version 1.0607 Include OWM 3.0 change by ardyssey
     Version 1.0606 Fix for filters and changes to improve logging
     Version 1.0605 Fix for idle lockups
     Version 1.0604 Fix for weather forecast widgets and added logging for flow filters
