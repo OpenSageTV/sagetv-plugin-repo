@@ -8,6 +8,6 @@ notifications:
   email:
     recipients:
       - sean.stuckless@gmail.com
-      - fuzzy@weirdness.com
+      - usjusjoken@gmail.com
     on_success: always
     on_failure: always
