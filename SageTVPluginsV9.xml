@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2024.1031.1154">
+<PluginRepository version="2024.1031.1156">
 <SageTVPlugin>
 
   <Name>BlueTwo (addon for MBDiamond)</Name>
@@ -15053,7 +15053,7 @@ Use version 2.94 or later of get_iplayer which handles the latest changes to BBC
 	<ReleaseNotes>Updated public release.
 
 Version 3.1.1:
-Update by ardyssey to OpenWeatherMap api 3.0 and min max temp fixes.
+Update by ardyssey to OpenWeatherMap api 3.0 and min max temp fixes
 
 Version 3.0.3:
 Logging fixes
