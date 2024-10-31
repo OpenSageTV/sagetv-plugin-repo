@@ -7,7 +7,7 @@
   <Author>JOrton,jusjoken,Fuzzy,EvilPenguin,bialio,PluckyHD</Author>
   <CreationDate>2010.11.01</CreationDate>
   <ModificationDate>2024.10.28</ModificationDate>
-  <Version>4.0607</Version>
+  <Version>4.0608</Version>
 
   <Dependency>
    <Core/>
@@ -21,7 +21,7 @@
 
   <Dependency>
     <Plugin>googleweather</Plugin>
-    <MinVersion>3.1.0</MinVersion>
+    <MinVersion>3.1.1</MinVersion>
   </Dependency>
 
   <Dependency>
