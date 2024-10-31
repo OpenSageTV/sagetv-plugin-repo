@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PluginRepository version="2024.1030.1254">
+<PluginRepository version="2024.1031.0200">
 <SageTVPlugin>
 
   <Name>BlueTwo (addon for MBDiamond)</Name>
@@ -4981,7 +4981,7 @@ Log script output even when the script fails
   <Author>JOrton,jusjoken,Fuzzy,EvilPenguin,bialio,PluckyHD</Author>
   <CreationDate>2010.11.01</CreationDate>
   <ModificationDate>2024.10.28</ModificationDate>
-  <Version>4.0607</Version>
+  <Version>4.0608</Version>
 
   <Dependency>
    <Core/>
@@ -4995,7 +4995,7 @@ Log script output even when the script fails
 
   <Dependency>
     <Plugin>googleweather</Plugin>
-    <MinVersion>3.1.0</MinVersion>
+    <MinVersion>3.1.1</MinVersion>
   </Dependency>
 
   <Dependency>
@@ -15022,7 +15022,7 @@ Use version 2.94 or later of get_iplayer which handles the latest changes to BBC
 <SageTVPlugin>
 	<Name>Google Weather</Name>
 	<Identifier>googleweather</Identifier>
-	<Version>3.1.0</Version>
+	<Version>3.1.1</Version>
 	<Description>A weather support library that is used by SageTV's updated weather system to retrieve weather information from OpenWeather.</Description>
 	<Author>Opus4, jusjoken</Author>
 	
@@ -15052,7 +15052,7 @@ Use version 2.94 or later of get_iplayer which handles the latest changes to BBC
 	<ModificationDate>2024.10.28</ModificationDate>
 	<ReleaseNotes>Updated public release.
 
-Version 3.1.0:
+Version 3.1.1:
 Update by ardyssey to OpenWeatherMap api 3.0 and min max temp fixes.
 
 Version 3.0.3:
@@ -15089,8 +15089,8 @@ The weather data is updated no more often than every 30 minutes.
 
 	<Package>
 		<PackageType>JAR</PackageType>
-		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/GoogleWeather_3_1_0.zip</Location>
-		<MD5>b46478299152225413e622ba74bf7506</MD5>
+		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/GoogleWeather_3_1_1.zip</Location>
+		<MD5>ebb934e114f49558246a26a6e7942962</MD5>
 	</Package>
 
 </SageTVPlugin>
