@@ -69,7 +69,7 @@ The weather data is updated no more often than every 30 minutes.
 	<Package>
 		<PackageType>JAR</PackageType>
 		<Location>https://github.com/OpenSageTV/sagetv-plugin-repo/releases/download/1/GoogleWeather_3_1_1.zip</Location>
-		<MD5>ebb934e114f49558246a26a6e7942962</MD5>
+		<MD5>127cf2b41c446fde86ec524233531205</MD5>
 	</Package>
 
 </SageTVPlugin>
