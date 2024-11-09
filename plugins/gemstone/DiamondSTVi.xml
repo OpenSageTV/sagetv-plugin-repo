@@ -6,8 +6,8 @@
   <Description>Major update of the Diamond STVi.</Description>
   <Author>JOrton,jusjoken,Fuzzy,EvilPenguin,bialio,PluckyHD</Author>
   <CreationDate>2010.11.01</CreationDate>
-  <ModificationDate>2024.10.28</ModificationDate>
-  <Version>4.0608</Version>
+  <ModificationDate>2024.11.09</ModificationDate>
+  <Version>4.0609</Version>
 
   <Dependency>
    <Core/>
@@ -21,7 +21,7 @@
 
   <Dependency>
     <Plugin>googleweather</Plugin>
-    <MinVersion>3.1.1</MinVersion>
+    <MinVersion>3.1.2</MinVersion>
   </Dependency>
 
   <Dependency>
