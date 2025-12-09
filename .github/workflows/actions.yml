@@ -1,0 +1,20 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Update apt and install libxml2-utils
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libxml2-utils
+      
+      - name: Make build script executable
+        run: chmod +x buildpluginsxml.sh
+      
+      - name: Run build script
+        run: ./buildpluginsxml.sh
