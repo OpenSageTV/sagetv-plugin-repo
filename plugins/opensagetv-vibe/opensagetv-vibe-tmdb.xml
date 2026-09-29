@@ -5,8 +5,8 @@
     <Description>Shared, cache-backed TMDB metadata service for SageTV plugins.</Description>
     <Author>OpenSageTV Vibe</Author>
     <CreationDate>2026.09.08</CreationDate>
-    <ModificationDate>2026.09.08</ModificationDate>
-    <Version>0.1.1</Version>
+    <ModificationDate>2026.09.29</ModificationDate>
+    <Version>0.2.1</Version>
     <ResourcePath>OpenSageTVVibeTMDB</ResourcePath>
     <Webpage>https://github.com/opensagetv-vibe/opensagetv-vibe-tmdb</Webpage>
     <PluginType>Standard</PluginType>
@@ -21,8 +21,8 @@
     </Dependency>
     <Package>
         <PackageType>System</PackageType>
-        <Location>https://github.com/opensagetv-vibe/opensagetv-vibe-tmdb/releases/download/v0.1.1/OpenSageTVVibeTMDB-plugin-0.1.1.zip</Location>
-        <MD5>C34B88141C44C979C5F318DB31B23A97</MD5>
+        <Location>https://github.com/opensagetv-vibe/opensagetv-vibe-tmdb/releases/download/v0.2.1/OpenSageTVVibeTMDB-plugin-0.2.1.zip</Location>
+        <MD5>E11928A2542DAA22B2AC8A287EAF0857</MD5>
     </Package>
-    <ReleaseNotes>Initial public release of the shared TMDB service with immediate lifecycle updates, SQLite caching, and fail-safe SageMC/XMLTV adapters.</ReleaseNotes>
+    <ReleaseNotes>Adds reusable media-title cleanup and safe fallback matching for noisy filenames.</ReleaseNotes>
 </SageTVPlugin>

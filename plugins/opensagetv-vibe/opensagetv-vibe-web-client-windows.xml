@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SageTVPlugin>
+  <Name>OpenSageTV Vibe Web Client</Name>
+  <Identifier>sagetvwebplayer</Identifier>
+  <Description>Browser MiniClient and media player for stock SageTV servers. Uses the required OpenSageTV Vibe FFmpeg Plugin for transcoding while preserving the stock Sage.jar and stock ffmpeg.</Description>
+  <Author>OpenSageTV Vibe</Author>
+  <CreationDate>2026.09.22</CreationDate>
+  <ModificationDate>2026.09.27</ModificationDate>
+  <Version beta="true">3.2.30</Version>
+  <OS>Windows</OS>
+  <Desktop>false</Desktop>
+  <ResourcePath>sagetvwebplayer</ResourcePath>
+  <ReleaseNotes><![CDATA[
+3.2.30
+- Adopt the OpenSageTV Vibe project workflow and release contracts.
+- Require the platform-matching OpenSageTV Vibe FFmpeg Plugin and discover its SageTVTranscoder bridge instead of SageTV's stock ffmpeg.
+- Preserve explicit transcoder overrides for isolated regression tests and commissioning diagnostics.
+
+3.2.29
+- Add staged DVD HLS startup recovery: full hardware decode/VPP/encode, then hardware encode with software decode/filters, then libx264 when fallback is enabled.
+- Preserve up to 16 MiB of the current DVD MPEG-PS startup prefix and replay it across startup retries so a failed decoder cannot consume a short title/menu cell before fallback.
+- Report DVD fallback stage/reason plus replay-byte/truncation state in stream diagnostics.
+- Retain the 3.2.28 generation-scoped DVD menu-frame cache so authored menu backgrounds stay visible with the SPU highlight.
+
+3.2.27
+- Fix DVD hardware HLS startup by placing FFmpeg hardware-decode input options before the MiniDVDPlayer MPEG-PS pipe input.
+- DVD-Video now always converts MPEG-2 video to H.264 and audio to AAC for browser playback; ordinary-media Copy cannot leak into the DVD path.
+- Honor the browser-selected Auto/QSV/NVENC/VAAPI/AMF/VideoToolbox/Software encoder for DVD transcoding while retaining hardware decode/VPP/encode when available.
+- Add DVD command-order/forced-transcode regressions and retain the real FFmpeg DVD A/V/drain tests.
+
+3.2.26
+- Enable the completed stock MiniDVDPlayer/native DVD capability role by default; no JVM opt-in is required for normal DVD-Video playback.
+- Advertise MPEG2-PS push and the stock DVD input-device role so SageTV selects MiniDVDPlayer instead of rejecting the DVD with MediaPlayer error -19.
+- Keep -Dsagetv.webplayer.nativeDvdProtocol=false as an explicit troubleshooting rollback.
+- Retain STV caption control and full hardware transcoding from the prior builds.
+
+3.2.25
+- Fix STV / SageTV caption authority in the web MiniClient by using VIDEO_CC_STATE as the control plane for the browser-local CEA decoder.
+- STV Off clears local captions; STV CC1..CC4 select the matching CEA-608 service without changing the saved STV authority mode.
+- Preserve property-absent CC1 fallback for older peers and keep explicit local CC1/CC2/DVB modes unchanged.
+- Diagnostics now identify STV-controlled browser caption rendering and observed state/service.
+- Full hardware decode/process/encode behavior from 3.2.24 is unchanged.
+
+3.2.24
+- Hardware-first now attempts hardware decode plus hardware encode on NVIDIA, Intel/QSV, AMD/AMF, VAAPI and VideoToolbox.
+- NVIDIA/QSV/VAAPI use GPU-resident video processing when their decode/VPP/encode chain passes the real initialization probe.
+- Startup fallback order is full hardware, then the same hardware encoder with software decode/filters, then libx264.
+- Diagnostics report decode accelerator, hardware filter state and fallback stage.
+
+3.2.24
+- Preserve source cadence and dimensions on MPEG-2 compatibility fallback; Deinterlace Auto no longer inserts yadif for sources already probed as progressive.
+- Expand /codec-test.html with a second D/E A/B pair matching the known real recording parameters: MPEG-2 Main 1280x720 progressive 60000/1001 fps, ~6.3 Mb/s video, English AC-3 5.1 384 kb/s plus Spanish AC-3 stereo 192 kb/s.
+- D copies the MPEG-2 video while converting the selected English AC-3 track to AAC stereo; E transcodes the exact same source to H.264 while preserving 1280x720p59.94.
+- Keep the original A/B/C 360p30 controls and ffprobe-to-FFmpeg source-probe fallback.
+
+3.2.21
+- Fix normal MiniClient playback rejecting explicit Copy before FFmpeg starts. Video processing = Copy now attempts -c:v copy for the source video stream without a codec allow-list, including when ffprobe cannot identify the source codec.
+- Keep Auto conservative and unchanged. Copy still requires Source resolution/FPS and Deinterlace Auto/Off because copied video cannot be filtered.
+- Make the HLS Copy compatibility fallback codec-agnostic: when the browser timeline advances but video remains 0x0 and Allow fallback is enabled, restart at the same position as H.264.
+- Retain immediate Copy selector persistence and the isolated codec-test page.
+
+3.2.19
+- Make Copy the single explicit no-video-transcode mode for H.264, browser-supported HEVC, and MPEG-2. Auto remains conservative and still transcodes MPEG-2.
+- Copy keeps the source video codec with FFmpeg -c:v copy and remuxes/resegments it for delivery. Source resolution/FPS and Deinterlace Auto/Off are required because Copy cannot resize, frame-rate convert, or deinterlace.
+- Detect the tested MPEG-2 failure signature where HLS audio/timeline advances but the browser video element remains 0x0; when Allow fallback is enabled, restart at the same position as H.264. Devices that decode MPEG-2 stay on Copy.
+- Migrate the temporary mpeg2copy profile value from the codec-test checkpoint to copy. The isolated codec-test page remains available for native A/B verification.
+
+3.2.18
+- Add an isolated `/codec-test.html` page that measures native browser HLS decoding without hls.js or SageTV media.
+- Generate fixed synthetic MPEG-2/AAC and H.264/AAC streams with the configured FFmpeg and compare MPEG-2 stream-copy, MPEG-2 to H.264 transcode, and H.264 stream-copy.
+- Keep all codec-test FFmpeg arguments and paths fixed server-side; outputs stay under the plugin temp directory and media serving is allowlisted.
+- Add a real-FFmpeg codec-test smoke gate and path-traversal rejection. This diagnostic build does not alter normal playback policy or begin optional P15 Core/provider work.
+
+3.2.17
+- P14 replaces the old observation-only playback check with an explicit bounded current-video test for cadence, buffering, pause/resume and reversible seek; live/growing, short and DVD/menu mutation is skipped safely. Original pause/mute/volume/rate/position state is restored, including same-recording interrupted-test recovery without cross-recording seeks.
+- Diagnostic ZIP export is bounded and redacted, includes hashes, recent video-test/failure context, subtitle queue/timestamp/DVD/transcode counters and avoids media/subtitle payloads, client identity, recognized credentials and SMB credentials.
+- Optional automatic terminal-failure capture remains OFF by default. Administrator server writes require both a mounted diagnostic path and sagetv.webplayer.diagnostics.writeEnabled=true; the browser never opens smb:// or receives share credentials.
+- Add bounded atomic server report save, write/read/hash/delete destination test and 10-file/10-MiB local retry spool with cooperative cancellation between file steps. Diagnostic storage is independent from recordings/media paths.
+- Add schema-v1 browser-saved-default profile export/import with preview, bounded unknown-key handling and explicit Apply. Client identity, per-session audio/subtitle/PID/page selections and administrator server settings are excluded.
+- Support settings remain reachable on narrow/tall windows and gain keyboard/D-pad navigation through nested controls.
+- Field verification of a configured real mounted diagnostics destination and a real long-recording seek/subtitle test remains documented acceptance; local generated/browser suites do not claim those external environments.
+
+3.2.16
+- P13 GFX parity ledger classifies every encountered opcode as implemented, negotiated off, or unknown/reproducer-required instead of silently accepting unsupported transform/font/cache paths.
+- Add per-session experimental GFX_YUV_IMAGE_CACHE=UNIFIED opt-in. Format-256 allocations decode SageTV Y plus interleaved UV rows into bounded browser RGBA handles; default behavior remains unchanged/off.
+- Share one geometry model for UI pointer mapping, Fit/Fill/Stretch/Cover video rectangles, DVB/file subtitles, DVD SPU and retained DVD stills.
+- Browser keyboard D-pad repeat is now owned/cancelled explicitly, avoiding stuck or duplicate repeat across keyup, blur and hidden-tab transitions.
+- pagehide/bfcache retires only its session ID and pageshow creates a fresh generation; stale tabs cannot stop a replacement session. Service-worker shell now contains every current MiniClient module.
+- Diagnostics distinguish requested versus observable media-worker behavior and explicitly report GFX main-thread time-slicing; async callbacks are not labeled multithreading.
+- Stock unified-graphics OFF/ON DVB/Push A/B remains field acceptance; transforms/texture batch/font-text/diffuse/offline-cache capabilities remain negotiated off.
+
+3.2.15
+- P12 audio policy prefers explicit/preferred-language primary/default tracks over commentary, narration, descriptive-audio and visual-impaired tracks unless the user explicitly selects them.
+- Add saved missing-language fallback policy: best/default, first track, or strict failure. Current-recording track IDs remain session-only.
+- Expand signed audio delay to -4000..+4000 ms in 25 ms steps; positive means audio later. Generated decoded-output calibration verifies both signs.
+- Debounce rapid audio-delay, track and quality changes before a same-position stream rebuild; stale UI completions cannot overwrite newer settings, pause intent/native GFX remain connected.
+- Report requested/effective encoder, decode/filter stages, hardware encode/decode, pipeline detail and fallback reason; software decode + GPU encode is not labeled end-to-end GPU.
+- Add keyframe interval and B-frame controls with bounded ranges. Copy-video mode ignores bitrate/GOP/B-frame controls by design.
+- Advertise only proven forward native playback rate 0.5-2.0x. Reverse and frame-step remain unsupported/unadvertised rather than simulated.
+- Receiver/ARC audibility and real broadcast PMT/channel-layout transitions remain field acceptance.
+
+3.2.15
+- P11 seek hardening: replace duration/file-size pipe seeks with observed MPEG-TS PES PTS indexing and bounded post-input FFmpeg residual seeking; unindexable sources fail closed to byte zero instead of inventing an offset.
+- Stabilize same-generation browser/media clocks across seek/FLUSH transitions so transient stale timestamps cannot drive recovery or Comskip backward; DVD title/chapter navigation remains owned by the stock server VM.
+- Add bounded completed-EOF tail settling, source shrink/replacement rejection, and retained segment-growth following without endless completed-file buffering.
+- Keep low-latency startup followed by continuous reserve filling while playing or paused; preserve quota reductions and avoid producer restart while source reads still make progress.
+- Serialize Comskip boundary ownership so repeated timer ticks cannot issue duplicate skips while one seek is in flight.
+- P11 long-run 3h+/5.5h-class real recording/changeover field acceptance remains open; the generated 240-second sustained-buffer gate passes.
+
+3.2.13
+- P10 disc source safety: MiniClient filesystem URLs must resolve to one SageTV-owned MediaFile; basename-only fallback is removed and stale mapped roots require an unambiguous parent+basename-or-longer suffix.
+- Classify VIDEO_TS, parent/mounted DVD roots, ISO, physical DVD drive, individual VOB, imported MKV and BDMV separately; VOB/MKV are never promoted to interactive DVD.
+- Add read-only /api/disc MediaFile-ID inspection with ISO mount-stage reporting, metadata health, scope and separate library-vs-DVD-title timeline semantics.
+- Add runtime FFmpeg dvdvideo/libdvdread/libdvdnav capability probing and explicit-title movie-only planning that never guesses title 1/largest VOB or claims menu parity.
+- Report implausible imported duration/stream metadata without automatic repair, reindex, watched-history changes or recording mutation.
+- Keep Blu-ray/BDMV/BD-J and encrypted/DRM discs out of the proven DVD scope. Multi-title authored-disc field acceptance remains open.
+
+3.2.12
+- P09 native DVD SPU: assemble private_stream_1 subpicture fragments and decode bounded 2-bit RLE display/stop/forced events to straight-alpha browser RGBA.
+- Apply SageTV DVD CLUT/alpha and SPUCTRL selected-button highlight state on a dedicated pointer-transparent overlay.
+- Keep DVD physical subpicture selection independent from broadcast DVB/CC and ordinary file subtitles; title subtitle Off does not suppress authored menu highlight recomposition.
+- Preserve queued/future SPU work across repeated CLUT/highlight commands and invalidate only on real DVD FLUSH/source generations.
+- Align PAL/NTSC 720-wide SPU/highlight coordinates through the same Fit/Fill/Stretch video rectangle used by the browser video plane.
+- D-pad/Select/Back/Menu/chapter input remains on SageTV's native MiniClient command path. Pointer DVD hit-testing and authored/real-disc acceptance remain field-gated.
+
+3.2.9
+- P06 ordinary subtitles: independent Off/Auto/Selected-track policy with language, delay and forced-only controls; selected track is session-only while defaults persist safely.
+- Discover embedded SRT/WebVTT/ASS/SSA/PGS/DVD-subtitle tracks plus exact-basename associated .srt/.vtt/.ass/.ssa/.sup/.idx sidecars; unrelated paths are never accepted from the browser.
+- Render text subtitles through sanitized textContent cues with Unicode, overlap, basic WebVTT positioning and correct end/clear timing. ASS/SSA styling is intentionally flattened by the WebVTT adapter.
+- Adapt PGS and DVD/VobSub bitmap codecs through FFmpeg to the existing vetted DVB bitmap decoder and LOCAL_FILE RGBA cue contract; subtitles are not burned into video.
+- Require VobSub palette/context from the embedded container or an associated IDX; lone .sub files are not advertised as supported.
+- Keep ordinary text/bitmap cues in their own queue under the same playback epoch/seek/flush lifecycle as broadcast captions, allowing intentional coexistence without queue stealing.
+- P06 generated/production-DOM tests pass for text, PGS-bearing MKV, embedded DVD subtitle, seek/lifecycle and coexistence. A genuine external IDX/SUB palette-bearing field pair remains required before WP06-004 field closure.
+
+3.2.6
+- P03 DVB Teletext: per-playback Level-1 subtitle decoder adapted from the Vibe Java core without process-global state.
+- Discover descriptor 0x56 service types 2/5, PID/language/page identity, PMT changes and 188/192/204-byte TS framing.
+- Reassemble Teletext PES/data units, decode Hamming-protected page headers/rows and erase-page updates, and publish timed text cues.
+- Keep presentation on the browser video clock when the SageTV OSD is hidden; seek/FLUSH/source replacement retire stale cue generations.
+- Add explicit Teletext mode, page/language service selection, schema-3 streaming preferences and preservation diagnostics that exclude decoded text/media payload.
+- P03 local/generated tests pass; unchanged real UK broadcast visible/timing field acceptance remains pending and is not claimed.
+
+3.2.5
+- P02 shared playback/subtitle architecture: per-session source/seek/FLUSH generations and stale-callback rejection.
+- Add typed PID/service inventory with bounded PAT/PMT Teletext and DVB descriptor discovery.
+- Add versioned text/straight-alpha bitmap cue contract, bounded queue, PTS clock mapping and /api/subtitles endpoint.
+- Add independent bounded original-source subtitle preservation so video encoders may continue stripping subtitle/data streams.
+- Migrate streaming profiles to schema 2 while preserving literal CEA-608/708 choices and existing bitrate/audio/display settings.
+- Keep Teletext, DVB bitmap, PGS, VobSub and ordinary subtitle decoders unadvertised until their later phases.
+
+3.2.4
+- Port the Vibe Android transparent edge overlay, layout and 30 original/converted icons.
+- Connect video, audio, captions, statistics and diagnostics icons to browser controls.
+- Keep additional keypad/volume/channel/timeline controls in the Help drawer.
+- Separate video masks from video geometry; prevent OSD clear rectangles shrinking fullscreen playback.
+- Fill browser stage by default; retain Fit, Stretch, explicit previews and native-placement override.
+- Preserve the first-FLIPBUFFER startup event gate and native authentication/recovery unchanged.
+- Add 14 display-policy and 22 asset/DOM/real-local-video checks; live SageMC/GPU validation still required.
+
+3.2.3
+- Correct startup native UI-event ordering based on the supplied server receiver NPE.
+- Defer resize/repaint/media updates until first FLIPBUFFER ACK, without delaying protocol replies.
+- Coalesce startup sizes and discard early user input rather than replaying it at login.
+- Add event-gate diagnostics and 13 native TCP startup regression cases.
+- Retain encryption, recovery, full-window UI, streaming profiles and external FFmpeg/MIM.
+- Supersedes the earlier authentication-cause hypothesis. Live SageTV test still required.
+
+3.2.2
+- Implement native RSA/Blowfish authentication handshake instead of returning empty CRYPTO_ALGORITHMS.
+- Preserve binary public/session keys; encrypt nonempty reply/event bodies with original plaintext header lengths.
+- Serialize old-mode enable/disable acknowledgements with input and property replies.
+- Respect server authentication settings; do not change target host, credentials, or login policy.
+- Suppress type-5 recovery while event encryption is active; retain diagnostics without exporting keys.
+- Add 14 real-JCA/loopback authentication scenarios and reproduce the 3.2.1 failure with a synthetic auth-required peer.
+- Live server reason/policy and physical SageMC login/playback remain unverified.
+
+3.2.1
+- Enable negotiated native GFX type-5 reconnect after first frame, with three bounded attempts.
+- Preserve the media connection and image handles on successful native recovery.
+- Never dispatch a partial GFX frame after reconnect; serialize event writes across sockets.
+- Retire an old in-plugin session before opening another with the same server/client ID.
+- Stop retrying the HTTP event stream when its native session is dead.
+- Reveal Reconnect and Download diagnostics even in render-only/fullscreen view.
+- Record bounded protocol-stage/recovery diagnostics without new property-value logging.
+- Add 11 loopback TCP recovery scenarios and 10 browser failure/recovery tests.
+- The source of the user's original server reset is not established; live SageTV remains untested.
+
+3.2.0
+- Add pinned mpegts.js 1.8.0 continuous MPEG-TS with exact byte-resume delivery.
+- Use opensagetv-vibe/opensagetv-vibe-android-client/source/dev settings as the reference.
+- Configure video bitrate/resolution/FPS/encoder and audio track/language/codec/channels/delay.
+- Extract original-video A/53 captions independently of encoding; render CEA-608/708 in the browser.
+- Minimal startup stash followed by configurable 30-600-second reserve, default 180 seconds.
+- Retain stock Sage.jar, native GFX/remote, existing Jetty and HLS fallback.
+- Vendor bundles are server-cached on first use or Prepare player assets, not embedded.
+- Real FFmpeg/CC extraction tested. Real vendor/MSE, hardware GPU and live SageTV remain untested.
+- Android STV event-225 caption authority, Teletext and bitmap/file subtitles are not ported.
+
+3.1.1
+- Fill usable browser area; negotiate actual native UI size on connect, resize and fullscreen.
+- Send native resize/repaint after GFX INIT, and retain image handles across resizes.
+- Separate first-segment startup (6-second initial loader target) from 180-second forward reserve.
+- Prevent EVENT recording playlists from forcing a jump to the producer's live edge.
+- Refill before starvation, including while paused; avoid resetting healthy server buffers.
+- Separate media-event scheduling from image decode and time-slice ordered GFX work.
+- Continuously monitor FFmpeg production and report current buffer targets/thread activity.
+- Preserve stock Sage.jar, existing Jetty port and externally installed FFmpeg/MIM.
+- Browser GFX remains main-thread Canvas; HLS worker mode is enabled, not a full worker renderer.
+
+3.1.0
+- Port Python v150 automatic startup-segment policy; explicitly start HLS at zero.
+- Fix rebuffer resume, stale status/seek races, premature ENDLIST recovery and recovery limit.
+- Restore local hold/double/middle-click remote, repeat controls, literal text and Guide assist.
+- Add full-media timeline, buffer/FFmpeg metrics and downloadable diagnostics.
+- Port trusted video-mask/preview handling and preserve the negative-texture geometry fix.
+- Follow growing recordings through appended data and newly added segments; drain final bytes.
+- Cache encoder probing across playback/seek starts; retain hardware-first FFmpeg and stock Sage.jar.
+- Include Node, native-protocol, growing-file, synthetic FFmpeg and offline Chromium regression tests.
+- Advanced Python-specific backend settings and alternate Video.js pipelines are not fully ported.
+
+3.0.3
+- Port MiniClient stage sizing from the working Python HTML client: canvas width 100%, height auto, max-width 1280px.
+- Remove the second manual viewport-fit/letterbox transform that clipped SageMC UI content.
+- Position the HLS video plane from the actual rendered canvas rectangle so GFX/video/input share one transform.
+- Add ResizeObserver-based stage relayout for toolbar/fullscreen/browser-size changes.
+
+- Fix SageMC/browser GFX texture orientation to match the Vibe Android renderer: negative texture width/height are flags, not mirror/flip operations.
+- Use absolute texture destination geometry and negative-height copy/no-blend semantics.
+- Remove incorrect browser Canvas flips that reversed rasterized SageMC text and inverted composed surfaces.
+- Bump the browser shell cache so clients receive the corrected renderer immediately after update.
+
+3.0.0
+- Add a real SageTV MiniClient/SageMC browser mode derived from opensagetv-vibe/opensagetv-vibe-android-client protocol behavior.
+- Jetty opens the actual MiniClient media (type 1) and GFX (type 0) sockets to SageTV on port 31099; the browser no longer simulates the STV through sagex APIs.
+- Add browser Canvas GFX renderer for frame, primitive, surface, uncompressed/compressed image, texture, transform-image and video-bound commands.
+- Add ordered Sage command, keyboard, mouse, resize and repaint event return paths.
+- Force PULL media negotiation and bridge MiniClient OPENURL/SEEK/play/pause/volume/video-rectangle commands to the existing FFmpeg HLS backend.
+- Add a low-overhead streaming NDJSON transport for MiniClient GFX/event delivery with long-poll fallback.
+- Keep the simple recording player and Web Admin pages as optional tools; SageMC/STV runs through /miniclient.html.
+
+2.4.0
+- Add a separate tabbed Full Client page while preserving the simple recordings-first default page.
+- Add compatibility-HLS startup buffering, rebuffering, and automatic starvation/early-end recovery at the absolute SageTV playback position.
+- Prevent short HLS windows or browser `ended` events from being mistaken for the end of the full SageTV recording.
+- Tune libx264 fallback for throughput and keep hardware H.264 encoding as the default path.
+- Make NVENC/VAAPI use reliable software MPEG-2 decode/deinterlace + hardware encode by default; full GPU decode/deinterlace is opt-in.
+- Retain the v2.3 Java/Jetty HLS architecture, SageTV MediaServer 7818 feeder, hls.js/native HLS playback, full recording timeline, and server/buffer diagnostics.
+
+2.2.0
+- Simplify the visible web UI to a recordings-first list with one Watch button per recording and a compact player.
+- Remove Server Watch History, Tuners / Encoder Health, SageTV Favorites / Recording Rules, DVR Schedule, Home dashboard and other management panels from the visible page. Backend endpoints remain available for future use.
+- Compatibility FFmpeg path now auto-detects and prefers H.264 hardware encoding: NVIDIA NVENC, Intel QSV, AMD AMF, VAAPI, or VideoToolbox.
+- Use full hardware decode/deinterlace where a verified CUDA or VAAPI chain is available; otherwise use hardware encode with software decode/deinterlace.
+- Retry with libx264 only if the selected hardware encoder fails before producing output.
+- Add transcoder status fields and response headers that report the actual encoder and hardware state.
+
+2.0.0
+- Complete pre-field-test feature sweep.
+- Add home dashboard, browser profiles, queue/binge playback, favorite channels/logos, bulk watched/queue actions, sleep timer, PiP, and settings export/import.
+- Add SageTV server Favorite-rule management including enable, run-status, padding, quality, retention/auto-delete, removal and priority.
+- Add tuner/encoder health with device/input/signal/lineup/quality/merit status and narrow quality/merit controls.
+- Add manual recording padding/quality editor and DVR schedule device/quality/schedule details.
+- Add SageTV server recently-watched history.
+- Expand diagnostics to schema v6.
+
+1.5.0
+- Add SageTV DVR schedule and unresolved-conflict dashboard.
+- Add manual scheduled-recording cancellation from the web client.
+- Add SageTV watched/unwatched and opt-in watched-position synchronization.
+- Read existing SageTV resume positions as a fallback to browser-local resume.
+- Add guarded permanent recording deletion, including without-prejudice deletion for bad recordings.
+- Add live Channel -/+ surfing through current SageTV guide airings.
+- Expand diagnostics to schema v5 with DVR state.
+
+1.4.0
+- Add SageTV EPG/live guide browser using viewable-channel airings.
+- Add explicit Record, Cancel Recording and Watch Live actions; Watch Live creates a SageTV manual recording and plays the resulting growing original TS.
+- Add Comskip .edl discovery for SageTV-owned MediaFiles plus manual/automatic VOD commercial skipping.
+- Add recording details dialog.
+- Add PWA manifest, app-shell service worker cache, local icons and Add-to-Home-Screen metadata.
+- Add optional 10-foot D-pad focus navigation and basic standard-gamepad support.
+- Expand diagnostics to schema v4 with guide/commercial state.
+
+1.3.0
+- Add thumbnail-based TV-style recordings library using SageTV/sagex thumbnail service.
+- Add category, year and SageTV watched-state metadata to recording/media APIs.
+- Add client-side library views for Continue Watching, Favorites, Recently Played, Unwatched and Recording Now.
+- Add browser-local favorites and recording progress bars without changing SageTV metadata.
+- Add category filtering and newest/oldest/title/progress sorting.
+- Add previous/next recording navigation for recordings sharing the same SageTV title and optional auto-play next.
+- Add visible -15s/+30s, mute, caption toggle and favorite controls.
+- Add Media Session API metadata/actions for supported lock-screen/headset controls.
+- Expand diagnostics with favorite/library state.
+
+1.2.0
+- Add browser-local resume bookmarks for unfinished VOD recordings with near-end auto-clear.
+- Persist volume, playback speed, caption service, caption enabled state, preferred audio language, auto-fallback, live-start and decoder-cache preferences.
+- Add preferred audio-language auto-selection and remember manual language choices.
+- Add active-recording live-edge default and automatic live reconnect with exponential backoff/stall detection.
+- Add local-cache-only decoder mode for fully offline playback after decoder asset prefetch.
+- Add keyboard controls: Space pause/resume, Left -15s, Right +30s, F fullscreen, C captions, M mute.
+- Expand diagnostics with settings, resume state, recent playback and live reconnect state.
+
+1.1.0
+- Add real-device hardening for iPhone/iPad and low-power clients.
+- Add COOP/COEP isolation headers so secure deployments can use SharedArrayBuffer/Wasm threads.
+- Add Wasm atomic asset support and automatic worker -> single-thread retry.
+- Enable Web Worker decode pipeline on capable iOS/desktop browsers even when SharedArrayBuffer is unavailable.
+- Add decode/render performance watchdog with sustained-underperformance detection.
+- Auto mode can hand off to compatibility playback at the same timestamp when software MPEG-2 decoding cannot maintain real time.
+- Add downloadable/copyable diagnostic report containing browser capability, decoder stats, caption stats and performance history.
+- Add device/performance status panel and visibility-resume recovery.
+
+1.0.0
+- Add Auto playback selection: original native, original browser-Wasm, then optional compatibility transcode.
+- Add pinned/self-hosted libmedia 1.3.1 server asset cache with strict allow-list and cache prefetch/status APIs.
+- Add active-recording original MPEG-TS live follower that follows file growth and SageTV segment rollovers.
+- Add optional external FFmpeg/MIM-compatible H.264/AAC fragmented-MP4 compatibility endpoint; original recordings are never modified.
+- Expand recordings browser metadata/search and direct watch workflow.
+- Add VOD seek, speed, volume, fullscreen, wake-lock, live-edge control, decoder statistics, and playback-mode reporting.
+- Expand CEA-608 character coverage and CEA-708 DTVCC service/window handling, positioning, visibility, pen location and basic styling.
+- Add safer response headers and keep media access limited to SageTV MediaFile IDs (no arbitrary filesystem-path endpoint).
+- Preserve original raw MPEG-TS/Range endpoint and SageTV MediaServer fallback.
+
+0.2.0
+- Add browser MPEG-TS playback using libmedia WebAssembly MPEG-2 and AC-3/E-AC-3 decoders.
+- Add audio track discovery/switching and initial CEA-608/CEA-708 browser captions.
+- Add recent-recordings browser and /stream.ts alias.
+
+0.1.1
+- Add SageTV MediaServer fallback and file access diagnostics.
+
+0.1.0
+- Initial Jetty WAR, MediaFile lookup and original byte-range streaming.
+  ]]></ReleaseNotes>
+  <Dependency><Core/><MinVersion>9.0.0</MinVersion></Dependency>
+  <Dependency><JVM/><MinVersion>1.8</MinVersion></Dependency>
+  <Dependency><Plugin>Jetty</Plugin><MinVersion>3.0.1</MinVersion></Dependency>
+  <Dependency><Plugin>sagex-api</Plugin><MinVersion>9.1.7.0</MinVersion></Dependency>
+  <Dependency><Plugin>SageTVFFmpegPluginWinx64</Plugin><MinVersion>0.1.4</MinVersion></Dependency>
+  <PluginType>Standard</PluginType>
+  <Package>
+    <PackageType>System</PackageType>
+    <Location>https://github.com/opensagetv-vibe/opensagetv-vibe-web-client-plugin/releases/download/v3.2.30/sagetv-webplayer-3.2.30.zip</Location>
+    <MD5>e2def20fec19abad708f3eabd8d83144</MD5>
+    <Overwrite>true</Overwrite>
+  </Package>
+  <ImplementationClass></ImplementationClass>
+</SageTVPlugin>

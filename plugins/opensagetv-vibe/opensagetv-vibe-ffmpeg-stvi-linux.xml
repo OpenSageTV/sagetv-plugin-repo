@@ -4,15 +4,15 @@
   <Identifier>SageTVFFmpegPluginSTVILinux</Identifier>
   <Author>OpenSageTV Vibe</Author>
   <CreationDate>2026.09.20</CreationDate>
-  <ModificationDate>2026.09.20</ModificationDate>
-  <Version beta="true">0.1.2</Version>
+  <ModificationDate>2026.09.29</ModificationDate>
+  <Version beta="true">0.1.4</Version>
   <OS>Linux</OS>
   <Desktop>false</Desktop>
   <Description>STVi configuration and monitoring UI for OpenSageTV Vibe FFmpeg Plugin.</Description>
   <PluginType>STVI</PluginType>
   <STVImport>SageTVFFmpegPlugin.stvi</STVImport>
-  <Package><PackageType>STVI</PackageType><Location>https://github.com/opensagetv-vibe/opensagetv-vibe-SageTVFFmpegPlugin/releases/download/v0.1.2/SageTVFFmpegPlugin-STVI-0.1.2.zip</Location><MD5>60f6d736d004ca6408e6f1d7ba906523</MD5></Package>
-  <Dependency><Plugin>SageTVFFmpegPluginLinux</Plugin><MinVersion>0.1.2</MinVersion></Dependency>
+  <Package><PackageType>STVI</PackageType><Location>https://github.com/opensagetv-vibe/opensagetv-vibe-SageTVFFmpegPlugin/releases/download/v0.1.4/SageTVFFmpegPlugin-STVI-0.1.4.zip</Location><MD5>0442acd747cfcf3c9625fe8234d4f663</MD5></Package>
+  <Dependency><Plugin>SageTVFFmpegPluginLinux</Plugin><MinVersion>0.1.4</MinVersion></Dependency>
   <Dependency><STV>SageTV7</STV><MinVersion>7.0</MinVersion></Dependency>
   <Webpage>https://github.com/opensagetv-vibe/opensagetv-vibe-SageTVFFmpegPlugin</Webpage>
 </SageTVPlugin>
