@@ -4,8 +4,8 @@
   <Identifier>SageTVFFmpegPluginLinux</Identifier>
   <Author>OpenSageTV Vibe</Author>
   <CreationDate>2026.09.20</CreationDate>
-  <ModificationDate>2026.09.20</ModificationDate>
-  <Version beta="true">0.1.2</Version>
+  <ModificationDate>2026.09.29</ModificationDate>
+  <Version beta="true">0.1.3</Version>
   <OS>Linux</OS>
   <Desktop>false</Desktop>
   <ServerOnly>true</ServerOnly>
@@ -14,20 +14,20 @@
   <ImplementationClass>org.opensagetv.vibe.ffmpeg.SageTVFFmpegPlugin</ImplementationClass>
   <Package>
     <PackageType>JAR</PackageType>
-    <Location>https://github.com/opensagetv-vibe/opensagetv-vibe-SageTVFFmpegPlugin/releases/download/v0.1.2/SageTVFFmpegPlugin-jar-0.1.2.zip</Location>
-    <MD5>e5f801fbb06e0708ffd82b5d80e7a8fe</MD5>
+    <Location>https://github.com/opensagetv-vibe/opensagetv-vibe-SageTVFFmpegPlugin/releases/download/v0.1.3/SageTVFFmpegPlugin-jar-0.1.3.zip</Location>
+    <MD5>8a064ac7b7fae806c9dc6a05afb94a38</MD5>
   </Package>
   <Package>
     <PackageType>System</PackageType>
-    <Location>https://github.com/opensagetv-vibe/opensagetv-vibe-SageTVFFmpegPlugin/releases/download/v0.1.2/SageTVFFmpegPlugin-system-linux-0.1.2.zip</Location>
-    <MD5>357e488fc3deb10244bfc3db0eb37766</MD5>
+    <Location>https://github.com/opensagetv-vibe/opensagetv-vibe-SageTVFFmpegPlugin/releases/download/v0.1.3/SageTVFFmpegPlugin-system-linux-0.1.3.zip</Location>
+    <MD5>5fea5e9d29f7553efb6e9061c309dae2</MD5>
   </Package>
   <Package>
     <PackageType>System</PackageType>
-    <Location>https://github.com/opensagetv-vibe/opensagetv-vibe-ffmpeg-mim/releases/download/v0.4.9/OpenSageTVVibeMIMRuntimeLinux-0.4.9.zip</Location>
-    <MD5>906dda5c4bb1f2565738457a20a3251a</MD5>
+    <Location>https://github.com/opensagetv-vibe/opensagetv-vibe-ffmpeg-mim/releases/download/v0.4.10/OpenSageTVVibeMIMRuntimeLinux-0.4.10.zip</Location>
+    <MD5>dcbf6b9cb4f7cc80ff1ed6d93ff4b5b5</MD5>
   </Package>
   <Dependency><core/><MinVersion>9.2.2</MinVersion></Dependency>
   <Webpage>https://github.com/opensagetv-vibe/opensagetv-vibe-SageTVFFmpegPlugin</Webpage>
-  <ReleaseNotes>Initial beta release with stock Sage.jar compatibility, plugin-owned runtime, launcher repair, safe software fallback, and optional provider-neutral DVD transformation.</ReleaseNotes>
+  <ReleaseNotes>Direct Copy/Transcode, caption side channel, preserved Teletext/DVB, hardware reporting, Detailed Setup-style STVi, and safe stock-server fallback.</ReleaseNotes>
 </SageTVPlugin>

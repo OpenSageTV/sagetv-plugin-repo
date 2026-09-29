@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SageTVPlugin>
+  <Name>OpenSageTV Vibe Core MCP Plugin</Name>
+  <Identifier>OpenSageTVVibeCoreMCPPlugin</Identifier>
+  <Author>OpenSageTV Vibe</Author>
+  <CreationDate>2026.09.29</CreationDate>
+  <ModificationDate>2026.09.29</ModificationDate>
+  <Version beta="true">0.1.2</Version>
+  <OS>Win</OS>
+  <OS>Linux</OS>
+  <OS>Mac</OS>
+  <Desktop>false</Desktop>
+  <ServerOnly>true</ServerOnly>
+  <Description>Authenticated, bounded SageTV server controls for an external MCP adapter. Runs with unmodified stock Sage.jar and exposes no arbitrary API, filesystem, or shell access.</Description>
+  <PluginType>Standard</PluginType>
+  <ImplementationClass>org.opensagetv.vibe.coremcp.SageTVCoreMcpPlugin</ImplementationClass>
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>https://github.com/opensagetv-vibe/opensagetv-vibe-core-MCP-Plugin/releases/download/v0.1.2/OpenSageTVVibeCoreMCPPlugin-jar-0.1.2.zip</Location>
+    <MD5>89b942fc97e4661abd2014e559749c7f</MD5>
+  </Package>
+  <Dependency><core/><MinVersion>9.2.2</MinVersion></Dependency>
+  <Webpage>https://github.com/opensagetv-vibe/opensagetv-vibe-core-MCP-Plugin</Webpage>
+  <ReleaseNotes>Stock-compatible exact-path, playback, seek, caption, live-channel, library-scan, diagnostics, and DVD control bridge for external MCP automation.</ReleaseNotes>
+</SageTVPlugin>
