@@ -5,7 +5,7 @@
   <Author>OpenSageTV Vibe</Author>
   <CreationDate>2026.09.20</CreationDate>
   <ModificationDate>2026.10.09</ModificationDate>
-  <Version beta="true">0.1.4</Version>
+  <Version beta="true">0.1.5</Version>
   <OS>Win</OS>
   <OS>Linux</OS>
   <OS>Mac</OS>
@@ -16,8 +16,8 @@
   <ImplementationClass>org.opensagetv.vibe.coremcp.SageTVCoreMcpPlugin</ImplementationClass>
   <Package>
     <PackageType>JAR</PackageType>
-    <Location>https://github.com/opensagetv-vibe/opensagetv-vibe-core-MCP-Plugin/releases/download/v0.1.4/OpenSageTVVibeCoreMCPPlugin-jar-0.1.4.zip</Location>
-    <MD5>2fef6e12bbdca3ca3a8068dcbad82165</MD5>
+    <Location>https://github.com/opensagetv-vibe/opensagetv-vibe-core-MCP-Plugin/releases/download/v0.1.5/OpenSageTVVibeCoreMCPPlugin-jar-0.1.5.zip</Location>
+    <MD5>e6d70dc8a8f374de6dbbd4e52cd4fc68</MD5>
   </Package>
   <Dependency><core/><MinVersion>9.2.2</MinVersion></Dependency>
   <Webpage>https://github.com/opensagetv-vibe/opensagetv-vibe-core-MCP-Plugin</Webpage>
