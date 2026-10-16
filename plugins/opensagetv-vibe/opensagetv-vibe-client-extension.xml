@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SageTVPlugin>
+  <Name>OpenSageTV Vibe Client Extension</Name>
+  <Identifier>OpenSageTVVibeClientExtensionPlugin</Identifier>
+  <Author>OpenSageTV Vibe</Author>
+  <CreationDate>2026.10.04</CreationDate>
+  <ModificationDate>2026.10.16</ModificationDate>
+  <Version beta="true">0.1.0</Version>
+  <OS>Linux</OS>
+  <OS>Win</OS>
+  <Desktop>false</Desktop>
+  <ServerOnly>true</ServerOnly>
+  <Description>Optional per-client DVD player extension for OpenSageTV Vibe. Stock Sage.jar and older clients retain their original playback paths.</Description>
+  <PluginType>Standard</PluginType>
+  <ImplementationClass>org.opensagetv.vibe.clientextension.ClientExtensionPlugin</ImplementationClass>
+  <Package>
+    <PackageType>JAR</PackageType>
+    <Location>https://github.com/opensagetv-vibe/opensagetv-vibe-client-extension-Plugin/releases/download/v0.1.0/VibeClientExtensionPlugin-jar-0.1.0.zip</Location>
+    <MD5>28f4e5879ed32eca5e5f253c5f22cbfd</MD5>
+  </Package>
+  <Dependency><core/><MinVersion>9.2.2</MinVersion></Dependency>
+  <Webpage>https://github.com/opensagetv-vibe/opensagetv-vibe-client-extension-Plugin</Webpage>
+  <ReleaseNotes>See project CHANGELOG.md.</ReleaseNotes>
+</SageTVPlugin>
