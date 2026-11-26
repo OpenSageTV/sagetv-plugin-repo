@@ -5,12 +5,22 @@
   <Description>Browser MiniClient and media player for stock SageTV servers. Uses the required OpenSageTV Vibe FFmpeg Plugin for transcoding while preserving the stock Sage.jar and stock ffmpeg.</Description>
   <Author>OpenSageTV Vibe</Author>
   <CreationDate>2026.09.22</CreationDate>
-  <ModificationDate>2026.09.27</ModificationDate>
-  <Version beta="true">3.2.30</Version>
+  <ModificationDate>2026.11.26</ModificationDate>
+  <Version beta="true">3.3.0</Version>
   <OS>Linux</OS>
   <Desktop>false</Desktop>
   <ResourcePath>sagetvwebplayer</ResourcePath>
   <ReleaseNotes><![CDATA[
+3.3.0
+- Compact General/Playback/Transport/Input/Diagnostics/Recovery tabs, shorter phone settings and independent graph/information controls.
+- Preserve stock SageTV with client-owned recovery, live segment handling, bounded seeking and shared optional MIM buffer-driven bitrate adjustment.
+- Add the MiniClient Home Screen PWA, safe-area/mobile layouts, Safari installation help, explicit wake lock and Media Session controls.
+- Add configurable keyboard tap/hold/repeat and one/two/three-finger, edge and corner mappings.
+- Add a 25 ms audio-offset slider, diagnostic destination/share choices and backward-compatible version2 profile backups.
+- Prefer native HLS automatically when reported, and offer explicit native/MSE transports without copying Android-only decoder settings.
+- Resolve English-first CEA/Teletext/DVB virtual slots and exact-local stock STV caption selection; separate broadcast/file/DVD caption epochs and clocks.
+- Bound concurrent transcoding Apply requests and reject changes belonging to a retired recording.
+
 3.2.30
 - Adopt the OpenSageTV Vibe project workflow and release contracts.
 - Require the platform-matching OpenSageTV Vibe FFmpeg Plugin and discover its SageTVTranscoder bridge instead of SageTV's stock ffmpeg.
@@ -337,12 +347,12 @@
   <Dependency><JVM/><MinVersion>1.8</MinVersion></Dependency>
   <Dependency><Plugin>Jetty</Plugin><MinVersion>3.0.1</MinVersion></Dependency>
   <Dependency><Plugin>sagex-api</Plugin><MinVersion>9.1.7.0</MinVersion></Dependency>
-  <Dependency><Plugin>SageTVFFmpegPluginLinux</Plugin><MinVersion>0.1.4</MinVersion></Dependency>
+  <Dependency><Plugin>SageTVFFmpegPluginLinux</Plugin><MinVersion>0.1.32</MinVersion></Dependency>
   <PluginType>Standard</PluginType>
   <Package>
     <PackageType>System</PackageType>
-    <Location>https://github.com/opensagetv-vibe/opensagetv-vibe-web-client-plugin/releases/download/v3.2.30/sagetv-webplayer-3.2.30.zip</Location>
-    <MD5>e2def20fec19abad708f3eabd8d83144</MD5>
+    <Location>https://github.com/opensagetv-vibe/opensagetv-vibe-WebClient-Plugin/releases/download/v3.3.0/sagetv-webplayer-3.3.0.zip</Location>
+    <MD5>ff3730601cc68c5265fd6d5c89a42005</MD5>
     <Overwrite>true</Overwrite>
   </Package>
   <ImplementationClass></ImplementationClass>
