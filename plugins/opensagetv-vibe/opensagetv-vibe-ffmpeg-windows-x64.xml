@@ -4,17 +4,17 @@
   <Identifier>SageTVFFmpegPluginWinx64</Identifier>
   <Author>OpenSageTV Vibe</Author>
   <CreationDate>2026.09.20</CreationDate>
-  <ModificationDate>2026.10.21</ModificationDate>
-  <Version beta="true">0.1.6</Version>
+  <ModificationDate>2026.11.25</ModificationDate>
+  <Version beta="true">0.1.36</Version>
   <OS>Windows</OS>
   <Desktop>false</Desktop>
   <ServerOnly>true</ServerOnly>
   <Description>Windows x64 server plugin that utilizes the OpenSageTV Vibe FFmpeg runtime. Stock Sage.jar and stock ffmpeg remain untouched.</Description>
   <PluginType>Standard</PluginType>
   <ImplementationClass>org.opensagetv.vibe.ffmpeg.SageTVFFmpegPlugin</ImplementationClass>
-  <Package><PackageType>JAR</PackageType><Location>https://github.com/opensagetv-vibe/opensagetv-vibe-FFmpeg-Plugin/releases/download/v0.1.6/SageTVFFmpegPlugin-jar-0.1.6.zip</Location><MD5>ed343f4e3032114f50b556bbdd011a60</MD5></Package>
-  <Package><PackageType>System</PackageType><Location>https://github.com/opensagetv-vibe/opensagetv-vibe-FFmpeg-Plugin/releases/download/v0.1.6/SageTVFFmpegPlugin-system-windows-x64-0.1.6.zip</Location><MD5>11744e548acf66f954792254ca8871ee</MD5></Package>
-  <Package><PackageType>System</PackageType><Location>https://github.com/opensagetv-vibe/opensagetv-vibe-ffmpeg-mim/releases/download/v0.4.11/OpenSageTVVibeMIMRuntimeWindowsx64-0.4.11.zip</Location><MD5>15359537929d548c2c4076550dbccd52</MD5></Package>
+  <Package><PackageType>JAR</PackageType><Location>https://github.com/opensagetv-vibe/opensagetv-vibe-FFmpeg-Plugin/releases/download/v0.1.36/SageTVFFmpegPlugin-jar-0.1.36.zip</Location><MD5>a1882a588307216230b50fac7348739c</MD5></Package>
+  <Package><PackageType>System</PackageType><Location>https://github.com/opensagetv-vibe/opensagetv-vibe-FFmpeg-Plugin/releases/download/v0.1.36/SageTVFFmpegPlugin-system-windows-x64-0.1.36.zip</Location><MD5>62cb2943f5321b0e4bd5f57befd0ff60</MD5></Package>
+  <Package><PackageType>System</PackageType><Location>https://github.com/opensagetv-vibe/opensagetv-vibe-ffmpeg-mim/releases/download/v0.4.20/OpenSageTVVibeMIMRuntimeWindowsx64-0.4.20.zip</Location><MD5>87acd0432222116455c41598b2bcc038</MD5></Package>
   <Dependency><core/><MinVersion>9.2.2</MinVersion></Dependency>
   <Webpage>https://github.com/opensagetv-vibe/opensagetv-vibe-FFmpeg-Plugin</Webpage>
   <ReleaseNotes>See project CHANGELOG.md.</ReleaseNotes>
